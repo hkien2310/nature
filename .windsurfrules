@@ -1,0 +1,13 @@
+# Windsurf Rules
+
+Read `AGENTS.md` first — that is the source of truth for this project.
+This file only contains Windsurf-specific notes.
+
+## How To Start
+Read `AGENTS.md` → section "AUTO-START" → follow state detection logic.
+
+## Windsurf-Specific Notes
+- Use Cascade for complex multi-step tasks
+- **codegraph MCP** is configured — use its tools to navigate codebase
+- Reference project docs via file paths in prompts
+- Read `docs/knowledge/INDEX.md` before starting any feature work

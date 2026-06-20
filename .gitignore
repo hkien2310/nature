@@ -1,0 +1,37 @@
+# .gitignore
+
+# Dependencies
+node_modules/
+.cache/
+
+# Build
+dist/
+build/
+__pycache__/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+*.log
+
+# Next.js & Build
+.next/
+out/
+*.tsbuildinfo
+
+# Memory (private session logs)
+memory/*.md
+!memory/.gitkeep
+
+# CodeGraph (knowledge graph cache — regenerate with codegraph build)
+.codegraph/
+
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
