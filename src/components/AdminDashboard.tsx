@@ -130,10 +130,10 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
         {/* Left column: Battle Construct */}
-        <div className="lg:col-span-1 space-y-6">
+        <div className="lg:col-span-1">
           <div 
-            className="p-6 border border-red-500/20 rounded-md sticky top-24"
-            style={{ background: "rgba(20, 10, 10, 0.4)" }}
+            className="p-6 border border-red-500/20 rounded-md sticky top-20 z-30"
+            style={{ background: "rgba(20, 10, 10, 0.8)", backdropFilter: "blur(8px)" }}
           >
             <form onSubmit={handleCreateBattle} className="space-y-4">
               <div className="text-[10px] text-red-500 tracking-[0.2em] font-bold" style={{ fontFamily: "Share Tech Mono, monospace" }}>
@@ -218,9 +218,9 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
               <table className="w-full text-left border-collapse">
                 <thead>
                   <tr className="border-b border-[var(--border)] bg-black/40 text-[10px] text-[var(--text-muted)] uppercase tracking-wider font-mono">
-                    <th className="p-4">Sinh vật</th>
-                    <th className="p-4">ID để Query</th>
-                    <th className="p-4 text-center">Đã làm video?</th>
+                    <th className="p-4 sticky top-16 bg-[var(--bg-card)] z-20" style={{ boxShadow: "0 1px 0 var(--border)" }}>Sinh vật</th>
+                    <th className="p-4 sticky top-16 bg-[var(--bg-card)] z-20" style={{ boxShadow: "0 1px 0 var(--border)" }}>ID để Query</th>
+                    <th className="p-4 text-center sticky top-16 bg-[var(--bg-card)] z-20" style={{ boxShadow: "0 1px 0 var(--border)" }}>Đã làm video?</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[var(--border)] text-xs">
