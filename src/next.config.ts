@@ -1,9 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  turbopack: {
-    root: "/Users/hoangkien/Youtube/svh/src",
-  },
+  /* config options here */
 };
 
 export default nextConfig;
