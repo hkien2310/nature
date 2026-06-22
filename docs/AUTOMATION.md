@@ -60,7 +60,7 @@ Khi nhận được yêu cầu `"Làm giàu data"`, AI sẽ quét cơ sở dữ 
 Khi nhận được yêu cầu `"Chấm điểm P4P"`, AI (Antigravity) sẽ tự động thực hiện quy trình sau để chọn ra 5 sinh vật và chạy hiệu chuẩn điểm P4P khoa học.
 
 ### Các Bước Thực Hiện:
-1. **Truy vấn 5 mục tiêu**: Quét database Supabase để lấy danh sách tất cả sinh vật, sắp xếp theo `grading_count` tăng dần và chọn ra 5 con ít được đánh giá nhất.
+1. **Truy vấn 5 mục tiêu (Gọi API)**: Gửi yêu cầu GET tới API `/api/admin/grade/targets` để xác định chính xác nhóm 5 sinh vật tối ưu cần chấm điểm tiếp theo. Thuật toán sẽ tự động chọn 1 sinh vật ưu tiên cao làm Trọng tâm (Anchor), tìm các sinh vật có lực tương đồng để so sánh chéo, loại trừ các cặp đấu bị trùng lặp gần đây, và pha trộn 25% tỷ lệ ngẫu nhiên khám phá nhằm tối đa hóa lượng thông tin.
 2. **Chấm điểm theo tiêu chí khoa học**:
    - **RMD**: Relative Muscle Density (Mật độ cơ bắp/Ngoại cốt cấu trúc - thang 1-100).
    - **IAW**: Impact Acceleration & Weaponry Efficiency (Gia tốc đòn đánh và Hiệu suất vũ khí - thang 1-100).

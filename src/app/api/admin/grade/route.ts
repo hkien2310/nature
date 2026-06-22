@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
+import { selectGradingGroup } from "@/lib/grading-selection";
 
 export async function POST(request: Request) {
   try {
@@ -20,22 +21,25 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Access Denied: Bạn không có quyền Admin." }, { status: 403 });
     }
 
-    // 2. Fetch all creatures
-    const { data: creatures, error: fetchErr } = await supabase
+    // 2. Select 5 creatures using smart P4P calibration logic
+    const selection = await selectGradingGroup(userId);
+    if (!selection.success || !selection.group) {
+      return NextResponse.json({ error: selection.error || "Lỗi lựa chọn nhóm sinh vật hiệu chuẩn." }, { status: 400 });
+    }
+
+    const selectedIds = selection.group.map(c => c.id);
+    const { data: dbRecordList, error: selectErr } = await supabase
       .from("creatures")
-      .select("*");
+      .select("*")
+      .in("id", selectedIds);
 
-    if (fetchErr || !creatures || creatures.length === 0) {
-      return NextResponse.json({ error: "Không tìm thấy dữ liệu sinh vật." }, { status: 400 });
+    if (selectErr || !dbRecordList || dbRecordList.length < 5) {
+      return NextResponse.json({ error: "Không thể nạp đồng bộ dữ liệu sinh vật đã chọn." }, { status: 400 });
     }
 
-    // 3. Select 5 creatures with the lowest grading_count
-    const sortedCreatures = [...creatures].sort((a, b) => (a.grading_count || 0) - (b.grading_count || 0));
-    const selected = sortedCreatures.slice(0, 5);
+    // Keep the exact ordering of selection (Anchor first, then similarity neighbors)
+    const selected = selectedIds.map(id => dbRecordList.find(c => c.id === id)!).filter(Boolean);
 
-    if (selected.length < 5) {
-      return NextResponse.json({ error: "Yêu cầu tối thiểu 5 sinh vật trong cơ sở dữ liệu để chấm điểm." }, { status: 400 });
-    }
 
     const evaluationDetails: Record<string, any> = {};
 
@@ -128,7 +132,6 @@ export async function POST(request: Request) {
     }
 
     // 6. Log evaluation to grading_history table
-    const selectedIds = selected.map(c => c.id);
     const { error: logErr } = await supabase
       .from("grading_history")
       .insert({
