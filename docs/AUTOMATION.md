@@ -1,6 +1,6 @@
 # QUY TRÌNH TỰ ĐỘNG HÓA: LÀM GIÀU DATA (BIOFORCE ATLAS)
 
-Dự án hỗ trợ 2 quy trình tự động hóa nạp/nâng cấp dữ liệu sinh vật thông qua các lệnh kích hoạt.
+Dự án hỗ trợ 3 quy trình tự động hóa nạp/nâng cấp dữ liệu sinh vật thông qua các lệnh kích hoạt.
 
 ---
 
@@ -55,8 +55,26 @@ Khi nhận được yêu cầu `"Làm giàu data"`, AI sẽ quét cơ sở dữ 
 
 ---
 
+## QUY TRÌNH C: TỰ ĐỘNG CHẤM ĐIỂM & HIỆU CHUẨN P4P (Lệnh: "Chấm điểm P4P")
+
+Khi nhận được yêu cầu `"Chấm điểm P4P"`, AI (Antigravity) sẽ tự động thực hiện quy trình sau để chọn ra 5 sinh vật và chạy hiệu chuẩn điểm P4P khoa học.
+
+### Các Bước Thực Hiện:
+1. **Truy vấn 5 mục tiêu**: Quét database Supabase để lấy danh sách tất cả sinh vật, sắp xếp theo `grading_count` tăng dần và chọn ra 5 con ít được đánh giá nhất.
+2. **Chấm điểm theo tiêu chí khoa học**:
+   - **RMD**: Relative Muscle Density (Mật độ cơ bắp/Ngoại cốt cấu trúc - thang 1-100).
+   - **IAW**: Impact Acceleration & Weaponry Efficiency (Gia tốc đòn đánh và Hiệu suất vũ khí - thang 1-100).
+   - **MRL**: Maneuverability & Reflex Latency (Độ cơ động và Phản xạ - thang 1-100).
+   - **MEG**: Metabolic Efficiency & Genetic Adaptations (Hiệu suất trao đổi chất và Thích nghi gen - thang 1-100).
+   - **SRN**: Sensory Resolution & Neural Processing (Độ phân giải giác quan và Tốc độ xử lý thần kinh - thang 1-100).
+3. **Lưu lịch sử và cập nhật**:
+   - Tính tổng điểm P4P trung bình và xếp Tier (`S | A | B | C | D`).
+   - Tăng `grading_count` thêm 1.
+   - Thực hiện lưu dữ liệu chấm điểm vào bảng `grading_history` và cập nhật thông tin trong bảng `creatures` của Supabase.
+4. **Báo cáo kết quả**: Hiển thị bảng kết quả chấm chi tiết của 5 loài vừa được hiệu chuẩn, đồng thời phân tích chỉ ra các loài đang bị đánh giá quá cao (Overrated) hoặc quá thấp (Underrated) dựa trên điểm bình chọn của cộng đồng.
+
+---
+
 > [!IMPORTANT]
-> **Yêu cầu Migration**: Bảng `creatures` trong Supabase cần có cột `enrichment_count` (`INTEGER DEFAULT 0 NOT NULL`). Nếu cột này chưa có, vui lòng chạy lệnh SQL sau trong Dashboard SQL Editor của Supabase:
-> ```sql
-> ALTER TABLE creatures ADD COLUMN enrichment_count INTEGER DEFAULT 0 NOT NULL;
-> ```
+> **Yêu cầu Migration**: Bảng `creatures` trong Supabase cần có cột `enrichment_count` (`INTEGER DEFAULT 0 NOT NULL`), `grading_count` (`INTEGER DEFAULT 0 NOT NULL`), `ai_p4p_score` (`INTEGER DEFAULT 50 NOT NULL`), và `ai_tier` (`TEXT DEFAULT 'C' NOT NULL`). Ngoài ra cần tạo bảng `grading_history`. 
+> Vui lòng chạy lệnh SQL trong file [schema.sql](file:///Users/hoangkien/Youtube/svh/src/scripts/schema.sql) để thực hiện cập nhật toàn bộ database.
