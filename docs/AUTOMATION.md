@@ -10,7 +10,7 @@ Khi nhận được yêu cầu `"Thêm sinh vật mới"`, AI (Antigravity) sẽ
 
 ### Các Bước Thực Hiện:
 1. **Kiểm tra sinh vật hiện có**: Truy vấn bảng `creatures` từ Supabase bằng cách chạy đoạn mã test hoặc đọc file cấu hình tĩnh để biết những sinh vật nào đã tồn tại trong database (để tránh trùng lặp).
-2. **Chọn sinh vật mới**: Lựa chọn 3 sinh vật thú vị trong tự nhiên chưa có trong cơ sở dữ liệu. Ưu tiên các loài có vũ khí tự nhiên độc đáo, lực cắn mạnh, nọc độc nguy hiểm hoặc khả năng sinh tồn phi thường (Ví dụ: Bọ cánh cứng Hercules, Sứa hộp Úc, Rắn Taipan nội địa, Rết khổng lồ Amazon, Cá sấu nước mặn, v.v.).
+2. **Chọn sinh vật mới**: Lựa chọn 3 sinh vật trong tự nhiên chưa có trong cơ sở dữ liệu. **Bắt buộc tập trung tìm kiếm các loài sở hữu những đặc điểm kì lạ, cơ chế sinh học độc đáo hoặc sức mạnh phi thường tiến hóa độc nhất vô nhị** (Ví dụ: Khả năng bắn tia nước áp lực búa tạ của Tôm bọ ngựa, bắn bọt bong bóng plasma, phun axit/chất độc của Bọ cánh cứng Bombardier, bất tử sinh học của Sứa Hải Đăng, kháng phóng xạ/áp suất cực hạn của Gấu nước Tardigrade, khả năng phóng điện của Cá chình điện, hoặc tự tái sinh toàn bộ cơ thể của Kỳ giông Axolotl).
 3. **Nghiên cứu thông tin sinh học**: Nghiên cứu đầy đủ thông tin chuẩn khoa học của 3 sinh vật đó, bao gồm:
    - Các trường cơ bản (ID, tên tiếng Việt, tên khoa học, phân loại, kích thước thực tế, nọc độc, điểm mạnh/yếu, fun facts, nguồn tài liệu).
    - **Các trường sinh học cấu trúc bắt buộc**:

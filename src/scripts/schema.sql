@@ -116,3 +116,7 @@ CREATE TABLE IF NOT EXISTS grading_history (
   evaluation_details JSONB NOT NULL,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
 );
+
+-- Tắt RLS để cho phép lưu lịch sử chấm điểm tự động
+ALTER TABLE grading_history DISABLE ROW LEVEL SECURITY;
+
