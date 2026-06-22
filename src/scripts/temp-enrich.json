@@ -361,7 +361,7 @@
     "reproduction_notes": "Sinh con và nuôi con bằng sữa mẹ. Thời gian mang thai từ 15-18 tháng. Thường sinh 1 con non mỗi 3-10 năm.",
     "locomotion": "swim",
     "speed_max": 56,
-    "conservation_status": "DD",
+    "conservation_status": "LC",
     "size_min_mm": 6000,
     "size_max_mm": 8000,
     "weight_avg_g": 4500000
