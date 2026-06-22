@@ -51,6 +51,9 @@ export interface Creature {
   size_max_mm?: number;
   weight_avg_g?: number;
   hasDocumentary?: boolean;
+  gradingCount?: number;
+  aiP4pScore?: number;
+  aiTier?: Tier;
 }
 
 export const creatures: Creature[] = [

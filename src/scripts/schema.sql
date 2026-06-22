@@ -103,3 +103,16 @@ CREATE TABLE matchup_votes (
 );
 
 CREATE INDEX idx_matchup_votes_slug ON matchup_votes(matchup_slug);
+
+-- 8. Thêm cột phục vụ hệ thống tự động chấm điểm & hiệu chuẩn P4P
+ALTER TABLE creatures ADD COLUMN IF NOT EXISTS grading_count INTEGER DEFAULT 0 NOT NULL;
+ALTER TABLE creatures ADD COLUMN IF NOT EXISTS ai_p4p_score INTEGER DEFAULT 50 NOT NULL;
+ALTER TABLE creatures ADD COLUMN IF NOT EXISTS ai_tier TEXT DEFAULT 'C' NOT NULL;
+
+-- 9. Tạo bảng grading_history lưu lịch sử chấm điểm chéo 5 loài
+CREATE TABLE IF NOT EXISTS grading_history (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  creatures_evaluated TEXT[] NOT NULL,
+  evaluation_details JSONB NOT NULL,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+);

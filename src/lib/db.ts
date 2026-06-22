@@ -38,6 +38,9 @@ export interface DbCreature {
   size_max_mm?: number;
   weight_avg_g?: number;
   has_documentary?: boolean;
+  grading_count?: number;
+  ai_p4p_score?: number;
+  ai_tier?: string;
   created_at: string;
 }
 
@@ -142,6 +145,9 @@ export async function getDBCreatures(): Promise<Creature[]> {
         size_max_mm: dbc.size_max_mm,
         weight_avg_g: dbc.weight_avg_g,
         hasDocumentary: dbc.has_documentary || false,
+        gradingCount: dbc.grading_count || 0,
+        aiP4pScore: dbc.ai_p4p_score || 50,
+        aiTier: (dbc.ai_tier || "C") as Tier,
       };
     });
   } catch (err) {
