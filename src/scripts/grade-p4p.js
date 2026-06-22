@@ -41,20 +41,114 @@ async function run() {
     process.exit(1);
   }
 
-  // 2. Select 5 creatures with the lowest grading_count
-  const sortedCreatures = [...creatures].sort((a, b) => {
-    const diff = (a.grading_count || 0) - (b.grading_count || 0);
-    if (diff !== 0) return diff;
-    return a.id.localeCompare(b.id);
-  });
-  const selected = sortedCreatures.slice(0, 5);
-
-  if (selected.length < 5) {
-    console.error(`Requires at least 5 creatures in the database. Found: ${selected.length}`);
+  if (creatures.length < 5) {
+    console.error(`Requires at least 5 creatures in the database. Found: ${creatures.length}`);
     process.exit(1);
   }
 
+  // 2. Fetch recent grading history (last 10 runs) for smart selection
+  const { data: history, error: historyErr } = await supabase
+    .from("grading_history")
+    .select("creatures_evaluated")
+    .order("created_at", { ascending: false })
+    .limit(10);
+
+  if (historyErr) {
+    console.warn("Failed to fetch grading history:", historyErr.message);
+  }
+  const recentEvaluations = history || [];
+
+  // Map database fields to selection format in-memory
+  const candidatesList = creatures.map(c => ({
+    id: c.id,
+    name: c.name,
+    p4pScore: c.ai_p4p_score || 50,
+    gradingCount: c.grading_count || 0,
+    raw: c
+  }));
+
+  // Calculate Priority Score for each creature to find the Anchor
+  // Priority = 100 / (1 + gradingCount) + (p4pScore * 0.05) + recencyBoost
+  const priorityList = candidatesList.map(c => {
+    const evalCount = c.gradingCount;
+    const basePriority = 100 / (1 + evalCount);
+    const strengthBoost = c.p4pScore * 0.05;
+
+    let recencyBoost = 20;
+    for (let i = 0; i < Math.min(5, recentEvaluations.length); i++) {
+      const run = recentEvaluations[i].creatures_evaluated || [];
+      if (run.includes(c.id)) {
+        recencyBoost = i * 4; // Closer to index 0 means recently evaluated, lower boost
+        break;
+      }
+    }
+
+    const totalPriority = basePriority + strengthBoost + recencyBoost;
+    return {
+      candidate: c,
+      priorityScore: totalPriority
+    };
+  });
+
+  // Sort by priorityScore descending and pick the highest as Anchor
+  priorityList.sort((a, b) => b.priorityScore - a.priorityScore);
+  const anchor = priorityList[0].candidate;
+
+  // Select the remaining 4 candidates
+  // Filter out candidates that were evaluated together with the Anchor in the last 3 runs to avoid repetition
+  const recentlyGradedWithAnchor = new Set();
+  for (let i = 0; i < Math.min(3, recentEvaluations.length); i++) {
+    const run = recentEvaluations[i].creatures_evaluated || [];
+    if (run.includes(anchor.id)) {
+      run.forEach(id => {
+        if (id !== anchor.id) recentlyGradedWithAnchor.add(id);
+      });
+    }
+  }
+
+  let candidates = candidatesList.filter(c => c.id !== anchor.id);
+  const freshCandidates = candidates.filter(c => !recentlyGradedWithAnchor.has(c.id));
+  if (freshCandidates.length >= 4) {
+    candidates = freshCandidates;
+  }
+
+  // Sort candidates by absolute P4P score distance to the Anchor
+  candidates.sort((a, b) => Math.abs(a.p4pScore - anchor.p4pScore) - Math.abs(b.p4pScore - anchor.p4pScore));
+
+  const finalGroup = [anchor];
+  const pickedIds = new Set([anchor.id]);
+
+  // Choose 3 closest candidates (similarity principle)
+  const closestToPick = Math.min(3, candidates.length);
+  for (let i = 0; i < closestToPick; i++) {
+    finalGroup.push(candidates[i]);
+    pickedIds.add(candidates[i].id);
+  }
+
+  // Choose 1 exploration candidate (either 4th closest, or random with 25% probability)
+  const remainingCandidates = candidates.filter(c => !pickedIds.has(c.id));
+  if (remainingCandidates.length > 0) {
+    const triggerExploration = Math.random() < 0.25;
+    if (triggerExploration && remainingCandidates.length > 1) {
+      // Pick a random candidate from the exploration pool (excluding the next closest one)
+      const randIndex = 1 + Math.floor(Math.random() * (remainingCandidates.length - 1));
+      finalGroup.push(remainingCandidates[randIndex]);
+    } else {
+      // Fallback to the next closest candidate
+      finalGroup.push(remainingCandidates[0]);
+    }
+  }
+
+  // Fallback if we still don't have 5 creatures
+  while (finalGroup.length < 5 && creatures.length >= 5) {
+    const fallbackItem = candidatesList.find(c => !finalGroup.some(fg => fg.id === c.id));
+    if (fallbackItem) finalGroup.push(fallbackItem);
+    else break;
+  }
+
+  const selected = finalGroup.map(fg => fg.raw);
   const selectedIds = selected.map(c => c.id);
+
   console.log(`\nSelected creatures for grading: ${selected.map(c => `${c.name} (${c.id})`).join(", ")}`);
 
   // Fetch votes for community score calculation

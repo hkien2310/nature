@@ -90,18 +90,22 @@ export async function getDBCreatures(): Promise<Creature[]> {
         lethality: votes.length > 0 ? Math.round(votes.reduce((acc, curr) => acc + curr.lethality, 0) / votes.length) : defaultStats.lethality,
       };
 
-      // Calculate P4P score: average of stats
-      const p4pScore = Math.round(
+      // Calculate community P4P score: average of stats
+      const communityP4pScore = Math.round(
         (stats.strength + stats.durability + stats.speed + stats.weaponry + stats.special + stats.lethality) / 6
       );
 
-      // Determine Tier based on P4P Score
-      let tier: Tier = "C";
-      if (p4pScore >= 90) tier = "S";
-      else if (p4pScore >= 80) tier = "A";
-      else if (p4pScore >= 70) tier = "B";
-      else if (p4pScore >= 50) tier = "C";
-      else tier = "D";
+      // Determine Community Tier based on Community P4P Score
+      let communityTier: Tier = "C";
+      if (communityP4pScore >= 90) communityTier = "S";
+      else if (communityP4pScore >= 80) communityTier = "A";
+      else if (communityP4pScore >= 70) communityTier = "B";
+      else if (communityP4pScore >= 50) communityTier = "C";
+      else communityTier = "D";
+
+      // Display score is system/AI graded score
+      const p4pScore = dbc.ai_p4p_score !== undefined && dbc.ai_p4p_score !== null ? dbc.ai_p4p_score : 50;
+      const tier = (dbc.ai_tier || "C") as Tier;
 
       return {
         id: dbc.id,
@@ -124,6 +128,8 @@ export async function getDBCreatures(): Promise<Creature[]> {
         stats,
         p4pScore,
         tier,
+        communityP4pScore,
+        communityTier,
         strengths: dbc.strengths || [],
         weaknesses: dbc.weaknesses || [],
         funFacts: dbc.fun_facts || [],

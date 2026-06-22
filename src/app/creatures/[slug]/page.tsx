@@ -3,7 +3,6 @@ import { creatures, getTierColor, getStatLabel } from "@/data/creatures";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import VoteForm from "@/components/VoteForm";
 
 export const dynamic = "force-dynamic";
 
@@ -302,9 +301,6 @@ export default async function CreatureProfilePage({ params }: Props) {
               })}
             </svg>
           </div>
-
-          {/* Vote Form */}
-          <VoteForm creatureId={creature.id} imageColor={creature.imageColor} />
         </div>
 
         <div className="lg:col-span-2 space-y-8">

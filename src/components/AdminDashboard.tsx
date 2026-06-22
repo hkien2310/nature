@@ -32,14 +32,14 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
   const [gradingResult, setGradingResult] = useState<any>(null);
   const [gradingError, setGradingError] = useState("");
 
-  // Calculate Underrated and Overrated species
+  // Calculate Underrated and Overrated species (comparing AI/System score 'p4pScore' vs Community 'communityP4pScore')
   const underrated = allCreatures
-    .filter(c => (c.aiP4pScore || 50) - c.p4pScore >= 15)
-    .sort((a, b) => ((b.aiP4pScore || 50) - b.p4pScore) - ((a.aiP4pScore || 50) - a.p4pScore));
+    .filter(c => c.p4pScore - (c.communityP4pScore || 50) >= 15)
+    .sort((a, b) => (b.p4pScore - (b.communityP4pScore || 50)) - (a.p4pScore - (a.communityP4pScore || 50)));
 
   const overrated = allCreatures
-    .filter(c => c.p4pScore - (c.aiP4pScore || 50) >= 15)
-    .sort((a, b) => (b.p4pScore - (a.aiP4pScore || 50)) - (a.p4pScore - (b.aiP4pScore || 50)));
+    .filter(c => (c.communityP4pScore || 50) - c.p4pScore >= 15)
+    .sort((a, b) => ((b.communityP4pScore || 50) - b.p4pScore) - ((a.communityP4pScore || 50) - a.p4pScore));
 
   useEffect(() => {
     const stored = localStorage.getItem("user_session");
@@ -231,11 +231,11 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
             ) : (
               <div className="space-y-2">
                 {underrated.slice(0, 3).map(c => {
-                  const diff = (c.aiP4pScore || 50) - c.p4pScore;
+                  const diff = c.p4pScore - (c.communityP4pScore || 50);
                   return (
                     <div key={c.id} className="flex justify-between items-center text-xs p-2 bg-black/30 border border-[var(--border)] rounded-sm">
                       <span className="font-semibold text-[var(--text-primary)]">{c.name}</span>
-                      <span className="font-mono text-green-400">P4P: {c.aiP4pScore} vs Vote: {c.p4pScore} (+{diff})</span>
+                      <span className="font-mono text-green-400">P4P: {c.p4pScore} vs Vote: {c.communityP4pScore || 50} (+{diff})</span>
                     </div>
                   );
                 })}
@@ -253,11 +253,11 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
             ) : (
               <div className="space-y-2">
                 {overrated.slice(0, 3).map(c => {
-                  const diff = c.p4pScore - (c.aiP4pScore || 50);
+                  const diff = (c.communityP4pScore || 50) - c.p4pScore;
                   return (
                     <div key={c.id} className="flex justify-between items-center text-xs p-2 bg-black/30 border border-[var(--border)] rounded-sm">
                       <span className="font-semibold text-[var(--text-primary)]">{c.name}</span>
-                      <span className="font-mono text-red-400">Vote: {c.p4pScore} vs P4P: {c.aiP4pScore} (-{diff})</span>
+                      <span className="font-mono text-red-400">Vote: {c.communityP4pScore || 50} vs P4P: {c.p4pScore} (-{diff})</span>
                     </div>
                   );
                 })}

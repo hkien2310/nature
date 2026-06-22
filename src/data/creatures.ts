@@ -54,6 +54,8 @@ export interface Creature {
   gradingCount?: number;
   aiP4pScore?: number;
   aiTier?: Tier;
+  communityP4pScore?: number;
+  communityTier?: Tier;
 }
 
 export const creatures: Creature[] = [
