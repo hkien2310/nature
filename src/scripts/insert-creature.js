@@ -81,7 +81,10 @@ async function run() {
       conservation_status: creature.conservation_status || creature.conservationStatus,
       size_min_mm: creature.size_min_mm || creature.sizeMinMm,
       size_max_mm: creature.size_max_mm || creature.sizeMaxMm,
-      weight_avg_g: creature.weight_avg_g || creature.weightAvgG
+      weight_avg_g: creature.weight_avg_g || creature.weightAvgG,
+      grading_count: creature.grading_count !== undefined ? creature.grading_count : (creature.gradingCount !== undefined ? creature.gradingCount : 0),
+      ai_p4p_score: creature.ai_p4p_score || creature.aiP4pScore || 50,
+      ai_tier: creature.ai_tier || creature.aiTier || 'C'
     };
 
     const { error: cErr } = await supabase
