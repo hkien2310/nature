@@ -44,7 +44,6 @@ export default async function MatchupActivePage() {
         <div className="flex flex-wrap gap-4 border-b border-[var(--border)] pb-3" style={{ fontFamily: "Share Tech Mono, monospace" }}>
           <Link href="/matchup" className="text-xs tracking-widest text-[var(--red-primary)] font-bold">[ ĐANG DIỄN RA ]</Link>
           <Link href="/matchup/history" className="text-xs tracking-widest text-[var(--text-secondary)] hover:text-[#00f0ff] transition-colors">[ LỊCH SỬ KẾT QUẢ ]</Link>
-          <Link href="/matchup/simulator" className="text-xs tracking-widest text-[var(--text-secondary)] hover:text-[#00f0ff] transition-colors">[ GIẢ LẬP 1V1 ]</Link>
         </div>
       </div>
 
