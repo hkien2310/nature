@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import CreatureCard from "./CreatureCard";
 import { Creature } from "@/data/creatures";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
@@ -51,8 +51,18 @@ export default function CreaturesFilterList({
   const habitatVal = searchParams.get("habitat") || "All";
   const sortBy = searchParams.get("sortBy") || "p4p-desc";
 
+  // Sync local search state when the URL query changes externally (e.g. Reset Filters)
+  // using render-time prop adjustment to avoid synchronous useEffect setState cascade
+  const [prevSearch, setPrevSearch] = useState(search);
+  const [localSearch, setLocalSearch] = useState(search);
+
+  if (search !== prevSearch) {
+    setPrevSearch(search);
+    setLocalSearch(search);
+  }
+
   // Helper to construct query string
-  const createQueryString = (params: Record<string, string>) => {
+  const createQueryString = useCallback((params: Record<string, string>) => {
     const current = new URLSearchParams(Array.from(searchParams.entries()));
     
     Object.entries(params).forEach(([name, value]) => {
@@ -64,13 +74,24 @@ export default function CreaturesFilterList({
     });
 
     return current.toString();
-  };
+  }, [searchParams]);
 
-  const updateFilters = (updates: Record<string, string>) => {
+  const updateFilters = useCallback((updates: Record<string, string>) => {
     // When filters change, always reset back to page 1
     const query = createQueryString({ ...updates, page: "1" });
     router.push(`${pathname}?${query}`);
-  };
+  }, [createQueryString, pathname, router]);
+
+  // Debounce the updateFilters call for the search query
+  useEffect(() => {
+    if (localSearch === search) return;
+
+    const handler = setTimeout(() => {
+      updateFilters({ search: localSearch });
+    }, 400);
+
+    return () => clearTimeout(handler);
+  }, [localSearch, search, updateFilters]);
 
   const goToPage = (page: number) => {
     const query = createQueryString({ page: String(page) });
@@ -92,7 +113,7 @@ export default function CreaturesFilterList({
           className="text-[10px] text-[var(--text-muted)] tracking-widest mb-4 uppercase"
           style={{ fontFamily: "Share Tech Mono, monospace" }}
         >
-          // CONTROL UNIT & FILTER MATRIX (SERVER-SIDE FILTERED)
+          {"// CONTROL UNIT & FILTER MATRIX (SERVER-SIDE FILTERED)"}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -102,8 +123,8 @@ export default function CreaturesFilterList({
             <input
               type="text"
               placeholder="Nhập tên, lớp..."
-              value={search}
-              onChange={(e) => updateFilters({ search: e.target.value })}
+              value={localSearch}
+              onChange={(e) => setLocalSearch(e.target.value)}
               className="px-3 py-2 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm focus:outline-none focus:border-[var(--glow-color,rgba(0,240,255,0.5))]"
               style={{ background: "rgba(10, 10, 12, 0.8)" }}
             />
