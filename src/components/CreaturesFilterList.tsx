@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import CreatureCard from "./CreatureCard";
 import { Creature } from "@/data/creatures";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
@@ -82,16 +82,10 @@ export default function CreaturesFilterList({
     router.push(`${pathname}?${query}`);
   }, [createQueryString, pathname, router]);
 
-  // Debounce the updateFilters call for the search query
-  useEffect(() => {
-    if (localSearch === search) return;
-
-    const handler = setTimeout(() => {
-      updateFilters({ search: localSearch });
-    }, 400);
-
-    return () => clearTimeout(handler);
-  }, [localSearch, search, updateFilters]);
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    updateFilters({ search: localSearch });
+  };
 
   const goToPage = (page: number) => {
     const query = createQueryString({ page: String(page) });
@@ -118,17 +112,25 @@ export default function CreaturesFilterList({
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
           {/* Search Input */}
-          <div className="flex flex-col gap-1.5">
+          <form onSubmit={handleSearchSubmit} className="flex flex-col gap-1.5">
             <label className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider" style={{ fontFamily: "Share Tech Mono, monospace" }}>Tìm kiếm</label>
-            <input
-              type="text"
-              placeholder="Nhập tên, lớp..."
-              value={localSearch}
-              onChange={(e) => setLocalSearch(e.target.value)}
-              className="px-3 py-2 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm focus:outline-none focus:border-[var(--glow-color,rgba(0,240,255,0.5))]"
-              style={{ background: "rgba(10, 10, 12, 0.8)" }}
-            />
-          </div>
+            <div className="flex gap-2">
+              <input
+                type="text"
+                placeholder="Nhập tên, lớp..."
+                value={localSearch}
+                onChange={(e) => setLocalSearch(e.target.value)}
+                className="px-3 py-2 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm focus:outline-none focus:border-[var(--glow-color,rgba(0,240,255,0.5))] bg-black/60 flex-1"
+              />
+              <button
+                type="submit"
+                className="px-2.5 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] hover:border-[#00f0ff] hover:text-[#00f0ff] bg-black/40 rounded-sm font-mono transition-all cursor-pointer uppercase tracking-wider"
+                style={{ fontFamily: "Share Tech Mono, monospace" }}
+              >
+                Find
+              </button>
+            </div>
+          </form>
 
           {/* Tier Filter */}
           <div className="flex flex-col gap-1.5">

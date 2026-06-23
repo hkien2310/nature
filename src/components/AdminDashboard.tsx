@@ -196,7 +196,7 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
   return (
     <div className="space-y-12">
       {/* Grid: Table on the left (lg:col-span-2), Sidebar on the right (lg:col-span-1) */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
         
         {/* Left column: Creatures Table */}
         <div className="lg:col-span-2 space-y-6">
@@ -416,9 +416,9 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
         </div>
 
         {/* Right column: Battle Construct (Sidebar) */}
-        <div className="lg:col-span-1">
+        <div className="lg:col-span-1 sticky top-20 z-30">
           <div 
-            className="p-6 border border-red-500/20 rounded-md sticky top-20 z-30"
+            className="p-6 border border-red-500/20 rounded-md"
             style={{ background: "rgba(20, 10, 10, 0.8)", backdropFilter: "blur(8px)" }}
           >
             <form onSubmit={handleCreateBattle} className="space-y-4">
