@@ -28,10 +28,11 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
   const [copiedId, setCopiedId] = useState<string | null>(null);
 
   // Filter & Search States
+  const [adminSearchInput, setAdminSearchInput] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTier, setSelectedTier] = useState("ALL");
   const [selectedDoc, setSelectedDoc] = useState("ALL");
-  const [sortBy, setSortBy] = useState("default");
+  const [sortBy, setSortBy] = useState("p4p-desc");
 
   // Pagination States
   const [currentPage, setCurrentPage] = useState(1);
@@ -174,6 +175,12 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
     return processedCreatures.slice(startIndex, startIndex + pageSize);
   }, [processedCreatures, startIndex, pageSize]);
 
+  const handleAdminSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSearchQuery(adminSearchInput);
+    setCurrentPage(1);
+  };
+
   if (loading) {
     return (
       <div className="text-center py-20 font-mono text-xs text-[var(--text-muted)]">
@@ -210,16 +217,22 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
             {/* Filter and sorting controls */}
             <div className="p-4 border-b border-[var(--border)] bg-black/10 flex flex-wrap gap-3 items-center justify-between">
               <div className="flex flex-wrap gap-2 items-center w-full md:w-auto">
-                <input
-                  type="text"
-                  placeholder="Tìm tên, tên khoa học hoặc ID..."
-                  value={searchQuery}
-                  onChange={(e) => {
-                    setSearchQuery(e.target.value);
-                    setCurrentPage(1);
-                  }}
-                  className="px-3 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm bg-black/60 placeholder-[var(--text-muted)] focus:outline-none focus:border-[#00f0ff] w-full sm:w-64"
-                />
+                <form onSubmit={handleAdminSearchSubmit} className="flex gap-2 w-full sm:w-auto">
+                  <input
+                    type="text"
+                    placeholder="Tìm tên, tên khoa học hoặc ID..."
+                    value={adminSearchInput}
+                    onChange={(e) => setAdminSearchInput(e.target.value)}
+                    className="px-3 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm bg-black/60 placeholder-[var(--text-muted)] focus:outline-none focus:border-[#00f0ff] flex-1 sm:w-64"
+                  />
+                  <button
+                    type="submit"
+                    className="px-2.5 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] hover:border-[#00f0ff] hover:text-[#00f0ff] bg-black/40 rounded-sm font-mono transition-all cursor-pointer uppercase tracking-wider font-semibold"
+                    style={{ fontFamily: "Share Tech Mono, monospace" }}
+                  >
+                    Find
+                  </button>
+                </form>
                 
                 <select
                   value={selectedTier}
