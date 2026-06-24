@@ -215,73 +215,105 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
             </div>
 
             {/* Filter and sorting controls */}
-            <div className="p-4 border-b border-[var(--border)] bg-black/10 flex flex-wrap gap-3 items-center justify-between">
-              <div className="flex flex-wrap gap-2 items-center w-full md:w-auto">
-                <form onSubmit={handleAdminSearchSubmit} className="flex gap-2 w-full sm:w-auto">
+            <div className="p-4 border-b border-[var(--border)] bg-black/20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
+              {/* Search Input */}
+              <form onSubmit={handleAdminSearchSubmit} className="flex flex-col gap-1.5 w-full">
+                <label className="text-[10px] text-red-500/70 uppercase tracking-wider font-mono font-semibold">Tìm kiếm</label>
+                <div className="flex gap-2">
                   <input
                     type="text"
                     placeholder="Tìm tên, tên khoa học hoặc ID..."
                     value={adminSearchInput}
                     onChange={(e) => setAdminSearchInput(e.target.value)}
-                    className="px-3 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm bg-black/60 placeholder-[var(--text-muted)] focus:outline-none focus:border-[#00f0ff] flex-1 sm:w-64"
+                    className="px-3 py-2 text-xs border border-red-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 placeholder-[var(--text-muted)] focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500/30 hover:border-red-500/50 transition-all duration-300 flex-1 min-w-0"
                   />
                   <button
                     type="submit"
-                    className="px-2.5 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] hover:border-[#00f0ff] hover:text-[#00f0ff] bg-black/40 rounded-sm font-mono transition-all cursor-pointer uppercase tracking-wider font-semibold"
+                    className="px-4 py-2 text-xs border border-red-500/40 text-red-400 hover:border-red-500 hover:bg-red-500/10 hover:shadow-[0_0_12px_rgba(255,45,45,0.35)] bg-red-950/20 rounded-sm font-mono transition-all duration-300 cursor-pointer uppercase tracking-wider font-bold"
                     style={{ fontFamily: "Share Tech Mono, monospace" }}
                   >
-                    Find
+                    FIND
                   </button>
-                </form>
-                
-                <select
-                  value={selectedTier}
-                  onChange={(e) => {
-                    setSelectedTier(e.target.value);
-                    setCurrentPage(1);
-                  }}
-                  className="px-3 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none focus:border-[#00f0ff]"
-                >
-                  <option value="ALL">Tất cả Tiers</option>
-                  <option value="S">Tier S</option>
-                  <option value="A">Tier A</option>
-                  <option value="B">Tier B</option>
-                  <option value="C">Tier C</option>
-                  <option value="D">Tier D</option>
-                </select>
-
-                <select
-                  value={selectedDoc}
-                  onChange={(e) => {
-                    setSelectedDoc(e.target.value);
-                    setCurrentPage(1);
-                  }}
-                  className="px-3 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none focus:border-[#00f0ff]"
-                >
-                  <option value="ALL">Tất cả Video</option>
-                  <option value="YES">Đã làm video</option>
-                  <option value="NO">Chưa làm video</option>
-                </select>
+                </div>
+              </form>
+              
+              {/* Tier Filter */}
+              <div className="flex flex-col gap-1.5 w-full">
+                <label className="text-[10px] text-red-500/70 uppercase tracking-wider font-mono font-semibold">Xếp hạng (Tier)</label>
+                <div className="relative w-full">
+                  <select
+                    value={selectedTier}
+                    onChange={(e) => {
+                      setSelectedTier(e.target.value);
+                      setCurrentPage(1);
+                    }}
+                    className="w-full appearance-none px-3 py-2 pr-8 text-xs border border-red-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500/30 hover:border-red-500/50 transition-all duration-300 cursor-pointer"
+                  >
+                    <option value="ALL" className="bg-neutral-900 text-white">Tất cả Tiers</option>
+                    <option value="S" className="bg-neutral-900 text-white">Tier S</option>
+                    <option value="A" className="bg-neutral-900 text-white">Tier A</option>
+                    <option value="B" className="bg-neutral-900 text-white">Tier B</option>
+                    <option value="C" className="bg-neutral-900 text-white">Tier C</option>
+                    <option value="D" className="bg-neutral-900 text-white">Tier D</option>
+                  </select>
+                  <div className="absolute inset-y-0 right-0 flex items-center pr-2.5 pointer-events-none text-red-500/50">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
 
-              <div className="flex gap-2 items-center w-full md:w-auto justify-end">
-                <span className="text-[10px] text-[var(--text-muted)] font-mono uppercase">Sắp xếp:</span>
-                <select
-                  value={sortBy}
-                  onChange={(e) => {
-                    setSortBy(e.target.value);
-                    setCurrentPage(1);
-                  }}
-                  className="px-3 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none focus:border-[#00f0ff]"
-                >
-                  <option value="default">Mặc định</option>
-                  <option value="name-asc">Tên (A-Z)</option>
-                  <option value="name-desc">Tên (Z-A)</option>
-                  <option value="p4p-desc">P4P Score (Cao → Thấp)</option>
-                  <option value="p4p-asc">P4P Score (Thấp → Cao)</option>
-                  <option value="grading-desc">Lần chấm (Nhiều → Ít)</option>
-                  <option value="grading-asc">Lần chấm (Ít → Nhiều)</option>
-                </select>
+              {/* Video Status Filter */}
+              <div className="flex flex-col gap-1.5 w-full">
+                <label className="text-[10px] text-red-500/70 uppercase tracking-wider font-mono font-semibold">Trạng thái Video</label>
+                <div className="relative w-full">
+                  <select
+                    value={selectedDoc}
+                    onChange={(e) => {
+                      setSelectedDoc(e.target.value);
+                      setCurrentPage(1);
+                    }}
+                    className="w-full appearance-none px-3 py-2 pr-8 text-xs border border-red-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500/30 hover:border-red-500/50 transition-all duration-300 cursor-pointer"
+                  >
+                    <option value="ALL" className="bg-neutral-900 text-white">Tất cả Video</option>
+                    <option value="YES" className="bg-neutral-900 text-white">Đã làm video</option>
+                    <option value="NO" className="bg-neutral-900 text-white">Chưa làm video</option>
+                  </select>
+                  <div className="absolute inset-y-0 right-0 flex items-center pr-2.5 pointer-events-none text-red-500/50">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sorter */}
+              <div className="flex flex-col gap-1.5 w-full">
+                <label className="text-[10px] text-red-500/70 uppercase tracking-wider font-mono font-semibold">Sắp xếp</label>
+                <div className="relative w-full">
+                  <select
+                    value={sortBy}
+                    onChange={(e) => {
+                      setSortBy(e.target.value);
+                      setCurrentPage(1);
+                    }}
+                    className="w-full appearance-none px-3 py-2 pr-8 text-xs border border-red-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500/30 hover:border-red-500/50 transition-all duration-300 cursor-pointer"
+                  >
+                    <option value="default" className="bg-neutral-900 text-white">Mặc định</option>
+                    <option value="name-asc" className="bg-neutral-900 text-white">Tên (A-Z)</option>
+                    <option value="name-desc" className="bg-neutral-900 text-white">Tên (Z-A)</option>
+                    <option value="p4p-desc" className="bg-neutral-900 text-white">P4P Score (Cao → Thấp)</option>
+                    <option value="p4p-asc" className="bg-neutral-900 text-white">P4P Score (Thấp → Cao)</option>
+                    <option value="grading-desc" className="bg-neutral-900 text-white">Lần chấm (Nhiều → Ít)</option>
+                    <option value="grading-asc" className="bg-neutral-900 text-white">Lần chấm (Ít → Nhiều)</option>
+                  </select>
+                  <div className="absolute inset-y-0 right-0 flex items-center pr-2.5 pointer-events-none text-red-500/50">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -353,19 +385,26 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
                   </div>
                   <div className="flex items-center gap-1.5 text-xs text-[var(--text-secondary)] font-mono">
                     <span>Cỡ trang:</span>
-                    <select
-                      value={pageSize}
-                      onChange={(e) => {
-                        setPageSize(Number(e.target.value));
-                        setCurrentPage(1);
-                      }}
-                      className="px-2 py-1 border border-[var(--border)] text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none"
-                    >
-                      <option value={10}>10</option>
-                      <option value={20}>20</option>
-                      <option value={50}>50</option>
-                      <option value={100}>100</option>
-                    </select>
+                    <div className="relative">
+                      <select
+                        value={pageSize}
+                        onChange={(e) => {
+                          setPageSize(Number(e.target.value));
+                          setCurrentPage(1);
+                        }}
+                        className="appearance-none pl-2 pr-6 py-0.5 border border-red-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500/30 hover:border-red-500/50 transition-all duration-300 cursor-pointer"
+                      >
+                        <option value={10} className="bg-neutral-900 text-white">10</option>
+                        <option value={20} className="bg-neutral-900 text-white">20</option>
+                        <option value={50} className="bg-neutral-900 text-white">50</option>
+                        <option value={100} className="bg-neutral-900 text-white">100</option>
+                      </select>
+                      <div className="absolute inset-y-0 right-0 flex items-center pr-1.5 pointer-events-none text-red-500/50">
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -439,34 +478,48 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
                 {"// KHỞI TẠO BATTLE ARENA (CONSTRUCT)"}
               </div>
 
-              <div className="flex flex-col gap-1">
-                <label className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider" style={{ fontFamily: "Share Tech Mono, monospace" }}>Sinh vật A</label>
-                <select
-                  value={creatureAId}
-                  onChange={(e) => setCreatureAId(e.target.value)}
-                  className="px-3 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm bg-black/60 w-full"
-                >
-                  {allCreatures.map(c => (
-                    <option key={c.id} value={c.id}>{c.name}</option>
-                  ))}
-                </select>
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[10px] text-red-500/70 uppercase tracking-wider font-mono font-semibold" style={{ fontFamily: "Share Tech Mono, monospace" }}>Sinh vật A</label>
+                <div className="relative w-full">
+                  <select
+                    value={creatureAId}
+                    onChange={(e) => setCreatureAId(e.target.value)}
+                    className="w-full appearance-none px-3 py-2 pr-8 text-xs border border-red-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500/30 hover:border-red-500/50 transition-all duration-300 cursor-pointer"
+                  >
+                    {allCreatures.map(c => (
+                      <option key={c.id} value={c.id} className="bg-neutral-900 text-white">{c.name}</option>
+                    ))}
+                  </select>
+                  <div className="absolute inset-y-0 right-0 flex items-center pr-2.5 pointer-events-none text-red-500/50">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
 
-              <div className="flex flex-col gap-1">
-                <label className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider" style={{ fontFamily: "Share Tech Mono, monospace" }}>Sinh vật B</label>
-                <select
-                  value={creatureBId}
-                  onChange={(e) => setCreatureBId(e.target.value)}
-                  className="px-3 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm bg-black/60 w-full"
-                >
-                  {allCreatures.map(c => (
-                    <option key={c.id} value={c.id}>{c.name}</option>
-                  ))}
-                </select>
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[10px] text-red-500/70 uppercase tracking-wider font-mono font-semibold" style={{ fontFamily: "Share Tech Mono, monospace" }}>Sinh vật B</label>
+                <div className="relative w-full">
+                  <select
+                    value={creatureBId}
+                    onChange={(e) => setCreatureBId(e.target.value)}
+                    className="w-full appearance-none px-3 py-2 pr-8 text-xs border border-red-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500/30 hover:border-red-500/50 transition-all duration-300 cursor-pointer"
+                  >
+                    {allCreatures.map(c => (
+                      <option key={c.id} value={c.id} className="bg-neutral-900 text-white">{c.name}</option>
+                    ))}
+                  </select>
+                  <div className="absolute inset-y-0 right-0 flex items-center pr-2.5 pointer-events-none text-red-500/50">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
 
-              <div className="flex flex-col gap-1">
-                <label className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider" style={{ fontFamily: "Share Tech Mono, monospace" }}>Thời hạn (Ngày)</label>
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[10px] text-red-500/70 uppercase tracking-wider font-mono font-semibold" style={{ fontFamily: "Share Tech Mono, monospace" }}>Thời hạn (Ngày)</label>
                 <input
                   type="number"
                   min="1"
@@ -474,28 +527,28 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
                   required
                   value={durationDays}
                   onChange={(e) => setDurationDays(Number(e.target.value))}
-                  className="px-3 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm bg-black/60 w-full"
+                  className="px-3 py-2 text-xs border border-red-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 placeholder-[var(--text-muted)] focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500/30 hover:border-red-500/50 transition-all duration-300 w-full"
                 />
               </div>
 
-              <div className="flex flex-col gap-1">
-                <label className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider" style={{ fontFamily: "Share Tech Mono, monospace" }}>Tiêu đề trận đấu (Tùy chọn)</label>
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[10px] text-red-500/70 uppercase tracking-wider font-mono font-semibold" style={{ fontFamily: "Share Tech Mono, monospace" }}>Tiêu đề trận đấu (Tùy chọn)</label>
                 <input
                   type="text"
                   placeholder="ví dụ: Trận chiến kinh điển..."
                   value={customTitle}
                   onChange={(e) => setCustomTitle(e.target.value)}
-                  className="px-3 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm bg-black/60 w-full"
+                  className="px-3 py-2 text-xs border border-red-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 placeholder-[var(--text-muted)] focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500/30 hover:border-red-500/50 transition-all duration-300 w-full"
                 />
               </div>
 
-              {battleError && <div className="text-[10px] text-red-400 font-bold">{battleError}</div>}
-              {battleSuccess && <div className="text-[10px] text-green-400 font-bold">{battleSuccess}</div>}
+              {battleError && <div className="text-[10px] text-red-400 font-bold font-mono">{battleError}</div>}
+              {battleSuccess && <div className="text-[10px] text-green-400 font-bold font-mono">{battleSuccess}</div>}
 
               <button
                 type="submit"
                 disabled={battleSubmitting}
-                className="w-full py-2 bg-red-950/40 border border-red-500 text-red-400 hover:bg-red-500/20 text-xs font-semibold rounded-sm tracking-widest transition-all disabled:opacity-50"
+                className="w-full py-2.5 bg-red-950/20 border border-red-500/40 text-red-400 hover:border-red-500 hover:bg-red-500/10 hover:shadow-[0_0_12px_rgba(255,45,45,0.35)] text-xs font-bold rounded-sm tracking-widest transition-all duration-300 disabled:opacity-50 cursor-pointer uppercase"
                 style={{ fontFamily: "Share Tech Mono, monospace" }}
               >
                 {battleSubmitting ? "[ CREATING... ]" : "[ THIẾT LẬP TRẬN ĐẤU ]"}

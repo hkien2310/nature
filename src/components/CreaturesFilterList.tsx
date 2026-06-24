@@ -113,94 +113,118 @@ export default function CreaturesFilterList({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
           {/* Search Input */}
           <form onSubmit={handleSearchSubmit} className="flex flex-col gap-1.5">
-            <label className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider" style={{ fontFamily: "Share Tech Mono, monospace" }}>Tìm kiếm</label>
+            <label className="text-[10px] text-cyan-400/70 uppercase tracking-wider font-mono font-semibold" style={{ fontFamily: "Share Tech Mono, monospace" }}>Tìm kiếm</label>
             <div className="flex gap-2">
               <input
                 type="text"
                 placeholder="Nhập tên, lớp..."
                 value={localSearch}
                 onChange={(e) => setLocalSearch(e.target.value)}
-                className="px-3 py-2 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm focus:outline-none focus:border-[var(--glow-color,rgba(0,240,255,0.5))] bg-black/60 flex-1"
+                className="px-3 py-2 text-xs border border-cyan-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 placeholder-[var(--text-muted)] focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 hover:border-cyan-500/50 transition-all duration-300 flex-1 min-w-0"
               />
               <button
                 type="submit"
-                className="px-2.5 py-1.5 text-xs border border-[var(--border)] text-[var(--text-primary)] hover:border-[#00f0ff] hover:text-[#00f0ff] bg-black/40 rounded-sm font-mono transition-all cursor-pointer uppercase tracking-wider"
+                className="px-4 py-2 text-xs border border-cyan-500/40 text-cyan-400 hover:border-cyan-500 hover:bg-cyan-500/10 hover:shadow-[0_0_12px_rgba(0,240,255,0.35)] bg-cyan-950/20 rounded-sm font-mono transition-all duration-300 cursor-pointer uppercase tracking-wider font-bold"
                 style={{ fontFamily: "Share Tech Mono, monospace" }}
               >
-                Find
+                FIND
               </button>
             </div>
           </form>
 
           {/* Tier Filter */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider" style={{ fontFamily: "Share Tech Mono, monospace" }}>Xếp Hạng (Tier)</label>
-            <select
-              value={tier}
-              onChange={(e) => updateFilters({ tier: e.target.value })}
-              className="px-3 py-2 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm focus:outline-none focus:border-[var(--glow-color,rgba(0,240,255,0.5))]"
-              style={{ background: "rgba(10, 10, 12, 0.8)" }}
-            >
-              <option value="All">Tất cả Tier</option>
-              <option value="S">S Tier</option>
-              <option value="A">A Tier</option>
-              <option value="B">B Tier</option>
-              <option value="C">C Tier</option>
-              <option value="D">D Tier</option>
-            </select>
+            <label className="text-[10px] text-cyan-400/70 uppercase tracking-wider font-mono font-semibold" style={{ fontFamily: "Share Tech Mono, monospace" }}>Xếp Hạng (Tier)</label>
+            <div className="relative w-full">
+              <select
+                value={tier}
+                onChange={(e) => updateFilters({ tier: e.target.value })}
+                className="w-full appearance-none px-3 py-2 pr-8 text-xs border border-cyan-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 hover:border-cyan-500/50 transition-all duration-300 cursor-pointer"
+              >
+                <option value="All" className="bg-neutral-900 text-white">Tất cả Tier</option>
+                <option value="S" className="bg-neutral-900 text-white">S Tier</option>
+                <option value="A" className="bg-neutral-900 text-white">A Tier</option>
+                <option value="B" className="bg-neutral-900 text-white">B Tier</option>
+                <option value="C" className="bg-neutral-900 text-white">C Tier</option>
+                <option value="D" className="bg-neutral-900 text-white">D Tier</option>
+              </select>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2.5 pointer-events-none text-cyan-500/50">
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
           </div>
 
           {/* Class Filter */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider" style={{ fontFamily: "Share Tech Mono, monospace" }}>Chủng Loài (Class)</label>
-            <select
-              value={classVal}
-              onChange={(e) => updateFilters({ class: e.target.value })}
-              className="px-3 py-2 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm focus:outline-none focus:border-[var(--glow-color,rgba(0,240,255,0.5))]"
-              style={{ background: "rgba(10, 10, 12, 0.8)" }}
-            >
-              <option value="All">Tất cả lớp</option>
-              {allClasses.map(cls => (
-                <option key={cls} value={cls}>
-                  {CLASS_TRANSLATIONS[cls] || cls}
-                </option>
-              ))}
-            </select>
+            <label className="text-[10px] text-cyan-400/70 uppercase tracking-wider font-mono font-semibold" style={{ fontFamily: "Share Tech Mono, monospace" }}>Chủng Loài (Class)</label>
+            <div className="relative w-full">
+              <select
+                value={classVal}
+                onChange={(e) => updateFilters({ class: e.target.value })}
+                className="w-full appearance-none px-3 py-2 pr-8 text-xs border border-cyan-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 hover:border-cyan-500/50 transition-all duration-300 cursor-pointer"
+              >
+                <option value="All" className="bg-neutral-900 text-white">Tất cả lớp</option>
+                {allClasses.map(cls => (
+                  <option key={cls} value={cls} className="bg-neutral-900 text-white">
+                    {CLASS_TRANSLATIONS[cls] || cls}
+                  </option>
+                ))}
+              </select>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2.5 pointer-events-none text-cyan-500/50">
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
           </div>
 
           {/* Habitat Filter */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider" style={{ fontFamily: "Share Tech Mono, monospace" }}>Môi Trường Sống</label>
-            <select
-              value={habitatVal}
-              onChange={(e) => updateFilters({ habitat: e.target.value })}
-              className="px-3 py-2 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm focus:outline-none focus:border-[var(--glow-color,rgba(0,240,255,0.5))]"
-              style={{ background: "rgba(10, 10, 12, 0.8)" }}
-            >
-              <option value="All">Tất cả môi trường</option>
-              {allHabitats.map(h => (
-                <option key={h} value={h}>
-                  {getNormalizedHabitat(h)}
-                </option>
-              ))}
-            </select>
+            <label className="text-[10px] text-cyan-400/70 uppercase tracking-wider font-mono font-semibold" style={{ fontFamily: "Share Tech Mono, monospace" }}>Môi Trường Sống</label>
+            <div className="relative w-full">
+              <select
+                value={habitatVal}
+                onChange={(e) => updateFilters({ habitat: e.target.value })}
+                className="w-full appearance-none px-3 py-2 pr-8 text-xs border border-cyan-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 hover:border-cyan-500/50 transition-all duration-300 cursor-pointer"
+              >
+                <option value="All" className="bg-neutral-900 text-white">Tất cả môi trường</option>
+                {allHabitats.map(h => (
+                  <option key={h} value={h} className="bg-neutral-900 text-white">
+                    {getNormalizedHabitat(h)}
+                  </option>
+                ))}
+              </select>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2.5 pointer-events-none text-cyan-500/50">
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
           </div>
 
           {/* Sorter */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider" style={{ fontFamily: "Share Tech Mono, monospace" }}>Sắp Xếp</label>
-            <select
-              value={sortBy}
-              onChange={(e) => updateFilters({ sortBy: e.target.value })}
-              className="px-3 py-2 text-xs border border-[var(--border)] text-[var(--text-primary)] rounded-sm focus:outline-none focus:border-[var(--glow-color,rgba(0,240,255,0.5))]"
-              style={{ background: "rgba(10, 10, 12, 0.8)" }}
-            >
-              <option value="p4p-desc">P4P Score (Cao → Thấp)</option>
-              <option value="p4p-asc">P4P Score (Thấp → Cao)</option>
-              <option value="name-asc">Tên (A-Z)</option>
-              <option value="enrichment-desc">Làm Giàu (Nhiều → Ít)</option>
-              <option value="enrichment-asc">Làm Giàu (Ít → Nhiều)</option>
-            </select>
+            <label className="text-[10px] text-cyan-400/70 uppercase tracking-wider font-mono font-semibold" style={{ fontFamily: "Share Tech Mono, monospace" }}>Sắp Xếp</label>
+            <div className="relative w-full">
+              <select
+                value={sortBy}
+                onChange={(e) => updateFilters({ sortBy: e.target.value })}
+                className="w-full appearance-none px-3 py-2 pr-8 text-xs border border-cyan-500/20 text-[var(--text-primary)] rounded-sm bg-black/60 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/30 hover:border-cyan-500/50 transition-all duration-300 cursor-pointer"
+              >
+                <option value="p4p-desc" className="bg-neutral-900 text-white">P4P Score (Cao → Thấp)</option>
+                <option value="p4p-asc" className="bg-neutral-900 text-white">P4P Score (Thấp → Cao)</option>
+                <option value="name-asc" className="bg-neutral-900 text-white">Tên (A-Z)</option>
+                <option value="enrichment-desc" className="bg-neutral-900 text-white">Làm Giàu (Nhiều → Ít)</option>
+                <option value="enrichment-asc" className="bg-neutral-900 text-white">Làm Giàu (Ít → Nhiều)</option>
+              </select>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2.5 pointer-events-none text-cyan-500/50">
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
 
