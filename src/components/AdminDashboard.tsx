@@ -285,8 +285,8 @@ export default function AdminDashboard({ allCreatures }: AdminDashboardProps) {
               </div>
             </div>
 
-            {/* Table wrapper with horizontal overflow and vertical clipping for sticky header */}
-            <div style={{ overflowX: "auto", overflowY: "clip" }}>
+            {/* Table wrapper with horizontal overflow on mobile and visible on desktop for sticky headers */}
+            <div className="overflow-x-auto lg:overflow-visible">
               {paginatedCreatures.length === 0 ? (
                 <div className="text-center py-12 text-[var(--text-muted)] font-mono text-xs">
                   NO CREATURES FOUND MATCHING CRITERIA
