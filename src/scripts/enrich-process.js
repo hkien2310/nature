@@ -1,239 +1,236 @@
 const fs = require('fs');
 const path = require('path');
 
-const targetsPath = path.join(__dirname, '../../targets.json');
+const targetsPath = path.join(__dirname, 'temp-targets.json');
 const enrichPath = path.join(__dirname, 'temp-enrich.json');
 
 if (!fs.existsSync(targetsPath)) {
-  console.error("targets.json not found!");
+  console.error("temp-targets.json not found!");
   process.exit(1);
 }
 
 const fileData = JSON.parse(fs.readFileSync(targetsPath, 'utf8'));
 const targets = fileData.targets;
 
+console.log(`Processing enrichment for ${targets.length} targets...`);
+
 const enriched = targets.map(c => {
   const newC = { ...c };
   newC.enrichment_count = (c.enrichment_count || 0) + 1;
 
-  if (c.id === 'wood-frog') {
+  if (c.id === 'pistol-shrimp') {
     newC.diet_type = 'carnivore';
-    newC.diet_items = ["côn trùng", "nhện", "giun đất", "ốc sên", "nòng nọc (ấu trùng)"];
-    newC.activity_pattern = 'diurnal';
-    newC.lifespan_min = 3;
-    newC.lifespan_max = 5;
-    newC.lifespan_unit = 'years';
-    newC.reproduction_type = 'oviparous';
-    newC.reproduction_notes = 'Sinh sản vào đầu mùa xuân ngay sau khi tan băng. Con cái đẻ hàng nghìn quả trứng thành các khối lớn bám vào thực vật thủy sinh trong các vũng nước tạm thời không có cá (vernal pools). Nòng nọc nở sau 10-30 ngày và biến thái thành ếch con trong vòng 2-3 tháng.';
-    newC.locomotion = 'hybrid';
-    newC.speed_max = 5.0;
-    newC.conservation_status = 'LC';
-    newC.size_min_mm = 35.0;
-    newC.size_max_mm = 89.0;
-    newC.weight_avg_g = 15.0;
-
-    newC.characteristics = (c.characteristics || "") + " Tuyến da tiết chất nhầy giàu peptide kháng khuẩn mạnh giúp bảo vệ cơ thể khỏi nấm trong thời kỳ đông cứng.";
-    newC.survival_method = (c.survival_method || "") + " Tái chế urê tích tụ trong các mô cơ để đóng vai trò làm chất chống đông tự nhiên kết hợp với glucose từ gan.";
-    newC.unique_traits = (c.unique_traits || "") + " Khả năng chịu đông cứng sinh học hoàn chỉnh lên tới 70% lượng nước trong cơ thể biến thành tinh thể băng mà không gây tổn thương mô tế bào.";
-
-    newC.sources = [
-      ...(c.sources || []),
-      {
-        "url": "https://doi.org/10.1242/jeb.00626",
-        "label": "Journal of Experimental Biology - Urea accumulation and freeze tolerance in wood frogs"
-      }
-    ];
-
-    newC.fun_facts = [
-      ...(c.fun_facts || []),
-      "Trong thời kỳ ngủ đông, bộ não của ếch gỗ hoàn toàn không có hoạt động điện não đo được nhưng tế bào thần kinh vẫn được bảo toàn nguyên vẹn.",
-      "Chúng có thể chịu đựng được tình trạng đông cứng và rã đông liên tục nhiều lần trong một mùa đông mà không gặp biến chứng nào."
-    ];
-
-    newC.strengths = [
-      ...(c.strengths || []),
-      "Khả năng tái hấp thu nước tiểu tích tụ trong mô cơ để chuyển hóa thành urê bảo vệ đông tế bào vượt trội."
-    ];
-
-    newC.weaknesses = [
-      ...(c.weaknesses || []),
-      "Ếch con biến thái chịu hạn kém và dễ mất nước nhanh chóng trong môi trường khô cằn mùa hè."
-    ];
-
-  } else if (c.id === 'woodpecker') {
-    newC.diet_type = 'omnivore';
-    newC.diet_items = ["ấu trùng côn trùng", "bọ cánh cứng", "kiến", "hạt thông", "quả hạch", "nhựa cây"];
-    newC.activity_pattern = 'diurnal';
-    newC.lifespan_min = 5;
-    newC.lifespan_max = 11;
-    newC.lifespan_unit = 'years';
-    newC.reproduction_type = 'oviparous';
-    newC.reproduction_notes = 'Sinh sản từ tháng 4 đến tháng 6. Cả chim bố và mẹ cùng đục một hốc tổ sâu trên thân cây gỗ mục. Chim cái đẻ từ 4-7 quả trứng màu trắng. Trứng được cả bố và mẹ thay phiên nhau ấp trong khoảng 10-12 ngày. Chim non được nuôi dưỡng bằng côn trùng trong tổ khoảng 20-23 ngày trước khi tập bay.';
-    newC.locomotion = 'fly';
-    newC.speed_max = 40.0;
-    newC.conservation_status = 'LC';
-    newC.size_min_mm = 200.0;
-    newC.size_max_mm = 240.0;
-    newC.weight_avg_g = 85.0;
-
-    newC.characteristics = (c.characteristics || "") + " Bộ lông đuôi nhọn và cực kỳ cứng chịu lực nén cơ học cao khi tựa vào vỏ cây dốc đứng làm điểm đỡ lực khoan.";
-    newC.survival_method = (c.survival_method || "") + " Sử dụng kỹ thuật đè (anvil technique) để găm quả thông hoặc hạt dẻ vào kẽ cây rồi dùng mỏ đập vỡ vỏ lấy nhân.";
-    newC.unique_traits = (c.unique_traits || "") + " Sở hữu màng xương sọ xốp dạng bọt khí có khả năng hấp thụ chấn động cơ học giảm chấn cực hạn bảo vệ hệ thần kinh.";
-
-    newC.sources = [
-      ...(c.sources || []),
-      {
-        "url": "https://doi.org/10.1098/rsif.2013.1066",
-        "label": "Journal of The Royal Society Interface - Mechanical properties of woodpecker skull bones"
-      }
-    ];
-
-    newC.fun_facts = [
-      ...(c.fun_facts || []),
-      "Mỏ chim gõ kiến không đập vuông góc trực tiếp vào thớ gỗ mà luôn chệch một góc nhỏ vài độ để phân tán lực phản hồi dọc theo đường cơ xương lưỡi.",
-      "Chúng là kỹ sư sinh thái quan trọng khi các hốc tổ bỏ hoang của chúng trở thành nhà cho hàng chục loài chim và dơi nhỏ khác."
-    ];
-
-    newC.strengths = [
-      ...(c.strengths || []),
-      "Cơ chế bàn chân Zygodactyl bám cây cực chắc chắn trên vỏ cây dựng đứng tạo thế kiềng ba chân ổn định."
-    ];
-
-    newC.weaknesses = [
-      ...(c.weaknesses || []),
-      "Hành vi gõ đập tạo ra tiếng ồn rất lớn làm tăng nguy cơ bị phát hiện bởi các loài chim săn mồi ban ngày."
-    ];
-
-  } else if (c.id === 'african-bullfrog') {
-    newC.diet_type = 'carnivore';
-    newC.diet_items = ["chuột", "côn trùng", "ếch khác", "bò sát nhỏ", "chim nhỏ", "rắn độc nhỏ"];
-    newC.activity_pattern = 'variable';
-    newC.lifespan_min = 20;
-    newC.lifespan_max = 40;
-    newC.lifespan_unit = 'years';
-    newC.reproduction_type = 'oviparous';
-    newC.reproduction_notes = 'Sinh sản xảy ra sau những cơn mưa lớn đầu mùa mưa. Con đực đầu đàn kiểm soát các vùng nước nông và giao phối với nhiều con cái. Con cái đẻ từ 3.000 đến 4.000 quả trứng. Trứng nở cực nhanh trong 36 giờ. Ếch bố ở lại bảo vệ nòng nọc rất hung dữ và đào kênh dẫn nước để cứu đàn con nếu hồ bị cạn.';
-    newC.locomotion = 'hybrid';
-    newC.speed_max = 10.0;
-    newC.conservation_status = 'LC';
-    newC.size_min_mm = 120.0;
-    newC.size_max_mm = 245.0;
-    newC.weight_avg_g = 1000.0;
-
-    newC.characteristics = (c.characteristics || "") + " Da dày có cấu trúc tuyến tiết chất nhầy đặc biệt có thể khô lại hóa sừng tạo kén bảo vệ cơ thể.";
-    newC.survival_method = (c.survival_method || "") + " Tích tụ ure nồng độ cao trong các mô cơ giúp duy trì áp suất thẩm thấu khi ngủ hè sâu dưới lòng đất khô.";
-    newC.unique_traits = (c.unique_traits || "") + " Hàm dưới tiến hóa các mấu xương nhọn odontoids hoạt động giống răng thật mang lại lực cắn giữ và xé thịt cực mạnh.";
-
-    newC.sources = [
-      ...(c.sources || []),
-      {
-        "url": "https://doi.org/10.1016/j.cbpa.2007.12.008",
-        "label": "Comparative Biochemistry and Physiology - Water economy of aestivating Pyxicephalus adspersus"
-      }
-    ];
-
-    newC.fun_facts = [
-      ...(c.fun_facts || []),
-      "Trong thời gian ngủ hè dưới đất, da của ếch bò châu Phi tích tụ nhiều lớp da chết xếp tầng giảm tỷ lệ thoát hơi nước xuống gần bằng 0.",
-      "Lực cắn của ếch bò châu Phi trưởng thành có thể tạo ra lực ép hơn 30 Newton dễ dàng làm dập nát xương sọ con mồi."
-    ];
-
-    newC.strengths = [
-      ...(c.strengths || []),
-      "Mấu sừng sắc cứng ở gót chân sau hỗ trợ đào đất cực nhanh tạo hang trú ẩn sâu tránh nhiệt lượng."
-    ];
-
-    newC.weaknesses = [
-      ...(c.weaknesses || []),
-      "Nhịp tim và hô hấp cực thấp khi ngủ hè khiến chúng phản ứng thụ động và dễ bị tổn thương nếu hang bị đào bới."
-    ];
-
-  } else if (c.id === 'african-bush-elephant') {
-    newC.diet_type = 'herbivore';
-    newC.diet_items = ["cỏ", "lá cây", "vỏ cây", "rễ cây", "trái cây"];
-    newC.activity_pattern = 'variable';
-    newC.lifespan_min = 60;
-    newC.lifespan_max = 70;
-    newC.lifespan_unit = 'years';
-    newC.reproduction_type = 'viviparous';
-    newC.reproduction_notes = 'Thời gian mang thai dài nhất trong tất cả các động vật có vú trên cạn, khoảng 22 tháng. Con cái thường sinh một con non duy nhất (hiếm khi sinh đôi). Voi non có thể đứng và đi lại chỉ sau vài giờ sau khi sinh. Cả đàn (đặc biệt là các con voi cái) cùng chăm sóc voi non.';
-    newC.locomotion = 'walk';
-    newC.speed_max = 40.0;
-    newC.conservation_status = 'EN';
-    newC.size_min_mm = 3000.0;
-    newC.size_max_mm = 4000.0;
-    newC.weight_avg_g = 6000000.0;
-
-    newC.characteristics = (c.characteristics || "") + " Da nhăn nheo có khả năng giữ bùn đất và nước lâu gấp 5-10 lần bình thường giúp điều hòa nhiệt lượng và chống ký sinh trùng.";
-    newC.survival_method = (c.survival_method || "") + " Tổ chức xã hội mẫu hệ chặt chẽ truyền đạt tri thức sinh tồn định vị nguồn nước ngầm qua các thời kỳ hạn hán lịch sử.";
-    newC.unique_traits = (c.unique_traits || "") + " Hệ thống thụ cảm nhạy cảm ở lòng bàn chân có thể cảm nhận các rung động chấn địa hạ âm tần số dưới 20Hz lan truyền xa tới 10 km.";
-
-    newC.sources = [
-      ...(c.sources || []),
-      {
-        "url": "https://doi.org/10.1111/jzo.12480",
-        "label": "Journal of Zoology - Reproductive endocrinology of wild African elephants"
-      }
-    ];
-
-    newC.fun_facts = [
-      ...(c.fun_facts || []),
-      "Voi rừng châu Phi cái có khả năng trì hoãn chu kỳ rụng trứng tạm thời khi điều kiện khí hậu savan quá khắc nghiệt.",
-      "Chúng có thể phân biệt giọng nói của các nhóm người khác nhau để đánh giá mức độ đe dọa của thợ săn đối với đàn."
-    ];
-
-    newC.strengths = [
-      ...(c.strengths || []),
-      "Chiếc vòi voi chứa hơn 40.000 bó cơ hoạt động cực kỳ linh hoạt vừa tạo lực nâng tới 300kg vừa thao tác nhặt được hạt cỏ nhỏ."
-    ];
-
-    newC.weaknesses = [
-      ...(c.weaknesses || []),
-      "Tỷ lệ tiêu hóa xơ thấp (khoảng 40%) buộc chúng phải dành tới 16-18 tiếng mỗi ngày để ăn nạp năng lượng."
-    ];
-
-  } else if (c.id === 'african-crested-rat') {
-    newC.diet_type = 'herbivore';
-    newC.diet_items = ["lá cây", "rễ cây", "vỏ cây (đặc biệt là Acokanthera schimperi)", "trái cây"];
+    newC.diet_items = ["cá nhỏ", "cua nhỏ", "giun biển", "giáp xác nhỏ"];
     newC.activity_pattern = 'nocturnal';
-    newC.lifespan_min = 3;
-    newC.lifespan_max = 8;
+    newC.lifespan_min = 1;
+    newC.lifespan_max = 3;
     newC.lifespan_unit = 'years';
-    newC.reproduction_type = 'viviparous';
-    newC.reproduction_notes = 'Sinh sản hữu tính, đẻ con (thường từ 1-3 con non mỗi lứa). Con non sinh ra đã có lông phát triển và nhanh chóng học tập hành vi nhai cây độc Acokanthera bôi lên lông sườn từ chuột mẹ để tự tự vệ.';
-    newC.locomotion = 'walk';
-    newC.speed_max = 15.0;
+    newC.reproduction_type = 'oviparous';
+    newC.reproduction_notes = 'Sinh sản hữu tính. Tôm súng thường sống theo cặp một vợ một chồng suốt đời. Con cái đẻ hàng trăm trứng và mang chúng dưới bụng cho đến khi nở thành ấu trùng bơi tự do.';
+    newC.locomotion = 'hybrid';
+    newC.speed_max = 1.5;
     newC.conservation_status = 'LC';
-    newC.size_min_mm = 250.0;
-    newC.size_max_mm = 360.0;
-    newC.weight_avg_g = 750.0;
+    newC.size_min_mm = 30.0;
+    newC.size_max_mm = 50.0;
+    newC.weight_avg_g = 25.0;
 
-    newC.characteristics = (c.characteristics || "") + " Tuyến lông sườn xốp rỗng đặc trưng có liên kết hóa học bền vững hấp thụ và lưu trữ lâu dài độc tố ouabain.";
-    newC.survival_method = (c.survival_method || "") + " Nhai vỏ cây Acokanthera chứa glycoside trợ tim cực độc bôi lên lớp lông sườn xốp xù để đầu độc kẻ thù ngoạm phải.";
-    newC.unique_traits = (c.unique_traits || "") + " Kháng độc tố ouabain tự nhiên vượt trội gấp 1000 lần loài gặm nhấm khác nhờ thụ thể tim mạch Na+/K+-ATPase biến đổi đặc hiệu.";
+    newC.characteristics = (c.characteristics || "") + " Càng lớn của tôm súng có một pittông khớp ăn khớp hoàn hảo với một ổ lõm, khi kẹp lại sẽ ép một tia nước bắn ra ở vận tốc lên tới 30 m/s.";
+    newC.survival_method = (c.survival_method || "") + " Khớp càng lớn có hệ cơ bắp đối nghịch cực mạnh, một cơ khép khổng lồ để tích năng lượng và cơ mở để giữ chốt cơ học.";
+    newC.unique_traits = (c.unique_traits || "") + " Khả năng tạo ra hiện tượng phát quang do âm thanh (sonoluminescence) cực kỳ hiếm gặp ở động vật, giải phóng photon ánh sáng khi bong bóng sụp đổ.";
 
     newC.sources = [
       ...(c.sources || []),
       {
-        "url": "https://doi.org/10.1111/jzo.12001",
-        "label": "Journal of Zoology - Morphology of the specialized skin and hair of Lophiomys imhausi"
+        "url": "https://doi.org/10.1121/1.428616",
+        "label": "Journal of the Acoustical Society of America - Underwater sound of snapping shrimp"
       }
     ];
 
     newC.fun_facts = [
       ...(c.fun_facts || []),
-      "Mặc dù có độc hại và gai góc, chuột mào châu Phi lại sống một vợ một chồng rất chung thủy và phát ra tiếng kêu rù rù êm ái khi giao tiếp giống mèo.",
-      "Lớp da ở sườn dưới tuyến lông độc dính sát và dày hơn da lưng bình thường để chịu chấn thương đòn cắn từ kẻ săn mồi."
+      "Tiếng nổ kẹp càng của tôm súng có thể át cả tiếng ồn xung quanh của đại dương, đóng vai trò như một tấm khiên âm thanh che mắt các thiết bị định vị dưới nước."
     ];
 
     newC.strengths = [
       ...(c.strengths || []),
-      "Cơ chế cấu trúc lông bọc xốp ngăn không cho chất độc ouabain tẩm bên ngoài thấm ngược vào cơ thể chuột."
+      "Cơ chế giải phóng năng lượng đàn hồi của protein resilin ở khớp càng giúp tạo ra gia tốc đòn đánh cực đại không phụ thuộc vào tốc độ co cơ thông thường."
     ];
 
     newC.weaknesses = [
       ...(c.weaknesses || []),
-      "Phụ thuộc sinh cảnh tuyệt đối vào sự hiện diện của loài cây chứa độc chất Acokanthera để bổ sung vũ khí hóa học tự vệ."
+      "Quá trình thay càng súng khi bị đứt đòi hỏi năng lượng rất lớn và đảo ngược vị trí càng súng (càng súng chuyển sang càng nhỏ cũ), khiến chúng dễ bị tổn thương trong quá trình chuyển đổi sinh học."
+    ];
+
+  } else if (c.id === 'planarian-flatworm') {
+    newC.diet_type = 'carnivore';
+    newC.diet_items = ["giun nước", "giáp xác nhỏ", "ấu trùng côn trùng", "ốc sên nhỏ", "xác hữu cơ"];
+    newC.activity_pattern = 'nocturnal';
+    newC.lifespan_min = 1;
+    newC.lifespan_max = 3;
+    newC.lifespan_unit = 'years';
+    newC.reproduction_type = 'hermaphrodite';
+    newC.reproduction_notes = 'Sinh sản lưỡng tính chéo nhau ở dòng hữu tính bằng cách đẻ kén trứng chứa nhiều phôi. Ở dòng vô tính, chúng tự phân tách (fission) ở giữa thân rồi mỗi nửa tự tái tạo phần còn thiếu.';
+    newC.locomotion = 'crawl';
+    newC.speed_max = 0.05;
+    newC.conservation_status = 'LC';
+    newC.size_min_mm = 10.0;
+    newC.size_max_mm = 20.0;
+    newC.weight_avg_g = 0.03;
+
+    newC.characteristics = (c.characteristics || "") + " Hệ thống biểu bì có các lông rung (cilia) nhỏ li ti phủ dưới bụng phối hợp co bóp nhịp nhàng để lướt êm ái trên lớp chất nhầy tự tiết.";
+    newC.survival_method = (c.survival_method || "") + " Tiết ra lớp chất nhầy bảo vệ có chứa các hợp chất hóa học xua đuổi các loài cá săn mồi do mùi vị khó chịu.";
+    newC.unique_traits = (c.unique_traits || "") + " Sự tồn tại của dòng tế bào gốc neoblast đa năng có khả năng biệt hóa thành tất cả các dòng tế bào soma bao gồm cả tế bào thần kinh và cơ.";
+
+    newC.sources = [
+      ...(c.sources || []),
+      {
+        "url": "https://doi.org/10.1002/wdev.258",
+        "label": "WIREs Developmental Biology - Planarian regeneration and stem cells"
+      }
+    ];
+
+    newC.fun_facts = [
+      ...(c.fun_facts || []),
+      "Khi bị cắt nhỏ, sán kế hoạch tự tổ chức lại hệ trục trước-sau và lưng-bụng của chúng bằng cách phát tín hiệu qua con đường Wnt/Beta-catenin trước khi phân chia tế bào gốc để mọc cơ quan mới."
+    ];
+
+    newC.strengths = [
+      ...(c.strengths || []),
+      "Hệ gene không chứa gen lão hóa telomere điển hình, cho phép duy trì chiều dài telomere không đổi sau vô số lần phân chia tế bào gốc neoblast."
+    ];
+
+    newC.weaknesses = [
+      ...(c.weaknesses || []),
+      "Rất nhạy cảm với các ion kim loại nặng và hóa chất nông nghiệp trong nước, khiến chúng dễ bị biến dạng hoặc chết tế bào gốc hàng loạt."
+    ];
+
+  } else if (c.id === 'platypus') {
+    newC.diet_type = 'carnivore';
+    newC.diet_items = ["ấu trùng côn trùng", "tôm nước ngọt", "giun", "nòng nọc", "ốc sên nhỏ"];
+    newC.activity_pattern = 'crepuscular';
+    newC.lifespan_min = 10;
+    newC.lifespan_max = 17;
+    newC.lifespan_unit = 'years';
+    newC.reproduction_type = 'oviparous';
+    newC.reproduction_notes = 'Sinh sản bằng cách đẻ trứng. Sau khi giao phối dưới nước, con cái đào hang sâu ấm áp và đẻ từ 1-3 quả trứng nhỏ vỏ dẻo dai. Trứng được ấp sát bụng mẹ trong 10 ngày. Con non sau khi nở tự liếm sữa tiết qua tuyến sữa ở lỗ chân lông da bụng mẹ.';
+    newC.locomotion = 'hybrid';
+    newC.speed_max = 4.0;
+    newC.conservation_status = 'NT';
+    newC.size_min_mm = 400.0;
+    newC.size_max_mm = 500.0;
+    newC.weight_avg_g = 1500.0;
+
+    newC.characteristics = (c.characteristics || "") + " Mỏ của chúng không có xương cứng bao bọc mà là một lớp da dẻo chứa hơn 40.000 thụ thể cơ học và 80.000 thụ thể điện trường sắp xếp theo các hàng dọc song song.";
+    newC.survival_method = (c.survival_method || "") + " Lớp da sừng ở lòng bàn chân có màng bơi rộng kéo dài quá các ngón chân khi bơi, và có thể gập ngược lại phía sau khi cần đào hang bằng móng vuốt cứng.";
+    newC.unique_traits = (c.unique_traits || "") + " Bộ lông dày bất thường giữ lại một lớp không khí mỏng sát da tạo lực nổi tự nhiên khi bơi và cách nhiệt tuyệt đối chống lạnh.";
+
+    newC.sources = [
+      ...(c.sources || []),
+      {
+        "url": "https://doi.org/10.1098/rstb.1998.0262",
+        "label": "Philosophical Transactions of the Royal Society B - Electroreception in the platypus"
+      }
+    ];
+
+    newC.fun_facts = [
+      ...(c.fun_facts || []),
+      "Chất độc của thú mỏ vịt đực chứa hơn 80 loại độc tố khác nhau, thuộc các nhóm cấu trúc defensin-like peptide (DLPs), C-type natriuretic peptides (CNPs), và nerve growth factor (NGFs)."
+    ];
+
+    newC.strengths = [
+      ...(c.strengths || []),
+      "Cơ chế bơi phối hợp nhịp nhàng giữa hai chân trước làm mái chèo tạo lực đẩy chính, trong khi hai chân sau và đuôi dẹt làm nhiệm vụ cân bằng và điều hướng hoàn hảo."
+    ];
+
+    newC.weaknesses = [
+      ...(c.weaknesses || []),
+      "Tuyến độc đùi của con đực chỉ sản sinh độc lực mạnh trong mùa giao phối (xuân), hạn chế khả năng tự vệ bằng chất độc vào các thời điểm khác trong năm."
+    ];
+
+  } else if (c.id === 'polar-bear') {
+    newC.diet_type = 'carnivore';
+    newC.diet_items = ["hải cẩu có vòng", "hải cẩu râu", "moóc con", "cá voi beluga", "xác động vật biển"];
+    newC.activity_pattern = 'variable';
+    newC.lifespan_min = 15;
+    newC.lifespan_max = 30;
+    newC.lifespan_unit = 'years';
+    newC.reproduction_type = 'viviparous';
+    newC.reproduction_notes = 'Sinh sản bằng cách đẻ con. Gấu cái giao phối vào mùa xuân, sau đó đi đào hang tuyết trú ẩn vào mùa thu. Phôi thai chỉ bắt đầu phát triển khi gấu mẹ ngủ đông. Sinh từ 1-3 con non nhỏ bé (khoảng 600g) vào giữa mùa đông. Gấu con bú sữa cực giàu béo (30%) của mẹ trong hang cho tới mùa xuân ấm áp.';
+    newC.locomotion = 'hybrid';
+    newC.speed_max = 40.0;
+    newC.conservation_status = 'VU';
+    newC.size_min_mm = 2400.0;
+    newC.size_max_mm = 3000.0;
+    newC.weight_avg_g = 525000.0;
+
+    newC.characteristics = (c.characteristics || "") + " Lớp mỡ dưới da gấu Bắc Cực dày tới 10 cm, không chỉ cung cấp lớp cách nhiệt vượt trội mà còn đóng vai trò dự trữ năng lượng khổng lồ cho mùa hè đói kém.";
+    newC.survival_method = (c.survival_method || "") + " Sở hữu đôi tai và đuôi rất nhỏ, giúp giảm thiểu tối đa diện tích tiếp xúc tỏa nhiệt ra môi trường không khí lạnh giá của Bắc Cực.";
+    newC.unique_traits = (c.unique_traits || "") + " Thể hiện sự chọn lọc tự nhiên mạnh mẽ trên gen APOB chịu trách nhiệm vận chuyển lipid huyết thanh, giúp loại bỏ LDL-cholesterol có hại ra khỏi máu một cách thần kỳ.";
+
+    newC.sources = [
+      ...(c.sources || []),
+      {
+        "url": "https://doi.org/10.1016/j.cell.2014.03.054",
+        "label": "Cell - Polar bear genomes reveal rapid adaptation to high-fat diet"
+      }
+    ];
+
+    newC.fun_facts = [
+      ...(c.fun_facts || []),
+      "Gấu Bắc Cực có thể đánh hơi thấy lỗ thở của hải cẩu nằm sâu dưới lớp tuyết dày hơn 1 mét từ khoảng cách xa hàng kilômét nhờ hệ thống xoang mũi cực rộng."
+    ];
+
+    newC.strengths = [
+      ...(c.strengths || []),
+      "Lông rỗng của chúng hoạt động như những ống dẫn sợi quang tự nhiên, thu thập tia bức xạ cực tím của mặt trời hướng thẳng vào lớp da đen cách nhiệt bên dưới."
+    ];
+
+    newC.weaknesses = [
+      ...(c.weaknesses || []),
+      "Cơ thể của chúng cách nhiệt hoàn hảo đến mức nếu gấu chạy quá nhanh trong thời gian ngắn trên cạn, nó sẽ nhanh chóng rơi vào tình trạng sốc nhiệt nguy cấp."
+    ];
+
+  } else if (c.id === 'pom-pom-crab') {
+    newC.diet_type = 'omnivore';
+    newC.diet_items = ["tảo biển", "mảnh vụn hữu cơ", "động vật thân mềm tí hon", "thức ăn thừa của hải quỳ"];
+    newC.activity_pattern = 'nocturnal';
+    newC.lifespan_min = 1;
+    newC.lifespan_max = 3;
+    newC.lifespan_unit = 'years';
+    newC.reproduction_type = 'oviparous';
+    newC.reproduction_notes = 'Sinh sản bằng cách đẻ trứng. Cua cái thụ tinh mang theo bọc trứng lớn màu cam tươi dưới bụng để bảo vệ cho đến khi trứng chuyển sang màu sẫm và nở thành ấu trùng zoea bơi tự do trôi nổi theo dòng nước.';
+    newC.locomotion = 'crawl';
+    newC.speed_max = 0.5;
+    newC.conservation_status = 'LC';
+    newC.size_min_mm = 15.0;
+    newC.size_max_mm = 25.0;
+    newC.weight_avg_g = 7.5;
+
+    newC.characteristics = (c.characteristics || "") + " Càng của cua đấm bốc có cấu trúc ngạnh gai mảnh và nhọn hướng ngược lại, đóng vai trò như những chiếc ghim kẹp chuyên dụng khóa chặt thân hải quỳ Triactis producta mà không làm nát mô của chúng.";
+    newC.survival_method = (c.survival_method || "") + " Cua đấm bốc điều khiển dinh dưỡng của hải quỳ bằng cách cướp trực tiếp thức ăn từ xúc tu hải quỳ, giữ hải quỳ ở kích thước nhỏ dễ cầm nắm.";
+    newC.unique_traits = (c.unique_traits || "") + " Hành vi xé đôi hải quỳ vô cùng điêu luyện, khi cua bị mất một hải quỳ, nó sẽ kéo dãn chiếc còn lại và dùng chân xé đôi thân hải quỳ ra để tái tạo thành hai cá thể độc lập bám vào hai càng.";
+
+    newC.sources = [
+      ...(c.sources || []),
+      {
+        "url": "https://doi.org/10.7717/peerj.2910",
+        "label": "PeerJ - Asexual reproduction of sea anemones induced by boxer crabs"
+      }
+    ];
+
+    newC.fun_facts = [
+      ...(c.fun_facts || []),
+      "Cua đấm bốc hiếm khi sử dụng càng của mình cho mục đích ăn uống hay đào bới thông thường; các hoạt động này hoàn toàn do cặp chân ngực thứ nhất đảm nhiệm."
+    ];
+
+    newC.strengths = [
+      ...(c.strengths || []),
+      "Khả năng ngụy trang vật lý vượt trội nhờ cơ cấu mai lốm đốm hoa văn màu đỏ gạch và hồng nhạt tương thích tuyệt đối với các mảnh san hô vỡ đáy biển nông."
+    ];
+
+    newC.weaknesses = [
+      ...(c.weaknesses || []),
+      "Nếu bị tước mất cả hai chiếc găng tay hải quỳ, cua đấm bốc sẽ rơi vào trạng thái hoảng loạn và trốn sâu dưới các khe đá hẹp do cơ thể mỏng manh không có khả năng chống trả cơ học."
     ];
   }
 
