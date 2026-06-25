@@ -294,24 +294,12 @@ Nếu user muốn kiểm tra AI có thực sự dùng codegraph:
 
 ---
 
-## 🤖 Data Enrichment Automation (Quy trình Làm giàu Data)
+## 🤖 Data Enrichment Automation (Tự động hóa dữ liệu)
 
-Hệ thống hỗ trợ 2 tác vụ tự động hóa được mô tả chi tiết tại [AUTOMATION.md](file:///Users/hoangkien/Youtube/svh/docs/AUTOMATION.md):
+Khi nhận được các câu lệnh sau, AI bắt buộc phải đọc hướng dẫn chi tiết tại [AUTOMATION.md](file:///Users/hoangkien/Youtube/svh/docs/AUTOMATION.md) trước khi thực hiện để đảm bảo đúng quy trình, định dạng dữ liệu và đúng schema:
+- Lệnh `"Thêm sinh vật mới"`: Tự động nghiên cứu và thêm 3 sinh vật mới.
+- Lệnh `"Làm giàu data"`: Tự động nâng cấp sâu thông tin khoa học cho 5 sinh vật.
+- Lệnh `"Chấm điểm P4P"`: Tự động hiệu chuẩn P4P và cập nhật xếp hạng cho 5 sinh vật.
+- Lệnh `"Làm giàu What-If"`: Tự động tạo kịch bản câu hỏi/câu trả lời giả thuyết cho 3 sinh vật.
 
-1. **Thêm sinh vật mới (Tạo mới - 3 sinh vật)**:
-   - Kích hoạt bằng prompt: `"Thêm sinh vật mới"`
-   - Quy trình: Check DB tránh trùng → Tìm 3 loài mới có đặc điểm tiến hóa cực kỳ mạnh mẽ/kỳ lạ (như bọ ngựa siêu phản xạ "võ sĩ tự nhiên", gấu nước siêu trâu bò, giáp kitin dày, sinh sản độc đáo, dơi sonar, ngài tơ chắc, châu chấu chân khỏe; một sinh vật có thể có nhiều điểm mạnh cùng lúc) → Nghiên cứu dữ liệu sâu → Tạo `src/scripts/temp-creatures.json` (mảng chứa 3 con) → Chạy nạp vào database lần lượt → Xóa file tạm.
-
-2. **Làm giàu data (Nâng cấp - 5 sinh vật ít được làm giàu nhất)**:
-   - Kích hoạt bằng prompt: `"Làm giàu data"`
-   - Quy trình: Chạy `node src/scripts/get-enrichment-targets.js` → Lấy 5 con có `enrichment_count` thấp nhất → Nghiên cứu sâu tập trung khai thác toàn bộ điểm mạnh/vũ khí/traits độc đáo (một sinh vật có thể có nhiều điểm mạnh khác nhau) → Tăng `enrichment_count` thêm 1 → Tạo `src/scripts/temp-enrich.json` → Chạy `node src/scripts/update-enrichment.js src/scripts/temp-enrich.json` → Xóa file tạm.
-
-3. **Làm giàu What-If (Kịch bản giả thuyết - 3 sinh vật)**:
-   - Kích hoạt bằng prompt: `"Làm giàu What-If"`
-   - Quy trình: Gọi API `GET /api/admin/what-if/targets` → Lấy 3 sinh vật có điểm P4P cao nhất và ít câu hỏi nhất kèm thông tin hiện tại → Nghiên cứu sâu kịch bản phóng to cơ thể (ví dụ phóng to bằng con người 80kg) → Tạo 1 câu hỏi và ít nhất 2 câu trả lời (`classic_scaling` và `biological_reality`) chứa số liệu tính toán cơ học và công thức vật lý cụ thể lưu trong `formulas_and_data` → Tạo `src/scripts/temp-what-if.json` → Chạy `node src/scripts/update-what-if.js src/scripts/temp-what-if.json` → Xóa file tạm.
-
-*Lưu ý:* Cột `enrichment_count` phải được khởi tạo trong database bằng câu lệnh:
-```sql
-ALTER TABLE creatures ADD COLUMN enrichment_count INTEGER DEFAULT 0 NOT NULL;
-```
 
