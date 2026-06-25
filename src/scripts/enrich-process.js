@@ -16,179 +16,224 @@ const enriched = targets.map(c => {
   const newC = { ...c };
   newC.enrichment_count = (c.enrichment_count || 0) + 1;
 
-  if (c.id === 'naked-mole-rat') {
-    newC.diet_type = 'herbivore';
-    newC.diet_items = ["củ cây dưới đất", "rễ cây", "thân hành", "mô thực vật ngầm"];
-    newC.activity_pattern = 'variable';
-    newC.lifespan_min = 10;
-    newC.lifespan_max = 31;
+  if (c.id === 'wood-frog') {
+    newC.diet_type = 'carnivore';
+    newC.diet_items = ["côn trùng", "nhện", "giun đất", "ốc sên", "nòng nọc (ấu trùng)"];
+    newC.activity_pattern = 'diurnal';
+    newC.lifespan_min = 3;
+    newC.lifespan_max = 5;
     newC.lifespan_unit = 'years';
-    newC.reproduction_type = 'sexual';
-    newC.reproduction_notes = 'Sinh sản hữu tính có tính xã hội cao (eusocial). Chỉ một con chuột chúa (queen) phối giống với 1-3 con đực được chọn trong đàn. Chuột chúa có thể đẻ tới 4-5 lứa mỗi năm, mỗi lứa từ 11 đến 28 con non, thời gian mang thai khoảng 66-77 ngày.';
-    newC.locomotion = 'burrow';
-    newC.speed_max = 2.0;
+    newC.reproduction_type = 'oviparous';
+    newC.reproduction_notes = 'Sinh sản vào đầu mùa xuân ngay sau khi tan băng. Con cái đẻ hàng nghìn quả trứng thành các khối lớn bám vào thực vật thủy sinh trong các vũng nước tạm thời không có cá (vernal pools). Nòng nọc nở sau 10-30 ngày và biến thái thành ếch con trong vòng 2-3 tháng.';
+    newC.locomotion = 'hybrid';
+    newC.speed_max = 5.0;
     newC.conservation_status = 'LC';
-    newC.size_min_mm = 80.0;
-    newC.size_max_mm = 100.0;
-    newC.weight_avg_g = 35.0;
+    newC.size_min_mm = 35.0;
+    newC.size_max_mm = 89.0;
+    newC.weight_avg_g = 15.0;
 
-    newC.characteristics = (c.characteristics || "") + " Hệ thống cơ xương hàm phát triển cực thịnh với các sợi cơ sọc chéo tối ưu hóa lực mô-men xoắn khi đào đất sét nén.";
-    newC.survival_method = (c.survival_method || "") + " Nhịp thở thích ứng sâu giúp chúng chịu được nồng độ carbon dioxide lên tới 10% mà không bị toan hóa máu.";
-    newC.unique_traits = (c.unique_traits || "") + " Cấu trúc ribosome đặc biệt có RNA ribosom 28S bị cắt đôi giúp tăng độ chính xác của quá trình dịch mã protein.";
+    newC.characteristics = (c.characteristics || "") + " Tuyến da tiết chất nhầy giàu peptide kháng khuẩn mạnh giúp bảo vệ cơ thể khỏi nấm trong thời kỳ đông cứng.";
+    newC.survival_method = (c.survival_method || "") + " Tái chế urê tích tụ trong các mô cơ để đóng vai trò làm chất chống đông tự nhiên kết hợp với glucose từ gan.";
+    newC.unique_traits = (c.unique_traits || "") + " Khả năng chịu đông cứng sinh học hoàn chỉnh lên tới 70% lượng nước trong cơ thể biến thành tinh thể băng mà không gây tổn thương mô tế bào.";
 
     newC.sources = [
       ...(c.sources || []),
       {
-        "url": "https://doi.org/10.1016/j.cell.2020.03.025",
-        "label": "Cell - Ribosome Profiling and Translation Accuracy in Naked Mole-Rats"
+        "url": "https://doi.org/10.1242/jeb.00626",
+        "label": "Journal of Experimental Biology - Urea accumulation and freeze tolerance in wood frogs"
       }
     ];
 
     newC.fun_facts = [
       ...(c.fun_facts || []),
-      "Chuột chũi trần trụi có thể di chuyển lùi nhanh bằng đi tiến nhờ hệ thống lông xúc giác phân bố đều quanh thân."
+      "Trong thời kỳ ngủ đông, bộ não của ếch gỗ hoàn toàn không có hoạt động điện não đo được nhưng tế bào thần kinh vẫn được bảo toàn nguyên vẹn.",
+      "Chúng có thể chịu đựng được tình trạng đông cứng và rã đông liên tục nhiều lần trong một mùa đông mà không gặp biến chứng nào."
     ];
 
     newC.strengths = [
       ...(c.strengths || []),
-      "Ribosome có cấu trúc đột phá dịch mã cực chuẩn giảm protein lỗi tích lũy"
+      "Khả năng tái hấp thu nước tiểu tích tụ trong mô cơ để chuyển hóa thành urê bảo vệ đông tế bào vượt trội."
     ];
 
     newC.weaknesses = [
       ...(c.weaknesses || []),
-      "Hoàn toàn mất khả năng run rẩy tạo nhiệt khi nhiệt độ phòng tụt dốc"
+      "Ếch con biến thái chịu hạn kém và dễ mất nước nhanh chóng trong môi trường khô cằn mùa hè."
     ];
 
-  } else if (c.id === 'namib-desert-beetle') {
-    newC.diet_type = 'detritivore';
-    newC.diet_items = ["chất hữu cơ mục nát", "mảnh vụn thực vật", "xác côn trùng nhỏ thổi trong cát"];
+  } else if (c.id === 'woodpecker') {
+    newC.diet_type = 'omnivore';
+    newC.diet_items = ["ấu trùng côn trùng", "bọ cánh cứng", "kiến", "hạt thông", "quả hạch", "nhựa cây"];
     newC.activity_pattern = 'diurnal';
-    newC.lifespan_min = 1;
-    newC.lifespan_max = 2;
-    newC.lifespan_unit = 'years';
-    newC.reproduction_type = 'sexual';
-    newC.reproduction_notes = 'Sinh sản hữu tính. Sau khi thụ tinh, con cái đào các rãnh nông dưới lớp cát mát hơn để đẻ trứng. Ấu trùng trải qua nhiều giai đoạn lột xác dưới lòng cát ẩm trước khi hóa nhộng.';
-    newC.locomotion = 'walk';
-    newC.speed_max = 3.6;
-    newC.conservation_status = 'LC';
-    newC.size_min_mm = 10.0;
-    newC.size_max_mm = 20.0;
-    newC.weight_avg_g = 0.1;
-
-    newC.characteristics = (c.characteristics || "") + " Bề mặt các nốt sần không có sáp, cho phép nước đọng bám dính nhanh chóng khi sương mù đi qua.";
-    newC.survival_method = (c.survival_method || "") + " Góc nghiêng 45 độ được điều chỉnh tối ưu theo hướng gió để tạo ra lực cản khí động học tối thiểu.";
-    newC.unique_traits = (c.unique_traits || "") + " Lớp biểu bì sáp kỵ nước chứa các este axit béo chuỗi dài giúp ngăn chặn triệt để sự thất thoát nước qua hô hấp ngoài vỏ.";
-
-    newC.sources = [
-      ...(c.sources || []),
-      {
-        "url": "https://doi.org/10.1103/PhysRevE.77.061915",
-        "label": "Physical Review E - Fog harvesting mechanisms on beetle-inspired surfaces"
-      }
-    ];
-
-    newC.fun_facts = [
-      ...(c.fun_facts || []),
-      "Chúng có thể phát hiện các luồng khí ẩm từ Đại Tây Dương từ khoảng cách nhiều km nhờ các thụ thể độ ẩm trên râu."
-    ];
-
-  } else if (c.id === 'narwhal') {
-    newC.diet_type = 'carnivore';
-    newC.diet_items = ["cá tuyết Bắc Cực", "cá bơn Greenland", "mực ống", "tôm biển sâu"];
-    newC.activity_pattern = 'variable';
-    newC.lifespan_min = 30;
-    newC.lifespan_max = 50;
-    newC.lifespan_unit = 'years';
-    newC.reproduction_type = 'viviparous';
-    newC.reproduction_notes = 'Sinh sản hữu tính, đẻ con (viviparous). Thời gian mang thai kéo dài 14-15 tháng. Mỗi lứa đẻ một con non duy nhất. Kỳ lân biển con có màu xám xanh đậm và được mẹ bảo vệ nghiêm ngặt dọc theo các rìa băng.';
-    newC.locomotion = 'swim';
-    newC.speed_max = 20.0;
-    newC.conservation_status = 'LC';
-    newC.size_min_mm = 3950.0;
-    newC.size_max_mm = 5500.0;
-    newC.weight_avg_g = 1200000.0;
-
-    newC.characteristics = (c.characteristics || "") + " Hệ thống mạch máu ở tủy răng nối thẳng tới hệ tuần hoàn chính giúp cảm nhận biến thiên nhiệt độ nước tức thời.";
-    newC.survival_method = (c.survival_method || "") + " Nhịp tim của chúng giảm xuống chỉ còn 10-20 nhịp/phút khi thực hiện lặn sâu vượt quá 1000m.";
-    newC.unique_traits = (c.unique_traits || "") + " Khả năng định vị tiếng click của chúng có chùm tia định hướng hẹp nhất trong số tất cả các loài cá voi có răng.";
-
-    newC.sources = [
-      ...(c.sources || []),
-      {
-        "url": "https://doi.org/10.1371/journal.pone.0110321",
-        "label": "PLOS ONE - Extreme diving behavior and physiological responses of Monodon monoceros"
-      }
-    ];
-
-    newC.fun_facts = [
-      ...(c.fun_facts || []),
-      "Chiếc ngà của kỳ lân biển thực chất mọc lệch về bên trái, xoắn theo chiều ngược kim đồng hồ."
-    ];
-
-  } else if (c.id === 'ocean-sunfish') {
-    newC.diet_type = 'carnivore';
-    newC.diet_items = ["sứa", "salps", "sứa lược", "cá con", "ấu trùng giáp xác"];
-    newC.activity_pattern = 'variable';
-    newC.lifespan_min = 10;
-    newC.lifespan_max = 23;
+    newC.lifespan_min = 5;
+    newC.lifespan_max = 11;
     newC.lifespan_unit = 'years';
     newC.reproduction_type = 'oviparous';
-    newC.reproduction_notes = 'Sinh sản hữu tính thụ tinh ngoài. Lớp trứng trôi nổi tự do trong nước biển ấm. Cá bột mới nở có những chiếc gai dài bảo vệ cơ thể giống như cá nóc gai.';
-    newC.locomotion = 'swim';
-    newC.speed_max = 3.2;
-    newC.conservation_status = 'VU';
-    newC.size_min_mm = 1800.0;
-    newC.size_max_mm = 3300.0;
-    newC.weight_avg_g = 1500000.0;
-
-    newC.characteristics = (c.characteristics || "") + " Cấu trúc clavus được nâng đỡ bởi các tia vây biến tính tự do, tạo ra khả năng bẻ lái cơ động khi đối mặt với dòng chảy lớn.";
-    newC.survival_method = (c.survival_method || "") + " Quá trình phơi nắng cũng giúp chúng tăng tốc độ tiêu hóa lượng sứa khổng lồ trong dạ dày nhờ nhiệt độ ấm.";
-    newC.unique_traits = (c.unique_traits || "") + " Sự tăng trưởng kích thước từ lúc nở đến khi trưởng thành của cá mặt trăng đạt mức 60 triệu lần.";
-
-    newC.sources = [
-      ...(c.sources || []),
-      {
-        "url": "https://doi.org/10.1093/icesjms/fsu191",
-        "label": "ICES Journal of Marine Science - Mola mola movement patterns and thermal niche"
-      }
-    ];
-
-    newC.fun_facts = [
-      ...(c.fun_facts || []),
-      "Mặc dù có cơ thể khổng lồ, chúng chỉ có một bộ não rất nhỏ, nặng chưa đến 6 gram."
-    ];
-
-  } else if (c.id === 'ogre-faced-spider') {
-    newC.diet_type = 'carnivore';
-    newC.diet_items = ["dế", "kiến", "bướm đêm", "bọ cánh cứng nhỏ", "muỗi"];
-    newC.activity_pattern = 'nocturnal';
-    newC.lifespan_min = 1;
-    newC.lifespan_max = 2;
-    newC.lifespan_unit = 'years';
-    newC.reproduction_type = 'sexual';
-    newC.reproduction_notes = 'Sinh sản hữu tính. Sau giao phối, con cái dệt kén tơ chứa khoảng 100-200 trứng, bọc kín bằng một lớp tơ màu nâu ngụy trang giống như đất hoặc hạt cây khô trên các tán lá mục.';
-    newC.locomotion = 'crawl';
-    newC.speed_max = 1.5;
+    newC.reproduction_notes = 'Sinh sản từ tháng 4 đến tháng 6. Cả chim bố và mẹ cùng đục một hốc tổ sâu trên thân cây gỗ mục. Chim cái đẻ từ 4-7 quả trứng màu trắng. Trứng được cả bố và mẹ thay phiên nhau ấp trong khoảng 10-12 ngày. Chim non được nuôi dưỡng bằng côn trùng trong tổ khoảng 20-23 ngày trước khi tập bay.';
+    newC.locomotion = 'fly';
+    newC.speed_max = 40.0;
     newC.conservation_status = 'LC';
-    newC.size_min_mm = 20.0;
-    newC.size_max_mm = 30.0;
-    newC.weight_avg_g = 2.0;
+    newC.size_min_mm = 200.0;
+    newC.size_max_mm = 240.0;
+    newC.weight_avg_g = 85.0;
 
-    newC.characteristics = (c.characteristics || "") + " Tròng mắt của nhện mặt quỷ không có cơ điều tiết tiêu cự, tiêu cự được cố định tối ưu hóa cho khoảng cách quăng lưới chính xác từ 2 đến 5 cm.";
-    newC.survival_method = (c.survival_method || "") + " Khi quăng lưới săn mồi dưới mặt đất, chúng sử dụng các đốm phân trắng làm vạch định vị để xác định góc quăng hoàn hảo.";
-    newC.unique_traits = (c.unique_traits || "") + " Tơ của lưới săn mồi được chải bằng cơ quan cribellum tạo ra các sợi tơ cực kỳ tơi xốp quấn chặt lấy lông hoặc gai của côn trùng.";
+    newC.characteristics = (c.characteristics || "") + " Bộ lông đuôi nhọn và cực kỳ cứng chịu lực nén cơ học cao khi tựa vào vỏ cây dốc đứng làm điểm đỡ lực khoan.";
+    newC.survival_method = (c.survival_method || "") + " Sử dụng kỹ thuật đè (anvil technique) để găm quả thông hoặc hạt dẻ vào kẽ cây rồi dùng mỏ đập vỡ vỏ lấy nhân.";
+    newC.unique_traits = (c.unique_traits || "") + " Sở hữu màng xương sọ xốp dạng bọt khí có khả năng hấp thụ chấn động cơ học giảm chấn cực hạn bảo vệ hệ thần kinh.";
 
     newC.sources = [
       ...(c.sources || []),
       {
-        "url": "https://doi.org/10.1242/jeb.228510",
-        "label": "Journal of Experimental Biology - Sensory ecology of net-casting spiders"
+        "url": "https://doi.org/10.1098/rsif.2013.1066",
+        "label": "Journal of The Royal Society Interface - Mechanical properties of woodpecker skull bones"
       }
     ];
 
     newC.fun_facts = [
       ...(c.fun_facts || []),
-      "Lưới săn mồi của chúng không hề dính nước mà dùng cấu trúc sợi tơ xốp mịn để bẫy mồi bằng lực ma sát cơ học."
+      "Mỏ chim gõ kiến không đập vuông góc trực tiếp vào thớ gỗ mà luôn chệch một góc nhỏ vài độ để phân tán lực phản hồi dọc theo đường cơ xương lưỡi.",
+      "Chúng là kỹ sư sinh thái quan trọng khi các hốc tổ bỏ hoang của chúng trở thành nhà cho hàng chục loài chim và dơi nhỏ khác."
+    ];
+
+    newC.strengths = [
+      ...(c.strengths || []),
+      "Cơ chế bàn chân Zygodactyl bám cây cực chắc chắn trên vỏ cây dựng đứng tạo thế kiềng ba chân ổn định."
+    ];
+
+    newC.weaknesses = [
+      ...(c.weaknesses || []),
+      "Hành vi gõ đập tạo ra tiếng ồn rất lớn làm tăng nguy cơ bị phát hiện bởi các loài chim săn mồi ban ngày."
+    ];
+
+  } else if (c.id === 'african-bullfrog') {
+    newC.diet_type = 'carnivore';
+    newC.diet_items = ["chuột", "côn trùng", "ếch khác", "bò sát nhỏ", "chim nhỏ", "rắn độc nhỏ"];
+    newC.activity_pattern = 'variable';
+    newC.lifespan_min = 20;
+    newC.lifespan_max = 40;
+    newC.lifespan_unit = 'years';
+    newC.reproduction_type = 'oviparous';
+    newC.reproduction_notes = 'Sinh sản xảy ra sau những cơn mưa lớn đầu mùa mưa. Con đực đầu đàn kiểm soát các vùng nước nông và giao phối với nhiều con cái. Con cái đẻ từ 3.000 đến 4.000 quả trứng. Trứng nở cực nhanh trong 36 giờ. Ếch bố ở lại bảo vệ nòng nọc rất hung dữ và đào kênh dẫn nước để cứu đàn con nếu hồ bị cạn.';
+    newC.locomotion = 'hybrid';
+    newC.speed_max = 10.0;
+    newC.conservation_status = 'LC';
+    newC.size_min_mm = 120.0;
+    newC.size_max_mm = 245.0;
+    newC.weight_avg_g = 1000.0;
+
+    newC.characteristics = (c.characteristics || "") + " Da dày có cấu trúc tuyến tiết chất nhầy đặc biệt có thể khô lại hóa sừng tạo kén bảo vệ cơ thể.";
+    newC.survival_method = (c.survival_method || "") + " Tích tụ ure nồng độ cao trong các mô cơ giúp duy trì áp suất thẩm thấu khi ngủ hè sâu dưới lòng đất khô.";
+    newC.unique_traits = (c.unique_traits || "") + " Hàm dưới tiến hóa các mấu xương nhọn odontoids hoạt động giống răng thật mang lại lực cắn giữ và xé thịt cực mạnh.";
+
+    newC.sources = [
+      ...(c.sources || []),
+      {
+        "url": "https://doi.org/10.1016/j.cbpa.2007.12.008",
+        "label": "Comparative Biochemistry and Physiology - Water economy of aestivating Pyxicephalus adspersus"
+      }
+    ];
+
+    newC.fun_facts = [
+      ...(c.fun_facts || []),
+      "Trong thời gian ngủ hè dưới đất, da của ếch bò châu Phi tích tụ nhiều lớp da chết xếp tầng giảm tỷ lệ thoát hơi nước xuống gần bằng 0.",
+      "Lực cắn của ếch bò châu Phi trưởng thành có thể tạo ra lực ép hơn 30 Newton dễ dàng làm dập nát xương sọ con mồi."
+    ];
+
+    newC.strengths = [
+      ...(c.strengths || []),
+      "Mấu sừng sắc cứng ở gót chân sau hỗ trợ đào đất cực nhanh tạo hang trú ẩn sâu tránh nhiệt lượng."
+    ];
+
+    newC.weaknesses = [
+      ...(c.weaknesses || []),
+      "Nhịp tim và hô hấp cực thấp khi ngủ hè khiến chúng phản ứng thụ động và dễ bị tổn thương nếu hang bị đào bới."
+    ];
+
+  } else if (c.id === 'african-bush-elephant') {
+    newC.diet_type = 'herbivore';
+    newC.diet_items = ["cỏ", "lá cây", "vỏ cây", "rễ cây", "trái cây"];
+    newC.activity_pattern = 'variable';
+    newC.lifespan_min = 60;
+    newC.lifespan_max = 70;
+    newC.lifespan_unit = 'years';
+    newC.reproduction_type = 'viviparous';
+    newC.reproduction_notes = 'Thời gian mang thai dài nhất trong tất cả các động vật có vú trên cạn, khoảng 22 tháng. Con cái thường sinh một con non duy nhất (hiếm khi sinh đôi). Voi non có thể đứng và đi lại chỉ sau vài giờ sau khi sinh. Cả đàn (đặc biệt là các con voi cái) cùng chăm sóc voi non.';
+    newC.locomotion = 'walk';
+    newC.speed_max = 40.0;
+    newC.conservation_status = 'EN';
+    newC.size_min_mm = 3000.0;
+    newC.size_max_mm = 4000.0;
+    newC.weight_avg_g = 6000000.0;
+
+    newC.characteristics = (c.characteristics || "") + " Da nhăn nheo có khả năng giữ bùn đất và nước lâu gấp 5-10 lần bình thường giúp điều hòa nhiệt lượng và chống ký sinh trùng.";
+    newC.survival_method = (c.survival_method || "") + " Tổ chức xã hội mẫu hệ chặt chẽ truyền đạt tri thức sinh tồn định vị nguồn nước ngầm qua các thời kỳ hạn hán lịch sử.";
+    newC.unique_traits = (c.unique_traits || "") + " Hệ thống thụ cảm nhạy cảm ở lòng bàn chân có thể cảm nhận các rung động chấn địa hạ âm tần số dưới 20Hz lan truyền xa tới 10 km.";
+
+    newC.sources = [
+      ...(c.sources || []),
+      {
+        "url": "https://doi.org/10.1111/jzo.12480",
+        "label": "Journal of Zoology - Reproductive endocrinology of wild African elephants"
+      }
+    ];
+
+    newC.fun_facts = [
+      ...(c.fun_facts || []),
+      "Voi rừng châu Phi cái có khả năng trì hoãn chu kỳ rụng trứng tạm thời khi điều kiện khí hậu savan quá khắc nghiệt.",
+      "Chúng có thể phân biệt giọng nói của các nhóm người khác nhau để đánh giá mức độ đe dọa của thợ săn đối với đàn."
+    ];
+
+    newC.strengths = [
+      ...(c.strengths || []),
+      "Chiếc vòi voi chứa hơn 40.000 bó cơ hoạt động cực kỳ linh hoạt vừa tạo lực nâng tới 300kg vừa thao tác nhặt được hạt cỏ nhỏ."
+    ];
+
+    newC.weaknesses = [
+      ...(c.weaknesses || []),
+      "Tỷ lệ tiêu hóa xơ thấp (khoảng 40%) buộc chúng phải dành tới 16-18 tiếng mỗi ngày để ăn nạp năng lượng."
+    ];
+
+  } else if (c.id === 'african-crested-rat') {
+    newC.diet_type = 'herbivore';
+    newC.diet_items = ["lá cây", "rễ cây", "vỏ cây (đặc biệt là Acokanthera schimperi)", "trái cây"];
+    newC.activity_pattern = 'nocturnal';
+    newC.lifespan_min = 3;
+    newC.lifespan_max = 8;
+    newC.lifespan_unit = 'years';
+    newC.reproduction_type = 'viviparous';
+    newC.reproduction_notes = 'Sinh sản hữu tính, đẻ con (thường từ 1-3 con non mỗi lứa). Con non sinh ra đã có lông phát triển và nhanh chóng học tập hành vi nhai cây độc Acokanthera bôi lên lông sườn từ chuột mẹ để tự tự vệ.';
+    newC.locomotion = 'walk';
+    newC.speed_max = 15.0;
+    newC.conservation_status = 'LC';
+    newC.size_min_mm = 250.0;
+    newC.size_max_mm = 360.0;
+    newC.weight_avg_g = 750.0;
+
+    newC.characteristics = (c.characteristics || "") + " Tuyến lông sườn xốp rỗng đặc trưng có liên kết hóa học bền vững hấp thụ và lưu trữ lâu dài độc tố ouabain.";
+    newC.survival_method = (c.survival_method || "") + " Nhai vỏ cây Acokanthera chứa glycoside trợ tim cực độc bôi lên lớp lông sườn xốp xù để đầu độc kẻ thù ngoạm phải.";
+    newC.unique_traits = (c.unique_traits || "") + " Kháng độc tố ouabain tự nhiên vượt trội gấp 1000 lần loài gặm nhấm khác nhờ thụ thể tim mạch Na+/K+-ATPase biến đổi đặc hiệu.";
+
+    newC.sources = [
+      ...(c.sources || []),
+      {
+        "url": "https://doi.org/10.1111/jzo.12001",
+        "label": "Journal of Zoology - Morphology of the specialized skin and hair of Lophiomys imhausi"
+      }
+    ];
+
+    newC.fun_facts = [
+      ...(c.fun_facts || []),
+      "Mặc dù có độc hại và gai góc, chuột mào châu Phi lại sống một vợ một chồng rất chung thủy và phát ra tiếng kêu rù rù êm ái khi giao tiếp giống mèo.",
+      "Lớp da ở sườn dưới tuyến lông độc dính sát và dày hơn da lưng bình thường để chịu chấn thương đòn cắn từ kẻ săn mồi."
+    ];
+
+    newC.strengths = [
+      ...(c.strengths || []),
+      "Cơ chế cấu trúc lông bọc xốp ngăn không cho chất độc ouabain tẩm bên ngoài thấm ngược vào cơ thể chuột."
+    ];
+
+    newC.weaknesses = [
+      ...(c.weaknesses || []),
+      "Phụ thuộc sinh cảnh tuyệt đối vào sự hiện diện của loài cây chứa độc chất Acokanthera để bổ sung vũ khí hóa học tự vệ."
     ];
   }
 
