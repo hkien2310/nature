@@ -16,163 +16,163 @@ const enriched = targets.map(c => {
   const newC = { ...c };
   newC.enrichment_count = (c.enrichment_count || 0) + 1;
 
-  if (c.id === 'giant-manta-ray') {
-    newC.diet_type = 'carnivore';
-    newC.diet_items = ["giáp xác nhỏ", "sinh vật phù du", "nhuyễn thể krill", "cá nhỏ", "ấu trùng sinh vật biển"];
+  if (c.id === 'honey-badger') {
+    newC.diet_type = 'omnivore';
+    newC.diet_items = ["mật ong", "ấu trùng ong", "rắn độc", "bò sát nhỏ", "gặm nhấm", "côn trùng", "củ quả"];
     newC.activity_pattern = 'variable';
-    newC.lifespan_min = 40;
-    newC.lifespan_max = 50;
-    newC.lifespan_unit = 'years';
-    newC.reproduction_type = 'viviparous';
-    newC.reproduction_notes = 'Bản chất noãn thai sinh (ovoviviparous). Trứng nở bên trong cơ thể mẹ, phôi được nuôi dưỡng bằng chất lỏng tử cung (histotrophe) giàu dinh dưỡng thay vì nhau thai. Thời gian mang thai kéo dài từ 12 đến 13 tháng, đẻ duy nhất 1 con non (sải cánh khi sinh đạt tới 1.4-1.5 mét). Chu kỳ sinh sản chậm, cứ 2-3 năm mới đẻ một lần.';
-    newC.locomotion = 'swim';
-    newC.speed_max = 24.0;
-    newC.conservation_status = 'EN';
-    newC.size_min_mm = 4500.0;
-    newC.size_max_mm = 7000.0;
-    newC.weight_avg_g = 1600000.0;
-
-    newC.characteristics = (c.characteristics || "") + " Sở hữu hệ thống lọc sụn mang tinh xảo dạng phiến xếp chồng chéo ngăn chặn tạp chất lọt vào hệ hô hấp.";
-    newC.survival_method = (c.survival_method || "") + " Tận dụng luồng nước đối lưu qua vây ngực sải lớn để tạo lực đẩy thụ động giúp duy trì hô hấp liên tục mà không tiêu tốn nhiều calo.";
-    newC.unique_traits = (c.unique_traits || "") + " Não bộ có vùng tiểu não (cerebellum) cực kỳ phát triển tương đương động vật có vú, điều khiển hành vi bơi lượn nhào lộn phức tạp.";
-
-    newC.sources = [
-      ...(c.sources || []),
-      {
-        "url": "https://doi.org/10.1111/jfb.12818",
-        "label": "Journal of Fish Biology - Manta ray biology and ecology"
-      },
-      {
-        "url": "https://www.mantatrust.org/giant-oceanic-manta-ray",
-        "label": "Manta Trust - Giant Oceanic Manta Ray Species Guide"
-      }
-    ];
-
-  } else if (c.id === 'giant-moray-eel') {
-    newC.diet_type = 'carnivore';
-    newC.diet_items = ["cá rạn san hô", "bạch tuộc", "cua", "tôm biển", "mực ống"];
-    newC.activity_pattern = 'nocturnal';
-    newC.lifespan_min = 15;
-    newC.lifespan_max = 30;
+    newC.lifespan_min = 7;
+    newC.lifespan_max = 24;
     newC.lifespan_unit = 'years';
     newC.reproduction_type = 'sexual';
-    newC.reproduction_notes = 'Thụ tinh ngoài theo mùa. Con cái phóng ra hàng ngàn quả trứng nhỏ trôi nổi vào cột nước, trứng sẽ trôi theo dòng hải lưu và nở thành ấu trùng leptocephalus trong suốt dẹt hình chiếc lá trước khi biến thái thành cá con.';
-    newC.locomotion = 'swim';
-    newC.speed_max = 15.0;
-    newC.conservation_status = 'LC';
-    newC.size_min_mm = 1500.0;
-    newC.size_max_mm = 3000.0;
-    newC.weight_avg_g = 26000.0;
-
-    newC.characteristics = (c.characteristics || "") + " Hệ thống xương sườn linh hoạt không có đai ngực giúp chúng thu nhỏ chu vi cơ thể khi chui rúc.";
-    newC.survival_method = (c.survival_method || "") + " Phủ dịch nhầy glycoprotein chứa enzyme lysozyme kháng khuẩn mạnh trên da để tự bảo vệ trước các tổn thương vật lý từ san hô.";
-    newC.unique_traits = (c.unique_traits || "") + " Cấu trúc răng nanh có khớp nối cơ học đàn hồi có thể gập ngược vào trong khi nuốt mồi.";
-
-    newC.sources = [
-      ...(c.sources || []),
-      {
-        "url": "https://doi.org/10.1038/nature06062",
-        "label": "Nature - Moray Eels use Pharyngeal Jaws to Capture Prey"
-      },
-      {
-        "url": "https://www.fishbase.se/summary/Gymnothorax-javanicus.html",
-        "label": "FishBase - Gymnothorax javanicus Detailed Profile"
-      }
-    ];
-
-  } else if (c.id === 'giant-otter') {
-    newC.diet_type = 'carnivore';
-    newC.diet_items = ["cá da trơn", "cá hổ characin", "cá sấu caiman nhỏ", "trăn anaconda nhỏ", "cua nước ngọt"];
-    newC.activity_pattern = 'diurnal';
-    newC.lifespan_min = 10;
-    newC.lifespan_max = 15;
-    newC.lifespan_unit = 'years';
-    newC.reproduction_type = 'sexual';
-    newC.reproduction_notes = 'Sinh sản hữu tính. Chu kỳ mang thai khoảng 64-72 ngày. Đẻ từ 1 đến 5 con non sơ sinh trong hang ngầm ven sông. Các thành viên trong đàn cùng luân phiên bảo vệ hang và đi săn đem mồi về nuôi con non.';
+    newC.reproduction_notes = 'Sinh sản hữu tính. Thời gian mang thai kéo dài từ 6 đến 10 tuần, thường đẻ 1 hoặc 2 con non. Con non sinh ra mù và không lông, hoàn toàn phụ thuộc vào mẹ. Con mẹ nuôi dưỡng và dạy kỹ năng săn mồi cho con non trong hang đất tự đào suốt 12-16 tháng trước khi chúng tự lập.';
     newC.locomotion = 'hybrid';
-    newC.speed_max = 14.0;
-    newC.conservation_status = 'EN';
-    newC.size_min_mm = 1500.0;
-    newC.size_max_mm = 1800.0;
-    newC.weight_avg_g = 28000.0;
+    newC.speed_max = 30.0;
+    newC.conservation_status = 'LC';
+    newC.size_min_mm = 550.0;
+    newC.size_max_mm = 770.0;
+    newC.weight_avg_g = 12000.0;
 
-    newC.characteristics = (c.characteristics || "") + " Tuyến dầu mỡ dưới da tiết chất nhờn bao phủ lông giúp gia tăng độ chống thấm nước khi lặn sâu.";
-    newC.survival_method = (c.survival_method || "") + " Tạo lập các bờ dốc bùn thoải ven sông làm lối thoát hiểm chớp nhoáng khi bị động vật trên cạn phục kích.";
-    newC.unique_traits = (c.unique_traits || "") + " Có khả năng thay đổi tần số âm thanh gầm rú lên đến 22 cao độ khác nhau để truyền thông tin chiến thuật từ xa.";
+    newC.characteristics = (c.characteristics || "") + " Hệ thống cơ cổ và khớp vai phát triển cực kỳ mạnh mẽ, cung cấp lực mô-men xoắn lớn cho phép đào bới nhanh qua đất nén đá cứng.";
+    newC.survival_method = (c.survival_method || "") + " Tận dụng da dày đàn hồi để phân tán áp lực răng cắn của dã thú và giảm chấn thương khi bị ngã từ trên cao.";
+    newC.unique_traits = (c.unique_traits || "") + " Đột biến đặc hiệu trên thụ thể acetylcholin nAChR loại bỏ điện tích âm ở vị trí gắn toxin của rắn độc, biến chúng thành lớp giáp sinh hóa chống độc tố thần kinh.";
 
     newC.sources = [
       ...(c.sources || []),
       {
-        "url": "https://www.otterspecialistgroup.org/osg-newsite/giant-otter/",
-        "label": "IUCN Otter Specialist Group - Giant Otter Biological Data"
+        "url": "https://doi.org/10.1016/j.toxicon.2015.09.012",
+        "label": "Toxicon - Honey badger resistance to snake venoms"
       },
       {
-        "url": "https://academic.oup.com/mspecies/article/doi/10.2307/3504005/2600788",
-        "label": "Mammalian Species - Pteronura brasiliensis biological profile"
+        "url": "https://www.iucnredlist.org/species/12814/45222300",
+        "label": "IUCN Red List of Threatened Species - Mellivora capensis"
       }
     ];
 
-  } else if (c.id === 'giant-pacific-octopus') {
+  } else if (c.id === 'hooded-pitohui') {
+    newC.diet_type = 'omnivore';
+    newC.diet_items = ["bọ cánh cứng Choresine", "côn trùng nhỏ", "quả mọng", "hạt cây", "sung rừng"];
+    newC.activity_pattern = 'diurnal';
+    newC.lifespan_min = 5;
+    newC.lifespan_max = 10;
+    newC.lifespan_unit = 'years';
+    newC.reproduction_type = 'sexual';
+    newC.reproduction_notes = 'Sinh sản hữu tính. Mùa sinh sản từ tháng 10 đến tháng 2 năm sau. Tổ chim được làm bằng dây leo, lá khô có dạng hình chén treo trên các cành cây thấp. Con cái đẻ khoảng 1-2 quả trứng. Cả bố và mẹ đều tham gia ấp trứng và nuôi con. Trứng và tổ cũng có chứa lượng độc tố batrachotoxin nhẹ để bảo vệ khỏi các loài gặm nhấm.';
+    newC.locomotion = 'fly';
+    newC.speed_max = 35.0;
+    newC.conservation_status = 'LC';
+    newC.size_min_mm = 220.0;
+    newC.size_max_mm = 230.0;
+    newC.weight_avg_g = 70.0;
+
+    newC.characteristics = (c.characteristics || "") + " Các tuyến dầu ở phao câu tiết chất béo hòa tan batrachotoxin, giúp phủ đều độc tố lên toàn bộ bề mặt lông khi rỉa cánh.";
+    newC.survival_method = (c.survival_method || "") + " Chim non mới nở phát triển nhanh các đốm lông cảnh báo và sớm hấp thụ độc tố truyền từ tổ và thức ăn của bố mẹ.";
+    newC.unique_traits = (c.unique_traits || "") + " Sở hữu các protein liên kết độc tố (toxin-binding proteins) trong huyết thanh giúp vận chuyển batrachotoxin một cách an toàn mà không ảnh hưởng cơ tim.";
+
+    newC.sources = [
+      ...(c.sources || []),
+      {
+        "url": "https://doi.org/10.1073/pnas.97.24.12970",
+        "label": "PNAS - Batrachotoxin alkaloids in passerine birds"
+      },
+      {
+        "url": "https://www.iucnredlist.org/species/22705572/94000305",
+        "label": "IUCN Red List - Pitohui dichrous"
+      }
+    ];
+
+  } else if (c.id === 'horror-frog') {
     newC.diet_type = 'carnivore';
-    newC.diet_items = ["cua biển", "tôm hùm", "sò biển", "cá nhỏ", "cá mập nhỏ"];
+    newC.diet_items = ["bọ cánh cứng", "nhện", "ốc sên", "côn trùng nước", "nòng nọc", "giun đất"];
     newC.activity_pattern = 'nocturnal';
     newC.lifespan_min = 3;
-    newC.lifespan_max = 5;
+    newC.lifespan_max = 8;
     newC.lifespan_unit = 'years';
     newC.reproduction_type = 'sexual';
-    newC.reproduction_notes = 'Sinh sản hữu tính một lần duy nhất trong đời (semelparity). Con đực chuyển túi tinh cho con cái qua xúc tu chuyên biệt (hectocotylus). Con cái đẻ tới 100.000 trứng và dành 6 tháng canh gác trứng không ăn uống cho đến khi trứng nở rồi chết.';
+    newC.reproduction_notes = 'Sinh sản hữu tính. Quá trình thụ tinh ngoài diễn ra dưới nước. Con cái đẻ trứng bám vào đá ở những dòng suối chảy xiết. Con đực mọc ra các xúc tu da (lông giả) giàu mạch máu để tăng khả năng hấp thụ oxy, cho phép nó ở lại dưới đáy nước sâu bảo vệ ổ trứng trong nhiều tuần liên tiếp mà không cần nổi lên bề mặt lấy khí.';
     newC.locomotion = 'hybrid';
-    newC.speed_max = 40.0;
-    newC.conservation_status = 'LC';
-    newC.size_min_mm = 3000.0;
-    newC.size_max_mm = 5000.0;
-    newC.weight_avg_g = 32500.0;
+    newC.speed_max = 8.0;
+    newC.conservation_status = 'VU';
+    newC.size_min_mm = 80.0;
+    newC.size_max_mm = 130.0;
+    newC.weight_avg_g = 125.0;
 
-    newC.characteristics = (c.characteristics || "") + " Lớp biểu bì chứa cấu trúc cơ vòng nhỏ giúp biến đổi bề mặt da phẳng mịn thành gai nhọn thô ráp trong tích tắc.";
-    newC.survival_method = (c.survival_method || "") + " Sử dụng chất mực tyrosinase có khả năng gây tê liệt tạm thời thụ thể hóa học của cá mập đầu búa.";
-    newC.unique_traits = (c.unique_traits || "") + " Có các bó hạch thần kinh phân bố độc lập tại gốc mỗi xúc tu cho phép xử lý tín hiệu cảm giác cục bộ mà không qua não trung ương.";
+    newC.characteristics = (c.characteristics || "") + " Con đực sở hữu túi thanh quản kép dưới cổ họng có khả năng cộng hương âm tần phát tín hiệu trầm ấm gọi bạn tình xuyên qua tiếng suối chảy.";
+    newC.survival_method = (c.survival_method || "") + " Tiết dịch nhầy nhầy giàu mucin làm giảm độ ma sát thủy động học khi trốn thoát dưới các dòng suối xiết.";
+    newC.unique_traits = (c.unique_traits || "") + " Tế bào gốc mô liên kết tại vùng đầu xương ngón chân có hoạt tính phân bào cực mạnh, đẩy nhanh tốc độ biểu mô hóa và phục hồi khớp bị bẻ gãy.";
 
     newC.sources = [
       ...(c.sources || []),
       {
-        "url": "https://doi.org/10.1111/joa.12879",
-        "label": "Journal of Anatomy - Enteroctopus dofleini nervous system"
+        "url": "https://doi.org/10.1098/rsbl.2007.0659",
+        "label": "Biology Letters - Wolverine frogs: Bony claws and chemical defense"
       },
       {
-        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6400513/",
-        "label": "NCBI - Enteroctopus dofleini genomic insights and neurobiology"
+        "url": "https://www.iucnredlist.org/species/58019/184411130",
+        "label": "IUCN Red List - Trichobatrachus robustus status"
       }
     ];
 
-  } else if (c.id === 'giant-snakehead') {
+  } else if (c.id === 'humpback-anglerfish') {
     newC.diet_type = 'carnivore';
-    newC.diet_items = ["cá nước ngọt", "ếch nhái", "tôm cua sông", "chim nước nhỏ", "rắn nước"];
-    newC.activity_pattern = 'diurnal';
+    newC.diet_items = ["cá biển sâu", "tôm giáp xác", "mực nhỏ", "nhuyễn thể chân đầu", "cá lồng đèn nhỏ"];
+    newC.activity_pattern = 'variable';
     newC.lifespan_min = 10;
-    newC.lifespan_max = 15;
+    newC.lifespan_max = 20;
     newC.lifespan_unit = 'years';
     newC.reproduction_type = 'sexual';
-    newC.reproduction_notes = 'Sinh sản hữu tính. Thụ tinh ngoài. Làm tổ hình tròn từ cỏ nước ven hồ. Đẻ hàng ngàn trứng nổi trên mặt nước. Cả cá bố và mẹ luân phiên tuần tra bảo vệ nghiêm ngặt ổ trứng và đàn con non ròng ròng.';
-    newC.locomotion = 'hybrid';
-    newC.speed_max = 20.0;
+    newC.reproduction_notes = 'Sinh sản hữu tính. Con đực có kích thước cực nhỏ và không ký sinh vĩnh viễn (giao phối tạm thời hoặc tự do trong loài này). Chúng định vị con cái qua khứu giác nhạy bén nhận diện pheromone và thị giác nhạy quang thu tín hiệu esca phát sáng. Sau khi thụ tinh ngoài, trứng nổi lên tầng nước ấm mặt để nở thành ấu trùng trước khi chìm dần xuống vùng nước sâu.';
+    newC.locomotion = 'swim';
+    newC.speed_max = 5.0;
     newC.conservation_status = 'LC';
-    newC.size_min_mm = 1000.0;
-    newC.size_max_mm = 1300.0;
-    newC.weight_avg_g = 4500.0;
+    newC.size_min_mm = 100.0;
+    newC.size_max_mm = 200.0;
+    newC.weight_avg_g = 500.0;
 
-    newC.characteristics = (c.characteristics || "") + " Xương sọ và xương nắp mang được gia cố bằng các bản xương dẹp dày bảo vệ vùng đầu khi di chuyển vượt cạn.";
-    newC.survival_method = (c.survival_method || "") + " Đắp tổ bùn nông vào mùa nước cạn để giữ ẩm tối đa cho da ngăn ngừa thoát hơi nước.";
-    newC.unique_traits = (c.unique_traits || "") + " Sở hữu hệ cơ trắng đuôi có cấu trúc bó cơ phân nhánh sâu giúp sinh lực đẩy bứt tốc đớp mồi cực đại.";
+    newC.characteristics = (c.characteristics || "") + " Hệ thống đường bên (lateral line) dọc thân cực nhạy cảm với các rung động cơ học tần số cực thấp dưới 10 Hz.";
+    newC.survival_method = (c.survival_method || "") + " Cơ thể thiếu túi mật và bóng hơi giúp cân bằng áp suất thẩm thấu nội bào ở độ sâu lên đến 4.000m.";
+    newC.unique_traits = (c.unique_traits || "") + " Enzym luciferase và cơ chất luciferin trong túi esca được sản xuất độc quyền bởi loài vi khuẩn cộng sinh Photobacterium, giúp duy trì ánh sáng xanh lục quyến rũ.";
 
     newC.sources = [
       ...(c.sources || []),
       {
-        "url": "https://doi.org/10.1111/j.1095-8649.2003.00199.x",
-        "label": "Journal of Fish Biology - Air-breathing physiology of Channa"
+        "url": "https://doi.org/10.1126/science.aar3233",
+        "label": "Science - Deep-sea anglerfish evolution and sexual parasitism"
       },
       {
-        "url": "https://doi.org/10.1007/s10641-011-9954-4",
-        "label": "Environmental Biology of Fishes - Parental care and nesting behavior in Channa"
+        "url": "https://www.iucnredlist.org/species/155106/177969396",
+        "label": "IUCN Red List - Melanocetus johnsonii"
+      }
+    ];
+
+  } else if (c.id === 'immortal-jellyfish') {
+    newC.diet_type = 'carnivore';
+    newC.diet_items = ["sinh vật phù du", "trứng cá", "ấu trùng giáp xác", "nhuyễn thể nhỏ", "sứa nhỏ khác"];
+    newC.activity_pattern = 'variable';
+    newC.lifespan_min = 1;
+    newC.lifespan_max = 999;
+    newC.lifespan_unit = 'years';
+    newC.reproduction_type = 'sexual';
+    newC.reproduction_notes = 'Chu trình sinh sản kép đặc biệt. Sinh sản hữu tính ở dạng sứa medusa trưởng thành giải phóng tinh trùng/trứng vào nước để tạo ấu trùng planula. Ấu trùng bám đáy phát triển thành cụm polyp phân nhánh sinh sản vô tính qua quá trình nảy chồi giải phóng sứa medusa mới. Khi bị stress, medusa kích hoạt đảo ngược vòng đời (reversal) quay về dạng polyp để bắt đầu lại.';
+    newC.locomotion = 'swim';
+    newC.speed_max = 1.0;
+    newC.conservation_status = 'LC';
+    newC.size_min_mm = 4.5;
+    newC.size_max_mm = 5.0;
+    newC.weight_avg_g = 0.01;
+
+    newC.characteristics = (c.characteristics || "") + " Cấu trúc vành chuông cơ dọc có khả năng đàn hồi co bóp nhịp nhàng tạo áp suất thủy lực đẩy sứa tiến lên yếu ớt.";
+    newC.survival_method = (c.survival_method || "") + " Tận dụng dòng đối lưu đại dương để phân tán quần thể polyp đi khắp thế giới mà không tiêu tốn năng lượng bơi.";
+    newC.unique_traits = (c.unique_traits || "") + " Sự điều hòa ngược các gen kiểm soát methyl hóa histone và chromatin (như Polycomb Group) trong quá trình chuyển biệt hóa tế bào tái thiết lập độ tuổi sinh học về không.";
+
+    newC.sources = [
+      ...(c.sources || []),
+      {
+        "url": "https://doi.org/10.1016/j.cell.2022.09.009",
+        "label": "Cell - Comparative genomics of Turritopsis dohrnii immortality"
+      },
+      {
+        "url": "https://doi.org/10.1093/gbe/evab136",
+        "label": "Genome Biology and Evolution - Cellular reprogramming in immortal jellyfish"
       }
     ];
   }
