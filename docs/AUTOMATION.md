@@ -10,7 +10,8 @@ Khi nhận được yêu cầu `"Thêm sinh vật mới"`, AI (Antigravity) sẽ
 
 ### Các Bước Thực Hiện:
 1. **Kiểm tra sinh vật hiện có**: Truy vấn bảng `creatures` từ Supabase bằng cách chạy đoạn mã test hoặc đọc file cấu hình tĩnh để biết những sinh vật nào đã tồn tại trong database (để tránh trùng lặp).
-2. **Chọn sinh vật mới**: Lựa chọn 3 sinh vật trong tự nhiên chưa có trong cơ sở dữ liệu. **Bắt buộc tập trung tìm kiếm các loài sở hữu những đặc điểm kì lạ, cơ chế sinh học độc đáo hoặc sức mạnh phi thường tiến hóa độc nhất vô nhị** (Ví dụ: Khả năng bắn tia nước áp lực búa tạ của Tôm bọ ngựa, bắn bọt bong bóng plasma, phun axit/chất độc của Bọ cánh cứng Bombardier, bất tử sinh học của Sứa Hải Đăng, kháng phóng xạ/áp suất cực hạn của Gấu nước Tardigrade, khả năng phóng điện của Cá chình điện, hoặc tự tái sinh toàn bộ cơ thể của Kỳ giông Axolotl).
+2. **Chọn sinh vật mới**: Lựa chọn 3 sinh vật trong tự nhiên chưa có trong cơ sở dữ liệu. **Bắt buộc tập trung tìm kiếm các loài sở hữu những đặc điểm kì lạ, cơ chế sinh học độc đáo hoặc sức mạnh phi thường tiến hóa độc nhất vô nhị** (Ví dụ: Bọ ngựa với siêu phản xạ - "võ sĩ tự nhiên", Gấu nước Tardigrade siêu trâu bò chống chịu cực hạn, các sinh vật nhỏ nhưng có đặc điểm đặc biệt như lớp vỏ kitin giáp dày chịu lực, con hà với cơ chế sinh sản đặc biệt, dơi sử dụng sóng siêu thanh định vị, ngài sở hữu tơ cực chắc, châu chấu có đôi chân bật nhảy cực khỏe).
+   - *Lưu ý quan trọng:* Một sinh vật có thể có một hoặc **nhiều đặc điểm mạnh mẽ/kỳ lạ cùng lúc** (Ví dụ: Tôm tít/tôm bọ ngựa vừa có cú đấm áp lực búa tạ vừa có lớp gai ở đuôi để tự vệ). AI cần thu thập và biểu diễn đầy đủ các đặc tính này.
 3. **Nghiên cứu thông tin sinh học**: Nghiên cứu đầy đủ thông tin chuẩn khoa học của 3 sinh vật đó, bao gồm:
    - Các trường cơ bản (ID, tên tiếng Việt, tên khoa học, phân loại, kích thước thực tế, nọc độc, điểm mạnh/yếu, fun facts, nguồn tài liệu).
    - **Các trường sinh học cấu trúc bắt buộc**:
@@ -42,6 +43,8 @@ Khi nhận được yêu cầu `"Làm giàu data"`, AI sẽ quét cơ sở dữ 
    node src/scripts/get-enrichment-targets.js
    ```
 2. **Nghiên cứu nâng cấp sâu**: Với mỗi sinh vật trong danh sách 5 con được chọn, AI sẽ tìm hiểu sâu hơn trên Internet để bổ sung các dữ liệu khoa học chất lượng cao hơn, đặc biệt điền bổ sung đầy đủ 12 trường cấu trúc sinh học mới (diet_type, diet_items, activity_pattern, lifespan_min, lifespan_max, lifespan_unit, reproduction_type, reproduction_notes, locomotion, speed_max, conservation_status, size_min_mm, size_max_mm, weight_avg_g) nếu dòng dữ liệu cũ chưa có hoặc còn thiếu.
+   - **Tập trung khai thác các đặc điểm mạnh mẽ và độc đáo của sinh vật**: Bổ sung chi tiết các vũ khí tự nhiên, cơ chế phòng thủ, phản xạ, tơ, hoặc các khả năng sinh học tiến hóa đặc biệt khác.
+   - **Nhận diện nhiều điểm mạnh cùng lúc**: Một sinh vật không chỉ bị giới hạn ở một ưu thế đơn lẻ. Hãy nghiên cứu và đưa toàn bộ các điểm mạnh vượt trội của loài đó vào mảng `strengths`, `unique_traits` và các phần mô tả chi tiết liên quan.
    - Thêm các liên kết nguồn tham khảo khoa học uy tín (`sources`).
    - Mở rộng thêm đặc điểm sinh học cụ thể (`characteristics`, `survival_method`, `unique_traits`).
    - Bổ sung thêm các sự thật thú vị mới (`funFacts`) và các điểm mạnh/điểm yếu bổ trợ (`strengths`, `weaknesses`).
