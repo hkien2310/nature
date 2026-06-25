@@ -44,6 +44,45 @@ export interface DbCreature {
   created_at: string;
 }
 
+export interface WhatIfQuestion {
+  id: string;
+  creature_id: string;
+  title: string;
+  slug: string;
+  description: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface WhatIfAnswer {
+  id: string;
+  question_id: string;
+  title: string;
+  slug: string;
+  perspective_type: "classic_scaling" | "biological_reality" | "evolutionary_mutation" | "custom";
+  summary: string | null;
+  content: string;
+  formulas_and_data: {
+    scaling_factor?: number;
+    mass_g_original?: number;
+    mass_kg_scaled?: number;
+    striking_force_n_original?: number;
+    striking_force_n_scaled?: number;
+    formulas?: Array<{
+      name: string;
+      equation: string;
+      result: string;
+    }>;
+    [key: string]: any;
+  };
+  p4p_score_scaled: number;
+  tier_scaled: "S" | "A" | "B" | "C" | "D";
+  sources: Array<{ label: string; url: string }>;
+  created_at: string;
+  updated_at: string;
+}
+
+
 export async function getDBCreatures(): Promise<Creature[]> {
   try {
     console.log("⚡ [Server] Calling Supabase API to fetch creatures...");
@@ -375,4 +414,94 @@ export async function submitMatchupVote(matchupSlug: string, voteFor: string, us
     return { success: false, error: err.message || "Unknown error" };
   }
 }
+
+export async function getWhatIfQuestions(creatureId?: string): Promise<WhatIfQuestion[]> {
+  try {
+    let query = supabase.from("what_if_questions").select("*").order("created_at", { ascending: false });
+    if (creatureId) {
+      query = query.eq("creature_id", creatureId);
+    }
+    const { data, error } = await query;
+    if (error) throw error;
+    return data || [];
+  } catch (err) {
+    console.error("Error fetching what-if questions:", err);
+    return [];
+  }
+}
+
+export async function getWhatIfQuestionWithAnswers(slug: string): Promise<(WhatIfQuestion & { answers: WhatIfAnswer[] }) | null> {
+  try {
+    const { data: question, error: qErr } = await supabase
+      .from("what_if_questions")
+      .select("*")
+      .eq("slug", slug)
+      .single();
+
+    if (qErr || !question) {
+      if (qErr && qErr.code !== "PGRST116") {
+        console.error("Error fetching what-if question:", qErr);
+      }
+      return null;
+    }
+
+    const { data: answers, error: aErr } = await supabase
+      .from("what_if_answers")
+      .select("*")
+      .eq("question_id", question.id)
+      .order("created_at", { ascending: true });
+
+    if (aErr) throw aErr;
+
+    return {
+      ...question,
+      answers: answers || []
+    };
+  } catch (err) {
+    console.error("Error fetching what-if question with answers:", err);
+    return null;
+  }
+}
+
+export async function getCreatureWhatIfs(creatureId: string): Promise<Array<WhatIfQuestion & { answers: WhatIfAnswer[] }>> {
+  try {
+    const { data: questions, error: qErr } = await supabase
+      .from("what_if_questions")
+      .select("*")
+      .eq("creature_id", creatureId)
+      .order("created_at", { ascending: false });
+
+    if (qErr) throw qErr;
+    if (!questions || questions.length === 0) return [];
+
+    const questionIds = questions.map(q => q.id);
+    const { data: answers, error: aErr } = await supabase
+      .from("what_if_answers")
+      .select("*")
+      .in("question_id", questionIds)
+      .order("created_at", { ascending: true });
+
+    if (aErr) throw aErr;
+
+    const answersMap: Record<string, WhatIfAnswer[]> = {};
+    if (answers) {
+      answers.forEach(a => {
+        if (!answersMap[a.question_id]) {
+          answersMap[a.question_id] = [];
+        }
+        answersMap[a.question_id].push(a);
+      });
+    }
+
+    return questions.map(q => ({
+      ...q,
+      answers: answersMap[q.id] || []
+    }));
+  } catch (err) {
+    console.error("Error fetching creature what-ifs:", err);
+    return [];
+  }
+}
+
+
 

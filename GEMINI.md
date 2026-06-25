@@ -20,4 +20,6 @@
 ## Data Enrichment Tasks
 - Chạy `"Thêm sinh vật mới"` để nghiên cứu và chèn 3 sinh vật mới hoàn toàn vào Supabase.
 - Chạy `"Làm giàu data"` để tự động nâng cấp chi tiết thông tin khoa học sâu cho 5 sinh vật ít được làm giàu nhất dựa trên cột `enrichment_count`.
+- Chạy `"Làm giàu What-If"` để tạo và cập nhật kịch bản câu hỏi/câu trả lời phóng to cơ thể cho 3 sinh vật có điểm P4P cao nhất và ít câu hỏi What-If nhất.
 - Đọc thêm tại [AUTOMATION.md](file:///Users/hoangkien/Youtube/svh/docs/AUTOMATION.md).
+

@@ -3,6 +3,8 @@ import { creatures, getTierColor, getStatLabel } from "@/data/creatures";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import WhatIfSection from "@/components/WhatIfSection";
+
 
 export const dynamic = "force-dynamic";
 
@@ -455,6 +457,11 @@ export default async function CreatureProfilePage({ params }: Props) {
             </div>
           </div>
         </div>
+      </div>
+      
+      {/* ── WHAT-IF SIMULATOR FOR ADMINS ───────────── */}
+      <div className="mt-12">
+        <WhatIfSection creatureId={creature.id} slug={slug} />
       </div>
 
       {/* ── NAVIGATION ─────────────────────────────── */}
