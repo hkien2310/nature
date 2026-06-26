@@ -4407,6 +4407,264 @@ async function runEnrichment() {
           }
         ]
       });
+    } else if (target.id === "deep-sea-anglerfish") {
+      whatIfData.push({
+        creature_id: "deep-sea-anglerfish",
+        title: "Nếu Cá Lồng Đèn Sâu phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-ca-long-den-sau-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích kịch bản giả thuyết khi loài cá săn mồi kỳ dị Cá Lồng Đèn Sâu (Melanocetus johnsonii) ở vùng biển thẳm đạt khối lượng 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cần câu phát sáng 100W siêu áp lực và lực đớp 4.500N nuốt chửng con mồi)",
+            slug: "ca-long-den-sau-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Chiếc cần câu phát sáng sinh học đạt công suất 100W dụ mồi từ xa 500m, hàm mở rộng 120 độ đớp với lực 4.500N xé nát giáp sắt.",
+            content: "Khi Cá Lồng Đèn Sâu phóng to lên 80kg (tăng khối lượng gấp ~160.000 lần so với con cái trưởng thành 0.5g ban đầu, chiều dài đạt ~1.2m):\n- Cần phát sáng siêu công suất: Bầu phát sáng (esca) chứa hàng tỷ vi khuẩn cộng sinh Photobacterium đạt đường kính 15cm, phát ra luồng ánh sáng xanh lục công suất tương đương bóng đèn 100W, có khả năng đâm xuyên qua làn nước tối đen ở khoảng cách 500m để dẫn dụ con mồi.\n- Bộ hàm búa tạ và răng nanh gập linh hoạt: Hộp sọ khớp xoay cơ học mở rộng 120 độ cho phép đớp với lực cơ cắn lên tới 4.500 N. Hàng răng nanh sắc nhọn dài 18cm có thể gập xuống linh hoạt theo một chiều, cho phép con mồi trượt sâu vào thực quản khổng lồ nhưng không thể thoát ngược ra ngoài.\n- Da hấp thụ ánh sáng tuyệt đối: Da chứa mật độ hạt hắc tố melanophore cực cao, hấp thụ 99.9% ánh sáng chiếu vào, biến con cá 80kg thành một 'hố đen' tàng hình hoàn hảo giữa lòng đại dương.",
+            formulas_and_data: {
+              scaling_factor: 160000,
+              mass_g_original: 0.5,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực đớp phóng to lý thuyết",
+                  equation: "F_bite_scaled = F_bite_original * (M_scaled / M_original)^(2/3)",
+                  result: "~4.500 N"
+                },
+                {
+                  name: "Cường độ phát sáng sinh học",
+                  equation: "I_luciferin = N_bacteria * phi_photon",
+                  result: "~100 Watts quang năng"
+                }
+              ]
+            },
+            p4p_score_scaled: 80,
+            tier_scaled: "A",
+            sources: [
+              { label: "Bioluminescence and feeding mechanics of deep-sea anglerfishes", url: "https://doi.org/10.1111/j.1469-7998.2008.00494.x" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Cú đè bẹp áp suất cơ thể nhão và sự tắt ngấm bầu phát sáng do thiếu oxy)",
+            slug: "ca-long-den-sau-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Hệ xương sụn nhão biến dạng dưới trọng lực, bầu phát sáng cạn kiệt oxy làm vi khuẩn chết, tim suy kiệt do thiếu áp lực.",
+            content: "Trong thực tế vật lý sinh học khi Cá Lồng Đèn Sâu nặng 80kg:\n- Sụp đổ cấu trúc xương thịt (Soft tissue collapse): Để sinh tồn dưới áp suất biển sâu 1.000m, cơ thể chúng tiến hóa với xương sụn mềm xốp và các bó cơ lỏng lẻo chứa nhiều nước. Ở khối lượng 80kg, nếu đưa ra khỏi môi trường áp suất nước sâu hoặc chịu tác động của trọng lực mạnh, cơ thể cá sẽ biến thành một khối gel nhão xẹp lép, các cơ quan nội tạng đè nén lẫn nhau gây tử vong trong vài phút.\n- Tắt ngấm cần sáng dụ mồi: Bầu esca chứa vi khuẩn cộng sinh hiếu khí phát sáng cần nguồn cung cấp oxy liên tục. Với thể tích bầu phát sáng tăng 160.000 lần, lưu lượng máu khuếch tán oxy qua hệ tuần hoàn yếu ớt của cá không đủ đáp ứng, dẫn đến sự tích tụ chất độc và vi khuẩn phát sáng sẽ chết hàng loạt sau 30 phút bơi lội, dập tắt hoàn toàn ánh sáng.\n- Tim suy kiệt: Tim nhỏ yếu không có bầu chứa đệm áp suất không thể bơm máu đi nuôi các mô cơ phì đại.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Sụp đổ cơ học mô mềm dưới áp lực trọng lực",
+                  issue: "Ứng suất kéo nén giới hạn của xương sụn chỉ đạt 0.05 MPa, cơ thể biến dạng hoàn toàn ở 1G."
+                },
+                {
+                  type: "Khủng hoảng oxy của vi khuẩn phát sáng",
+                  issue: "Lưu lượng oxy cung cấp chỉ đạt 5% nhu cầu hô hấp của 10^11 vi khuẩn phát sáng trong esca lớn."
+                }
+              ]
+            },
+            p4p_score_scaled: 15,
+            tier_scaled: "D",
+            sources: [
+              { label: "Physiological constraints of deep-sea organisms", url: "https://doi.org/10.1146/annurev.physiol.64.081501.155736" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Quái ngư gai xương titan và tuần hoàn áp lực cao kép)",
+            slug: "ca-long-den-sau-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Xương sụn hóa xương phốt-phát canxi titan siêu bền, hệ tuần hoàn kép có tim phụ bơm oxy chuyên biệt cho esca.",
+            content: "Để Cá Lồng Đèn Sâu 80kg thống trị vùng trung tầng đại dương:\n- Gia cố khung xương (Titan-Calcified skeleton): Khung xương sụn được thay thế bằng cấu trúc phốt-phát canxi gia cường sợi collagen siêu bền, chịu đựng lực vặn xoắn và mô-men lực 1.200 N.m khi bơi lượn bứt tốc.\n- Hệ tuần hoàn áp lực cao và túi oxy Esca (Oxygenated Esca Chamber): Tiến hóa một động mạch phụ chuyên biệt kết nối từ mang thẳng tới bầu phát sáng, kết hợp van điều tiết huyết áp và các tế bào sắc tố phản quang guanophres bao bọc esca giúp tối ưu hóa luồng ánh sáng phát ra tới 300% mà không gây hao hụt oxy tổng thể cơ thể.\n- Ký sinh sinh dục điều chỉnh: Con đực khi bám vào con cái chỉ hợp nhất một phần hệ mạch máu nhỏ để trao đổi hormon mà không triệt tiêu hệ miễn dịch của con cái, giữ cho cả hai cá thể khỏe mạnh.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Vật liệu khung xương biến tính",
+                  benefit: "Ứng suất uốn chịu đựng đạt 120 MPa, bảo vệ hoàn chỉnh các nội tạng ở áp suất từ 1 đến 100 atm."
+                },
+                {
+                  type: "Hệ tuần hoàn mang phụ chuyên biệt cho Esca",
+                  benefit: "Nồng độ oxy cung cấp đạt 4.8 ml/O2/g/h, duy trì ánh sáng 80W liên tục 24 giờ."
+                }
+              ]
+            },
+            p4p_score_scaled: 84,
+            tier_scaled: "A",
+            sources: [
+              { label: "Evolutionary adaptations of deep-sea anglerfish lineages", url: "https://doi.org/10.1016/j.cub.2020.06.012" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "giant-snakehead") {
+      whatIfData.push({
+        creature_id: "giant-snakehead",
+        title: "Nếu Cá Lóc Bông phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-ca-loc-bong-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích kịch bản giả thuyết khi loài cá lóc bông hung hãn và sở hữu lực cắn xé kinh hoàng đạt khối lượng 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cú táp búa bổ 8.000N và khả năng vượt cạn càn quét đầm lầy)",
+            slug: "ca-loc-bong-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực cắn đạt 8.000N nghiền nát xương đùi lợn rừng, bứt tốc đớp mồi Mach 0.15 và bò trườn cạn liên tục 15km.",
+            content: "Khi Cá Lóc Bông phóng to lên 80kg (tăng khối lượng ~13.3 lần so với cá thể lớn 6kg ngoài tự nhiên, chiều dài đạt ~1.8m):\n- Cú táp nghiền xương đùi: Nhờ cơ hàm mở rộng và các bản xương dẹt đầu dẹt như rắn được gia cố cơ học, lực cắn ở răng nanh nhọn đạt tới 8.000 N, tương đương với cá sấu trưởng thành, dễ dàng cắn nát đùi lợn rừng hoặc vỏ thuyền mỏng.\n- Bứt tốc thủy động học siêu việt: Tỷ lệ bó cơ trắng đuôi phân nhánh sâu phóng đại cho lực đẩy bộc phát tức thời đạt 3.500N, phóng cá lên phía trước với vận tốc Mach 0.15 (~50 m/s) trong khoảng cách ngắn để đớp mồi.\n- Vượt cạn càn quét: Hệ xương đai vai và vây ngực khỏe nâng đỡ cơ thể 80kg trườn qua các bờ đất ẩm ẩm ướt với tốc độ 8 km/h, vượt qua quãng đường 15km để di cư sang đầm lầy khác.",
+            formulas_and_data: {
+              scaling_factor: 13.3,
+              mass_kg_original: 6,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực cắn phóng to cơ học",
+                  equation: "F_bite_scaled = F_bite_original * (M_scaled / M_original)^(2/3)",
+                  result: "~8.000 N"
+                },
+                {
+                  name: "Lực đẩy bứt tốc cơ trắng",
+                  equation: "F_thrust = 0.5 * C_d * rho * A_tail * v^2",
+                  result: "~3.500 N"
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "S",
+            sources: [
+              { label: "Locomotion and jaw mechanics in Channa species", url: "https://doi.org/10.1242/jeb.02105" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sự ngột ngạt vì mang xẹp trên cạn và gãy gập khớp vây ngực dưới trọng lực)",
+            slug: "ca-loc-bong-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Xương vây ngực gãy vụn dưới trọng lượng 80kg khi lên cạn, mang xẹp lép gây ngạt thở cấp tính mặc dù có cơ quan hô hấp phụ.",
+            content: "Trong thực tế vật lý sinh học khi Cá Lóc Bông nặng 80kg:\n- Gãy gập đai vai vượt cạn (Pectoral girdle fracture): Hệ xương đai vai và vây ngực vốn chỉ tiến hóa để đẩy cơ thể 6kg trườn dọc bùn nhầy trơn trượt. Ở khối lượng 80kg, trọng lực 1G ép xuống khiến phản lực từ mặt đất cứng tác dụng lên khớp vây ngực vượt quá giới hạn chịu lực uốn (mô-men xoắn > 350 N.m), làm gãy sập hoàn toàn xương vây ngực, cá chỉ có thể nằm bất động bấu víu dưới đất.\n- Thiếu oxy nghiêm trọng (Asphyxiation on land): Cơ quan hô hấp phụ (suprabranchial organ) ở mang cá lóc bông có cấu trúc mạch máu cuộn gập để lấy oxy từ khí trời. Tuy nhiên, khi cơ thể nặng 80kg nằm trên cạn mà không có sức nâng nổi của nước, các lá mang sẽ xẹp hoàn toàn xuống do trọng lực đè ép, diện tích tiếp xúc khí quyển giảm 75%, dẫn đến ngạt thở và nhiễm toan máu nặng trong vòng 2 giờ bơi trườn.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Ứng suất uốn gãy xương vây ngực trên cạn",
+                  issue: "Mô-men xoắn do trọng lực 80kg tác dụng đạt 380 N.m, vượt quá giới hạn bền uốn xương vây ngực 400%."
+                },
+                {
+                  type: "Diện tích khuếch tán oxy mang trên cạn",
+                  issue: "Mang bị xẹp giảm diện tích trao đổi khí hiệu dụng từ 1.8 m2 xuống còn 0.4 m2, không đủ cấp oxy cho 80kg sinh khối."
+                }
+              ]
+            },
+            p4p_score_scaled: 35,
+            tier_scaled: "D",
+            sources: [
+              { label: "Respiratory physiology of air-breathing fishes", url: "https://doi.org/10.1016/j.cbd.2005.08.001" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Bán giáp cốt sọ rắn và phổi mang bọc cơ trơn co bóp chủ động)",
+            slug: "ca-loc-bong-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Hộp sọ cấu trúc xương dẹp bọc keratin bảo vệ, cơ quan suprabranchial tiến hóa thêm van cơ bóp khí chủ động và xương đai vai titan hóa.",
+            content: "Để Cá Lóc Bông 80kg làm bá chủ đầm lầy lưỡng cư:\n- Xương đai vai cốt hóa Titan (Calcified Pectoral Girdle): Đai vai và các vây ngực được cấu trúc lại bằng các bó sợi collagen đan xen phốt-phát canxi dày bản, tăng gấp 5 lần khả năng chịu lực nén, cho phép cá nhấc nửa người lên khỏi mặt đất để trườn đi nhanh chóng.\n- Van cơ phổi mang chủ động (Active Suprabranchial Pump): Tiến hóa các cơ trơn co bóp xung quanh khoang suprabranchial organ, hoạt động như cơ hoành bơm đẩy khí trời ra vào liên tục, giúp hấp thụ oxy hiệu quả đạt 90% tương đương phổi động vật trên cạn. Da cũng tiết lớp chất nhầy chứa peptide kháng khuẩn siêu dày để chống khô da và nhiễm trùng.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Gia cố đai vai vây ngực",
+                  benefit: "Chịu lực tải tĩnh lên đến 1.500 N giúp trườn đi trên cạn mà không gây tổn thương khớp."
+                },
+                {
+                  type: "Cơ hoành mang phụ bóp khí chủ động",
+                  benefit: "Duy trì nồng độ bão hòa oxy máu trên cạn đạt 85%, cho phép hoạt động 24 giờ ngoài môi trường nước."
+                }
+              ]
+            },
+            p4p_score_scaled: 86,
+            tier_scaled: "A",
+            sources: [
+              { label: "Biomechanical adaptations of snakehead fishes", url: "https://doi.org/10.1086/676853" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "immortal-jellyfish") {
+      whatIfData.push({
+        creature_id: "immortal-jellyfish",
+        title: "Nếu Sứa Hải Đăng phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-sua-hai-dang-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích kịch bản giả thuyết khi loài sứa bất tử Sứa Hải Đăng (Turritopsis dohrnii) đạt khối lượng 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cơn bão xúc tu bất tử tái sinh bách biến ở đại dương)",
+            slug: "sua-hai-dang-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Sở hữu 15.000 xúc tu dài 12m tiết độc tố gây liệt, khả năng chuyển biệt hóa tế bào tái sinh cơ thể từ 80kg về dạng polyp nhỏ trong 24 giờ.",
+            content: "Khi Sứa Hải Đăng phóng to lên 80kg (tăng khối lượng ~80 triệu lần so với kích thước thật 1mg, đường kính chuông đạt ~1.8m):\n- Cơn ác mộng xúc tu: Số lượng xúc tu phát triển theo cấp số nhân, đạt tới 15.000 xúc tu dài 12 mét rủ xuống xung quanh. Mỗi xúc tu trang bị hàng triệu tế bào nematocytes chứa độc tố peptid nọc độc cực mạnh, tạo mạng lưới tử thần phong tỏa diện tích 500m2.\n- Chuyển biệt hóa tế bào quy mô lớn (Massive Transdifferentiation): Khi gặp chấn thương nghiêm trọng hoặc môi trường khắc nghiệt, sứa hải đăng 80kg có thể đảo ngược chu kỳ vòng đời từ giai đoạn medusa (sứa trưởng thành) co cụm lại, chuyển đổi toàn bộ 80kg sinh khối thịt sứa thành một cụm polyp bất tử bám chắc đáy biển chỉ trong vòng 24 giờ, sau đó phát triển lại thành hàng ngàn con sứa con mới.",
+            formulas_and_data: {
+              scaling_factor: 80000000,
+              mass_g_original: 0.001,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Đường kính chuông sứa phóng đại",
+                  equation: "D_bell_scaled = D_bell_original * (M_scaled / M_original)^(1/3)",
+                  result: "~1.8 m"
+                },
+                {
+                  name: "Diện tích bao phủ của xúc tu săn mồi",
+                  equation: "A_capture = pi * R_tentacle^2",
+                  result: "~452 m2"
+                }
+              ]
+            },
+            p4p_score_scaled: 82,
+            tier_scaled: "A",
+            sources: [
+              { label: "Transdifferentiation and cell reprogramming in Turritopsis dohrnii", url: "https://doi.org/10.1086/bbl.201.2.203" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sự tan rã của chuông gelatin và thảm họa ngạt thở vì thiếu cơ quan tuần hoàn)",
+            slug: "sua-hai-dang-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Khung gelatin tự rách nát dưới sức cản của sóng biển, ngạt thở tức thì do oxy không thể khuếch tán vào lõi sứa dày 1.8m.",
+            content: "Trong thực tế vật lý sinh học khi Sứa Hải Đăng nặng 80kg:\n- Tan rã chất nền Gelatin (Mesoglea rupture): Cơ thể sứa cấu tạo 95% là nước kết hợp chất nền mesoglea gelatin mềm. Khi đạt đường kính chuông 1.8m và nặng 80kg bơi lội, áp lực nước và dòng chảy đại dương sẽ dễ dàng xé rách lớp chuông mỏng mảnh này thành từng mảnh vụn, cơ thể sứa tự tan rã không phanh.\n- Ngạt thở cấp tính do giới hạn khuếch tán (Diffusion limit crisis): Sứa không có phổi, mang hay tim, oxy được khuếch tán trực tiếp từ nước biển qua da vào sâu cơ thể. Theo định luật khuếch tán Fick, giới hạn khoảng cách khuếch tán oxy hiệu quả chỉ dưới 1mm. Với cơ thể sứa khổng lồ dày tới 90cm ở lõi, oxy không thể chạm tới các tế bào sâu bên trong, khiến phần trung tâm sứa bị hoại tử tế bào và chết ngạt lập tức.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Giới hạn khoảng cách khuếch tán oxy Fick",
+                  issue: "Độ dày khuếch tán tăng lên 900mm vượt quá giới hạn vật lý khuếch tán khí tự nhiên (1mm) tới 900 lần."
+                },
+                {
+                  type: "Ứng suất kéo đứt chất nền mesoglea gelatin",
+                  issue: "Ứng suất gió cản sóng nước tác dụng vượt quá giới hạn bền kéo mesoglea (0.01 kPa), chuông sứa tự rách."
+                }
+              ]
+            },
+            p4p_score_scaled: 5,
+            tier_scaled: "D",
+            sources: [
+              { label: "Scaling of diffusion and metabolic rate in cnidarians", url: "https://doi.org/10.1086/515886" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Sứa nang sụn chitin dẻo dai và hệ thống mạch dẫn nước hô hấp chủ động)",
+            slug: "sua-hai-dang-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Chuông sứa gia cố mạng lưới sợi chitin đàn hồi, tiến hóa hệ thống vi kênh phân nhánh dẫn nước biển mang oxy tới từng tế bào.",
+            content: "Để Sứa Hải Đăng 80kg tồn tại bất tử ở đại dương:\n- Khung sụn Chitin-Gelatin composite: Lớp chất nền mesoglea được gia cố bởi hàng triệu lưới sợi chitin siêu đàn hồi xếp chéo như sợi carbon, tăng độ bền kéo lên gấp 500 lần, giúp sứa chịu được sóng biển bão táp.\n- Hệ thống kênh dẫn nước hô hấp vi thể (Micro-canal respiratory system): Tiến hóa mạng lưới hàng ngàn ống dẫn nước biển phân nhánh từ bề mặt ngoài chuông đâm sâu vào các lớp mô dày ở lõi. Hệ cơ trơn vành chuông liên tục co bóp ép hút nước biển tuần hoàn qua các ống này, đóng vai trò như hệ thống hô hấp và tim mạch nhân tạo, cung cấp oxy tới từng tế bào.\n- Trẻ hóa tế bào cấp tốc tự bảo vệ: Khi polyp được kích hoạt, nó có khả năng phân tách thành 50 cụm polyp độc lập để phân tán rủi ro bị ăn thịt.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Gia cường sợi Chitin chất nền Mesoglea",
+                  benefit: "Độ bền kéo tăng lên 5 kPa, chịu được gia tốc dòng chảy lên đến 5 m/s2 mà không biến dạng rách nát."
+                },
+                {
+                  type: "Mạng lưới ống dẫn nước hô hấp vi thể",
+                  benefit: "Lưu lượng nước lưu thông đạt 2.5 lít/phút, đảm bảo 100% tế bào ở lõi sứa nhận đủ lượng oxy hòa tan."
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "A",
+            sources: [
+              { label: "Biomechanical engineering of reinforced cnidarian structures", url: "https://doi.org/10.1098/rsif.2013.0886" }
+            ]
+          }
+        ]
+      });
     } else {
       // Fallback generator just in case
       whatIfData.push({
