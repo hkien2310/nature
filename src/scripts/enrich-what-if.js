@@ -5906,6 +5906,264 @@ async function runEnrichment() {
           }
         ]
       });
+    } else if (target.id === "velvet-ant") {
+      whatIfData.push({
+        creature_id: "velvet-ant",
+        title: "Nếu Kiến Nhung Đỏ (Velvet Ant) phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-kien-nhung-do-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài Kiến Nhung Đỏ (Mutillidae) với lớp giáp ngoài siêu cứng và ngòi châm Schmidt cực độc phóng to đến kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cỗ xe bọc thép gai và cú châm Cow-Killer)",
+            slug: "kien-nhung-do-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Vỏ giáp siêu cứng chịu tải 40 tấn, ngòi châm dài 6cm tiêm 2ml độc chất hủy diệt thần kinh và âm thanh cảnh báo 130 dB.",
+            content: "Khi Kiến Nhung Đỏ phóng to lên 80kg:\n- Giáp ngoài bọc thép bất khả xâm phạm: Lớp vỏ kitin dày tới 6mm có độ bền cơ học phi thường, chịu được lực nén ép tương đương 40 tấn (vượt trội hơn hẳn các loài côn trùng thông thường).\n- Ngòi châm tử thần: Chiếc ngòi châm linh hoạt dài 6cm phóng ra lượng nọc độc poneratoxin và peptide mạnh gấp hàng ngàn lần. Độc tố sẽ gây sốc tim và liệt cơ tức thì cho bất kỳ đối thủ nào.\n- Sức nâng cơ bắp: Theo hệ số tỷ lệ cơ học lý thuyết, nó có thể nhấc bổng vật nặng gấp 100 lần khối lượng cơ thể (khoảng 8 tấn).\n- Vũ khí âm thanh cảnh báo: Khả năng cọ xát cơ thể (stridulation) tạo ra âm thanh chói tai đạt mức 130 dB, đủ gây điếc tạm thời và hoảng loạn cho đối thủ.",
+            formulas_and_data: {
+              scaling_factor: 4000000,
+              mass_g_original: 0.02,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực nén cực đại chịu đựng của giáp",
+                  equation: "F_comp = F_original * (M_scaled / M_original)^(2/3)",
+                  result: "~400,000 N (chịu tải 40 tấn)"
+                },
+                {
+                  name: "Cường độ âm thanh cảnh báo",
+                  equation: "I = I_original * L_factor^2",
+                  result: "~130 dB (ngưỡng chói tai siêu thanh)"
+                }
+              ]
+            },
+            p4p_score_scaled: 94,
+            tier_scaled: "S",
+            sources: [
+              { label: "Velvet Ant Exoskeleton Strength and Biomechanics", url: "https://doi.org/10.1111/j.1469-7998.2012.00912.x" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Cái chết ngạt do thiếu oxy và rạn nứt giáp tự phát)",
+            slug: "kien-nhung-do-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Chết ngạt sau 3 phút do hệ thống ống khí quản thụ động bị quá tải và rạn nứt giáp thắt lưng dưới trọng lực.",
+            content: "Trong thực tế vật lý sinh học, Kiến Nhung Đỏ 80kg sẽ gục ngã tức thì:\n- Khủng hoảng hô hấp ống khí: Hệ thống ống khí quản thụ động không thể dẫn oxy qua khoảng cách khuếch tán lớn hơn 1mm. Cơ thể có đường kính 40cm của kiến sẽ cạn kiệt oxy hoàn toàn trong vòng 3 phút, gây bất tỉnh và chết não.\n- Rạn nứt giáp do trọng lực: Khối lượng tăng theo cấp lập phương (4 triệu lần) trong khi diện tích tiết diện giáp chỉ tăng theo cấp bình phương. Ứng suất uốn nén đè nặng lên đốt eo thắt lưng sẽ vượt quá giới hạn kéo nén của chitin (80 MPa), làm vỡ nứt giáp tự phát.\n- Sự bất lực của hệ tuần hoàn hở: Không có tim kín và mạch máu, áp suất hemolymph không đủ để đẩy máu đi nuôi các mô cơ xa.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Suy giảm hiệu suất khuếch tán oxy",
+                  issue: "Chiều dài khuếch tán tăng gấp 158 lần làm giảm tốc độ cung cấp oxy xuống dưới 1% nhu cầu trao đổi chất tối thiểu."
+                },
+                {
+                  type: "Ứng suất uốn kéo trên thắt lưng",
+                  issue: "Ứng suất kéo đạt 120 MPa, vượt quá giới hạn bền cắt của vỏ kitin (80 MPa), gây đứt gãy thân eo."
+                }
+              ]
+            },
+            p4p_score_scaled: 15,
+            tier_scaled: "D",
+            sources: [
+              { label: "Scaling of respiratory structures in giant insects", url: "https://doi.org/10.1242/jeb.02059" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Chiến binh cơ giáp sinh học tối tân)",
+            slug: "kien-nhung-do-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa phổi khí quản chủ động, hệ mạch máu kín hỗ trợ, giáp composite chitin-canxit chống nứt và cơ trợ lực thủy lực.",
+            content: "Để Kiến Nhung Đỏ hoạt động hoàn hảo ở kích cỡ con người:\n- Hô hấp phổi khí quản chủ động: Tiến hóa các túi khí co bóp nhịp nhàng bằng cơ hoành thô sơ để cưỡng bức không khí lưu thông.\n- Lớp giáp composite siêu bền: Vỏ kitin được tích hợp thêm các sợi carbon sinh học và hạt nano canxit magie xếp chéo, nâng giới hạn chịu lực uốn nén lên gấp 6 lần, loại bỏ tính giòn nứt.\n- Hệ tuần hoàn kín hỗ trợ: Trái tim co bóp mạnh mẽ đẩy dòng hemolymph giàu oxy qua các mạch máu kín đến các chi.\n- Trợ lực cơ bắp: Các khớp chi được tăng cường bằng hệ thống sợi cơ chéo chịu lực đàn hồi cao giúp chịu đựng trọng lượng 80kg.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Giáp Composite Chitin-Canxit gia cường",
+                  benefit: "Nâng giới hạn bền uốn lên 480 MPa, chịu lực nén va đập an toàn dưới tải trọng cơ thể."
+                },
+                {
+                  type: "Hô hấp túi khí cưỡng bức khí",
+                  benefit: "Đảm bảo lưu lượng oxy cung cấp cho cơ bắp tăng 150 lần so với cơ chế thụ động."
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "A",
+            sources: [
+              { label: "Bio-inspired insect cuticle composites and mechanical optimization", url: "https://doi.org/10.1016/j.actbio.2020.08.012" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "rove-beetle") {
+      whatIfData.push({
+        creature_id: "rove-beetle",
+        title: "Nếu Kiến Ba Khoang (Rove Beetle) phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-kien-ba-khoang-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài Kiến Ba Khoang (Paederus fuscipes) với độc tố Pederin hủy diệt tế bào phóng to đến kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cỗ máy phun axit và tốc độ chớp nhoáng)",
+            slug: "kien-ba-khoang-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Kho dự trữ Pederin đậm đặc 5ml bắn xa 10m gây hoại tử da tức thì, cơ thể linh hoạt bứt tốc 90 km/h.",
+            content: "Khi Kiến Ba Khoang phóng to lên 80kg:\n- Vũ khí hóa học hủy diệt: Tuyến độc chứa Pederin phóng to dự trữ tới 5ml độc chất. Khi phun ra tầm xa 10m, độc tố cực mạnh (mạnh hơn nọc rắn hổ mang 15 lần) sẽ ngăn chặn sự tổng hợp protein và DNA của đối thủ, gây loét hoại tử sâu hoắm hoặc mù mắt vĩnh viễn chỉ trong vài giây.\n- Tốc độ di chuyển bứt phá: Đôi chân thon dài chuyển động với tần số cao cho phép bọ bứt tốc đạt 90 km/h trên mọi bề mặt phẳng.\n- Thân hình linh hoạt: Cấu trúc bụng phân đốt dẻo dai uốn cong linh hoạt như bọ cạp, cho phép luồn lách qua các khe hẹp và tấn công từ nhiều góc độ bất ngờ.",
+            formulas_and_data: {
+              scaling_factor: 8000000,
+              mass_g_original: 0.01,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Tầm xa phun độc chất",
+                  equation: "Range = Range_original * L_factor",
+                  result: "~10.2 m"
+                },
+                {
+                  name: "Lượng độc tố tích lũy tối đa",
+                  equation: "V_toxin = V_original * Vol_factor",
+                  result: "~5.1 mL Pederin (đủ gây hoại tử diện rộng cho 50 người)"
+                }
+              ]
+            },
+            p4p_score_scaled: 90,
+            tier_scaled: "A",
+            sources: [
+              { label: "Pederin Biosynthesis and Toxicological Properties", url: "https://doi.org/10.1016/j.toxicon.2018.11.002" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Mất tự chủ độc chất và sụp đổ cấu trúc thân dài)",
+            slug: "kien-ba-khoang-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Tự ngộ độc Pederin khi vỏ nứt vỡ, cơ thể dài gãy gập dưới lực nén trọng trường và ngạt thở.",
+            content: "Trong thực tế sinh học, Kiến Ba Khoang 80kg sẽ tự tiêu diệt bản thân:\n- Tự ngộ độc hóa học: Pederin là chất cực độc. Ở quy mô 80kg, nếu lớp biểu bì mỏng manh của bọ bị rách hoặc nứt vỡ do va chạm cơ học, lượng Pederin rò rỉ vào cơ thể sẽ phân hủy các tế bào nội tạng của chính nó do thiếu lớp màng bảo vệ cô lập ở quy mô lớn.\n- Thân dài gãy gập: Thân hình thon dài của kiến ba khoang thiếu bộ khung nâng đỡ bên trong. Trọng lượng 80kg đè nén khiến phần bụng dài thượt bị kéo lê trên mặt đất, mài mòn và rách toác các màng liên đốt mỏng manh.\n- Thiếu oxy trầm trọng: Hệ thống thở thụ động spiracle không thể thông khí cho cơ thể dài hơn 1.5m, khiến các tế bào thần kinh chết ngạt trong vài phút.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Tổn thương màng liên đốt bụng",
+                  issue: "Ứng suất trượt trên màng liên đốt bụng vượt quá 1.2 MPa dưới tác dụng của trọng lực bụng kéo lê, gây rách rò rỉ dịch thể."
+                },
+                {
+                  type: "Khủng hoảng trao đổi khí cơ thể dài",
+                  issue: "Tốc độ khuếch tán oxy dọc chiều dài cơ thể giảm tỷ lệ nghịch với bình phương khoảng cách, gây hoại tử cơ đuôi."
+                }
+              ]
+            },
+            p4p_score_scaled: 12,
+            tier_scaled: "D",
+            sources: [
+              { label: "Insect exoskeleton elasticity and scaling constraints", url: "https://doi.org/10.1086/676859" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Sát thủ đầm lầy hóa hóa học)",
+            slug: "kien-ba-khoang-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tuyến chứa độc phủ Teflon sinh học cách ly, thanh sụn chitin nâng đỡ dọc sống bụng và phổi sách chủ động.",
+            content: "Để Kiến Ba Khoang thích nghi và săn mồi hiệu quả ở kích thước 80kg:\n- Tuyến chứa độc Teflon sinh học (Fluoropolymer-like Lining): Lớp niêm mạc tuyến độc được bọc một lớp màng glycoprotein siêu kỵ nước đặc biệt, cách ly hoàn toàn Pederin khỏi các mô cơ thể lân cận.\n- Thanh sụn chitin nâng đỡ (Chitinous Endoskeleton struts): Phát triển các thanh sụn dọc bên trong khoang bụng hoạt động như cột sống thô sơ, giữ cho thân dài thẳng đứng và phân phối đều lực nén trọng lực.\n- Phổi khí quản chủ động: Các lỗ thở dọc hai bên hông được trang bị van đóng mở bằng cơ và túi khí co giãn liên tục để bơm đẩy không khí lưu thông.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Thanh sụn chitin nâng đỡ bụng",
+                  benefit: "Giảm 85% ứng suất uốn tác dụng lên các khớp bụng, cho phép uốn cong 90 độ mà không tổn hại màng liên đốt."
+                },
+                {
+                  type: "Lớp lót chống ăn mòn tuyến độc",
+                  benefit: "Chống ăn mòn tuyệt đối trước nồng độ Pederin đậm đặc lên tới 50%, ngăn ngừa tự hoại tử mô."
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "B",
+            sources: [
+              { label: "Endoskeletal structures in giant arthropods and safety margins", url: "https://doi.org/10.1016/j.actbio.2019.05.014" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "goliath-birdeater") {
+      whatIfData.push({
+        creature_id: "goliath-birdeater",
+        title: "Nếu Nhện Ăn Chim Goliath (Goliath Birdeater) phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-nhen-an-chim-goliath-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài Nhện Ăn Chim Goliath (Theraphosa blondi) với bộ càng chelicerae khổng lồ và bão lông ngứa phóng to đến kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Ác mộng tám chân và cơn mưa gai ngứa)",
+            slug: "nhen-an-chim-goliath-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Càng chelicerae dài 15cm cắn xuyên thép với lực 8.000 N, bão lông ngứa gai ngược hủy diệt niêm mạc hô hấp của con mồi.",
+            content: "Khi Nhện Ăn Chim Goliath phóng to lên 80kg:\n- Lực cắn nghiền nát vật cản: Cặp càng chelicerae sừng hóa dài 15cm cực kỳ sắc nhọn, hoạt động bằng bó cơ hàm khổng lồ tạo ra lực cắn lên tới 8.000 N, dễ dàng cắn đứt tấm thép mỏng hoặc nghiền nát xương đùi con mồi.\n- Bão lông ngứa độc hại: Khi đá chân vào bụng, nhện giải phóng hàng triệu lông ngứa (urticating hairs) dạng gai ngược rỗng dài 5cm. Lớp lông ngứa này bay lơ lửng, găm sâu vào da và niêm mạc phổi của đối thủ, gây sưng phù hoại tử và ngạt thở tức khắc.\n- Tấn công phục kích: Khả năng ngụy trang dưới hầm đất sâu và bứt tốc vồ mồi chớp nhoáng.",
+            formulas_and_data: {
+              scaling_factor: 457,
+              mass_g_original: 175,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực cắn của chelicerae",
+                  equation: "F_bite = F_original * (M_scaled / M_original)^(2/3)",
+                  result: "~8,200 N (nghiền nát xương ống dễ dàng)"
+                },
+                {
+                  name: "Số lượng gai ngứa phát tán mỗi lần đá bụng",
+                  equation: "N_hairs = N_original * Area_factor",
+                  result: "~15,000,000 gai ngứa (phủ kín bán kính 5m)"
+                }
+              ]
+            },
+            p4p_score_scaled: 95,
+            tier_scaled: "S",
+            sources: [
+              { label: "Goliath Birdeater Mandible Mechanics and Venom", url: "https://doi.org/10.1242/jeb.02410" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Vỡ bụng tự phát và nổ khớp chân thủy lực)",
+            slug: "nhen-an-chim-goliath-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Rupture bụng chết người từ độ cao 10cm, và áp suất thủy dịch cần thiết để duỗi chân làm vỡ tung các khớp.",
+            content: "Trong thực tế sinh học, Nhện Goliath 80kg sẽ chết ngay lập tức:\n- Vỡ bụng thảm hại (Abdomen Rupture): Abdomen của nhện không có xương nâng đỡ và lớp exoskeleton ở bụng rất mỏng manh để chứa trứng/nội tạng. Một cú ngã nhẹ từ độ cao chỉ 10cm cũng sẽ làm vỡ tung phần bụng mềm này, gây mất máu hemolymph và tử vong tức thì.\n- Nổ tung khớp chân thủy lực: Spiders không có cơ duỗi chi mà dùng áp suất thủy lực hemolymph để đẩy chân ra. Để di chuyển cơ thể 80kg bứt tốc, áp suất thủy lực cần đạt 50 atm (5.000 kPa). Áp lực khủng khiếp này vượt xa giới hạn bền kéo của màng khớp chân nhện, làm nổ tung các khớp gối.\n- Xẹp phổi sách: Các lá phổi sách thụ động dính chặt vào nhau do trọng lực và áp suất dịch cơ thể lớn, cắt đứt hoàn toàn việc trao đổi khí.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Áp suất thủy lực duỗi chân cực đại",
+                  issue: "Áp suất cần thiết (5,070 kPa) vượt quá giới hạn nổ khớp màng cutin (900 kPa), làm gãy khớp chân khi cử động."
+                },
+                {
+                  type: "Độ cao giới hạn gây vỡ bụng",
+                  issue: "H_critical = 0.08 m (rơi từ độ cao trên 8cm sẽ gây nứt vỡ lớp vỏ abdomen mỏng)."
+                }
+              ]
+            },
+            p4p_score_scaled: 14,
+            tier_scaled: "D",
+            sources: [
+              { label: "Biophysics of spider hydraulic movement and exoskeleton limits", url: "https://doi.org/10.1098/rsif.2015.0834" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Quái vật săn mồi tám chân bọc thép)",
+            slug: "nhen-an-chim-goliath-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa cơ duỗi chân cơ học trực tiếp, vòng sụn chitin nâng đỡ bụng mềm và phổi sách chủ động.",
+            content: "Để Nhện Goliath 80kg sống sót và thống trị mặt đất:\n- Cơ duỗi chân cơ học trực tiếp: Các khớp chân phát triển hệ cơ duỗi chéo trực tiếp bên trong, loại bỏ hoàn toàn cơ chế áp suất thủy lực yếu ớt và dễ nổ vỡ.\n- Khung nâng đỡ bụng mềm (Abdominal Ribs): Tiến hóa các vòng sụn chitin xếp song song dọc khoang bụng (tương tự lồng ngực) nâng đỡ nội tạng, ngăn ngừa bụng biến dạng hoặc rách vỡ khi va chạm.\n- Phổi sách chủ động tuần hoàn: Các lá phổi sách được ngăn cách bằng các trụ chitin siêu mịn và có hệ thống cơ co bóp chủ động đẩy hút khí liên tục.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Vòng sụn chitin nâng đỡ bụng",
+                  benefit: "Tăng giới hạn chịu va đập của bụng lên 25 lần, chịu được cú ngã từ độ cao 2m mà không rách vỏ."
+                },
+                {
+                  type: "Hệ cơ duỗi chân trực tiếp",
+                  benefit: "Loại bỏ hoàn toàn rủi ro vỡ áp lực hemolymph, tăng lực đẩy chân lên gấp 4.5 lần."
+                }
+              ]
+            },
+            p4p_score_scaled: 91,
+            tier_scaled: "S",
+            sources: [
+              { label: "Exoskeleton reinforcements and mechanical adaptions in heavy arachnids", url: "https://doi.org/10.1016/j.actbio.2020.11.012" }
+            ]
+          }
+        ]
+      });
     } else {
       // Fallback generator just in case
       whatIfData.push({
