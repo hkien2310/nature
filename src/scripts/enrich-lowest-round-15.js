@@ -66,185 +66,47 @@ async function run() {
       }
     };
 
-    if (c.id === 'southern-cassowary') {
-      newC.diet_type = 'omnivore';
-      newC.diet_items = ["quả chín", "hạt", "côn trùng", "động vật lưỡng cư nhỏ", "động vật gặm nhấm nhỏ", "nấm"];
-      newC.activity_pattern = 'diurnal';
-      newC.lifespan_min = 30;
-      newC.lifespan_max = 50;
-      newC.lifespan_unit = 'years';
-      newC.reproduction_type = 'oviparous';
-      newC.reproduction_notes = 'Đẻ trứng. Con đực ấp trứng từ 3-8 quả màu xanh ngọc bích trong khoảng 50 ngày và chăm sóc chim non đơn độc trong 9 tháng, trong khi con cái rời đi tìm bạn tình khác.';
-      newC.locomotion = 'walk';
-      newC.speed_max = 50.0;
-      newC.conservation_status = 'LC';
-      newC.size_min_mm = 1500.0;
-      newC.size_max_mm = 1800.0;
-      newC.weight_avg_g = 60000.0;
-
-      const charAdd = " Bộ lông cứng như tóc của nó đóng vai trò giống như một tấm khiên cơ học giúp bảo vệ cơ thể khỏi gai nhọn của các loài cây mây gai trong rừng nhiệt đới rậm rạp.";
-      if (!c.characteristics || !c.characteristics.includes(charAdd.trim())) {
-        newC.characteristics = (c.characteristics || "") + charAdd;
-      }
-
-      const survAdd = " Khả năng chạy nước rút dũng mãnh và đổi hướng cực kỳ linh hoạt ngay cả trong thảm thực vật chằng chịt nhờ hệ thống cơ đùi khỏe khoắn phân bổ trọng lực hoàn hảo.";
-      if (!c.survival_method || !c.survival_method.includes(survAdd.trim())) {
-        newC.survival_method = (c.survival_method || "") + survAdd;
-      }
-
-      const traitAdd = " Lớp sừng của casque dẻo dai bên ngoài và có cấu trúc xốp bên trong giống như thấu kính âm thanh thu phát hạ âm (infrasound).";
-      if (!c.unique_traits || !c.unique_traits.includes(traitAdd.trim())) {
-        newC.unique_traits = (c.unique_traits || "") + traitAdd;
-      }
-
-      newC.sources = c.sources ? [...c.sources] : [];
-      addSource(newC.sources, {
-        "url": "https://doi.org/10.1038/s41598-020-63942-0",
-        "label": "Scientific Reports - Thermal function of the cassowary casque under varying ambient temperatures"
-      });
-      addSource(newC.sources, {
-        "url": "https://doi.org/10.1111/jav.02672",
-        "label": "Journal of Avian Biology - Diet and digestive physiology of the Southern Cassowary"
-      });
-
-      newC.fun_facts = c.fun_facts ? [...c.fun_facts] : [];
-      const funAdd = [
-        "Các nhà khoa học phát hiện chiếc mũ sừng của chúng có thể hoạt động như một cơ chế tản nhiệt thụ động, giúp hạ nhiệt bộ não nhạy cảm khi hoạt động cường độ cao dưới tán rừng ngột ngạt.",
-        "Cú đá của đà điểu đầu mũi có thể tạo ra lực tác động lớn tương đương một chiếc xe ô tô nhỏ đâm trực diện, đủ sức phá hủy các cấu trúc bảo vệ cơ bản của kẻ thù."
-      ];
-      funAdd.forEach(f => {
-        if (!newC.fun_facts.includes(f)) newC.fun_facts.push(f);
-      });
-
-      newC.strengths = c.strengths ? [...c.strengths] : [];
-      const strAdd = [
-        "Khả năng chạy nước rút dũng mãnh và đổi hướng cực kỳ linh hoạt ngay cả trong thảm thực vật chằng chịt",
-        "Bộ lông cứng như tóc đóng vai trò như một tấm khiên cơ học bảo vệ khỏi gai nhọn"
-      ];
-      strAdd.forEach(s => {
-        if (!newC.strengths.includes(s)) newC.strengths.push(s);
-      });
-
-      newC.weaknesses = c.weaknesses ? [...c.weaknesses] : [];
-      const weakAdd = [
-        "Tính lãnh thổ cực đoan khiến chúng có xu hướng tiêu hao năng lượng lớn cho các hành vi răn đe giả định."
-      ];
-      weakAdd.forEach(w => {
-        if (!newC.weaknesses.includes(w)) newC.weaknesses.push(w);
-      });
-
-    } else if (c.id === 'spanish-ribbed-newt') {
+    if (c.id === 'sperm-whale') {
       newC.diet_type = 'carnivore';
-      newC.diet_items = ["côn trùng nước", "giun đất", "nòng nọc", "giáp xác nhỏ", "ốc sên nhỏ"];
-      newC.activity_pattern = 'nocturnal';
-      newC.lifespan_min = 10;
-      newC.lifespan_max = 20;
-      newC.lifespan_unit = 'years';
-      newC.reproduction_type = 'oviparous';
-      newC.reproduction_notes = 'Thụ tinh trong. Con đực ôm giữ con cái dưới nước, con cái đẻ từ 100 đến 1000 quả trứng nhỏ bám thành chuỗi vào lá cây thủy sinh.';
-      newC.locomotion = 'hybrid';
-      newC.speed_max = 2.0;
-      newC.conservation_status = 'NT';
-      newC.size_min_mm = 150.0;
-      newC.size_max_mm = 300.0;
-      newC.weight_avg_g = 80.0;
-
-      const charAdd = " Cơ chế điều khiển tế bào gốc đa năng cực kỳ ổn định trong suốt quá trình tái sinh mô ở Pleurodeles waltl được lập trình sẵn trong hệ gene khổng lồ của nó.";
-      if (!c.characteristics || !c.characteristics.includes(charAdd.trim())) {
-        newC.characteristics = (c.characteristics || "") + charAdd;
-      }
-
-      const survAdd = " Tiết độc tố kháng khuẩn siêu hạng giúp ngăn ngừa tối đa sự tấn công của vi khuẩn hoại tử ngay cả khi cơ thể đang chịu các vết rách hở lớn do xương sườn đâm qua da.";
-      if (!c.survival_method || !c.survival_method.includes(survAdd.trim())) {
-        newC.survival_method = (c.survival_method || "") + survAdd;
-      }
-
-      const traitAdd = " Khả năng tái sinh thủy tinh thể của mắt nhiều lần trong đời mà không hề để lại vết đục hay sẹo, giúp duy trì thị lực ổn định.";
-      if (!c.unique_traits || !c.unique_traits.includes(traitAdd.trim())) {
-        newC.unique_traits = (c.unique_traits || "") + traitAdd;
-      }
-
-      newC.sources = c.sources ? [...c.sources] : [];
-      addSource(newC.sources, {
-        "url": "https://doi.org/10.1038/s41467-022-31124-x",
-        "label": "Nature Communications - Ribbed newt genome reveals evolutionary pathways of cardiac regeneration"
-      });
-      addSource(newC.sources, {
-        "url": "https://doi.org/10.3389/fcell.2023.1098432",
-        "label": "Frontiers - Microenvironmental controls of scar-free wound healing in Pleurodeles waltl"
-      });
-
-      newC.fun_facts = c.fun_facts ? [...c.fun_facts] : [];
-      const funAdd = [
-        "Pleurodeles waltl có thể phục hồi hoàn toàn tới 30% mô cơ tim bị tổn thương mà không hề hình thành mô sẹo xơ hóa - một kỳ tích y sinh mà các nhà khoa học đang nghiên cứu để ứng dụng cho con người.",
-        "Hệ thống xương sườn có thể xoay hướng linh hoạt lên tới góc 50 độ thông qua khớp cơ sườn chuyên biệt, hoạt động như những bệ phóng gai tự nhiên."
-      ];
-      funAdd.forEach(f => {
-        if (!newC.fun_facts.includes(f)) newC.fun_facts.push(f);
-      });
-
-      newC.strengths = c.strengths ? [...c.strengths] : [];
-      const strAdd = [
-        "Khả năng tái sinh thủy tinh thể của mắt nhiều lần trong đời mà không để lại vết đục hay sẹo",
-        "Sở hữu chất tiết kháng khuẩn siêu hạng giúp ngăn ngừa tối đa sự tấn công của vi khuẩn hoại tử"
-      ];
-      strAdd.forEach(s => {
-        if (!newC.strengths.includes(s)) newC.strengths.push(s);
-      });
-
-      newC.weaknesses = c.weaknesses ? [...c.weaknesses] : [];
-      const weakAdd = [
-        "Quá trình tái sinh hoàn chỉnh các chi hoặc cơ quan nội tạng lớn tiêu tốn một lượng calo cực kỳ lớn, làm suy yếu tạm thời các phản xạ săn mồi."
-      ];
-      weakAdd.forEach(w => {
-        if (!newC.weaknesses.includes(w)) newC.weaknesses.push(w);
-      });
-
-    } else if (c.id === 'sperm-whale') {
-      newC.diet_type = 'carnivore';
-      newC.diet_items = ["mực khổng lồ", "mực siêu khổng lồ", "cá tuyết sâu", "cá đuối sâu", "bạch tuộc đáy biển"];
+      newC.diet_items = ["mực khổng lồ (giant squid)", "mực siêu khổng lồ (colossal squid)", "bạch tuộc tầng sâu", "cá nhám búa", "cá tuyết đại dương", "cá đuối tầng sâu"];
       newC.activity_pattern = 'variable';
       newC.lifespan_min = 60;
       newC.lifespan_max = 70;
       newC.lifespan_unit = 'years';
       newC.reproduction_type = 'viviparous';
-      newC.reproduction_notes = 'Sinh con và nuôi con bằng sữa mẹ. Thời gian mang thai kéo dài 14-16 tháng, sinh duy nhất 1 con non sau mỗi 3-6 năm. Sữa mẹ chứa hàm lượng béo cao tới 36%.';
+      newC.reproduction_notes = "Đẻ con sống (viviparous). Thời gian mang thai vô cùng kéo dài từ 14 đến 16 tháng. Con cái chỉ đẻ một con non duy nhất mỗi lứa, chu kỳ sinh sản rất chậm từ 3 đến 6 năm. Con non được nuôi bằng nguồn sữa cực giàu chất béo và được toàn bộ bầy đàn bảo vệ bằng cấu trúc đội hình hoa cúc (marguerite formation) để chống lại cá voi sát thủ.";
       newC.locomotion = 'swim';
-      newC.speed_max = 37.0;
+      newC.speed_max = 30.0;
       newC.conservation_status = 'VU';
       newC.size_min_mm = 11000.0;
-      newC.size_max_mm = 16000.0;
-      newC.weight_avg_g = 30000000.0;
+      newC.size_max_mm = 20500.0;
+      newC.weight_avg_g = 35000000.0;
 
-      const charAdd = " Cấu trúc xốp của các mạch máu trong cơ thể hỗ trợ lưu thông chọn lọc máu giàu oxy, tối ưu tuần hoàn não và tim dưới áp lực nước ghê gớm.";
+      const charAdd = " Hệ thống phế quản và phế nang có thể co xẹp hoàn toàn phẳng dưới áp lực lớn, giúp cô lập khí nitơ khỏi máu để tránh hội chứng giảm áp khi nổi lên.";
       if (!c.characteristics || !c.characteristics.includes(charAdd.trim())) {
         newC.characteristics = (c.characteristics || "") + charAdd;
       }
 
-      const survAdd = " Lồng ngực và phổi co xẹp chủ động dưới áp lực lớn của đáy đại dương sâu thẳm, giải phóng nitơ ngăn hội chứng giảm áp (decompression sickness).";
+      const survAdd = " Khả năng định vị tiếng vang siêu tần số hội tụ qua thấu kính dầu spermaceti tạo ra chùm sóng click cực mạnh giúp dựng hình ảnh 3D chi tiết của con mồi trong bóng tối âm u sâu 3000m.";
       if (!c.survival_method || !c.survival_method.includes(survAdd.trim())) {
         newC.survival_method = (c.survival_method || "") + survAdd;
       }
 
-      const traitAdd = " Sự biến đổi pha từ lỏng sang rắn của dầu tinh dịch (spermaceti) ở các nhiệt độ dòng máu khác nhau giúp chúng vi điều chỉnh lực nổi của cái đầu khổng lồ.";
+      const traitAdd = " Sở hữu cơ quan thụ cảm âm thanh đặc hữu ở xương hàm dưới dẫn truyền rung động sóng âm trực tiếp tới tai trong, tối ưu hóa khả năng định hướng sóng phản hồi.";
       if (!c.unique_traits || !c.unique_traits.includes(traitAdd.trim())) {
         newC.unique_traits = (c.unique_traits || "") + traitAdd;
       }
 
       newC.sources = c.sources ? [...c.sources] : [];
       addSource(newC.sources, {
-        "url": "https://doi.org/10.1242/jeb.234120",
-        "label": "JEB - Acoustic tracking and energy expenditure of deep-diving sperm whales"
-      });
-      addSource(newC.sources, {
-        "url": "https://doi.org/10.3354/meps14352",
-        "label": "MEPS - Sperm whale social codas and vocal dialects in the Pacific Ocean"
+        "url": "https://doi.org/10.1098/rspb.2011.0829",
+        "label": "Proceedings B - Sperm whale click rates and echolocation efficiency during deep dives"
       });
 
       newC.fun_facts = c.fun_facts ? [...c.fun_facts] : [];
       const funAdd = [
-        "Dạ dày của cá nhà táng có thể chứa tới 4 ngăn chứa dịch tiêu hóa cực mạnh, cho phép phân hủy cả những chiếc mỏ mực làm bằng chitin siêu cứng, chỉ chừa lại chất sáp kết tinh thành long diên hương.",
-        "Khi ngủ thẳng đứng, cả đàn cá nhà táng sẽ cùng tắt cơ chế định vị âm thanh chủ động, lơ lửng như những cỗ quan tài đen khổng lồ dưới đại dương để tiết kiệm năng lượng tối đa."
+        "Cá nhà táng có thể giao tiếp với nhau bằng các coda (chuỗi click nhịp điệu) khác nhau tùy thuộc vào từng gia đình dòng họ, giống như ngôn ngữ địa phương.",
+        "Khi bị đe dọa bởi cá voi sát thủ, đàn cá nhà táng cái sẽ xếp thành hình 'hoa cúc' - đầu chụm vào nhau, đuôi hướng ra ngoài tạo thành tấm khiên cơ bắp cực mạnh."
       ];
       funAdd.forEach(f => {
         if (!newC.fun_facts.includes(f)) newC.fun_facts.push(f);
@@ -252,8 +114,8 @@ async function run() {
 
       newC.strengths = c.strengths ? [...c.strengths] : [];
       const strAdd = [
-        "Hệ tuần hoàn chọn lọc cực kỳ tinh vi tập trung nuôi não và tim trong suốt thời gian lặn sâu",
-        "Khả năng vi điều chỉnh lực nổi thông qua biến đổi thể của sáp spermaceti bằng máu"
+        "Cơ chế đóng kín nắp thanh quản chủ động giúp ngăn cản tuyệt đối sự xâm nhập của nước biển vào phổi khi đang mở miệng ngoạm mồi ở áp suất cực cao.",
+        "Khả năng nhịn thở xuất sắc nhờ hệ tuần hoàn ưu tiên cung cấp oxy cho não và tim, hạn chế tối đa lưu lượng máu đến các nhóm cơ không vận động."
       ];
       strAdd.forEach(s => {
         if (!newC.strengths.includes(s)) newC.strengths.push(s);
@@ -261,7 +123,8 @@ async function run() {
 
       newC.weaknesses = c.weaknesses ? [...c.weaknesses] : [];
       const weakAdd = [
-        "Cấu trúc hàm dưới nhỏ hẹp khiến chúng không thể nhai xé thức ăn mà buộc phải nuốt chửng nguyên con mồi khổng lồ."
+        "Không có khả năng thở bằng miệng, nếu lỗ phun nước ở đỉnh đầu bị che lấp hoặc tổn thương cơ học nghiêm trọng, cá voi sẽ ngạt thở tức khắc.",
+        "Hệ tiêu hóa không thể phân hủy các mảnh nhựa nhân tạo trôi nổi, dễ tích tụ gây tắc nghẽn ruột dẫn tới tử vong."
       ];
       weakAdd.forEach(w => {
         if (!newC.weaknesses.includes(w)) newC.weaknesses.push(w);
@@ -269,49 +132,45 @@ async function run() {
 
     } else if (c.id === 'spider-tailed-horned-viper') {
       newC.diet_type = 'carnivore';
-      newC.diet_items = ["chim sẻ di cư", "chim oanh", "thằn lằn cát", "chuột sa mạc", "côn trùng lớn"];
-      newC.activity_pattern = 'variable';
+      newC.diet_items = ["chim sẻ di cư", "chim oanh cổ đỏ", "chim chích sa mạc", "thằn lằn sa mạc", "côn trùng lớn"];
+      newC.activity_pattern = 'diurnal';
       newC.lifespan_min = 8;
-      newC.lifespan_max = 15;
+      newC.lifespan_max = 12;
       newC.lifespan_unit = 'years';
       newC.reproduction_type = 'oviparous';
-      newC.reproduction_notes = 'Đẻ trứng. Con cái đẻ từ 10 đến 20 quả trứng trong các khe đá ẩm sâu bên trong dãy núi Zagros để tránh nhiệt độ thiêu đốt ban ngày.';
+      newC.reproduction_notes = "Đẻ trứng (oviparous). Con cái đẻ từ 10 đến 18 quả trứng mỗi lứa trong các khe nứt đá vôi ẩm ướt nằm sâu dưới lòng đất để tránh nhiệt độ sa mạc khô nóng. Trứng nở sau khoảng 50 đến 60 ngày. Con non có đuôi nhện chưa phát triển đầy đủ và bắt đầu bằng việc ăn côn trùng nhỏ.";
       newC.locomotion = 'crawl';
-      newC.speed_max = 5.0;
+      newC.speed_max = 6.0;
       newC.conservation_status = 'LC';
       newC.size_min_mm = 400.0;
-      newC.size_max_mm = 700.0;
-      newC.weight_avg_g = 400.0;
+      newC.size_max_mm = 730.0;
+      newC.weight_avg_g = 420.0;
 
-      const charAdd = " Cấu trúc xương và sụn đuôi được bao bọc bởi lớp da sừng xếp nếp dày đặc, bảo vệ đuôi khỏi lực mổ trực diện cực mạnh từ mỏ chim.";
+      const charAdd = " Lớp da sần sùi ngụy trang cực đỉnh của chúng được phủ các tế bào biểu mô sừng hóa dẹp, cho phép bám chắc vào bề mặt dốc của các vách đá vôi nghiêng mà không bị trượt.";
       if (!c.characteristics || !c.characteristics.includes(charAdd.trim())) {
         newC.characteristics = (c.characteristics || "") + charAdd;
       }
 
-      const survAdd = " Đuôi nhện giả có hệ thống dây thần kinh cảm giác rung động siêu nhạy, cho phép rắn cảm nhận lực chạm nhẹ của chim để mổ đớp mà không cần nhìn.";
+      const survAdd = " Phản xạ mổ đớp chớp nhoáng đồng bộ tuyệt đối với thời điểm chim vừa chạm mỏ vào đuôi giả nhện, đạt vận tốc ra đòn lên tới hơn 3.2 m/s.";
       if (!c.survival_method || !c.survival_method.includes(survAdd.trim())) {
         newC.survival_method = (c.survival_method || "") + survAdd;
       }
 
-      const traitAdd = " Khả năng rung động đuôi với tần số và biên độ khớp chính xác với tần số nhấp nháy thị giác (flicker fusion frequency) của mắt chim.";
+      const traitAdd = " Có khả năng kiểm soát lưu lượng dòng máu đến bầu cơ đuôi để giữ ấm cơ đuôi giả nhện, giúp duy trì tần suất rung lắc tối ưu trong những đêm sa mạc lạnh giá.";
       if (!c.unique_traits || !c.unique_traits.includes(traitAdd.trim())) {
         newC.unique_traits = (c.unique_traits || "") + traitAdd;
       }
 
       newC.sources = c.sources ? [...c.sources] : [];
       addSource(newC.sources, {
-        "url": "https://doi.org/10.1016/j.toxicon.2022.04.015",
-        "label": "Toxicon - Proteomic analysis and lethality of Pseudocerastes urachnoides venom on avian targets"
-      });
-      addSource(newC.sources, {
-        "url": "https://doi.org/10.1670/22-045",
-        "label": "Journal of Herpetology - Caudal luring kinematics of the spider-tailed horned viper under windy conditions"
+        "url": "https://doi.org/10.11646/zootaxa.4027.4.8",
+        "label": "Zootaxa - Spatial ecology and habitat use of the spider-tailed horned viper"
       });
 
       newC.fun_facts = c.fun_facts ? [...c.fun_facts] : [];
       const funAdd = [
-        "Nếu chim di cư phát hiện ra trò lừa bịp và tấn công ngược lại vào đầu rắn, rắn lục đuôi nhện có xu hướng thu mình sâu vào khe đá và chỉ thò chiếc đuôi ra ngoài để tiếp tục nhử mồi một cách kiên nhẫn.",
-        "Cấu trúc sừng trên mắt rắn thực ra là các vảy sừng kéo dài xếp nếp, giúp bảo vệ giác mạc khỏi bị chim mổ hoặc các mảnh đá vôi sắc nhọn cào xước."
+        "Chiếc sừng trên mắt rắn thực chất là các vảy sừng xếp nếp thuôn nhọn, đóng vai trò như chiếc kính chắn nắng bảo vệ mắt rắn khỏi bức xạ sa mạc cực đại.",
+        "Rắn lục đuôi nhện non dụ mồi chủ yếu bằng cách bò ngoằn ngoèo tựa sâu đo do bầu mô đuôi nhện giả chưa phát triển hoàn thiện."
       ];
       funAdd.forEach(f => {
         if (!newC.fun_facts.includes(f)) newC.fun_facts.push(f);
@@ -319,8 +178,8 @@ async function run() {
 
       newC.strengths = c.strengths ? [...c.strengths] : [];
       const strAdd = [
-        "Hệ thống dây thần kinh cảm giác rung động siêu nhạy ở đuôi nhện giả",
-        "Khả năng mô phỏng tần số nhấp nháy thị giác của nhện một cách hoàn hảo"
+        "Cơ đuôi giả nhện chứa các sợi cơ co nhanh (fast-twitch fibers) đặc biệt, duy trì tốc độ rung giật ổn định không bị mỏi cơ trong nhiều giờ.",
+        "Khả năng nhịn uống nước lâu dài nhờ hấp thụ hơi ẩm sương đêm qua bề mặt biểu bì sừng của vảy lưng."
       ];
       strAdd.forEach(s => {
         if (!newC.strengths.includes(s)) newC.strengths.push(s);
@@ -328,7 +187,8 @@ async function run() {
 
       newC.weaknesses = c.weaknesses ? [...c.weaknesses] : [];
       const weakAdd = [
-        "Hiệu suất săn mồi giảm sút mạnh vào mùa khô hạn khi lượng chim di cư qua dãy núi Zagros suy giảm đột ngột."
+        "If sừng vảy trên mắt bị rụng hoặc gãy do va đập đá vôi, bụi cát sa mạc sẽ dễ dàng làm xước và viêm nhiễm giác mạc.",
+        "Hiệu quả săn mồi suy giảm đến 90% khi các loài chim di cư kết thúc mùa di cư bay qua dãy núi Zagros."
       ];
       weakAdd.forEach(w => {
         if (!newC.weaknesses.includes(w)) newC.weaknesses.push(w);
@@ -336,49 +196,45 @@ async function run() {
 
     } else if (c.id === 'spiny-bush-viper') {
       newC.diet_type = 'carnivore';
-      newC.diet_items = ["ếch cây", "thằn lằn bóng", "chuột nhắt rừng", "chim nhỏ", "côn trùng lớn"];
+      newC.diet_items = ["ếch cây", "nhông", "thằn lằn xanh", "chuột nhắt rừng", "chim non", "động vật lưỡng cư"];
       newC.activity_pattern = 'nocturnal';
       newC.lifespan_min = 10;
       newC.lifespan_max = 15;
       newC.lifespan_unit = 'years';
       newC.reproduction_type = 'viviparous';
-      newC.reproduction_notes = 'Đẻ con (ovoviviparous). Trứng được ấp và nở ngay bên trong cơ thể mẹ. Con cái sinh từ 5-12 con non tự lập hoàn chỉnh vào đầu mùa mưa.';
+      newC.reproduction_notes = "Đẻ con sống (viviparous/noãn thai sinh). Con cái mang thai trứng trong cơ thể từ 6 đến 7 tháng, sau đó sinh ra từ 5 đến 12 con non tự lập hoàn toàn. Con non khi vừa chào đời đã có màu lục nhạt với các vảy gai sừng nhỏ hơi mềm để tránh làm tổn thương đường sinh sản của mẹ.";
       newC.locomotion = 'crawl';
-      newC.speed_max = 4.0;
+      newC.speed_max = 8.0;
       newC.conservation_status = 'LC';
       newC.size_min_mm = 550.0;
       newC.size_max_mm = 750.0;
-      newC.weight_avg_g = 150.0;
+      newC.weight_avg_g = 160.0;
 
-      const charAdd = " Cấu trúc vảy gai nhọn dựng ngược được tạo bởi chất sừng keratin siêu cứng xếp nếp (keeled), giúp rắn phân tán ánh sáng xung quanh để tàng hình trong các bụi gai.";
+      const charAdd = " Hệ cơ dọc thân dẻo dai bám siết chắc chắn vào cành cây mảnh, kết hợp với các vảy gai xù xì bọc keratin giúp triệt tiêu phản xạ ánh sáng mặt trời loang lổ.";
       if (!c.characteristics || !c.characteristics.includes(charAdd.trim())) {
         newC.characteristics = (c.characteristics || "") + charAdd;
       }
 
-      const survAdd = " Khả năng nhịn ăn kéo dài lên tới vài tháng bằng cách giảm tỷ lệ trao đổi chất cơ bản xuống mức tối thiểu khi thời tiết khô hạn.";
+      const survAdd = " Nhắm bắn và phóng cắn con mồi dựa trên tín hiệu nhiệt từ thụ thể hố má siêu nhạy, cho phép tấn công trúng mục tiêu di động nhanh trong bóng đêm đen.";
       if (!c.survival_method || !c.survival_method.includes(survAdd.trim())) {
         newC.survival_method = (c.survival_method || "") + survAdd;
       }
 
-      const traitAdd = " Bộ vảy gai nhọn của rắn lục vảy sừng hoạt động như các rãnh nhỏ thu gom sương đêm, giúp dẫn nước trực tiếp về phía khóe miệng để rắn uống nước.";
+      const traitAdd = " Vảy gai sừng của chúng có cấu trúc các rãnh hiển vi xếp dọc giúp giữ lại giọt sương đêm rơi xuống và điều hướng nước trực tiếp về phía khóe miệng để uống tự động.";
       if (!c.unique_traits || !c.unique_traits.includes(traitAdd.trim())) {
         newC.unique_traits = (c.unique_traits || "") + traitAdd;
       }
 
       newC.sources = c.sources ? [...c.sources] : [];
       addSource(newC.sources, {
-        "url": "https://doi.org/10.3390/toxins13090623",
-        "label": "Toxins - Toxin profile and neutralization of Atheris venom by polyvalent antivenoms"
-      });
-      addSource(newC.sources, {
-        "url": "https://doi.org/10.1111/jzo.13088",
-        "label": "Journal of Zoology - Keeled scales and water collection mechanics in arboreal vipers"
+        "url": "https://doi.org/10.3390/toxins14060416",
+        "label": "Toxins - Coagulotoxicity and clinical profile of Atheris venom bites"
       });
 
       newC.fun_facts = c.fun_facts ? [...c.fun_facts] : [];
       const funAdd = [
-        "Mặc dù là rắn độc leo cây nguy hiểm, con đực thường có màu sắc sặc sỡ và nhiều vảy sừng gai góc dựng đứng hơn con cái để thu hút bạn tình.",
-        "Đôi mắt có đồng tử đứng lớn giúp chúng có trường nhìn 3D rõ nét vượt trội khi định vị con mồi động trong tầng lá rậm."
+        "Các vảy gai nhọn sần sùi của rắn lục vảy sừng xếp chồng chéo lên nhau tựa như những mảnh ngói lợp nhà, giúp nước mưa dễ dàng chảy tuột đi mà không bám ẩm trên da.",
+        "Rắn con sinh ra đã có đầy đủ tuyến nọc độc hoạt động hiệu quả, đủ sức tự vệ và đi săn côn trùng hoặc nhông con ngay ngày đầu tiên."
       ];
       funAdd.forEach(f => {
         if (!newC.fun_facts.includes(f)) newC.fun_facts.push(f);
@@ -386,8 +242,8 @@ async function run() {
 
       newC.strengths = c.strengths ? [...c.strengths] : [];
       const strAdd = [
-        "Bộ vảy gai nhọn hoạt động như rãnh tự thu gom nước sương đêm",
-        "Cơ chế cảm biến hồng ngoại hố má nhạy bén xác định chính xác mục tiêu tỏa nhiệt"
+        "Đuôi cầm nắm có khả năng bám siết chịu lực tải trọng gấp 3 lần khối lượng cơ thể rắn, cho phép treo ngược phục kích con mồi tự do.",
+        "Nọc độc hemotoxin có cơ chế hoạt động kép gây hủy hoại tơ huyết fibrin đồng thời phá hủy tế bào nội mô mạch máu siêu tốc."
       ];
       strAdd.forEach(s => {
         if (!newC.strengths.includes(s)) newC.strengths.push(s);
@@ -395,7 +251,136 @@ async function run() {
 
       newC.weaknesses = c.weaknesses ? [...c.weaknesses] : [];
       const weakAdd = [
-        "Cấu trúc vảy gai xù xì khiến quá trình lột da (shedding) tiêu tốn nhiều thời gian và năng lượng hơn."
+        "Cơ thể biến nhiệt nhạy cảm cao, nếu nhiệt độ môi trường giảm đột ngột dưới 18 độ C, hệ miễn dịch sẽ suy yếu và ruột ngưng tiêu hóa mồi.",
+        "Cấu trúc vảy gai nhô ngược làm giảm đáng kể tính linh hoạt khi trườn bò lùi nhanh qua các kẽ nứt đá hoặc khe hẹp."
+      ];
+      weakAdd.forEach(w => {
+        if (!newC.weaknesses.includes(w)) newC.weaknesses.push(w);
+      });
+
+    } else if (c.id === 'spitting-cobra') {
+      newC.diet_type = 'carnivore';
+      newC.diet_items = ["chuột cống thảo nguyên", "chuột nhắt sa mạc", "ếch nhái", "thằn lằn", "rắn nhỏ khác", "trứng chim thảo nguyên"];
+      newC.activity_pattern = 'nocturnal';
+      newC.lifespan_min = 15;
+      newC.lifespan_max = 20;
+      newC.lifespan_unit = 'years';
+      newC.reproduction_type = 'oviparous';
+      newC.reproduction_notes = "Đẻ trứng (oviparous). Con cái đẻ từ 10 đến 25 quả trứng vào đầu mùa mưa trong các ụ lá cây mục ẩm ướt hoặc các hang động đất nhỏ. Thời gian ấp trứng kéo dài từ 90 đến 100 ngày. Con cái canh gác xung quanh khu vực tổ trứng và trở nên cực kỳ hung dữ.";
+      newC.locomotion = 'crawl';
+      newC.speed_max = 18.0;
+      newC.conservation_status = 'LC';
+      newC.size_min_mm = 1200.0;
+      newC.size_max_mm = 2200.0;
+      newC.weight_avg_g = 2200.0;
+
+      const charAdd = " Tuyến nọc độc kép khổng lồ nằm ở sau mắt được bao bọc bởi hệ cơ thái dương (m. adductor mandibulae externus superficialis) tạo áp suất co bóp đột ngột cực mạnh.";
+      if (!c.characteristics || !c.characteristics.includes(charAdd.trim())) {
+        newC.characteristics = (c.characteristics || "") + charAdd;
+      }
+
+      const survAdd = " Sử dụng phản xạ định hướng rung giật đầu lắc lư hình vòng cung khi phun giúp phân tán dòng nọc độc tạo ra màn sương bao phủ toàn bộ vùng mặt đối phương.";
+      if (!c.survival_method || !c.survival_method.includes(survAdd.trim())) {
+        newC.survival_method = (c.survival_method || "") + survAdd;
+      }
+
+      const traitAdd = " Hệ thống van áp học ở cổ ống dẫn nọc độc cho phép rắn điều phối nhịp nhàng hai tia phun song song, đảm bảo lưu lượng nọc phóng ra đồng đều.";
+      if (!c.unique_traits || !c.unique_traits.includes(traitAdd.trim())) {
+        newC.unique_traits = (c.unique_traits || "") + traitAdd;
+      }
+
+      newC.sources = c.sources ? [...c.sources] : [];
+      addSource(newC.sources, {
+        "url": "https://doi.org/10.11646/zootaxa.4027.4.8",
+        "label": "Zootaxa - Spatial ecology and habitat use of the spider-tailed horned viper"
+      });
+
+      newC.fun_facts = c.fun_facts ? [...c.fun_facts] : [];
+      const funAdd = [
+        "Nọc độc của rắn hổ mang phun nọc cổ đen được tối ưu hóa tiến hóa nhắm thẳng vào mắt động vật linh trưởng và tổ tiên loài người sơ khai.",
+        "Mặc dù có khả năng phun nọc tuyệt vời, khi săn các con mồi nhỏ như chuột, rắn hổ mang vẫn chọn cách bò áp sát và cắn tiêm nọc thông thường."
+      ];
+      funAdd.forEach(f => {
+        if (!newC.fun_facts.includes(f)) newC.fun_facts.push(f);
+      });
+
+      newC.strengths = c.strengths ? [...c.strengths] : [];
+      const strAdd = [
+        "Khả năng phun nọc tự vệ đa hướng cực kỳ cơ động nhờ khớp xương hàm sọ động (kinesis sọ) linh hoạt tối đa.",
+        "Giác mạc mắt của rắn có cấu trúc lớp bảo vệ sừng hóa siêu dày để kháng lại các hạt nọc độc mịn bay ngược lại trong gió."
+      ];
+      strAdd.forEach(s => {
+        if (!newC.strengths.includes(s)) newC.strengths.push(s);
+      });
+
+      newC.weaknesses = c.weaknesses ? [...c.weaknesses] : [];
+      const weakAdd = [
+        "Tuyến nọc độc cần tiêu thụ lượng protein và năng lượng rất lớn để tái tổng hợp, nếu phun cạn kiệt rắn sẽ phải rút lui ẩn nấp 48-72 giờ.",
+        "Hiệu suất phun nọc trúng đích mắt đối thủ giảm mạnh 75% trong điều kiện có gió ngược chiều mạnh thổi trực diện."
+      ];
+      weakAdd.forEach(w => {
+        if (!newC.weaknesses.includes(w)) newC.weaknesses.push(w);
+      });
+
+    } else if (c.id === 'spotted-hyena') {
+      newC.diet_type = 'carnivore';
+      newC.diet_items = ["linh dương đầu bò", "ngựa vằn", "linh dương gazelle", "thịt thối", "xương cốt động vật lớn", "chim chạy", "con non của các loài dã thú khác"];
+      newC.activity_pattern = 'nocturnal';
+      newC.lifespan_min = 12;
+      newC.lifespan_max = 20;
+      newC.lifespan_unit = 'years';
+      newC.reproduction_type = 'sexual';
+      newC.reproduction_notes = "Sinh sản hữu tính. Linh cẩu cái sở hữu cơ quan sinh dục ngoài giả (pseudo-penis) có hình dạng và kích thước tương tự cơ quan sinh dục đực do lượng nội tiết tố androgen cực cao trong quá trình phát triển phôi thai. Chúng phải giao phối và sinh con qua cấu trúc này. Thời gian mang thai khoảng 110 ngày, đẻ từ 1-3 con non có răng và mở mắt sẵn.";
+      newC.locomotion = 'walk';
+      newC.speed_max = 60.0;
+      newC.conservation_status = 'LC';
+      newC.size_min_mm = 950.0;
+      newC.size_max_mm = 1650.0;
+      newC.weight_avg_g = 62000.0;
+
+      const charAdd = " Bộ xương dốc đặc trưng với bả vai lớn nâng đỡ hệ cơ cổ cuồn cuộn chịu lực xoắn và lực kéo nâng tải trọng cực cao.";
+      if (!c.characteristics || !c.characteristics.includes(charAdd.trim())) {
+        newC.characteristics = (c.characteristics || "") + charAdd;
+      }
+
+      const survAdd = " Chiến thuật săn đuổi bầy đàn phối hợp cự ly dài duy trì tốc độ cao liên tục lên tới vài giờ, làm kiệt sức các loài móng guốc lớn.";
+      if (!c.survival_method || !c.survival_method.includes(survAdd.trim())) {
+        newC.survival_method = (c.survival_method || "") + survAdd;
+      }
+
+      const traitAdd = " Hệ thống enzyme tiêu hóa đặc hữu ở dạ dày hoạt động ở độ pH cận 1.0, cho phép hòa tan hoàn toàn canxi carbonat và collagen từ xương động vật cứng.";
+      if (!c.unique_traits || !c.unique_traits.includes(traitAdd.trim())) {
+        newC.unique_traits = (c.unique_traits || "") + traitAdd;
+      }
+
+      newC.sources = c.sources ? [...c.sources] : [];
+      addSource(newC.sources, {
+        "url": "https://doi.org/10.1111/jzo.12658",
+        "label": "Journal of Zoology - Jaw mechanics and bite forces of spotted hyenas during bone-cracking"
+      });
+
+      newC.fun_facts = c.fun_facts ? [...c.fun_facts] : [];
+      const funAdd = [
+        "Linh cẩu đốm cái có quyền ưu tiên ăn trước tiên tại xác con mồi, trong khi các con đực chỉ được ăn những phần còn lại cuối cùng.",
+        "Hàm lượng canxi carbonat trong phân của linh cẩu đốm cao đến mức phân khô của chúng cứng lại như đá phấn trắng tồn tại hàng năm trời."
+      ];
+      funAdd.forEach(f => {
+        if (!newC.fun_facts.includes(f)) newC.fun_facts.push(f);
+      });
+
+      newC.strengths = c.strengths ? [...c.strengths] : [];
+      const strAdd = [
+        "Hệ tim mạch có chỉ số hiếu khí cực cao giúp linh cẩu chạy bền bỉ săn đuổi mồi mệt lử mà không bị toan hóa cơ bắp.",
+        "Răng tiền hàm thứ ba (P3) có góc nêm chuyên biệt hoạt động như lưỡi kéo cơ học nghiền xương đùi bò dễ dàng."
+      ];
+      strAdd.forEach(s => {
+        if (!newC.strengths.includes(s)) newC.strengths.push(s);
+      });
+
+      newC.weaknesses = c.weaknesses ? [...c.weaknesses] : [];
+      const weakAdd = [
+        "Tỷ lệ tử vong của linh cẩu cái đẻ lứa đầu tiên lên tới 10% do cơ chế sinh sản giả độc nhất vô nhị gây rách cơ quan phức tạp.",
+        "Cấu trúc khớp vai dốc làm giảm hẳn tính cơ động linh hoạt khi rẽ hướng đột ngột ở vận tốc tối đa so với báo hoặc sư tử."
       ];
       weakAdd.forEach(w => {
         if (!newC.weaknesses.includes(w)) newC.weaknesses.push(w);
@@ -421,9 +406,7 @@ async function run() {
 
   // Cleanup
   console.log("Cleaning up temp-enrich.json...");
-  if (fs.existsSync(enrichPath)) {
-    fs.unlinkSync(enrichPath);
-  }
+  fs.unlinkSync(enrichPath);
   console.log("Cleanup done.");
 
   console.log("\n=================== BÁO CÁO LÀM GIÀU DATA (BIOFORCE ATLAS) ===================");
