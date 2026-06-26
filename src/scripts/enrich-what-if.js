@@ -618,6 +618,264 @@ async function runEnrichment() {
           }
         ]
       });
+    } else if (target.id === "cape-buffalo") {
+      whatIfData.push({
+        creature_id: "cape-buffalo",
+        title: "Nếu Trâu Rừng Châu Phi thu nhỏ bằng con người (80kg) thì sao?",
+        slug: "neu-trau-rung-chau-phi-thu-nho-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài trâu rừng sở hữu cặp sừng cứng cáp hình cánh cung và cơ bắp cuồn cuộn được thu nhỏ về kích thước 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (The Compact Charger)",
+            slug: "trau-rung-chau-phi-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Cú húc tốc độ cao giải phóng áp lực lớn đâm xuyên lá chắn và lực kéo siêu phàm ở kích thước nhỏ.",
+            content: "Khi Trâu Rừng Châu Phi thu nhỏ về khối lượng 80kg (tỷ lệ cơ học tối ưu hóa):\n- Mật độ cơ bắp cô đọng cực cao: Sức mạnh cơ bắp của động vật móng guốc được bảo toàn trên một khung xương nhỏ gọn. Lực kéo cơ học đạt tới 5000 N, tương đương 6 lần trọng lượng cơ thể.\n- Cú húc sừng hủy diệt: Cặp sừng xương bọc keratin thu nhỏ dài khoảng 30cm, hợp nhất ở trán tạo thành tấm khiên chắn dày. Khi lao đi with vận tốc 50 km/h (13.8 m/s), động năng va chạm đạt tới 7600 Joules. Do diện tích tiếp xúc đầu sừng nhọn nhỏ (~2 cm2), áp suất va chạm tức thời tại điểm tiếp xúc đạt tới 38 MPa, đủ sức đâm thủng và phá hủy các cấu trúc kim loại mỏng hoặc gỗ dày.",
+            formulas_and_data: {
+              scaling_factor: 0.43,
+              mass_kg_original: 600,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Động năng cú húc va chạm",
+                  equation: "E_k = 0.5 * m * v^2",
+                  result: "~7,600 Joules"
+                },
+                {
+                  name: "Áp suất va chạm đầu sừng",
+                  equation: "P = F / A = (m * a) / A",
+                  result: "~38 MPa"
+                }
+              ]
+            },
+            p4p_score_scaled: 83,
+            tier_scaled: "A",
+            sources: [
+              { label: "Bovine horn mechanics and impact resistance", url: "https://doi.org/10.1016/j.jmbbm.2010.09.005" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (The Hypothermic Ruminant)",
+            slug: "trau-rung-chau-phi-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Mất nhiệt nhanh chóng do tỷ lệ diện tích bề mặt/thể tích tăng, và hệ thống tiêu hóa cỏ thô trở nên kém hiệu quả.",
+            content: "Trong thực tế vật lý sinh học:\n- Khủng hoảng nhiệt lượng: Khi thu nhỏ từ 600kg về 80kg, tỷ lệ diện tích bề mặt trên thể tích (S/V) tăng lên khoảng 2.0 lần. Động vật nội nhiệt (biến nhiệt/đồng nhiệt) nhỏ mất nhiệt qua da nhanh hơn rất nhiều. Với lớp da mỏng nguyên bản của trâu rừng châu Phi, nó sẽ nhanh chóng bị hạ thân nhiệt trầm trọng trong môi trường gió lạnh trừ khi liên tục ăn và tỏa nhiệt.\n- Kém hiệu quả tiêu hóa: Hệ thống dạ dày 4 túi (ruminant) của trâu rừng cần thời gian ủ men cỏ thô rất lâu. Khi thu nhỏ về 80kg, tốc độ trao đổi chất tăng lên theo định luật Kleiber (tăng khoảng 1.6 lần trên mỗi kg khối lượng). Hệ tiêu hóa nhỏ hơn không thể xử lý đủ lượng chất xơ thô kịp nhu cầu năng lượng cao mới, dẫn tới suy kiệt chất dinh dưỡng.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Tổn thất nhiệt lượng đối lưu",
+                  issue: "Tốc độ tỏa nhiệt qua da tăng 1.95 lần do diện tích bề mặt tương đối tăng, gây nguy cơ hạ thân nhiệt cấp tính."
+                },
+                {
+                  type: "Hạn chế dạ dày bốn túi",
+                  issue: "Thời gian lên men cỏ dài không đáp ứng được tốc độ trao đổi chất tăng 60% theo định luật Kleiber ở kích thước 80kg."
+                }
+              ]
+            },
+            p4p_score_scaled: 32,
+            tier_scaled: "D",
+            sources: [
+              { label: "Allometric scaling of mammalian metabolism and digestion", url: "https://doi.org/10.1086/284124" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (The Tundra Charger)",
+            slug: "trau-rung-chau-phi-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Lớp lông tơ cách nhiệt dày đặc, hệ tiêu hóa dạ cỏ chuyển sang lên men nhanh và tuần hoàn máu vùng sừng co thắt.",
+            content: "Để sinh tồn ở kích thước 80kg, trâu rừng tiến hóa các đột biến thích nghi:\n- Lông tơ kép cách nhiệt (Double-coat Fur): Phát triển lớp lông tơ mịn lót dưới lớp lông cứng chống thấm nước, tăng hệ số cách nhiệt lên 2.5 lần để giữ ấm vùng lõi.\n- Dạ cỏ cải tiến lên men nhanh (Fast-transit Rumen): Dạ cỏ tiến hóa hệ vi sinh vật lên men tốc độ cao kết hợp cấu trúc nhung mao dạ dày rộng hơn để hấp thu nhanh các axit béo bay hơi tự do.\n- Cơ chế co mạch sừng chủ động: Hệ thống mạch máu nuôi sừng có khả năng co thắt hoàn toàn khi trời lạnh để tránh thất thoát nhiệt lượng qua bề mặt sừng lớn.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Lông kép cách nhiệt vùng lõi",
+                  benefit: "Giảm 60% lượng nhiệt thất thoát ra môi trường, duy trì thân nhiệt ổn định 38.5°C."
+                },
+                {
+                  type: "Vi sinh dạ cỏ tối ưu",
+                  benefit: "Tăng tốc độ chuyển hóa xenlulozo thêm 75%, đáp ứng đủ năng lượng cho chuyển hóa Kleiber."
+                }
+              ]
+            },
+            p4p_score_scaled: 76,
+            tier_scaled: "B",
+            sources: [
+              { label: "Adaptations in small ruminants and thermal regulation", url: "https://doi.org/10.1016/j.smallrumres.2012.04.011" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "coconut-crab") {
+      whatIfData.push({
+        creature_id: "coconut-crab",
+        title: "Nếu Cua Dừa phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-cua-dua-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài giáp xác trên cạn lớn nhất thế giới sở hữu cặp càng kẹp dừa cực khỏe đạt khối lượng tương đương 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (The Titanium Crusher)",
+            slug: "cua-dua-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực kẹp càng đạt 60,000 N nghiền nát mọi chướng ngại vật và bộ giáp kitin dày cản phá mọi va đập.",
+            content: "Khi Cua Dừa đạt khối lượng 80kg (phóng to tuyến tính từ 4kg):\n- Lực kẹp càng hủy diệt: Càng cua dừa tự nhiên kẹp mạnh gấp 90 lần trọng lượng của nó (~3300 N ở cua 4kg). Khi phóng to lên 80kg, lực kẹp càng tăng theo tỷ lệ diện tích mặt cắt ngang cơ chéo tăng 20^(2/3) ≈ 7.37 lần, đạt tới 24,000 N đến 60,000 N. Lực này vượt qua sức nghiền của hàm cá mập trắng lớn, dễ dàng bóp nát xương đùi động vật lớn hoặc cắt đứt kim loại.\n- Giáp ngoài siêu cứng: Lớp vỏ kitin dầy lên 1.2cm được canxi hóa cực cứng, đóng vai trò như lớp giáp xe tăng hấp thụ các chấn động va chạm.",
+            formulas_and_data: {
+              scaling_factor: 20,
+              mass_kg_original: 4,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực kẹp càng cua phóng đại",
+                  equation: "F_pinch_scaled = F_pinch_original * (M_scaled / M_original)^(2/3)",
+                  result: "~24,000 N (Lên tới 60,000 N)"
+                },
+                {
+                  name: "Ứng suất nén phá hủy vỏ",
+                  equation: "sigma = F / A_shell",
+                  result: "~90 MPa"
+                }
+              ]
+            },
+            p4p_score_scaled: 94,
+            tier_scaled: "S",
+            sources: [
+              { label: "Pincer force and scaling in giant coconut crabs", url: "https://doi.org/10.1371/journal.pone.0166108" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (The Asphyxiated Shell)",
+            slug: "cua-dua-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Chết ngạt do branchiostegal lung thiếu diện tích khuếch tán oxy và vỏ quá nặng gãy chân bò.",
+            content: "Trong thực tế vật lý sinh học:\n- Suy giảm hô hấp nghiêm trọng: Cua dừa thở bằng phổi lá mang (branchiostegal lung) dựa vào sự ẩm ướt và khuếch tán thụ động. Khi phóng to lên 80kg (tăng 20 lần khối lượng), nhu cầu oxy tăng 20 lần nhưng diện tích bề mặt phổi chỉ tăng 20^(2/3) ≈ 7.37 lần. Khả năng cung cấp oxy giảm đi 63%, khiến cua rơi vào trạng thái thiếu oxy kinh niên và chết ngạt sau vài phút vận động.\n- Sụp đổ cơ học chân: Khung xương ngoài kitin rất nặng chiếm 35% khối lượng cơ thể (28kg vỏ). Trọng lượng cơ thể đè nặng lên các khớp chân mảnh khảnh hướng ngang (sprawling limbs), tạo mô-men uốn quá tải khiến chân cua gãy vụn khi cố gắng nhấc mình lên bò.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Hiệu suất khuếch tán khí qua phổi lá mang",
+                  issue: "Tỉ số diện tích phổi trên thể tích cơ thể giảm 63%, gây thiếu hụt oxy nghiêm trọng khi bò."
+                },
+                {
+                  type: "Ứng suất uốn khớp chi bò ngang",
+                  issue: "Mô-men uốn tại khớp chân tăng gấp 147 lần, vượt quá giới hạn uốn 75 MPa của kitin tự nhiên."
+                }
+              ]
+            },
+            p4p_score_scaled: 18,
+            tier_scaled: "D",
+            sources: [
+              { label: "Respiratory organs of terrestrial crabs and scaling limits", url: "https://doi.org/10.1242/jeb.204.14.2483" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (The Chitinous Titan)",
+            slug: "cua-dua-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Phổi lá mang gấp nếp sâu có van thông khí chủ động, vỏ rỗng xốp tổ ong, và sợi cơ liên kết chéo gia cố sắt.",
+            content: "Để hoạt động hiệu quả ở kích thước 80kg, Cua Dừa cần những đột biến thích nghi vượt bậc:\n- Phổi lá mang xếp nếp sâu chủ động (Active Folded Lung): Các nếp gấp màng phổi tăng mật độ lên 4 lần kết hợp các bó cơ thành ngực co bóp nhịp nhàng bơm hút khí chủ động, đảm bảo đủ oxy.\n- Lớp vỏ kitin cấu trúc tổ ong (Honeycomb Exoskeleton): Lớp vỏ trong rỗng xốp làm giảm 50% khối lượng vỏ, lớp vỏ ngoài kết hợp các liên kết ion kẽm và sắt tự hấp thụ tăng độ bền uốn lên 2.5 lần.\n- Khớp chi đứng thẳng hơn: Các chi tiến hóa góc nghiêng hẹp hơn dưới thân mình để truyền tải trọng lượng trực tiếp thành lực nén dọc thay vì lực uốn ngang.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Thông khí phổi chủ động",
+                  benefit: "Tăng lưu lượng oxy hấp thụ lên 300%, loại bỏ nguy cơ ngạt thở khi vận động mạnh."
+                },
+                {
+                  type: "Vỏ kitin tổ ong gia cố kẽm",
+                  benefit: "Giảm khối lượng bộ giáp từ 28kg xuống 15kg, tăng giới hạn uốn khớp chi lên 180 MPa."
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "A",
+            sources: [
+              { label: "Zinc and calcium mineralization in crustacean cuticles", url: "https://doi.org/10.1016/j.jsb.2007.09.014" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "giant-pacific-octopus") {
+      whatIfData.push({
+        creature_id: "giant-pacific-octopus",
+        title: "Nếu Bạch Tuộc Khổng Lồ Thái Bình Dương lên cạn ở kích thước 80kg thì sao?",
+        slug: "neu-bach-tuoc-khong-lo-thai-binh-duong-len-can-80kg",
+        description: "Phân tích giả thuyết khi loài bạch tuộc thông minh sở hữu 8 xúc tu bám dính dày đặc và khả năng ngụy trang đỉnh cao hoạt động trên cạn ở kích thước 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (The Eight-Armed Chameleon)",
+            slug: "bach-tuoc-khong-lo-tbd-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "8 xúc tu kẹp siết lực tấn với hàng ngàn giác hút, ngụy trang tàng hình hoàn hảo và trí khôn vượt bậc.",
+            content: "Khi Bạch Tuộc Khổng Lồ Thái Bình Dương đạt khối lượng 80kg trên cạn (theo cơ học lý thuyết):\n- Sức mạnh co siết của xúc tu: Mỗi xúc tu dài tới 3 mét chứa hàng triệu bó cơ chéo xoắn liên kết dọc thân xúc tu. Lực siết tổng hợp của 8 xúc tu đạt tới 15,000 N, đủ sức bóp nghẹt động vật có vú lớn.\n- Giác hút chân không siêu dính: Khoảng 1,600 giác hút phóng to hoạt động riêng lẻ, mỗi giác hút có đường kính 5cm có lực bám dính chênh lệch áp suất đạt 0.1 MPa (100 kPa). Tổng lực dính của một xúc tu bám chặt lên bề mặt phẳng có thể nâng đỡ vật nặng tới 800kg.\n- Ngụy trang tàng hình: Hàng triệu tế bào sắc tố (chromatophores) và tế bào phản quang (iridophores) điều chỉnh co thắt tức thì, giúp bạch tuộc hòa lẫn vào môi trường đất đá trên cạn chỉ trong 0.5 giây.",
+            formulas_and_data: {
+              scaling_factor: 2.28,
+              mass_kg_original: 35,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực bám dính giác hút tối đa dưới áp suất khí quyển",
+                  equation: "F_adhesion = N_suckers * P_atm * A_sucker",
+                  result: "~12,000 N (mỗi xúc tu)"
+                },
+                {
+                  name: "Lực siết xoắn cơ xúc tu",
+                  equation: "T_whip = F_muscle * r_arm",
+                  result: "~4,500 N.m"
+                }
+              ]
+            },
+            p4p_score_scaled: 86,
+            tier_scaled: "A",
+            sources: [
+              { label: "Suction power and muscle hydrostats in cephalopods", url: "https://doi.org/10.1242/jeb.00512" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (The Gelatinous Collapse)",
+            slug: "bach-tuoc-khong-lo-tbd-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Cơ thể xẹp lép thành đống thạch do thiếu lực nâng thủy tĩnh, ngạt thở nhanh chóng và khô héo da.",
+            content: "Trong thực tế vật lý sinh học khi lên cạn:\n- Sụp đổ cấu trúc thủy tĩnh (Hydrostatic skeleton collapse): Bạch tuộc không có xương trong hay xương ngoài, hình dáng cơ thể được duy trì nhờ áp suất nước xung quanh. Khi lên cạn ở khối lượng 80kg dưới trọng lực, các sợi cơ không có điểm tựa nâng đỡ sẽ bị xẹp lép thành một đống thạch dẹp. Bạch tuộc không thể bò hay nhấc xúc tu lên, nội tạng bị đè nén dưới áp lực tự trọng dẫn tới tổn thương vĩnh viễn.\n- Suy hô hấp và mất nước cấp tính: Mang của bạch tuộc bị dính chặt vào nhau ngoài không khí do lực căng bề mặt nước, diện tích trao đổi khí giảm 95% gây ngạt thở sau vài phút. Làn da ẩm ướt mỏng manh bốc hơi nước cực nhanh ngoài không khí dẫn đến mất cân bằng điện giải tức thì.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Sụp đổ khung xương thủy tĩnh",
+                  issue: "Không có lực nâng của nước, ứng suất đè nén lên các mô mềm bên trong vượt quá 15 kPa gây dập nát mao mạch."
+                },
+                {
+                  type: "Xẹp mang và giảm diện tích hô hấp",
+                  issue: "Lực căng bề mặt làm xẹp các phiến mang dính chùm, cắt đứt hoàn toàn lượng oxy khuếch tán vào máu."
+                }
+              ]
+            },
+            p4p_score_scaled: 10,
+            tier_scaled: "D",
+            sources: [
+              { label: "Mechanics of hydrostatic skeletons and cephalopod respiration", url: "https://doi.org/10.1146/annurev.marine.010908.163750" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (The Land Leviathan)",
+            slug: "bach-tuoc-khong-lo-tbd-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Trục xương sụn linh hoạt dọc xúc tu, da sừng nhầy bảo vệ chống bốc hơi và hệ hô hấp phổi khí quản kép.",
+            content: "Để sinh tồn và thống trị đất ẩm ở kích thước 80kg, bạch tuộc tiến hóa các thích nghi thần kỳ:\n- Trục xương sụn dẻo (Endoskeletal Cartilage Rods): Tiến hóa các thanh sụn đàn hồi (giống như sụn mũi hoặc cuttlebone) chạy dọc lõi trung tâm của 8 xúc tu và vùng đầu, làm giá đỡ vững chắc chịu lực nén chống lại trọng lực Trái Đất mà vẫn giữ được sự linh hoạt uốn dẻo cực hạn.\n- Da sừng nhầy khóa ẩm (Lipid-Secreting Keratinized Skin): Lớp da biểu bì được bao phủ bởi các tế bào tiết lipid chống bốc hơi kết hợp chất nhầy dày đặc bảo vệ cơ thể khỏi bị khô ráp suốt 24 giờ ngoài không khí.\n- Khoang hô hấp khí quản (Vascularized Land-Lung): Khoang áo tiến hóa thành buồng phổi khép kín với các van đóng mở chủ động, thành buồng phổi lót mạch máu dày đặc khuếch tán oxy không khí trực tiếp.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Trục sụn xúc tu chịu lực",
+                  benefit: "Chống chịu lực nén trọng lực lên tới 1200 N, cho phép nâng thân mình cao 60cm bò vững trên cạn."
+                },
+                {
+                  type: "Hệ thống da khóa ẩm lipid",
+                  benefit: "Giảm 92% tốc độ bốc hơi nước qua biểu bì, bảo vệ cơ thể khô ráo hoạt động tự do ngoài nước."
+                }
+              ]
+            },
+            p4p_score_scaled: 78,
+            tier_scaled: "B",
+            sources: [
+              { label: "Cartilage structures in invertebrates and cephalopod skin physiology", url: "https://doi.org/10.1016/j.zool.2014.05.002" }
+            ]
+          }
+        ]
+      });
     } else {
       // Fallback generator just in case
       whatIfData.push({
