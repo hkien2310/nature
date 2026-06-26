@@ -26,7 +26,11 @@ if (!supabaseUrl || !supabaseAnonKey) {
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 async function run() {
-  const ids = ["platypus", "polar-bear", "pom-pom-crab", "portuguese-man-o-war", "portuguese-man-of-war"];
+  const ids = process.argv.slice(2);
+  if (ids.length === 0) {
+    console.error("Please provide at least one creature ID.");
+    process.exit(1);
+  }
   const { data, error } = await supabase
     .from("creatures")
     .select("*")
