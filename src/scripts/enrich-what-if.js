@@ -1392,6 +1392,264 @@ async function runEnrichment() {
           }
         ]
       });
+    } else if (target.id === "red-lipped-batfish") {
+      whatIfData.push({
+        creature_id: "red-lipped-batfish",
+        title: "Nếu Cá Dơi Môi Đỏ phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-ca-doi-moi-do-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi Cá Dơi Môi Đỏ với đôi môi đỏ rực, chiếc sừng câu illicium độc đáo và cặp vây giả đi bộ hóa khổng lồ đạt khối lượng 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Kỵ sĩ đi bộ dưới đáy biển)",
+            slug: "ca-doi-moi-do-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Chi giả vây ngực/vây bụng đi bộ cực vững, sừng câu illicium dài 40cm phát chất nhử cực mạnh thu hút con mồi 5kg, và giáp nốt gai kitin dày 3mm chịu lực cực tốt.",
+            content: "Khi Cá Dơi Môi Đỏ đạt khối lượng 80kg (phóng to từ ~100g, dài ~1.2m):\n- Bộ vây giả đi bộ siêu lực: Cặp vây ngực và vây bụng biến tính cơ xương hoạt động như đôi chân vững chãi. Áp dụng tỷ lệ diện tích mặt cắt cơ, lực nâng của chi giả đạt tới 1500 N, giúp chúng đi lại nhanh nhẹn dưới đáy cát với tốc độ 8 km/h.\n- Cần câu sinh học illicium phóng to: Chiếc sừng dài 40cm nhô ra trước trán chứa tuyến hóa chất dẫn dụ con mồi đậm đặc. Sự khuếch tán hóa chất lan tỏa xa 100m, lôi cuốn các loài cá lớn dưới 5kg đi vào phạm vi đớp.\n- Giáp gai cứng cáp: Các nốt sần chứa kitin dày lên tới 3mm tạo ra một lớp lá chắn chống chịu các vết cắn xé từ kẻ săn mồi.",
+            formulas_and_data: {
+              scaling_factor: 800,
+              mass_g_original: 100,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực nâng chịu tải chi vây đi bộ",
+                  equation: "F_lift = F_original * (M_scaled / M_original)^(2/3)",
+                  result: "~1,500 N"
+                },
+                {
+                  name: "Chiều dài sừng câu illicium phóng đại",
+                  equation: "L_illicium = L_original * (M_scaled / M_original)^(1/3)",
+                  result: "~40 cm"
+                }
+              ]
+            },
+            p4p_score_scaled: 74,
+            tier_scaled: "B",
+            sources: [
+              { label: "Morphology and locomotion of the red-lipped batfish Ogcocephalus darwini", url: "https://doi.org/10.1111/j.1469-7998.2010.00762.x" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Chiếc mỏ neo cồng kềnh ngạt thở)",
+            slug: "ca-doi-moi-do-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Chân giả vây bị xẹp lún dưới đáy cát mềm do áp lực nén cao, sừng illicium hoại tử do kém lưu thông máu và ngạt thở vì thiếu cơ chế mang chủ động.",
+            content: "Trong thực tế sinh học nếu cá dơi môi đỏ nặng 80kg:\n- Sụp lún và di chuyển tê liệt: Cặp chân vây giả không có khớp xoay linh hoạt và tiết diện tiếp xúc nhỏ. Ở khối lượng 80kg dưới tác dụng của trọng lực, áp lực nén xuống cát đạt 120 kPa, khiến cá dơi bị lún sâu xuống bùn cát, không thể di chuyển hay đứng dậy.\n- Tắc nghẽn sừng illicium: Hệ tuần hoàn của sừng illicium rất mảnh, không có van trợ tim chuyên dụng. Khi phóng to, áp lực cản dòng máu tăng 8 lần, khiến máu không thể bơm đến đầu sừng, gây thiếu oxy và hoại tử cần câu trong 48 giờ.\n- Suy hô hấp: Cá dơi có khe mang rất nhỏ và hệ bơm mang thụ động yếu, khi khối lượng tăng gấp 800 lần, nhu cầu oxy tăng mạnh nhưng diện tích mang chỉ tăng 86 lần, gây ngạt thở cấp tính.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Áp lực lún vây chi giả trên cát mềm",
+                  issue: "Áp lực nén P = F / A tăng lên 120 kPa vượt quá giới hạn chịu tải của cát mịn đáy biển (thông thường < 40 kPa)."
+                },
+                {
+                  type: "Sự sụt giảm tỷ lệ diện tích mang hô hấp",
+                  issue: "Tỉ số diện tích mang / thể tích giảm 89%, khiến lượng oxy hấp thụ không đủ duy trì 15% chuyển hóa cơ bản."
+                }
+              ]
+            },
+            p4p_score_scaled: 25,
+            tier_scaled: "D",
+            sources: [
+              { label: "Gill area and metabolic rate scaling in benthic fish", url: "https://doi.org/10.1086/515881" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Quái thú chân giả bọc giáp)",
+            slug: "ca-doi-moi-do-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Bàn chân vây giả màng rộng xòe, cơ tim tăng áp lực tuần hoàn mang, và esca phát quang sinh học chủ động thích ứng tối sâu.",
+            content: "Để sống sót và đi lại hiệu quả ở kích thước 80kg dưới đáy cát:\n- Chi vây bản rộng (Spreading Webbed Feet): Phần rìa vây ngực và vây bụng tiến hóa các màng da xòe rộng gấp 5 lần, hoạt động giống như giày tuyết giúp phân phối tải trọng 80kg đều ra bề mặt cát rộng, giảm áp lực nén xuống chỉ còn 25 kPa chống lún tuyệt đối.\n- Mang bơm thủy lực (Hydraulic Branchial Pump): Khe mang mở rộng kết hợp cơ hô hấp mang phát triển khỏe chủ động co bóp tuần hoàn nước liên tục, nâng cao hiệu suất lấy oxy gấp 4 lần.\n- Sừng câu phát quang esca: Đột biến esca cộng sinh vi khuẩn phát quang cho phép phát ánh sáng lục cường độ cao thay vì chỉ tiết hóa chất dẫn dụ, phù hợp thu hút con mồi trong vùng đáy nước sâu tối.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Màng vây ngực rộng chống lún",
+                  benefit: "Tăng diện tích tiếp xúc chi lên 0.06 m2, giảm áp lực nén xuống 13 kPa giúp đi lại tự do trên cát mềm."
+                },
+                {
+                  type: "Hệ thống mang bơm co bóp chủ động",
+                  benefit: "Tăng lưu lượng nước qua mang lên 15 lít/phút, đáp ứng 100% nhu cầu oxy của cơ thể."
+                }
+              ]
+            },
+            p4p_score_scaled: 78,
+            tier_scaled: "B",
+            sources: [
+              { label: "Evolutionary transitions in locomotion and benthic fish respiration", url: "https://doi.org/10.1111/jeb.12592" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "reef-stonefish") {
+      whatIfData.push({
+        creature_id: "reef-stonefish",
+        title: "Nếu Cá Đá Reef phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-ca-da-reef-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài cá độc nhất thế giới với khả năng ngụy trang tàng hình cực hạn, cú đớp tốc độ 15 mili giây và gai lưng chứa nọc độc thần kinh chết chóc phóng to đạt 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Ngục tối ngụy trang gai độc)",
+            slug: "ca-da-reef-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Đớp mồi tốc độ 20 mili giây tạo lực hút chân không 8000 N hút trọn con mồi 20kg, 13 gai lưng phóng to dài 12cm chứa 5000mg độc tố Stonustoxin cực mạnh phá hủy toàn bộ cơ thể.",
+            content: "Khi Cá Đá Reef đạt khối lượng 80kg (phóng to từ ~1kg tự nhiên, dài ~1.1m):\n- Cú đớp chân không siêu tốc: Miệng mở to đường kính 45cm với khớp quai hàm siêu gia tốc. Tốc độ mở miệng giữ vững ở mức 20 mili giây, tạo lực hút chân không khổng lồ đạt 8000 N, hút gọn con mồi nặng tới 20kg từ khoảng cách 0.5m.\n- 13 gai lưng tử thần: Các gai vây lưng hóa sừng dài 12cm, chịu tải đâm xuyên cực cao. Mỗi gai lưng kết nối với túi độc chứa Stonustoxin cô đặc gấp nhiều lần. Khi bị dẫm lên, áp lực ép túi độc giải phóng tới 5000mg nọc độc, phá hủy hồng cầu và gây ngừng tim trong 60 giây đối với động vật lớn.\n- Ngụy trang tảng đá hoàn hảo: Lớp da sần sùi bám rêu bao phủ toàn thân 80kg khiến nó trông giống như một khối đá ngầm lớn, hoàn toàn tàng hình dưới đáy rạn.",
+            formulas_and_data: {
+              scaling_factor: 80,
+              mass_kg_original: 1,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực đớp hút chân không miệng",
+                  equation: "F_suction = P_vacuum * A_mouth",
+                  result: "~8,000 N (áp suất âm -120 kPa trên diện tích miệng mở)"
+                },
+                {
+                  name: "Thể tích nọc độc Stonustoxin tích lũy",
+                  equation: "V_venom_scaled = V_venom_original * (M_scaled / M_original)",
+                  result: "~40 ml (chứa ~5000mg protein Stonustoxin)"
+                }
+              ]
+            },
+            p4p_score_scaled: 92,
+            tier_scaled: "S",
+            sources: [
+              { label: "Stonustoxin, a lethal cardiotoxic protein from Synanceia verrucosa venom", url: "https://doi.org/10.1016/0041-0101(95)00123-2" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Tấn bi kịch của tảng đá khổng lồ)",
+            slug: "ca-da-reef-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Gai lưng bị gãy gập dưới lực ép của khối lượng 80kg khi va chạm đá, quá trình lột da ngưng trệ gây hoại tử da do nhiễm ký sinh trùng bám dày.",
+            content: "Trong thực tế sinh học nếu cá đá nặng 80kg:\n- Sự gãy gập của gai lưng: Do định luật bình phương - lập phương, khi khối lượng tăng 80 lần, ứng suất uốn tác động lên gai lưng khi va chạm với đá cứng ngầm tăng vọt gấp 4.3 lần. Khi cá đá đè mình dưới rạn, các gai lưng sắc nhọn dễ bị nứt gãy từ gốc, làm rò rỉ nọc độc vào chính cơ thể gây nhiễm độc nội sinh.\n- Thảm họa lột da chậm: Lớp biểu bì sần sùi của cá đá tích tụ tảo biển và ký sinh trùng dày đặc. Ở kích thước 80kg, chu kỳ lột da (thông thường 4-6 tuần) đòi hỏi lượng năng lượng chuyển hóa vượt quá khả năng trao đổi chất chậm chạp của loài cá săn mồi phục kích. Lớp da chết tích tụ không rụng được sẽ gây hoại tử da diện rộng và mất khả năng ngụy trang.\n- Sụp đổ xương sọ: Khớp quai hàm mở quá rộng với tốc độ cao tạo áp lực phản chấn cơ học cực lớn lên các xương sọ xốp, có thể gây vỡ sọ tự tổn thương.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Ứng suất uốn lên cấu trúc gai lưng xương",
+                  issue: "Ứng suất uốn vượt quá 120 MPa giới hạn bền của gai xương cá đá, gây nứt gãy hàng loạt."
+                },
+                {
+                  type: "Tích tụ năng lượng lột da",
+                  issue: "Năng lượng cần cho quá trình lột da tăng 80 lần vượt quá 450% lượng calorie tích lũy hàng tháng."
+                }
+              ]
+            },
+            p4p_score_scaled: 38,
+            tier_scaled: "D",
+            sources: [
+              { label: "Biomechanics of spine structures and skin shedding in scorpaenoid fishes", url: "https://doi.org/10.1242/jeb.05934" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Tảng đá bọc giáp titan gai độc)",
+            slug: "ca-da-reef-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Gai lưng gia cố tinh thể canxi-phosphate chịu lực, tuyến tiết enzyme lột da tự động bằng hóa học và xương quai hàm đệm sụn giảm chấn.",
+            content: "Để sinh tồn và hoạt động dũng mãnh dưới rạn ở kích thước 80kg:\n- Gai lưng cốt thép sinh học (Mineralized Spine Core): Các gai vây lưng được gia cố bởi ma trận tinh thể canxi-phosphate liên kết sợi collagen dọc chặt chẽ, nâng giới hạn chịu uốn lên 250 MPa, bảo vệ gai vây không bị gãy khi đâm xuyên da giáp cứng.\n- Lột da bằng tiết enzyme (Enzymatic Skin Peeler): Lớp da dưới biểu bì tiết ra enzyme collagenase chủ động hóa lỏng lớp da chết bám đầy rêu tảo chỉ trong vài giờ, giúp chu kỳ lột da diễn ra êm ái, tốn ít năng lượng.\n- Khớp hàm giảm chấn (Cartilaginous Jaw Dampeners): Các miếng sụn dẻo dày 5mm chèn vào khớp nối quai hàm và xương sọ, triệt tiêu 95% lực phản chấn cơ học khi quai hàm đớp mạnh với tốc độ mili giây.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Gia cố tinh thể canxi-phosphate gai lưng",
+                  benefit: "Tăng độ bền uốn gai lưng lên 250 MPa, giúp xuyên thủng lớp da giáp dày 5mm của con mồi mà không cong gãy."
+                },
+                {
+                  type: "Khớp hàm giảm chấn đàn hồi",
+                  benefit: "Hấp thụ 400J động năng phản chấn của cú đớp siêu tốc, bảo vệ hộp sọ an toàn tuyệt đối."
+                }
+              ]
+            },
+            p4p_score_scaled: 84,
+            tier_scaled: "B",
+            sources: [
+              { label: "Evolution of venom apparatus and skeleton reinforcement in venomous marine vertebrates", url: "https://doi.org/10.1093/mbe/msw142" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "shoebill-stork") {
+      whatIfData.push({
+        creature_id: "shoebill-stork",
+        title: "Nếu Cò Mỏ Giày phóng to bằng kích thước quái thú (80kg) thì sao?",
+        slug: "neu-co-mo-giay-phong-to-bang-kich-thuoc-quai-thu-80kg",
+        description: "Phân tích giả thuyết khi Cò Mỏ Giày với chiếc mỏ hình chiếc giày khổng lồ như chiếc xẻng sắt, cơ cổ Atlas cực khỏe và khả năng bất động săn mồi bùng nổ đạt khối lượng 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cơn ác mộng đầm lầy)",
+            slug: "co-mo-giay-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Mỏ giày dài 40cm rộng 22cm bổ nát đầu cá sấu nhỏ với lực 4500 N, cơ cổ Atlas triệt tiêu lực phản chấn 2000J, sải cánh 5.5m nâng đỡ bay lượn ở đầm lầy.",
+            content: "Khi Cò Mỏ Giày đạt khối lượng 80kg (phóng to gấp 13.3 lần khối lượng từ ~6kg tự nhiên):\n- Chiếc mỏ xẻng sát thủ: Chiếc mỏ dài 40cm, rộng 22cm có móc sừng cứng ở đầu. Lực mổ bổ đớp của hàm và cổ phóng đại đạt tới 4500 N. Một cú bổ trực diện từ trên cao có thể đập nát lớp vỏ xương sọ của cá sấu nhỏ hoặc rùa đầm lầy lớn.\n- Đốt sống cổ Atlas gia cường: Hệ cơ cổ Atlas phát triển nâng đỡ chiếc đầu to nặng 12kg. Các đốt sống cổ có diện tích khớp lớn kết hợp các bó cơ gáy dày dặn, triệt tiêu động năng phản chấn 2000J khi mỏ đập mạnh xuống đáy bùn ngầm.\n- Sải cánh khổng lồ: Sải cánh tăng tỷ lệ thuận lên tới 5.5 mét, diện tích cánh rộng giúp cò mỏ giày bay lượn săn tìm vùng nước mới dồi dào mồi.",
+            formulas_and_data: {
+              scaling_factor: 13.3,
+              mass_kg_original: 6,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực bổ đập của mỏ sừng xuống bùn",
+                  equation: "F_strike = m_head * a_strike",
+                  result: "~4,500 N (với gia tốc bổ đầu a = 120 m/s2)"
+                },
+                {
+                  name: "Chiều dài sải cánh phóng đại",
+                  equation: "W_span = W_span_original * (M_scaled / M_original)^(1/3)",
+                  result: "~5.5 mét"
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "A",
+            sources: [
+              { label: "Feeding behavior and jaw mechanics in the Shoebill Balaeniceps rex", url: "https://doi.org/10.1111/j.1469-7998.1994.tb08615.x" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Mất kiểm soát thăng bằng và gãy cánh)",
+            slug: "co-mo-giay-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Đầu nặng 12kg làm mất thăng bằng đổ nhào ra trước, xương cánh rỗng bị gãy gập dưới lực cản gió lớn và chân mảnh bị lún sâu trong bùn lầy.",
+            content: "Trong thực tế vật lý sinh học khi cò mỏ giày nặng 80kg:\n- Mất thăng bằng đầu (Center of gravity failure): Chiếc mỏ sừng khổng lồ chứa xương đặc ở đầu mõm nặng tới 12kg. Trọng tâm cơ thể bị đẩy lệch hẳn ra trước ngực. Khi cò mỏ giày đứng im hoặc bước đi, mô-men lực kéo gáy lớn sẽ khiến cò đổ nhào về phía trước, không thể đứng thẳng hoặc săn mồi phục kích.\n- Gãy xương cánh rỗng: Chim sở hữu xương rỗng (pneumatized bones) để giảm trọng lượng bay. Ở khối lượng 80kg, khi cố đập cánh sải 5.5m để bay, ứng suất xoắn do sức cản không khí vượt quá giới hạn chịu tải cơ học của xương cánh rỗng, gây gãy xương chi trước ngay lập tức.\n- Lún sâu đầm lầy: Đôi chân mảnh khảnh có móng dài nâng đỡ 80kg trên nền bùn mềm tạo áp lực nén 90 kPa, khiến chim bị lún sâu ngập gối chân, không thể nhấc chi chạy bứt tốc.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Ứng suất xoắn xương cánh khi cất cánh",
+                  issue: "Ứng suất xoắn lên xương cánh vượt quá 85 MPa, gây rạn gãy xương cánh rỗng."
+                },
+                {
+                  type: "Mô-men xoắn kéo lệch trọng tâm của đầu mỏ",
+                  issue: "Trọng tâm đầu lệch ra trước 25cm tạo mô-men kéo 30 N.m gây mỏi cơ cổ và mất thăng bằng."
+                }
+              ]
+            },
+            p4p_score_scaled: 35,
+            tier_scaled: "D",
+            sources: [
+              { label: "Pneumatization of avian bones and mechanical limits in heavy flying birds", url: "https://doi.org/10.1002/jmor.10515" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Khủng long đầm lầy cánh cốt giáp)",
+            slug: "co-mo-giay-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Cơ gân đuôi đối trọng cân bằng đầu, xương cánh gia cố sợi carbon sinh học đặc, và bàn chân móng xòe rộng phân tán áp lực.",
+            content: "Để săn mồi dũng mãnh và di chuyển linh hoạt ở kích thước 80kg tại đầm lầy:\n- Đuôi đối trọng cơ gân khỏe (Tail Counterbalance): Phần đuôi phát triển dài hơn kết hợp lớp lông đuôi nặng cùng các bó cơ mông đùi dày đặc, hoạt động như một bánh lái đối trọng kéo trọng tâm cơ thể lùi về sau trung tâm khớp hông, giúp đứng vững tuyệt đối.\n- Cánh cốt xương đặc gia cường (Reinforced Wing Bones): Xương cánh tiến hóa lấp đầy bởi các liên kết canxi ma trận tổ ong mật độ cao cùng vách ngăn sợi keratin cứng, chịu ứng suất xoắn gió cực cao, giúp cất cánh bay tầm thấp.\n- Chân đế giày bùn (Mud-shoe Webbed Talons): Các ngón chân xòe rộng hơn nữa tích hợp màng da mỏng giữa các ngón, phân tán lực nén đều trên bùn đất chỉ còn 15 kPa giúp chạy bứt tốc trên bùn lầy không lún.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Bố trí đối trọng cơ đùi và đuôi",
+                  benefit: "Kéo trọng tâm dịch chuyển về hông 22cm, giữ thăng bằng hoàn hảo trong tư thế đứng săn mồi."
+                },
+                {
+                  type: "Màng chân bùn phân tán áp lực",
+                  benefit: "Tăng diện tích chân đế lên 0.08 m2, giúp chim đi lại và bứt tốc dễ dàng trên đầm lầy bùn lỏng."
+                }
+              ]
+            },
+            p4p_score_scaled: 82,
+            tier_scaled: "A",
+            sources: [
+              { label: "Avian tail functions and adaptation mechanics in wading birds", url: "https://doi.org/10.1111/jav.01254" }
+            ]
+          }
+        ]
+      });
     } else {
       // Fallback generator just in case
       whatIfData.push({
