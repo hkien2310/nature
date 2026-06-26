@@ -296,12 +296,13 @@ Nếu user muốn kiểm tra AI có thực sự dùng codegraph:
 
 ## 🤖 Data Enrichment Automation (Tự động hóa dữ liệu)
 
-Khi nhận được các câu lệnh sau, AI bắt buộc phải đọc hướng dẫn chi tiết tại [AUTOMATION.md](file:///Users/hoangkien/Youtube/svh/docs/AUTOMATION.md) trước khi thực hiện để đảm bảo đúng quy trình, định dạng dữ liệu và đúng schema:
-- Lệnh `"Thêm sinh vật mới"`: Tự động nghiên cứu và thêm 3 sinh vật mới.
-- Lệnh `"Làm giàu data"`: Tự động nâng cấp sâu thông tin khoa học cho 5 sinh vật.
-- Lệnh `"Chấm điểm P4P"`: Tự động hiệu chuẩn P4P và cập nhật xếp hạng cho 5 sinh vật.
-- Lệnh `"Làm giàu What-If"`: Tự động tạo kịch bản câu hỏi/câu trả lời giả thuyết cho 3 sinh vật.
-- Lệnh `"Làm giàu Ghép Gen"`: Tự động lai ghép gen sinh vật vào người cho 3 sinh vật.
+Khi nhận được các câu lệnh sau, AI bắt buộc phải đọc hướng dẫn chi tiết tại các file tương ứng trước khi thực hiện để đảm bảo đúng quy trình, định dạng dữ liệu và đúng schema:
+- Lệnh `"Thêm sinh vật mới"`: Tự động nghiên cứu và thêm 3 sinh vật mới. Đọc [add-creatures.md](file:///Users/hoangkien/Youtube/svh/docs/automations/add-creatures.md).
+- Lệnh `"Làm giàu data"`: Tự động nâng cấp sâu thông tin khoa học cho 5 sinh vật. Đọc [enrich-data.md](file:///Users/hoangkien/Youtube/svh/docs/automations/enrich-data.md).
+- Lệnh `"Chấm điểm P4P"`: Tự động hiệu chuẩn P4P và cập nhật xếp hạng cho 5 sinh vật. Đọc [grade-p4p.md](file:///Users/hoangkien/Youtube/svh/docs/automations/grade-p4p.md).
+- Lệnh `"Làm giàu What-If"`: Tự động tạo kịch bản câu hỏi/câu trả lời giả thuyết cho 3 sinh vật. Đọc [what-if.md](file:///Users/hoangkien/Youtube/svh/docs/automations/what-if.md).
+- Lệnh `"Làm giàu Ghép Gen"`: Tự động lai ghép gen sinh vật vào người cho 3 sinh vật. Đọc [human-splice.md](file:///Users/hoangkien/Youtube/svh/docs/automations/human-splice.md).
+
 
 
 

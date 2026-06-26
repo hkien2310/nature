@@ -29,7 +29,7 @@ async function run() {
   const { data, error } = await supabase
     .from("creatures")
     .select("*")
-    .in("id", ["inland-taipan", "jaguar", "japanese-spider-crab", "jewel-wasp", "killer-whale"]);
+    .in("id", ["shoebill-stork", "shortfin-mako-shark", "siberian-tiger", "six-eyed-sand-spider", "slow-loris"]);
 
   if (error) {
     console.error("Error:", error.message);
