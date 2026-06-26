@@ -96,7 +96,265 @@ async function runEnrichment() {
 
   // 2. Build high-quality What-If scientific data for the targets
   for (const target of targets) {
-    if (target.id === "hairy-frog") {
+    if (target.id === "komodo-dragon") {
+      whatIfData.push({
+        creature_id: "komodo-dragon",
+        title: "Nếu Rồng Komodo phóng to gấp 10 lần (800kg) thì sao?",
+        slug: "neu-rong-komodo-phong-to-gap-10-lan-800kg",
+        description: "Phân tích giả thuyết khi loài thằn lằn lớn nhất Trái Đất đạt khối lượng 800kg tương đương loài quái thú tiền sử Megalania.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cơn ác mộng Megalania)",
+            slug: "rong-komodo-800kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực cắn xấp xỉ 2.800 N, đuôi quật với động năng 15.000J gãy xương chi lớn, da giáp xương dày 5mm chịu tải cực tốt.",
+            content: "Khi Rồng Komodo phóng to lên 800kg (gấp khoảng 10 lần khối lượng trung bình thực tế):\n- Lực cắn hủy diệt: Áp dụng công thức cắn xé, lực cắn cơ học tăng theo diện tích cắt ngang cơ. Lực cắn tăng gấp ~4.64 lần, từ 600N lên khoảng 2800N, kết hợp với hàm răng cưa phủ sắt cô đặc cắt sâu tạo vết thương hở dài 30cm.\n- Lực quật đuôi sấm sét: Đuôi dài 1.5m nặng 100kg quật với động năng 15,000J ở tốc độ 20 m/s, dư sức quật ngã hoặc gãy xương chi của loài thú lớn.\n- Giáp xương osteoderm: Các mảng giáp xương dưới da đan khít dày lên tới 5mm, tạo ra lớp bảo vệ chịu lực cắt/đâm cực hạn ngang ngửa áo giáp chống đạn nhẹ.",
+            formulas_and_data: {
+              scaling_factor: 10,
+              mass_kg_original: 80,
+              mass_kg_scaled: 800,
+              formulas: [
+                {
+                  name: "Lực cắn phóng to (Tỷ lệ diện tích cắt ngang cơ)",
+                  equation: "F_bite_scaled = F_bite_original * (M_scaled / M_original)^(2/3)",
+                  result: "~2,800 N"
+                },
+                {
+                  name: "Động năng quật đuôi",
+                  equation: "E_k = 0.5 * m_tail * v_tail^2",
+                  result: "~15,000 J (ở tốc độ v = 20 m/s)"
+                }
+              ]
+            },
+            p4p_score_scaled: 92,
+            tier_scaled: "S",
+            sources: [
+              { label: "Bite force and feeding mechanics of Varanus komodoensis", url: "https://doi.org/10.1111/j.1469-7998.2005.00015.x" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sự chậm chạp và quá nhiệt)",
+            slug: "rong-komodo-800kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Trọng lượng khổng lồ làm mất khả năng chạy bứt tốc, nhiệt độ cơ thể tăng cao dẫn đến đột quỵ vì khó tản nhiệt qua da.",
+            content: "Trong thế giới thực tế, nếu Rồng Komodo đạt khối lượng 800kg:\n- Tổn thất cơ động: Do định luật bình phương - lập phương, trọng lượng tăng gấp 10 lần nhưng tiết diện cơ xương chỉ tăng ~4.64 lần. Áp lực đè lên khớp xương chi tăng vọt, tốc độ bứt tốc giảm từ 20 km/h xuống còn dưới 8 km/h, không thể săn đuổi mồi nhanh.\n- Khủng hoảng điều nhiệt: Là động vật biến nhiệt, tỷ lệ diện tích bề mặt trên thể tích (S/V) giảm mạnh. Rồng Komodo 800kg hấp thụ nhiệt mặt trời nhưng không thể tản nhiệt kịp qua da, khiến nhiệt độ cơ thể nhanh chóng vượt quá 42°C dẫn đến mê sảng và đột quỵ do nhiệt.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Quá nhiệt nội sinh và tản nhiệt chậm",
+                  issue: "Tỷ lệ S/V giảm 54%, khiến thời gian tản nhiệt cơ thể kéo dài gấp 3 lần, dễ gây tử vong do tích tụ nhiệt dưới nắng mặt trời."
+                },
+                {
+                  type: "Quá tải xương khớp",
+                  issue: "Áp lực cơ xương đè nặng gấp 2.15 lần giới hạn đàn hồi của sụn khớp gối."
+                }
+              ]
+            },
+            p4p_score_scaled: 45,
+            tier_scaled: "C",
+            sources: [
+              { label: "Thermal biology and locomotion of varanid lizards", url: "https://doi.org/10.1086/515865" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Quái thú Megalania hồi sinh)",
+            slug: "rong-komodo-800kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa cơ cấu chi thẳng đứng chịu lực, hệ thống xoang mũi tản nhiệt tuần hoàn chủ động và tuyến nọc độc cô đặc gấp 5 lần.",
+            content: "Để Rồng Komodo 800kg sống sót và săn mồi hiệu quả:\n- Chi thẳng đứng (Semi-erect posture): Các khớp chi xoay từ tư thế bò ngang sang tư thế đứng bán thẳng (tương tự khủng long hoặc Megalania), truyền lực trực tiếp xuống đất giúp chịu tải 800kg dồi dào.\n- Xoang mũi tản nhiệt chủ động: Tiến hóa hệ thống túi khí lớn dưới họng và xoang mũi gấp nếp sâu chứa mạch máu, tản nhiệt bằng hơi nước thở ra giúp duy trì nhiệt độ lõi ổn định 35°C.\n- Tuyến độc cô đặc (Hyper-concentrated Venom): Độc tố peptide được nén với nồng độ gấp 5 lần, gây hạ huyết áp và đông máu cực nhanh ngay cả với con mồi hàng tấn.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Khớp chi bán thẳng đứng",
+                  benefit: "Giảm 65% mô-men xoắn bẻ gãy ở khớp đùi, tăng khả năng chịu tải trọng lên tới 1.5 tấn."
+                },
+                {
+                  type: "Hệ tản nhiệt xoang mũi chủ động",
+                  benefit: "Giải phóng 450W nhiệt lượng thừa qua hô hấp, ngăn chặn hoàn toàn nguy cơ quá nhiệt."
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "S",
+            sources: [
+              { label: "Venom system in varanid lizards and fossil Megalania reconstruction", url: "https://doi.org/10.1073/pnas.0810858106" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "leafy-seadragon") {
+      whatIfData.push({
+        creature_id: "leafy-seadragon",
+        title: "Nếu Hải Long Lá phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-hai-long-la-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài hải long lá mảnh dẻ với các phần phụ ngụy trang dạng lá tảo bẹ phóng to đạt kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cánh rừng tảo bọc giáp)",
+            slug: "hai-long-la-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lớp vây lá dài 3 mét ngụy trang như rừng tảo di động, mõm ống hút nước tạo lực hút chân không hút gọn con mồi 10kg.",
+            content: "Khi Hải Long Lá nặng 80kg (hệ số phóng to khối lượng khoảng 1000 lần, dài khoảng 10 lần lên 3.5 mét):\n- Hút chân không cực mạnh: Mõm hình ống dài 60cm hoạt động như một bơm piston thủy lực khổng lồ. Nhờ xương hyoid mở rộng, lực hút đột ngột tạo ra áp suất âm -0.8 atm trong khoang miệng, hút trọn con mồi nặng tới 10-15kg ở khoảng cách 1 mét chỉ trong 0.05 giây.\n- Ngụy trang ngàn lá: Các phần phụ hình lá dài tới 1.5 mét đung đưa theo dòng nước, tạo ra diện mạo giống hệt một đám tảo bẹ khổng lồ di động, làm mất cảnh giác hoàn toàn cả con mồi lẫn kẻ thù lớn.\n- Giáp tấm bì cứng cáp: Các tấm xương bì (dermal plates) bao bọc toàn bộ cơ thể tạo ra một bộ giáp bảo vệ cứng cáp chống trầy xước và cắn xé.",
+            formulas_and_data: {
+              scaling_factor: 1000,
+              mass_g_original: 80,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực hút chân không khoang miệng",
+                  equation: "F_suction = P_vacuum * A_mouth",
+                  result: "~3,500 N (áp suất âm -80 kPa trên diện tích miệng)"
+                },
+                {
+                  name: "Chiều dài cơ thể phóng to",
+                  equation: "L_scaled = L_original * (M_scaled / M_original)^(1/3)",
+                  result: "~3.5 mét"
+                }
+              ]
+            },
+            p4p_score_scaled: 75,
+            tier_scaled: "B",
+            sources: [
+              { label: "Biomechanics of suction feeding in Syngnathidae", url: "https://doi.org/10.1242/jeb.047530" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Con rối nước cạn kiệt năng lượng)",
+            slug: "hai-long-la-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Không có đuôi cuốn bám dẫn đến trôi dạt vô định bị sóng đánh nát, vây ngụy trang cản nước làm tê liệt di chuyển.",
+            content: "Trong thực tế vật lý sinh học khi Hải Long Lá nặng 80kg:\n- Khủng hoảng di chuyển và sức cản nước: Ở kích thước 3.5 mét, các vây ngụy trang hình lá có tổng diện tích bề mặt khổng lồ. Sức cản nước tăng gấp 100 lần, khiến Hải Long Lá cần nguồn năng lượng chuyển hóa khổng lồ để bơi. Các vây lưng và vây ngực nhỏ bé trong suốt sẽ quá tải và rách nát lập tức do lực cản.\n- Bị dòng hải lưu hủy hoại: Do không có đuôi cuốn bám (prehensile tail) để neo vào đá hay tảo bẹ, con hải long 80kg sẽ bị sóng đánh trôi dạt vô định, va đập vào rạn đá nhọn gãy hết các xương tấm bì và chết ngạt.\n- Thiếu oxy nghiêm trọng: Hệ hô hấp của nó không có nắp mang chủ động co bóp hiệu quả, dòng nước khuếch tán không đủ cung cấp oxy cho khối cơ thể 80kg.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Sức cản nước lên các phiến lá ngụy trang",
+                  issue: "Lực cản nước F_drag tăng gấp 100 lần ở cùng tốc độ di chuyển, vượt quá công suất cơ vây tối đa 15W."
+                },
+                {
+                  type: "Thiếu cơ chế neo giữ",
+                  issue: "Mô-men uốn do sóng biển tác động lên thân dài 3.5m vượt quá 350 Nm, bẻ gãy liên kết xương bì."
+                }
+              ]
+            },
+            p4p_score_scaled: 12,
+            tier_scaled: "D",
+            sources: [
+              { label: "Hydrodynamics of camouflage structures in marine organisms", url: "https://doi.org/10.1086/660814" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Thủy quái ngụy trang bọc thép)",
+            slug: "hai-long-la-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Đuôi cuốn bám thứ cấp bằng xương bì dẻo, vây lưng bơi phản lực nước chủ động và cơ chế điều khiển sắc tố đổi màu chủ động.",
+            content: "Để Hải Long Lá 80kg sinh tồn và trở thành thợ săn tàng hình tối thượng:\n- Đuôi neo xương dẻo (Dermal Prehensile Tail): Tiến hóa lại cấu trúc đốt xương đuôi linh hoạt cho phép cuộn chặt vào thân rạn san hô sâu, chịu đựng sức kéo của dòng chảy lớn mà không bị đứt rời.\n- Hệ vây phản lực luồng nước (Hydromuscular Jet Fins): Tiến hóa hệ cơ vây khỏe bọc trong màng da dày, vận hành như các mái chèo phản lực đẩy dòng nước mạnh ra phía sau để bứt tốc đạt 15 km/h.\n- Da ngụy trang chủ động: Tế bào sắc tố biến đổi liên kết trực tiếp với hệ thần kinh thị giác, cho phép thay đổi màu sắc toàn thân từ xanh bão sang nâu vàng trong 2 giây để ẩn mình hoàn hảo ở mọi độ sâu.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Hệ đuôi bám cơ-xương bì tái sinh",
+                  benefit: "Tạo lực bám giữ lên tới 1,800 N, neo chắc cơ thể vào đáy biển chống lại các cơn bão mạnh."
+                },
+                {
+                  type: "Hệ thống cơ vây phản lực thủy lực",
+                  benefit: "Tăng công suất động cơ sinh học lên 300W, thắng lực cản nước lớn của các nhánh lá."
+                }
+              ]
+            },
+            p4p_score_scaled: 78,
+            tier_scaled: "B",
+            sources: [
+              { label: "Evolutionary genomic signatures of Syngnathidae family morphology", url: "https://doi.org/10.1038/s41559-016-0030" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "lions-mane-jellyfish") {
+      whatIfData.push({
+        creature_id: "lions-mane-jellyfish",
+        title: "Nếu Sứa Bờm Sư Tử phóng to thành thủy quái khổng lồ (20 tấn) thì sao?",
+        slug: "neu-sua-bom-su-tu-phong-to-thanh-thuy-quai-khong-lo-20tan",
+        description: "Phân tích giả thuyết khi loài sứa khổng lồ sở hữu hàng ngàn xúc tu dài cực hạn và hàng triệu nang châm chứa nọc độc thần kinh đạt khối lượng 20 tấn.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cái ôm tử thần của Kraken)",
+            slug: "sua-bom-su-tu-20tan-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Mạng lưới 12,000 xúc tu dài 200 mét phủ kín diện tích 12 ha, nọc độc châm chích tê liệt 100 người cùng lúc.",
+            content: "Khi Sứa Bờm Sư Tử đạt khối lượng 20 tấn (phóng to từ 200kg thực tế):\n- Vùng chết chóc khổng lồ: Đường kính chuông sứa đạt 20 mét, thả xuống mạng lưới hơn 12.000 xúc tu mảnh như sợi tóc nhưng dài tới 200 mét. Mạng lưới này quét sạch một vùng đại dương rộng hơn 12 hecta, biến nó thành vùng tử địa cho mọi loài cá và thú biển.\n- Siêu độc tố thần kinh: Hàng tỷ tế bào châm độc giải phóng nọc độc polypeptide cực mạnh. Khi va chạm, chúng giải phóng đồng loạt tạo ra hàng vạn vết châm chích sâu gây ngừng thở và trụy tim lập tức cho bất kỳ sinh vật lớn nào lọt vào.\n- Lực co bóp chuông khổng lồ: Nhịp co bóp chuông tạo ra lực đẩy lượng nước khổng lồ, dịch chuyển khối thân 20 tấn đi với tốc độ 8 km/h.",
+            formulas_and_data: {
+              scaling_factor: 100,
+              mass_kg_original: 200,
+              mass_kg_scaled: 20000,
+              formulas: [
+                {
+                  name: "Tổng chiều dài vùng bao phủ xúc tu",
+                  equation: "L_total = N_tentacles * L_tentacle",
+                  result: "~2,400,000 mét xúc tu bao phủ đại dương"
+                },
+                {
+                  name: "Diện tích vùng quét chết chóc",
+                  equation: "A_killzone = \\pi * R_tentacle^2",
+                  result: "~125,600 m2 (khoảng 12.5 hecta)"
+                }
+              ]
+            },
+            p4p_score_scaled: 95,
+            tier_scaled: "S",
+            sources: [
+              { label: "Giant jellyfish ecology and nematocyst venom kinetics", url: "https://doi.org/10.1007/s10750-014-2067-5" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sự xé rách của dòng nước và rối xúc tu)",
+            slug: "sua-bom-su-tu-20tan-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Thân gelatin sụp đổ và tự xé rách dưới dòng chảy mạnh, xúc tu tự rối xoắn và hệ thần kinh mạng lưới phản xạ quá chậm.",
+            content: "Trong thực tế vật lý sinh học khi sứa nặng 20 tấn:\n- Tự rách cơ thể Gelatin: Thân sứa cấu tạo từ 99% nước biển liên kết bởi mạng protein collagen lỏng luteo. Ở khối lượng 20 tấn, lực cản và dòng đối lưu của nước đại dương sẽ xé rách chuông sứa khi di chuyển. Chỉ cần một con sóng mạnh sẽ băm nát cơ thể nó thành từng mảng thạch vô hại.\n- Thảm họa xúc tu tự rối: Với 12,000 xúc tu dài 200 mét, dòng nước xoáy sẽ làm chúng quấn chặt vào nhau thành một búi len khổng lồ không thể gỡ ra, gây nghẽn mạch tuần hoàn chất dinh dưỡng của sứa.\n- Tốc độ truyền thần kinh chậm chạp: Do hệ thần kinh dạng mạng lưới (nerve net) không có myelin bảo vệ, tốc độ truyền tín hiệu điện chỉ khoảng 0.5 m/s. Để truyền phản xạ từ đầu xúc tu dài 200 mét về chuông cần tới 400 giây (gần 7 phút), khiến sứa mất hoàn toàn phản xạ bơi hay tự vệ tức thời.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Giới hạn uốn kéo của mô Gelatin",
+                  issue: "Ứng suất kéo do dòng nước chảy 1.5 m/s tác động lên chuông vượt quá 10 kPa, giới hạn đứt gãy của collagen sứa."
+                },
+                {
+                  type: "Độ trễ truyền thần kinh mạng lưới",
+                  issue: "Thời gian phản hồi thần kinh \\Delta t = L / v_speed = 200m / 0.5 m/s = 400 giây."
+                }
+              ]
+            },
+            p4p_score_scaled: 15,
+            tier_scaled: "D",
+            sources: [
+              { label: "Nervous conduction and biomechanics in cnidarians", url: "https://doi.org/10.1086/BULL184.1.88" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Vương quốc sứa bất tử)",
+            slug: "sua-bom-su-tu-20tan-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Mô gelatin gia cố liên kết chéo collagen siêu dẻo, hệ sợi thần kinh bó dọc có bao myelin tăng tốc và xúc tu phủ chất nhầy glycoprotein chống rối.",
+            content: "Để đại sứa 20 tấn sinh tồn dũng mãnh ở biển sâu:\n- Mạng lưới Collagen biến tính (Cross-linked Collagen Matrix): Tiến hóa các liên kết chéo disulfide cực bền giữa các sợi collagen trong chất nền gelatin, tăng độ bền uốn kéo lên gấp 100 lần, giúp chuông sứa dẻo dai như cao su tổng hợp chịu được mọi sóng gió đại dương.\n- Sợi trục thần kinh bọc myelin (Myelinated Giant Axons): Tiến hóa các bó sợi thần kinh chạy dọc xúc tu được bọc myelin bảo vệ, đẩy tốc độ truyền xung điện lên 80 m/s, giúp phản xạ bắt mồi diễn ra trong 2.5 giây.\n- Xúc tu phủ chất nhầy chống rối (Anti-entanglement Mucus): Bề mặt xúc tu tiết ra một loại glycoprotein trơn trượt đặc biệt đẩy nước, ngăn chặn hoàn toàn việc các xúc tu bám dính hay xoắn nút vào nhau.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Lớp chất chống rối glycoprotein",
+                  benefit: "Hệ số ma sát giữa các xúc tu giảm xuống mức \\mu < 0.01, giúp chúng trượt qua nhau êm ái không bao giờ rối."
+                },
+                {
+                  type: "Tốc độ phản xạ thần kinh nâng cấp",
+                  benefit: "Giảm thời gian phản hồi thần kinh từ 400 giây xuống 2.5 giây nhờ các sợi trục khổng lồ bọc myelin."
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "S",
+            sources: [
+              { label: "Myelination-like structures in invertebrates and collagen biomaterials", url: "https://doi.org/10.1016/j.cell.2016.10.012" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "hairy-frog") {
       whatIfData.push({
         creature_id: "hairy-frog",
         title: "Nếu Ếch Lông phóng to bằng con người (80kg) thì sao?",
