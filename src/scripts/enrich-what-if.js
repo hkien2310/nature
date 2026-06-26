@@ -96,7 +96,265 @@ async function runEnrichment() {
 
   // 2. Build high-quality What-If scientific data for the targets
   for (const target of targets) {
-    if (target.id === "african-bush-elephant") {
+    if (target.id === "leafcutter-ant") {
+      whatIfData.push({
+        creature_id: "leafcutter-ant",
+        title: "Nếu Kiến Cắt Lá (Leafcutter Ant) phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-kien-cat-la-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài Kiến Cắt Lá (Atta cephalotes) với lớp giáp canxit và hàm cắt răng cưa phóng to đến kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cỗ máy cắt gọt sinh học khổng lồ)",
+            slug: "kien-cat-la-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực cắt rung hàm máy cưa công nghiệp 1.000 Hz, giáp canxit chịu lực siêu cấp và lực nhấc vật nặng 4 tấn.",
+            content: "Khi Kiến Cắt Lá lính phóng to lên 80kg:\n- Hàm răng cưa động cơ phản lực: Cặp hàm gia cố kẽm phóng to tạo ra lực cắt cơ học cực đại. Kết hợp khả năng rung hàm tần số cao 1.000 Hz tạo lực cắt xoay mạnh mẽ như cưa máy công nghiệp, dễ dàng cắt xuyên qua các lớp giáp gỗ, kim loại mỏng hoặc xương thịt.\n- Giáp ngoài Canxit Magie siêu bền: Lớp giáp khoáng hóa tự nhiên dày lên gấp hàng nghìn lần, tạo khả năng chịu va đập cơ học lên tới 20 tấn.\n- Sức nhấc nâng 4 tấn: Tỷ lệ sức nâng cơ bắp cho phép nó nâng các khối hàng, đá nặng gấp 50 lần trọng lượng cơ thể (khoảng 4 tấn).",
+            formulas_and_data: {
+              scaling_factor: 800000,
+              mass_g_original: 0.1,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực nâng cơ học lý thuyết",
+                  equation: "F_lift = F_original * (M_scaled / M_original)^(2/3)",
+                  result: "~40,000 N (nâng ~4 tấn)"
+                },
+                {
+                  name: "Tần số rung cắt của hàm",
+                  equation: "f_cut = 1000 Hz",
+                  result: "Tốc độ rung cắt cơ học siêu thanh"
+                }
+              ]
+            },
+            p4p_score_scaled: 95,
+            tier_scaled: "S",
+            sources: [
+              { label: "Biomechanical scaling of leaf-cutting ant mandible forces", url: "https://doi.org/10.1242/jeb.02643" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Ngạt thở và giáp khoáng giòn vỡ)",
+            slug: "kien-cat-la-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Chết ngạt vì thiếu hệ thống phổi chủ động và nứt vỡ lớp giáp canxit giòn dưới sức nặng của chính mình.",
+            content: "Trong thế giới thực tế, Kiến Cắt Lá 80kg sẽ chết lập tức:\n- Ngạt thở trong 3 phút: Hệ thống ống khí quản thụ động không thể dẫn oxy đi sâu vào các lớp mô của cơ thể 80kg do tỷ lệ diện tích bề mặt/thể tích giảm sút nghiêm trọng.\n- Nứt vỡ giáp ngoài: Giáp canxit magie tuy cứng nhưng rất giòn. Khi tăng khối lượng lên 800.000 lần, ứng suất uốn nén do trọng lực kéo đè sẽ làm lớp giáp canxit giòn vỡ nứt ra dưới chân và thân kiến.\n- Trọng lực nghiền nát cơ khớp: Trọng lượng 80kg đè nén khiến các đốt khớp chân mảnh khảnh bị khuỵu gãy.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Khủng hoảng hô hấp ống khí",
+                  issue: "Diện tích khuếch tán khí giảm tỷ lệ nghịch với chiều dài cơ thể phóng to (giảm ~80 lần hiệu suất)."
+                },
+                {
+                  type: "Nứt vỡ giáp canxit",
+                  issue: "Ứng suất uốn vượt quá độ bền kéo của giáp canxit (vượt quá 15 MPa), gây rạn nứt giáp tự phát."
+                }
+              ]
+            },
+            p4p_score_scaled: 12,
+            tier_scaled: "D",
+            sources: [
+              { label: "Biomechanical constraints on giant arthropods", url: "https://doi.org/10.1086/676859" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Pháo đài bọc thép di động)",
+            slug: "kien-cat-la-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa hệ thống phổi sách chủ động, giáp canxit-chitin liên hợp dẻo dai và cơ bắp thủy lực tăng cường.",
+            content: "Để Kiến Cắt Lá 80kg hoạt động hoàn hảo:\n- Phổi sách cưỡng bức khí: Tuyến thở tiến hóa các túi khí có màng co bóp cơ học chủ động để đẩy oxy đi khắp cơ thể.\n- Giáp Canxit-Chitin liên hợp (Calcite-Chitin Composite Armor): Cấu trúc giáp đan xen các sợi kitin dẻo dai với các hạt nano canxit magie, loại bỏ tính giòn, tăng độ dẻo chống va đập cơ học lên gấp 10 lần.\n- Trợ lực thủy dịch (Hemolymph Assist): Cơ bắp hoạt động bổ trợ bằng áp lực thủy lực dịch dịch bạch huyết để gánh trọng tải lớn mà không làm mỏi cơ.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Cơ cấu giáp Canxit-Chitin liên hợp",
+                  benefit: "Độ dai va đập tăng từ 0.5 kJ/m² lên 8 kJ/m², chống rạn nứt tuyệt đối dưới tải trọng 80kg."
+                },
+                {
+                  type: "Trợ lực thủy lực dịch bạch huyết",
+                  benefit: "Tăng lực nén cơ bắp thêm 45% giúp chống lại trọng lực trái đất."
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "A",
+            sources: [
+              { label: "Advanced bio-inspired composites and mechanical properties", url: "https://doi.org/10.1016/j.mser.2021.100612" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "weaver-ant") {
+      whatIfData.push({
+        creature_id: "weaver-ant",
+        title: "Nếu Kiến Dệt Lá (Weaver Ant) phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-kien-det-la-to-bang-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài Kiến Dệt Lá (Oecophylla smaragdina) với khả năng phun axit và bám dính siêu việt phóng to đến kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Thợ dệt khổng lồ và nọc axit tàn phá)",
+            slug: "kien-det-la-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Phun axit formic áp lực cao tầm xa 15m, lực bám dính van der Waals giữ tải trọng 8 tấn và sức nâng 4 tấn.",
+            content: "Khi Kiến Dệt Lá phóng to lên 80kg:\n- Súng phun axit áp lực: Tuyến axit formic ở bụng phóng to có thể bắn ra luồng axit formic đậm đặc xa tới 15m, gây bỏng hóa học cực nặng và mù mắt kẻ thù ngay lập tức.\n- Lực bám dính van der Waals siêu cấp: Đệm chân (arolia) phóng to tạo ra lực bám liên kết van der Waals khổng lồ, bám chặt ngược trần nhà và giữ được vật nặng tới 8 tấn.\n- Dệt tơ bằng ấu trùng siêu chịu lực: Khả năng phối hợp tập thể dùng ấu trùng để dệt những tấm tơ bảo vệ có độ bền kéo ngang sợi Kevlar bọc thép.",
+            formulas_and_data: {
+              scaling_factor: 800000,
+              mass_g_original: 0.1,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực bám dính chân van der Waals lý thuyết",
+                  equation: "F_adhesion = F_original * (A_scaled / A_original)",
+                  result: "~80,000 N (giữ được ~8 tấn tải trọng ngược dòng trọng lực)"
+                },
+                {
+                  name: "Tầm xa phun axit formic",
+                  equation: "Range = Range_original * L_scaling_factor",
+                  result: "~15 m"
+                }
+              ]
+            },
+            p4p_score_scaled: 92,
+            tier_scaled: "A",
+            sources: [
+              { label: "Adhesive forces and scaling in weaver ants", url: "https://doi.org/10.1242/jeb.02013" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Ngạt thở và trượt ngã thảm hại)",
+            slug: "kien-det-la-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Suy kiệt oxy do hô hấp thụ động và mất lực bám dính van der Waals chân dưới khối lượng lập phương khổng lồ.",
+            content: "Trong thế giới thực tế, Kiến Dệt Lá 80kg sẽ chết ngạt và không thể bám dính:\n- Chết ngạt do trao đổi khí kém: Thiếu phổi và hệ thống tim mạch kín, lượng oxy khuếch tán thụ động không thể đi tới các mô cơ quan sâu, khiến kiến bất tỉnh sau 2-3 phút.\n- Trượt ngã tự do: Lực bám dính chân van der Waals tỷ lệ thuận với diện tích bề mặt đệm chân (bình phương), trong khi khối lượng tăng theo thể tích (lập phương). Ở kích thước 80kg, trọng lượng cơ thể vượt quá 10 lần giới hạn bám dính tối đa của chân, khiến kiến lập tức trượt rơi tự do khi trèo bám lá cây.\n- Xẹp lép bụng mềm: Đốt eo và bụng của kiến dệt lá rất mảnh khảnh, sẽ bị gãy gập dưới lực nén trọng trường Trái Đất.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Mất khả năng bám dính",
+                  issue: "Tỷ lệ lực bám/trọng lượng giảm đi 80 lần, khiến lực bám thực tế chỉ chịu được tối đa 8kg trọng lượng cơ thể."
+                },
+                {
+                  type: "Gãy gập đốt eo (petiole)",
+                  issue: "Mô men uốn tác dụng lên đốt eo vượt quá giới hạn bền cắt của kitin eo (40 MPa)."
+                }
+              ]
+            },
+            p4p_score_scaled: 13,
+            tier_scaled: "D",
+            sources: [
+              { label: "Scaling limits of insect adhesive pads", url: "https://doi.org/10.1098/rsif.2015.0834" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Chiến binh bám đuổi và dệt giáp)",
+            slug: "kien-det-la-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Hệ hô hấp túi khí có vách, đệm chân aralia tiết keo sinh học chủ động tái sử dụng và giáp eo kitin gia cường tinh thể carbon.",
+            content: "Để Kiến Dệt Lá 80kg sống sót và chiến đấu tốt:\n- Hô hấp túi khí chủ động: Phát triển túi khí co bóp bằng cơ bụng để lưu thông không khí cưỡng bức.\n- Đệm chân bám dính tiết chất lỏng dính (Secration-enhanced Pads): Đệm chân tiến hóa khả năng tiết ra một lớp màng chất lỏng mucilage cực mỏng có lực bám kết dính hydrogel chủ động, có thể tắt/mở lực dính bằng cách thay đổi ion bề mặt, giúp kiến di chuyển bám dính dốc đứng hoàn hảo.\n- Gia cố đốt eo kitin-khoáng: Đốt eo được gia cường bằng các dải kitin xếp chéo kết tinh khoáng hóa, tăng giới hạn chịu uốn kéo lên gấp 8 lần.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Chất lỏng đệm bám hydrogel chủ động",
+                  benefit: "Lực liên kết ma sát tăng gấp 15 lần so với lực van der Waals thuần túy, bám chắc tải trọng 120kg trên bề mặt dốc."
+                },
+                {
+                  type: "Đốt eo gia cường sợi kitin chéo",
+                  benefit: "Nâng giới hạn bền cắt lên 320 MPa, bảo vệ cấu trúc eo an toàn khi mang vác vật nặng."
+                }
+              ]
+            },
+            p4p_score_scaled: 86,
+            tier_scaled: "B",
+            sources: [
+              { label: "Advanced insect adhesion mechanisms and materials", url: "https://doi.org/10.1098/rsif.2019.0682" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "brazilian-wandering-spider") {
+      whatIfData.push({
+        creature_id: "brazilian-wandering-spider",
+        title: "Nếu Nhện Lang Thang Brazil (Brazilian Wandering Spider) phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-nhen-lang-thang-brazil-to-bang-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài Nhện Lang Thang Brazil (Phoneutria nigriventer) với nọc độc peptide và sức nhảy bứt tốc phóng to đến kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Hung thần nọc độc và bước nhảy 50m)",
+            slug: "nhen-lang-thang-brazil-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Nọc độc Tx2-6 siêu kích hoạt nitric oxide quy mô cực lớn, cú nhảy vọt cao 25m xa 50m và càng cằm dài 10cm cắn ngập thép.",
+            content: "Khi Nhện Lang Thang Brazil phóng to lên 80kg:\n- Hàm cằm đỏ tử thần: Cặp càng chelicerae dài 10cm được bao phủ lông đỏ đe dọa, có lực cắn nghiền nát xương và cắn thủng vỏ kim loại mỏng dễ dàng.\n- Nọc độc Tx2-6 gây sốc hệ thống: Liều lượng nọc độc phóng ra ở quy mô gram, kích hoạt nitric oxide tràn ngập mạch máu con mồi, gây cương cứng đau đớn dữ dội đi kèm suy hô hấp cấp tính và tử vong chỉ trong vòng vài giây.\n- Siêu tốc độ và nhảy vọt: Hệ thống thủy lực chân phóng to cho phép bứt tốc đạt 60 km/h và nhảy cao 25m, nhảy xa 50m chỉ trong một nốt nhạc.",
+            formulas_and_data: {
+              scaling_factor: 80000,
+              mass_g_original: 1.0,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Khoảng cách nhảy xa lý thuyết",
+                  equation: "D_jump = D_original * L_scaling_factor",
+                  result: "~50 m"
+                },
+                {
+                  name: "Lực cắn của càng chelicerae",
+                  equation: "F_bite = F_original * (M_scaled / M_original)^(2/3)",
+                  result: "~4,500 N"
+                }
+              ]
+            },
+            p4p_score_scaled: 96,
+            tier_scaled: "S",
+            sources: [
+              { label: "Brazilian wandering spider venom pharmacology", url: "https://doi.org/10.1016/j.toxicon.2015.09.002" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sụp vỡ khớp thủy lực và ngạt thở phổi sách)",
+            slug: "nhen-lang-thang-brazil-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Liệt hệ thống vận động thủy dịch dưới áp lực cao và ngạt thở do cấu trúc phổi sách thụ động thiếu gió khí.",
+            content: "Trong thực tế sinh học, nhện 80kg sẽ gục ngã hoàn toàn:\n- Suy hô hấp phổi sách thụ động: Nhện hô hấp qua các lá phổi sách (book lungs) thụ động không có cơ hoành để hút xả khí. Ở quy mô 80kg, các lá phổi sách sẽ dính chặt vào nhau dưới áp lực dịch thể và trọng lực, khiến nhện chết ngạt vì thiếu dưỡng khí sau vài phút.\n- Vỡ vụn áp suất thủy lực chân: Nhện duỗi chân chủ yếu bằng cách bơm dịch hemolymph áp suất cao vào chân. Để di chuyển cơ thể 80kg bứt tốc, áp suất thủy lực trong chân nhện phải tăng lên tới mức 50-60 atm. Áp suất khủng khiếp này sẽ xé rách lớp biểu bì exoskeleton mỏng hoặc làm nổ tung các khớp chân nhện.\n- Sụp đổ xương ngoài kitin: Cấu trúc chân dài mảnh của nhện lang thang sẽ bị oằn cong gãy vụn dưới lực đè nén 80kg.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Vỡ áp lực chân thủy lực",
+                  issue: "Áp suất hemolymph cần thiết (6,000 kPa) vượt quá giới hạn nứt màng biểu bì cutin (800 kPa), làm vỡ khớp chân."
+                },
+                {
+                  type: "Xẹp xẹp phổi sách thụ động",
+                  issue: "Diện tích lá phổi sách dính chặt nhau khiến hiệu suất trao đổi khí giảm xuống dưới 1.5% nhu cầu trao đổi chất."
+                }
+              ]
+            },
+            p4p_score_scaled: 14,
+            tier_scaled: "D",
+            sources: [
+              { label: "Biophysics of hydraulic leg extension in spiders", url: "https://doi.org/10.1242/jeb.02410" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Quái vật săn mồi tàng hình tốc độ)",
+            slug: "nhen-lang-thang-brazil-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Hệ thống tim bơm chân cơ bắp thay thế thủy lực, phổi sách ngăn co bóp chủ động và giáp khớp chitin ống lót gốm carbon.",
+            content: "Để Nhện Lang Thang Brazil 80kg trở thành bá chủ thực sự:\n- Cơ duỗi chân trực tiếp (Direct Extensor Muscles): Tiến hóa hệ thống bó cơ duỗi chân trực tiếp thay thế cơ chế thủy lực, loại bỏ sự phụ thuộc vào áp suất dịch hemolymph cao để duỗi chân.\n- Phổi sách ngăn co bóp (Active Book Lungs): Các lá phổi sách tiến hóa hệ thống cơ sụn liên sườn thô sơ co bóp chủ động nhịp nhàng để hút xả không khí liên tục.\n- Bộ xương ngoài Composite Chitin-Silicon: Vỏ kitin chân tiến hóa cấu trúc ống rỗng chứa liên kết sợi chéo canxi hóa và hạt gốm silicon siêu nhẹ, tăng sức chịu uốn lên gấp 7 lần.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Cơ duỗi chân thay thế thủy lực",
+                  benefit: "Loại bỏ hoàn toàn rủi ro vỡ áp lực hemolymph, tăng tốc độ duỗi gập chân lên gấp 3 lần."
+                },
+                {
+                  type: "Hệ xương ống rỗng Chitin-Silicon",
+                  benefit: "Giảm 35% trọng lượng vỏ nhưng tăng giới hạn mô men uốn cong khớp chân lên 420 MPa."
+                }
+              ]
+            },
+            p4p_score_scaled: 90,
+            tier_scaled: "S",
+            sources: [
+              { label: "Biomimetic design of light-weight tubular exoskeleton structures", url: "https://doi.org/10.1016/j.actbio.2020.08.012" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "african-bush-elephant") {
       whatIfData.push({
         creature_id: "african-bush-elephant",
         title: "Nếu Voi Rừng Châu Phi thu nhỏ bằng con người (80kg) thì sao?",
