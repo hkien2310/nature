@@ -2171,6 +2171,1038 @@ async function runEnrichment() {
           }
         ]
       });
+    } else if (target.id === "goliath-tigerfish") {
+      whatIfData.push({
+        creature_id: "goliath-tigerfish",
+        title: "Nếu Cá Hổ Goliath phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-ca-ho-goliath-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích kịch bản giả thuyết khi Cá Hổ Goliath (Hydrocynus goliath) đạt kích thước con người 80kg và khả năng săn mồi siêu cấp.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cú đớp nghiền sắt thép và bứt tốc thủy động lực học)",
+            slug: "ca-ho-goliath-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực đớp đạt 5.500 N, bứt tốc 45 km/h dưới nước với hàm răng 32 chiếc răng nanh thép dài 5cm.",
+            content: "Khi Cá Hổ Goliath được phóng to lên 80kg (tăng khối lượng gấp ~8 lần so với kích thước trung bình 10kg, chiều dài sấp xỉ 1.8m):\n- Bộ hàm răng thép khổng lồ: Sở hữu 32 chiếc răng nanh nhọn hoắt xếp đan xen như răng cưa, mỗi chiếc răng dài 5cm. Lực đớp tăng theo tiết diện cơ hàm (M_scaled/M_original)^(2/3), đạt 5.500 N, đủ sức xé toạc các tấm thép mỏng hoặc nghiền nát xương của bất kỳ động vật thủy sinh lớn nào.\n- Tốc độ bứt tốc thủy động lực học: Nhờ thân hình thon dẹt tối ưu và hệ cơ đỏ phát triển, cú bứt tốc cự ly ngắn đạt vận tốc 45 km/h, kết hợp với hộp sọ có khớp động cơ học giảm chấn chống gãy sọ khi va đập đớp mồi.",
+            formulas_and_data: {
+              scaling_factor: 8,
+              mass_kg_original: 10,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực đớp phóng to theo tiết diện cơ",
+                  equation: "F_bite_scaled = F_bite_original * (M_scaled / M_original)^(2/3)",
+                  result: "~5,500 N"
+                },
+                {
+                  name: "Tốc độ bứt tốc thủy động lực học tối đa",
+                  equation: "V_max_scaled = V_max_original * (M_scaled / M_original)^(1/6)",
+                  result: "~45 km/h"
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "A",
+            sources: [
+              { label: "Feeding mechanics and bite force of the Goliath tigerfish", url: "https://doi.org/10.1111/j.1469-7998.2012.00912.x" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Thiếu hụt oxy và sụp đổ bong bóng cá)",
+            slug: "ca-ho-goliath-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Gặp khó khăn nghiêm trọng về hô hấp do tỷ lệ diện tích mang giảm và bong bóng cá không chịu nổi áp suất chênh lệch.",
+            content: "Trong thực tế vật lý sinh học khi cá hổ goliath đạt khối lượng 80kg:\n- Khủng hoảng hô hấp: Do cá hổ goliath là loài cá săn mồi hiếu động cao, nhu cầu oxy rất lớn. Khi phóng to lên 80kg, tỷ lệ diện tích bề mặt mang trên khối lượng cơ thể (S_gill / V_body) giảm mạnh (tỷ lệ nghịch với kích thước tuyến tính), khiến cá không thể hấp thụ đủ oxy hòa tan trong nước sông nhiệt đới nóng, gây ngạt thở nhanh chóng khi vận động mạnh.\n- Tổn thương bong bóng cá cơ học: Trọng lượng 80kg tạo áp lực lớn lên các cơ quan nội tạng khi bơi ở các độ sâu khác nhau. Bong bóng cá chịu chênh lệch áp suất lớn, dễ bị vỡ hoặc mất kiểm soát sức nổi, khiến cá bị chìm xuống đáy hoặc ngửa bụng.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Thiếu hụt diện tích phổi/mang trao đổi khí",
+                  issue: "Tỷ lệ diện tích bề mặt mang trên thể tích giảm ~50%, gây thiếu oxy nghiêm trọng khi vận động."
+                },
+                {
+                  type: "Áp suất thủy tĩnh lên bong bóng cá",
+                  issue: "Áp lực tăng cao làm mất kiểm soát sức nổi cơ học, vô hiệu hóa khả năng giữ thăng bằng."
+                }
+              ]
+            },
+            p4p_score_scaled: 25,
+            tier_scaled: "D",
+            sources: [
+              { label: "Gill morphometrics and respiratory constraints in large teleosts", url: "https://doi.org/10.1002/jez.14023" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Thủy quái sông Congo có phổi phụ trợ và giáp vảy titan)",
+            slug: "ca-ho-goliath-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Hệ thống mang phụ trợ siêu phân nhánh và vảy sừng phủ chitin bền gấp 5 lần chống áp lực.",
+            content: "Để Cá Hổ Goliath 80kg sinh tồn và trở thành bá chủ vùng nước ngọt:\n- Mang xếp nếp siêu cấp (Hyper-folded gills): Tiến hóa các phiến mang phụ trợ xếp nếp sâu tích hợp mao mạch mật độ cao, tăng diện tích tiếp xúc với nước gấp 4 lần để bù đắp sự thiếu hụt oxy.\n- Vảy giáp phức hợp chitin-calcium: Lớp vảy phát triển thêm các sợi chitin liên kết ma trận canxi, tạo cấu trúc giáp nhẹ nhưng siêu bền, bảo vệ cơ thể khỏi áp lực nước chảy xiết và các đòn tấn công vật lý.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Mang xếp nếp tăng diện tích bề mặt",
+                  benefit: "Tăng diện tích trao đổi khí lên 2.5 m² per kg, đảm bảo cung cấp oxy đầy đủ."
+                },
+                {
+                  type: "Vảy giáp phức hợp chitin-calcium",
+                  benefit: "Mô-đun đàn hồi đạt 12 GPa, chịu được áp lực va đập lớn gấp 5 lần vảy thường."
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "A",
+            sources: [
+              { label: "Fish scale biocomposites and impact resistance", url: "https://doi.org/10.1016/j.actbio.2014.09.011" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "great-white-shark") {
+      whatIfData.push({
+        creature_id: "great-white-shark",
+        title: "Nếu Cá Mập Trắng Lớn thu nhỏ bằng con người (80kg) thì sao?",
+        slug: "neu-ca-map-trang-lon-thu-nho-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài cá mập trắng lớn khổng lồ được thu nhỏ về kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cú đớp cưa sắc ngọt và bơi lội siêu linh hoạt)",
+            slug: "ca-map-trang-lon-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực đớp đạt 4.000 N, bơi lội siêu linh hoạt với bán kính quay đầu cực hẹp và gia tốc bứt tốc tức thì.",
+            content: "Khi Cá Mập Trắng Lớn thu nhỏ về 80kg (dài khoảng 1.8m):\n- Cú đớp răng cưa xé thịt: Bộ răng cưa sắc lẹm di động xếp lớp nguyên bản thu nhỏ lại thành lưỡi dao lam siêu bạo lực. Lực đớp cơ học so với cơ thể tăng vượt bậc nhờ tỷ lệ cơ hàm lớn, đạt 4.000 N, kết hợp với chuyển động lắc đầu sườn ngang đặc trưng để cắt đôi bất kỳ con mồi nào trong nháy mắt.\n- Siêu linh hoạt dưới nước: Giảm khối lượng khổng lồ giúp momen quán tính xoay trục dọc giảm mạnh (giảm theo tỷ lệ bậc 5 của kích thước). Cá mập trắng 80kg có thể bẻ lái quay đầu gấp góc 90 độ chỉ trong 0.2 giây, điều mà phiên bản khổng lồ nặng 1 tấn không bao giờ làm được.",
+            formulas_and_data: {
+              scaling_factor: 0.08,
+              mass_kg_original: 1000,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực đớp phóng đại tương đối ở kích thước nhỏ",
+                  equation: "F_bite_scaled = F_bite_original * (M_scaled / M_original)^(2/3)",
+                  result: "~4,000 N"
+                },
+                {
+                  name: "Giảm mô-men quán tính xoay trục",
+                  equation: "I_ratio = (M_scaled / M_original)^(5/3)",
+                  result: "~1/200 (linh hoạt gấp 200 lần)"
+                }
+              ]
+            },
+            p4p_score_scaled: 92,
+            tier_scaled: "S",
+            sources: [
+              { label: "Bite force and feeding mechanics of the great white shark", url: "https://doi.org/10.1111/j.1469-7998.2008.00494.x" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Mất nhiệt đại dương và suy giảm sức nổi)",
+            slug: "ca-map-trang-lon-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Mất nhiệt qua da siêu tốc ở vùng nước sâu lạnh giá, và nồng độ ure rò rỉ làm mất cân bằng thẩm thấu trầm trọng.",
+            content: "Trong thực tế vật lý sinh học khi cá mập trắng lớn thu nhỏ về 80kg:\n- Hạ thân nhiệt vùng lõi: Cá mập trắng lớn sử dụng hệ thống trao đổi nhiệt đối lưu (Rete Mirabile) để giữ ấm cơ và não cao hơn nhiệt độ nước xung quanh. Khi thu nhỏ về 80kg, tỷ lệ diện tích bề mặt/thể tích tăng 2.5 lần làm giảm hiệu quả giữ nhiệt của Rete Mirabile xuống dưới ngưỡng duy trì, dẫn tới cơ thể bị lạnh cóng, làm liệt các bó cơ bơi lội khi lặn sâu.\n- Sự cố mất cân bằng thẩm thấu: Da nhám mỏng của cá mập lọc ure để giữ cân bằng thẩm thấu với nước biển. Ở kích thước nhỏ, tỷ lệ rò rỉ ure qua da tăng mạnh so với thể tích máu, đòi hỏi năng lượng tái tạo ure cực lớn, khiến cơ thể bị suy nhược tế bào.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Hiệu quả giữ nhiệt của Rete Mirabile suy giảm",
+                  issue: "Nhiệt lượng thất thoát nhanh hơn 2.5 lần, cơ bị lạnh cứng dưới nước sâu (<12°C)."
+                },
+                {
+                  type: "Mất cân bằng thẩm thấu do rò rỉ Ure",
+                  issue: "Tỷ lệ rò rỉ ure qua da tăng mạnh gây rối loạn nồng độ dung dịch tế bào."
+                }
+              ]
+            },
+            p4p_score_scaled: 35,
+            tier_scaled: "D",
+            sources: [
+              { label: "Thermoregulation and osmotic balance in lamnid sharks", url: "https://doi.org/10.1136/physiol.2001.0942" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Sát thủ đại dương nội nhiệt hoàn toàn và giáp da collagen chống rò rỉ)",
+            slug: "ca-map-trang-lon-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa Rete Mirabile siêu dầy giữ nhiệt 95%, lớp da collagen kép giữ ure tuyệt đối và tăng mật độ ti thể trong cơ bắp.",
+            content: "Để Cá Mập Trắng Lớn 80kg thống trị vùng duyên hải nhiệt đới và ôn đới:\n- Rete Mirabile mật độ siêu đặc (Hyper-dense Rete Mirabile): Tăng số lượng vi mạch trao đổi nhiệt chéo lên gấp 3 lần, cách nhiệt tuyệt đối vùng lõi tim và não để duy trì nhiệt độ ổn định ở 26°C ngay cả trong dòng nước 8°C.\n- Biểu bì collagen-lipid chống thấm (Lipophilic Collagen Skin): Lớp da nhám được bổ sung lớp đệm lipid kỵ nước sâu, khóa chặn hoàn toàn sự thẩm thấu rò rỉ urea ra môi trường, duy trì áp suất thẩm thấu hoàn hảo.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Mật độ vi mạch Rete Mirabile tăng 200%",
+                  benefit: "Giữ vững thân nhiệt lõi 26°C bất kể nhiệt độ nước môi trường."
+                },
+                {
+                  type: "Màng chắn urea kỵ nước",
+                  benefit: "Tỷ lệ rò rỉ urea giảm xuống dưới 0.05 g/m²/ngày."
+                }
+              ]
+            },
+            p4p_score_scaled: 86,
+            tier_scaled: "A",
+            sources: [
+              { label: "Vascular adaptations and lipid barriers in endothermic sharks", url: "https://doi.org/10.1086/32415" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "hairy-frogfish") {
+      whatIfData.push({
+        creature_id: "hairy-frogfish",
+        title: "Nếu Cá Chân Dong Tóc phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-ca-chan-dong-toc-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài cá chân dong tóc Antennarius striatus được phóng to lên kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cơn lốc xoáy chân không nuốt chửng con mồi)",
+            slug: "ca-chan-dong-toc-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Cú táp nuốt mồi tạo lực hút chân không khổng lồ 1.200 lít nước mỗi giây và lực bứt tốc ngậm miệng siêu thanh.",
+            content: "Khi Cá Chân Dong Tóc được phóng to lên 80kg (tăng khối lượng gấp ~800 lần, chiều dài sấp xỉ 1.6m):\n- Cú đớp chân không hủy diệt (Vacuum Suction): Khả năng mở rộng thể tích khoang miệng gấp 12 lần trong vòng 6 miligiây. Lực hút áp suất âm tạo ra dòng nước cuốn cuồn cuộn với lưu lượng cực đại đạt 1.200 lít/giây, hút thẳng con mồi cách xa 1 mét vào miệng.\n- Chiếc mồi nhử khổng lồ (Super-esca): Chiếc mồi giả phát triển dài 40cm cử động uốn éo như rắn nước lớn, thu hút các loài cá săn mồi trung bình tự dẫn xác tới nạp mạng.",
+            formulas_and_data: {
+              scaling_factor: 800,
+              mass_kg_original: 0.1,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lưu lượng hút chân không tức thời",
+                  equation: "Q_suction = (12 * V_mouth_scaled) / t_strike",
+                  result: "~1,200 L/s"
+                },
+                {
+                  name: "Chênh lệch áp suất âm hút mồi",
+                  equation: "Delta_P = 0.5 * rho * v_fluid^2",
+                  result: "~4.5 kPa"
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "A",
+            sources: [
+              { label: "Biomechanics of ultra-fast suction feeding in frogfishes", url: "https://doi.org/10.1242/jeb.02495" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sự ngạt thở và xẹp vây ngực cơ học)",
+            slug: "ca-chan-dong-toc-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Không thể đi bộ do vây ngực sụn yếu bị gãy dưới tải nặng và khoang miệng rộng gây ngạt thở khi nuốt bùn cát.",
+            content: "Trong thực tế vật lý sinh học khi cá chân dong tóc đạt khối lượng 80kg:\n- Gãy khớp vây ngực: Các vây ngực và vây bụng vốn được cá chân dong dùng để 'đi bộ' dưới đáy biển chỉ được cấu tạo từ các xương sụn mềm dẻo. Khi phóng to lên 80kg, trọng lượng đè lên các chi sụn này tăng gấp 800 lần trong khi tiết diện xương chỉ tăng 100 lần. Vây ngực sẽ lập tức bị gãy rạn xương dưới sức nặng cơ thể, khiến cá bị liệt và nằm bất động một chỗ.\n- Khủng hoảng hô hấp khi nuốt nước: Cú hút chân không 1.200 lít nước cuốn theo lượng lớn cát, bùn và rác thải đáy biển vào miệng, làm nghẹt cứng hệ thống khe mang lọc mỏng manh, gây suy hô hấp cấp tính.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Vây ngực sụn bị gãy do ứng suất nén vượt tải",
+                  issue: "Ứng suất lên vây ngực vượt quá 5.2 MPa (giới hạn chịu lực của sụn là 3.0 MPa)."
+                },
+                {
+                  type: "Nghẽn khe mang do cặn lắng đáy biển",
+                  issue: "Dòng hút chân không quá lớn cuốn bùn đất bít kín mang hô hấp."
+                }
+              ]
+            },
+            p4p_score_scaled: 20,
+            tier_scaled: "D",
+            sources: [
+              { label: "Structural limits of cartilaginous limbs in fish", url: "https://doi.org/10.1016/j.zool.2015.01.002" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Chi bộ xương canxi hóa và màng lọc cát mang tự làm sạch)",
+            slug: "ca-chan-dong-toc-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa xương chi ngực canxi hóa chịu tải cao, màng lọc mang ngược cơ học và cơ chế phụt nước phản lực.",
+            content: "Để Cá Chân Dong Tóc 80kg di chuyển và săn mồi hiệu quả dưới đáy biển sâu:\n- Chi xương xương hóa (Osteodermic limbs): Các vây ngực được canxi hóa hoàn toàn và tiến hóa thành các khớp xương đùi chắc khỏe như động vật lưỡng cư cổ đại, chịu tải trọng uốn cơ học lên tới 2.500 N, giúp cá đi bộ nhanh nhẹn trên rạn san hô.\n- Màng lọc cát tự giũ (Self-cleaning Gill Filtration): Hệ thống mang tiến hóa màng lọc hai lớp hoạt động theo cơ chế dòng chảy xoáy đảo ngược, lọc sạch bùn cát ra ngoài qua lỗ mang phản lực mà không làm nghẹt các sợi mang hô hấp.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Xương hóa chi ngực sụn",
+                  benefit: "Khớp chi ngực chịu được tải uốn cơ học 2.500 N, hỗ trợ đi bộ an toàn."
+                },
+                {
+                  type: "Lọc tách cặn mang dòng xoáy ngược",
+                  benefit: "Hiệu suất lọc sạch bùn cát đạt 99.5% đối với các hạt đường kính > 50 µm."
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "A",
+            sources: [
+              { label: "Evolutionary transitions in vertebrate limb bone density", url: "https://doi.org/10.1098/rstb.2016.0223" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "horror-frog") {
+      whatIfData.push({
+        creature_id: "horror-frog",
+        title: "Nếu Ếch Kinh Dị phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-ech-kinh-di-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài ếch kinh dị Trichobatrachus robustus với cơ chế tự bẻ xương tạo móng vuốt được phóng to lên kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Móng vuốt xương Wolverine và lực nhảy bật xa)",
+            slug: "ech-kinh-di-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực phóng móng vuốt bẻ xương đạt 1.000 N xuyên thủng giáp dày 2cm, và tầm nhảy xa đạt 35 mét.",
+            content: "Khi Ếch Kinh Dị phóng to lên 80kg (tăng khối lượng ~1.000 lần, tỷ lệ kích thước lambda = 10):\n- Lực phóng vuốt xương hủy diệt: Sự co rút mạnh mẽ của gân cơ gấp kỹ thuật số sâu bẻ gãy mấu khớp để phóng vuốt xương ra ngoài. Lực cơ học phóng vuốt tăng theo tiết diện cơ (tăng lambda^2 = 100 lần), đạt 1.000 N giúp vuốt xương nhọn xuyên qua các tấm giáp cứng dày.\n- Siêu phản xạ nhảy xa: Cơ đùi khổng lồ tích lũy và giải phóng động năng cực nhanh. Tầm nhảy xa lý thuyết tăng theo tỷ lệ kích thước, cho phép ếch kinh dị khổng lồ thực hiện những cú bật nhảy xa tới 35 mét chỉ trong một nhịp phát động.\n- Nhú da hô hấp tăng kích thước: Các nhú da dạng sợi (hair-like papillae) dài tới 15cm hoạt động như các sợi mang trao đổi khí bổ trợ cực tốt dưới lòng nước suối chảy xiết.",
+            formulas_and_data: {
+              scaling_factor: 1000,
+              mass_kg_original: 0.08,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực phóng móng vuốt xương theo tiết diện cơ",
+                  equation: "F_eject = F_orig * (M_scaled / M_original)^(2/3)",
+                  result: "~1,000 N"
+                },
+                {
+                  name: "Tầm nhảy xa lý thuyết tuyến tính",
+                  equation: "D_jump = D_orig * (M_scaled / M_original)^(1/3)",
+                  result: "~35 m"
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "A",
+            sources: [
+              { label: "Amphibian biology and bone-breaking defense mechanisms", url: "https://doi.org/10.1111/j.1469-7998.2008.00472.x" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Gãy vụn khớp ngón chân và suy hô hấp cấp tính)",
+            slug: "ech-kinh-di-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Ứng suất uốn cực đại gây gãy nát xương ngón chân khi bẻ xương, và tỷ số diện tích da/thể tích giảm 90% gây ngạt thở.",
+            content: "Trong thế giới thực tế vật lý sinh học khi ếch kinh dị nặng 80kg:\n- Gãy vụn khớp ngón chân: Việc tự bẻ xương ngón chân để lộ vuốt nhọn ở khối lượng 80kg sẽ chịu mô-men uốn khổng lồ. Ứng suất xương tăng gấp 10 lần vượt qua giới hạn chịu lực của chất nền xương lưỡng cư, khiến cú bẻ xương tự vệ sẽ làm gãy nát toàn bộ cấu trúc bàn chân thay vì chỉ giải phóng móng vuốt.\n- Ngạt thở nghiêm trọng: Ếch kinh dị phụ thuộc rất lớn vào hô hấp qua da và nhú da. Ở 80kg, tỷ số diện tích da trên thể tích giảm 90%, kết hợp phổi thô sơ không có phế nang xếp nếp phức tạp làm nồng độ oxy trong máu sụt giảm nghiêm trọng, khiến con vật ngạt thở tử vong chỉ sau vài phút trên cạn.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Gãy nát xương ngón chân do ứng suất uốn",
+                  issue: "Ứng suất vượt quá 120 MPa trong khi giới hạn bền uốn của xương ếch chỉ đạt 45 MPa."
+                },
+                {
+                  type: "Thiếu hụt oxy do giảm tỷ số diện tích bề mặt/thể tích",
+                  issue: "Tỷ số diện tích trao đổi khí trên thể tích sụt giảm 90%, phổi thô sơ không đáp ứng đủ nhu cầu oxy cơ bản."
+                }
+              ]
+            },
+            p4p_score_scaled: 20,
+            tier_scaled: "D",
+            sources: [
+              { label: "Scaling of respiratory structures in amphibians", url: "https://doi.org/10.1086/317765" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Khớp tái tạo siêu tốc osteocyte và biểu mô phổi gấp nếp phức tạp)",
+            slug: "ech-kinh-di-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Xương ngón chân composite khoáng hóa chịu uốn 8.500 N, phổi tiến hóa vách ngăn xếp nếp kiểu bò sát.",
+            content: "Để Ếch Kinh Dị 80kg sinh tồn và chiến đấu hiệu quả:\n- Xương ngón chân composite khoáng hóa (Composite mineralized bones): Cấu trúc xương được bổ sung các sợi collagen liên kết chéo mật độ cao và tinh thể hydroxyapatite nén đặc, nâng giới hạn chịu uốn lên 8.500 N giúp móng vuốt phóng ra an toàn.\n- Phổi phế nang hóa dạng bò sát (Alveolar reptile-like lungs): Vách trong của phổi phát triển hệ thống nếp gấp sâu tích hợp mao mạch mật độ cao, tăng diện tích bề mặt trao đổi khí lên 1.4 m2, bù đắp hoàn toàn lượng oxy thiếu hụt từ da.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Gia cường xương ngón chân composite",
+                  benefit: "Chịu lực uốn uốn ngón chân lên tới 8,500 N mà không nứt vỡ khớp."
+                },
+                {
+                  type: "Tiến hóa phổi vách nếp gấp sâu",
+                  benefit: "Tăng diện tích trao đổi khí lên 1.4 m2 duy trì oxy máu ở mức 95%."
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "A",
+            sources: [
+              { label: "Adaptive mechanics and bone regeneration in vertebrates", url: "https://doi.org/10.1002/ar.24102" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "largetooth-sawfish") {
+      whatIfData.push({
+        creature_id: "largetooth-sawfish",
+        title: "Nếu Cá Đao Răng Lớn thu nhỏ bằng con người (80kg) thì sao?",
+        slug: "neu-ca-dao-rang-lon-thu-nho-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi Cá Đao Răng Lớn Pristis pristis dài 6 mét được thu nhỏ về khối lượng con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Đao cưa quét ngang thần tốc và điện cảm biến 3D)",
+            slug: "ca-dao-rang-lon-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực vung đao quét ngang đạt 850 N cắt ngọt con mồi, phản xạ phát hiện điện trường rút ngắn còn 12 ms.",
+            content: "Khi Cá Đao Răng Lớn thu nhỏ về 80kg (dài khoảng 1.8m, đao dài 40cm):\n- Đao cưa quét tốc độ cao: Giảm mô-men quán tính trục vung (giảm 95% do chiều dài giảm) cho phép cá đao quét ngang với vận tốc góc siêu tốc. Cú quét đao tạo ra lực cắt ngang đạt 850 N, dễ dàng chém đôi các loài cá vây tia cỡ vừa.\n- Định vị siêu nhạy Lorenzini: Cảm biến điện trường tập trung dày đặc trên diện tích rostrum thu nhỏ. Quãng đường truyền tín hiệu thần kinh từ đao về não bộ rút ngắn 4 lần, đẩy tốc độ phản xạ chém mồi lên mức thần tốc 12 ms.",
+            formulas_and_data: {
+              scaling_factor: 0.16,
+              mass_kg_original: 500,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Mô-men quán tính rostrum thu nhỏ",
+                  equation: "I_scaled = I_orig * (M_scaled / M_original)^(5/3)",
+                  result: "~0.047 * I_orig (Giảm 95.3% quán tính xoay)"
+                },
+                {
+                  name: "Tốc độ dẫn truyền phản xạ xung thần kinh",
+                  equation: "T_delay_scaled = T_delay_orig * (L_scaled / L_original)",
+                  result: "~12 ms (nhanh gấp 4 lần nguyên bản)"
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "A",
+            sources: [
+              { label: "Rostrum mechanics and sensory adaptations in sawfish", url: "https://doi.org/10.1242/jeb.068221" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Đao cản thủy động học và mất thăng bằng mô-men xoắn)",
+            slug: "ca-dao-rang-lon-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Lực cản nước rostrum dẹt làm giảm tốc bơi xuống dưới 6 km/h, mô-men phản lực xoay thân làm cá tự lật ngửa.",
+            content: "Trong thế giới thực tế vật lý sinh học khi cá đao thu nhỏ về 80kg:\n- Cản nước cực đại: Chiếc đao dẹt răng cưa rìa ngoài tạo lực cản thủy động học lớn. Ở kích thước nhỏ, tỷ lệ diện tích đao cản nước trên khối lượng cơ thể tăng mạnh, khiến tốc độ di chuyển tối đa giảm xuống còn 6 km/h, mất hoàn toàn ưu thế bám đuổi.\n- Rối loạn mô-men xoắn phản lực: Một cú quét đao cực mạnh sẽ tạo ra phản lực mô-men xoắn xoay thân lớn. Do cơ thể cá chỉ còn nặng 80kg, phản lực từ cú vung đao sẽ làm cơ thể cá tự xoay tròn lệch trục góc 45 độ hoặc lật ngửa mất thăng bằng trong nước.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Mô-men xoắn phản lực gây lật trục cơ thể",
+                  issue: "Phản lực vung đao vượt qua lực cản vây ngực phẳng sụn, làm cá tự xoay tròn trục dọc."
+                },
+                {
+                  type: "Gia tăng hệ số cản thủy động lực",
+                  issue: "Hệ số cản nước Cd của đao răng cưa tăng 120% so với cơ thể thuôn dài của các loài cá mập, làm tiêu tốn năng lượng bơi lội."
+                }
+              ]
+            },
+            p4p_score_scaled: 30,
+            tier_scaled: "D",
+            sources: [
+              { label: "Hydrodynamics of rostral structures in aquatic vertebrates", url: "https://doi.org/10.1111/j.1469-7998.2012.00918.x" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Khớp đệm triệt tiêu mô-men xoắn và vảy giảm lực cản nano)",
+            slug: "ca-dao-rang-lon-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa khớp sụn đàn hồi cao triệt tiêu 95% mô-men phản lực, vảy nhám nano giảm 85% lực cản ma sát.",
+            content: "Để Cá Đao Răng Lớn 80kg bơi lội thần tốc và săn mồi hiệu quả:\n- Khớp đao triệt tiêu lực (Torque-absorbing joint): Khớp nối giữa sọ và rostrum phát triển lớp sụn khớp collagen đàn hồi dày, hấp thụ 95% xung phản lực uốn xoắn khi vung đao, bảo vệ trục cột sống thẳng ổn định.\n- Vảy răng cưa nano giảm lực cản (Riblet nano-denticles): Da nhám mọc các vảy xếp khít mang rãnh nano song song uốn dòng chảy lướt qua thân cá, giảm ma sát động xuống cực tiểu, tăng tốc độ bơi tối đa lên 35 km/h.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Khớp sụn đệm triệt tiêu mô-men xoắn",
+                  benefit: "Hấp thụ mô-men lực vung đao lên tới 60 N.m giữ thân cá ổn định trên đường bơi."
+                },
+                {
+                  type: "Cấu trúc vảy riblet hướng dòng nước nano",
+                  benefit: "Hệ số cản nước Cd giảm từ 0.08 xuống còn 0.012, tăng hiệu suất bứt tốc gấp 6 lần."
+                }
+              ]
+            },
+            p4p_score_scaled: 83,
+            tier_scaled: "B",
+            sources: [
+              { label: "Bio-inspired hydrodynamics and torque control in fish-like robots", url: "https://doi.org/10.1088/1748-3182/10/4/046001" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "marine-iguana") {
+      whatIfData.push({
+        creature_id: "marine-iguana",
+        title: "Nếu Cự Đà Biển Galapagos phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-cu-da-bien-galapagos-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài thằn lằn biển Amblyrhynchus cristatus duy nhất trên thế giới được phóng to lên kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Móng vuốt lực bám đá và vây đuôi thủy lực bơi vượt sóng)",
+            slug: "cu-da-bien-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực bám móng vuốt đạt 2.400 N giữ cơ thể cố định trước sóng lớn, tốc độ bơi vẫy đuôi đạt 13 km/h.",
+            content: "Khi Cự Đà Biển Galapagos phóng to lên 80kg (tăng khối lượng ~20 lần, chiều dài đạt 2.5m, sải đuôi 1.3m):\n- Lực bám đá hủy diệt: Bộ móng vuốt sừng dài 15cm cong quặp. Lực bám cơ ngực và móng vuốt tăng theo diện tích bề mặt (tăng lambda^2 = 7.3 lần), đạt 2.400 N giúp cự đà biển 80kg giữ chặt cơ thể cố định trên những rạn đá dung nham trơn tuột trước sóng gió cấp 8 đập mạnh.\n- Đuôi chèo thủy lực: Đuôi dẹt ngang vẫy đập mạnh mẽ uốn sóng cơ học lớn. Lực đẩy tăng mạnh giúp cự đà biển khổng lồ bơi ngược dòng triều rút với tốc độ bơi liên tục đạt 13 km/h.",
+            formulas_and_data: {
+              scaling_factor: 20,
+              mass_kg_original: 4,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực bám đá của móng vuốt cơ bắp",
+                  equation: "F_grip = F_orig * (M_scaled / M_original)^(2/3)",
+                  result: "~2,400 N"
+                },
+                {
+                  name: "Tốc độ bơi đẩy đuôi dẹt lý thuyết",
+                  equation: "V_swim = V_orig * (M_scaled / M_original)^(1/6)",
+                  result: "~13 km/h"
+                }
+              ]
+            },
+            p4p_score_scaled: 80,
+            tier_scaled: "B",
+            sources: [
+              { label: "Biomechanics of locomotion in marine iguanas", url: "https://doi.org/10.1086/317208" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Hạ thân nhiệt nhanh liệt cơ dưới nước và ngộ độc natri do tuyến muối quá tải)",
+            slug: "cu-da-bien-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Mất nhiệt nhanh liệt cơ lặn sâu dưới 10 phút, tuyến muối mũi bị tắc nghẽn sưng niêm mạc.",
+            content: "Trong thế giới thực tế vật lý sinh học khi cự đà biển nặng 80kg:\n- Hạ thân nhiệt nhanh và liệt cơ dưới nước: Do biến nhiệt, cự đà dựa vào sưởi nắng tích nhiệt rồi lặn biển 15°C tìm tảo. Ở 80kg, tỷ lệ diện tích bề mặt/thể tích giảm 2.7 lần làm chậm tốc độ phơi nhiệt trên cạn. Khi lặn sâu, nhiệt lõi mất nhanh qua dòng chảy nước lạnh đối lưu, gây hạ thân nhiệt đột ngột từ 37°C xuống 15°C chỉ dưới 10 phút, làm co cứng cơ bơi và chết đuối đáy biển.\n- Quá tải tuyến lọc muối: Ăn tảo nạp lượng muối khổng lồ tăng 20 lần so với nguyên bản. Tuyến muối ở mũi bị quá tải công suất lọc, dẫn đến tích tụ muối NaCl trong máu vượt ngưỡng 220 mmol/L, gây co giật dây thần kinh và ngộ độc natri nội tế bào.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Hạ nhiệt độ cơ thể dưới nước lạnh 15°C",
+                  issue: "Thời gian lặn an toàn giảm xuống dưới 10 phút do dòng nước lấy nhiệt nhanh gấp nhiều lần, gây co cứng cơ."
+                },
+                {
+                  type: "Ngộ độc natri do quá tải bài tiết muối",
+                  issue: "Nồng độ muối NaCl trong máu vượt quá 220 mmol/L gây co giật và hôn mê hệ thần kinh."
+                }
+              ]
+            },
+            p4p_score_scaled: 30,
+            tier_scaled: "D",
+            sources: [
+              { label: "Thermal biology and salt gland function in Galapagos marine iguanas", url: "https://doi.org/10.1086/31790" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Tuần hoàn cách nhiệt trung tâm chọn lọc và siêu tuyến bài tiết muối mắt miệng)",
+            slug: "cu-da-bien-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tuần hoàn cô lập máu nóng 37°C bảo vệ cơ quan lõi, siêu tuyến muối đôi bài tiết liên tục không cần hắt hơi.",
+            content: "Để Cự Đà Biển Galapagos 80kg hoạt động bền bỉ và lặn biển lâu hơn:\n- Tuần hoàn cách nhiệt chọn lọc (Vascular shunt insulation): Các mao mạch máu ngoại vi tự co thắt khân cấp khi gặp nước biển lạnh, giữ dòng máu nóng 37°C tuần hoàn khép kín bảo vệ tim, não và cơ bơi lội, nâng thời gian lặn an toàn lên tới 60 phút.\n- Siêu tuyến muối tự bài tiết cơ học (Hyper-active lateral salt glands): Tiến hóa hai cụm tuyến bài tiết muối lớn quanh sọ, liên tục dẫn dung dịch muối mặn đậm đặc thải ra trực tiếp khóe mắt và vòm họng mà không cần hắt hơi, giữ nồng độ muối máu ổn định ở mức hoàn hảo 140 mmol/L.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Tuần hoàn co mạch máu ngoại vi chọn lọc",
+                  benefit: "Duy trì thân nhiệt lõi ổn định 37°C trong nước lạnh lên tới 60 phút lặn."
+                },
+                {
+                  type: "Siêu tuyến muối bài tiết cơ học liên tục",
+                  benefit: "Thải tới 85g NaCl mỗi ngày trực tiếp ra ngoài cơ thể mà không gây sưng nghẹt xoang mũi."
+                }
+              ]
+            },
+            p4p_score_scaled: 82,
+            tier_scaled: "B",
+            sources: [
+              { label: "Cardiovascular and osmotic adaptations in marine reptiles", url: "https://doi.org/10.1086/317921" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "ribbon-eel") {
+      whatIfData.push({
+        creature_id: "ribbon-eel",
+        title: "Nếu Cá Chình Ruy Băng phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-ca-chinh-ruy-bang-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài cá chình có thân hình mảnh mai uốn lượn như dải lụa Rhinomuraena quaesita được phóng to lên kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Thân dài siêu dẻo uốn sóng và cú táp hàm phụ tầm xa)",
+            slug: "ca-chinh-ruy-bang-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Thân dài 12m siêu linh hoạt lách khe nhỏ với lực uốn thân 1.200 N, cơ chế hàm hầu phóng ra chộp mồi nhanh chớp mắt.",
+            content: "Khi Cá Chình Ruy Băng phóng to lên 80kg (tăng khối lượng ~800 lần, chiều dài kéo dài từ 1m lên khoảng 10-12m, đường kính thân đạt ~15-20cm):\n- Lực uốn thân sóng động năng: Cấu trúc cơ cột sống hơn 200 đốt xương cực kỳ dẻo dai. Lực đẩy cơ thân uốn lượn tăng mạnh theo tỷ lệ diện tích bề mặt (tăng lambda^2 = 86 lần), đạt 1.200 N giúp nó lướt gió rẽ nước cực nhanh và len lỏi qua các hang hốc sâu dưới đáy biển.\n- Cú táp hàm hầu kép động cơ học: Sở hữu bộ hàm phụ ở thực quản (pharyngeal jaws) có khả năng phóng ra trước tóm mồi rồi kéo tuột vào dạ dày. Ở kích cỡ khổng lồ, hàm hầu này có thể kéo lực xiết lên tới 800 N trong thời gian 50 mili giây, đớp và nuốt chửng các con mồi lớn như loài cá mú.",
+            formulas_and_data: {
+              scaling_factor: 800,
+              mass_kg_original: 0.1,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực uốn thân hình sin thủy động học",
+                  equation: "F_propulsion = F_orig * (M_scaled / M_original)^(2/3)",
+                  result: "~1,200 N"
+                },
+                {
+                  name: "Lực kẹp của hàm phụ pharyngeal jaws",
+                  equation: "F_bite = F_orig * (M_scaled / M_original)^(2/3)",
+                  result: "~800 N"
+                }
+              ]
+            },
+            p4p_score_scaled: 75,
+            tier_scaled: "B",
+            sources: [
+              { label: "Kinematics of pharyngeal jaw mechanics in moray eels", url: "https://doi.org/10.1038/nature06062" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sụp đổ tuần hoàn máu do thân quá dài và ngạt thở vì diện tích mang quá hẹp)",
+            slug: "ca-chinh-ruy-bang-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Tim không thể bơm máu dọc thân dài 12m chống lại áp suất thủy tĩnh, diện tích mang không đủ khuếch tán oxy.",
+            content: "Trong thế giới thực tế vật lý sinh học khi cá chình ruy băng nặng 80kg:\n- Suy sụp tuần hoàn do thân quá dài: Thân cá chình ruy băng cực kỳ thuôn và mỏng. Khi phóng to lên chiều dài 12m, khoảng cách từ tim đến đuôi là cực kỳ lớn. Do áp suất thủy tĩnh ở biển sâu và sự thiếu hụt của hệ tuần hoàn có van trợ lực chủ động dọc thân, tim cá chình (vốn nhỏ và áp lực thấp) sẽ không thể đẩy máu đi hết chiều dài 12m, gây hoại tử đuôi và suy tim cấp tính trong vài giờ.\n- Thiếu oxy nghiêm trọng: Hệ hô hấp bằng mang của cá chình ruy băng nhỏ hẹp. Khi thể tích cơ thể tăng 800.000 lần nhưng diện tích mang chỉ tăng 10.000 lần theo định luật bình phương - lập phương, lượng oxy hấp thụ qua mang chỉ đáp ứng được 1.25% nhu cầu trao đổi chất tối thiểu, cá sẽ ngạt thở ngay lập tức.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Giới hạn áp suất tuần hoàn máu dọc thân 12m",
+                  issue: "Chênh lệch áp suất thủy động học vượt quá sức cản thành mạch, tim không thể bơm máu đến các đốt sống đuôi."
+                },
+                {
+                  type: "Hô hấp qua diện tích mang bị thu hẹp tương đối",
+                  issue: "Tỉ lệ O2 khuếch tán qua mang giảm mạnh còn 1.25% nhu cầu tối thiểu khi thể tích tăng lập phương."
+                }
+              ]
+            },
+            p4p_score_scaled: 15,
+            tier_scaled: "D",
+            sources: [
+              { label: "Allometric scaling of cardiovascular system in elongated fishes", url: "https://doi.org/10.1111/jfb.13600" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Hệ tim phụ dọc thân và mang xếp nếp diện tích lớn)",
+            slug: "ca-chinh-ruy-bang-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa 3 quả tim phụ dọc tủy sống để trợ lực tuần hoàn và hệ mang xếp nếp mở rộng gấp 80 lần.",
+            content: "Để cá chình ruy băng khổng lồ 80kg hoạt động linh hoạt mà không bị suy tuần hoàn hay ngạt thở:\n- Tim phụ hỗ trợ dọc thân (Caudal accessory hearts): Tiến hóa thêm 3 trung tâm co bóp cơ tim phụ dọc theo động mạch đuôi, nhận tín hiệu co bóp nhịp nhàng từ tủy sống để đẩy máu tĩnh mạch ngược về tim chính, duy trì áp huyết ổn định 60 mmHg toàn thân dài 12m.\n- Hệ mang xếp nếp cấu trúc phức hợp (Hyper-folded gill lamellae): Các sợi mang tiến hóa gấp nếp xếp lớp sâu với các vi mao mạch dày đặc, tăng diện tích tiếp xúc trao đổi khí lên 80 lần so với mang cá thông thường, đảm bảo hấp thu đủ 240 ml O2/phút để nuôi dưỡng toàn bộ cơ bắp uốn lượn.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Hệ thống tim phụ hỗ trợ tuần hoàn dọc thân",
+                  benefit: "Đảm bảo áp huyết phân phối đều 60 mmHg trên toàn bộ chiều dài 12m thân cá."
+                },
+                {
+                  type: "Hệ mang xếp nếp vi mao mạch mật độ cao",
+                  benefit: "Nâng lưu lượng trao đổi oxy lên 240 ml/phút, đáp ứng hoàn hảo hoạt động bơi cường độ cao."
+                }
+              ]
+            },
+            p4p_score_scaled: 80,
+            tier_scaled: "B",
+            sources: [
+              { label: "Accessory pumping organs and cardiovascular adaptations in fishes", url: "https://doi.org/10.1002/jez.1402800109" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "sea-cucumber") {
+      whatIfData.push({
+        creature_id: "sea-cucumber",
+        title: "Nếu Hải Sâm phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-hai-sam-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài động vật da gai Holothuroidea có khả năng hóa lỏng mô liên kết được phóng to lên kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cơ chế Catch-Collagen hóa đá và phóng tơ độc Cuvierian tầm xa)",
+            slug: "hai-sam-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Chuyển trạng thái cơ thể từ mềm nhão sang giáp đá chịu lực ép 15.000 N, phóng chùm tơ dính Cuvierian dài 10m.",
+            content: "Khi Hải Sâm phóng to lên 80kg (tăng khối lượng ~400 lần, chiều dài đạt 1.8m, đường kính thân đạt ~45cm):\n- Siêu giáp hóa đá Catch-Collagen: Dưới sự điều khiển của hệ thần kinh, các liên kết chéo giữa sợi collagen tự động thắt chặt. Độ cứng mô tăng vọt 100 lần, chịu được lực đập ép trực tiếp lên tới 15.000 N mà không nứt vỡ, biến hải sâm thành một tảng đá phòng ngự bất hoại.\n- Phun tơ keo độc Cuvierian hủy diệt: Khi bị tấn công, hệ thống ống Cuvierian phóng ra các sợi tơ màu trắng tự nở dài gấp 20 lần (đạt 10m), chứa độc tố Holothurin liều cao. Lượng keo dính này có thể đông cứng nhanh dưới nước và trói chặt kẻ thù lớn như cá mập hổ trong chốc lát.",
+            formulas_and_data: {
+              scaling_factor: 400,
+              mass_kg_original: 0.2,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực ép tối đa chịu đựng của mô Catch-Collagen khi cứng hóa",
+                  equation: "F_compression = Stress_max * Area_scaled",
+                  result: "~15,000 N"
+                },
+                {
+                  name: "Chiều dài chùm tơ Cuvierian khi phóng ra",
+                  equation: "L_threads = L_orig * (M_scaled / M_original)^(1/3) * expansion_ratio",
+                  result: "~10 meters"
+                }
+              ]
+            },
+            p4p_score_scaled: 70,
+            tier_scaled: "B",
+            sources: [
+              { label: "Biomechanics of catch connective tissue in sea cucumbers", url: "https://doi.org/10.1242/jeb.02405" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Hóa lỏng mô tự chảy nhão và suy sụp hệ thống hô hấp qua hậu môn)",
+            slug: "hai-sam-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Catch-collagen tự hóa lỏng dưới tác động trọng lực làm biến dạng toàn bộ cơ thể, phổi nước hậu môn bị vỡ tung do áp suất.",
+            content: "Trong thế giới thực tế vật lý sinh học khi hải sâm nặng 80kg:\n- Tự chảy sụp do lực hấp dẫn: Khi hải sâm chuyển sang trạng thái mềm để chui khe đá, catch-collagen hóa lỏng liên kết. Ở khối lượng 80kg, trọng lực kéo cơ thể chảy xệ dẹt ra như một bãi bùn lỏng trên nền cát, không thể thu hồi lại hình dáng cũ vì áp lực nén nội tạng quá lớn gây rách biểu bì.\n- Vỡ nát cơ quan hô hấp (phổi nước): Hải sâm hô hấp bằng cách bơm hút nước biển qua lỗ hậu môn vào phổi nước (respiratory trees). Ở quy mô 80kg, lực co bóp cơ hậu môn để đẩy 15 lít nước mỗi chu kỳ là cực kỳ lớn. Áp suất nước dồn đẩy quá mức sẽ xé rách hệ thống phổi nước mỏng manh bên trong, gây chảy máu hệ tuần hoàn hở và nhiễm trùng tử vong nhanh chóng.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Độ nhớt cơ học của Catch-collagen khi hóa mềm",
+                  issue: "Ứng suất chảy (yield stress) thấp hơn áp suất trọng lực đè nén của 80kg thịt, gây sụp đổ cấu trúc cơ thể."
+                },
+                {
+                  type: "Thể tích nước trao đổi qua phổi nước",
+                  issue: "Nhu cầu bơm 15-20 lít nước mỗi chu kỳ hô hấp tạo áp suất thủy động học vượt quá giới hạn chịu bền của thành ruột."
+                }
+              ]
+            },
+            p4p_score_scaled: 10,
+            tier_scaled: "D",
+            sources: [
+              { label: "Respiratory physiology and mechanical properties of echinoderm catch connective tissue", url: "https://doi.org/10.1086/BBLv190n1p124" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Khung xương nội kitin xốp dẻo và van hô hấp hậu môn một chiều kép)",
+            slug: "hai-sam-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa các tấm xương kitin dẻo dạng lưới nâng đỡ cơ thể và van hậu môn cơ học hai buồng chống vỡ phổi.",
+            content: "Để hải sâm khổng lồ 80kg sinh tồn vững vàng và tự vệ hiệu quả:\n- Bộ khung xương kitin dẻo dạng lưới (Flexible mesh-like endoskeleton): Dưới lớp biểu bì tiến hóa một mạng lưới cấu trúc các tấm kitin xốp liên kết khớp động. Khung sườn này giữ hình dạng ống cố định cho hải sâm khi hóa mềm mô, ngăn chặn sự chảy sụp do trọng lực dưới nước và trên cạn.\n- Van hô hấp hậu môn hai buồng (Dual-chamber anal respiratory valves): Tiến hóa cơ vòng hậu môn dày chịu lực cùng hệ van một chiều kép. Một buồng thu gom nước biển, buồng kia tạo áp lực nén đẩy nhẹ nhàng tuần tự vào phổi nước có vách dày hơn, ngăn chặn hoàn toàn nguy cơ rách phổi do sốc áp suất thủy lực đột ngột.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Khung lưới xương kitin khớp động",
+                  benefit: "Chống lại trọng lực của cơ thể 80kg, bảo vệ an toàn cho hệ cơ quan nội tạng bên trong."
+                },
+                {
+                  type: "Hệ van hậu môn hai buồng chịu áp lực",
+                  benefit: "Cho phép nén và lọc đều đặn 18 lít nước/phút mà không làm tổn thương cấu trúc hô hấp mỏng."
+                }
+              ]
+            },
+            p4p_score_scaled: 75,
+            tier_scaled: "B",
+            sources: [
+              { label: "Skeletal morphology and respiratory adaptations in giant holothurians", url: "https://doi.org/10.1111/j.1469-7998.2010.00705.x" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "southern-cassowary") {
+      whatIfData.push({
+        creature_id: "southern-cassowary",
+        title: "Nếu Đà Điểu Đầu Mũi phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-da-dieu-dau-mui-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài chim Casuarius casuarius nguy hiểm nhất hành tinh được hiệu chỉnh khối lượng đạt mức 80kg tương đương một võ sĩ đấm bốc hạng trung.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cú đá xé rách 4.500 N và mũ sừng keratin cản phá va chạm)",
+            slug: "da-dieu-dau-mui-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực đá chân móng vuốt 12cm đạt 4.500 N xuyên phá giáp chống bạo động, mũ sừng keratin giảm chấn xung lực cực mạnh.",
+            content: "Khi Đà Điểu Đầu Mũi đạt khối lượng 80kg (tăng khối lượng ~1.6 lần so với con đực lớn 50kg, chiều cao đạt 2.1m):\n- Cú đá uy lực hủy diệt: Nhờ hệ cơ đùi phát triển cực đại, khi đá xéo xuống, móng vuốt ngón trong dài 15cm cứng như thép sẽ cắm sâu vào mục tiêu. Lực tác động động năng tăng mạnh theo tỷ lệ cơ (đạt ~4.500 N), tương đương lực va chạm của một chiếc xe máy chạy tốc độ 45 km/h, dễ dàng xuyên thủng tấm khiên bạo động và xé rách mô sâu.\n- Mũ sừng (casque) giáp đầu keratin: Casque tăng kích thước đạt thể tích 3.2 lít, cấu trúc xốp bên trong dày lên giúp hấp thụ 92% xung lực khi húc va đập trực tiếp, bảo vệ hộp sọ khỏi chấn thương sọ não khi va chạm tốc độ cao.",
+            formulas_and_data: {
+              scaling_factor: 1.6,
+              mass_kg_original: 50,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực tác động xung năng của cú đá ngón vuốt",
+                  equation: "F_impact = Delta_p / Delta_t = M_scaled * V_kick / Delta_t",
+                  result: "~4,500 N"
+                },
+                {
+                  name: "Hệ số hấp thụ lực giảm chấn của mũ sừng (casque)",
+                  equation: "E_absorbed = E_total * (1 - e^(-k * thickness))",
+                  result: "~92% lực va chạm"
+                }
+              ]
+            },
+            p4p_score_scaled: 92,
+            tier_scaled: "S",
+            sources: [
+              { label: "The structural biomechanics of the cassowary casque", url: "https://doi.org/10.1371/journal.pone.0122558" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Đứt gân gót chân do quá tải chịu lực và giảm sút khả năng cơ động nhanh)",
+            slug: "da-dieu-dau-mui-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Hệ số an toàn của xương gót chân giảm mạnh, gãy nứt khớp gối khi thực hiện cú nhảy cao tiếp đất.",
+            content: "Trong thế giới thực tế vật lý sinh học khi đà điểu đầu mũi nặng 80kg:\n- Đứt gân gót và gãy xương gối tiếp đất: Ở khối lượng 80kg, ứng suất cơ học đè lên khớp gối và gân gót chân (Achilles tendon) tăng tuyến tính theo khối lượng (tăng 1.6 lần) trong khi độ bền mặt cắt ngang cơ gân chỉ tăng 1.36 lần (bình phương chiều dài). Khi đà điểu nhảy vọt cao 1.8m để đá mục tiêu, xung lực phản hồi tiếp đất đạt 9.500 N vượt quá giới hạn uốn đàn hồi của xương chày (tibiotarsus), dẫn đến gãy nứt xương chân và rách đứt hoàn toàn gân Achilles.\n- Quá tải nhiệt lượng: Bộ lông dày cứng như tóc giữ nhiệt tốt để chống gai. Ở kích cỡ 80kg, tỷ lệ tỏa nhiệt qua da giảm sút, khiến nó nhanh chóng bị sốc nhiệt đột ngột khi chạy nhanh liên tục quá 5 phút trong rừng rậm.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Ứng suất kéo đè nặng lên gân gót chân khi tiếp đất",
+                  issue: "Xung lực phản hồi tiếp đất 9.500 N vượt quá giới hạn kéo đứt (ultimate tensile strength) của sợi collagen gân gót."
+                },
+                {
+                  type: "Tốc độ tỏa nhiệt lõi qua lớp lông sừng rậm rạp",
+                  issue: "Nhiệt lượng sinh ra khi chạy 40 km/h tích tụ nhanh, gây sốc nhiệt trên 43°C chỉ sau 5 phút hoạt động liên tục."
+                }
+              ]
+            },
+            p4p_score_scaled: 45,
+            tier_scaled: "C",
+            sources: [
+              { label: "Avian locomotion biomechanics and tendon scaling limits", url: "https://doi.org/10.1242/jeb.029858" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Khớp gối gia cố vảy sừng dày và hệ thống phế nang thông khí nhiệt chủ động)",
+            slug: "da-dieu-dau-mui-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Gân gót chân cơ bắp hóa sừng chịu lực cực đại 12.000 N, hệ túi khí khí quản mở rộng tăng 50% hiệu suất làm mát.",
+            content: "Để đà điểu đầu mũi khổng lồ 80kg chạy nhảy và chiến đấu ổn định mà không lo gãy chân hay sốc nhiệt:\n- Gân gót chân cốt hóa bán sừng (Semi-ossified patellar tendon): Cấu trúc collagen của gân gót chân được gia cố bằng các dải calci hóa vi thể đan xen xen kẽ, tăng độ bền kéo chịu tải lực lên tới 12.000 N, giúp tiếp đất an toàn sau những cú nhảy cao 2m.\n- Túi khí khí quản làm mát chủ động (Hyper-developed tracheal air sacs): Hệ túi khí hô hấp mở rộng dọc cổ bên dưới lớp yếm đỏ rực. Khi chạy nhanh, lưu lượng khí qua phổi trao đổi và làm mát bốc hơi tăng 50%, duy trì thân nhiệt lõi ở mức hoàn hảo 39°C bất kể điều kiện rừng nhiệt đới nóng bức.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Gân Patellar cốt hóa calci vi thể",
+                  benefit: "Duy trì sức bền kéo vượt trội chịu xung tải đập mạnh lên tới 12.000 N mà không rách sợi gân."
+                },
+                {
+                  type: "Túi khí hô hấp khí quản tản nhiệt cưỡng bức",
+                  benefit: "Giải nhiệt cơ học liên tục 350 W khi hoạt động cường độ cao giúp ngăn ngừa sốc nhiệt hiệu quả."
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "A",
+            sources: [
+              { label: "Thermoregulation and respiratory air sacs in running palaeognathous birds", url: "https://doi.org/10.1086/513812" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "antarctic-icefish") {
+      whatIfData.push({
+        creature_id: "antarctic-icefish",
+        title: "Nếu Cá Băng Nam Cực phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-ca-bang-nam-cuc-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích kịch bản giả thuyết khi Cá Băng Nam Cực (Chionodraco rastrospinosus) đạt khối lượng con người 80kg trong điều kiện nhiệt độ đóng băng và không có hồng cầu.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Dòng chảy tuần hoàn siêu tốc và siêu ti thể)",
+            slug: "ca-bang-nam-cuc-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Tốc độ dòng chảy máu tăng gấp 5 lần nhờ tim khổng lồ màu đỏ Mb+, mạng lưới mao mạch da rộng gấp 4 lần hấp thụ lượng oxy hòa tan cực đại.",
+            content: "Khi Cá Băng Nam Cực nặng 80kg (tăng khối lượng ~80 lần từ mức 1kg, dài đạt 1.8m):\n- Tim khổng lồ siêu co bóp: Cơ tim giàu myoglobin (Mb+) nở rộng gấp 3 lần tỷ lệ thông thường, tạo áp lực co bóp lớn. Lực bóp tim tăng theo tiết diện cơ (hệ số lambda^2 ≈ 18.5), đẩy thể tích máu lớn gấp 4 lần qua lòng mạch rộng rãi mà không gặp cản trở ma sát ở nước lạnh.\n- Trao đổi khí biểu bì cực hạn: Da cực mỏng không vảy, diện tích da phóng to đạt 1.2 m2 tiếp xúc trực tiếp nước lạnh giàu oxy. Máu tuần hoàn nhanh thu nhận oxy hòa tan trong huyết tương đạt mức 2.8 ml O2/100ml máu, cung cấp dồi dào dưỡng chất cho mật độ ti thể đậm đặc chiếm 36% thể tích cơ.\n- Kháng đông tối ưu: Lượng glycoprotein chống đông (AFGPs) tăng theo nồng độ huyết tương, ngăn chặn tuyệt đối tinh thể băng hình thành ở nhiệt độ -1.8°C.",
+            formulas_and_data: {
+              scaling_factor: 80,
+              mass_kg_original: 1,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực co bóp cơ tim phóng to",
+                  equation: "F_heart_scaled = F_heart_original * (M_scaled / M_original)^(2/3)",
+                  result: "~38 N"
+                },
+                {
+                  name: "Lưu lượng tuần hoàn máu huyết tương không hồng cầu",
+                  equation: "Q_blood = V_stroke * HR",
+                  result: "~12 lít/phút"
+                }
+              ]
+            },
+            p4p_score_scaled: 72,
+            tier_scaled: "B",
+            sources: [
+              { label: "Antifreeze glycoproteins and cardiovascular physiology in Antarctic fishes", url: "https://doi.org/10.1111/j.1095-8649.2005.00683.x" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sốc nhiệt độ tăng nhẹ và ngạt oxy khi thiếu hồng cầu)",
+            slug: "ca-bang-nam-cuc-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Nhiệt độ nước tăng trên 5°C làm giảm oxy hòa tan gây ngạt thở cấp tính, thiếu hồng cầu khiến cơ thể 80kg thiếu hụt 85% oxy khi hoạt động.",
+            content: "Trong thế giới thực tế vật lý sinh học khi Cá Băng Nam Cực nặng 80kg:\n- Khủng hoảng vận chuyển oxy: Thiếu huyết sắc tố (hemoglobin) khiến máu chỉ có thể vận chuyển oxy dưới dạng hòa tan vật lý trong huyết tương. Khi phóng to lên 80kg, nhu cầu oxy của cơ thể tăng tỷ lệ với khối lượng cơ (M^1.0 hoặc M^0.75), nhưng diện tích trao đổi khí qua da và mang chỉ tăng theo bình phương (M^0.67). Tỷ lệ cung/cầu oxy giảm 4.5 lần. Ở mức hoạt động cơ bản, cơ thể thiếu hụt tới 85% lượng oxy cần thiết, dẫn đến tích tụ axit lactic hủy diệt cơ xương và gây tử vong do ngạt thở.\n- Nhạy cảm nhiệt độ cực đoan: Nước ấm lên từ -1.8°C đến 5°C làm giảm 30% độ hòa tan oxy của nước và tăng BMR (tốc độ trao đổi chất) của cá lên gấp đôi. Cá băng khổng lồ đột quỵ do sốc nhiệt và ngạt thở lập tức.\n- Sụp đổ sụn xương yếu: Cấu trúc xương sụn mềm và nhiều lipid (dành cho sức nổi trung tính) không chịu nổi trọng lực cạn hoặc chênh lệch áp suất dòng chảy đáy, gây méo mó lồng ngực.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Thiếu hụt diện tích phổi trao đổi khí",
+                  issue: "Giới hạn cung cấp oxy hòa tan huyết tương tối đa ở 80kg chỉ đạt ~0.34 lít O2/giờ, thiếu hụt 85% nhu cầu hoạt động tối thiểu."
+                },
+                {
+                  type: "Tỷ lệ diện tích da/thể tích giảm mạnh",
+                  issue: "Tỷ lệ diện tích da/thể tích giảm 78%, ngăn cản khuếch tán oxy thụ động qua biểu bì."
+                }
+              ]
+            },
+            p4p_score_scaled: 20,
+            tier_scaled: "D",
+            sources: [
+              { label: "The biology of Antarctic fishes: hemoglobin-free brains and cardiovascular limits", url: "https://doi.org/10.1152/physrev.00010.2005" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Phổi nước phế nang hóa và siêu sắc tố hemocyanin xanh)",
+            slug: "ca-bang-nam-cuc-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Mang xếp nếp gấp 20 lần tăng diện tích tiếp xúc, đột biến sản sinh sắc tố vận chuyển oxy hemocyanin gốc đồng giúp mang máu màu xanh lam.",
+            content: "Để Cá Băng 80kg sinh tồn dũng mãnh và săn mồi ở cả vùng nước ấm hơn:\n- Đột biến sắc tố máu Hemocyanin: Kích hoạt chuỗi gen cổ xưa tạo ra hemocyanin gốc đồng (tương tự mực/bạch tuộc) trong huyết tương. Máu cá băng chuyển sang màu xanh lam nhạt, tăng khả năng liên kết và vận chuyển oxy lên gấp 8 lần so với dạng hòa tan vật lý đơn thuần, đáp ứng hoàn hảo nhu cầu cơ ngực ti thể.\n- Mang xếp nếp siêu cấp (Hyper-folded gills): Diện tích mang tăng sinh gấp 20 lần thông qua các phiến mang gấp nếp micro, tối đa hóa trao đổi khí kể cả trong nước nghèo oxy.\n- Gia cố khung xương sụn-chitin: Cấu trúc xương sụn được khoáng hóa muối canxi và chitin cứng cáp, bảo vệ lồng ngực khỏi trọng lực đè nén.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Khả năng mang oxy của máu xanh hemocyanin đột biến",
+                  benefit: "Máu chuyển màu xanh lam nhạt, tăng khả năng mang oxy lên ~2.2 ml O2/100ml."
+                },
+                {
+                  type: "Giới hạn uốn gãy khung xương gia cố canxi",
+                  benefit: "Khung xương được khoáng hóa muối canxi chịu được áp suất uốn gãy lên tới ~4.5 MPa."
+                }
+              ]
+            },
+            p4p_score_scaled: 78,
+            tier_scaled: "B",
+            sources: [
+              { label: "Evolution of oxygen-transport proteins and respiratory mutations in extreme environments", url: "https://doi.org/10.1093/gbe/evs089" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "bengal-slow-loris") {
+      whatIfData.push({
+        creature_id: "bengal-slow-loris",
+        title: "Nếu Cu Li Chậm Bengal phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-cu-li-cham-bengal-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích kịch bản giả thuyết khi loài linh trưởng độc duy nhất Cu Li Chậm Bengal (Nycticebus bengalensis) được phóng to lên khối lượng 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Nọc độc hoại tử hoại huyết và cú ôm khóa cơ học vạn cân)",
+            slug: "cu-li-cham-bengal-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Sản sinh 2.5 lít hỗn hợp nọc độc hoại tử mô từ tuyến khuỷu tay, lực bám khóa cơ học đạt 2.800 N bám trụ tĩnh suốt nhiều tuần.",
+            content: "Khi Cu Li Chậm Bengal nặng 80kg (tăng khối lượng ~65 lần từ mức 1.2kg, chiều dài cơ thể đạt 1.3 mét):\n- Nọc độc khổng lồ hủy diệt: Tuyến brachial mở rộng sản sinh chất dịch chứa Feld 1 độc hại dung tích lên đến 1.5 lít. Khi trộn với nước bọt có chứa enzyme xúc tác, cu li khổng lồ tạo ra 2.5 lít nọc độc hoại tử mạnh mẽ. Vết cắn từ răng lược sừng dài 6cm sẽ truyền lượng độc tố cực lớn, gây hoại tử cơ sâu, sốc phản vệ và suy đa tạng cho đối phương trong vòng vài phút.\n- Khóa bám vạn lực: Nhờ bó mạch retia mirabilia ở cổ tay chân phát triển lớn, lưu lượng oxy cấp cho cơ tĩnh tăng mạnh. Lực khóa kẹp từ các ngón tay mở rộng 180 độ đạt 2.800 N, bám chặt cành cây lớn như gọng kìm thủy lực không thể gỡ ra.\n- Thị giác Tapetum Lucidum khổng lồ: Mắt đường kính 8cm thu nhận ánh sáng đêm siêu nhạy, phát hiện chuyển động cách 150m trong bóng tối hoàn toàn.",
+            formulas_and_data: {
+              scaling_factor: 66.7,
+              mass_kg_original: 1.2,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực kẹp bám tĩnh của bàn tay khớp khóa",
+                  equation: "F_grip_scaled = F_grip_original * (M_scaled / M_original)^(2/3)",
+                  result: "~2,800 N"
+                },
+                {
+                  name: "Tổng dung tích nọc độc liên hợp có thể sản sinh",
+                  equation: "V_venom_scaled = V_venom_original * (M_scaled / M_original)",
+                  result: "~2.5 lít"
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "A",
+            sources: [
+              { label: "Venom system in Nycticebus: biochemistry of brachial gland secretions", url: "https://doi.org/10.1007/s10764-011-9505-1" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Chết vì nọc độc tự thân và sụp đổ hệ cơ tĩnh do trọng lượng nặng)",
+            slug: "cu-li-cham-bengal-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Áp lực 80kg bẻ gãy khớp ngón tay yếu khi treo bám tĩnh, rách miệng và ngộ độc hoại tử thứ phát do chính nọc độc của mình.",
+            content: "Trong thực tế vật lý sinh học khi Cu Li Chậm Bengal nặng 80kg:\n- Treo bám thất bại: Trọng lượng 80kg tạo ra mô-men xoắn kéo đứt lớn lên các ngón tay mảnh dẻ. Cấu trúc bám tĩnh dựa vào cơ chế kẹp gọng kìm nguyên bản sẽ bị phá hủy vì ứng suất kéo vượt quá giới hạn bền của dây chằng (tensile strength limit). Ngón tay sẽ bị trật khớp và gãy gập dưới tải trọng 80kg.\n- Tự ngộ độc hủy hoại: Niêm mạc miệng của cu li không có lớp màng bảo vệ đặc biệt đối với nọc độc liên hợp nồng độ cao. Khi liếm lượng dịch độc lớn 1.5 lít, nước bọt chứa độc tố sẽ thấm ngược qua thành mạch biểu bì miệng hoặc các vết xước nhỏ ở răng lược, khiến chính nó bị hoại tử mô vòm họng và tử vong do sốc độc tố của chính mình.\n- Chuyển hóa siêu chậm gây hạ thân nhiệt: Do tốc độ trao đổi chất cực thấp của loài loris (chỉ bằng 40% linh trưởng khác), ở kích thước 80kg, khả năng sinh nhiệt cơ thể không đủ bù đắp lượng nhiệt thất thoát qua diện tích da rộng lớn dưới sương đêm, gây hạ thân nhiệt mạn tính xuống dưới 30°C.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Ứng suất kéo lên gân ngón bám",
+                  issue: "Ứng suất kéo lên gân ngón bám vượt quá giới hạn đàn hồi của gân khoảng 180%, gây đứt đứt gân và cơ."
+                },
+                {
+                  type: "Mức sinh nhiệt tối thiểu cực thấp",
+                  issue: "Mức sinh nhiệt cơ bản cực thấp (~700 kcal/ngày) không đủ duy trì thân nhiệt hằng định trong môi trường đêm mát mẻ."
+                }
+              ]
+            },
+            p4p_score_scaled: 35,
+            tier_scaled: "D",
+            sources: [
+              { label: "The slow metabolism and thermoregulation challenges of lorisids", url: "https://doi.org/10.1006/jhevol.1997.0141" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Kháng độc tố tự thân và hệ thống gân khóa cơ học chân chim)",
+            slug: "cu-li-cham-bengal-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Biểu bì khoang miệng sừng hóa kháng hoại tử tuyệt đối, tiến hóa hệ thống gân khóa thụ động cơ học tự động không tiêu tốn năng lượng.",
+            content: "Để Cu Li Chậm 80kg trở thành loài thú săn mồi nguy hiểm tột độ trên các tán rừng lớn:\n- Biểu bì sừng hóa khoang miệng (Shorn Oral Mucosa): Tiến hóa lớp niêm mạc miệng dày lót bởi các tế bào biểu mô sừng hóa chịu axit-kiềm cao, ngăn chặn hoàn toàn nọc độc liên hợp thẩm thấu ngược vào hệ tuần hoàn qua răng lược.\n- Khớp gân khóa cơ học tự động (Avian-like tendon lock): Tiến hóa hệ gân gấp ngón chân ngón tay có các gai răng cưa nhỏ ăn khớp với bao gân. Khi cu li bám vào cành cây, trọng lượng cơ thể kéo căng gân sẽ tự động khóa khớp ngón tay lại một cách thuần cơ học mà không cần co cơ chủ động, giúp nó treo mình lơ lửng nhiều ngày không tốn năng lượng.\n- Đột biến nọc độc phản phệ nhanh (Neurotoxic venom conversion): Độc tố brachial đột biến liên kết thụ thể thần kinh acetylcholine gây liệt cơ tức thì cho mục tiêu cắn thay vì chỉ hoại tử chậm.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Hệ số an toàn tự động khóa cơ học khớp gân",
+                  benefit: "Hệ gân gót tự động khớp gai khóa chặt bám, chịu mô-men trọng lượng gấp ~1.2 lần mà không tốn năng lượng co cơ."
+                },
+                {
+                  type: "Nọc độc hoạt tính liệt cơ cao",
+                  benefit: "Chuyển hóa độc tính thần kinh có trị số LD50 đột biến đạt ~0.12 mg/kg, giết chết mục tiêu trong tích tắc."
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "S",
+            sources: [
+              { label: "Functional morphology of tendon-locking mechanisms and primates venom evolution", url: "https://doi.org/10.1006/jmorph.2001.1215" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "colossal-squid") {
+      whatIfData.push({
+        creature_id: "colossal-squid",
+        title: "Nếu Mực Khổng Lồ Nam Cực phóng to gấp 10 lần (5.000kg) thì sao?",
+        slug: "neu-muc-khong-lo-nam-cuc-phong-to-gap-10-lan-5000kg",
+        description: "Phân tích giả thuyết khi quái thú biển sâu Mực Khổng Lồ Nam Cực (Mesonychoteuthis hamiltoni) phóng to khối lượng lên 5.000kg (5 tấn).",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cú bóp thủy lực vạn tấn và móc xoay chitin 360 độ)",
+            slug: "muc-khong-lo-nam-cuc-5000kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực kẹp xúc tu móc xoay đạt 45.000 N xé toạc các loài cá voi nhỏ, xung nước phản lực nén cao đẩy tốc độ bơi đạt 60 km/h.",
+            content: "Khi Mực Khổng Lồ Nam Cực nặng 5.000kg (dài thân áo đạt 9 mét, tổng chiều dài cả xúc tu đạt 22 mét):\n- Móc xoay chitin hủy diệt: Xúc tu săn mồi trang bị 25 cặp móc chitin xoay 360 độ cứng như thép. Khi kẹp chặt mồi, lực bóp cơ học của bó cơ xúc tu khổng lồ tăng theo tỷ lệ tiết diện cơ (hệ số lambda^2 ≈ 4.64), tạo lực kẹp kéo rách mô đạt 45.000 N, dễ dàng ghim sâu và xé toạc các mảng thịt lớn của cá nhà táng.\n- Hàm mỏ vẹt vô song: Hàm mỏ vẹt chitin khổng lồ dài 35cm cắn với lực cơ học vươn tới 52.000 N, nghiền nát hộp sọ hoặc xương cột sống của các sinh vật biển lớn.\n- Phản lực cơ bắp nén cao (Jet Propulsion): Khoang áo chứa 12.000 lít nước co bóp cực mạnh tống nước qua phễu điều hướng, tạo lực đẩy phản lực đẩy khối cơ thể 5 tấn lướt đi trong lòng đại dương sâu thẳm với tốc độ tức thời 60 km/h.",
+            formulas_and_data: {
+              scaling_factor: 10.2,
+              mass_kg_original: 490,
+              mass_kg_scaled: 5000,
+              formulas: [
+                {
+                  name: "Lực cắn mỏ vẹt chitin khổng lồ",
+                  equation: "F_bite_scaled = F_bite_original * (M_scaled / M_original)^(2/3)",
+                  result: "~52,000 N"
+                },
+                {
+                  name: "Lực đẩy phản lực đẩy khối nước áo",
+                  equation: "F_thrust = dot_m * V_exhaust = rho * A_funnel * V_exhaust^2",
+                  result: "~75,000 N"
+                }
+              ]
+            },
+            p4p_score_scaled: 96,
+            tier_scaled: "S",
+            sources: [
+              { label: "Biophysics of jet propulsion and tentacle mechanics in giant cephalopods", url: "https://doi.org/10.1242/jeb.019558" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sự xẹp khoang áo do thiếu xương và ngạt thở do quá nhiệt nước)",
+            slug: "muc-khong-lo-nam-cuc-5000kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Áp lực nước và trọng lượng 5 tấn làm xẹp lép khoang áo cơ mềm khi nổi lên cạn, cơ tim quá tải không đẩy nổi máu đồng xanh hemocyanin đi xa.",
+            content: "Trong thực tế vật lý sinh học khi Mực Khổng Lồ Nam Cực nặng 5.000kg:\n- Xẹp lép khoang áo cơ mềm (Mantle Collapse): Do thiếu bộ khung xương nâng đỡ cứng (chỉ có tấm mai mực mỏng bằng chitin giòn), khối lượng cơ áo 5 tấn nằm hoàn toàn trên mặt nước hoặc khi chuyển động đột ngột sẽ bị ép bẹp dưới sức nặng của chính mình. Xoang áo chứa nước xẹp phẳng dẹt làm tê liệt hệ thống phản lực và chèn ép 3 trái tim.\n- Suy tim tuần hoàn Hemocyanin: Hemocyanin trong máu mực có độ nhớt tăng vọt ở áp suất thấp và nhiệt độ thay đổi. Khi mực phóng to lên 5 tấn, khoảng cách vận chuyển máu từ 3 tim đến các đầu xúc tu dài 22m tăng gấp đôi, áp lực cản trở dòng chảy ma sát mạch máu tăng 8 lần. Tim mực không đủ công suất bơm máu xanh đậm đặc này đi xa, gây thiếu oxy cục bộ dẫn đến tê liệt xúc tu hoàn toàn.\n- Chết nóng ở nước nông: Mực khổng lồ thích nghi với nước sâu (-2°C đến 2°C). Nếu bị đẩy lên vùng nước nông ấm hơn 8°C, máu hemocyanin mất hoàn toàn khả năng liên kết oxy, dẫn đến ngạt thở cấp tính và hoại tử mô não.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Áp lực tự đè ép bẹp khoang áo cơ mềm",
+                  issue: "Áp lực tự đè đè nén xoang áo đạt ~32 kPa, làm sụp đổ hoàn toàn cơ cấu túi phản lực nước."
+                },
+                {
+                  type: "Áp lực cản trở tuần hoàn huyết quản xúc tu dài",
+                  issue: "Áp lực ma sát tuần hoàn huyết quản đạt ~380 kPa, vượt quá giới hạn co bóp của hệ tim mực gấp 2.5 lần."
+                }
+              ]
+            },
+            p4p_score_scaled: 42,
+            tier_scaled: "C",
+            sources: [
+              { label: "Cephalopod oxygen transport: cardiovascular limits and environmental constraints", url: "https://doi.org/10.1016/j.cbpa.2015.02.003" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Khúng xương cartilage-chitin đan xen và hệ 3 tim trợ lực tăng áp)",
+            slug: "muc-khong-lo-nam-cuc-5000kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa các tấm sụn cartilage bảo vệ khoang áo chống biến dạng dưới áp lực, 3 tim tăng áp suất bơm và đột biến gen thích nghi nhiệt độ rộng của hemocyanin.",
+            content: "Để Mực Khổng Lồ 5 tấn trở thành vị thần thống trị biển sâu thực thụ:\n- Khung xương sụn nâng đỡ áo (Cartilaginous Mantle Ribs): Tiến hóa hệ thống các thanh sụn dẻo dai đan xen dọc khoang áo, giữ cho xoang áo luôn mở rộng và có cấu trúc hình ống hoàn hảo kể cả khi chịu lực nén va đập mạnh.\n- Ba tim tăng áp lực bóp (Hyper-pressurized Heart System): Bó cơ của tim trung tâm và 2 tim mang được gia cố các lớp sợi cơ chéo tương tự động vật có vú, nâng huyết áp bơm máu lên 380 mmHg, duy trì dòng tuần hoàn máu xanh giàu oxy đi khắp chiều dài 22m xúc tu.\n- Hemocyanin thích nghi nhiệt rộng: Đột biến cấu trúc chuỗi polypeptide của phân tử hemocyanin giúp nó duy trì khả năng liên kết oxy ổn định từ -2°C lên đến 15°C, cho phép mực khổng lồ săn mồi ở các dải nước trung phong phú.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Huyết áp bơm của hệ tim trung tâm nâng cấp",
+                  benefit: "Duy trì áp suất đẩy máu tối đa ~380 mmHg, lưu thông máu hoàn hảo xuyên suốt các xúc tu 22 mét."
+                },
+                {
+                  type: "Mô-đun đàn hồi của thanh sụn gia cố áo",
+                  benefit: "Thanh sụn lồng ngực gia cố đạt độ mô-đun đàn hồi ~15 MPa, chống bẹp bóp hoàn hảo dưới tải cơ học áo."
+                }
+              ]
+            },
+            p4p_score_scaled: 94,
+            tier_scaled: "S",
+            sources: [
+              { label: "Cartilage evolution in invertebrates and advanced cardiovascular systems of giant cephalopods", url: "https://doi.org/10.1111/ede.12005" }
+            ]
+          }
+        ]
+      });
     } else {
       // Fallback generator just in case
       whatIfData.push({
