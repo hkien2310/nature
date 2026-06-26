@@ -349,6 +349,178 @@ async function runEnrichment() {
           }
         ]
       });
+    } else if (target.id === "assassin-caterpillar") {
+      whatIfData.push({
+        creature_id: "assassin-caterpillar",
+        title: "Nếu Sâu Róm Sát Thủ phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-sau-rom-sat-thu-phong-to-bang-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài Sâu Róm Sát Thủ (Lonomia obliqua) với gai độc phá hủy fibrinogen phóng to đến kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Quái vật gieo rắc tử thần)",
+            slug: "sau-rom-sat-thu-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Sở hữu hàng triệu gai độc khổng lồ phóng nọc độc Lonomin V phá hủy hệ máu ngay khi sượt qua, lớp gai chịu lực đâm xuyên giáp cao.",
+            content: "Khi Sâu Róm Sát Thủ đạt kích thước 80kg (phóng to khối lượng khoảng 16.000 lần từ 5g lên 80kg):\n- Gai độc khổng lồ (Scoli): Cơ thể được trang bị khoảng 2.000 gai độc phân nhánh giống hình cây thông, mỗi gai dài 5-8cm, hóa sừng siêu cứng. Một cú va chạm cơ học nhẹ cũng làm đứt đầu gai rỗng và giải phóng trực tiếp khoảng 2-3ml nọc độc chứa enzym Lonomin V và Losac/Lopap.\n- Độc tính phá hủy hệ tuần hoàn: Liều độc khổng lồ này tác động tức thì, kích hoạt toàn bộ prothrombin trong cơ thể nạn nhân thành fibrin không hòa tan, làm cạn kiệt tiểu cầu trong vòng 30 giây, dẫn đến hội chứng đông máu rải rác nội mạch (DIC) và xuất huyết toàn thân cấp tính (chảy máu mắt, tai, nội tạng).\n- Giáp lông bảo vệ: Lớp gai lông đan dày đặc hoạt động như một lớp đệm giảm chấn, phân tán lực va đập cơ học lên tới 10.000 N, khiến các cuộc tấn công vật lý thông thường bị chệch hướng.",
+            formulas_and_data: {
+              scaling_factor: 16000,
+              mass_g_original: 5,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Liều nọc độc phóng to (Tỷ lệ lập phương thể tích tuyến chứa)",
+                  equation: "V_venom_scaled = V_venom_original * (M_scaled / M_original)",
+                  result: "~4.0 mL nọc độc (so với 0.25 microlit ban đầu)"
+                },
+                {
+                  name: "Khả năng đâm xuyên của gai độc",
+                  equation: "P_penetration = F_impact / Area_tip",
+                  result: "~120 MPa (đâm xuyên qua da trâu và các lớp quần áo bảo hộ dày)"
+                }
+              ]
+            },
+            p4p_score_scaled: 92,
+            tier_scaled: "S",
+            sources: [
+              { label: "Lonomia obliqua venom biochemistry and toxin characterization", url: "https://doi.org/10.1016/j.toxicon.2012.04.341" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Cái chết ngạt và sụp đổ dịch thể)",
+            slug: "sau-rom-sat-thu-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Sụp đổ cấu trúc thân mềm không xương, nghẹt thở do suy khí quản thụ động và vỡ nang độc dưới áp lực tự trọng.",
+            content: "Trong thực tế vật lý sinh học, sâu róm sát thủ 80kg không thể tồn tại:\n- Không xương đỡ (Hydrostatic Skeleton): Sâu róm là động vật thân mềm sử dụng áp suất dịch thủy tĩnh để giữ hình dạng. Ở khối lượng 80kg, áp suất nội tại cần thiết để nâng đỡ cơ thể sẽ vượt quá giới hạn đàn hồi của lớp biểu bì da mềm, khiến cơ thể nó bị vỡ tung hoặc xẹp lép phẳng lì như một bãi chất lỏng.\n- Sự sụp đổ của hệ gai độc: Các gai độc dài 8cm chứa nang độc rỗng sẽ tự gãy nát dưới lực nén trọng trường của chính nó khi nó bò trườn.\n- Khủng hoảng trao đổi khí: Hô hấp qua các lỗ thở (spiracles) dọc hai bên sườn hoàn toàn thụ động không có cơ hoành. Khi cơ thể tăng 16.000 lần thể tích, diện tích trao đổi khí chỉ tăng 640 lần, gây tích tụ CO2 cực đại và làm sâu róm chết ngạt trong 2 phút.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Áp suất dịch thủy tĩnh đỡ cơ thể",
+                  issue: "Áp suất yêu cầu P = M*g/Area vượt quá giới hạn bền kéo của lớp cutin biểu bì (20 MPa), gây nứt toác thân."
+                },
+                {
+                  type: "Tỷ lệ diện tích lỗ thở trên thể tích",
+                  issue: "Tỷ lệ S/V giảm 25 lần, lưu lượng khuếch tán oxy không đủ đáp ứng 4% nhu cầu tế bào cơ bản."
+                }
+              ]
+            },
+            p4p_score_scaled: 5,
+            tier_scaled: "D",
+            sources: [
+              { label: "Physical limits to the size of soft-bodied invertebrates", url: "https://doi.org/10.1086/281134" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Quái thú bọc giáp khí lực)",
+            slug: "sau-rom-sat-thu-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Hóa sừng hóa vỏ ngoài thành bộ xương ngoài chitin cứng, phát triển hệ cơ hô hấp tích cực và túi nọc độc chịu lực.",
+            content: "Để có thể sinh tồn và trở thành một cỗ máy chiến tranh sinh học 80kg:\n- Tiến hóa xương ngoài Chitin-Lignin: Lớp biểu bì da mềm biến đổi thành một bộ xương ngoài chitin phân đốt bán cứng để nâng đỡ 80kg mà không cần áp suất dịch quá cao.\n- Hệ hô hấp chủ động: Phát triển các cơ hô hấp sườn chủ động co bóp các túi khí nội bộ, ép không khí lưu thông qua hệ thống lỗ thở cải tiến có nắp đóng mở chủ động.\n- Nang độc bọc màng bảo vệ đàn hồi: Các gai độc hóa sừng chứa sợi elastin đàn hồi cực cao, giúp gai uốn cong thay vì gãy vụn khi va chạm cơ học mạnh.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Hệ hô hấp cơ hoành chủ động",
+                  benefit: "Tăng lưu thông khí cưỡng bức gấp 85 lần, đáp ứng hoàn hảo nhu cầu oxy khi di chuyển."
+                },
+                {
+                  type: "Gai độc chứa sợi elastin gia cường",
+                  benefit: "Giới hạn uốn dẻo tăng 300%, cho phép gai chịu góc uốn tới 60 độ mà không đứt đầu rỗng."
+                }
+              ]
+            },
+            p4p_score_scaled: 83,
+            tier_scaled: "A",
+            sources: [
+              { label: "Evolution of chitinous exoskeletons and respiratory adaptations in arthropods", url: "https://doi.org/10.1111/brv.12143" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "ogre-faced-spider") {
+      whatIfData.push({
+        creature_id: "ogre-faced-spider",
+        title: "Nếu Nhện Mặt Quỷ phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-nhen-mat-quy-phong-to-bang-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài Nhện Mặt Quỷ (Deinopis spinosa) với đôi mắt siêu nhạy sáng và cơ chế quăng lưới săn mồi phóng to đến kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Sát thủ săn đêm vô hình)",
+            slug: "nhen-mat-quy-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Tấm lưới tơ siêu dính rộng 15m cuốn chặt mục tiêu, mắt siêu thấu kính nhạy sáng cực đại ban đêm và tốc độ quăng lưới chớp nhoáng.",
+            content: "Khi Nhện Mặt Quỷ phóng to lên kích thước 80kg (tăng khối lượng ~400.000 lần):\n- Siêu lưới tơ Cribellate: Nhện đan một tấm lưới săn mồi co giãn rộng tới 15-20 mét vuông. Nhờ cấu trúc tơ cribellate cực mịn chải bằng chân sau, lưới có lực hút tĩnh điện khổng lồ, quấn chặt lấy bất kỳ mục tiêu nào trong tầm và chịu lực căng lên tới 80.000 N (tương đương lực kéo của xe tải).\n- Đôi mắt thấu kính đêm tử thần: Đôi mắt khổng lồ phía trước đường kính 12cm có khẩu độ ánh sáng cực lớn, cho phép nhìn rõ từng chi tiết trong đêm tối hoàn toàn với độ nhạy sáng gấp 2.000 lần mắt người thường.\n- Cú vồ quăng lưới chớp nhoáng: Tốc độ phản xạ thính giác cảm nhận rung động trichobothria cho phép chân trước dài 3.5m thực hiện cú chụp quăng lưới chỉ trong 0.05 giây.",
+            formulas_and_data: {
+              scaling_factor: 400000,
+              mass_g_original: 0.2,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực căng giới hạn tơ nhện",
+                  equation: "F_tension = Tensile_Strength * Area_cross",
+                  result: "~85 kN (chịu được trọng lượng treo của xe tải 8.5 tấn)"
+                },
+                {
+                  name: "Độ nhạy sáng thấu kính",
+                  equation: "Light_Gathering = (D_scaled / D_original)^2 * Light_original",
+                  result: "Độ thu nhận ánh sáng tăng gấp 40.000 lần"
+                }
+              ]
+            },
+            p4p_score_scaled: 94,
+            tier_scaled: "S",
+            sources: [
+              { label: "Sensory ecology and net-casting mechanics of Deinopis spinosa", url: "https://doi.org/10.1093/icb/icaa121" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Cơ thể giòn dễ vỡ và mù lòa ban ngày)",
+            slug: "nhen-mat-quy-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Vỡ bụng dưới tác dụng rơi tự do do thành biểu bì mỏng, ngạt thở do hệ thống phổi sách thiếu áp lực thụ động.",
+            content: "Trong thực tế vật lý sinh học, nhện mặt quỷ 80kg sẽ nhanh chóng tử vong:\n- Sụp vỡ phần bụng (Opisthosoma): Phần bụng của nhện không có xương đỡ cũng không có phân đốt cứng, chỉ là màng cutin co giãn bọc dịch. Với khối lượng 80kg, chỉ cần một bước nhảy nhỏ hoặc rơi từ độ cao 30cm cũng đủ tạo ra áp lực thủy tĩnh cực lớn làm nổ vỡ bụng nhện ngay lập tức.\n- Thiếu hụt trao đổi khí phổi sách: Nhện thở bằng phổi sách (book lungs) thụ động chứa các lá mỏng khuếch tán. Diện tích các lá phổi sách tăng theo tỷ lệ bình phương (10.000 lần), không thể đáp ứng nổi nhu cầu oxy của cơ thể tăng theo tỷ lệ lập phương (400.000 lần).\n- Mù lòa ban ngày: Đôi mắt khổng lồ ban đêm không có mống mắt co giãn điều tiết ánh sáng. Khi mặt trời lên, tế bào cảm quang võng mạc sẽ bị ánh sáng mạnh thiêu rụi hoàn toàn trước khi quá trình tự tiêu lớp màng diễn ra.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Độ bền giới hạn của màng bụng",
+                  issue: "Ứng suất màng bụng khi rơi tự do vượt quá giới hạn bền kéo của cutin bụng (3 MPa), gây vỡ bụng."
+                },
+                {
+                  type: "Hiệu suất trao đổi khí phổi sách",
+                  issue: "Tỷ lệ diện tích trao đổi khí phổi sách trên thể tích giảm 40 lần, gây thiếu oxy nghiêm trọng khi hoạt động."
+                }
+              ]
+            },
+            p4p_score_scaled: 12,
+            tier_scaled: "D",
+            sources: [
+              { label: "Biomechanical constraints on the size of spiders", url: "https://doi.org/10.1111/j.1469-7998.2007.00311.x" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Sát thủ giáp lưới đêm)",
+            slug: "nhen-mat-quy-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Bụng phân tấm chitin bảo vệ, phổi sách co bóp cơ học và võng mạc có tế bào sắc tố phản quang bảo vệ UV.",
+            content: "Để sống sót và phát huy sức mạnh ở kích cỡ 80kg:\n- Phân tấm giáp bụng: Tiến hóa các tấm chitin cứng xếp chồng kiểu vảy (như bọ cạp) bao bọc quanh phần bụng opisthosoma, bảo vệ dịch nội tạng chống lại áp lực va đập cơ học.\n- Hệ thống hô hấp tuần hoàn kép: Phổi sách tiến hóa thành phổi sách chủ động với các cơ liên kết kéo mở tạo luồng khí đối lưu, kết hợp hệ mạch kín bơm máu có chứa hemocyanin đậm đặc.\n- Mống mắt bảo vệ (Iris-like pigment): Mắt nhện tiến hóa một lớp sắc tố bảo vệ nhạy sáng co rút nhanh khi tiếp xúc ánh sáng mặt trời, tương tự mống mắt của thú, giúp bảo vệ võng mạc vào ban ngày.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Giáp phân tấm bụng chitin",
+                  benefit: "Tăng khả năng chịu áp lực va đập lên 15 lần, bảo vệ an toàn khi thực hiện cú nhảy săn mồi."
+                },
+                {
+                  type: "Mống mắt điều tiết sắc tố",
+                  benefit: "Giảm lượng ánh sáng đi vào mắt 10.000 lần trong ban ngày, ngăn ngừa mù lòa vĩnh viễn."
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "A",
+            sources: [
+              { label: "Visual adaptations and physiological mutations in arachnids", url: "https://doi.org/10.1002/jez.b.21394" }
+            ]
+          }
+        ]
+      });
     } else if (target.id === "african-lungfish") {
       whatIfData.push({
         creature_id: "african-lungfish",
