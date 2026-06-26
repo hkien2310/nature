@@ -5387,6 +5387,93 @@ async function runEnrichment() {
           }
         ]
       });
+    } else if (target.id === "deathstalker-scorpion") {
+      whatIfData.push({
+        creature_id: "deathstalker-scorpion",
+        title: "Nếu Bọ Cạp Tử Thần phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-bo-cap-tu-than-phong-to-bang-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài Bọ Cạp Tử Thần (Leiurus quinquestriatus) sở hữu nọc độc thần kinh cực mạnh và khả năng phát quang phóng to lên kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cơn ác mộng độc lực hủy diệt và siêu cảm biến)",
+            slug: "bo-cap-tu-than-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Nọc độc đủ giết chết 15,000 người trưởng thành trong một cú chích, lông cảm biến siêu nhạy phát hiện bước chân từ khoảng cách 5km.",
+            content: "Nếu Bọ Cạp Tử Thần được phóng đại tuyến tính cơ học lên 80kg (khối lượng tăng ~40,000 lần, kích thước tuyến tính tăng ~34 lần, chiều dài đạt ~3.4 mét):\n- Độc lực kinh hoàng: Lượng nọc độc bơm ra tăng tỷ lệ thuận với thể tích tuyến độc, đạt ~20ml mỗi lần chích. Với độc tố chlorotoxin và scyllatoxin cô đặc, một cú chích của nó chứa đủ độc lực để gây ngừng tim lập tức cho hơn 15,000 người trưởng thành hoặc cả một đàn voi châu Phi.\n- Cảm biến chấn động địa chấn: Hàng triệu sợi lông Trichobothria trên chân được phóng to trở thành các cảm biến địa chấn cực nhạy, thu nhận tần số rung động thấp trong lòng đất, cho phép nó phát hiện và định vị chính xác chuyển động của một sinh vật từ khoảng cách 5 km.\n- Giáp huỳnh quang phát sáng: Vỏ kitin phát quang màu xanh lục lam ma quái dưới ánh sáng đêm, hoạt động như một lớp ngụy trang tán xạ ánh sáng trong đêm sa mạc.",
+            formulas_and_data: {
+              scaling_factor: 40000,
+              mass_g_original: 2,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Thể tích nọc độc phóng đại lý thuyết",
+                  equation: "V_venom = V_original * (M_scaled / M_original)",
+                  result: "~20.0 ml (so với 0.5 mg nguyên bản)"
+                },
+                {
+                  name: "Bán kính quét chấn động của lông Trichobothria",
+                  equation: "R_detection = R_original * (L_scaled / L_original)^2",
+                  result: "~5.2 km (nhờ tăng diện tích bề mặt lông nhận sóng cơ học)"
+                }
+              ]
+            },
+            p4p_score_scaled: 92,
+            tier_scaled: "S",
+            sources: [
+              { label: "Ion channel toxins from Leiurus quinquestriatus venom", url: "https://doi.org/10.1111/j.1476-5381.2010.00762.x" },
+              { label: "Mechanosensory transduction in scorpion trichobothria", url: "https://doi.org/10.1007/s00359-002-0382-7" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sự ngạt thở phổi sách và vỡ khớp màng chân)",
+            slug: "bo-cap-tu-than-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Phổi sách ngạt khí do thiếu thông khí cơ học chủ động, màng khớp chân mỏng vỡ vụn dưới áp lực 80kg.",
+            content: "Trong thế giới vật lý thực tế, Bọ Cạp Tử Thần 80kg sẽ ngay lập tức đối mặt với tử vong do giới hạn cấu trúc:\n- Suy hô hấp cấp (Suffocation): Hệ thống phổi sách (book lungs) của bọ cạp nằm dưới bụng dựa hoàn toàn vào sự khuếch tán thụ động. Ở khối lượng 80kg, diện tích bề mặt trao đổi khí của phổi sách chỉ tăng ~1,160 lần trong khi thể tích cơ thể cần oxy tăng tới 40,000 lần. Nó sẽ rơi vào tình trạng thiếu oxy mô nghiêm trọng và chết ngạt trong 3 phút.\n- Rách khớp tự phát và rò rỉ huyết dịch: Khớp chân của bọ cạp không được bảo vệ bằng xương mà chỉ kết nối bằng một lớp màng kitin đàn hồi mỏng. Dưới áp lực tải trọng tĩnh 80kg chịu lực nén, các màng khớp này sẽ căng phồng và rách toác, làm toàn bộ dịch huyết (hemolymph) chảy tràn ra ngoài gây tụt huyết áp và tử vong lập tức.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Mất cân bằng trao đổi khí phổi sách",
+                  issue: "Diện tích bề mặt phổi sách trên mỗi đơn vị thể tích giảm 97.1%, không đủ cung cấp oxy tối thiểu cho tế bào cơ."
+                },
+                {
+                  type: "Ứng suất kéo đứt màng khớp chân",
+                  issue: "Áp suất tải trọng nén vượt quá 32 lần giới hạn đàn hồi tối đa của màng liên khớp chitinous."
+                }
+              ]
+            },
+            p4p_score_scaled: 18,
+            tier_scaled: "D",
+            sources: [
+              { label: "Respiratory physiology and scaling limits of book lungs", url: "https://doi.org/10.1086/515842" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Quái thú sa mạc với hệ thông khí chủ động và giáp khớp silic)",
+            slug: "bo-cap-tu-than-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Phổi sách tiến hóa cơ chế co bóp chủ động như cơ hoành, các màng khớp được gia cố vi tinh thể silic chịu lực.",
+            content: "Để khắc phục các giới hạn vật lý và hoạt động hoàn hảo ở khối lượng 80kg, bọ cạp tử thần cần những bước đột biến tiến hóa vượt bậc:\n- Phổi sách cơ hoành (Ventilated Book Lungs): Sự xuất hiện của các dải cơ bắp co bóp liên tục xung quanh khoang phổi sách, hoạt động giống như cơ hoành ở thú để cưỡng bức không khí lưu thông liên tục qua các lá phổi.\n- Gia cố khớp chân bằng khoáng chất silic: Biểu bì khớp chân được tích hợp cấu trúc nano tinh thể silica (SiO2) tăng độ bền kéo lên gấp 15 lần, ngăn ngừa rách khớp.\n- Tim bốn ngăn tuần hoàn kín: Hệ tuần hoàn hở tiến hóa thành tuần hoàn bán kín với tim có cơ bắp dày co bóp chủ động, duy trì huyết áp hemolymph ổn định ở mức 60 mmHg để cung cấp năng lượng cho các chi hoạt động dập dồn.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Hệ cơ thông khí phổi chủ động",
+                  benefit: "Lưu lượng khí qua phổi tăng 35 lần, đáp ứng đủ nhu cầu hoạt động săn mồi cường độ cao."
+                },
+                {
+                  type: "Khớp nano-silica hóa",
+                  benefit: "Độ bền uốn của khớp đạt 240 MPa, nâng tải trọng tĩnh an toàn lên mức 350kg."
+                }
+              ]
+            },
+            p4p_score_scaled: 86,
+            tier_scaled: "A",
+            sources: [
+              { label: "Biomineralization and mechanical properties of scorpion cuticle", url: "https://doi.org/10.1002/adma.201103215" }
+            ]
+          }
+        ]
+      });
     } else if (target.id === "goliath-beetle") {
       whatIfData.push({
         creature_id: "goliath-beetle",
