@@ -5300,6 +5300,267 @@ async function runEnrichment() {
           }
         ]
       });
+    } else if (target.id === "australian-bulldog-ant") {
+      whatIfData.push({
+        creature_id: "australian-bulldog-ant",
+        title: "Nếu Kiến Bulldog Úc phóng to bằng con người (80kg) thì sao?",
+        slug: "kien-bulldog-uc-phong-to-80kg",
+        description: "Phân tích kịch bản giả thuyết khi loài Kiến Bulldog Úc (Myrmecia pyriformis) sở hữu cặp hàm răng cưa chứa kim loại và ngòi châm nọc peptide cực mạnh phóng to đạt kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cơn ác mộng giáp sắt bật nhảy và cú cắn mangan)",
+            slug: "kien-bulldog-uc-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực cắn 4,500 N xẻ đôi bê tông, cú bật nhảy lò xo cao 12 mét và nọc độc poneratoxin-like hoại tử cơ tim cực nhanh.",
+            content: "Nếu Kiến Bulldog Úc được phóng to theo tỷ lệ cơ học Sci-Fi tuyến tính lên 80kg (tăng khối lượng ~1.6 triệu lần, chiều dài đạt ~2.9 mét):\n- Cú cắn nghiền nát kim loại: Cặp hàm răng cưa dài bọc lớp kẽm và mangan gia cường độ cứng tăng lực cắn lý thuyết lên tới 4,500 N. Sự tập trung lực vào các đỉnh răng nhọn có thể xuyên thủng lớp thép mỏng hay xẻ đôi tấm bê tông mỏng dễ dàng.\n- Lò xo bật nhảy lò xo: Cơ đùi sau khổng lồ hoạt động như lò xo nén giải phóng lực đẩy 18,000 N, giúp kiến 80kg bật nhảy cao 12 mét và xa 35 mét chỉ trong 0.2 giây để vồ lấy con mồi.\n- Ngòi châm nọc độc hủy diệt: Ngòi châm dài 10cm phóng ra hàng chục ml peptide myrmeciin độc tính cao kích hoạt receptor TRPV1, gây sốc phản vệ và suy cơ tim lập tức.",
+            formulas_and_data: {
+              scaling_factor: 1600000,
+              mass_g_original: 0.05,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực cắn lý thuyết tỉ lệ thuận diện tích cơ",
+                  equation: "F_bite = F_original * (M_scaled / M_original)^(2/3)",
+                  result: "~4,500 N"
+                },
+                {
+                  name: "Lực bộc phát bật nhảy khớp đùi sau",
+                  equation: "F_jump = F_original * (M_scaled / M_original)^(2/3)",
+                  result: "~18,000 N"
+                }
+              ]
+            },
+            p4p_score_scaled: 92,
+            tier_scaled: "S",
+            sources: [
+              { label: "Myrmecia pyriformis visual and predatory biomechanics", url: "https://doi.org/10.1242/jeb.053108" },
+              { label: "Metal enrichment in insect mandibles and mechanical properties", url: "https://doi.org/10.1016/j.actbio.2008.07.027" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Ngạt thở cấp tính và gãy gập khớp chân)",
+            slug: "kien-bulldog-uc-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Thiếu oxy tế bào do hệ khí quản thụ động dài 3 mét không lưu thông khí, chân gãy gập dưới trọng tải tăng 1.6 triệu lần.",
+            content: "Trong thực tế sinh học, Kiến Bulldog Úc 80kg sẽ sụp đổ và tử vong chỉ trong vài phút:\n- Khủng hoảng hô hấp thụ động: Hệ thống khí quản (tracheae) không có cơ chế bơm hút chủ động mà phụ thuộc hoàn toàn vào sự khuếch tán oxy thụ động qua các lỗ thở (spiracles). Khi chiều dài cơ thể tăng 117 lần, thời gian khuếch tán oxy tăng theo bình phương khoảng cách (117^2 ≈ 13,689 lần), khiến oxy không thể tiếp cận các tế bào sâu quá 1cm, gây ngạt thở tế bào toàn diện.\n- Trọng lực bẻ gãy chân khớp: Theo định luật bình phương - lập phương, khối lượng tăng 1.6 triệu lần nhưng tiết diện cắt ngang của chân chỉ tăng 13,700 lần. Ứng suất nén tĩnh lên sáu chiếc chân mảnh khảnh vượt quá giới hạn uốn gãy của chitin (80 MPa) gấp hàng chục lần, làm chân kiến gãy vụn ngay khi đứng trên mặt đất.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Hạn chế khuếch tán khí quản",
+                  issue: "Thời gian khuếch tán oxy tăng gấp 13,700 lần khiến nồng độ oxy ở trung tâm cơ thể giảm về 0% trong 60 giây."
+                },
+                {
+                  type: "Ứng suất quá tải trên xương ngoài chitin",
+                  issue: "Ứng suất nén lên chân đạt 320 MPa, vượt quá 4 lần giới hạn đàn hồi của chitin nguyên bản gây nứt vỡ tự phát."
+                }
+              ]
+            },
+            p4p_score_scaled: 14,
+            tier_scaled: "D",
+            sources: [
+              { label: "Gas exchange and size limits in giant fossil insects", url: "https://doi.org/10.1073/pnas.1014292108" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Quái trùng giáp thép hô hấp chủ động)",
+            slug: "kien-bulldog-uc-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Hệ phổi sách co bóp chủ động tích hợp tuần hoàn haemoglobin khép kín, vỏ giáp chân gia cường canxi cấu trúc cột trụ.",
+            content: "Để sinh tồn ở kích thước 80kg, Kiến Bulldog Úc cần những biến đổi tiến hóa sâu sắc:\n- Hệ hô hấp chủ động phổi sách: Chuyển đổi hệ thống khí quản thành các túi phổi xếp nếp co bóp chủ động nhờ hệ cơ hoành chuyên biệt. Hemolymph tích hợp hemoglobin chứa sắt vận chuyển oxy hiệu quả thay thế cho tuần hoàn hở thụ động.\n- Gia cố cấu trúc xương ngoài: Lớp vỏ kitin được canxi hóa và gia cường bằng các bó sợi protein liên kết song song, tạo độ cứng uốn bền gấp 6 lần bình thường. Các chi chuyển dịch từ cấu trúc nghiêng chữ V sang tư thế đứng thẳng cột trụ (graviportal) giống như thú lớn để phân tán trọng lực tối ưu.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Phổi sách thông khí cưỡng bức",
+                  benefit: "Lưu lượng trao đổi khí đạt 4.2 L/phút, cung cấp đủ oxy cho cơ bắp vận động cường độ cao."
+                },
+                {
+                  type: "Cơ học tư thế chi cột trụ",
+                  benefit: "Giảm mô-men xoắn uốn tại các đốt khớp háng 85%, phân phối đều lực nén cơ thể."
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "A",
+            sources: [
+              { label: "Biomechanics of posture and scaling in terrestrial arthropods", url: "https://doi.org/10.1242/jeb.02104" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "goliath-beetle") {
+      whatIfData.push({
+        creature_id: "goliath-beetle",
+        title: "Nếu Bọ Hung Goliath phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-bo-hung-goliath-phong-to-bang-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài Bọ Hung Goliath (Goliathus goliatus) sở hữu sừng chữ Y bằng chitin cứng chắc chắn và đôi cánh màng lớn phóng to lên kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Xe bọc thép sừng chữ Y nghiền nát vật cản)",
+            slug: "bo-hung-goliath-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực nâng sừng chữ Y bộc phát 6,800 N lật úp ô tô, bộ giáp ngoài kitin dày 3cm chống đạn và bay lướt gió tốc độ 80km/h.",
+            content: "Nếu Bọ Hung Goliath được phóng đại tuyến tính cơ học lên 80kg (khối lượng tăng 1600 lần, kích thước tuyến tính tăng ~11.7 lần, chiều dài đạt ~1.17 mét):\n- Lực đòn bẩy sừng khổng lồ: Chiếc sừng chữ Y bằng kitin siêu cứng phóng to hoạt động như một gắp máy xúc thủy lực, có thể bộc phát lực nâng dọn dẹp lên tới 6,800 N. Nó có thể dễ dàng cắm sừng dưới gầm xe ô tô con nặng 1.5 tấn và lật úp chiếc xe.\n- Bọc giáp tối tân: Lớp vỏ kitin dày 3cm bảo vệ chống lại các vụ nổ và vũ khí đạn đạo cầm tay tầm trung.\n- Cánh quạt cơ học: Đôi cánh màng khổng lồ đập với tần số 15 Hz tạo ra lực nâng cơ học cực mạnh, bay lướt gió như trực thăng hạng nhẹ với tốc độ bay lý thuyết 80 km/h.",
+            formulas_and_data: {
+              scaling_factor: 1600,
+              mass_g_original: 50,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực đòn bẩy sừng chữ Y cơ học",
+                  equation: "F_lever = F_original * (M_scaled / M_original)^(2/3)",
+                  result: "~6,800 N"
+                },
+                {
+                  name: "Năng lượng động lực bay lý thuyết",
+                  equation: "E_kinetic = 0.5 * M_scaled * V_scaled^2",
+                  result: "~19,700 J (ở tốc độ 80 km/h)"
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "A",
+            sources: [
+              { label: "Goliathus beetle flight energetics and muscle power outputs", url: "https://doi.org/10.1242/jeb.200.17.2345" },
+              { label: "Structure and mechanical properties of insect elytra", url: "https://doi.org/10.1016/j.jmbbm.2015.02.007" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Mất lực nâng cánh và bùng nổ quá nhiệt ngực)",
+            slug: "bo-hung-goliath-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Cánh không đủ lực nâng cơ thể bay, sốc nhiệt tích tụ ở khoang ngực kín lên tới 65°C gây tổn hại mô cơ bắp.",
+            content: "Trong thế giới thực tế vật lý, Bọ Hung Goliath 80kg chịu thất bại nặng nề bởi giới hạn cơ thể:\n- Liệt cánh bay: Diện tích đôi cánh màng chỉ tăng 137 lần, trong khi khối lượng tăng vọt 1600 lần. Theo khí động học, lực nâng cánh tạo ra tỷ lệ thuận với diện tích cánh và bình phương tốc độ. Bọ hung cần phải chạy đạt tốc độ cất cánh khổng lồ 250 km/h chỉ để bay lên, một điều không thể với đôi chân ngằn ngèo trên đất cát.\n- Đột quỵ do quá nhiệt (Thermal Meltdown): Bọ hung Goliath là loài nội nhiệt cơ học, cần sưởi ấm cơ ngực bay lên 35-40°C bằng cách rung cơ ngực. Ở khối lượng 80kg, tỷ lệ S/V giảm 11.7 lần khiến khả năng tản nhiệt qua lớp biểu bì bọc kín gần như bằng 0. Khi rung cơ ngực phát nhiệt, nhiệt độ khoang ngực sẽ tăng vọt lên 65°C chỉ sau 2 phút, đông tụ protein cơ bắp và giết chết nó ngay lập tức.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Mất cân bằng lực nâng khí động học",
+                  issue: "Diện tích cánh không đủ, lực nâng ở tốc độ bay bình thường chỉ đạt 8.5% trọng lượng cơ thể."
+                },
+                {
+                  type: "Tích tụ nhiệt cơ học khoang ngực",
+                  issue: "Hiệu số tản nhiệt giảm 91.5% do cấu trúc giáp ngực dầy kín, gây tích tụ nhiệt độ nguy hại vượt quá ngưỡng chịu đựng protein (45°C)."
+                }
+              ]
+            },
+            p4p_score_scaled: 24,
+            tier_scaled: "D",
+            sources: [
+              { label: "Allometric scaling of insect flight limitations", url: "https://doi.org/10.1086/676859" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Khủng thiết giáp di động có hệ làm mát tuần hoàn)",
+            slug: "bo-hung-goliath-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Cánh lai sợi carbon siêu nhẹ, hệ tuần hoàn dịch hemolymph tản nhiệt qua sừng sọc đen trắng và giáp kitin tổ ong.",
+            content: "Để sinh tồn và vận hành tốt ở khối lượng 80kg, bọ hung phải tiến hóa những đột biến thích nghi sâu sắc:\n- Hệ tuần hoàn làm mát tích cực: Hemolymph (dịch máu) tuần hoàn cưỡng bức qua hệ thống ống dẫn nhiệt phân bố dọc theo sừng chữ Y và các sọc ngực đen trắng (hoạt động như tấm tản nhiệt zebra), giải phóng 90% nhiệt dư thừa ra không khí.\n- Giáp ngoài cấu trúc tổ ong xốp: Giảm trọng lượng lớp vỏ ngoài đi 45% nhưng duy trì độ cứng cao nhờ cấu trúc lõi rỗng giống xương chim.\n- Cánh khí động học sải rộng: Đôi cánh màng được kéo dài gấp đôi diện tích so với tỉ lệ cũ và tích hợp các vi sợi nanocarbon siêu đàn hồi, cho phép bộc phát lực nâng đủ lớn để cất cánh ngắn.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Tản nhiệt tuần hoàn hemolymph",
+                  benefit: "Duy trì nhiệt độ ngực ổn định ở 38°C khi bay liên tục 20 phút."
+                },
+                {
+                  type: "Cánh siêu bền lai carbon",
+                  benefit: "Mô-đun đàn hồi của cánh tăng gấp 4 lần, chịu được lực đập cánh tần số cao mà không rách vỡ."
+                }
+              ]
+            },
+            p4p_score_scaled: 83,
+            tier_scaled: "B",
+            sources: [
+              { label: "Biomimetic structural materials based on arthropod cuticle", url: "https://doi.org/10.1242/jeb.082941" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "namib-desert-beetle") {
+      whatIfData.push({
+        creature_id: "namib-desert-beetle",
+        title: "Nếu Bọ Sa Mạc Namib phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-bo-sa-mac-namib-to-bang-nguoi-80kg",
+        description: "Phân tích kịch bản giả thuyết khi loài Bọ Sa Mạc Namib (Stenocara gracilipes) với vỏ elytra ngưng tụ nước thụ động đặc biệt phóng to đạt kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cột thu nước di động trên sa mạc cát)",
+            slug: "bo-sa-mac-namib-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Thu hoạch 45 lít nước tinh khiết mỗi sáng từ sương sa mạc, chân siêu dài chạy 70 km/h băng cồn cát.",
+            content: "Nếu Bọ Sa Mạc Namib được phóng to theo tỷ lệ cơ học Sci-Fi lên 80kg (tăng khối lượng ~800,000 lần, kích thước tuyến tính tăng ~93 lần, dài ~1.86 mét):\n- Máy ngưng tụ sương khổng lồ: Diện tích elytra ngưng tụ sương tăng gấp 8,600 lần (đạt ~1.7 m^2). Trong những buổi sáng mù sương, bề mặt này ngưng tụ thụ động và dẫn dòng tới 45 lít nước tinh khiết chảy thẳng vào miệng mà không tốn năng lượng hoạt động.\n- Siêu việt tốc độ sa mạc: Với đôi chân siêu dài sải bước lớn, bọ Namib có thể duy trì tốc độ chạy liên tục lên tới 70 km/h trên những cồn cát dốc đứng của sa mạc mà không bị lún sụt chân.\n- Lá chắn cách nhiệt: Lớp biểu bì tráng sáp hydrocarbon phản xạ 99% tia bức xạ mặt trời gay gắt.",
+            formulas_and_data: {
+              scaling_factor: 800000,
+              mass_g_original: 0.1,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Diện tích vỏ elytra ngưng tụ sương",
+                  equation: "A_elytra = A_original * (M_scaled / M_original)^(2/3)",
+                  result: "~1.72 m^2"
+                },
+                {
+                  name: "Lượng nước ngưng tụ thu hoạch lý thuyết",
+                  equation: "V_water = Rate_condensation * A_elytra * Time",
+                  result: "~45.2 Lít (trong 2 giờ đón sương)"
+                }
+              ]
+            },
+            p4p_score_scaled: 76,
+            tier_scaled: "B",
+            sources: [
+              { label: "Water capture mechanism of the Namib Desert beetle Stenocara", url: "https://doi.org/10.1038/414142a" },
+              { label: "Locomotion and thermal biology of desert beetles", url: "https://doi.org/10.1016/j.jtherbio.2014.02.001" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sự nứt gãy sáu chân dài và mất nước do tản nhiệt kém)",
+            slug: "bo-sa-mac-namib-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Chân mảnh dài bị bẻ gãy tức thì dưới tải trọng tĩnh cơ thể, mất nước nghiêm trọng do khí quản nóng bức quá tải.",
+            content: "Trong môi trường thực tế, Bọ Sa Mạc Namib 80kg gặp phải các rào cản vật lý không thể vượt qua:\n- Nứt gãy chân tự phát: Đôi chân cực kỳ mảnh khảnh vốn tiến hóa để nhấc bổng cơ thể tránh hơi nóng từ cát sa mạc. Khi phóng to lên 80kg, ứng suất uốn nén lên tiết diện xương đùi siêu nhỏ của chân vượt quá giới hạn kéo bền của chitin (80 MPa) gấp 90 lần. Con bọ sẽ bị gãy gập cả sáu chân ngay khi cố nhấc mình khỏi cát.\n- Sốc nhiệt ban ngày sa mạc: Khi cơ thể nặng 80kg đứng đón sương mù lúc bình minh, lượng nước ngưng tụ trên vỏ bám dính dày đặc làm tăng trọng lượng thêm 45kg. Khi mặt trời lên cao nhanh chóng, độ trễ nhiệt của khối cơ thể 125kg khổng lồ khiến nó không thể hạ nhiệt kịp thời, cộng thêm chân bị gãy nằm sát cát nóng 70°C sẽ biến nó thành bữa tiệc nướng sa mạc.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Ứng suất uốn nén lên sáu chân mảnh",
+                  issue: "Trọng lượng cơ thể vượt quá 90 lần giới hạn bền cơ học của hệ chân mảnh dẻ."
+                },
+                {
+                  type: "Độ trễ tản nhiệt khối cơ thể lớn",
+                  issue: "Tỷ lệ S/V giảm 93 lần, thời gian tản nhiệt tích tụ tăng vọt làm thân nhiệt bên trong chạm ngưỡng tử vong 52°C chỉ sau 20 phút phơi nắng sa mạc."
+                }
+              ]
+            },
+            p4p_score_scaled: 13,
+            tier_scaled: "D",
+            sources: [
+              { label: "The physical limits to size in arthropods", url: "https://doi.org/10.1242/jeb.02059" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Khổng trùng thủy lực với chân ống gia cố)",
+            slug: "bo-sa-mac-namib-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Hệ thống chân trợ lực thủy lực hemolymph dày dặn, van thở thông khí co bóp chủ động và vỏ cánh ngưng tụ sương cấu trúc nano trượt sáp.",
+            content: "Để sinh tồn hiệu quả ở sa mạc cát với kích thước 80kg, bọ Namib sở hữu các đặc điểm đột biến cách mạng:\n- Chân trợ lực thủy lực dày: Đường kính chân tăng gấp 4 lần so với tỷ lệ nguyên bản, cấu trúc rỗng bên trong chứa cơ bắp phối hợp với áp suất thủy lực của chất dịch hemolymph co bóp mạnh mẽ để nâng đỡ 80kg cơ thể dễ dàng.\n- Hệ hô hấp lỗ thở có van đóng mở chủ động co bóp: Kiểm soát tối đa sự thoát hơi nước bằng cách chỉ mở lỗ thở khi nồng độ CO2 vượt ngưỡng nhất định.\n- Vỏ elytra thu sương hiệu suất cao: Các rãnh kỵ nước siêu mịn được phủ lớp nano sáp chống bám dính cực đoan, giúp các giọt sương thu hoạch ngưng tụ lập tức lăn nhanh xuống miệng mà không giữ lại làm tăng gánh nặng tải trọng cơ thể.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Trợ lực thủy lực chân ống rỗng",
+                  benefit: "Chịu được tải trọng tĩnh tối đa lên tới 450 kg trước khi xảy ra biến dạng cơ học."
+                },
+                {
+                  type: "Rãnh trượt sáp nano siêu kỵ nước",
+                  benefit: "Lực ma sát lăn của giọt nước đọng giảm về 0.05 mN, tăng tốc độ thu hồi nước đạt 96% hiệu suất ngưng tụ."
+                }
+              ]
+            },
+            p4p_score_scaled: 74,
+            tier_scaled: "C",
+            sources: [
+              { label: "Superhydrophobic and superhydrophilic surfaces in nature", url: "https://doi.org/10.1016/j.cis.2017.07.022" }
+            ]
+          }
+        ]
+      });
     } else {
       // Fallback generator just in case
       whatIfData.push({
