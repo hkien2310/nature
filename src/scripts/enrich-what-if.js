@@ -3547,6 +3547,264 @@ async function runEnrichment() {
           }
         ]
       });
+    } else if (target.id === "saltwater-crocodile") {
+      whatIfData.push({
+        creature_id: "saltwater-crocodile",
+        title: "Nếu Cá Sấu Nước Mặn phóng to lên 5.000kg (5 tấn) thì sao?",
+        slug: "neu-ca-sau-nuoc-man-phong-to-len-5000kg-5-tan",
+        description: "Phân tích kịch bản giả thuyết khi Cá Sấu Nước Mặn (Crocodylus porosus) đạt kích thước khổng lồ 5 tấn giống như các loài bò sát tiền sử khổng lồ.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cú đớp 75.000 N và lực đuôi quật ngã xe bọc thép)",
+            slug: "ca-sau-nuoc-man-5000kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Lực cắn nghiền xương đạt 75 kN đập vỡ mọi lớp giáp, đuôi khổng lồ quật ngã xe bọc thép hạng nhẹ với động năng 45 kJ.",
+            content: "Khi Cá Sấu Nước Mặn đạt khối lượng 5.000kg (dài ~10.5 mét):\n- Lực cắn hủy diệt: Lực đớp cơ học tăng theo tiết diện cơ (hệ số lambda^2 ≈ 4.68). Lực cắn tăng từ 16.000 N lên tới 75.000 N (75 kN), tương đương sức nặng của 7.5 tấn đè lên răng, nghiền nát xương và xé toạc các tấm thép bảo vệ của phương tiện di chuyển.\n- Cú quật đuôi động năng cao: Đuôi cơ bắp khổng lồ dài 5.5 mét quật sang hai bên tạo ra mô-men lực 40.000 N.m và động năng va chạm đạt 45 kJ, đủ sức quật lật các phương tiện cơ giới hạng nhẹ hoặc phá sập tường bê tông cốt thép.\n- Cú xoay tử thần (Death Roll) hủy diệt: Mô-men xoắn xoay tròn cơ thể trong nước đạt 18.000 N.m, có thể vặn đứt các khớp xương của các con mồi lớn như voi hay hà mã chỉ trong vài giây.",
+            formulas_and_data: {
+              scaling_factor: 11.1,
+              mass_kg_original: 450,
+              mass_kg_scaled: 5000,
+              formulas: [
+                {
+                  name: "Lực cắn phóng to theo tiết diện cơ hàm",
+                  equation: "F_bite_scaled = F_bite_original * (M_scaled / M_original)^(2/3)",
+                  result: "~75,200 N (75.2 kN)"
+                },
+                {
+                  name: "Động năng cú quật đuôi cực đại",
+                  equation: "E_kinetic = 1/2 * I_tail * omega^2",
+                  result: "~45,000 Joules"
+                }
+              ]
+            },
+            p4p_score_scaled: 92,
+            tier_scaled: "S",
+            sources: [
+              { label: "Bite force and evolutionary scaling of crocodilian jaws", url: "https://doi.org/10.1371/journal.pone.0031781" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sự bất động trên cạn, xẹp phổi và sốc nhiệt nghiêm trọng)",
+            slug: "ca-sau-nuoc-man-5000kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Trọng lượng 5 tấn đè xẹp phổi gây ngạt thở trên cạn, các chi bị gãy khớp dưới sức nặng và sốc nhiệt tử vong do tản nhiệt kém.",
+            content: "Trong thế giới thực tế, nếu Cá Sấu Nước Mặn nặng 5.000kg:\n- Xẹp phổi cơ học: Do không có xương sườn khép kín nâng đỡ khoang bụng dưới cạn, trọng lượng 5 tấn đè ép trực tiếp lên màng phổi và tim. Khi nằm trên cạn quá 30 phút, áp suất nội tạng làm phổi không thể co giãn để hô hấp, gây thiếu oxy máu và ngạt thở dần.\n- Gãy khớp chi xương: Các xương chi bò sát nằm ngang chịu mô-men uốn cực lớn. Trọng lượng 5 tấn tạo ứng suất uốn vượt giới hạn uốn của xương cá sấu (~120 MPa), khiến chúng bị rạn nứt xương và liệt bò trườn hoàn toàn trên cạn.\n- Sốc nhiệt hủy diệt: Tỷ lệ diện tích da trên thể tích cơ thể giảm 2.2 lần (định luật bình phương - lập phương). Nhiệt lượng hấp thụ từ ánh nắng mặt trời không thể giải phóng kịp qua lớp da dày, đẩy nhiệt độ cơ thể lên mức nguy hiểm (>40°C) gây suy đa tạng và tử vong do sốc nhiệt.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Ứng suất uốn tại khớp xương đùi trên cạn",
+                  issue: "Ứng suất uốn đạt 210 MPa, vượt giới hạn bền uốn của xương cá sấu (120 MPa), gây gãy xương chi khi cố gắng nhấc mình bò."
+                },
+                {
+                  type: "Tốc độ tản nhiệt qua da",
+                  issue: "Diện tích bề mặt tản nhiệt trên mỗi kg thể tích giảm 55%, gây sốc nhiệt trên cạn chỉ sau 40 phút phơi nắng."
+                }
+              ]
+            },
+            p4p_score_scaled: 35,
+            tier_scaled: "D",
+            sources: [
+              { label: "Locomotor mechanics and bone scaling in crocodilians", url: "https://doi.org/10.1242/jeb.060103" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Khủng long bạo chúa dưới nước)",
+            slug: "ca-sau-nuoc-man-5000kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa chi thẳng đứng chịu lực như Theropoda, hệ thống túi khí phổi đa luồng như khủng long và hệ tuần hoàn tản nhiệt dưới da.",
+            content: "Để sinh vật 5 tấn sinh tồn và săn mồi dũng mãnh ở cả hai môi trường:\n- Xương chi thẳng đứng (Parasagittal Limbs): Các chi tiến hóa xoay thẳng đứng xuống dưới cơ thể tương tự khủng long Theropoda, giúp chuyển tải trọng cơ thể trực tiếp vào trục xương thẳng đứng, giảm mô-men uốn xuống 90% và nâng đỡ cơ thể trườn chạy dễ dàng.\n- Hệ hô hấp túi khí (Avian-like Air Sacs): Tiến hóa hệ thống túi khí phụ trợ lưu thông một chiều như chim và khủng long, duy trì dòng khí oxy liên tục qua phổi mà không bị ép bởi nội tạng bụng.\n- Tấm sừng tản nhiệt chủ động (Vascularized Osteoderms): Các tấm sừng lưng tích hợp mạng lưới vi mạch máu dày đặc dưới da, đóng vai trò như các lá tản nhiệt nước chủ động khi mở miệng làm mát hoặc bơi trong nước lạnh.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Hệ số giảm mô-men xoắn chi xương thẳng đứng",
+                  benefit: "Giảm lực uốn từ 210 MPa xuống còn 21 MPa, cho phép chạy nước rút trên cạn đạt tốc độ 25 km/h."
+                },
+                {
+                  type: "Hiệu suất trao đổi oxy của hệ túi khí",
+                  benefit: "Duy trì hiệu suất trích xuất oxy ở mức 85% ngay cả khi khoang bụng bị đè nén dưới cạn."
+                }
+              ]
+            },
+            p4p_score_scaled: 90,
+            tier_scaled: "S",
+            sources: [
+              { label: "Unidirectional airflow in the lungs of crocodilians and birds", url: "https://doi.org/10.1126/science.1180208" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "shortfin-mako-shark") {
+      whatIfData.push({
+        creature_id: "shortfin-mako-shark",
+        title: "Nếu Cá Mập Mako Vây Ngắn phóng to lên 4.000kg (4 tấn) thì sao?",
+        slug: "neu-ca-map-mako-vay-ngan-phong-to-len-4000kg-4-tan",
+        description: "Phân tích kịch bản giả thuyết khi Cá Mập Mako Vây Ngắn (Isurus oxyrinchus) phóng to cơ thể lên 4 tấn, tương đương kích thước của Megalodon tiền sử.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cú phóng thủy lôi 120 km/h và lực cắn nghiền nát)",
+            slug: "ca-map-mako-vay-ngan-4000kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Cú đớp xé toạc đạt lực cắn 35 kN, tốc độ bơi tối đa đạt 120 km/h, phóng mình khỏi mặt nước cao tới 20 mét.",
+            content: "Khi Cá Mập Mako phóng to lên 4.000kg (chiều dài đạt ~7.2 mét, tăng khối lượng ~30 lần):\n- Tốc độ thủy lôi: Nhờ khối cơ đuôi đỏ (myotomal muscle) khổng lồ hoạt động liên tục. Động cơ sinh học này giải phóng lực đẩy thủy động học tăng theo tiết diện cơ (hệ số lambda^2 ≈ 9.6). Cá mập có thể đạt vận tốc bơi nước rút tức thời lên tới 120 km/h, đủ sức phóng mình bay cao 20m khỏi mặt nước.\n- Lực cắn hủy diệt: Răng cưa dài nhọn kết hợp cơ hàm nâng cấp tạo lực cắn lên tới 35.000 N (35 kN), dễ dàng ngoạm đứt đôi các loài động vật biển lớn.\n- Độ cơ động phi thường: Góc quay vây ngực rộng kết hợp thân hình con thoi khí động học tối ưu cho phép nó bẻ lái đổi hướng đột ngột với gia tốc 5 g dưới nước.",
+            formulas_and_data: {
+              scaling_factor: 29.6,
+              mass_kg_original: 135,
+              mass_kg_scaled: 4000,
+              formulas: [
+                {
+                  name: "Lực cắn phóng đại theo tiết diện hàm",
+                  equation: "F_bite_scaled = F_bite_original * (M_scaled / M_original)^(2/3)",
+                  result: "~35,100 N"
+                },
+                {
+                  name: "Động năng bơi nước rút ở vận tốc 120 km/h",
+                  equation: "E_kinetic = 1/2 * m * v^2",
+                  result: "~2,222,000 Joules (2.2 MJ)"
+                }
+              ]
+            },
+            p4p_score_scaled: 94,
+            tier_scaled: "S",
+            sources: [
+              { label: "Mako shark swimming speed and hydrodynamics", url: "https://doi.org/10.1242/jeb.060855" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Cơn ngạt thở khi đứng yên và tự luộc chín cơ thể vì quá nhiệt)",
+            slug: "ca-map-mako-vay-ngan-4000kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Cơ chế Ram Ventilation gây ngạt thở khi bơi chậm, và hệ cơ đỏ nội nhiệt khổng lồ tự luộc chín nội tạng do không tản kịp nhiệt.",
+            content: "Trong thực tế vật lý sinh học khi Cá Mập Mako nặng 4.000kg:\n- Ngạt thở Ram Ventilation: Cá mập mako bắt buộc phải bơi liên tục để đẩy nước qua mang lấy oxy (Ram Ventilation). Khi phóng to lên 4 tấn, thể tích cơ thể tăng 30 lần nhưng diện tích mang chỉ tăng 9.6 lần. Nó phải bơi với tốc độ tối thiểu 35 km/h liên tục để không bị thiếu oxy não, một mức tiêu thụ năng lượng không thể duy trì lâu dài.\n- Quá nhiệt nội sinh (Overheating): Mako là loài động vật nội nhiệt bán phần (tự giữ ấm cơ thể). Khi cơ thể đạt 4 tấn, tỷ lệ diện tích bề mặt/thể tích giảm mạnh khiến nhiệt lượng sinh ra từ khối cơ đỏ hoạt động cường độ cao bị tích tụ lại. Nhiệt độ nội tạng sẽ tăng vọt vượt mức 45°C, gây biến tính protein và tự hủy mô cơ (tự luộc chín cơ thể) chỉ sau vài phút tăng tốc.\n- Suy sụp sụn nâng đỡ: Khung xương sụn mềm dẻo không nâng đỡ nổi khối cơ 4 tấn dưới gia tốc bẻ lái lớn, gây vẹo lệch cột sống và tổn thương tủy sống.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Nhu cầu oxy vượt quá diện tích mang khuếch tán",
+                  issue: "Diện tích mang chỉ đáp ứng 32% nhu cầu trao đổi khí ở vận tốc bơi thông thường, bắt buộc phải bơi siêu nhanh để thở."
+                },
+                {
+                  type: "Tích tụ nhiệt độ nội sinh trong khối cơ đỏ",
+                  issue: "Nhiệt độ cơ thể tăng 1.8°C mỗi phút khi bơi nước rút, đạt giới hạn tử vong 45°C sau chưa đầy 10 phút."
+                }
+              ]
+            },
+            p4p_score_scaled: 32,
+            tier_scaled: "D",
+            sources: [
+              { label: "Thermal biology and endothermy limits in lamnid sharks", url: "https://doi.org/10.1111/j.1095-8649.2001.tb00166.x" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Thủy lôi sinh học tối tân)",
+            slug: "neu-ca-map-mako-vay-ngan-4000kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa cơ hoành mang bơm chủ động, hệ thống mao mạch tản nhiệt ngược dòng cực đại và sụn khoáng hóa cứng như xương.",
+            content: "Để Cá Mập Mako 4 tấn thống trị tuyệt đối đại dương:\n- Hô hấp chủ động (Active Branchial Pumping): Tiến hóa cơ vòng mang và van một chiều chủ động, cho phép nó tự bơm hút nước qua mang ngay cả khi đứng yên hoặc bơi chậm.\n- Siêu tản nhiệt mạch máu (Hyper-developed Rete Mirabile): Mạng lưới trao đổi nhiệt ngược dòng hoạt động ở chế độ đảo ngược thông minh, tự động chuyển hướng dòng máu nóng từ cơ đỏ ra sát các tấm mang ngoài để xả nhiệt nhanh chóng vào nước biển lạnh, khóa nhiệt độ cơ thể ổn định ở 20-25°C.\n- Sụn khoáng hóa sợi carbon (Carbon-fiber-like Mineralized Cartilage): Khung xương sụn được gia cố bằng các lớp hydroxyapatite và sợi collagen bó chặt dạng xoắn kép, tăng mô-đun đàn hồi lên gấp 8 lần, chịu lực uốn gập khi bẻ lái ở tốc độ 100 km/h.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Hệ số truyền nhiệt của mạng lưới tản nhiệt mới",
+                  benefit: "Tăng công suất xả nhiệt qua mang gấp 12 lần, giữ nhiệt độ cơ thể luôn ở mức an toàn 22°C."
+                },
+                {
+                  type: "Mô-đun đàn hồi xương sụn gia cố sợi",
+                  benefit: "Đạt mức 1.5 GPa (ngang ngửa xương động vật có vú), chống gãy gập cột sống khi chịu gia tốc xoay bẻ lái 5 g."
+                }
+              ]
+            },
+            p4p_score_scaled: 92,
+            tier_scaled: "S",
+            sources: [
+              { label: "Active gill ventilation and skeletal mineralisation in sharks", url: "https://doi.org/10.1002/jmor.20235" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "sperm-whale") {
+      whatIfData.push({
+        creature_id: "sperm-whale",
+        title: "Nếu Cá Nhà Táng thu nhỏ bằng con người (80kg) thì sao?",
+        slug: "neu-ca-nha-tang-thu-nho-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài động vật có vú khổng lồ Cá Nhà Táng (Physeter macrocephalus) bị thu nhỏ khối lượng xuống chỉ còn 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Súng xung kích siêu âm 200 dB và cú đâm đầu phá đá)",
+            slug: "ca-nha-tang-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Hệ thống phát sóng siêu âm táng phóng ra luồng xung kích 200 dB làm tê liệt con mồi ở khoảng cách gần, đâm đầu phá vỡ chướng ngại vật.",
+            content: "Khi Cá Nhà Táng thu nhỏ xuống 80kg (tương đương chiều dài cơ thể ~1.6 mét, giảm khối lượng ~500.000 lần):\n- Súng siêu âm cầm tay: Nếu cấu trúc cơ quan táng (spermaceti organ) được thu nhỏ hoàn hảo và giữ mật độ năng lượng phát âm. Tiếng nhấp (click) siêu thanh tần số cao phát ra qua thấu kính dầu sáp táng có thể hội tụ năng lượng sóng âm đạt áp suất đỉnh 200 dB ở khoảng cách 1 mét, đủ sức phá hủy màng nhĩ và làm choáng váng tê liệt tức thì các loài cá nhỏ hoặc thợ lặn xung quanh.\n- Tỷ lệ lực đâm đầu cao: Hộp sọ chứa khối spermaceti đóng vai trò như một túi đệm hấp thụ chấn lực khổng lồ. Cú đâm đầu trực diện có thể tạo áp lực 12.000 N mà không gây chấn thương não, cho phép nó phá vỡ các rặng san hô hoặc đá ngầm để mở đường.\n- Lặn sâu cơ bắp: Tỷ lệ sợi cơ chứa nhiều myoglobin giúp dự trữ oxy cực lớn, cho phép cá nhà táng nhỏ lặn sâu 1.000m trong vòng 40 phút mà không gặp khó khăn.",
+            formulas_and_data: {
+              scaling_factor: 0.000002,
+              mass_kg_original: 40000,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Áp suất âm thanh hội tụ ở kích thước nhỏ",
+                  equation: "P_scaled = P_original * (R_scaled / R_original)",
+                  result: "~200 dB (tại cự ly 1 mét)"
+                },
+                {
+                  name: "Lực va đập đệm đầu hấp thụ bởi cơ quan táng",
+                  equation: "F_impact = m * delta_v / delta_t",
+                  result: "~12,000 N"
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "A",
+            sources: [
+              { label: "The function of the spermaceti organ in acoustic transmission and combat", url: "https://doi.org/10.1242/jeb.00282" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Chết cóng tức thì do mất nhiệt và sụp đổ hệ phát âm siêu âm)",
+            slug: "ca-nha-tang-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Cơ thể bị hạ thân nhiệt cấp tính tử vong trong nước lạnh do mất nhiệt nhanh gấp 79 lần, và cơ quan táng quá nhỏ không phát nổi sóng siêu thanh tần số thấp.",
+            content: "Trong thế giới thực tế sinh học, Cá Nhà Táng 80kg sẽ nhanh chóng tử vong do:\n- Hạ thân nhiệt cấp tính (Hypothermia): Tỷ lệ diện tích bề mặt trên thể tích cơ thể tăng vọt gấp 79 lần so với nguyên bản 40 tấn. Nhiệt lượng cơ thể bị nước biển dẫn truyền lấy đi nhanh chóng. Lớp mỡ dày của cá voi nhỏ không đủ ngăn cản dòng thoát nhiệt này dưới nước lạnh sâu (4°C), con vật sẽ bị đông cứng cơ tim và tử vong do hạ thân nhiệt chỉ sau 15-20 phút.\n- Sụp đổ Biosonar: Sóng âm định vị của cá nhà táng có tần số thấp (10-25 kHz) đòi hỏi bước sóng dài và đường kính cơ quan táng tối thiểu phải đạt 1.5 mét để cộng hưởng tạo chùm tia định hướng. Ở kích thước 80kg, chiều dài cơ quan táng chỉ còn 25cm, khiến nó không thể phát ra sóng âm định vị tần số thấp hiệu quả, hệ thống dẫn đường và săn mồi biển sâu bị tê liệt hoàn toàn.\n- Giới hạn dưỡng khí lặn sâu: Khối lượng máu và cơ ít ỏi không tích trữ đủ lượng oxy cho các chuyến lặn kéo dài quá 3 phút, làm nó mất khả năng tiếp cận thức ăn sâu.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Tốc độ truyền nhiệt thất thoát ra môi trường",
+                  issue: "Hệ số truyền nhiệt tăng 7.900%, nhiệt lượng cơ thể hạ xuống dưới mức sinh tồn (30°C) chỉ sau 18 phút trong nước biển lạnh."
+                },
+                {
+                  type: "Bước sóng âm thanh giới hạn bởi kích thước buồng táng",
+                  issue: "Tần số cắt tối thiểu tăng lên 60 kHz (sóng siêu âm ngắn), sóng âm bị hấp thụ và tiêu tán nhanh trong nước, giảm tầm quét từ 1.000m xuống còn 5m."
+                }
+              ]
+            },
+            p4p_score_scaled: 22,
+            tier_scaled: "D",
+            sources: [
+              { label: "Scaling of mammalian thermoregulation and whale biosonar limits", url: "https://doi.org/10.1111/j.1469-7998.2007.00392.x" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Sát thủ siêu âm mini)",
+            slug: "ca-nha-tang-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa lớp mỡ composite aerogel siêu giữ nhiệt, buồng táng cấu trúc tinh thể nano tập trung sóng siêu âm tần số siêu cao.",
+            content: "Để Cá Nhà Táng 80kg sinh tồn tốt và săn mồi hiệu quả ở biển sâu:\n- Mỡ bọc Composite Aerogel (Aerogel Blubber): Lớp mỡ dưới da tiến hóa chứa các bong bóng nitơ siêu nhỏ bao bọc bởi protein dạng gel đàn hồi, giảm hệ số dẫn nhiệt xuống mức ngang ngửa aerogel (0.015 W/m.K), ngăn chặn hoàn toàn sự mất nhiệt kể cả trong nước đóng băng.\n- Bộ cộng hưởng sáp táng nano (Nano-crystal Spermaceti Resonator): Các lipid trong cơ quan táng sắp xếp thành cấu trúc tinh thể lỏng nano tự nhiên, hoạt động như một thấu kính siêu vật liệu (metamaterial) hội tụ và khuếch đại sóng siêu âm tần số siêu cao (150 kHz), tạo chùm tia siêu âm hẹp tầm xa 100m để định vị và làm tê liệt não cá mồi tức thì.\n- Phổi nén mật độ cao (Hyper-dense Lung Alveoli): Phổi có cấu trúc chứa các nang mao mạch chịu áp lực cao, hấp thụ oxy nhanh gấp 8 lần, kết hợp nồng độ hemoglobin huyết thanh tăng vọt để kéo dài thời gian lặn sâu lên 35 phút.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Hệ số dẫn nhiệt lớp mỡ cải tiến",
+                  benefit: "Hệ số dẫn nhiệt giảm từ 0.20 W/m.K xuống 0.015 W/m.K, duy trì thân nhiệt 37°C vô hạn dưới nước băng giá."
+                },
+                {
+                  type: "Tần số phát sóng và độ mở chùm tia siêu âm",
+                  benefit: "Phát sóng 150 kHz với độ mở chùm tia cực hẹp chỉ 2 độ, tăng độ phân giải định vị con mồi nhỏ cách xa 80m."
+                }
+              ]
+            },
+            p4p_score_scaled: 82,
+            tier_scaled: "A",
+            sources: [
+              { label: "Acoustic metamaterials and biological sonar evolution", url: "https://doi.org/10.1121/1.4921603" }
+            ]
+          }
+        ]
+      });
     } else if (target.id === "peacock-mantis-shrimp") {
       whatIfData.push({
         creature_id: target.id,
