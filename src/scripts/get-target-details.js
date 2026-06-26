@@ -26,7 +26,7 @@ if (!supabaseUrl || !supabaseAnonKey) {
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 async function run() {
-  const ids = ["exploding-ant", "flamboyant-cuttlefish", "fossa", "frilled-neck-lizard", "gaboon-viper"];
+  const ids = ["gila-monster", "glass-frog", "goblin-shark", "golden-eagle", "golden-poison-frog"];
   const { data, error } = await supabase
     .from("creatures")
     .select("*")
