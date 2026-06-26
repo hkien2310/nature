@@ -301,5 +301,7 @@ Khi nhận được các câu lệnh sau, AI bắt buộc phải đọc hướng
 - Lệnh `"Làm giàu data"`: Tự động nâng cấp sâu thông tin khoa học cho 5 sinh vật.
 - Lệnh `"Chấm điểm P4P"`: Tự động hiệu chuẩn P4P và cập nhật xếp hạng cho 5 sinh vật.
 - Lệnh `"Làm giàu What-If"`: Tự động tạo kịch bản câu hỏi/câu trả lời giả thuyết cho 3 sinh vật.
+- Lệnh `"Làm giàu Ghép Gen"`: Tự động lai ghép gen sinh vật vào người cho 3 sinh vật.
+
 
 

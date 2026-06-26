@@ -1,0 +1,628 @@
+[
+  {
+    "id": "pacific-hagfish",
+    "name": "Lươn Nhầy Thái Bình Dương",
+    "scientific_name": "Eptatretus stoutii",
+    "class": "Myxini",
+    "order": "Myxiniformes",
+    "family": "Myxinidae",
+    "real_weight": "~0.8 - 1.4 kg",
+    "size": "30 - 63 cm",
+    "characteristics": "Thân thon dài màu hồng xám nhạt không xương sống thực sự, miệng không hàm chứa tấm răng sừng dẻo, có các sợi râu cảm giác quanh miệng. Hai bên sườn có hàng trăm lỗ tuyến nhầy có thể sản xuất lượng dịch nhầy khổng lồ trong chốc lát. Thân thể cực kỳ dẻo dai giống như sợi dây chun. Các tuyến chất nhầy chứa hàng triệu sợi protein siêu mảnh liên kết chặt chẽ với nhau khi tiếp xúc với ion natri trong nước biển. Da của chúng cực kỳ lỏng lẻo, bọc quanh cơ thể như một lớp túi bảo vệ đàn hồi cao. Tuyến dịch nhầy ở sườn có thể giải phóng túi chất nhầy chứa các sợi keratin trung gian dẻo dai. Tuyến dịch nhầy ở sườn có thể tự chủ giải phóng các túi protein keratin siêu dẻo dai trương nở lập tức khi tiếp xúc với ion muối biển. Tuyến dịch nhầy ở sườn có thể tự chủ giải phóng các túi protein keratin siêu dẻo dai trương nở lập tức khi tiếp xúc với ion muối biển.",
+    "habitat": "Vùng đáy biển sâu thẳm, nhiều bùn lạnh giá.",
+    "location": "Bắc Thái Bình Dương, kéo dài từ ven biển Alaska đến Baja California.",
+    "survival_method": "Sống rình rập và chui rúc dưới bùn đáy sâu. Khi bị kẻ săn mồi (như cá mập) tấn công, hagfish phun ra chất nhầy protein trương nở gấp 10.000 lần khi gặp nước biển, làm nghẹt mang kẻ thù khiến chúng buộc phải nhả ra. Ngoài ra da của chúng cực kỳ lỏng lẻo giúp chống lại các vết đâm. Khi xâm nhập xác động vật lớn, chúng sử dụng cơ chế thở qua da để tránh bị ngạt thở khi vùi đầu sâu trong mô thịt phân hủy. Chúng tự thắt nút cơ thể để di chuyển nút thắt dọc chiều dài thân từ đầu tới đuôi để tạo sức bật hoặc vắt kiệt chất nhầy bám dính. Uốn dẻo thắt nút cơ thể hình chữ S hoặc số 8 để cạo sạch chất nhầy bám dính trên da và tạo đòn bẩy kéo giật thịt con mồi. Nhờ khả năng uốn cong linh hoạt dạng xoắn thòng lọng, chúng tạo điểm tì cơ học vững chãi để xé thức ăn từ những chiếc xác lớn ở đáy đại dương mà không cần xương hàm phức tạp. Hô hấp qua da trơn lỏng lẻo khi vùi đầu ăn sâu trong xác mồi phân hủy thiếu dưỡng khí trầm trọng. Hô hấp qua da trơn lỏng lẻo khi vùi đầu ăn sâu trong xác mồi phân hủy thiếu dưỡng khí trầm trọng.",
+    "unique_traits": "Khả năng uốn dẻo thắt nút cơ thể (tie in a knot) để cạo chất nhầy khỏi da và tăng lực kéo xé xác con mồi lớn. Là động vật duy nhất có sọ sụn nhưng không có cột sống. Có thể hấp thụ dinh dưỡng trực tiếp qua da và hô hấp tốt trong bùn anoxic đáy biển. Da của chúng cực kỳ đặc biệt, không có lớp vảy và siêu bền, có thể chịu được áp lực răng nanh sắc bén của kẻ thù mà không bị rách sâu. Sở hữu tới 4 trái tim và hệ tuần hoàn mở cực kỳ độc đáo. Hệ thống tuần hoàn có 4 tim phụ trợ hoạt động độc lập giúp duy trì áp suất máu cực thấp trong môi trường thiếu oxy. Sợi tơ nhầy có cấu trúc siêu liên kết có thể giãn dài gấp nhiều lần mà không đứt gãy, mở ra hướng nghiên cứu vật liệu polyme tự nhiên mới. Hệ thống tuần hoàn mở độc đáo với 4 tim phụ độc lập hoạt động duy trì huyết áp cực thấp ở môi trường nước sâu. Hệ thống tuần hoàn mở độc đáo với 4 tim phụ độc lập hoạt động duy trì huyết áp cực thấp ở môi trường nước sâu.",
+    "short_description": "Tiết dịch nhầy làm ngạt thở cá mập. Bậc thầy uốn dẻo thắt nút thân mình.",
+    "description": "Lươn Nhầy Thái Bình Dương (Eptatretus stoutii) là loài sinh vật cổ xưa có cơ chế tự vệ hóa học độc nhất vô nhị. Tuyến sườn của chúng tiết ra các sợi protein mucin siêu mảnh. Khi gặp nước biển, các sợi này liên kết nước tạo ra khối gel nhầy dày đặc, dẻo dai làm tắc mang cá săn mồi lập tức. Cơ thể hoàn toàn không có cột sống xương mà chỉ có hộp sọ sụn cho phép chúng thắt nút cơ thể cực kỳ linh hoạt để tự làm sạch da và tạo điểm tựa gặm xé xác động vật chết dưới đáy đại dương.",
+    "strengths": [
+      "Chất nhầy phản ứng nở siêu nhanh bịt kín mang kẻ thù làm ngạt thở",
+      "Khả năng thắt nút cơ thể linh hoạt vô song tạo đòn bẩy kéo xé",
+      "Lớp da cực dai và đàn hồi cao chống lại vết cắn của cá dữ",
+      "Khả năng nhịn ăn kéo dài nhiều tháng trong điều kiện thiếu thốn đáy sâu",
+      "Khả năng hấp thụ chất dinh dưỡng trực tiếp qua da khi ngập trong xác mồi",
+      "Khả năng chịu đựng nồng độ oxy cực thấp dưới bùn sâu",
+      "Hệ miễn dịch cực kỳ nguyên thủy nhưng mạnh mẽ giúp chống lại các vi khuẩn trong môi trường phân hủy",
+      "Da siêu đàn hồi và lỏng lẻo hấp thụ lực cắn và ngăn vết đâm thủng mô mềm",
+      "Khả năng tự thắt nút cơ thể để cạo chất nhầy khỏi da và tăng lực kéo xé",
+      "Sợi tơ protein siêu dai bền hơn cả tơ nhện thông thường.",
+      "Lớp da trơn lỏng lẻo không vảy hoạt động như tấm giáp đàn hồi phân tán lực cắn răng nanh kẻ thù.",
+      "Sợi tơ protein trong chất nhầy siêu mỏng bền chắc tương đương nylon đang được nghiên cứu làm vật liệu vải sinh học.",
+      "Sợi protein siêu dai trong chất nhầy bền chắc hơn nylon gấp nhiều lần.",
+      "Lớp da bọc cực lỏng lẻo có khả năng co giãn hấp thụ chấn động từ răng nanh cá dữ."
+    ],
+    "weaknesses": [
+      "Hoàn toàn không có hàm răng sắc bén để chủ động chiến đấu cắn xé mạnh",
+      "Thị giác suy giảm nghiêm trọng gần như mù hoàn toàn",
+      "Khả năng tự vệ giảm mạnh nếu ở trong nước ngọt vì chất nhầy khó trương nở",
+      "Môi trường sống hạn chế ở vùng nước mặn có độ ẩm và độ lạnh ổn định của đáy biển sâu",
+      "Không có khả năng di chuyển nhanh hoặc cơ động cao để trốn thoát chủ động",
+      "Phụ thuộc chặt chẽ vào độ mặn cao của đại dương để điều hòa áp suất thẩm thấu cơ thể",
+      "Không thể sinh sống trong môi trường nước có độ mặn thấp hoặc nước ngọt",
+      "Bị vô hiệu hóa hoàn toàn khi chất nhầy phản ứng trong môi trường nước ngọt.",
+      "Bị vô hiệu hóa hoàn toàn cơ chế nhầy tự vệ khi lọt vào vùng nước ngọt vì chất nhầy không thể phản ứng nở ra.",
+      "Thị giác thoái hóa gần như mù hoàn toàn, phụ thuộc tuyệt đối vào râu xúc giác quanh miệng định vị.",
+      "Bị vô hiệu hóa hoàn toàn cơ chế tạo nhầy tự vệ khi rơi vào môi trường nước ngọt."
+    ],
+    "fun_facts": [
+      "Một con lươn nhầy lớn có thể biến cả một xô nước biển thành khối keo đặc quánh chỉ trong vài giây",
+      "Hagfish sở hữu 4 quả tim nằm ở các vùng cơ thể khác nhau để hỗ trợ hệ tuần hoàn áp suất thấp",
+      "Chúng có thể hô hấp thông qua lớp da trơn mỏng khi chui sâu dưới bùn cát đáy biển",
+      "Chúng có thể hấp thụ chất dinh dưỡng trực tiếp qua da và mang, điều này cực kỳ có lợi khi chui rúc sâu bên trong các xác động vật phân hủy.",
+      "Mặc dù trông giống lươn, hagfish hoàn toàn không có mối quan hệ họ hàng gần gũi với lươn thực sự (thuộc lớp cá xương).",
+      "Sợi nhầy của hagfish cực kỳ dai, mỏng hơn tơ nhện nhưng bền chắc tương đương nylon, đang được nghiên cứu để sản xuất vải sinh học siêu nhẹ",
+      "Các nhà khoa học phát hiện ra rằng sợi protein trong chất nhầy của lươn nhầy Thái Bình Dương có đường kính chỉ bằng 1/100 sợi tóc người nhưng lại có khả năng chịu lực căng tương đương với tơ nhện hoặc sợi Kevlar chống đạn",
+      "Hagfish là loài sinh vật duy nhất còn sống sót có cấu tạo sọ não cổ xưa từ hơn 500 triệu năm trước mà hầu như không thay đổi.",
+      "Lươn nhầy có thể nhịn ăn đến vài tháng mà vẫn hoạt động bình thường nhờ cơ chế trao đổi chất cực kỳ chậm ở đáy sâu.",
+      "Chất nhầy của lươn nhầy Thái Bình Dương có thể nở ra gấp hàng chục nghìn lần thể tích ban đầu chỉ trong chưa đầy 0.1 giây khi gặp nước biển.",
+      "Chúng có thể tự thắt nút cơ thể xoay chuyển dọc thân mình để cạo sạch chất nhầy bám dính trên da sau khi tự vệ.",
+      "Hagfish có thể nhịn ăn nhiều tháng liên tục nhờ tốc độ trao đổi chất cực thấp và khả năng hấp thụ trực tiếp dinh dưỡng qua da.",
+      "Chúng có thể tự thắt nút cơ thể xoay chuyển dọc thân mình để cạo sạch chất nhầy bám dính trên da sau khi tự vệ.",
+      "Hagfish có thể nhịn ăn nhiều tháng liên tục nhờ tốc độ trao đổi chất cực thấp và khả năng hấp thụ trực tiếp dinh dưỡng qua da."
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1242/jeb.060160",
+        "label": "Journal of Experimental Biology - Hagfish slime defense"
+      },
+      {
+        "url": "https://doi.org/10.1038/nature11867",
+        "label": "Nature - Evolution and genetics of hagfishes"
+      },
+      {
+        "url": "https://www.nature.com/articles/nmat4156",
+        "label": "Nature Materials - Biomimetic materials based on hagfish slime"
+      },
+      {
+        "url": "https://animaldiversity.org/accounts/Eptatretus_stoutii/",
+        "label": "Animal Diversity Web - Eptatretus stoutii Profile"
+      },
+      {
+        "url": "https://www.fishbase.se/summary/Eptatretus-stoutii.html",
+        "label": "FishBase - Eptatretus stoutii Biology & Identification"
+      },
+      {
+        "url": "https://doi.org/10.1098/rsbl.2011.0118",
+        "label": "Biology Letters - Hagfish slime threads and material properties"
+      },
+      {
+        "url": "https://www.nytimes.com/2019/01/22/science/hagfish-slime.html",
+        "label": "The New York Times - The Miracle of Hagfish Slime"
+      },
+      {
+        "url": "https://doi.org/10.1098/rsif.2018.0710",
+        "label": "Journal of The Royal Society Interface - Hagfish slime biomechanics"
+      },
+      {
+        "url": "https://doi.org/10.1098/rsif.2019.0115",
+        "label": "Journal of The Royal Society Interface - Hagfish slime thread mechanics and deployment"
+      },
+      {
+        "url": "https://doi.org/10.1098/rsif.2018.0710",
+        "label": "Journal of The Royal Society Interface - Hagfish slime biomechanics"
+      },
+      {
+        "url": "https://doi.org/10.1098/rsif.2019.0115",
+        "label": "Journal of The Royal Society Interface - Hagfish slime thread mechanics and deployment"
+      }
+    ],
+    "image_color": "#A569BD",
+    "enrichment_count": 11
+  },
+  {
+    "id": "panther-chameleon",
+    "name": "Tắc Kè Hoa Báo",
+    "scientific_name": "Furcifer pardalis",
+    "class": "Reptilia",
+    "order": "Squamata",
+    "family": "Chamaeleonidae",
+    "real_weight": "60 - 180 g",
+    "size": "30 - 52 cm",
+    "characteristics": "Thân hình dẹt hai bên thích nghi leo trèo, đuôi có khả năng cầm nắm tựa như cánh tay thứ năm tiện lợi. Khả năng biến đổi màu sắc vô cùng phong phú thông qua các tinh thể iridophore trong tế bào biểu bì da để giao tiếp và ngụy trang điều hòa thân nhiệt. Mắt có cấu trúc nhô cao hình nón xoay độc lập 360 độ cung cấp tầm nhìn toàn cảnh hoàn hảo không điểm mù. Chân chia ngón kìm đối xứng (zygodactylous) kẹp chặt cành cây. Da chứa các tế bào iridophore chứa tinh thể nano nanocrystal phản chiếu ánh sáng tạo ra biến đổi màu sắc chủ động. Tế bào sắc tố iridophore chứa các tinh thể nano guanin có khả năng thay đổi khoảng cách linh hoạt để phản xạ các bước sóng ánh sáng khác nhau. Tuyến da tiết ra hợp chất tự nhiên chống thấm nước bảo vệ biểu bì. Tuyến da tiết ra hợp chất tự nhiên chống thấm nước bảo vệ biểu bì.",
+    "habitat": "Các khu rừng mưa nhiệt đới ven biển ẩm ướt, thảm thực vật cây bụi dày đặc và các khu vườn nông nghiệp.",
+    "location": "Bản địa ở các vùng phía bắc và phía đông của đảo Madagascar, cũng như các đảo lân cận.",
+    "survival_method": "Ngụy trang tuyệt đối bằng cách đổi màu sắc hòa mình vào lá cây. Chúng săn mồi một cách tĩnh lặng bằng cách rình rập, sau đó định vị chính xác con mồi bằng cặp mắt xoay độc lập. Khi con mồi lọt vào tầm ngắm, tắc kè hoa sẽ phóng chiếc lưỡi cơ học siêu tốc bám dính lấy mục tiêu nhờ đầu lưỡi siêu dính rồi co lại nuốt chửng. Định vị lập thể cực chính xác bằng cặp mắt xoay 360 độ độc lập trước khi phóng chiếc lưỡi lò xo đàn hồi. Sử dụng cơ chế phối hợp thị giác lập thể 3D phân kỳ và hội tụ nhanh chóng để khóa mục tiêu trước khi phóng lưỡi săn mồi. Tận dụng lực bám chân kìm chia ngón đối xứng để neo giữ cơ thể khi thực hiện các cú phóng lưỡi mạnh. Tận dụng lực bám chân kìm chia ngón đối xứng để neo giữ cơ thể khi thực hiện các cú phóng lưỡi mạnh.",
+    "unique_traits": "Chiếc lưỡi có thể phóng dài gấp rưỡi đến hai lần chiều dài cơ table với gia tốc lên đến 41g, đạt tốc độ 100 km/h trong 1/100 giây nhờ cơ chế lưu trữ năng lượng đàn hồi trong các sợi collagen. Mắt xoay 360 độ độc lập cho phép quan sát hai hướng khác nhau cùng lúc. Con cái có khả năng trữ tinh trùng đến hai năm sau khi giao phối để sinh sản tự chủ. Cấu trúc tinh thể nano quang học trong da tự động thay đổi khoảng cách giữa chúng để khúc xạ các bước sóng ánh sáng khác nhau. Bàn chân zygodactylous chia ngón dạng kìm kẹp chặt nhánh cây và chiếc vảy ngụy trang hoàn hảo. Đầu lưỡi có cấu trúc lõm cơ học hoạt động như một giác hút chân không thủy động lực học khi va chạm với con mồi. Cấu trúc liên kết xương sọ linh hoạt giảm chấn động dội lại từ lưỡi phóng gia tốc cao. Cấu trúc liên kết xương sọ linh hoạt giảm chấn động dội lại từ lưỡi phóng gia tốc cao.",
+    "short_description": "Lưỡi phóng gia tốc 41g. Mắt xoay độc lập 360 độ và da ngụy trang siêu hạng.",
+    "description": "Tắc Kè Hoa Báo là một trong những loài tắc kè hoa lớn nhất và có màu sắc sặc sỡ nhất thế giới. Loài bò sát độc đáo này nổi tiếng với khả năng ngụy trang và săn mồi đỉnh cao nhờ những cải tiến cơ sinh học đáng kinh ngạc của tự nhiên. Chúng sở hữu các bàn chân chia ngón đối xứng giống như kìm (zygodactylous) để bám chắc vào cành cây và một chiếc đuôi có khả năng cuộn tròn bám giữ trọng lượng cơ thể. Điểm đáng sợ đối với các loài côn trùng chính là chiếc lưỡi cơ học có cấu tạo giống như một lò xo nén, có thể phóng ra với tốc độ cực nhanh mà mắt thường không kịp nhìn thấy, kết hợp cùng chất nhầy siêu bám dính ở đầu lưỡi để đảm bảo con mồi không thể trốn thoát.",
+    "strengths": [
+      "Khả năng đổi màu sắc linh hoạt để ngụy trang hoàn hảo và giao tiếp xã hội",
+      "Tầm nhìn 360 độ không có điểm mù nhờ cặp mắt xoay độc lập",
+      "Lưỡi phóng siêu tốc với lực bám dính cực lớn, tầm xa vượt trội",
+      "Chân chia ngón kìm khóa và đuôi cuốn giúp di chuyển vững chắc trên các cành cây mỏng",
+      "Độ bám dính lưỡi siêu việt nhờ cấu trúc giác hút nước bọt siêu nhớt ở đầu lưỡi",
+      "Khả năng lưu trữ tinh trùng lâu dài giúp giống loài duy trì sinh sản ổn định",
+      "Hệ thống xương sườn linh hoạt có thể làm xẹp cơ thể để ẩn nấp sau các cành cây hẹp",
+      "Mắt có khả năng phóng đại hình ảnh như ống kính tele để nhắm mục tiêu chính xác",
+      "Giác hút ở đầu lưỡi cực dính và cơ chế phóng lưỡi nhanh hơn chớp mắt",
+      "Cơ cấu phóng lưỡi dạng máy phóng lò xo collagen tích lũy động năng.",
+      "Lực phóng lưỡi có gia tốc cực đại đạt 41G, nhanh gấp 4 lần xe đua F1",
+      "Đầu lưỡi siêu dính với lực kéo bằng 30% trọng lượng cơ thể nhờ chất nhầy siêu nhớt",
+      "Thị giác 360 độ không điểm mù với cặp mắt xoay độc lập",
+      "Bàn chân kìm (zygodactylous) và đuôi cuộn bám dính tuyệt đối trên cành cây mảnh",
+      "Tinh thể nano guanin trong da thay đổi khoảng cách phản xạ ánh sáng tạo khả năng ngụy trang đỉnh cao",
+      "Khả năng cảm thụ chiều sâu và ước lượng khoảng cách siêu chính xác bằng một mắt đơn độc",
+      "Cơ cấu phóng lưỡi dạng máy bắn đá tích lũy động năng qua các bao sợi collagen.",
+      "Khả năng ước lượng khoảng cách lập thể cực kỳ chuẩn xác chỉ bằng một mắt đơn."
+    ],
+    "weaknesses": [
+      "Tốc độ di chuyển trên mặt đất cực kỳ chậm chạp và vụng về",
+      "Thể trạng dễ bị căng thẳng trước các mối đe dọa liên tục, ảnh hưởng trực tiếp đến tuổi thọ",
+      "Không có vũ khí cận chiến bảo vệ khi bị kẻ thù phát hiện ở cự ly gần",
+      "Khả năng chịu lạnh kém, phụ thuộc nhiệt độ môi trường để điều hòa thân nhiệt",
+      "Dễ bị tổn thương bởi các loài chim săn mồi lớn và rắn ăn bò sát do kích thước cơ thể trung bình",
+      "Bắt buộc phải uống nước nhỏ giọt từ lá cây, khó hấp thụ nước đọng hoặc vũng nước tĩnh",
+      "Rất nhạy cảm với stress, dễ suy kiệt nếu bị đe dọa liên tục",
+      "Thời gian chu kỳ nạp lại năng lượng cho các thớ cơ lưỡi kéo dài sau mỗi cú phóng trượt.",
+      "Di chuyển trên mặt đất cực kỳ chậm chạp và vụng về",
+      "Hoàn toàn không có khả năng chiến đấu cận chiến hay phòng thủ vật lý khi bị dồn vào góc",
+      "Nhạy cảm cao với stress, suy kiệt nhanh chóng khi bị đe dọa liên tục",
+      "Phụ thuộc hoàn toàn vào nguồn nước nhỏ giọt, không thể uống nước đứng",
+      "Cơ thể dễ mất nhiệt độ nhanh chóng khi môi trường lạnh",
+      "Dễ suy kiệt thể trạng và hệ thống miễn dịch nếu bị stress liên tục do kích động."
+    ],
+    "fun_facts": [
+      "Sự thay đổi màu sắc của tắc kè hoa báo không phải để ngụy trang là chính, mà là để thể hiện cảm xúc, nhiệt độ cơ thể và trạng thái sinh sản",
+      "Lưỡi của chúng có thể tăng tốc từ 0 đến 97 km/h nhanh gấp 4 lần so với một chiếc siêu xe đua F1",
+      "Chất nhầy trên đầu lưỡi tắc kè hoa có độ nhớt cao gấp 400 lần so với nước bọt của con người, giúp nó giữ được con mồi nặng tới 30% trọng lượng cơ thể nó",
+      "Tắc kè hoa báo Madagascar thể hiện các biến thể màu sắc khác nhau phụ thuộc trực tiếp vào vùng địa lý (localities) chúng sinh sống trên đảo",
+      "Một con tắc kè hoa cái có thể lưu trữ tinh trùng của con đực trong ống sinh sản tới 2 năm, cho phép nó tiếp tục đẻ nhiều lứa trứng thụ tinh ngay cả khi hoàn toàn cô lập đơn độc.",
+      "Chúng không có tai ngoài hoặc tai giữa nên không thể nghe thấy hầu hết các âm thanh truyền qua không khí, thay vào đó cảm nhận rung động qua xương",
+      "Mắt của chúng được che chở bởi mí mắt dày hình nón chỉ chừa lại một lỗ nhỏ ở giữa cho con ngươi nhìn ra ngoài.",
+      "Khi tức giận hoặc muốn thu hút con cái, tắc kè hoa báo đực sẽ hiển thị các màu sắc chói lọi như đỏ, vàng, cam rực rỡ chỉ trong vài giây.",
+      "Gia tốc phóng lưỡi của tắc kè hoa báo có thể đạt tới 2590 m/s², vượt trội hơn hầu hết động vật có xương sống.",
+      "Mắt của tắc kè hoa có thể phóng đại hình ảnh như một chiếc ống kính máy ảnh tele chuyên nghiệp.",
+      "Chất nhầy trên đầu lưỡi có độ nhớt gấp 400 lần nước bọt con người.",
+      "Màu sắc sặc sỡ nhất xuất hiện khi chúng tức giận hoặc muốn thu hút bạn đời, không chỉ để ngụy trang.",
+      "Chất nhầy trên đầu lưỡi có độ nhớt gấp 400 lần nước bọt con người.",
+      "Màu sắc sặc sỡ nhất xuất hiện khi chúng tức giận hoặc muốn thu hút bạn đời, không chỉ để ngụy trang."
+    ],
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/ncomms.2015.10243",
+        "label": "Nature Communications - Photonic crystals cause active colour change in chameleons"
+      },
+      {
+        "url": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.93.062402",
+        "label": "Physical Review E - Dynamics of the chameleon tongue strike"
+      },
+      {
+        "url": "https://www.iucnredlist.org/species/172729/1372138",
+        "label": "IUCN Red List - Furcifer pardalis"
+      },
+      {
+        "url": "https://www.nature.com/articles/nphys3795",
+        "label": "Nature Physics - Viscous adhesion in chameleon prey capture"
+      },
+      {
+        "url": "https://animaldiversity.org/accounts/Furcifer_pardalis/",
+        "label": "Animal Diversity Web - Furcifer pardalis"
+      },
+      {
+        "url": "https://chameleonacademy.com/panther-chameleon-care/",
+        "label": "Chameleon Academy - Panther Chameleon Care Guide"
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4021245/",
+        "label": "PMC - Tongue projection in chameleons"
+      },
+      {
+        "url": "https://www.wired.com/2015/03/chameleon-color-change-nanocrystals/",
+        "label": "Wired - Chameleons Change Color Using Nanocrystals"
+      },
+      {
+        "url": "https://doi.org/10.1098/rsbl.2015.1018",
+        "label": "Biology Letters - High-performance acceleration of chameleon tongue"
+      },
+      {
+        "url": "https://doi.org/10.1098/rsbl.2015.1018",
+        "label": "Biology Letters - High-performance acceleration of chameleon tongue"
+      },
+      {
+        "url": "https://doi.org/10.1098/rsbl.2015.1018",
+        "label": "Biology Letters - High-performance acceleration of chameleon tongue"
+      },
+      {
+        "url": "https://doi.org/10.1098/rsbl.2015.1018",
+        "label": "Biology Letters - High-performance acceleration of chameleon tongue"
+      }
+    ],
+    "image_color": "#2ECC71",
+    "enrichment_count": 11
+  },
+  {
+    "id": "paradise-flying-snake",
+    "name": "Rắn Bay Thiên Đường",
+    "scientific_name": "Chrysopelea paradisi",
+    "class": "Reptilia",
+    "order": "Squamata",
+    "family": "Colubridae",
+    "real_weight": "~120g",
+    "size": "1 - 1.2 m",
+    "characteristics": "Thân dài mảnh mai, hoa văn vảy màu xanh lục, đen xen kẽ các chấm đỏ hoặc vàng rực rỡ như hoa văn thổ cẩm. Đầu dẹt, mắt lớn với đồng tử tròn giúp định vị không gian cực tốt. Xương sườn có khớp nối linh hoạt đặc biệt cho phép xòe rộng sang hai bên. Da bụng lỏng lẻo thu lại thành khoang rỗng khi nén cơ sườn. Thân hình dẹt phẳng và xương sườn có khớp quay cực đại giúp tối ưu hóa bề mặt chịu gió. Sự kết hợp giữa biến dạng cơ sườn và sự dao động uốn lượn liên tục tạo ra lực nâng nâng đỡ toàn bộ cơ thể. Tuyến da tiết chất sáp mỏng chống thoát nước biểu bì. Khung xương sườn gồm hơn 200 đốt sống với các khớp xoay linh động tối đa.",
+    "habitat": "Tán rừng mưa nhiệt đới ẩm ướt và các khu vườn ẩm thấp tại Đông Nam Á.",
+    "location": "Các nước Đông Nam Á bao gồm Việt Nam, Thái Lan, Malaysia, Indonesia và Philippines.",
+    "survival_method": "Săn thằn lằn, dơi và côn trùng trên cây cao. Khi trốn thoát hoặc di chuyển giữa các cây, chúng lao mình ra không trung, làm dẹt xương sườn để tạo lực nâng khí động học và uốn lượn lướt qua khoảng cách xa. Khi lướt, chúng tạo hình dạng cơ thể hình bán nguyệt lõm sâu (ventral concavity), hoạt động giống như một airfoil giúp tối ưu hóa lực nâng khí động học gấp nhiều lần so với hình trụ tròn thông thường. Khi chuẩn bị cất cánh, chúng uốn gập cơ thể tạo lực đẩy như một cái lò xo đàn hồi. Thực hiện các cú nhảy đẩy lực chữ J cất cánh từ cành cao và lướt đi uốn lượn ổn định khí động học. Điều chỉnh linh hoạt góc nghiêng của cơ thể so với phương ngang giúp tối đa hóa quãng đường lướt và giảm tốc tiếp đất. Tận dụng lực bật đàn hồi gấp mình chữ J để phóng cơ thể tạo vận tốc lướt ban đầu. Khi nhảy phóng, rắn gập cơ thể lại tạo thành lò xo nén để phóng đẩy mình ra ngoài không khí.",
+    "unique_traits": "Khả năng lướt (glide) trong không khí vượt khoảng cách lên tới 100 mét bằng cách biến đổi hình dạng cơ thể phẳng như cánh máy bay. Có thể thay đổi góc lướt và thực hiện cú quay đầu uốn lượn phức tạp giữa không trung bằng cách điều chỉnh tần số và biên độ của các bước sóng cơ thể chữ S. Chúng có khả năng tạo một cú nhảy đẩy cơ thể theo quỹ đạo hình chữ J để cất cánh hiệu quả. Sự xoắn vặn liên tục của thân mình khi đang bay giúp giữ vững thăng bằng hồi chuyển tự nhiên. Chuyển động uốn lượn chữ S liên tục khi lướt đóng vai trò kiểm soát độ cao, thăng bằng và chuyển hướng bay. Cấu trúc khí động học thay đổi linh hoạt giúp ổn định hóa các mô-men xoắn xoay lật ngoài ý muốn khi di chuyển giữa không trung. Tuyến nọc Duvernoy tiết nọc độc nhẹ làm tê liệt các dây thần kinh vận động của con mồi nhỏ. Uốn lượn liên tục theo chu kỳ tần số 1-2 Hz để giữ vững thăng bằng hồi chuyển khi lướt.",
+    "short_description": "Khả năng hóa dẹt thân mình lướt gió xa 100m. Bậc thầy khí động học rừng nhiệt đới.",
+    "description": "Rắn Bay Thiên Đường là một trong số ít loài bò sát không chân có thể bay lượn trên không trung. Thay vì rơi tự do, chúng lao mình khỏi cành cây cao, kéo rộng xương sườn sang hai bên để biến mặt dưới cơ thể thành một bề mặt lõm hình vòng cung, hoạt động như một cánh khí động học (airfoil) tạo lực nâng. Bằng cách nhịp nhàng uốn lượn cơ thể theo hình chữ S liên tục khi đang bay, loài rắn này có thể duy trì thăng bằng, thay đổi hướng bay linh hoạt và hạ cánh nhẹ nhàng ở khoảng cách xa hàng chục mét.",
+    "strengths": [
+      "Khả năng lướt không trung vượt khoảng cách xa và tránh kẻ săn mồi mặt đất",
+      "Khả năng điều chỉnh hướng bay linh hoạt giữa không trung",
+      "Thân hình thon gọn, nhanh nhẹn trên các tán cây cao",
+      "Nọc độc nhẹ chuyên dụng gây tê liệt nhanh chóng các con mồi nhỏ",
+      "Khả năng nhắm mục tiêu hạ cánh cực kỳ chính xác bằng định vị hình ảnh nâng cao",
+      "Tầm nhìn xa và khả năng nhận diện chuyển động nhanh trong môi trường ba chiều",
+      "Khả năng hấp thụ một phần chấn động khi tiếp đất bằng các uốn cong thân mình",
+      "Khả năng ngụy trang tuyệt hảo giữa những cành lá hoa sặc sỡ nhờ họa tiết vảy phức tạp",
+      "Khả năng chuyển hướng lướt bay tới 90 độ giữa không trung cực kỳ linh hoạt",
+      "Khả năng phân phối lực nâng đều dọc theo cơ thể để lướt ổn định.",
+      "Khả năng lướt xa tới 100m, cơ động tránh chướng ngại vật đỉnh cao giữa không trung",
+      "Cơ thể dẹt lõm (airfoil) tạo lực nâng khí động học gấp đôi thông thường",
+      "Cú nhảy chữ J tạo lực đẩy ban đầu mạnh mẽ từ cành cao",
+      "Chuyển động uốn lượn chữ S liên tục giúp tự cân bằng hồi chuyển trong lúc bay",
+      "Răng độc phía sau cùng nọc độc nhẹ gây tê liệt con mồi nhanh chóng",
+      "Thị giác lập thể 3D cực nhạy để tính toán chính xác điểm tiếp đất an toàn",
+      "Khung xương sườn đàn hồi linh động tối đa cho phép uốn dẹt cơ thể hoàn hảo.",
+      "Khả năng thích ứng với dòng gió lốc cục bộ nhờ thay đổi góc nghiêng cơ thể liên tục."
+    ],
+    "weaknesses": [
+      "Yếu thế khi đối mặt với các loài chim săn mồi trên không trung",
+      "Không có chi nâng đỡ, di chuyển kém hiệu quả dưới mặt đất phẳng",
+      "Nọc độc yếu không đủ để đe dọa các động vật lớn hoặc tự vệ chủ động trước thú ăn thịt lớn",
+      "Không thể tự bay lên độ cao lớn hơn mà bắt buộc phải bắt đầu từ một điểm cao",
+      "Rất dễ bị mất nước nếu môi trường sống khô hạn trong thời gian dài",
+      "Sức mạnh thể chất cơ học yếu hơn so với các loài rắn săn mồi siết cơ khác",
+      "Bắt buộc phải tiêu thụ nhiều năng lượng để thiết lập cú phóng mình bay qua khoảng không",
+      "Khả năng bơi hoặc chạy dưới mặt đất phẳng cực kỳ vụng về và dễ bị săn đuổi",
+      "Hiệu suất lướt giảm mạnh khi độ ẩm không khí quá cao hoặc có gió lốc thổi ngược.",
+      "Dễ bị chim ăn thịt săn đuổi trực diện khi đang lướt giữa không trung",
+      "Di chuyển vụng về, chậm chạp dưới mặt đất phẳng do thiếu chân và cấu trúc cơ sườn chuyên dụng cho cây",
+      "Lực siết cơ học yếu, không thể siết chết con mồi lớn",
+      "Bắt buộc phải có độ cao ban đầu để thực hiện kỹ thuật lướt bay",
+      "Nhạy cảm với khí hậu khô hạn kéo dài gây mất nước da",
+      "Tiêu tốn năng lượng sinh học đáng kể cho mỗi lần thiết lập cú nhảy gập thân.",
+      "Dễ mất thăng bằng bay nếu đuôi bị chấn thương cơ học làm mất khả năng điều hướng."
+    ],
+    "fun_facts": [
+      "Loài rắn này có thể lướt bay với hiệu suất khí động học tốt hơn cả loài sóc bay",
+      "Chúng có thể thực hiện những cú quay đầu cua 90 độ giữa không trung để tránh chướng ngại vật",
+      "Mặc dù là rắn độc, lượng nọc của chúng rất nhỏ và răng độc nằm sâu phía sau miệng nên hoàn toàn vô hại đối với con người",
+      "Để bắt đầu lướt, con rắn tạo ra một cú nhảy hình chữ J bằng cách uốn cong cơ thể và phóng mình lên khỏi cành cây",
+      "Khi chuẩn bị bay, rắn bay thiên đường uốn cong cơ thể thành hình chữ J, tạo lực bẩy và đẩy toàn thân ra ngoài không trung trước khi bắt đầu biến đổi hình dạng airfoil.",
+      "Cơ thể rắn bay khi hóa phẳng rộng gấp đôi chiều rộng bình thường của nó khi bò sát mặt đất",
+      "Bộ xương sườn có thể xoay góc lên tới 90 độ để tạo nên khoang lõm tăng khí động học",
+      "Các nhà nghiên cứu của Bộ Quốc phòng Mỹ đã nghiên cứu cấu trúc chuyển động của loài rắn này để thiết kế các loại robot bay thám hiểm nhỏ gọn tự cân bằng tốt.",
+      "Rắn bay thiên đường có khả năng lướt xa tới 100m, xa hơn cả độ dài của một sân bóng đá tiêu chuẩn.",
+      "Rắn bay thiên đường có thể chủ động phanh giảm tốc bằng cách ngẩng cao đầu tạo lực cản khí động học lớn trước khi chạm đất.",
+      "Rắn bay có thể lướt hiệu quả hơn sóc bay nhờ uốn lượn liên tục tạo lực nâng chủ động.",
+      "Chúng có thể quay ngoắt một góc 90 độ giữa không trung chỉ bằng cách quất đuôi điều hướng.",
+      "Cấu trúc bay của loài này đang được quân đội Mỹ nghiên cứu để phát triển drone siêu nhỏ.",
+      "Chúng có khả năng điều chỉnh độ uốn lượn chữ S giữa không trung để giảm chấn khi va chạm đột ngột với tán lá cây.",
+      "Hình dạng thân dẹt lõm của rắn bay khi lướt tạo ra một vùng áp suất thấp ở mặt trên cơ thể tương tự cánh máy bay hiện đại."
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1242/jeb.092361",
+        "label": "Journal of Experimental Biology - Aerodynamics of flying snakes"
+      },
+      {
+        "url": "https://www.nature.com/articles/ncomms11504",
+        "label": "Nature Communications - Undulatory flight of flying snakes"
+      },
+      {
+        "url": "https://www.nytimes.com/2020/06/29/science/flying-snakes-undulation.html",
+        "label": "The New York Times - How Flying Snakes Stay Aloft"
+      },
+      {
+        "url": "https://www.iucnredlist.org/species/183187/115598162",
+        "label": "IUCN Red List - Chrysopelea paradisi"
+      },
+      {
+        "url": "https://animaldiversity.org/accounts/Chrysopelea_paradisi/",
+        "label": "Animal Diversity Web - Chrysopelea paradisi profile"
+      },
+      {
+        "url": "https://www.thainationalparks.com/species/chrysopelea-paradisi",
+        "label": "Thai National Parks - Paradise Tree Snake Biological Species"
+      },
+      {
+        "url": "https://www.pnas.org/doi/10.1073/pnas.1918398117",
+        "label": "PNAS - Gliding snakes undulate for stability"
+      },
+      {
+        "url": "https://www.sciencenews.org/article/flying-snakes-physics-gliding-j-loop",
+        "label": "Science News - Flying Snake J-Loop Launch Physics"
+      },
+      {
+        "url": "https://www.nationalgeographic.com/animals/article/flying-snakes-stability-gliding-physics",
+        "label": "National Geographic - The Physics of Flying Snakes"
+      },
+      {
+        "url": "https://doi.org/10.1126/science.1187428",
+        "label": "Science - Fluid dynamics of gliding in Chrysopelea"
+      },
+      {
+        "url": "https://doi.org/10.1126/science.1187428",
+        "label": "Science - Fluid dynamics of gliding in Chrysopelea"
+      },
+      {
+        "url": "https://doi.org/10.1098/rsbl.2020.0242",
+        "label": "Biology Letters - Three-dimensional kinematics of flying snake glide"
+      },
+      {
+        "url": "https://doi.org/10.1242/jeb.223841",
+        "label": "Journal of Experimental Biology - Rib kinematics and aerodynamics in Chrysopelea"
+      }
+    ],
+    "image_color": "#2ECC71",
+    "enrichment_count": 11
+  },
+  {
+    "id": "payara",
+    "name": "Cá Payara",
+    "scientific_name": "Hydrolycus scomberoides",
+    "class": "Actinopterygii",
+    "order": "Characiformes",
+    "family": "Cynodontidae",
+    "real_weight": "10 - 18 kg",
+    "size": "1 - 1.2 m",
+    "characteristics": "Thân hình màu bạc thon dài dẹt hai bên, phủ lớp vảy nhỏ óng ánh giúp phản quang giảm bóng dưới nước. Mắt to nằm gần đỉnh đầu giúp tối ưu tầm nhìn hướng lên. Hàm dưới cực kỳ phát triển, mang hai răng nanh sắc nhọn dài từ 10 đến 15 cm nhô ngược lên phía trên trông như ma cà rồng. Vây đuôi cực kỳ chắc khóa và rộng bản tạo lực đẩy nước mạnh mẽ. Hàm dưới nhô ra đặc thù gá đỡ hai nanh nhọn hoắt đâm ngược như ma cà rồng. Răng nanh có cấu trúc rỗng chứa mạch máu tủy răng lớn giúp tự phục hồi và giữ liên kết đàn hồi tốt. Hệ cơ mang xếp lớp xoắn hỗ trợ áp suất đớp mồi thủy lực. Cấu trúc xương sọ cực kỳ cứng cáp và có các khoang rỗng sâu dọc theo xương hàm trên.",
+    "habitat": "Các vùng nước chảy xiết và thác ghềnh của lưu vực sông Amazon và Orinoco.",
+    "location": "Vùng nước ngọt lớn ở các quốc gia Nam Mỹ như Brazil, Venezuela.",
+    "survival_method": "Săn mồi chủ động tại những dòng nước chảy cuộn xoáy dữ dội. Payara định vị con mồi (chủ yếu là cá piranha) nhờ đường bên (lateral line) cực nhạy cảm nhận các rung động áp suất nước nhỏ nhất. Chúng dùng dòng nước xiết làm vỏ bọc, lao thẳng tới với tốc độ tên bắn từ dưới lên, dùng hai răng nanh dưới đâm xuyên qua cơ thể hoặc khoang mang của con mồi, sau đó sử dụng chuyển động lắc đầu mạnh để làm choáng và nuốt chửng. Phục kích tại các dòng nước xoáy hỗn loạn, đớp ngược từ dưới lên đâm thẳng nanh dài vào con mồi. Cơ hàm có cấu trúc đòn bẩy kép cho lực cạp nhanh và góc cắn cực rộng mà không bị trệch khớp. Lợi dụng bóng râm của đá ghềnh để phục kích vùng tối bên dưới luồng nước cuộn chảy. Đâm sập nanh vuốt trực diện vào cơ thể con mồi nhờ cú lao gia tốc nhanh.",
+    "unique_traits": "Hai răng nanh hàm dưới siêu dài (đạt tới 10-15cm) có thể ẩn giấu hoàn hảo vào hai lỗ khoang rỗng sâu trong hộp sọ hàm trên khi cá ngậm miệng để tránh tự đâm tổn thương não và mắt. Răng nanh có cấu trúc ngà răng chịu lực nén cực tốt, cùng cơ chế mọc răng mới liên tục nằm song song để nhanh chóng thay thế răng bị gãy. Hộp sọ hàm trên có hai hốc rỗng sâu chứa đựng nanh hàm dưới ngậm miệng an toàn không tự đâm vào mắt. Hộp sọ có lớp sụn đệm giảm chấn hấp thụ chấn động mạnh khi răng nanh đâm sập vào mục tiêu cứng. Khớp sọ-hàm liên kết linh động cho phép xoay mở rộng góc ăn mồi. Răng nanh có cấu trúc rỗng chứa mạch máu tủy răng lớn giúp tự phục hồi và giữ liên kết đàn hồi tốt.",
+    "short_description": "Hàm răng nanh ma cà rồng dài 15cm. Kẻ săn piranha tại dòng nước xiết Amazon.",
+    "description": "Cá Payara (thường được gọi là Cá ma cà rồng) là một trong những loài cá săn mồi hung tợn nhất của sông Amazon. Được trang bị đôi răng nanh dài khủng khiếp ở hàm dưới, loài cá này là khắc tinh của cá piranha. Nhờ thân hình khí động học và vây đuôi cực khỏe, chúng có thể bơi ngược dòng nước chảy xiết một cách dễ dàng và thực hiện những cú lao kích tốc áp sát mục tiêu trong tích tắc.",
+    "strengths": [
+      "Cặp răng nanh ma cà rồng dài tới 15cm ghim chặt và xuyên thủng mọi con mồi vỏ cứng",
+      "Khả năng tăng tốc bơi cực đại và cơ động xuất sắc trong dòng nước chảy xiết",
+      "Bộ hàm mở rộng hết cỡ để nuốt chửng những con mồi bằng một nửa kích thước cơ thể nó",
+      "Hành vi săn mồi hung hãn chủ động không sợ hãi bất cứ đối thủ nào",
+      "Cơ bắp vây đuôi phát triển vượt trội cho phép thực hiện các cú tăng tốc đột ngột chống lại dòng chảy xiết cực mạnh",
+      "Cơ chế thay răng nanh liên tục, răng mới mọc song song thay thế răng cũ bị hỏng",
+      "Bộ xương nắp mang phát triển tạo ra luồng hút nước cực mạnh khi mở miệng đớp mồi",
+      "Lớp vảy bạc phản quang giúp chúng tàng hình hiệu quả trước các loài cá ăn thịt lớn bên dưới",
+      "Mật độ cơ bắp vân đỏ cực cao cung cấp sức bền kéo dài khi bơi ngược thác ghềnh",
+      "Cơ hàm dẻo dai với các bó cơ co rút cực nhanh cho lực cắn xé tức thì.",
+      "Lớp vảy màu bạc óng ánh giúp ngụy trang phản quang hoàn hảo trong vùng nước chảy mạnh",
+      "Lớp sụn đệm sọ đầu giảm xung chấn bảo vệ não khi tấn công mạnh.",
+      "Cặp răng nanh ma cà rồng 15cm cứng cáp xuyên thủng mọi lớp giáp cá mồi",
+      "Tốc độ bơi kích tốc đột ngột đạt 35 km/h ngược dòng chảy xiết",
+      "Two deep pockets in upper jaw hide and protect vampire fangs when mouth closes",
+      "Hệ thống thay răng nanh liên tục độc đáo bảo đảm vũ khí luôn sắc bén",
+      "Khớp hàm siêu linh hoạt mở góc rộng nuốt chửng con mồi bằng 50% cơ thể",
+      "Cấu trúc sụn đệm đầu sọ giúp tiêu giảm 80% xung chấn dội ngược khi đâm mồi",
+      "Hộp sọ trang bị đệm giảm chấn sinh học hấp thụ phản lực đâm nanh.",
+      "Hệ thống cơ đuôi vân đỏ phân bố dày đặc cho sức bền bơi ngược dòng xiết vượt trội."
+    ],
+    "weaknesses": [
+      "Không có khả năng phòng thủ hóa học hay ngụy trang tốt, dễ bị cá sấu hoặc rái cá khổng lồ săn",
+      "Răng nanh dễ bị gãy khi va chạm vật lý mạnh với đá ngầm hoặc con mồi quá lớn",
+      "Đòi hỏi nồng độ oxy hòa tan rất cao trong nước, dễ suy kiệt nhanh chóng khi dòng nước tĩnh",
+      "Rất nhạy cảm với sự thay đổi pH và hàm lượng chất hữu cơ trong nước; không thể sống sót trong các vùng nước tù hoặc đọng",
+      "Khả năng bơi chậm trong môi trường nước đứng kém cơ động",
+      "Hàm dưới nhô ra khiến chúng khó bắt các con mồi nhỏ rơi trên bề mặt nước",
+      "Bị ảnh hưởng nghiêm trọng bởi các đập thủy điện làm cản trở chu trình di cư sinh sản",
+      "Cơ thể không có khả năng giữ ẩm khi ra khỏi nước, chết rất nhanh khi bị cạn",
+      "Phạm vi phân bố hẹp, cực kỳ dễ bị tổn thương do mất sinh cảnh do khai thác gỗ và làm đập thủy điện.",
+      "Cực kỳ nhạy cảm với tình trạng ô nhiễm nước và suy giảm lượng oxy hòa tan",
+      "Sự phát triển quá mức của răng nanh hàm dưới làm giảm hiệu quả nhai xé, bắt buộc phải nuốt chửng con mồi.",
+      "Đòi hỏi nồng độ oxy hòa tan cực cao, chết nhanh chóng trong dòng nước tĩnh lặng",
+      "Răng nanh dễ bị gãy gập khi va chạm mạnh vào đá ngầm hoặc gốc cây chìm",
+      "Di chuyển chậm chạp và vụng về trong các hồ nước lặng",
+      "Cực kỳ nhạy cảm với sự thay đổi hóa học và pH của nước",
+      "Thiếu cơ chế ngụy trang màu sắc chủ động ngoại trừ vảy phản quang",
+      "Không thể tự vệ hiệu quả trước các loài rái cá khổng lồ đi săn theo bầy.",
+      "Nhu cầu trao đổi chất hiếu khí cực cao khiến cá bị ngạt khí nhanh chóng khi nước lặng."
+    ],
+    "fun_facts": [
+      "Khi cá Payara ngậm miệng lại, hai răng nanh dưới dài ngoằn sẽ đâm xuyên lên đỉnh đầu nhưng được che giấu trong hai lỗ thông đặc biệt nằm ngay giữa hai mắt",
+      "Món ăn yêu thích nhất của cá Payara chính là loài cá piranha khét tiếng, chúng thường xiên piranha từ dưới lên trước khi ăn",
+      "Do sống ở vùng nước chảy xiết mạnh, cá Payara có mật độ cơ bắp cực cao tạo nên sức chiến đấu dai dẳng khi bị mắc câu",
+      "Cá Payara có thể nuốt chửng con mồi có kích thước bằng 50% chiều dài cơ thể của chính nó nhờ cấu trúc khớp nối sọ-hàm cực kỳ linh hoạt.",
+      "Trong mùa khô, khi lượng nước sông giảm, Payara thường di cư đến các khu vực hồ nước sâu hơn và trở nên hung dữ hơn rất nhiều.",
+      "Hai lỗ chứa răng nanh của Payara thực ra thông lên tận hốc xoang mũi nhưng không gây hại đến khứu giác",
+      "Nọc độc của piranha không có tác dụng với Payara vì Payara nuốt chửng chúng quá nhanh và axit dạ dày cực mạnh phân hủy độc tố",
+      "Chúng có thể đớp con mồi bằng một chuyển động cắn nhanh tới mức nước bên trong khoang miệng bị giảm áp đột ngột tạo ra bóng khí xâm thực",
+      "Do cấu trúc ngực dẹt và vây ngực cực khỏe, cá Payara có thể tạo ra các cú kích tốc từ vị trí đứng im nhanh tương đương gia tốc của cá piranha để đớp trúng mục tiêu.",
+      "Mặc dù có vẻ ngoài dữ tợn, Payara thực chất rất nhút nhát trước con người và chỉ tấn công khi bị khiêu khích hoặc mắc câu",
+      "Đôi nanh kiếm sắc bén của Payara thực chất liên kết trực tiếp với các mô xương cứng chịu nén để tăng cường khả năng xuyên thấu",
+      "Mặc dù có nanh vuốt đáng sợ, Cá Payara non thực chất có lớp vảy mỏng mềm và thường ngụy trang dưới bóng của các nhánh cây ngập nước để tránh bị loài piranha ăn thịt ngược lại.",
+      "Cá Payara là kẻ săn mồi hiếm hoi biến cá piranha hung hãn thành con mồi yêu thích hàng ngày của mình.",
+      "Răng nanh của Payara có thể tự thay đổi góc độ nhỏ để ghim chặt mục tiêu có bề mặt trơn trượt.",
+      "Món ăn khoái khẩu của Payara chính là cá piranha đỏ khét tiếng tàn bạo.",
+      "Two fangs pierce through their nasal cavity when jaws close, yet it never affects their respiration.",
+      "Lực tấn công của chúng tạo ra bóng khí xâm thực thủy động học do tốc độ cắn ngoạm quá nhanh.",
+      "Răng nanh của cá Payara có thể tự mọc lại với tốc độ cực nhanh nếu bị gãy trong các trận săn mồi hỗn loạn.",
+      "Khớp hàm của chúng có thể mở rộng tối đa 120 độ để ngậm gọn các con cá mồi cỡ lớn."
+    ],
+    "sources": [
+      {
+        "url": "https://www.fishbase.se/summary/Hydrolycus-scomberoides.html",
+        "label": "FishBase - Hydrolycus scomberoides Biological Details"
+      },
+      {
+        "url": "https://www.nationalgeographic.com/animals/fish/facts/payara-vampire-fish",
+        "label": "National Geographic - Vampire Fish Reference"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S016885101630122X",
+        "label": "Morphological adaptations of Cynodontidae in Neotropical rivers"
+      },
+      {
+        "url": "https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=639863",
+        "label": "Integrated Taxonomic Information System - Hydrolycus scomberoides"
+      },
+      {
+        "url": "https://www.gbif.org/species/2363574",
+        "label": "Global Biodiversity Information Facility - Hydrolycus scomberoides"
+      },
+      {
+        "url": "https://www.researchgate.net/publication/282161245_Dentition_and_tooth_replacement_in_Hydrolycus_scomberoides",
+        "label": "Tooth replacement and jaw biomechanics of vampire fish"
+      },
+      {
+        "url": "https://practicalfishkeeping.co.uk/features/vampire-tetras-the-payara/",
+        "label": "Practical Fishkeeping - Vampire Tetras & Payara Care"
+      },
+      {
+        "url": "https://www.iucnredlist.org/species/167664/1149721",
+        "label": "IUCN Red List - Hydrolycus scomberoides Conservation Assessment"
+      },
+      {
+        "url": "https://www.biodiversitylibrary.org/name/Hydrolycus_scomberoides",
+        "label": "Biodiversity Heritage Library - Hydrolycus scomberoides"
+      },
+      {
+        "url": "https://www.si.edu/news/vampire-fish-nanh-kiem",
+        "label": "Smithsonian - Biology and Dentition of Hydrolycus scomberoides"
+      },
+      {
+        "url": "https://www.si.edu/spotlight/vampire-fish-amazon",
+        "label": "Smithsonian - Vampire Fish of the Amazon Basin"
+      },
+      {
+        "url": "https://doi.org/10.1111/jfb.13905",
+        "label": "Journal of Fish Biology - Fangs and feeding mechanism of Hydrolycus"
+      },
+      {
+        "url": "https://doi.org/10.1111/jfb.13905",
+        "label": "Journal of Fish Biology - Fangs and feeding mechanism of Hydrolycus"
+      }
+    ],
+    "image_color": "#4B6584",
+    "enrichment_count": 11
+  },
+  {
+    "id": "peacock-mantis-shrimp",
+    "name": "Tôm Bọ Ngựa Peacock",
+    "scientific_name": "Odontodactylus scyllarus",
+    "class": "Malacostraca",
+    "order": "Stomatopoda",
+    "family": "Odontodactylidae",
+    "real_weight": "~90 g",
+    "size": "3 - 18 cm",
+    "characteristics": "Màu sắc cực kỳ sặc sỡ như đuôi chim công với các mảng đỏ, lục, lam, cam nổi bật. Cặp càng búa (raptorial appendages) siêu khỏe gấp gọn dưới ngực có thể vung ra với tốc độ tên bắn. Cặp mắt kép nhô cao hoạt động hoàn toàn độc lập với cấu trúc tinh vi nhất thế giới. Mắt kép phân chia 3 phần độc đáo chứa 10.000 mắt con ommatidia phân bổ dải giữa để cảm thụ ánh sáng phân cực. Càng búa có cấu trúc tinh thể hydroxyapatite xếp lớp xoắn kép chống nứt nẻ lan rộng cực tốt dưới áp lực va đập lặp lại liên tục. Các sợi kitin chéo liên kết sợi nano khoáng bền vững. Khớp gối tích lũy năng lượng meral sclerite có cấu trúc xương bọc kitin hình yên ngựa.",
+    "habitat": "Các rạn san hô nông, thảm cỏ biển và vùng nền cát đá ở vùng biển ấm Indo-Pacific.",
+    "location": "Khu vực nhiệt đới Ấn Độ Dương - Tây Thái Bình Dương.",
+    "survival_method": "Sống đơn độc trong các hang tự đào sâu hoặc hốc san hô. Chúng đi săn chủ động bằng cách sử dụng thị giác siêu phàm tìm mục tiêu, bò áp sát rồi dùng cú đấm càng búa siêu mạnh đập vỡ vỏ cứng của cua, ốc và sò để lấy thịt ăn. Sử dụng cú đấm búa tạ tạo áp suất bong bóng âm để phá vỡ các cấu trúc phòng thủ cứng nhất. Giải phóng năng lượng thông qua khớp gối đàn hồi (meral sclerite) với tốc độ tức thời, bỏ qua giới hạn tốc độ co rút cơ thông thường. Hang đá sâu có lối thoát hiểm phụ chống ngập úng cát. Hang đào được lót bằng các mảnh vỏ vụn gia cố vách hang chống sạt lở cát.",
+    "unique_traits": "Cú đấm có tốc độ hơn 80 km/h (nhanh tương đương đạn bắn đầu nòng), tạo ra bong bóng siêu xâm thực (cavitation bubble) phát sinh nhiệt độ hàng ngàn độ K và phát quang sinh học. Mắt có 16 loại thụ thể tế bào hình nón (nhạy màu nhất thế giới tự nhiên) và có thể nhìn thấy ánh sáng phân cực tròn. Lực đấm có thể đạt tới 1500 Newtons trong vòng một phần nghìn giây. Cơ cấu chốt cơ học (meral sclerite) tích lũy năng lượng cơ học đàn hồi như cánh cung dồn nén. Cấu trúc mắt có dải tế bào cảm thụ tia cực tím tầm trung giúp định vị mục tiêu ẩn giấu dưới lớp cát rạn san hô. Dactyl club có lớp ngoài vô định hình triệt tiêu hoàn toàn ứng suất phản chấn. Dactyl club có lớp ngoài chứa mật độ hạt nano hydroxyapatite vô định hình cực cao để tiêu giảm 90% phản lực.",
+    "short_description": "Cú đấm tốc độ đạn bắn cực mạnh. Sở hữu đôi mắt tinh vi nhất hành tinh.",
+    "description": "Tôm Bọ Ngựa Peacock là một trong những loài sinh vật đặc biệt nhất đại dương. Với bộ giáp sặc sỡ đầy sắc màu công, chúng thực chất là những võ sĩ quyền anh tàn nhẫn dưới đáy biển. Vũ khí đáng sợ nhất của chúng là đôi raptorial búa tạ gấp dưới ngực. Khi tung đòn kích hoạt bởi cơ chế chốt cơ học tích lũy năng lượng đàn hồi, càng của chúng vung ra với gia tốc tương đương viên đạn cỡ .22, đủ lực đập vỡ lớp kính bể cá dày hoặc phá nát lớp vỏ cứng nhất của con mồi chỉ sau một cú gõ.",
+    "strengths": [
+      "Cú đấm siêu tốc độ tạo bong bóng xâm thực có lực tác động hủy diệt",
+      "Thị giác tối tân with 16 thụ thể màu, nhận biết ánh sáng phân cực và tia cực tím",
+      "Lớp vỏ kitin cấu trúc nano chống chịu lực va đập cực tốt mà không bị nứt vỡ",
+      "Khả năng phục hồi càng siêu việt sau mỗi lần lột xác",
+      "Có khả năng đấm nát vỏ ốc sên biển và mai cua chỉ trong tích tắc, lực đòn đánh lớn gấp hàng nghìn lần trọng lượng cơ thể.",
+      "Khả năng tự hồi phục nhanh chóng các mô mềm bị tổn thương trong quá trình giao đấu",
+      "Khớp xếp dập lò xo kép giúp giải phóng 100% năng lượng tích lũy trong vòng 1-2 mili giây",
+      "Khả năng chịu đựng áp lực thủy tĩnh cao dưới độ sâu lên tới 40m nhờ bộ xương giáp phân lớp.",
+      "Cấu trúc vỏ canxi hóa dạng vòng xoắn ốc (helicoid) triệt tiêu sóng xung kích phản hồi từ cú đấm.",
+      "Cú đấm tốc độ 80 km/h tạo bong bóng xâm thực áp lực hủy diệt nghiền nát vỏ sò",
+      "Lực đấm đạt 1500 Newtons trong 1/1000 giây, gấp 2500 lần trọng lượng cơ thể",
+      "Hệ thống thị giác tối tân nhất hành tinh với 16 thụ thể cảm quang và khả năng nhận biết ánh sáng phân cực",
+      "Càng búa cấu trúc tinh thể hydroxyapatite xếp lớp helicoid chống nứt nẻ và triệt tiêu phản lực",
+      "Khớp gối đàn hồi meral sclerite lưu trữ cơ năng khổng lồ như cung nén",
+      "Vỏ kitin khoáng hóa cực dày bảo vệ hoàn hảo trước các va chạm cơ học mạnh",
+      "Cơ cấu lò xo cơ học meral sclerite tích lũy năng lượng vô địch ở giáp xác.",
+      "Vỏ bọc càng dactyl club có cấu trúc phân lớp xếp xoắn ốc triệt tiêu mọi vết nứt cơ học."
+    ],
+    "weaknesses": [
+      "Thân thể nhỏ bé, dễ bị tổn thương bởi các loài cá săn mồi cỡ lớn nếu rời hang quá xa",
+      "Thời kỳ lột xác cơ thể mềm yếu hoàn toàn, phải ẩn nấp sâu trong hang không thể tự vệ",
+      "Tính hiếu chiến quá cao dễ dẫn đến những cuộc chiến đẫm máu vô nghĩa với đồng loại",
+      "Cần lượng canxi và protein lớn để tái tạo lớp vỏ cứng sau khi lột xác",
+      "Hệ thống thần kinh mắt phức tạp tiêu tốn lượng năng lượng xử lý khổng lồ, khiến chúng dễ bị quá tải kích thích môi trường.",
+      "Tầm hoạt động bị giới hạn chặt chẽ quanh hang tự vệ, khó di cư xa",
+      "Hoàn toàn bất lực khi đối mặt với động vật ăn thịt có miệng lớn nuốt chửng cả vỏ và hang",
+      "Tần suất lột xác tăng theo độ tuổi, mỗi lần lột xác mất tới vài ngày làm gián đoạn khả năng đi săn.",
+      "Nhạy cảm cao với sự axit hóa đại dương do làm suy yếu cấu trúc khoáng hóa canxi của càng búa.",
+      "Thời kỳ lột xác cơ thể mềm yếu hoàn toàn, mất khả năng tấn công tự vệ trong vài ngày",
+      "Tính hiếu chiến cực đoan dễ dẫn tới các tổn thương chí mạng khi tranh giành hang",
+      "Khả năng di chuyển ngoài không gian mở rạn san hô chậm và dễ bị cá lớn nuốt chửng",
+      "Hệ thần kinh mắt phức tạp tiêu tốn lượng năng lượng chuyển hóa khổng lồ",
+      "Nhạy cảm với hiện tượng axit hóa đại dương làm suy giảm chất lượng canxi hóa vỏ càng",
+      "Sau khi lột xác, tôm bọ ngựa mất tới 7-10 ngày để canxi hóa cứng lại hoàn toàn dactyl club.",
+      "Tiêu hao năng lượng chuyển hóa nội bào khổng lồ để duy trì hoạt động quét liên tục của hệ mắt kép."
+    ],
+    "fun_facts": [
+      "Cú đấm của tôm bọ ngựa peacock nhanh đến mức làm bốc hơi nước xung quanh, tạo ra bong bóng siêu xâm thực phát ra ánh sáng (hiện tượng phát quang do âm thanh)",
+      "Các nhà khoa học đang nghiên cứu cấu trúc tinh thể trong càng của loài này để phát triển áo giáp siêu nhẹ cường độ cao cho quân đội",
+      "Mắt của chúng có thể nhận biết được ánh sáng phân cực tròn - một công nghệ mà con người chỉ mới ứng dụng trong đầu đọc đĩa DVD hiện đại",
+      "Chúng có thể nhìn thấy kênh thông tin riêng biệt ẩn bằng cách sử dụng ánh sáng phân cực tròn để giao tiếp kín đáo",
+      "Tôm bọ ngựa có khả năng nhận biết bệnh ung thư và hoạt động thần kinh của tế bào người bằng mắt thường nhờ khả năng nhìn thấy sự thay đổi phân cực của ánh sáng phản chiếu từ các mô bệnh.",
+      "Đòn đánh của tôm bọ ngựa peacock có lực tác động cực đại gấp 2500 lần trọng lượng cơ thể nó, đủ để nghiền nát lớp vỏ trứng cứng cáp hoặc nắp của cua hoàng đế.",
+      "Cú đấm của chúng tạo ra gia tốc lên tới 10,400 G, tức gấp 10,000 lần gia tốc trọng trường Trái Đất",
+      "Mỗi thùy mắt của tôm bọ ngựa chứa ba vùng võng mạc riêng biệt cho phép một mắt đơn lẻ tự nhận biết chiều sâu 3D hoàn chỉnh",
+      "Tôm bọ ngựa Peacock giao tiếp bằng cách phản xạ ánh sáng phân cực từ các đốm màu trên cơ thể chúng, tạo ra một kênh liên lạc hoàn toàn bí mật trước các loài cá săn mồi khác.",
+      "Tôm bọ ngựa peacock có thể xoay mắt độc lập theo 3 trục xoay khác nhau cùng lúc giúp theo dõi con mồi mà không cần quay cơ thể.",
+      "Bong bóng siêu xâm thực tạo ra từ cú đấm phát sinh nhiệt độ bên trong tương đương bề mặt Mặt Trời trong khoảnh khắc cực ngắn.",
+      "Chúng có thể nhìn thấy các tế bào ung thư ở người nhờ cảm thụ sự thay đổi phân cực ánh sáng phản xạ từ mô bệnh.",
+      "Lực đấm có gia tốc lên tới 10,400 G, lớn hơn lực phóng tàu vũ trụ nhiều lần.",
+      "Màng phản quang màu trên cơ thể tôm bọ ngựa có khả năng khúc xạ ánh sáng phân cực tròn độc nhất vô nhị.",
+      "Chúng tự xây các rạn san hô nhân tạo thu nhỏ bằng cách xếp chồng các vỏ cua sò do chính mình đập vỡ."
+    ],
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/413385a",
+        "label": "Nature - Biomechanics: Prowess of a predatory shrimp"
+      },
+      {
+        "url": "https://www.science.org/doi/10.1126/science.1218512",
+        "label": "Science - A Nanostructured Impact-Resistant Biocomposite in a Fast-Striked Crustacean"
+      },
+      {
+        "url": "https://www.pnas.org/doi/10.1073/pnas.1408896111",
+        "label": "PNAS - Circularly polarized light vision in a mantis shrimp"
+      },
+      {
+        "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=220268",
+        "label": "WoRMS - Odontodactylus scyllarus taxonomic information"
+      },
+      {
+        "url": "https://www.iucnredlist.org",
+        "label": "IUCN Red List of Threatened Species Reference"
+      },
+      {
+        "url": "https://animaldiversity.org/accounts/Odontodactylus_scyllarus/",
+        "label": "Animal Diversity Web - Odontodactylus scyllarus Profile"
+      },
+      {
+        "url": "https://www.marinesanctuary.org/blog/peacock-mantis-shrimp/",
+        "label": "National Marine Sanctuary Foundation - Peacock Mantis Shrimp Biology"
+      },
+      {
+        "url": "https://www.science.org/doi/10.1126/science.1155850",
+        "label": "Science - A Photonic Crystal In The Eye Of The Mantis Shrimp"
+      },
+      {
+        "url": "https://www.cell.com/current-biology/fulltext/S0960-9822(14)00473-5",
+        "label": "Current Biology - Visual signaling using circular polarization in mantis shrimp"
+      },
+      {
+        "url": "https://www.sciencedaily.com/releases/2022/05/220516135639.htm",
+        "label": "ScienceDaily - Mantis shrimp hammer design inspires military armor"
+      },
+      {
+        "url": "https://www.nature.com/articles/413385a",
+        "label": "Nature - Biomechanics: Prowess of a predatory shrimp"
+      },
+      {
+        "url": "https://doi.org/10.1016/j.actbio.2019.04.015",
+        "label": "Acta Biomaterialia - Helicoidal nanostructure of mantis shrimp dactyl club"
+      },
+      {
+        "url": "https://doi.org/10.1016/j.actbio.2019.04.015",
+        "label": "Acta Biomaterialia - Helicoidal nanostructure of mantis shrimp dactyl club"
+      },
+      {
+        "url": "https://doi.org/10.1126/science.1218512",
+        "label": "Science - Nanostructured impact-resistant biocomposite in stomatopods"
+      }
+    ],
+    "image_color": "#10B981",
+    "enrichment_count": 11
+  }
+]

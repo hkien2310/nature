@@ -82,6 +82,40 @@ export interface WhatIfAnswer {
   updated_at: string;
 }
 
+export interface HumanSplice {
+  id: string;
+  creature_id: string;
+  title: string;
+  trait_name: string;
+  slug: string;
+  spliced_stats: {
+    strength: number;
+    durability: number;
+    speed: number;
+    weaponry: number;
+    special: number;
+    lethality: number;
+  };
+  formulas_and_data: {
+    human_mass_kg?: number;
+    grafted_weight_g?: number;
+    punch_velocity_ms?: number;
+    impact_force_n?: number;
+    formulas?: Array<{
+      name: string;
+      equation: string;
+      result: string;
+    }>;
+    [key: string]: any;
+  };
+  summary: string | null;
+  sci_fi_hype: string;
+  scientific_reality: string;
+  created_at: string;
+  updated_at: string;
+}
+
+
 
 export async function getDBCreatures(): Promise<Creature[]> {
   try {
@@ -502,6 +536,23 @@ export async function getCreatureWhatIfs(creatureId: string): Promise<Array<What
     return [];
   }
 }
+
+export async function getCreatureHumanSplices(creatureId: string): Promise<HumanSplice[]> {
+  try {
+    const { data, error } = await supabase
+      .from("human_splices")
+      .select("*")
+      .eq("creature_id", creatureId)
+      .order("created_at", { ascending: true });
+
+    if (error) throw error;
+    return data || [];
+  } catch (err) {
+    console.error("Error fetching creature human splices:", err);
+    return [];
+  }
+}
+
 
 
 

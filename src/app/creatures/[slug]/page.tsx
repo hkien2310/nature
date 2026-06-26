@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import WhatIfSection from "@/components/WhatIfSection";
+import HumanSpliceSection from "@/components/HumanSpliceSection";
+
 
 
 export const dynamic = "force-dynamic";
@@ -463,6 +465,12 @@ export default async function CreatureProfilePage({ params }: Props) {
       <div className="mt-12">
         <WhatIfSection creatureId={creature.id} slug={slug} />
       </div>
+
+      {/* ── HUMAN SPLICING SIMULATOR FOR ADMINS ────── */}
+      <div className="mt-12">
+        <HumanSpliceSection creatureId={creature.id} slug={slug} />
+      </div>
+
 
       {/* ── NAVIGATION ─────────────────────────────── */}
       <div className="mt-10 pt-8 border-t border-[var(--border)] flex justify-between">
