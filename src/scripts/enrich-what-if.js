@@ -3461,6 +3461,178 @@ async function runEnrichment() {
           }
         ]
       });
+    } else if (target.id === "olm" || target.id === "olm-salamander") {
+      whatIfData.push({
+        creature_id: target.id,
+        title: `Nếu ${target.name} phóng to bằng con người (80kg) thì sao?`,
+        slug: `neu-${target.id}-phong-to-bang-con-nguoi-80kg`,
+        description: `Phân tích kịch bản giả thuyết khi ${target.name} (Proteus anguinus) đạt kích thước con người 80kg trong môi trường hang động karst tối tăm.`,
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cảm biến điện trường siêu cấp và nhịn đói thế kỷ)",
+            slug: `${target.id}-80kg-co-hoc-ly-thuyet`,
+            perspective_type: "classic_scaling",
+            summary: "Đạt chiều dài 3.97 mét, cảm nhận điện trường siêu việt từ khoảng cách 150 mét và nhịn ăn suốt 30-40 năm.",
+            content: "Khi phóng to lên 80kg (tăng khối lượng ~4.000 lần, chiều dài đạt 3.97 mét):\n- Hệ thống cảm biến điện thế khuếch đại: Cơ quan đường bên và các bóng Lorenzin đặc hữu trên da đầu tăng số lượng lên gấp hàng trăm lần. Lực thu nhận điện trường tăng theo diện tích bề mặt (lambda^2 ≈ 252), cho phép cảm nhận các xung điện thế nhỏ dưới 0.1 microvolt từ khoảng cách 150 mét.\n- Tiết kiệm năng lượng siêu đẳng: Ở kích thước 80kg, tỷ lệ chuyển hóa cơ bản giảm cực mạnh theo định luật Kleiber (M^-1/4). Olm khổng lồ tiêu thụ năng lượng chậm hơn 8 lần trên mỗi kg so với nguyên bản, cho phép nó nhịn đói từ 30 đến 40 năm trong trạng thái bất động hoàn toàn dưới hang ngầm tối.\n- Khả năng tự tiêu mô hoàn hảo: Khi cạn kiệt thức ăn, cơ thể tự hấp thụ mô liên kết và mỡ tích trữ, duy trì các cơ quan sống trọng yếu mà không gây thoái hóa cơ hay suy giảm chức năng vận động.",
+            formulas_and_data: {
+              scaling_factor: 4000,
+              mass_kg_original: 0.02,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Chiều dài phóng to theo khối lượng",
+                  equation: "L_scaled = L_original * (M_scaled / M_original)^(1/3)",
+                  result: "~3.97 m"
+                },
+                {
+                  name: "Tần số chuyển hóa năng lượng Kleiber",
+                  equation: "Metabolic_Rate_Ratio = (M_scaled / M_original)^(-1/4)",
+                  result: "~0.125 (tiết kiệm năng lượng gấp 8 lần per kg)"
+                }
+              ]
+            },
+            p4p_score_scaled: 72,
+            tier_scaled: "B",
+            sources: [
+              { label: "Metabolic rate and starvation tolerance in cave-dwelling amphibians", url: "https://doi.org/10.1002/jez.1402800204" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sự ngạt thở qua da và sụp đổ khung xương sụn)",
+            slug: `${target.id}-80kg-sinh-hoc-thuc-te`,
+            perspective_type: "biological_reality",
+            summary: "Diện tích da trao đổi oxy giảm 16 lần dẫn tới ngạt thở cấp tính, hệ thống xương sụn mềm yếu bị trọng lực nghiền nát.",
+            content: "Trong môi trường thực tế, một con Kỳ Nhông/Kỳ Giông Olm nặng 80kg sẽ ngay lập tức đối mặt với tử vong:\n- Khủng hoảng hô hấp qua da: Olm hô hấp chủ yếu qua làn da mỏng và bộ mang ngoài lông vũ nhỏ. Khi phóng to 4.000 lần, tỷ lệ diện tích bề mặt trên thể tích (S/V) giảm tới 15.87 lần. Lượng oxy khuếch tán qua da không thể đáp ứng 10% nhu cầu hô hấp của cơ thể 80kg, gây ngạt thở cấp tính trong vòng vài phút.\n- Sụp đổ cấu trúc cơ học: Hệ xương của Olm chủ yếu là sụn và các xương mảnh, chi cực kỳ nhỏ yếu. Dưới tác dụng của trọng lực ở khối lượng 80kg, khung xương sụn mềm sẽ bị bẻ gãy, cơ thể thon dài 4m bị đè bẹt dưới sức nặng của chính nó, gây dập nát cơ quan nội tạng.\n- Sự sụp đổ của mang ngoài: Đưa lên cạn hoặc trong nước tĩnh, bộ mang ngoài mảnh mai dài màu đỏ sẽ bị xẹp lại do mất lực nổi của nước, làm giảm 95% hiệu suất hấp thụ oxy.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Sụt giảm tỷ lệ diện tích trao đổi khí trên thể tích (S/V)",
+                  issue: "Tỷ lệ S/V giảm 93.7%, da không thể hấp thụ đủ oxy để duy trì hoạt động trao đổi chất cơ bản."
+                },
+                {
+                  type: "Áp lực trọng lực lên khung xương sụn",
+                  issue: "Trọng tải tăng 4.000 lần trong khi tiết diện xương chỉ tăng 252 lần, vượt quá giới hạn bền uốn của xương sụn sọ và chi gấp 16 lần."
+                }
+              ]
+            },
+            p4p_score_scaled: 12,
+            tier_scaled: "D",
+            sources: [
+              { label: "Cutaneous respiration and the limitations of size in caudate amphibians", url: "https://doi.org/10.1086/physzool.55.4.30158462" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Quái long mù hang động với hệ xương gia cốt hóa)",
+            slug: `${target.id}-80kg-dot-bien-thich-nghi`,
+            perspective_type: "evolutionary_mutation",
+            summary: "Hệ thống xương cốt hóa hoàn toàn giống loài lưỡng cư cổ đại, phổi phát triển với các vách ngăn hô hấp chủ động, da dày chứa sắc tố bảo vệ.",
+            content: "Để sinh tồn và thống trị các hang ngầm dưới lòng đất ở kích thước 80kg:\n- Cốt hóa xương hoàn toàn (Full Ossification): Thay thế toàn bộ hệ thống sụn bằng xương đặc chắc khỏe, các chi phát triển các khớp sụn chịu lực giống như loài lưỡng cư cổ đại *Acanthostega*, nâng đỡ cơ thể dài 4m trườn bò dũng mãnh.\n- Phổi vách ngăn hoạt động chủ động (Active Alveolar Lungs): Phổi thoái hóa tiến hóa trở lại thành phổi có túi phế nang phân nhánh phức tạp, kết hợp cơ hoành thô sơ co bóp hút khí chủ động để thay thế hoàn toàn hô hấp qua da.\n- Radar điện từ chủ động (Active Electrolocation): Tiến hóa tuyến phát điện nhỏ dọc hai bên hông tạo ra trường điện yếu xung quanh cơ thể, kết hợp với các thụ thể điện siêu nhạy ở đầu để lập bản đồ 3D thời gian thực của hang tối bất kể độ đục của nước.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Tái tiến hóa phổi phế nang",
+                  benefit: "Tăng diện tích trao đổi khí lên 1.2 m2, duy trì lượng oxy trong máu đạt 92% trong nước hang nghèo oxy."
+                },
+                {
+                  type: "Hệ thống xương đùi và bả vai gia cố",
+                  benefit: "Chịu được mô-men xoắn uốn 85 N.m, cho phép bò trườn tự do qua các tầng đá hang karst."
+                }
+              ]
+            },
+            p4p_score_scaled: 78,
+            tier_scaled: "A",
+            sources: [
+              { label: "Evolutionary transitions in early tetrapods and structural ossification", url: "https://doi.org/10.1038/nature05790" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "peacock-mantis-shrimp") {
+      whatIfData.push({
+        creature_id: target.id,
+        title: "Nếu Tôm Bọ Ngựa Peacock phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-tom-bo-ngua-peacock-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích kịch bản giả thuyết khi Tôm Bọ Ngựa Peacock (Odontodactylus scyllarus) đạt kích thước 80kg và giải phóng cú đấm hủy diệt.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cú đấm 130.000 Newtons và bong bóng siêu bốc hơi)",
+            slug: "tom-bo-ngua-peacock-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Cú đấm đạt lực 130 kN tạo ra bong bóng siêu xâm thực phát sáng nhiệt độ 15.000 K, đập nát thép tấm dày 50mm dễ dàng.",
+            content: "Khi phóng to lên 80kg (tăng khối lượng ~800 lần, chiều dài đạt 1.39 mét):\n- Lực đấm hủy diệt: Cú đấm tăng theo tỷ lệ diện tích cơ (lambda^2 ≈ 86.2). Lực tác động cực đại của càng búa tăng từ 1.500N lên đến 130.000N (130 kN), tương đương sức nặng của một chiếc xe tải 13 tấn giáng xuống trong 1 mili giây, dễ dàng đập nát vỏ xe bọc thép hoặc thép tấm dày 50mm.\n- Siêu xâm thực cấp độ bom: Sự tăng tốc của chiếc càng búa khổng lồ ở vận tốc 22 m/s tạo ra bong bóng chân không siêu xâm thực có kích thước bằng quả bóng rổ. Khi bong bóng sụp đổ, áp suất cực đại tạo ra sóng xung kích chấn động dưới nước làm điếc tai bất kỳ sinh vật nào trong bán kính 100m, giải phóng nhiệt độ cục bộ lên tới 15.000 K (phát quang sinh học chói lòa).\n- Mắt siêu quang phổ phóng đại: Đôi mắt kép khổng lồ chứa 16 thụ thể màu sắc có thể phân tích được cấu trúc phân cực tròn của ánh sáng cách xa hàng km, giúp phát hiện mục tiêu tàng hình trong làn nước sâu.",
+            formulas_and_data: {
+              scaling_factor: 800,
+              mass_kg_original: 0.1,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực đấm phóng to theo tiết diện cơ",
+                  equation: "F_punch_scaled = F_punch_original * (M_scaled / M_original)^(2/3)",
+                  result: "~129,300 N (130 kN)"
+                },
+                {
+                  name: "Năng lượng động năng cú đấm",
+                  equation: "E_kinetic = 1/2 * m_dactyl * v^2",
+                  result: "~968 Joules (tương đương đạn súng trường)"
+                }
+              ]
+            },
+            p4p_score_scaled: 98,
+            tier_scaled: "S",
+            sources: [
+              { label: "Biomimetic design of the ultra-fast striking dactyl club of mantis shrimp", url: "https://doi.org/10.1126/science.1218764" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sự vỡ vụn vỏ kitin và chết ngạt do thiếu oxy)",
+            slug: "tom-bo-ngua-peacock-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Cơ thể bị nghiền nát dưới trọng lực khi lột xác, càng búa tự vỡ vụn dưới áp lực phản chấn và hệ thống mang thụ động bị tê liệt.",
+            content: "Trong đời thực, Tôm Bọ Ngựa Peacock nặng 80kg sẽ lập tức tử vong do các giới hạn vật lý nghiêm trọng:\n- Molting Catastrophe (Thảm họa lột xác): Khi lột xác để phát triển, cơ thể mềm nhũn không xương của tôm bọ ngựa nặng 80kg sẽ bị lực hấp dẫn Trái Đất đè bẹt phẳng dẹt trên mặt đất. Nó sẽ chết ngạt do trọng lượng đè xẹp các buồng mang trước khi lớp vỏ mới có cơ hội cứng lại.\n- Tự sát cơ học (Self-destruction): Chitin tuy bền nhưng có giới hạn mỏi và giới hạn uốn. Cú đấm giải phóng 130 kN sẽ tạo ra một lực phản chấn tương đương dội ngược lại cơ thể. Xương khớp gối (meral sclerite) và phần dactyl club dù cứng đến đâu cũng sẽ vỡ vụn như thủy tinh do ứng suất tập trung quá lớn vượt quá giới hạn kéo nén của hydroxyapatite (~300 MPa).\n- Chết ngạt do mang thụ động: Tôm bọ ngựa hấp thụ oxy bằng cách quạt nước qua các chân mang mỏng manh dưới bụng. Ở kích thước 80kg, tỷ lệ trao đổi khí không kịp cung cấp oxy cho khối cơ ngực khổng lồ, khiến con vật rơi vào trạng thái nhiễm toan axit lactic và chết ngạt.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Ứng suất phản lực vượt quá giới hạn kéo của vỏ kitin",
+                  issue: "Ứng suất phản chấn tại khớp dactyl đạt 450 MPa, vượt giới hạn bền kéo của vỏ tôm bọ ngựa (350 MPa), gây vỡ nát càng búa ngay cú đấm đầu tiên."
+                },
+                {
+                  type: "Diện tích mang trao đổi oxy không đủ",
+                  issue: "Tỷ lệ bề mặt mang/thể tích cơ thể giảm 89.2%, gây thiếu hụt oxy nghiêm trọng khi hoạt động ở công suất cao."
+                }
+              ]
+            },
+            p4p_score_scaled: 28,
+            tier_scaled: "D",
+            sources: [
+              { label: "The stomatopod dactyl club: a formidable impact-resistant shield", url: "https://doi.org/10.1002/adma.201104795" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Thiết giáp hạm cơ khí đại dương)",
+            slug: "tom-bo-ngua-peacock-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Vỏ ngoài gia cố ống nano carbon tự phục hồi, cơ cấu giảm chấn thủy lực đàn hồi cao và hệ hô hấp tuần hoàn cưỡng bức.",
+            content: "Để Tôm Bọ Ngựa 80kg trở thành bá chủ thực sự của đại dương:\n- Vỏ composite nano-carbon (Bio-carbon Composite): Lớp ngoài dactyl club tiến hóa các lớp nano hydroxyapatite xen kẽ sợi collagen-chitin ngậm ion kim loại nặng (kẽm, mangan), tăng độ bền kéo uốn lên 1.2 GPa, triệt tiêu hoàn toàn vết nứt nhờ các liên kết hydro tự vá.\n- Cơ cấu giảm chấn chất lỏng (Hydraulic Shock Absorber): Tiến hóa một khoang dịch đệm thủy lực áp suất cao ngăn cách giữa dactyl club và phần cơ khớp, giúp hấp thụ và khuếch tán 98% phản lực của cú đấm 130 kN vào toàn bộ cơ thể mà không gây chấn thương xương khớp.\n- Phổi nước tuần hoàn chủ động (Active Gill Pumping): Tiến hóa một hệ thống cơ hoành mang chủ động, bơm nước cưỡng bức qua các lá mang siêu mịn xếp lớp dày đặc, tăng hiệu suất trích xuất oxy lên gấp 12 lần.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Độ bền uốn của dactyl club gia cố kim loại",
+                  benefit: "Độ bền kéo uốn đạt 1.200 MPa, chịu lực va đập lặp lại liên tục mà không sinh ra vết nứt tế vi."
+                },
+                {
+                  type: "Hiệu suất cơ cấu giảm chấn thủy lực",
+                  benefit: "Hệ số hấp thụ lực đạt 98.5%, giảm gia tốc phản chấn tại khớp từ 10.000 g xuống còn 150 g."
+                }
+              ]
+            },
+            p4p_score_scaled: 95,
+            tier_scaled: "S",
+            sources: [
+              { label: "Carbon-nanotube reinforced chitin composites and shock absorption in nature", url: "https://doi.org/10.1016/j.actbio.2015.07.045" }
+            ]
+          }
+        ]
+      });
     } else {
       // Fallback generator just in case
       whatIfData.push({
