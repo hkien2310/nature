@@ -4149,6 +4149,264 @@ async function runEnrichment() {
           }
         ]
       });
+    } else if (target.id === "cheetah") {
+      whatIfData.push({
+        creature_id: "cheetah",
+        title: "Nếu Báo Săn phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-bao-san-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích kịch bản giả thuyết khi loài thú bứt tốc nhanh nhất trên cạn Báo Săn (Acinonyx jubatus) đạt khối lượng 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Bão táp điền kinh và sải chạy bứt tốc 130 km/h)",
+            slug: "bao-san-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Đạt vận tốc bứt tốc lý thuyết 130 km/h, sải bước chạy kéo dài lên tới 9.5m nhờ cột sống lò xo và móng vuốt chịu tải bám đường tốt.",
+            content: "Khi Báo Săn được phóng to lên khối lượng 80kg (tăng khối lượng ~1.8 lần so với trung bình 45kg):\n- Sức mạnh bứt tốc vượt bậc: Vận tốc bứt tốc lý thuyết tăng nhờ lực cơ bắp đùi phát triển mạnh mẽ. Vận tốc tối đa tăng theo tỷ lệ cơ học lên tới 130 km/h chỉ sau 2.5 giây. Sải chân chạy nước rút kéo dài từ 7m lên tới 9.5m nhờ cột sống hoạt động như một lò xo có mô-men lực nén lớn.\n- Độ bám đường và phản xạ tiền đình: Hệ thống móng vuốt bán co rút chịu lực nén lớn hoạt động như những chiếc đinh giày chạy cự ly ngắn bám chặt mặt đường đất, trong khi hệ thống phản xạ tiền đình - mắt (vestibulo-ocular reflex) giữ thăng bằng võng mạc hoàn hảo giúp mắt khóa chặt con mồi bất chấp cơ thể nhấp nhô mạnh ở vận tốc siêu cấp.",
+            formulas_and_data: {
+              scaling_factor: 1.8,
+              mass_kg_original: 45,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Tốc độ chạy phóng đại theo lực đẩy",
+                  equation: "v_scaled = v_original * (M_scaled / M_original)^(1/6)",
+                  result: "~130 km/h"
+                },
+                {
+                  name: "Lực tác động lên khớp chân chịu tải bám đất",
+                  equation: "F_impact = M_scaled * a_acceleration",
+                  result: "~880 N"
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "S",
+            sources: [
+              { label: "Locomotion dynamics and spinal elasticity of cheetahs", url: "https://doi.org/10.1242/jeb.070029" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Hội chứng quá nhiệt nội tạng và thoái hóa khớp cơ học)",
+            slug: "bao-san-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Nhiệt độ cơ thể tăng vọt lên 43°C gây sốc nhiệt não chỉ sau 15 giây chạy bứt tốc, khớp chân mỏng dẹt chịu ứng suất xoắn gây rạn xương.",
+            content: "Trong thực tế vật lý sinh học khi Báo Săn đạt 80kg:\n- Tích tụ nhiệt lượng cực hạn: Khối lượng cơ hoạt động sinh nhiệt tăng theo lũy thừa 3 (thể tích), trong khi diện tích da tản nhiệt chỉ tăng theo lũy thừa 2. Khi bứt tốc lên 120-130 km/h, cơ thể 80kg sản sinh lượng nhiệt khổng lồ gấp 2.2 lần nguyên bản. Do không có cơ chế đổ mồ hôi hiệu quả, nhiệt độ cốt cơ thể vọt qua 43°C chỉ sau 15 giây (so với 30-40 giây của bản thường), gây đông tụ protein tế bào thần kinh, sốc nhiệt và tử vong ngay lập tức.\n- Quá tải cơ xương khớp: Đôi chân thon dài tiến hóa cho khối lượng nhẹ không thể chịu đựng lực chấn động gấp đôi (lên tới 4.500 N mỗi bước chạy) khi nện xuống đất ở tốc độ cao. Các khớp cổ chân và xương ống chày mảnh dẹt sẽ chịu ứng suất uốn quá mức, dẫn đến nứt rạn xương hoặc rách dây chằng chéo trước.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Thời gian chạy nước rút tối đa trước khi sốc nhiệt",
+                  issue: "Giảm từ 30 giây xuống còn 12-15 giây do tỷ lệ diện tích tản nhiệt trên thể tích giảm 25%."
+                },
+                {
+                  type: "Áp lực chấn động lên khớp chân",
+                  issue: "Lực phản lực từ đất (GRF) đạt 4.500 N, vượt giới hạn uốn gãy của xương chày mảnh dẹt."
+                }
+              ]
+            },
+            p4p_score_scaled: 40,
+            tier_scaled: "C",
+            sources: [
+              { label: "Locomotor limits and heat storage in running cheetahs", url: "https://doi.org/10.1242/jeb.091116" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Quái thú bứt tốc có chu kỳ làm mát chủ động và xương hóa cứng)",
+            slug: "bao-san-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Mở rộng hệ thống xoang mũi và tuyến mồ hôi đệm chân tản nhiệt chủ động, cấu trúc xương đùi hóa đặc chịu ứng suất uốn cao.",
+            content: "Để Báo Săn 80kg trở thành quái thú tốc độ bền bỉ:\n- Hệ thống làm mát tuần hoàn bằng mồ hôi (Evaporative Glandular Network): Tiến hóa các tuyến mồ hôi hoạt động mạnh dọc sống lưng kết hợp mạch máu dưới da dãn nở lớn giúp giải nhiệt nhanh gấp 3 lần. Xoang mũi mở rộng thêm 40% diện tích tiếp xúc niêm mạc, hoạt động như bộ trao đổi nhiệt khí-lỏng chủ động bảo vệ não bộ khỏi bị quá nhiệt.\n- Cường hóa mật độ xương đùi (Osteosclerotic reinforcement): Xương bả vai và hệ xương chi dưới tăng mật độ canxi hóa đặc (osteosclerosis) tương tự thú săn mồi lớn, chịu lực chấn động lên tới 6.000 N mà không bị nứt gãy, đồng thời các dây chằng được gia cố bằng sợi collagen siêu liên kết đàn hồi cao.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Hệ thống tản nhiệt xoang mũi mở rộng",
+                  benefit: "Tốc độ tản nhiệt đạt 1.800 W, giữ nhiệt độ não luôn dưới 39°C trong suốt 60 giây chạy nước rút."
+                },
+                {
+                  type: "Gia cố mật độ xương đùi",
+                  benefit: "Giới hạn bền nén của xương tăng lên 180 MPa, chịu lực phản lực từ đất đạt 6.500 N."
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "S",
+            sources: [
+              { label: "Skeletal adaptations and thermoregulation in large carnivores", url: "https://doi.org/10.1111/j.1469-7998.2012.00912.x" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "cuttlefish") {
+      whatIfData.push({
+        creature_id: "cuttlefish",
+        title: "Nếu Mực Nang phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-muc-nang-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích kịch bản giả thuyết khi loài sinh vật ngụy trang bậc thầy Mực Nang (Sepia officinalis) đạt kích thước 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Thủy quái tàng hình bách biến và xung lực phản lực 450N)",
+            slug: "muc-nang-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Xung lực phản lực nước đạt 450N bứt tốc 40 km/h, thay đổi màu sắc hoa văn ngụy trang bao phủ diện tích 2.5 m2 chỉ trong 100ms.",
+            content: "Khi Mực Nang phóng to lên 80kg (tăng khối lượng ~25 lần so với cá thể lớn 3.2kg, chiều dài cơ thể đạt ~1.8m):\n- Phản lực đẩy nước uy lực: Khoang áo co bóp bằng hệ cơ vòng dày bản. Khi phóng to, lực đẩy thủy động học tăng theo tiết diện cơ bụng (lambda^2 ≈ 8.5), tạo ra lực phun nước phản lực lên tới 450N thông qua ống phễu linh hoạt, giúp mực nang bứt tốc tức thì đạt vận tốc 40 km/h dưới nước.\n- Ngụy trang diện tích lớn: Hệ sắc tố tế bào chromatophores phát triển gấp bội. Hơn 50 triệu tế bào màu sắc co giãn dưới sự điều khiển thần kinh trực tiếp, cho phép mực nang 80kg đổi màu sắc, mô phỏng rạn san hô hoặc cát biển bao phủ diện tích da rộng 2.5m2 chỉ trong 100 mili giây.\n- Nang mực chịu lực nổi: Xương nang mực (cuttlebone) dài 1.2m làm từ các tấm aragonite song song siêu nhẹ điều tiết lượng khí nito chuẩn xác, giúp mực nang nặng 80kg lơ lửng thăng bằng hoàn hảo ở mọi độ sâu.",
+            formulas_and_data: {
+              scaling_factor: 25,
+              mass_kg_original: 3.2,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Lực phun nước phản lực bứt tốc",
+                  equation: "F_thrust = rho * A_funnel * v_jet^2",
+                  result: "~450 N"
+                },
+                {
+                  name: "Thể tích khoang áo chứa nước co bóp",
+                  equation: "V_mantle_scaled = V_mantle_original * scaling_factor",
+                  result: "~18 lít"
+                }
+              ]
+            },
+            p4p_score_scaled: 78,
+            tier_scaled: "B",
+            sources: [
+              { label: "Jet propulsion and buoyancy control in cephalopods", url: "https://doi.org/10.1242/jeb.02445" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sự vỡ nát xương nang và kiệt quệ oxy máu)",
+            slug: "muc-nang-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Cấu trúc nang aragonite bị nứt vỡ dưới áp suất thủy tĩnh cao, hệ tuần hoàn đồng thiếu hiệu quả gây ngạt thở khi bơi nhanh.",
+            content: "Trong thực tế vật lý sinh học khi Mực Nang đạt 80kg:\n- Tổn thương xương nang mực: Xương cuttlebone có cấu trúc tổ ong xốp rỗng rậm rạp bằng chất canxi aragonite để chứa khí. Khi kích thước xương dài tới 1.2m, mô-men xoắn xoay uốn cơ thể và áp suất thủy tĩnh ở độ sâu >50m sẽ vượt quá giới hạn bền nén của lớp Aragonite mỏng mảnh, làm xẹp xương nang, khiến mực mất hoàn toàn khả năng kiểm soát độ nổi và chìm thẳng xuống đáy biển.\n- Khủng hoảng oxy máu (Hemocyanin insufficiency): Mực nang sử dụng sắc tố hemocyanin chứa đồng để vận chuyển oxy trong máu, vốn có hiệu suất liên kết oxy kém hơn hemoglobin chứa sắt gấp 3-4 lần. Khi cơ thể nặng 80kg bơi lội bóp phễu phun nước liên tục, cơ vòng tiêu thụ lượng oxy cực đại. Hệ thống tim ba buồng không thể bơm đủ máu đi qua các lá mang khuếch tán thụ động, mực nang sẽ rơi vào trạng thái nhiễm toan acid lactic máu và kiệt quệ cơ chỉ sau 2 phút bơi nhanh.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Giới hạn áp suất phá hủy xương nang mực",
+                  issue: "Nang mực 1.2m bị nứt vỡ dưới áp suất 0.8 MPa (độ sâu ~80m), mất khả năng điều tiết sức nổi."
+                },
+                {
+                  type: "Hiệu suất cung cấp oxy của Hemocyanin",
+                  issue: "Nồng độ oxy trong máu chỉ đạt 1.2 mmol/L dưới tải tối đa, gây ngạt cơ hoàn toàn."
+                }
+              ]
+            },
+            p4p_score_scaled: 30,
+            tier_scaled: "D",
+            sources: [
+              { label: "Buoyancy and mechanical properties of the cuttlebone", url: "https://doi.org/10.1016/j.jsb.2007.03.007" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Quái mực khổng lồ có máu sắt đỏ và xương nang titan composite)",
+            slug: "muc-nang-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Xương nang gia cố chitin-silicate chịu áp lực 2.5 MPa, tiến hóa sắc tố máu Hemoglobin đỏ nâng hiệu suất hô hấp lên 400%.",
+            content: "Để Mực Nang 80kg làm bá chủ ngụy trang rình rập ở đại dương:\n- Xương nang composite Titan-Chitin (Bio-composite Cuttlebone): Cấu trúc nang mực được gia cố bởi ma trận chitin-silicate dẻo đan xen hạt aragonite siêu nhỏ, tăng giới hạn bền nén uốn lên gấp 4 lần, chịu được áp suất lên tới 2.5 MPa (độ sâu 250m) mà không bị nứt vỡ.\n- Máu sắt đỏ (Hemoglobin transition): Đột biến chuyển đổi hoàn toàn từ protein vận chuyển oxy Hemocyanin (máu xanh) sang Hemoglobin (máu đỏ chứa sắt) có ái lực oxy cao gấp 4 lần. Kết hợp hai mang phụ có vách ngăn cơ bóp đẩy nước chủ động, tăng lượng oxy cung cấp cho cơ vòng lên 400%, cho phép mực bơi phản lực liên tục mà không bị tích tụ acid lactic.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Gia cố composite xương nang",
+                  benefit: "Chịu áp suất thủy tĩnh 2.5 MPa, duy trì sức nổi ổn định từ độ sâu 0m đến 250m."
+                },
+                {
+                  type: "Nâng cấp protein vận chuyển oxy Hemoglobin",
+                  benefit: "Nồng độ oxy bão hòa máu tăng lên 5.2 mmol/L, duy trì hiệu suất cơ bóp liên tục 30 phút."
+                }
+              ]
+            },
+            p4p_score_scaled: 85,
+            tier_scaled: "A",
+            sources: [
+              { label: "Respiratory proteins and composite materials in deep-sea cephalopods", url: "https://doi.org/10.1016/j.bbapap.2011.08.012" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "draco-lizard") {
+      whatIfData.push({
+        creature_id: "draco-lizard",
+        title: "Nếu Thằn Lằn Bay Draco phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-than-lan-bay-draco-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích kịch bản giả thuyết khi loài thằn lằn bay độc đáo Thằn Lằn Bay Draco (Draco volans) đạt khối lượng 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Cực hạn phi đao khí động học và lượn lách tán rừng)",
+            slug: "than-lan-bay-draco-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Sải cánh màng da rộng 2.4m tạo lực nâng khí động học lớn lướt xa 45m, yếm cổ ổn định triệt tiêu mô-men xoắn hoàn hảo.",
+            content: "Khi Thằn Lằn Bay Draco được phóng to lên 80kg (tăng khối lượng ~4.000 lần so với nguyên bản 20g, chiều dài đạt ~1.6m):\n- Lướt gió cự ly dài: Khi phóng to cơ học lý thuyết, sải cánh màng da patagium được chống đỡ bởi hệ xương sườn biến tính kéo dài đạt chiều rộng 2.4 mét. Lực nâng khí động học tạo ra ở vận tốc bay lướt 50 km/h giúp thằn lằn bay xa tới 45 mét giữa các tán cây cổ thụ.\n- Cánh ổn định yếm cổ (Canard dewlap system): Chiếc yếm cổ màu vàng cam rực rỡ dài 35cm hoạt động giống như một chiếc cánh canard phía mũi của máy bay phản lực, triệt tiêu hoàn toàn mô-men xoắn gây chúi đầu khi cất cánh. Đuôi dài 1.2m đóng vai trò như bánh lái đuôi khí động học xoay chuyển cực kỳ linh hoạt để né tránh chướng ngại vật cành cây.",
+            formulas_and_data: {
+              scaling_factor: 4000,
+              mass_g_original: 20,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Sải cánh phóng to lý thuyết",
+                  equation: "W_span_scaled = W_span_original * (M_scaled / M_original)^(1/3)",
+                  result: "~2.4 m"
+                },
+                {
+                  name: "Góc lướt khí động học tối ưu",
+                  equation: "L/D_ratio = C_L / C_D",
+                  result: "~4.5 (giảm độ cao 1m cho mỗi 4.5m bay xa)"
+                }
+              ]
+            },
+            p4p_score_scaled: 75,
+            tier_scaled: "B",
+            sources: [
+              { label: "Aerodynamics and gliding performance of Draco lizards", url: "https://doi.org/10.1242/jeb.00685" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sự gãy sập màng sườn và cú rơi tự do hủy diệt)",
+            slug: "than-lan-bay-draco-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Diện tích cánh thiếu hụt 92% khiến thằn lằn rơi tự do như một hòn đá nặng, xương sườn mỏng gãy vụn dưới lực nâng gió.",
+            content: "Trong thực tế vật lý khí động học khi Thằn Lằn Bay Draco nặng 80kg:\n- Thảm họa lực nâng cánh: Định luật bình phương - lập phương là rào cản chí mạng. Khối lượng tăng 4.000 lần nhưng diện tích màng da patagium chỉ tăng khoảng 250 lần. Diện tích cánh phóng to thực tế chỉ đạt 0.18 m2, trong khi diện tích cần thiết để nâng 80kg lướt gió an toàn là tối thiểu 2.2 m2. Draco khổng lồ sẽ rơi tự do như một hòn đá từ ngọn cây và tử vong khi chạm đất.\n- Gãy sập hệ xương sườn: Hệ xương sườn biến tính nâng đỡ màng cánh rất mảnh và dẻo. Khi bay lướt ở 80kg, áp lực gió cản tác động lên màng da sẽ tạo ra lực nâng cơ học bẻ cong xương sườn với mô-men lực 180 N.m, vượt quá giới hạn gãy của xương bò sát mỏng tới 8 lần, làm gãy vụn toàn bộ khung cánh sườn trong tích tắc.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Thiếu hụt diện tích màng cánh nâng đỡ",
+                  issue: "Diện tích cánh thực tế thiếu hụt 92% so với yêu cầu khí động học tối thiểu của cơ thể 80kg."
+                },
+                {
+                  type: "Ứng suất uốn gãy xương sườn đỡ cánh",
+                  issue: "Mô-men xoắn gió tác động đạt 180 N.m, vượt quá giới hạn bền uốn xương sườn 800%."
+                }
+              ]
+            },
+            p4p_score_scaled: 12,
+            tier_scaled: "D",
+            sources: [
+              { label: "Gliding flight and scaling limitations in vertebrates", url: "https://doi.org/10.1111/j.1469-7998.2005.00012.x" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Khủng long bay màng da composite và đệm khí cánh cụp chủ động)",
+            slug: "than-lan-bay-draco-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Màng cánh gấp nếp rộng 4.5m bằng keratin composite và xương sườn carbon-calcified, cơ liên sườn chịu lực co bóp lớn.",
+            content: "Để Thằn Lằn Bay Draco 80kg thống trị bầu trời tán rừng cổ thụ:\n- Màng cánh siêu rộng keratin composite (Composite Patagium): Màng da tiến hóa nếp gấp mở rộng gấp 3 lần, khi căng ra đạt sải rộng tới 4.5 mét (diện tích 2.3 m2). Lớp da dày tích hợp các sợi keratin chéo dẻo dai chống xé gió hoàn hảo.\n- Cường hóa xương sườn Carbon-Calcified (Carbon-fiber ribs): Hệ xương sườn biến tính được bọc một lớp vỏ carbon sinh học đặc biệt cứng cáp và đàn hồi cao, kết hợp các nhóm cơ liên sườn ilio-costalis phát triển dày bản chịu lực nén lướt gió lớn. Đôi chân trước tiến hóa khớp xoay linh hoạt kẹp giữ mép cánh để chủ động thay đổi độ cong biên dạng cánh, cho phép lượn lách, tăng giảm độ cao và tiếp đất êm ái như tàu lượn siêu cấp.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Mở rộng màng cánh composite xếp nếp",
+                  benefit: "Diện tích cánh đạt 2.3 m2, sải cánh 4.5m tạo lực nâng 850N giúp lướt xa hơn 80 mét từ độ cao 20m."
+                },
+                {
+                  type: "Cường hóa vật liệu xương sườn nâng đỡ",
+                  benefit: "Ứng suất uốn gãy tăng lên 250 MPa, triệt tiêu hoàn toàn rủi ro gãy sườn khi bay lướt tốc độ cao."
+                }
+              ]
+            },
+            p4p_score_scaled: 83,
+            tier_scaled: "A",
+            sources: [
+              { label: "Biomimetic structures and adaptive flight control in gliding reptiles", url: "https://doi.org/10.1098/rsif.2011.0543" }
+            ]
+          }
+        ]
+      });
     } else {
       // Fallback generator just in case
       whatIfData.push({
