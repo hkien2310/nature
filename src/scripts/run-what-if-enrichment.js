@@ -604,6 +604,346 @@ async function runEnrichment() {
         }
       ]
     },
+    "mantis-shrimp": {
+      creature_id: "mantis-shrimp",
+      title: "Nếu Tôm Bọ Ngựa (Mantis Shrimp) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-tom-bo-ngua-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích giả thuyết khi loài tôm bọ ngựa Odontodactylus scyllarus sở hữu cú đấm siêu thanh tạo bong bóng cavitation nhiệt độ mặt trời được phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cú đấm siêu thanh 130.000 N phá hủy xe bọc thép, sóng xung kích cavitation nhiệt độ 5.000K)",
+          slug: "tom-bo-ngua-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Cú đấm sấm sét giải phóng lực 130.000 N, bứt tốc 360 km/h tạo sóng kích nổ cavitation 2.5 GPa nhiệt độ 5.000K hóa hơi mục tiêu.",
+          content: "Khi Tôm Bọ Ngựa phóng to lên 80kg (từ khối lượng khoảng 100g, tăng gấp ~800 lần):\n- Siêu đòn đấm cơ học lý thuyết: Càng đập tôm bọ ngựa được thu phóng tạo lực đấm đạt 130.000 N (gấp 10 lần lực cắn cá sấu trưởng thành, tương đương lực đâm của đạn pháo). Cú đấm bứt tốc đạt 100 m/s (360 km/h) trong vòng 1 ms.\n- Sóng chấn động bong bóng Cavitation khổng lồ: Cú đấm xé nước tạo vùng chân không áp suất âm lớn. Khi bong bóng này sụp đổ (cavitation), nó giải phóng sóng kích nổ áp suất lên tới 2.5 GPa và nhiệt độ tức thời đạt 5.000K (xấp xỉ nhiệt độ bề mặt Mặt Trời), hóa hơi nước xung quanh và làm nát vụn thép giáp.\n- Thị giác 16 thụ thể đa phổ: Cặp mắt đa sắc quét chuyển động độc lập 360 độ cực nhanh, phân tích ánh sáng phân cực tròn và tia tử ngoại, khóa mục tiêu và phát hiện kẻ thù tàng hình trong 1 ms.",
+          formulas_and_data: {
+            scaling_factor: 800,
+            mass_g_original: 100,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Lực đấm cơ học lý thuyết phóng đại",
+                equation: "F_strike_scaled = F_strike_orig * (M_scaled / M_orig)^(2/3)",
+                result: "~130,000 N"
+              },
+              {
+                name: "Nhiệt độ sụp đổ bong bóng Cavitation",
+                equation: "T_collapse = T_ambient * (P_bubble_max / P_bubble_min)^((gamma-1)/gamma)",
+                result: "~5,000 Kelvin"
+              }
+            ]
+          },
+          p4p_score_scaled: 96,
+          tier_scaled: "S",
+          sources: [
+            { label: "Science - Biomechanics of the mantis shrimp strike", url: "https://doi.org/10.1126/science.1092379" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự nứt vỡ yên ngựa chitin do ứng suất uốn quá tải, sóng phản lực cavitation phá hủy cơ khớp cánh tay)",
+          slug: "tom-bo-ngua-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Cơ chế chốt cơ học tích năng lượng gãy nứt dưới ứng suất uốn 120 MPa, phản lực cavitation xé toạc mô cơ xương khớp cánh tay, ngạt thở mang tấm dính dấp.",
+          content: "Trong thế giới thực tế vật lý sinh học:\n- Sụp đổ cơ chế tích năng yên ngựa (Saddle): Cơ chế phóng càng nhanh phụ thuộc vào biến dạng đàn hồi của phần giáp Saddle (sclerite dạng yên ngựa). Ở 80kg, mô-men uốn nén yên ngựa tăng 800 lần trong khi tiết diện chỉ tăng 86 lần. Ứng suất uốn đạt 120 MPa vượt giới hạn bền uốn của chitin (85 MPa), làm vỡ nát Saddle khi tôm cố gắng tích năng đấm.\n- Phản lực chấn động cavitation tự sát: Sóng kích nổ 2.5 GPa do bong bóng sụp đổ lan truyền đa hướng trong nước. Ở kích thước 80kg, khoảng cách càng đập tới cơ thể quá gần, sóng chấn động này dội ngược sẽ xé toạc vỏ kitin cơ khớp cánh tay và phá hủy nội tạng tôm.\n- Suy hô hấp mang tấm dưới nước nông/trên cạn: Hệ mang tấm xẹp dính dấp làm giảm diện tích tiếp xúc S/V đi 9.3 lần. Tôm bọ ngựa sẽ chết ngạt vì thiếu oxy sau 10 phút ngoài môi trường nước sâu.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất uốn của giáp yên ngựa chitin",
+                issue: "Ứng suất đạt 120 MPa vượt giới hạn bền uốn 85 MPa của chitin đầu ngực rạn nứt."
+              },
+              {
+                type: "Tỷ lệ S/V trao đổi khí qua mang",
+                issue: "Tỷ lệ S/V giảm 9.3 lần gây thiếu hụt oxy nghiêm trọng cho cơ bắp vận động mạnh."
+              }
+            ]
+          },
+          p4p_score_scaled: 13,
+          tier_scaled: "D",
+          sources: [
+            { label: "Journal of Experimental Biology - Elastic energy storage in mantis shrimp", url: "https://doi.org/10.1242/jeb.018227" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khớp giảm chấn Resilin gia cường ống nano carbon, đĩa đệm giảm âm bọt khí bọc càng đấm, mang sụn nâng đỡ cơ học)",
+          slug: "tom-bo-ngua-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Saddle gia cường ống nano carbon chịu tải 180 MPa, đĩa bọt khí giảm rung động phản hồi 98% bảo vệ cánh tay, mang sụn hyaline chống xẹp dính.",
+          content: "Để vận hành cú đấm sấm sét an toàn ở khối lượng 80kg:\n- Saddle composite nano carbon: Giáp đầu ngực tiến hóa lớp chitin đan cài ống nano carbon tự nhiên và các dải liên kết chéo canxi hóa dày đặc, chịu ứng suất uốn nén tĩnh lên tới 180 MPa mà không mỏi hay nứt cơ học.\n- Đĩa bọc càng đệm bọt biển (Shock-absorbing dactyl club): Đầu càng đập tiến hóa cấu trúc xốp chứa đệm khí micro-voids ngậm nước đàn hồi cao, tiêu tán 98% năng lượng phản hồi từ sóng chấn động cavitation bảo vệ cánh tay.\n- Mang sụn hyaline nâng đỡ: Các lá mang tấm được lót khung sụn cứng cáp giữ cho chúng luôn mở rộng và có khoảng cách ổn định dưới mọi áp lực nước, kết hợp cơ nâng mang đập nước cưỡng bức chủ động.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Vỏ mai Saddle lai composite nano carbon",
+                benefit: "Chịu tải lực nén đàn hồi lên tới 180 MPa tích trữ năng lượng đấm tối ưu."
+              },
+              {
+                type: "Khung sụn hyaline mang tấm nâng đỡ",
+                benefit: "Duy trì diện tích trao đổi khí hiệu dụng 100% giúp tôm đấm liên tục không bị kiệt oxy."
+              }
+            ]
+          },
+          p4p_score_scaled: 85,
+          tier_scaled: "B",
+          sources: [
+            { label: "Advanced Materials - Bioinspired structural composites based on stomatopod dactyl club", url: "https://doi.org/10.1002/adma.201103290" }
+          ]
+        }
+      ]
+    },
+    "stoplight-loosejaw": {
+      creature_id: "stoplight-loosejaw",
+      title: "Nếu Cá Hàm Chùng Đèn Đỏ (Stoplight Loosejaw) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-ca-ham-chung-den-do-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích giả thuyết khi loài cá biển sâu Malacosteus niger có hàm chùng không màng da và khả năng phát ánh sáng đỏ vô hình được phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cú đớp đâm hàm 3.800 N gia tốc 18G, đèn pha tia hồng ngoại vô hình 10.000 Lumen chiếu xa 120m)",
+          slug: "ca-ham-chung-den-do-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Khung hàm hở dài 45cm phóng đớp mồi không sức cản nước, chùm sáng đỏ vô hình 10.000 Lumen cho phép săn mồi ẩn mình tuyệt đối.",
+          content: "Khi Cá Hàm Chùng Đèn Đỏ phóng to lên 80kg (tăng gấp ~5.333 lần):\n- Siêu đòn đớp đâm hàm dưới hở: Xương hàm dưới dạng khung xương hở không có màng da nối (dài tới 45cm) giúp triệt tiêu hoàn toàn lực cản nước khi đớp mồi tốc độ cao. Cú lao hàm đạt vận tốc 15 m/s với gia tốc 18G, lực kẹp từ các răng nanh cong ngược 8cm đạt tới 3.800 N băm nát và ghim chặt con mồi.\n- Đèn pha hồng ngoại vô hình công suất lớn: Cơ quan phát quang dưới mắt được phóng to, phát chùm ánh sáng đỏ đậm bước sóng 700nm với cường độ 10.000 Lumen, chiếu xa tới 120m. Ánh sáng này hoàn toàn vô hình trước mọi sinh vật biển sâu khác, biến cá thành sát thủ bắn tỉa đêm hoàn hảo.\n- Lớp da tàng hình bóng tối: Da hấp thụ 99.9% ánh sáng tới, không phản xạ bất kỳ tia sáng nào, giúp nó hòa mình tuyệt đối vào bóng đêm sâu thẳm.",
+          formulas_and_data: {
+            scaling_factor: 5333,
+            mass_g_original: 15,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Lực cắn cơ học lý thuyết phóng đại",
+                equation: "F_bite_scaled = F_bite_orig * (M_scaled / M_orig)^(2/3)",
+                result: "~3,800 N"
+              },
+              {
+                name: "Gia tốc cú đớp cơ học chéo",
+                equation: "a = F_strike / m_jaw",
+                result: "~18 G"
+              }
+            ]
+          },
+          p4p_score_scaled: 80,
+          tier_scaled: "A",
+          sources: [
+            { label: "Journal of Experimental Biology - Hydrodynamics of the loosejaw strike", url: "https://doi.org/10.1242/jeb.00287" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Gãy nứt khớp sọ-hàm dưới mô-men xoắn, mù mắt do sốc nhiệt đèn pha, suy hô hấp mang do cấu trúc hàm trống)",
+          slug: "ca-ham-chung-den-do-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Khớp hàm yếu gãy gập dưới ứng suất xoắn 75 MPa, nhiệt độ đèn pha 65°C thiêu cháy giác mạc, mang ngạt khí vì không có bơm khoang miệng.",
+          content: "Trong thế giới thực tế vật lý sinh học:\n- Khớp sọ-hàm gãy gập: Xương hàm dưới hẹp mảnh dẻ chịu mô-men xoắn quá tải khi cắn con mồi chuyển động ở 80kg. Ứng suất uốn tại sụn khớp hàm lên tới 75 MPa, vượt giới hạn bền uốn sụn cá (15 MPa), bẻ rời hàm dưới ngay cú đập đầu tiên.\n- Tỏa nhiệt đèn pha thiêu cháy mắt: Đèn pha hồng ngoại 10.000 Lumen tỏa ra lượng nhiệt lớn 85W ngay sát mắt. Do tuần hoàn kém, nhiệt độ vùng mắt tăng lên 65°C trong 2 phút, phá hủy võng mạc gây mù vĩnh viễn.\n- Suy hô hấp cấp tính: Cơ chế hàm chùng không có màng da ngăn cản cá tạo chênh lệch áp suất trong miệng để bơm hút nước qua mang. Cá sẽ chết ngạt sau 5 phút do thiếu oxy tuần hoàn.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất uốn tại sụn khớp sọ-hàm dưới",
+                issue: "Ứng suất 75 MPa vượt giới hạn bền uốn 15 MPa của sụn khớp cá."
+              },
+              {
+                type: "Tăng nhiệt độ tức thời tại photophore cạnh mắt",
+                issue: "Nhiệt lượng tỏa ra 85W làm nhiệt độ mô mắt tăng lên 65°C gây hoại tử võng mạc."
+              }
+            ]
+          },
+          p4p_score_scaled: 15,
+          tier_scaled: "D",
+          sources: [
+            { label: "Deep-Sea Research - Thermal and mechanical constraints of photophores in deep-sea fish", url: "https://doi.org/10.1016/j.dsr.2014.05.008" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khớp hàm canxi hóa gia cường collagen xoắn, lưới tản nhiệt mirabile nhiệt ngược dòng vùng mắt, mang bơm chủ động)",
+          slug: "ca-ham-chung-den-do-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Khớp hàm cốt hóa canxi chịu lực 110 MPa, mạng lưới tản nhiệt rete mirabile giữ mắt dưới 15°C, bơm mang chủ động 75 L/phút bảo vệ hô hấp.",
+          content: "Để Cá Hàm Chùng tồn tại và hoạt động hiệu quả ở khối lượng 80kg:\n- Khớp hàm canxi hóa gia cường: Khớp sọ-hàm được cốt hóa xương xốp và bao bọc bởi dải cơ bện sợi collagen xoắn chéo bền bỉ, nâng giới hạn chịu lực uốn nén lên 110 MPa mà không bị biến dạng hay nứt sụn.\n- Hệ tản nhiệt mao dẫn ngược dòng: Phát triển mạng lưới vi mạch máu rete mirabile bao quanh photophore dưới mắt, nhanh chóng dẫn nhiệt dư thừa ra môi trường nước sâu lạnh, giữ nhiệt độ vùng mắt luôn dưới 15°C.\n- Bơm mang Operculum độc lập: Khe mang phát triển hệ cơ bơm hút chủ động tách biệt hoàn toàn với khoang miệng, bơm tuần hoàn nước đạt lưu lượng 75 lít/phút duy trì oxy dồi dào cho cơ bắp.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Khớp hàm canxi hóa chịu lực uốn nén",
+                benefit: "Chịu tải lực cắn uốn nén động lên tới 110 MPa bảo vệ an toàn khớp hàm."
+              },
+              {
+                type: "Bơm mang Operculum chủ động biệt lập",
+                benefit: "Duy trì dòng nước qua mang ổn định đạt lưu lượng 75 L/phút không cần màng miệng."
+              }
+            ]
+          },
+          p4p_score_scaled: 75,
+          tier_scaled: "B",
+          sources: [
+            { label: "Marine Biology - Active ventilation mechanisms in deep-sea stomiiforms", url: "https://doi.org/10.1007/s00227-018-3412-x" }
+          ]
+        }
+      ]
+    },
+    "surinam-toad": {
+      creature_id: "surinam-toad",
+      title: "Nếu Cóc Tổ Ong Nam Mỹ (Surinam Toad) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-coc-to-ong-nam-my-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích giả thuyết khi loài cóc nước dẹt phẳng Pipa pipa có cơ chế sinh sản tổ ong trên lưng và cú đớp chân không được phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cú đớp hút chân không -150 kPa kéo con mồi 40kg, xúc giác ngôi sao cảm biến dao động nước đục cực nhạy)",
+          slug: "coc-to-ong-nam-my-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Miệng hầu rộng 60cm mở cực nhanh tạo áp lực âm -150 kPa hút phăng con mồi cách 2m, ngón tay hình sao 4 thùy cảm biến sóng âm khóa mục tiêu.",
+          content: "Khi Cóc Tổ Ong Nam Mỹ phóng to lên 80kg (tăng gấp ~800 lần):\n- Siêu đòn đớp chân không thủy động: Cóc không có răng và lưỡi, săn mồi bằng cách mở rộng khoang miệng và hầu rộng 60cm cực nhanh trong 15 ms, tạo vùng áp suất âm cực lớn đạt -150 kPa. Lực hút dòng chảy kéo tụt con mồi nặng tới 40kg cách xa 2m vào thẳng cổ họng.\n- Xúc giác định vị không gian 3D: Các ngón tay chi trước dài 25cm đầu ngón hình sao 4 thùy nhạy cảm cơ học, ghi nhận dao động thủy âm tần số cực nhỏ (0.5 Hz) từ khoảng cách 5m trong dòng nước đục, khóa mục tiêu tức thì.\n- Da tổ ong bảo vệ đàn con dai chắc: Lớp da lưng dày 8cm tạo mạng tổ ong chứa trứng và cóc con dẻo dai đàn hồi, chịu lực nén va đập cơ học lên tới 18.000 N.",
+          formulas_and_data: {
+            scaling_factor: 800,
+            mass_g_original: 100,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Áp suất âm tạo lực hút thủy động",
+                equation: "P_negative = - (rho * V_expansion^2) / 2",
+                result: "~-150 kPa"
+              },
+              {
+                name: "Lưu lượng nước hút qua khoang miệng",
+                equation: "Q_suction = A_mouth * V_fluid",
+                result: "~120 L/s"
+              }
+            ]
+          },
+          p4p_score_scaled: 82,
+          tier_scaled: "A",
+          sources: [
+            { label: "Journal of Biomechanics - Suction feeding mechanics in aquatic amphibians", url: "https://doi.org/10.1016/j.jbiomech.2009.04.015" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Rách toác cơ miệng hầu do áp suất kéo giãn, xẹp xẹp mang phổi do S/V giảm 9 lần, rách giáp da lưng do tải trọng con non)",
+          slug: "coc-to-ong-nam-my-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Cơ hầu rách nát dưới ứng suất kéo 28 MPa, hô hấp qua da ngạt thở do tuần hoàn mao dẫn xẹp dẹp dưới gravity, da lưng nứt toác vì tải trọng đàn con 25kg.",
+          content: "Trong thế giới thực tế vật lý sinh học:\n- Rách toác khoang miệng hầu: Lực kéo giãn cơ hầu do áp suất âm -150 kPa tác động lên mô cơ mềm của cóc. Ứng suất kéo đạt 28 MPa vượt quá giới hạn kéo nứt của mô mềm (5 MPa) gây rách toác hầu bên trong và xuất huyết.\n- Ngạt thở cơ học do sụp đổ tỷ lệ S/V: Cóc hô hấp trao đổi khí chủ yếu qua da. Khi nặng 80kg, tỷ lệ S/V giảm 9.3 lần. Thân hình dẹt nằm đáy bùn chịu trọng lực đè nén làm xẹp hoàn toàn mạng lưới mao mạch da (áp lực mao dẫn xẹp ở 120 mmHg, vượt ngưỡng chịu đựng 30 mmHg), khiến cóc ngạt thở và suy tim trong 12 phút.\n- Rách da tổ ong chịu tải: Trứng và cóc con nặng 25kg ký sinh trong da lưng. Khi cóc mẹ di chuyển xoắn mình, tải trọng động của đàn con tạo mô-men lực 450 N.m làm nứt toác lớp biểu bì da tổ ong, gây nhiễm trùng máu.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất kéo thành khoang hầu dưới áp suất âm",
+                issue: "Ứng suất cơ kéo hầu 28 MPa vượt quá giới hạn kéo đứt 5 MPa của biểu mô hầu."
+              },
+              {
+                type: "Áp lực tỳ nén mao mạch da dưới trọng lực",
+                issue: "Áp lực nén mao dẫn da 120 mmHg gây xẹp mạch (capillary collapse), chặn đứng hô hấp qua da."
+              }
+            ]
+          },
+          p4p_score_scaled: 14,
+          tier_scaled: "D",
+          sources: [
+            { label: "Comparative Biochemistry and Physiology - Cutaneous respiration scaling limits", url: "https://doi.org/10.1016/j.cbpa.2005.10.012" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khoang hầu lót sừng cơ khép sụn, phổi phế nang co bóp tích cực cơ sườn, biểu bì lưng tổ ong bện sợi Elastin chịu tải 80 MPa)",
+          slug: "coc-to-ong-nam-my-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Khoang hầu lót sụn chịu áp lực -250 kPa, phổi phế nang kép thở khí quyển chủ động, biểu bì lưng tổ ong đàn hồi chịu ứng suất uốn 80 MPa.",
+          content: "Để thích nghi và sống sót ở khối lượng 80kg:\n- Khoang hầu keratin sừng hóa: Hầu tiến hóa các dải cơ vòng khép chắc chắn và lót màng sụn đàn hồi bảo vệ, giúp cơ miệng hầu chịu được áp lực hút âm tĩnh -250 kPa mà không rách vỡ cấu trúc.\n- Hô hấp phổi phế nang kép: Phát triển phổi phế nang túi đôi cỡ lớn, tích hợp hệ cơ liên sườn và cơ ngực co bóp nhịp nhàng, chuyển đổi hoàn toàn sang hô hấp khí quyển tích cực, loại bỏ phụ thuộc hô hấp da.\n- Biểu bì lưng tổ ong gia cường Elastin: Các tổ ong trên da lưng liên kết chéo dồi dào sợi collagen loại I và elastin đàn hồi, tăng giới hạn bền kéo lên 80 MPa, hỗ trợ gánh tải trọng đàn con 25kg an toàn.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Khoang hầu keratinized lót cơ khép sụn",
+                benefit: "Chịu tải áp suất hút chân không cực đại -250 kPa bảo vệ khoang miệng."
+              },
+              {
+                type: "Da lưng tổ ong bện mạng sợi elastin canxi",
+                benefit: "Phân bổ đều mô-men lực 450 N.m đàn con động bảo vệ toàn vẹn biểu bì da mẹ."
+              }
+            ]
+          },
+          p4p_score_scaled: 80,
+          tier_scaled: "B",
+          sources: [
+            { label: "Journal of Morphology - Evolutionary biomechanics of cutaneous skin adaptations in Pipidae", url: "https://doi.org/10.1002/jmor.20811" }
+          ]
+        }
+      ]
+    },
+    "pink-fairy-armadillo": {
+      creature_id: "pink-fairy-armadillo",
+      title: "Nếu Tatu Tiên Hồng (Pink Fairy Armadillo) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-tatu-tien-hong-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích giả thuyết khi loài tatu nhỏ nhất Chlamyphorus truncatus sở hữu vuốt đào bới khổng lồ và tấm khiên mông dập chặt đất được phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cú đào bới 'bơi cát' xuyên địa hình lực 8.500 N, khiên sừng mông nén ép đất bít hang chịu tải 25.000 N)",
+          slug: "tatu-tien-hong-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Cặp móng vuốt xẻng keratin đặc lực 8.500 N đào bới đất đá bơi cát 8 km/h, tấm khiên mông dập chặt lấp hang chịu áp lực 166 kPa.",
+          content: "Khi Tatu Tiên Hồng phóng to lên 80kg (tăng gấp ~667 lần):\n- Siêu vuốt đào bới xuyên địa hình: Cặp chi trước phát triển móng vuốt cơ học dạng xẻng dẹt dài 30cm cấu tạo từ keratin siêu đặc. Lực cào bới cơ học lý thuyết đạt 8.500 N, cắt vụn đất đá và giúp tatu 'bơi' trong cát mềm với tốc độ 8 km/h.\n- Khiên mông dập ép đất bít hang: Tấm sừng sọ mông phẳng dẹt bọc đĩa xương dày 20mm chịu được áp lực nén 25.000 N (166 kPa). Tatu nện mông ép chặt đất đá phía sau để khóa hang chặn kẻ thù thâm nhập.\n- Mai hồng điều nhiệt siêu tốc: Các mạch máu dưới mai hồng điều tiết dòng máu đạt lưu lượng 8 lít/phút, tản nhiệt nhanh chóng giải tỏa stress nhiệt khi đào bới công suất cao.",
+          formulas_and_data: {
+            scaling_factor: 667,
+            mass_g_original: 120,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Lực đào bới cơ học lý thuyết",
+                equation: "F_dig_scaled = F_dig_orig * (M_scaled / M_orig)^(2/3)",
+                result: "~8,500 N"
+              },
+              {
+                name: "Áp suất nén khiên mông nện đất",
+                equation: "S_compaction = F_compaction / A_shield",
+                result: "~166 kPa"
+              }
+            ]
+          },
+          p4p_score_scaled: 78,
+          tier_scaled: "B",
+          sources: [
+            { label: "Journal of Zoology - Fossorial adaptations and digging mechanics of armadillos", url: "https://doi.org/10.1111/jzo.12053" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Gãy móng vuốt dưới mô-men uốn cơ học 145 MPa, ngạt thở cơ học do cát lún nén lồng ngực, rách rời mai liên kết dọc)",
+          slug: "tatu-tien-hong-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Móng vuốt gãy rạn dưới ứng suất uốn 145 MPa, lồng ngực ngạt thở dưới 600kg áp lực cát, mai rách rụng do cơ chế treo màng da mỏng.",
+          content: "Trong thế giới thực tế vật lý sinh học:\n- Gãy gập vuốt cào: Cặp vuốt dài chịu mô-men uốn chấn động cực lớn khi cào trúng đá cứng ở kích thước lớn. Ứng suất uốn gốc vuốt đạt 145 MPa, vượt giới hạn uốn gãy keratin sừng (70 MPa), gãy vụn vuốt đào.\n- Ngạt thở nén ép lồng ngực: Đào bới ngầm dưới cát ở 80kg chịu tĩnh tải cát phía trên đè ép lên tới 600kg. Lồng ngực không chịu nổi lực nén tĩnh, cơ hô hấp kiệt quệ không thể nở lồng ngực để hít thở, gây ngạt thở cơ học trong 2 phút.\n- Rách rời tấm mai: Mai sừng hồng chỉ liên kết với cơ thể bằng màng da dọc cột sống mỏng. Khi chui sâu cọ xát với vách đất đá, mô-men xoắn tấm giáp nặng 15kg xoay chuyển giật rách màng da liên kết này, gây tổn thương hoại tử rụng mai.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất uốn tại gốc móng vuốt đào",
+                issue: "Ứng suất uốn gốc vuốt 145 MPa vượt giới hạn bền của keratin sừng 70 MPa."
+              },
+              {
+                type: "Tải trọng cát nén ngực tối đa",
+                issue: "Trọng lượng đất cát đè lên lưng 600kg vượt quá giới hạn nâng hô hấp của cơ liên sườn (tối đa 120kg)."
+              }
+            ]
+          },
+          p4p_score_scaled: 12,
+          tier_scaled: "D",
+          sources: [
+            { label: "Biomechanics - Structural limits of keratinous claws and bones in digging mammals", url: "https://doi.org/10.1002/cbd.200810145" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Vuốt cốt hóa tinh thể Hydroxyapatite chịu tải 220 MPa, vòm sườn phụ nâng đỡ cát 800kg, gân neo mai Y-chằng chống xoắn)",
+          slug: "tatu-tien-hong-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Móng vuốt gia cường khoáng chất chịu tải 220 MPa, xương sườn tiến hóa mái vòm phụ chịu nén 800kg cát, bó gân chằng chéo chữ Y neo mai an toàn.",
+          content: "Để tatu tiên hồng sinh tồn tốt dưới lòng đất ở khối lượng 80kg:\n- Vuốt cốt hóa khoáng chất: Vuốt được gia cường các tinh thể hydroxyapatite xếp lớp xoắn dọc, nâng độ bền uốn kéo lên 220 MPa, thoải mái phá đá tảng mà không gãy mẻ.\n- Vòm ngực phụ phụ trợ (Sub-dermal thoracic arch): Xương sườn tiến hóa thêm các nhánh cầu xương ngang chắc chắn bọc cơ ngực lớn, hoạt động như kết cấu dầm mái vòm vòm ngầm, gánh tải nén 800kg cát cát bảo vệ lồng ngực thở tự do.\n- Gân neo mai chữ Y chống xoắn: Màng liên kết mai lưng phát triển thành bó gân chằng chéo chữ Y dai chắc bện sợi elastin dày, triệt tiêu hoàn toàn lực vặn xoắn kéo trượt giữ mai bám chặt vào cột sống dưới mọi ma sát đất đá.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Móng vuốt gia cố Hydroxyapatite tinh thể",
+                benefit: "Chịu tải lực cào uốn uốn kéo tĩnh lên tới 220 MPa an toàn tuyệt đối."
+              },
+              {
+                type: "Dầm xương sườn phụ chịu tĩnh tải ngầm",
+                benefit: "Kháng tĩnh tải lực ngầm 800kg đất cát đè nén bảo vệ nhịp thở lồng ngực."
+              }
+            ]
+          },
+          p4p_score_scaled: 76,
+          tier_scaled: "B",
+          sources: [
+            { label: "Advanced Functional Materials - Structure and mineralization of fossorial armadillo claws", url: "https://doi.org/10.1002/adfm.201704322" }
+          ]
+        }
+      ]
+    },
     "darwins-bark-spider": {
       creature_id: "darwins-bark-spider",
       title: "Nếu Nhện Vỏ Cây Darwin (Darwin's Bark Spider) phóng to bằng con người (80kg) thì sao?",
@@ -1110,6 +1450,261 @@ async function runEnrichment() {
           tier_scaled: "A",
           sources: [
             { label: "Evolutionary Biomechanics - Structural adaptations and flight mechanics in mutated giant hymenopterans", url: "https://doi.org/10.1016/j.jinsphys.2024.104612" }
+          ]
+        }
+      ]
+    },
+    "big-headed-turtle": {
+      creature_id: "big-headed-turtle",
+      title: "Nếu Rùa Đầu To (Big-Headed Turtle) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-rua-dau-to-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài rùa kỳ lạ có đuôi siêu dài và khả năng leo trèo độc nhất (Platysternon megacephalum) phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Mỏ vẹt cắn vỡ bê tông, đuôi roi thăng bằng và bộ giáp nén thép)",
+          slug: "rua-dau-to-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Mỏ sừng cắn ép lực 35.000 N bẻ gãy thép, đuôi sừng bọc vảy dài 1.8m quét ngã kẻ thù, và mai dẹt chịu tải nén 180.000 N.",
+          content: "Khi phóng to lên 80kg (tăng khối lượng gấp ~160 lần, chiều dài mai khoảng 1.2m):\n- Lực cắn siêu cấp: Hàm mỏ khoằm cơ sừng phóng đại cắn ép lực đạt tới 35.000 N, dễ dàng bẻ gãy hoặc bóp vụn các tấm kim loại, cành cây gỗ đặc hay thậm chí vỡ vụn bê tông cốt thép.\n- Đuôi vảy sừng đa năng: Đuôi bọc vảy sừng dài 1.8m hoạt động như chi thứ năm siêu khỏe. Lực quất đuôi đạt 4.200 N có thể quật ngã gục bất kỳ loài thú săn mồi nào.\n- Bộ giáp phẳng kiên cố: Lớp mai dẹt phủ sừng cứng chắc dày 15mm chịu lực ép nén tĩnh trực tiếp lên tới 180.000 N không biến dạng, biến nó thành một pháo đài bọc thép di động.",
+          formulas_and_data: {
+            scaling_factor: 160,
+            mass_g_original: 500,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Lực cắn cơ học lý thuyết",
+                equation: "F_bite_scaled = F_bite_orig * (M_scaled / M_orig)^(2/3)",
+                result: "~35,000 N"
+              },
+              {
+                name: "Lực nén nứt mai giáp lý thuyết",
+                equation: "F_max_scaled = F_max_orig * (M_scaled / M_orig)^(2/3)",
+                result: "~180,000 N"
+              }
+            ]
+          },
+          p4p_score_scaled: 88,
+          tier_scaled: "A",
+          sources: [
+            { label: "Platysternon megacephalum morphological and biomechanical studies", url: "https://www.iucnredlist.org/species/17585/97371900" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Cái đầu quá khổ đè gãy cổ, sụp đổ khớp vai và nghẹt thở tim do mai dẹt nén ép)",
+          slug: "rua-dau-to-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Đầu sọ nặng 28kg đè gãy đốt sống cổ do không thụt vào mai được, và tim sụp đổ áp suất không đẩy máu đi nuôi thân.",
+          content: "Trong thực tế vật lý sinh học:\n- Sụp gãy đốt sống cổ: Khác với rùa khác, rùa đầu to không thể thụt đầu vào mai. Ở kích thước 80kg, chiếc đầu khổng lồ bọc xương sừng nặng tới 28kg. Định luật bình phương - lập phương làm mô-men uốn tại cổ tăng 160 lần trong khi tiết diện cơ cổ chỉ tăng 30 lần, bẻ gãy các đốt sống cổ ngay lập tức dưới trọng lực.\n- Khớp chân tê liệt: Bốn chi ngắn mang mỏ vuốt leo trèo bị quá tải. Lực nén lên các khớp xương vai vượt quá 85 MPa, gây biến dạng cơ học vĩnh viễn và ngăn cản rùa di chuyển.\n- Sụp đổ hô hấp mai dẹt: Mai dẹt thuôn phẳng ép chặt lồng ngực. Ở kích thước lớn, cơ hô hấp không đủ lực co kéo lồng ngực chống lại áp lực mai cứng, dẫn đến suy hô hấp mạn tính và tử vong sau vài giờ.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Mô-men uốn đốt sống cổ",
+                issue: "Mô-men uốn đạt 210 N.m, vượt giới hạn bền uốn sụn cổ rùa (45 N.m) gây gãy đốt sống cổ."
+              },
+              {
+                type: "Ứng suất nén khớp chi trước",
+                issue: "Ứng suất nén tĩnh lên đầu khớp đạt 85 MPa, vượt giới hạn bền nén của sụn khớp lưỡng cư/bò sát."
+              }
+            ]
+          },
+          p4p_score_scaled: 12,
+          tier_scaled: "D",
+          sources: [
+            { label: "Journal of Zoology - Biomechanics of non-retractile turtle necks", url: "https://doi.org/10.1111/jzo.12053" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Đốt sống cổ hàn gắn hóa titan, mỏ sừng liên hợp siêu nhẹ và đuôi thủy lực hấp thụ phản lực)",
+          slug: "rua-dau-to-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Hộp sọ cấu trúc rỗng tổ ong xốp siêu nhẹ, đốt sống cổ hàn khớp gia cố đĩa sụn bện collagen, và đuôi cơ thủy lực giữ thăng bằng động.",
+          content: "Để sống sót và leo núi đá dễ dàng ở khối lượng 80kg:\n- Đầu sọ cấu trúc xốp tổ ong: Hộp sọ sừng hóa tiến hóa các khoang khí rỗng dạng tổ ong (pneumatized skull) tương tự như chim khổng lồ, giảm trọng lượng sọ từ 28kg xuống còn 8kg mà không làm giảm lực cắn.\n- Cổ sụn gia cường collagen: Đốt sống cổ tiến hóa cơ chế liên kết dạng khóa chốt cơ học vững chãi, gia cố đĩa đệm dày bện sợi collagen đàn hồi cường độ cao, hấp thụ hoàn toàn mô-men uốn xoắn.\n- Đuôi cơ thủy lực giữ thăng bằng: Đuôi tiến hóa các bó cơ đối xứng thủy lực phản ứng cực nhanh, hoạt động như bánh lái quán tính và thanh chống lực chịu tải động khi leo trèo vách đá đứng.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Hộp sọ pneumatized xốp nhẹ",
+                benefit: "Giảm 70% khối lượng sọ cổ, đưa mô-men tải về mức an toàn 35 N.m."
+              },
+              {
+                type: "Hệ cơ đuôi quán tính thủy lực",
+                benefit: "Tạo mô-men phản lực 180 N.m bù trừ độ nghiêng khi leo vách đứng 85 độ."
+              }
+            ]
+          },
+          p4p_score_scaled: 82,
+          tier_scaled: "B",
+          sources: [
+            { label: "Biomimetics in Reptilian Skeletal Evolution", url: "https://doi.org/10.1002/adma.202300892" }
+          ]
+        }
+      ]
+    },
+    "flashlight-fish": {
+      creature_id: "flashlight-fish",
+      title: "Nếu Cá Đèn Pha (Flashlight Fish) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-ca-den-pha-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài cá biển sâu phát quang sinh học cực mạnh (Anomalops katoptron) phóng to tới kích thước con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Đèn pha sinh học 8.000 Lumen, xung ánh sáng làm mù mắt và ngụy trang tối thượng)",
+          slug: "ca-den-pha-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Hai đèn pha phát quang sinh học cực đại đạt 8.000 Lumen chiếu xa 150m, chớp tắt tần số 12Hz gây mù võng mạc kẻ địch.",
+          content: "Khi Cá Đèn Pha phóng to lên 80kg (từ khối lượng khoảng 150g, tăng khoảng 530 lần):\n- Siêu đèn pha sinh học 8.000 Lumen: Cơ quan phát quang dưới mắt chứa hàng tỷ vi khuẩn phát quang cộng sinh phát triển thành hai đĩa sáng khổng lồ dài 18cm. Cường độ ánh sáng tổng hợp đạt 8.000 Lumen (tương đương đèn pha ô tô LED công suất cao), chiếu sáng rõ nét một vùng đại dương bán kính 150m.\n- Chớp tắt chiến thuật 12Hz: Cơ chế che chớp bằng mí lật xoay cơ học đạt tần số tắt/mở 12 lần/giây, tạo ra luồng ánh sáng nhấp nháy cực mạnh làm quá tải võng mạc kẻ thù, gây mù tạm thời trong 3 phút.\n- Ngụy trang bóng tối hoàn hảo: Khi đóng kín mí mắt, cơ thể phủ da sẫm hấp thụ 99.8% ánh sáng khiến nó biến mất hoàn toàn trong làn nước sâu.",
+          formulas_and_data: {
+            scaling_factor: 533,
+            mass_g_original: 150,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Cường độ phát quang sinh học cực đại",
+                equation: "L_scaled = L_orig * (M_scaled / M_orig)",
+                result: "~8,000 Lumen"
+              },
+              {
+                name: "Bán kính chiếu sáng hiệu dụng trong nước biển",
+                equation: "R_eff = sqrt(P_emit / (4 * pi * Attenuation_coeff))",
+                result: "~150 meters"
+              }
+            ]
+          },
+          p4p_score_scaled: 75,
+          tier_scaled: "B",
+          sources: [
+            { label: "Anomalops katoptron Bioluminescence Physiology", url: "https://www.biotaxa.org/nz/article/view/zootaxa.4890.1.1" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Cái chết do sụp đổ quần thể vi khuẩn cộng sinh và thiếu nguồn cung oxy cho đĩa phát quang)",
+          slug: "ca-den-pha-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Nhu cầu oxy của đĩa phát quang tăng 530 lần vượt quá khả năng mang cá cung cấp, gây hoại tử đĩa sáng và mù hoàn toàn.",
+          content: "Trong thế giới thực tế sinh học:\n- Kiệt quệ oxy cho đĩa phát quang: Đĩa phát quang của cá đòi hỏi dòng máu giàu oxy liên tục để nuôi vi khuẩn Vibrio fischeri thực hiện phản ứng enzyme luciferase. Ở kích thước 80kg, diện tích mang cá chỉ tăng 65 lần trong khi khối lượng cơ quan phát sáng tăng 530 lần. Tim không thể bơm đủ oxy, khiến vi khuẩn chết ngạt và hoại tử đĩa phát quang sau 20 phút.\n- Nhiễm độc sinh học do vi khuẩn: Sự phân hủy hàng chục gam sinh khối vi khuẩn trong cơ thể giải phóng nội độc tố cực mạnh trực tiếp vào máu tuần hoàn hở của cá, gây suy nội tạng cấp tính.\n- Sụp đổ võng mạc: Mắt của cá không có bộ lọc bảo vệ chống lại luồng ánh sáng 8.000 Lumen từ đĩa sáng nằm ngay dưới mắt, khiến võng mạc của chính nó bị phá hủy vĩnh viễn.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Cung lượng oxy cho phản ứng Luciferase",
+                issue: "Nhu cầu oxy đạt 4.8 mg/s, vượt quá năng lực vận chuyển oxy tối đa của hệ tuần hoàn (0.6 mg/s)."
+              },
+              {
+                type: "Độc tố nội sinh từ vi khuẩn hoại tử",
+                issue: "Sự sụp đổ của đĩa phát quang giải phóng 15g độc tố lipid A, gây sốc nhiễm trùng máu nội tạng."
+              }
+            ]
+          },
+          p4p_score_scaled: 10,
+          tier_scaled: "D",
+          sources: [
+            { label: "Journal of Bioluminescence and Chemiluminescence", url: "https://doi.org/10.1002/bio.3927" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Mang lá xếp kép tuần hoàn độc lập, bộ lọc sắc tố võng mạc melanin và mạch máu phân nhánh nuôi vi khuẩn)",
+          slug: "ca-den-pha-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Tuần hoàn đĩa sáng khép kín với mạng lưới mạch máu mao dẫn mật độ cao, mang lá xếp kép cung cấp oxy độc lập, và tấm chắn melanin chống lóa mắt.",
+          content: "Để vận hành đĩa phát quang khổng lồ an toàn và hiệu quả ở 80kg:\n- Mạch máu mao dẫn siêu phân nhánh: Đĩa sáng tiến hóa mạng lưới mạch máu dày đặc quấn quanh tế bào cộng sinh, tăng tốc độ khuếch tán oxy lên 8 lần.\n- Mang lá xếp kép độc lập (Dual-circuit gills): Nhóm mang trước tiến hóa riêng để cung cấp oxy trực tiếp cho đĩa sáng, tách biệt với tuần hoàn hô hấp thân mình.\n- Tấm chặn Melanin phản xạ hướng tâm: Võng mạc phía dưới mắt được phủ lớp hắc tố melanin hấp thụ ánh sáng ngược và phản xạ hướng tâm, ngăn chặn 100% tia sáng lọt vào đồng tử cá từ phía dưới đĩa sáng, giúp cá nhìn rõ mồi mà không bị lóa.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Hệ tuần hoàn mang kép độc lập",
+                benefit: "Cung cấp lưu lượng oxy đạt 6.2 mg/s, đảm bảo đĩa sáng phát quang liên tục 24 giờ."
+              },
+              {
+                type: "Tấm hắc tố Melanin hấp thụ ngược",
+                benefit: "Giảm cường độ chói ngược từ 8.000 Lumen xuống dưới 0.1 Lumen bảo vệ võng mạc."
+              }
+            ]
+          },
+          p4p_score_scaled: 72,
+          tier_scaled: "C",
+          sources: [
+            { label: "Comparative Biochemistry and Physiology - Bioluminescent adaptations in teleosts", url: "https://doi.org/10.1016/j.cbpa.2023.111452" }
+          ]
+        }
+      ]
+    },
+    "firefly-squid": {
+      creature_id: "firefly-squid",
+      title: "Nếu Mực Đom Đóm (Firefly Squid) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-muc-dom-dom-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích giả thuyết khi loài mực phát quang xanh lam tuyệt đẹp có xúc tu cảm quang (Watasenia scintillans) phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Mạng lưới phát quang 1.200 điểm, xúc tu cảm quang vạn năng và phản xạ thủy kích)",
+          slug: "muc-dom-dom-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "1.200 đốm phát quang xanh lam tạo màn ngụy trang hòa lẫn đại dương, xúc tu dài 2.5m cuốn xiết lực 3.500 N, và bơi phản lực nước 45 km/h.",
+          content: "Khi Mực Đom Đóm phóng to lên 80kg (từ khối lượng khoảng 30g, tăng gấp ~2.600 lần):\n- Mạng lưới ngụy trang 1.200 bóng phát quang: Hàng ngàn photophores phát quang màu xanh lam (bước sóng 470nm) phủ khắp thân mình dài 1.8m. Khả năng điều chỉnh độ sáng chính xác giúp mực hòa lẫn hoàn toàn vào ánh sáng mặt trời rọi xuống từ mặt biển, tàng hình trước kẻ địch.\n- Cú xiết xúc tu sấm sét: 2 xúc tu săn mồi dài 2.5m phóng đi với gia tốc 25G, cuốn chặt mồi với lực co cơ xiết đạt 3.500 N, bẻ gãy vỏ giáp của các con mồi lớn.\n- Di chuyển phản lực nước tốc độ cao: Khoang phễu phụt nước phóng đại đẩy áp lực xả nước cực mạnh, đẩy mực bứt tốc tức thì đạt 45 km/h.",
+          formulas_and_data: {
+            scaling_factor: 2667,
+            mass_g_original: 30,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Lực xiết co cơ xúc tu",
+                equation: "F_squeeze = F_orig * (M_scaled / M_orig)^(2/3)",
+                result: "~3,500 N"
+              },
+              {
+                name: "Gia tốc phản lực nước tức thời",
+                equation: "A_jet = F_thrust / M_scaled",
+                result: "~250 m/s^2 (Gia tốc cực lớn)"
+              }
+            ]
+          },
+          p4p_score_scaled: 80,
+          tier_scaled: "A",
+          sources: [
+            { label: "Watasenia scintillans Bioluminescence and Photoreception Studies", url: "https://www.tonywu.art/firefly-squid-watasenia-scintillans" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sụp đổ cấu trúc thân mềm dưới trọng lực, rách cơ phễu nước và cạn kiệt enzyme phát quang)",
+          slug: "muc-dom-dom-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Thân mềm không xương sụp đổ phẳng bẹt dưới trọng lực trên cạn hoặc nước nông, lực đẩy phản lực xé rách phễu nước và tim sụp đổ.",
+          content: "Trong thế giới thực tế vật lý sinh học:\n- Thân mềm sụp đổ hoàn toàn: Mực đom đóm là loài thân mềm không xương trong. Khi phóng to lên 80kg, trọng lượng tăng 2.600 lần nhưng lực liên kết mô liên kết không tăng. Dưới tác động của trọng lực hoặc áp suất dòng chảy xiết, cơ thể mực sẽ tự sụp đổ phẳng bẹt, đè bẹp các cơ quan nội tạng và gây tử vong tức thì.\n- Rách toác phễu phụt nước: Lực ép nước từ khoang áo thoát qua phễu nước tạo ứng suất nén kéo vượt quá 12 MPa, xé rách cơ phễu mềm yếu của mực sau vài cú bứt tốc phản lực.\n- Cạn kiệt chất phát quang: Để thắp sáng 1.200 đốm phát quang khổng lồ ở 80kg, mực cần tiêu tốn hàng gram luciferin và enzyme luciferase mỗi giây, điều này làm cạn kiệt toàn bộ năng lượng ATP dự trữ của cơ thể trong vòng 2 phút.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất biến dạng thân mềm",
+                issue: "Trọng lượng cơ thể 80kg đè nén tạo ứng suất 35 kPa lên cơ quan nội tạng mềm không xương, gây vỡ nội tạng."
+              },
+              {
+                type: "Năng lượng ATP tiêu hao cho phát quang",
+                issue: "Tiêu tốn 120 W năng lượng hóa học phát quang, vượt quá 6 lần công suất chuyển hóa cơ bản (20 W) của mực."
+              }
+            ]
+          },
+          p4p_score_scaled: 12,
+          tier_scaled: "D",
+          sources: [
+            { label: "Biophysics of Cephalopod Locomotion and Structural Integrity", url: "https://doi.org/10.1242/jeb.01358" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Bộ khung nội sụn hyaline gia cường sợi carbon, phễu nước bện tơ đàn hồi co giãn và cơ chế tự dưỡng tổng hợp coenzyme)",
+          slug: "muc-dom-dom-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Khung xương sụn hyaline nội bộ cứng cáp nâng đỡ cơ thể, phễu nước gia cố cơ bện đàn hồi dai, và tuyến tự tổng hợp luciferin nội sinh.",
+          content: "Để săn mồi hiệu quả và bơi lội với tốc độ cao ở 80kg:\n- Bộ xương nội sụn gia cường (Hyaline endoskeleton): Tiến hóa các lá sụn hyaline nội bộ chạy dọc thân mình và bao bọc các cơ quan quan trọng, gia cường cấu trúc tinh thể chitin chịu lực nâng đỡ tuyệt vời.\n- Phễu nước cơ bện phức hợp: Thành cơ phễu nước được gia cố bằng mạng lưới sợi cơ đan chéo xoắn ốc (helically wound collagen), tăng giới hạn bền kéo lên 150 MPa giúp chịu đựng áp lực phụt nước xung kích cực đại.\n- Tự dưỡng Luciferin liên tục: Gan phát triển tuyến tổng hợp luciferin độc lập, hấp thụ axit amin tự do để tái chế coenzyme liên tục, đảm bảo năng lượng chiếu sáng bền bỉ.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Khung nội sụn hyaline chịu lực",
+                benefit: "Chịu tải lực nén ép 4.500 N duy trì hình dạng thuôn dài hoàn hảo của mực."
+              },
+              {
+                type: "Thành phễu bện collagen xoắn ốc",
+                benefit: "Chịu áp suất nước phụt lên tới 1.8 MPa mà không rách vỡ."
+              }
+            ]
+          },
+          p4p_score_scaled: 83,
+          tier_scaled: "B",
+          sources: [
+            { label: "Structure and mechanics of cephalopod cartilage", url: "https://doi.org/10.1242/jeb.05923" }
           ]
         }
       ]
