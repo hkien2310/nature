@@ -774,8 +774,8 @@ async function runEnrichment() {
         }
       ]
     },
-    "pelican-eel": {
-      creature_id: "pelican-eel",
+    "gulper-eel": {
+      creature_id: "gulper-eel",
       title: "Nếu Cá Chình Bồ Nông (Pelican Eel) phóng to bằng con người (80kg) thì sao?",
       slug: "neu-ca-chinh-bo-nong-phong-to-bang-con-nguoi-80kg",
       description: "Phân tích giả thuyết khi loài cá chình bồ nông Eurypharynx pelecanoides với miệng khổng lồ và dạ dày co giãn cực đại phóng to bằng kích thước con người 80kg.",
