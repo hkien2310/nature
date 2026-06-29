@@ -1,233 +1,229 @@
 [
   {
-    "id": "surinam-toad",
-    "name": "Cóc Tổ Ong Nam Mỹ",
-    "scientificName": "Pipa pipa",
+    "id": "bioluminescent-ostracod",
+    "name": "Bọ Giáp Cổ Phun Lửa",
+    "scientificName": "Vargula hilgendorfii",
     "taxonomy": {
-      "class": "Amphibia",
-      "order": "Anura",
-      "family": "Pipidae"
+      "class": "Ostracoda",
+      "order": "Myodocopida",
+      "family": "Cypridinidae"
     },
-    "realWeight": "150 - 250 g",
-    "size": "10 - 20 cm",
-    "characteristics": "Thân hình cực kỳ dẹt phẳng như một chiếc lá khô rụng xuống nước, màu nâu xám sần sùi. Đầu hình tam giác dẹt với mắt nhỏ li ti không có mí mắt. Các ngón chân chi trước không có màng nhưng kết thúc bằng các cấu trúc cảm giác hình ngôi sao 4 thùy siêu nhạy bén. Chi sau rất to, khỏe, có màng bơi rộng giúp di chuyển cơ động trong nước.",
-    "habitat": "Đáy bùn của sông đục, kênh rạch, ao hồ rừng ngập mặn có nhiều lá mục.",
-    "location": "Lưu vực sông Amazon và Orinoco ở vùng bắc Nam Mỹ.",
-    "survival_method": "Ngụy trang hoàn hảo dưới đáy nước bằng cách mô phỏng lá mục rụng. Không có lưỡi hay răng, chúng săn mồi bằng cách nằm im chờ đợi, sử dụng các đầu ngón tay cảm giác hình sao nhạy bén để phát hiện chuyển động của con mồi trong nước đục. Khi con mồi đến gần, chúng mở cái miệng khổng lồ tạo lực hút chân không cực mạnh hút con mồi vào họng.",
-    "unique_traits": "Cơ chế sinh sản kỳ lạ nhất thế giới động vật lưỡng cư: trứng sau khi thụ tinh được con đực ép lên lưng con cái. Lớp da lưng con cái phồng lên, bao bọc lấy trứng tạo thành các tổ ong nhỏ. Con non phát triển trực tiếp trong da mẹ và chui ra ngoài dưới dạng cóc con hoàn chỉnh, bỏ qua giai đoạn nòng nọc. Không có lưỡi và răng, săn mồi hoàn toàn bằng cơ chế hút chân không.",
-    "shortDescription": "Cơ thể dẹt như lá khô. Sinh sản bằng cách nuôi con trực tiếp trong lớp da lưng dạng tổ ong.",
-    "description": "Cóc Tổ Ong Nam Mỹ (Pipa pipa) là một trong những loài lưỡng cư tiến hóa kỳ lạ nhất. Sống hoàn toàn dưới nước, cơ thể của chúng dẹt phẳng và đầu nhọn giúp ngụy trang lẫn vào đám lá rụng mục nát ở đáy sông Amazon. Điểm đặc sắc nhất của loài này là chu kỳ sinh sản độc nhất vô nhị. Trứng được ấp ngay trên lưng mẹ trong các 'tế bào' da chuyên biệt như tổ ong. Suốt 12-20 tuần, các cóc con phát triển an toàn dưới da mẹ, tự hấp thụ lòng đỏ trứng và chui ra trực tiếp qua lỗ da lưng khi đã hoàn thiện cơ thể đầy đủ chi, loại bỏ hoàn toàn mối đe dọa từ kẻ săn mồi đối với giai đoạn nòng nọc.",
+    "realWeight": "~0.0005 g",
+    "size": "1.5 - 2 mm",
+    "characteristics": "Thân hình siêu nhỏ được bao bọc bởi một lớp vỏ hai mảnh dẹt bằng chitin mỏng và trong suốt như hạt vừng. Sở hữu tuyến phát quang ở môi trên chứa hai hợp chất hóa học là luciferin (vargulin) và enzyme luciferase dạng hạt khô riêng biệt. Khi bị kích thích hoặc gặp nguy hiểm, chúng đồng thời phun hai hạt này ra môi trường nước tạo ra phản ứng oxy hóa phát quang ánh sáng xanh dương chói lọi kéo dài vài giây.",
+    "habitat": "Vùng nước nông ấm sát bờ cát đáy cát hoặc các dải san hô ven biển.",
+    "location": "Vùng ven biển phía nam Nhật Bản, Đông Nam Á và vùng biển Thái Bình Dương ấm.",
+    "survival_method": "Sống vùi mình trong cát ban ngày để tránh kẻ săn mồi. Ban đêm bơi lội tự do tìm kiếm chất hữu cơ phân hủy hoặc động vật nhỏ chết. Khi bị cá nhỏ nuốt vào miệng, chúng lập tức phun ra dịch hóa học phát quang màu xanh dương chói lọi làm sáng rực toàn bộ khoang miệng của cá. Ánh sáng này biến cá thành mục tiêu hiển lộ rõ ràng trước kẻ săn mồi lớn hơn, buộc cá phải nhè bọ giáp cổ ra ngay lập tức để tự bảo vệ.",
+    "unique_traits": "Khả năng phun chất hóa học tự vệ phát quang sinh học xanh dương cô đặc (luciferin-luciferase). Phản ứng phát quang cực kỳ hiệu quả hầu như không sinh ra nhiệt lượng (ánh sáng lạnh).",
+    "shortDescription": "Phun lửa xanh phát quang tự vệ. Bậc thầy hóa học biển sâu.",
+    "description": "Bọ Giáp Cổ Phun Lửa, còn được biết đến với tên gọi \"umi-hotaru\" (đom đóm biển) tại Nhật Bản, là một loài giáp xác hiển vi nổi tiếng với cơ chế tự vệ hóa học độc đáo. Với cơ thể mỏng manh không có vũ khí sát thương cơ học, loài bọ cát này đã tiến hóa một vũ khí quang học tối tân. Khi bị các loài cá nhỏ như cá hồng hay cá bống nuốt vào, chúng lập tức giải phóng dịch phát quang. Luồng sáng xanh lạnh chói lòa này rực lên trong miệng cá, đóng vai trò như một thiết bị định vị mục tiêu cưỡng bức, báo động cho các loài săn mồi lớn hơn đến ăn thịt con cá đó. Chính vì sợ trở thành nạn nhân kế tiếp, kẻ tấn công luôn buộc phải nhổ bọ giáp cổ ra ngay lập tức mà không làm tổn hại đến lớp vỏ dẻo dai của nó.",
     "strengths": [
-      "Ngụy trang lá khô đỉnh cao hòa trộn hoàn hảo dưới đáy bùn",
-      "Cơ chế ấp trứng trong da lưng bảo vệ con non tuyệt đối khỏi kẻ săn mồi",
-      "Hệ ngón tay cảm giác hình sao cực nhạy phát hiện rung động tần số thấp trong nước đục",
-      "Lực đớp hút chân không siêu tốc nuốt chửng con mồi trong tích tắc"
+      "Pháo sáng tự vệ hóa học siêu nhạy, khắc chế tuyệt đối hành vi nuốt mồi của các loài cá nhỏ",
+      "Vỏ hai mảnh chitin trong suốt dẻo dai bảo vệ cơ thể khỏi lực ép cơ học nhẹ trong khoang miệng cá",
+      "Khả năng phát hiện thức ăn phân hủy nhanh chóng nhờ các thụ thể hóa học phát triển trên râu",
+      "Kích thước hiển vi và tập tính ẩn nấp dưới cát làm giảm tối đa khả năng bị phát hiện"
     ],
     "weaknesses": [
-      "Hoàn toàn vô hại và vụng về khi bị đưa lên cạn do cơ thể dẹt và chi sau chuyên hóa bơi lội",
-      "Thị giác rất kém, gần như mù, phụ thuộc hoàn toàn vào xúc giác",
-      "Da nhạy cảm cao với sự thay đổi hóa học và ô nhiễm nguồn nước đáy sông"
+      "Không có khả năng tấn công trực diện hoặc gây sát thương vật lý cho đối thủ",
+      "Tốc độ bơi rất chậm, phụ thuộc vào dòng chảy khi di chuyển xa",
+      "Số lượng dịch phát quang dịch chuyển dự trữ có hạn, cần thời gian tổng hợp lại sau khi sử dụng hết"
     ],
     "funFacts": [
-      "Lưng của cóc mẹ sau khi con non chui ra sẽ rụng dần lớp da cũ và tái tạo lại lớp da mới mịn màng cho chu kỳ sinh sản tiếp theo",
-      "Khi cóc con chui ra khỏi lưng mẹ, chúng trông giống như những phi thuyền nhỏ đang cất cánh từ một sân bay tàu sân bay sinh học",
-      "Tiếng kêu gọi bạn tình của chúng dưới nước không phát ra từ thanh quản mà được tạo ra bằng cách gõ hai mảnh xương nhỏ trong cổ họng vào nhau tạo tiếng 'tách tách' giòn giã"
+      "Trong Thế chiến thứ hai, binh lính Nhật Bản thu thập xác bọ giáp cổ sấy khô rồi nghiền nát với nước để tạo ra nguồn sáng dịu nhẹ cầm tay, giúp đọc bản đồ ban đêm mà không bị máy bay đối phương phát hiện",
+      "Chất luciferin của loài này cực kỳ bền, xác bọ khô có thể được bảo quản hàng chục năm vẫn sẽ phát sáng ngay lập tức khi tiếp xúc với nước ẩm",
+      "Con đực thường đồng loạt phun dịch sáng theo các nhịp điệu mã hóa độc nhất để thu hút con cái từ khoảng cách xa trong bóng tối"
     ],
     "sources": [
       {
-        "url": "https://www.iucnredlist.org/species/58143/11739268",
-        "label": "IUCN Red List - Pipa pipa Reference"
+        "url": "https://doi.org/10.1016/j.jphotobiol.2018.04.017",
+        "label": "Journal of Photochemistry and Photobiology - Vargula hilgendorfii bioluminescence mechanism"
       },
       {
-        "url": "https://doi.org/10.1111/j.1469-7998.1963.tb01614.x",
-        "label": "Journal of Zoology - Reproductive behavior and skin structure of Pipa pipa"
+        "url": "https://www.jstor.org/stable/2461947",
+        "label": "The Biological Bulletin - Luminescent organs and secretions of Cypridina"
+      },
+      {
+        "url": "https://www.nationalgeographic.com/animals/article/sea-fireflies-bioluminescence-japan",
+        "label": "National Geographic - Sea Fireflies in Japan"
       }
     ],
-    "imageColor": "#706FD3",
-    "stats": {
-      "strength": 40,
-      "durability": 60,
-      "speed": 55,
-      "weaponry": 25,
-      "special": 95,
-      "lethality": 45
-    },
-    "diet_type": "carnivore",
+    "imageColor": "#3B82F6",
+    "diet_type": "detritivore",
     "diet_items": [
-      "giun đất",
-      "cá nhỏ",
-      "côn trùng nước",
-      "động vật giáp xác"
+      "chất hữu cơ phân hủy",
+      "xác cá nhỏ",
+      "tảo biển"
     ],
     "activity_pattern": "nocturnal",
-    "lifespan_min": 7,
-    "lifespan_max": 10,
-    "lifespan_unit": "years",
+    "lifespan_min": 6,
+    "lifespan_max": 12,
+    "lifespan_unit": "months",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Con đực ép trứng lên lưng con cái để thụ tinh. Trứng chìm vào da lưng con cái tạo các hốc tổ ong. Cóc con chui ra trực tiếp từ lưng mẹ sau khoảng 3-4 tháng.",
+    "reproduction_notes": "Con đực thực hiện vũ điệu ánh sáng bằng cách phun các giọt phát quang định kỳ để tán tỉnh. Con cái đẻ trứng và ấp trứng trực tiếp trong khoang vỏ bảo vệ trước khi nở ra ấu trùng tự do.",
     "locomotion": "swim",
-    "speed_max": 4.5,
+    "speed_max": 0.05,
     "conservation_status": "LC",
-    "size_min_mm": 100.0,
-    "size_max_mm": 200.0,
-    "weight_avg_g": 200.0,
-    "enrichment_count": 0,
-    "grading_count": 0,
-    "ai_p4p_score": 60,
-    "ai_tier": "C"
+    "size_min_mm": 1.5,
+    "size_max_mm": 2.2,
+    "weight_avg_g": 0.0005,
+    "stats": {
+      "strength": 5,
+      "durability": 15,
+      "speed": 20,
+      "weaponry": 10,
+      "special": 95,
+      "lethality": 5
+    }
   },
   {
-    "id": "stoplight-loosejaw",
-    "name": "Cá Hàm Chùng Đèn Đỏ",
-    "scientificName": "Malacosteus niger",
+    "id": "trapdoor-spider",
+    "name": "Nhện Cửa Sập",
+    "scientificName": "Cteniza sauvagesi",
     "taxonomy": {
-      "class": "Actinopterygii",
-      "order": "Stomiiformes",
-      "family": "Stomiidae"
+      "class": "Arachnida",
+      "order": "Araneae",
+      "family": "Ctenizidae"
     },
-    "realWeight": "10 - 25 g",
-    "size": "15 - 25 cm",
-    "characteristics": "Thân hình thuôn dài màu đen xì hấp thụ mọi ánh sáng biển sâu. Hàm dưới cực kỳ dài, không có lớp màng da nối giữa hai xương hàm dưới với nhau, tạo ra một cấu trúc hàm trống rỗng hoàn toàn. Sở hữu ba loại cơ quan phát quang (photophores) gần mắt: một phát ánh sáng đỏ đậm dưới mắt, một phát ánh sáng xanh lục sau mắt và các đốm nhỏ phát ánh sáng xanh lam dọc thân.",
-    "habitat": "Tầng nước sâu thẳm (mesopelagic và bathypelagic) từ 500 - 4.000m, nơi hoàn toàn không có ánh sáng mặt trời.",
-    "location": "Phân bố rộng khắp các vùng biển nhiệt đới và ôn đới trên toàn cầu.",
-    "survival_method": "Sử dụng đèn chiếu ánh sáng đỏ dưới mắt phát ra bước sóng khoảng 700nm. Vì hầu hết sinh vật biển sâu không thể nhìn thấy ánh sáng đỏ, loài này dùng nó như một chiếc kính hồng ngoại săn mồi bí mật mà không làm con mồi giật mình hay tiết lộ vị trí của mình với kẻ săn mồi lớn. Khi tấn công, hàm dưới không da có lực cản nước bằng 0 sẽ phóng ra với tốc độ cực nhanh để ghim răng nanh cong sắc vào con mồi.",
-    "unique_traits": "Khả năng phát ra và nhìn thấy ánh sáng đỏ biển sâu độc nhất vô nhị nhờ sắc tố thị giác dẫn xuất từ chất diệp lục. Hàm dưới chùng không có màng da (loosejaw) giúp loại bỏ tối đa lực cản của nước khi đớp mồi tốc độ cao dưới áp suất lớn. Răng nanh siêu dài cong ngược về phía sau ngăn cản con mồi chạy trốn.",
-    "shortDescription": "Sở hữu 'kính hồng ngoại' sinh học phát ánh sáng đỏ. Hàm dưới không màng da đớp mồi không lực cản.",
-    "description": "Cá Hàm Chùng Đèn Đỏ (Malacosteus niger) là một sát thủ vô hình dưới đáy đại dương tối đen. Trong khi hầu như toàn bộ sinh vật biển sâu tiến hóa để chỉ nhạy cảm với ánh sáng xanh lam và xanh lá cây, loài cá này đã phá vỡ quy luật bằng cách sở hữu một nguồn sáng đỏ và một đôi mắt đặc biệt có thể tiếp nhận bước sóng đỏ này. Điều này cho phép chúng bật đèn pha săn mồi mà không một ai hay biết. Kết hợp với bộ hàm mở không da độc đáo loại bỏ lực cản của nước, chúng có thể đớp con mồi lớn hơn nhiều so với cơ thể chỉ trong nháy mắt.",
+    "realWeight": "~2 - 5 g",
+    "size": "2.5 - 4 cm",
+    "characteristics": "Thân mình dày mập mạp, phủ lớp lông mịn màu nâu đậm đến đen, chân ngắn nhưng cực kỳ cơ bắp. Cặp hàm chelicerae rất khỏe trang bị các hàng răng chitin sắc nhọn phục vụ việc đào bới đất cứng. Điểm đặc trưng nhất là khả năng dệt một chiếc cửa bản lề tròn bằng tơ trộn đất, rêu và lá khô đậy kín miệng hang sâu. Mặt trong cửa được gia cố tơ mịn và đục các lỗ nhỏ để móng vuốt nhện bám chặt từ bên trong giữ cửa chống xâm nhập.",
+    "habitat": "Vùng đất đồi dốc dẻo ẩm khô ráo, các dải rừng thưa ôn đới hoặc cận nhiệt đới.",
+    "location": "Khu vực Địa Trung Hải, miền nam châu Âu, châu Mỹ và các vùng nhiệt đới châu Á.",
+    "survival_method": "Đào một hang sâu hình ống thẳng đứng dài từ 15-30cm rồi bọc lót toàn bộ bằng tơ dệt mịn màng cách nhiệt. Chúng đóng chặt nắp cửa ngụy trang và nằm phục kích ngay phía sau cửa. Cặp chân trước của chúng đặt chạm nhẹ lên mép tơ cảm nhận sóng rung truyền qua mặt đất từ bước chân côn trùng bên ngoài. Khi con mồi đi ngang qua phạm vi tấn công (khoảng vài cm quanh miệng hang), nhện cửa sập bật mở cửa cực nhanh, chồm ra giật gọn con mồi vào lòng hang rồi đóng sầm cửa lại chỉ trong một phần ba mươi giây.",
+    "unique_traits": "Khả năng kiến trúc hang ngầm và cửa bản lề ngụy trang siêu hạng. Tốc độ tấn công chớp nhoáng (strike speed < 0.03s), một trong những phản xạ săn mồi nhanh nhất thế giới sinh vật.",
+    "shortDescription": "Săn mồi cửa sập tàng hình. Phản xạ giật mồi chớp nhoáng 0.03s.",
+    "description": "Nhện Cửa Sập là bậc thầy kiến trúc ngầm của thế giới côn trùng và nhện. Thay vì dệt mạng nhện lộ thiên trên cao, loài nhện cổ xưa này dành phần lớn cuộc đời dưới lòng đất trong những đường hầm tự đào hoàn mỹ. Chiếc cửa sập bản lề của chúng là một kỳ công cơ học, được ngụy trang khớp khít hoàn hảo với bề mặt đất xung quanh đến mức mắt thường không thể phát hiện. Khi đi săn, chúng giữ cửa khép hờ và dùng hệ thống dây tơ cảm biến rung để đo khoảng cách mục tiêu. Đòn tấn công của nhện cửa sập diễn ra nhanh đến mức con mồi chưa kịp nhận ra mối đe dọa thì đã bị kéo tuột xuống địa ngục tối tăm và nắp hang đã được đóng kín như chưa từng có chuyện gì xảy ra.",
     "strengths": [
-      "Chiếu sáng hồng ngoại sinh học săn mồi tàng hình tuyệt đối",
-      "Hàm loosejaw không da triệt tiêu hoàn toàn lực cản nước khi đớp mồi",
-      "Răng nanh nhọn hoắt dài cong ngược khóa chặt con mồi trơn trượt",
-      "Mắt có sắc tố hấp thụ bước sóng đỏ độc đáo giúp định vị chuẩn xác"
+      "Phòng thủ tàng hình tuyệt đối nhờ nắp cửa bản lề ngụy trang hòa nhập hoàn hảo với tự nhiên",
+      "Tốc độ tấn công bùng nổ cực đại dưới 0.03 giây, không cho con mồi bất cứ cơ hội phản ứng nào",
+      "Lực bám giữ nắp cửa từ bên trong vô cùng lớn, ngăn chặn hiệu quả kẻ săn mồi (như ong bắp cày ký sinh) cạy cửa xâm nhập",
+      "Tuổi thọ cao và lối sống tiết kiệm năng lượng tối đa nhờ nằm chờ mồi tại chỗ"
     ],
     "weaknesses": [
-      "Thể chất mảnh mai, xương sọ rất nhẹ yếu, không thể chịu được va chạm vật lý mạnh",
-      "Tốc độ bơi đường dài khá chậm, phụ thuộc vào đòn phục kích tầm ngắn",
-      "Kích thước cơ thể nhỏ hạn chế khả năng săn động vật lớn thực sự"
+      "Cực kỳ yếu thế và chậm chạp khi bị buộc phải rời khỏi hang hoặc khi hang bị phá hủy",
+      "Phạm vi săn mồi siêu hẹp, chỉ giới hạn trong bán kính vài cm quanh miệng hang",
+      "Thính giác và thị giác rất kém, phụ thuộc hoàn toàn vào rung động cơ học truyền qua tơ đất"
     ],
     "funFacts": [
-      "Sắc tố mắt đặc biệt giúp chúng nhìn thấy ánh sáng đỏ được tổng hợp gián tiếp từ việc tiêu thụ các loài động vật giáp xuất ăn vi khuẩn chứa diệp lục biển sâu",
-      "Vì hàm dưới không có màng da nối, khi chúng mở miệng, bạn có thể nhìn thấu qua bên kia hàm mà không có gì cản trở",
-      "Đèn đỏ dưới mắt chúng có thể được điều chỉnh chớp nháy hoặc chiếu sáng liên tục tùy theo chế độ tìm kiếm hay áp sát con mồi"
+      "Nhện cửa sập cái có thể sống trong cùng một cái hang suốt hơn 20 năm mà không bao giờ di cư đi nơi khác trừ khi bị thiên tai lũ lụt ép buộc",
+      "Chiếc cửa sập được thiết kế góc nghiêng bản lề tối ưu để tự động sập đóng lại bằng trọng lực ngay khi nhện buông chân ra, giúp bảo vệ hang tức thì trong lúc nhện rút lui",
+      "Một số loài nhện cửa sập có phần bụng dẹt cứng như một chiếc khiên (nhện Cyclocosmia), khi có kẻ thù xâm nhập chúng sẽ chui ngược xuống và dùng chính chiếc bụng bọc sừng này để bịt kín đường hầm như một cánh cửa sắt thứ hai"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1038/35018563",
-        "label": "Nature - Chlorophyll-derived rhodopsin photosensitizer in deep-sea fish"
+        "url": "https://doi.org/10.1111/j.1439-0310.1975.tb00904.x",
+        "label": "Ethology - Prey capture and predatory behavior of trapdoor spiders"
       },
       {
-        "url": "https://doi.org/10.1111/j.1095-8649.1970.tb03290.x",
-        "label": "Journal of Fish Biology - The feeding mechanism of Malacosteus niger"
+        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/trapdoor-spiders",
+        "label": "National Geographic - Trapdoor Spiders Reference"
+      },
+      {
+        "url": "https://doi.org/10.1093/sysbio/syw096",
+        "label": "Systematic Biology - Phylogenomics of trapdoor spiders and burrowing lifestyles"
       }
     ],
-    "imageColor": "#0F0F0F",
-    "stats": {
-      "strength": 35,
-      "durability": 45,
-      "speed": 65,
-      "weaponry": 90,
-      "special": 97,
-      "lethality": 80
-    },
+    "imageColor": "#7A4F2C",
     "diet_type": "carnivore",
     "diet_items": [
-      "động vật giáp xác",
-      "cá biển sâu nhỏ",
-      "nhuyễn thể"
-    ],
-    "activity_pattern": "variable",
-    "lifespan_min": 3,
-    "lifespan_max": 5,
-    "lifespan_unit": "years",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Thực hiện sinh sản hữu tính ở tầng nước sâu, đẻ trứng và tinh trùng trực tiếp vào nước (external spawning), trứng tự trôi nổi tự do.",
-    "locomotion": "swim",
-    "speed_max": 6.5,
-    "conservation_status": "LC",
-    "size_min_mm": 150.0,
-    "size_max_mm": 250.0,
-    "weight_avg_g": 18.0,
-    "enrichment_count": 0,
-    "grading_count": 0,
-    "ai_p4p_score": 62,
-    "ai_tier": "C"
-  },
-  {
-    "id": "pink-fairy-armadillo",
-    "name": "Tatu Tiên Hồng",
-    "scientificName": "Chlamyphorus truncatus",
-    "taxonomy": {
-      "class": "Mammalia",
-      "order": "Cingulata",
-      "family": "Chlamyphoridae"
-    },
-    "realWeight": "80 - 120 g",
-    "size": "9 - 12 cm",
-    "characteristics": "Thân hình nhỏ bé nhất họ tatu, phủ một lớp lông tơ mịn màu trắng muốt dưới bụng. Điểm nổi bật nhất là lớp giáp sừng màu hồng nhạt duyên dáng che phủ phần lưng, chỉ liên kết với cơ thể bằng một màng da mỏng chạy dọc cột sống. Phần đuôi cụt kết thúc bằng một tấm sừng phẳng thẳng đứng như chiếc xẻng tròn ở mông. Chi trước cực kỳ phát triển với các móng vuốt khổng lồ hình xẻng siêu cứng khỏe.",
-    "habitat": "Đồng cỏ khô cằn, hoang mạc cát và vùng đất cát xốp khô ráo.",
-    "location": "Vùng trung tâm đất nước Argentina.",
-    "survival_method": "Sống hầu hết thời gian dưới lòng đất (fossorial). Đào bới cực nhanh bằng đôi chi trước khỏe để lẩn trốn kẻ thù và săn côn trùng. Sử dụng tấm sừng phẳng ở mông (butt plate) để nén chặt đất cát phía sau khi đào hang, ngăn chặn kẻ thù đuổi theo hoặc chặn sạt lở. Bộ giáp hồng giàu mạch máu giúp tản nhiệt hoặc hấp thụ nhiệt độ đất hiệu quả để kiểm tra thân nhiệt dưới lòng đất.",
-    "unique_traits": "Khả năng 'bơi' trong cát cát cực nhanh nhờ vuốt lớn và cấu trúc cơ vai siêu khỏe. Lớp giáp hồng mềm dẻo độc đáo hoạt động như một hệ điều hòa thân nhiệt (thermoregulation) thông qua điều tiết dòng máu chảy dưới giáp. Tấm sừng mông phẳng (pelvic shield) dùng để compaction đất bít lối vào hang tự vệ chủ động.",
-    "shortDescription": "Tatu nhỏ nhất thế giới. 'Bơi' cát siêu tốc và bịt lối hang bằng giáp mông phẳng đặc chủng.",
-    "description": "Tatu Tiên Hồng (Chlamyphorus truncatus) là một loài thú có vú kỳ lạ và cực kỳ quý hiếm sống tại Argentina. Với kích thước chỉ lọt thỏm trong lòng bàn tay, chúng dành phần lớn cuộc đời dưới lòng đất. Bộ giáp hồng đặc trưng của chúng không cứng như các loài tatu khác mà rất mềm mại và linh hoạt, hoạt động như một máy tản nhiệt sinh học khổng lồ. Nhờ đôi móng chi trước khổng lồ, chúng có thể đào cát nhanh đến mức biến mất chỉ trong vài giây trước mắt kẻ thù, sau đó dùng chiếc mông phẳng bọc giáp để chặn đứng lối vào hang như một cánh cửa sắt.",
-    "strengths": [
-      "Khả năng đào bới lặn cát siêu tốc biến mất trong 2-3 giây",
-      "Tấm giáp mông phẳng bít lối hang hoàn hảo chống kẻ xâm nhập",
-      "Lớp giáp hồng hỗ trợ điều nhiệt cơ thể nhạy bén dưới lòng đất cát nóng lạnh biến động",
-      "Khứu giác siêu nhạy phát hiện tổ kiến sâu dưới cát đất"
-    ],
-    "weaknesses": [
-      "Rất nhạy cảm với stress và thay đổi môi trường cát ẩm (ẩm ướt làm lông dưới bụng ướt lạnh gây chết đột ngột)",
-      "Không thể sống sót lâu trong môi trường nuôi nhốt nhân tạo",
-      "Thể trạng nhỏ bé dễ bị chó mèo hoặc động vật săn mồi lớn tấn công trên mặt đất"
-    ],
-    "funFacts": [
-      "Bộ giáp màu hồng độc đáo của chúng có màu sắc như vậy là nhờ hàng ngàn mạch máu nhỏ li ti chạy trực tiếp qua lớp sừng để điều tiết thân nhiệt, nếu chúng bị lạnh màu hồng sẽ nhạt đi và ngược lại",
-      "Chúng đào bới cát nhanh đến mức người ta ví chúng như đang 'bơi' dưới lòng cát nhẹ nhàng tương tự cá bơi dưới nước",
-      "Đuôi của Tatu Tiên Hồng có hình dạng như chiếc muỗng lớn chọc xuống cát đóng vai trò làm điểm tựa thăng bằng chịu lực đẩy cho đôi chân trước đào bới"
-    ],
-    "sources": [
-      {
-        "url": "https://www.iucnredlist.org/species/4704/115069945",
-        "label": "IUCN Red List - Chlamyphorus truncatus"
-      },
-      {
-        "url": "https://doi.org/10.1093/jmammal/gyy019",
-        "label": "Journal of Mammalogy - Biology and conservation of the pink fairy armadillo"
-      }
-    ],
-    "imageColor": "#FF7979",
-    "stats": {
-      "strength": 30,
-      "durability": 75,
-      "speed": 50,
-      "weaponry": 40,
-      "special": 90,
-      "lethality": 35
-    },
-    "diet_type": "omnivore",
-    "diet_items": [
+      "dế",
       "kiến",
-      "ấu trùng côn trùng",
-      "giun đất",
-      "rễ cây",
-      "ốc sên nhỏ"
+      "cuốn chiếu",
+      "nhện nhỏ khác",
+      "gián"
     ],
     "activity_pattern": "nocturnal",
     "lifespan_min": 5,
-    "lifespan_max": 10,
+    "lifespan_max": 20,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Sinh sản hữu tính đẻ con (viviparous), mỗi lứa đẻ 1-2 con non hoang dã. Con non có lớp giáp mềm màu hồng trắng bám sát cơ thể.",
+    "reproduction_notes": "Con đực rời hang đi tìm hang con cái vào mùa giao phối. Sau khi thụ tinh, con cái đẻ trứng trong túi tơ treo trong hang và nuôi dưỡng con non một thời gian trước khi chúng tự đào hang nhỏ riêng xung quanh.",
     "locomotion": "burrow",
     "speed_max": 2.5,
-    "conservation_status": "NT",
-    "size_min_mm": 90.0,
-    "size_max_mm": 120.0,
-    "weight_avg_g": 100.0,
-    "enrichment_count": 0,
-    "grading_count": 0,
-    "ai_p4p_score": 58,
-    "ai_tier": "C"
+    "conservation_status": "LC",
+    "size_min_mm": 25,
+    "size_max_mm": 40,
+    "weight_avg_g": 3.5,
+    "stats": {
+      "strength": 55,
+      "durability": 60,
+      "speed": 85,
+      "weaponry": 68,
+      "special": 80,
+      "lethality": 72
+    }
+  },
+  {
+    "id": "ninja-slug",
+    "name": "Sên Trần Ninja",
+    "scientificName": "Ibycus rachelae",
+    "taxonomy": {
+      "class": "Gastropoda",
+      "order": "Stylommatophora",
+      "family": "Ariophantidae"
+    },
+    "realWeight": "~3 - 5 g",
+    "size": "4 - 5 cm",
+    "characteristics": "Cơ thể thon dài màu xanh lá cây hoặc vàng chanh tươi sáng giúp ngụy trang hoàn hảo trên những chiếc lá rừng nhiệt đới. Phần đuôi rất dài, gấp 3 lần chiều dài đầu, có khả năng quấn chặt xung quanh cành cây hoặc lá để giữ thăng bằng. Không có vỏ ốc bảo vệ bên ngoài mà chỉ có một lớp màng mỏng bao bọc cơ quan nội tạng. Đầu có hai cặp xúc tu cực nhạy cảm.",
+    "habitat": "Tán lá cao của rừng mưa nhiệt đới miền núi ẩm ướt ở độ cao trên 1000m.",
+    "location": "Được phát hiện tại khu vực vùng núi cao Sabah thuộc đảo Borneo, Malaysia.",
+    "survival_method": "Sống bám trên các tán lá cao. Di chuyển chậm chạp bằng cách co thắt bàn chân nhầy. Ngụy trang bằng màu xanh giống lá cây để trốn tránh chim săn mồi. Khi giao phối, chúng sử dụng một cơ quan sinh dục chuyên biệt bắn ra các \"mũi tên tình yêu\" (love darts) làm bằng canxi cacbonat phủ hocmon sinh dục đặc biệt đâm xuyên qua da của đối tác nhằm kiểm soát hóa học hành vi giao phối và nâng cao tỷ lệ thụ tinh thành công.",
+    "unique_traits": "Khả năng bắn \"mũi tên tình yêu\" (hormonal love darts) độc đáo kích thích giao phối. Chiếc đuôi siêu dài hoạt động linh hoạt như một chi thứ năm để bám cành cây.",
+    "shortDescription": "Bắn \"mũi tên tình yêu\" hormone. Đuôi dài quấn cành ngụy trang lá.",
+    "description": "Sên Trần Ninja là một loài sên độc đáo chỉ mới được phát hiện ở các vùng rừng núi cao của đảo Borneo. Khác với vẻ lù đù thường thấy của các loài ốc sên và sên trần khác, loài sên này có thân hình thon gọn màu xanh nõn chuối bắt mắt và chiếc đuôi dài linh hoạt có thể quấn chặt cành lá giúp chúng leo trèo an toàn trên các tầng rừng cao lộng gió. Danh hiệu \"Ninja\" của chúng xuất phát từ phương thức giao phối cực kỳ chủ động và độc đáo: chúng sử dụng một chiếc túi chứa những chiếc gai canxi nhọn hoắt được tẩm hormone sinh dục mạnh, sau đó \"phun\" thẳng đâm vào cơ thể đối tác. Những mũi tên hormone này giúp điều khiển hành vi của đối tác, ngăn ngừa việc tiêu hủy tinh trùng và tăng tỷ lệ sinh sản lên gấp nhiều lần.",
+    "strengths": [
+      "Ngụy trang sắc xanh lá cây hoàn hảo giữa thảm thực vật rừng mưa nhiệt đới",
+      "Chiếc đuôi dài đa năng có thể quấn bám chặt cành cây giúp sinh tồn hiệu quả trên cao",
+      "Cơ chế \"mũi tên tình yêu\" hormone độc quyền nâng cao hiệu suất sinh sản trong điều kiện mật độ quần thể thưa thớt",
+      "Tiết ra lớp chất nhầy đắng bảo vệ da khỏi khô hạn và xua đuổi một số côn trùng ký sinh nhỏ"
+    ],
+    "weaknesses": [
+      "Cơ thể trần trụi hoàn toàn không có vỏ bảo vệ cơ học, cực kỳ nhạy cảm trước chấn thương vật lý",
+      "Tốc độ di chuyển rất chậm, dễ làm mồi cho chim và bò sát nếu bị phát hiện",
+      "Khả năng chống chịu nhiệt độ cao và khô hạn kém, bắt buộc phải sống trong môi trường sương mù ẩm ướt"
+    ],
+    "funFacts": [
+      "Khi ngủ hoặc nghỉ ngơi, sên trần Ninja cuộn tròn chiếc đuôi dài quanh đầu và cơ thể, giả dạng hoàn hảo làm một đốm phân chim nhỏ hoặc chồi lá non trên bề mặt lá cây để đánh lừa kẻ thù",
+      "Mũi tên tình yêu của sên trần Ninja có cấu trúc rỗng như kim tiêm dưới da, giúp dẫn truyền hormone trực tiếp vào dòng dịch cơ thể của đối tác một cách hiệu quả nhất",
+      "Đây là loài đặc hữu độc nhất vô nhị của núi Kinabalu và hiện đang đứng trước nguy cơ bị đe dọa do biến đổi khí hậu làm thu hẹp vùng khí hậu lạnh ẩm ôn đới trên núi cao"
+    ],
+    "sources": [
+      {
+        "url": "https://www.biotaxa.org/zootaxa/article/view/zootaxa.2443.1.2",
+        "label": "Zootaxa - Description of a new species of Ibycus from Borneo"
+      },
+      {
+        "url": "https://www.wwf.org.my/?8820/Borneo-Ninja-slug-among-spectacular-new-species-discovered-in-heart-of-borneo",
+        "label": "WWF Malaysia - Discovery of the Ninja Slug in Borneo"
+      }
+    ],
+    "imageColor": "#84CC16",
+    "diet_type": "herbivore",
+    "diet_items": [
+      "lá cây non",
+      "rêu ẩm",
+      "phấn hoa",
+      "chất nền hữu cơ"
+    ],
+    "activity_pattern": "crepuscular",
+    "lifespan_min": 1,
+    "lifespan_max": 2,
+    "lifespan_unit": "years",
+    "reproduction_type": "hermaphrodite",
+    "reproduction_notes": "Là loài lưỡng tính nhưng vẫn cần giao phối chéo. Sử dụng mũi tên canxi chứa hormone bắn đâm vào đối tác để chuyển giao tinh dịch và kích thích sinh sản. Đẻ các ổ trứng nhỏ trong kẽ rêu ẩm.",
+    "locomotion": "crawl",
+    "speed_max": 0.02,
+    "conservation_status": "VU",
+    "size_min_mm": 40,
+    "size_max_mm": 50,
+    "weight_avg_g": 4,
+    "stats": {
+      "strength": 10,
+      "durability": 12,
+      "speed": 15,
+      "weaponry": 25,
+      "special": 82,
+      "lethality": 10
+    }
   }
 ]
