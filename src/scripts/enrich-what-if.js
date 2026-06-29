@@ -6422,6 +6422,178 @@ async function runEnrichment() {
           }
         ]
       });
+    } else if (target.id === "bombardier-beetle") {
+      whatIfData.push({
+        creature_id: "bombardier-beetle",
+        title: "Nếu Bọ Cánh Cứng Xịt Ga (Bombardier Beetle) phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-bo-canh-cung-xit-ga-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích giả thuyết khi loài Bọ Cánh Cứng Xịt Ga (Brachinus crepitans) với khả năng bắn tia hóa chất sôi 100°C từ đuôi phóng to đến kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Khẩu pháo hóa học phản lực áp lực cao)",
+            slug: "bo-canh-cung-xit-ga-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Tia xịt hóa chất sôi 100°C bắn xa tới 50m dưới dạng sương siêu nóng áp lực lớn, lực giật phản lực giúp bứt tốc cực nhanh.",
+            content: "Khi Bọ Cánh Cứng Xịt Ga phóng to lên 80kg (hệ số phóng to tuyến tính ~160 lần, thể tích tăng ~4 triệu lần):\n- Tia xịt hóa chất siêu nhiệt tầm xa: Bình thường bọ bắn tia dung dịch p-benzoquinones sôi 100°C xa vài cm. Ở kích thước 80kg, khoang phản ứng nổ vi mô phóng to tạo áp suất nén cực đại, đẩy luồng hóa chất siêu nóng bắn xa tới 50m dưới dạng tia phun áp lực hoặc đám mây sương hóa học đậm đặc tàn phá da thịt và hô hấp kẻ thù.\n- Xung lực phản lực đẩy: Phản lực từ luồng xịt hóa chất tạo lực đẩy lớn ngược chiều, hoạt động như động cơ phản lực mini giúp bọ bứt tốc bay hoặc phóng thẳng về phía trước ở vận tốc 45 km/h.\n- Nhịp xịt tần số cao: Buồng phản ứng có khả năng nổ rung 500 lần/giây, biến nó thành khẩu súng liên thanh hóa học.",
+            formulas_and_data: {
+              scaling_factor: 1600000,
+              mass_g_original: 0.05,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Tầm bắn phóng đại cơ học",
+                  equation: "R_scaled = R_original * L_scaling_factor",
+                  result: "~48 m"
+                },
+                {
+                  name: "Thể tích dung dịch nổ dự trữ phóng đại",
+                  equation: "V_scaled = V_original * (M_scaled / M_original)",
+                  result: "~1.6 Lít"
+                }
+              ]
+            },
+            p4p_score_scaled: 95,
+            tier_scaled: "S",
+            sources: [
+              { label: "X-ray imaging of bombardier beetle defensive spray mechanics", url: "https://doi.org/10.1038/nature14441" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Vỡ buồng phản ứng nổ và suy hô hấp cấp)",
+            slug: "bo-canh-cung-xit-ga-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Nổ tung khoang đuôi do ứng suất nén áp lực lớn và chết ngạt lập tức vì thiếu phổi chủ động.",
+            content: "Trong thế giới thực tế, Bọ Cánh Cứng Xịt Ga 80kg không thể vận hành phản ứng nổ:\n- Nổ tung cơ thể: Phản ứng hóa học giữa Hydroquinone và Hydrogen Peroxide sinh nhiệt 100°C và giải phóng khí Oxy tạo áp suất cao. Khi phóng to lên 80kg, thể tích khoang phản ứng tăng 4 triệu lần nhưng độ dày thành khoang làm bằng chitin chỉ tăng theo bình phương diện tích. Khi kích hoạt phản ứng nổ đầu tiên, áp lực khí nén sinh ra vượt quá giới hạn uốn kéo của kitin (80 MPa) gấp nhiều lần, khiến phần đuôi bọ nổ tung từ bên trong, giải phóng axit nóng thiêu rụi chính nó.\n- Chết ngạt: Hệ hô hấp ống khí thụ động không thể vận chuyển khí oxy qua khoảng cách khuếch tán lớn hơn vài mm, bọ sẽ rơi vào trạng thái hôn mê và chết ngạt sau 2 phút.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Ứng suất thành buồng phản ứng (Hoop Stress)",
+                  issue: "Áp suất nổ tăng vọt vượt quá 320 MPa, trong khi giới hạn bền của chitin thành buồng chỉ đạt 80 MPa, gây vỡ toác buồng nổ."
+                },
+                {
+                  type: "Khuếch tán oxy thụ động qua khí quản",
+                  issue: "Tỷ lệ S/V giảm hàng triệu lần, nồng độ oxy ở trung tâm mô giảm về 0 sau 2 phút."
+                }
+              ]
+            },
+            p4p_score_scaled: 10,
+            tier_scaled: "D",
+            sources: [
+              { label: "Biomechanical constraints on giant arthropods", url: "https://doi.org/10.1086/676859" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Buồng nổ bọc gốm ceramic sinh học và phổi sách chủ động)",
+            slug: "bo-canh-cung-xit-ga-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Buồng phản ứng gia cố khoáng hóa gốm ceramic sinh học chống nứt, phổi sách co bóp cơ học chủ động và hệ van xả áp kép.",
+            content: "Để bọ xịt ga 80kg tồn tại và sử dụng vũ khí hóa học an toàn:\n- Buồng nổ gốm hóa (Ceramic-reinforced Reactor): Thành buồng phản ứng tiến hóa một lớp khoáng hóa canxit-silica cực dày kết hợp với protein resilin đàn hồi cao, đóng vai trò như gốm chống nhiệt chịu được áp suất nổ lên đến 500 MPa mà không rạn nứt.\n- Phổi sách chủ động: Tuyến thở phát triển hệ thống phổi sách xếp lớp kết hợp cơ ngực-bụng co bóp cưỡng bức luồng không khí dồi dào oxy nuôi cơ thể.\n- Hệ van giảm áp kép (Dual-vent Relief Valve): Có cơ cấu van an toàn tự động xả áp khi áp suất buồng vượt ngưỡng an toàn, ngăn chặn việc tự hủy.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Buồng phản ứng gốm hóa silica-kitin",
+                  benefit: "Nâng độ bền uốn kéo lên 600 MPa, an toàn tuyệt đối trước mọi áp suất nổ hóa học."
+                },
+                {
+                  type: "Hệ phổi sách cơ học chủ động",
+                  benefit: "Cung cấp lưu lượng oxy ổn định 180 ml/phút cho cơ thể nặng 80kg hoạt động."
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "A",
+            sources: [
+              { label: "Bio-inspired thermal mitigation and pressure containment structures", url: "https://doi.org/10.1016/j.jmbbm.2020.104050" }
+            ]
+          }
+        ]
+      });
+    } else if (target.id === "darwins-bark-spider") {
+      whatIfData.push({
+        creature_id: "darwins-bark-spider",
+        title: "Nếu Nhện Vỏ Cây Darwin (Darwin's Bark Spider) phóng to bằng con người (80kg) thì sao?",
+        slug: "neu-nhen-vo-cay-darwin-phong-to-bang-con-nguoi-80kg",
+        description: "Phân tích kịch bản giả thuyết khi loài nhện sở hữu tơ siêu bền nhất hành tinh Caerostris darwini phóng to lên kích thước con người 80kg.",
+        answers: [
+          {
+            title: "Góc nhìn cơ học lý thuyết (Sợi tơ chịu lực 130 tấn và cú phóng tơ bắc cầu dài 300 mét)",
+            slug: "nhen-vo-cay-darwin-80kg-co-hoc-ly-thuyet",
+            perspective_type: "classic_scaling",
+            summary: "Sợi tơ phóng to đạt độ bền kéo 1.6 GPa có thể nâng vật nặng 130 tấn, tơ phóng xa 300m và mạng nhện rộng 400m2 bẫy cả trực thăng.",
+            content: "Khi Nhện Vỏ Cây Darwin phóng to lên 80kg (chiều dài cơ thể ~1.5m, sải chân ~3.5m):\n- Siêu vật liệu tơ nhện phóng đại: Tiết diện tơ phóng to giúp sợi tơ đơn lẻ đạt lực kéo đứt chịu được tải trọng tới 130 tấn (tương đương trọng lượng của 20 con voi lớn hoặc 1 chiếc máy bay Boeing 737). Độ bền kéo duy trì ở mức 1.6 GPa.\n- Cầu tơ siêu việt: Khả năng phóng sợi tơ bắc cầu tăng cự ly lên tới 300m bắc qua các thung lũng sâu hoặc sông lớn. Mạng lưới nhện khổng lồ dệt nên rộng tới 400 m², đủ sức giữ chặt các phương tiện bay cỡ nhỏ hoặc trực thăng di chuyển chậm.\n- Lực cắn tiêm độc cơ học: Cặp kìm chelicerae phóng đại tạo lực cắm đâm đạt 6.500 N, dễ dàng xuyên thủng các tấm giáp bảo vệ.",
+            formulas_and_data: {
+              scaling_factor: 1000000,
+              mass_kg_original: 0.00008,
+              mass_kg_scaled: 80,
+              formulas: [
+                {
+                  name: "Độ bền kéo chịu lực của sợi tơ đơn",
+                  equation: "F_tensile = Stress * Area = 1.6 GPa * \\pi * r_scaled^2",
+                  result: "~1.3 * 10^6 N (chịu lực kéo đứt 130 tấn)"
+                },
+                {
+                  name: "Tầm phóng tơ bắc cầu tỉ lệ thuận",
+                  equation: "D_bridge = D_orig * (M_scaled / M_orig)^(1/3)",
+                  result: "~250 - 300 m"
+                }
+              ]
+            },
+            p4p_score_scaled: 93,
+            tier_scaled: "S",
+            sources: [
+              { label: "Bioprospecting Darwin's bark spider silk: Tensile properties and structural mechanics", url: "https://doi.org/10.1371/journal.pone.0011234" }
+            ]
+          },
+          {
+            title: "Giới hạn sinh học thực tế (Sụp đổ tơ do quá tải trọng lượng bản thân và chết ngạt do thiếu phổi chủ động)",
+            slug: "nhen-vo-cay-darwin-80kg-sinh-hoc-thuc-te",
+            perspective_type: "biological_reality",
+            summary: "Tơ tự đứt dưới sức nặng cơ thể 80kg, chân gãy gập do ứng suất nén quá tải exoskeleton kitin, và ngạt thở sau vài phút.",
+            content: "Trong thế giới vật lý sinh học thực tế, nhện vỏ cây Darwin 80kg sẽ lập tức tử vong:\n- Tơ tự đứt dưới trọng lực cơ thể: Ở kích thước khổng lồ, sợi tơ nhện dù có bền kéo 1.6 GPa cũng không chịu nổi lực giật động năng rơi của chính cơ thể 80kg. Gia tốc trọng trường kết hợp với trọng lượng cơ thể lớn sẽ làm sợi tơ bị kéo giãn quá giới hạn đàn hồi và đứt lìa khi nhện cố gắng đu bám.\n- Sụp đổ khung xương ngoài (Exoskeleton collapse): Xương ngoài làm bằng kitin của nhện không thể đỡ nổi khối lượng 80kg. Khi cố gắng đứng dậy, ứng suất uốn nén đè nặng lên các khớp chân mảnh dẻ (vượt giới hạn bền 30 MPa của kitin thường) sẽ làm chân nhện tự gãy gập và dập nát cơ thịt.\n- Chết ngạt cấp tính: Nhện hô hấp chủ yếu bằng phổi sách thụ động qua các khe thở tĩnh. Quãng đường khuếch tán oxy quá lớn khiến oxy không thể thâm nhập sâu vào các bó cơ bên trong thân hình 80kg, làm nó ngạt thở hoàn toàn.",
+            formulas_and_data: {
+              limitations: [
+                {
+                  type: "Ứng suất nén chân ống (Exoskeleton buckling)",
+                  issue: "Áp lực nén lên đốt chân đạt 75 MPa, vượt giới hạn bền uốn 30 MPa của kitin côn trùng."
+                },
+                {
+                  type: "Hiệu ứng quy mô diện tích bề mặt trao đổi khí",
+                  issue: "Tỷ lệ S/V trao đổi khí qua phổi sách giảm 100 lần, lưu lượng oxy khuếch tán chỉ đáp ứng 1.5% nhu cầu hô hấp cơ bản."
+                }
+              ]
+            },
+            p4p_score_scaled: 12,
+            tier_scaled: "D",
+            sources: [
+              { label: "Scaling of exoskeleton strength and respiratory limits in giant arachnids", url: "https://doi.org/10.1242/jeb.029845" }
+            ]
+          },
+          {
+            title: "Đột biến thích nghi (Tơ siêu liên kết hydro đa chiều, ống chân rỗng gia cường khoáng chất, và hệ tuần hoàn phổi sách cưỡng bức)",
+            slug: "nhen-vo-cay-darwin-80kg-dot-bien-thich-nghi",
+            perspective_type: "evolutionary_mutation",
+            summary: "Tiến hóa tơ liên kết beta-sheet tinh thể mật độ cao, đốt chân ống rỗng gia cường silica bảo vệ khớp, phổi sách có cơ liên sườn co bóp khí quản chủ động.",
+            content: "Để sống sót và phát huy sức mạnh ở kích thước 80kg, nhện Darwin tiến hóa các đột biến sinh học kiệt xuất:\n- Tơ siêu liên kết hydro định hướng: Tuyến tơ biến đổi cấu trúc protein spidroin, tăng tỷ lệ tinh thể beta-sheet định hướng song song lên 90% kết hợp các liên kết chéo cộng hóa trị, nâng giới hạn bền kéo sợi tơ lên 3.2 GPa giúp nhện đu bám thoải mái mà không đứt tơ.\n- Chân ống rỗng bionic gia cường silica: Khung xương ngoài tại các khớp chân được khoáng hóa bằng lớp nano-silica dẻo, nâng giới hạn uốn kéo lên 350 MPa, giúp chân nâng đỡ hoàn hảo thân hình 80kg.\n- Hệ hô hấp chủ động (Active Book-lung Ventilation): Phát triển các bó cơ liên sườn bao quanh phổi sách co bóp nhịp nhàng như cơ hoành, chủ động hút đẩy không khí lưu thông qua hệ thống ống khí quản để cung cấp oxy liên tục.",
+            formulas_and_data: {
+              mutations: [
+                {
+                  type: "Gia cường cấu trúc tơ tinh thể Beta-sheet",
+                  benefit: "Nâng độ bền tơ lên 3.2 GPa, hấp thụ năng lượng va đập động năng nhảy rơi đạt 250 J/g."
+                },
+                {
+                  type: "Khung xương ngoài khoáng hóa silica",
+                  benefit: "Nâng giới hạn bền uốn chân lên 400 MPa, hấp thụ xung lực nhảy tiếp đất mà không biến dạng."
+                }
+              ]
+            },
+            p4p_score_scaled: 88,
+            tier_scaled: "A",
+            sources: [
+              { label: "Crystal structure and mineralization in high-performance biomaterials", url: "https://doi.org/10.1038/nmat4020" }
+            ]
+          }
+        ]
+      });
     } else {
       // Fallback generator just in case
       whatIfData.push({
