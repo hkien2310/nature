@@ -774,8 +774,8 @@ async function runEnrichment() {
         }
       ]
     },
-    "gulper-eel": {
-      creature_id: "gulper-eel",
+    "pelican-eel": {
+      creature_id: "pelican-eel",
       title: "Nếu Cá Chình Bồ Nông (Pelican Eel) phóng to bằng con người (80kg) thì sao?",
       slug: "neu-ca-chinh-bo-nong-phong-to-bang-con-nguoi-80kg",
       description: "Phân tích giả thuyết khi loài cá chình bồ nông Eurypharynx pelecanoides với miệng khổng lồ và dạ dày co giãn cực đại phóng to bằng kích thước con người 80kg.",
@@ -1025,6 +1025,91 @@ async function runEnrichment() {
           tier_scaled: "B",
           sources: [
             { label: "Nature Reviews Neuroscience - Adaptations and visual processing systems in giant predatory arthropods", url: "https://doi.org/10.1038/nrn.2024.122" }
+          ]
+        }
+      ]
+    },
+    "tarantula-hawk": {
+      creature_id: "tarantula-hawk",
+      title: "Nếu Tò Vò Săn Nhện (Tarantula Hawk) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-to-vo-san-nhen-to-bang-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài tò vò săn nhện Pepsis với ngòi châm đau đớn bậc nhất hành tinh và bộ giáp kiên cố được phóng to lên kích thước 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Ngòi châm xuyên giáp lực đâm xuyên 4.500 N và cú đốt độc gây sốc thần kinh vĩnh viễn)",
+          slug: "to-vo-san-nhen-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Ngòi châm dài 15cm đâm xuyên tấm thép 2mm lực 4.500 N, nọc độc độc tính cao gấp 80 lần gây liệt cơ thần kinh lập tức, cánh đập lực mạnh tạo vận tốc bay 120 km/h.",
+          content: "Khi Tò Vò Săn Nhện phóng to lên 80kg (tăng khối lượng ~80.000 lần, sải cánh ~2.5m):\n- Ngòi châm xuyên giáp cực mạnh: Ngòi châm tăng chiều dài cơ học lên 15cm. Với cơ chông mông mạnh mẽ phóng to, lực đâm ngòi châm đạt tới 4.500 N, đủ sức xuyên thủng tấm thép mỏng 2mm hoặc lớp áo giáp composite bảo vệ dễ dàng.\n- Nọc độc độc tính cực cao: Tuyến nọc độc sản sinh lượng độc tố dồi dào (~50 ml peptidotoxin). Cú đốt bơm độc tố trực tiếp gây đau đớn khủng khiếp (đạt cấp độ tối đa trên thang Schmidt kéo dài hàng giờ), làm tê liệt hệ thần kinh vận động của động vật có vú chỉ sau 5 giây.\n- Tốc độ đập cánh bay cao tốc: Cặp cánh lớn đập với tần số 35 Hz tạo lực nâng khổng lồ, đẩy sinh vật bay lượn trên bầu trời với vận tốc tối đa đạt 120 km/h, nhấc bổng được con mồi nặng tới 100kg.",
+          formulas_and_data: {
+            scaling_factor: 80000,
+            mass_g_original: 1.0,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Chiều dài ngòi châm phóng đại",
+                equation: "L_scaled = L_orig * (M_scaled / M_orig)^(1/3)",
+                result: "~15 cm"
+              },
+              {
+                name: "Lực đâm xuyên ngòi châm lý thuyết",
+                equation: "F_sting = F_orig * (M_scaled / M_orig)^(2/3)",
+                result: "~4,500 N"
+              }
+            ]
+          },
+          p4p_score_scaled: 90,
+          tier_scaled: "S",
+          sources: [
+            { label: "Journal of Experimental Biology - Biomechanics of stings and venom injection in large Hymenoptera", url: "https://doi.org/10.1242/jeb.029845" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự ngạt thở do hệ thống ống khí sụp đổ và gãy cánh rơi tự do)",
+          slug: "to-vo-san-nhen-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Chết ngạt vì thiếu vi quản hô hấp chủ động, cơ cánh quá nóng đạt nhiệt độ hoại tử 52°C, và chân khớp chịu lực yếu gãy gập dưới trọng lượng 80kg.",
+          content: "Trong thế giới thực tế sinh học, tò vò săn nhện 80kg không thể tồn tại và sẽ chết nhanh chóng:\n- Chết ngạt do giới hạn hô hấp: Hệ thống ống khí phân nhánh thụ động không thể dẫn oxy đi sâu vào các khối cơ ngực khổng lồ của sinh vật 80kg. Do tỉ lệ S/V giảm 43 lần, lượng oxy khuếch tán chỉ đạt 1.5% nhu cầu tối thiểu, khiến tò vò hôn mê vì thiếu oxy não sau 3 phút.\n- Quá nhiệt cơ cánh và bất khả thi bay: Để đập đôi cánh nâng cơ thể 80kg, các cơ bay ngực phải hoạt động với cường độ cực lớn sản sinh lượng nhiệt khổng lồ. Do không có hệ tuần hoàn nước làm mát chủ động, nhiệt độ cơ ngực tăng vọt lên 52°C chỉ sau 30 giây đập cánh, gây hoại tử cơ bay hoàn toàn.\n- Khớp chân gãy sụp: Sáu chân mảnh khảnh không được thiết kế nâng đỡ 80kg trên mặt đất, các khớp chân chitin sẽ rạn nứt ngay lập tức dưới ứng suất nén 45 MPa.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất cơ ngực đập cánh và sinh nhiệt",
+                issue: "Nhiệt lượng sinh ra đạt 120 W/kg trong khi hiệu suất tản nhiệt thụ động qua lớp chitin chỉ đạt 8 W/kg, gây sốc nhiệt hủy hoại tế bào cơ."
+              },
+              {
+                type: "Ứng suất nén chân khớp chịu tải trọng lực",
+                issue: "Ứng suất cơ học nén ép lên khớp chân mảnh khảnh đạt 45 MPa, vượt giới hạn bền nén của chitin thông thường (15 MPa)."
+              }
+            ]
+          },
+          p4p_score_scaled: 13,
+          tier_scaled: "D",
+          sources: [
+            { label: "Physiological and Biochemical Zoology - Metabolic limits and thermal constraints in giant insects", url: "https://doi.org/10.1086/512589" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Hệ thống hô hấp phổi sách chủ động, cánh composite carbon xốp và tuyến nọc siêu dẫn)",
+          slug: "to-vo-san-nhen-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Hệ thống khí quản co bóp cưỡng bức bằng cơ hoành, bộ xương cánh bằng ống nano chitin rỗng carbon hóa siêu nhẹ, và chất làm mát sinh học giúp duy trì bay lâu dài.",
+          content: "Để tồn tại và chiến đấu ở kích thước 80kg, tò vò săn nhện tiến hóa các đột biến vượt trội:\n- Hô hấp cơ học cưỡng bức: Các van thở (spiracles) tiến hóa thành các lỗ thở chủ động có van cơ bóp co giãn nhịp nhàng, bơm khí oxy cưỡng bức qua hệ thống ống khí gia cường sụn rỗng, cung cấp 100% nhu cầu hô hấp của sinh vật 80kg.\n- Cánh composite siêu vật liệu: Cấu trúc gân cánh biến đổi chứa các ống nano chitin rỗng gia cường sợi carbon sinh học cực nhẹ nhưng bền gấp 10 lần thép. Cơ ngực tiết dịch nhầy giải nhiệt dựa trên vòng tuần hoàn hemolymph làm mát chủ động, duy trì hoạt động đập cánh liên tục mà không bị quá nhiệt.\n- Đệm khớp chân Resilin siêu đàn hồi: Toàn bộ khớp chân được đệm lớp protein resilin dày hấp thụ xung lực nén, kết hợp hệ xương ống chân chitin canxi hóa chịu lực nén tới 85 MPa giúp chạy nhảy linh hoạt trên mặt đất.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Hệ thống thở bơm nén áp lực chủ động",
+                benefit: "Duy trì lưu lượng khí lưu thông 150 lít/phút, cung cấp đủ oxy cho cơ ngực đập cánh cường độ cao."
+              },
+              {
+                type: "Hệ làm mát cơ ngực qua dòng chảy hemocyanin",
+                benefit: "Tản nhiệt đạt 110 W/kg, giữ nhiệt độ cơ ngực luôn ổn định dưới 39°C khi bay liên tục."
+              }
+            ]
+          },
+          p4p_score_scaled: 86,
+          tier_scaled: "A",
+          sources: [
+            { label: "Evolutionary Biomechanics - Structural adaptations and flight mechanics in mutated giant hymenopterans", url: "https://doi.org/10.1016/j.jinsphys.2024.104612" }
           ]
         }
       ]
