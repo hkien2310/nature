@@ -1,212 +1,211 @@
 [
   {
-    "id": "trap-jaw-ant",
-    "name": "Kiến Bẫy Hàm",
-    "scientificName": "Odontomachus bauri",
+    "id": "saharan-silver-ant",
+    "name": "Kiến Bạc Sahara",
+    "scientificName": "Cataglyphis bombycina",
     "taxonomy": {
       "class": "Insecta",
       "order": "Hymenoptera",
       "family": "Formicidae"
     },
-    "realWeight": "~0.01 g",
-    "size": "8 - 10 mm",
-    "characteristics": "Thân hình thon dài màu nâu sẫm đến đen, với cặp hàm nhọn hoắt đặc trưng có thể mở rộng đến 180 độ. Đầu thủ to chứa các bó cơ hàm cực kỳ phát triển, chiếm phần lớn thể tích đầu. Có hai sợi lông cảm giác dài ở giữa cặp hàm để kích hoạt cơ chế bẫy.",
-    "habitat": "Các khu rừng nhiệt đới, thảm lá mục, đất ẩm hoặc dưới lớp vỏ cây mục.",
-    "location": "Trung Mỹ, Nam Mỹ và các vùng nhiệt đới trên thế giới.",
-    "survival_method": "Săn mồi đơn độc bằng cách rình rập và áp sát với cặp hàm mở rộng 180 độ. Khi lông cảm giác chạm vào con mồi, cặp hàm đóng sập lại ngay lập tức để kẹp chặt hoặc giết chết con mồi. Khi đối mặt với kẻ thù lớn, chúng đập mạnh cặp hàm xuống đất để tự bắn mình lên cao hoặc ra xa hàng chục centimet thoát hiểm.",
-    "unique_traits": "Cơ chế kích hoạt hàm cơ học siêu tốc đạt tốc độ từ 126 đến 230 km/h trong vòng 130 micro giây, tạo ra lực tác động gấp 300 lần trọng lượng cơ thể. Khả năng sử dụng cú đập hàm để nhảy ngược thoát hiểm tự động.",
-    "shortDescription": "Cú đớp hàm cơ học nhanh nhất thế giới. Khả năng đập hàm bật nhảy thoát hiểm.",
-    "description": "Kiến Bẫy Hàm (Odontomachus bauri) là một loài kiến săn mồi nổi tiếng với cặp hàm có tốc độ đóng nhanh nhất trong thế giới động vật. Đầu của chúng tiến hóa để chứa một hệ thống cơ hàm khổng lồ hoạt động giống như một chiếc bẫy gấu lò xo. Cặp hàm được khóa ở tư thế mở 180 độ, tích lũy năng lượng đàn hồi trong các bó cơ chốt. Khi một sinh vật nhỏ chạm vào hai sợi lông cảm giác siêu nhạy ở phía trong hàm, chốt cơ học sẽ được giải phóng ngay lập tức, khiến cặp hàm đập mạnh vào nhau với vận tốc kinh hoàng. Lực đập này không chỉ dùng để kẹp nát vỏ con mồi mà còn là công cụ phòng ngự đắc lực: bằng cách đập hàm xuống bề mặt cứng, chúng có thể tự phóng mình ra xa khỏi kẻ thù nguy hiểm.",
+    "realWeight": "~0.02 g",
+    "size": "8 - 12 mm",
+    "characteristics": "Thân hình nhỏ bé với bộ chân dài đặc trưng giúp nâng cơ thể lên khỏi mặt cát nóng. Điểm nổi bật nhất là lớp lông dày đặc, màu bạc óng ánh phủ toàn thân, hoạt động như những cấu trúc lăng trụ tam giác siêu vi để phản xạ ánh sáng và tản nhiệt.",
+    "habitat": "Những cồn cát nóng bỏng và sa mạc khắc nghiệt của sa mạc Sahara.",
+    "location": "Bắc Phi, đặc biệt là vùng sa mạc Sahara.",
+    "survival_method": "Chỉ săn mồi trong khung giờ cực hạn giữa trưa (khoảng 10-15 phút khi nhiệt độ cát lên tới 70°C), lúc mà mọi loài bò sát săn mồi đều phải trốn tránh cái nắng. Chúng chạy liên tục để tìm xác các loại côn trùng đã chết vì nóng.",
+    "unique_traits": "Cơ thể được bảo vệ bởi lớp lông bạc phản xạ tia hồng ngoại và bức xạ nhiệt. Có khả năng chạy với vận tốc cực đại 0.855 m/s, tương đương 200 lần chiều dài cơ thể mỗi giây (tương đương với một người chạy 1500 km/h). Sử dụng protein sốc nhiệt (HSP) để bảo vệ các tế bào khỏi bị đông vón trước khi rời tổ.",
+    "shortDescription": "Sinh vật chạy nhanh nhất thế giới theo tỷ lệ cơ thể. Chịu nhiệt độ cát cực hạn 70°C nhờ giáp lông bạc lăng kính.",
+    "description": "Kiến Bạc Sahara là một trong những kỳ quan tiến hóa vĩ đại nhất của sự thích nghi với môi trường sống khắc nghiệt. Khi toàn bộ sa mạc Sahara chìm trong cái nóng chết người vào giữa trưa, loài kiến này lại bắt đầu cuộc đi săn đầy táo bạo của mình. Để sinh tồn, chúng sở hữu cấu trúc lông độc nhất vô nhị: mỗi sợi lông có tiết diện tam giác đều, phản xạ hoàn hảo toàn bộ quang phổ ánh sáng mặt trời và giải phóng nhiệt lượng dư thừa ra môi trường. Ngoài ra, tốc độ di chuyển siêu việt của chúng giúp giảm thiểu thời gian tiếp xúc của đôi chân với cát nóng.",
     "strengths": [
-      "Tốc độ đóng hàm nhanh nhất thế giới tự nhiên (lên tới 230 km/h), không thể né tránh",
-      "Lực đập hàm cực lớn so với kích thước cơ thể, dễ dàng làm nứt vỏ các côn trùng khác",
-      "Khả năng bật nhảy thoát hiểm độc đáo giúp thoát khỏi các mối đe dọa lớn",
-      "Sở hữu ngòi đốt chứa nọc độc gây đau đớn để làm tê liệt hoàn toàn con mồi"
+      "Lớp lông bạc phản xạ nhiệt siêu việt giúp chịu được nhiệt độ lên tới 70°C",
+      "Tốc độ di chuyển nhanh vượt trội so với kích thước cơ thể (0.855 m/s)",
+      "Cơ chế tự bảo vệ tế bào bằng protein sốc nhiệt (HSP) cực mạnh",
+      "Đôi chân dài giúp nâng cao cơ thể khỏi lớp khí nóng sát mặt cát"
     ],
     "weaknesses": [
-      "Kích thước cơ thể nhỏ bé, dễ bị tổn thương bởi các động vật săn mồi lớn hơn",
-      "Tầm hoạt động của bẫy hàm cực ngắn, chỉ kích hoạt khi lông cảm giác chạm trực tiếp vào mục tiêu",
-      "Cú bật nhảy thoát hiểm không thể định hướng chính xác, có thể rơi vào khu vực nguy hiểm hơn"
+      "Giới hạn thời gian hoạt động cực ngắn (dưới 10 phút ngoài tổ), nếu quá giờ sẽ chết vì kiệt sức hoặc bị thiêu đốt",
+      "Kích thước quá nhỏ bé, dễ bị tổn thương nếu đụng độ vật lý với các loài săn mồi lớn hơn",
+      "Thị lực hạn chế, chủ yếu định hướng bằng mùi và mặt trời"
     ],
     "funFacts": [
-      "Cú đớp của kiến bẫy hàm nhanh hơn cái chớp mắt của con người tới 2.300 lần.",
-      "Nếu một con kiến bẫy hàm đập hàm vào đầu bạn, lực tương đương với việc một người bình thường đập đầu vào tường đá ở tốc độ cao.",
-      "Chúng sử dụng cú nhảy bằng hàm để thoát khỏi những chiếc bẫy của kiến sư tử với tỷ lệ thành công rất cao."
+      "Nếu một người có tốc độ chạy theo tỷ lệ cơ thể giống như Kiến Bạc Sahara, người đó có thể chạy với vận tốc khoảng 1.500 km/h, vượt qua cả tốc độ âm thanh.",
+      "Để tránh bỏng chân trên cát nóng 70°C, loài kiến này thực sự sử dụng kỹ thuật phi nước kiệu, nhấc đồng thời cả 6 chân khỏi mặt đất ở tốc độ cao, trông giống như đang bay lướt trên cát.",
+      "Chúng định vị đường về tổ bằng cách đếm số bước đi và sử dụng góc phân cực của ánh sáng mặt trời để không bị lạc giữa sa mạc không có vật định hướng."
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1073/pnas.0602285103",
-        "label": "PNAS - High-speed videography of trap-jaw ant mandibles"
+        "url": "https://doi.org/10.1126/science.aax4437",
+        "label": "Science - Thermoregulation and Saharan Silver Ant Physiology"
       },
       {
-        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/ants",
-        "label": "National Geographic - Ant Facts and Behavior"
+        "url": "https://doi.org/10.1242/jeb.198630",
+        "label": "Journal of Experimental Biology - Locomotion and speed of Cataglyphis bombycina"
       }
     ],
-    "imageColor": "#801336",
+    "imageColor": "#D1D8E0",
     "diet_type": "carnivore",
-    "diet_items": ["côn trùng nhỏ", "nhện", "ấu trùng", "mật hoa"],
-    "activity_pattern": "variable",
-    "lifespan_min": 6,
-    "lifespan_max": 12,
+    "diet_items": ["xác côn trùng", "ấu trùng", "nhện chết khô"],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 1,
+    "lifespan_max": 3,
     "lifespan_unit": "months",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Kiến chúa đẻ trứng sau khi giao phối với kiến đực trong chuyến bay giao hoan. Trứng nở thành ấu trùng và được nuôi dưỡng bởi các kiến thợ trước khi hóa nhộng và trưởng thành.",
+    "reproduction_notes": "Kiến chúa đẻ trứng trong các căn phòng sâu dưới lòng đất (sâu tới 2m để tránh nóng), được kiến thợ chăm sóc nghiêm ngặt.",
     "locomotion": "walk",
-    "speed_max": 0.3,
+    "speed_max": 3.08,
     "conservation_status": "LC",
     "size_min_mm": 8.0,
-    "size_max_mm": 10.0,
-    "weight_avg_g": 0.01,
+    "size_max_mm": 12.0,
+    "weight_avg_g": 0.02,
+    "stats": {
+      "strength": 15,
+      "durability": 85,
+      "speed": 98,
+      "weaponry": 10,
+      "special": 95,
+      "lethality": 15
+    },
     "ai_p4p_score": 72,
-    "ai_tier": "B",
+    "ai_tier": "B"
+  },
+  {
+    "id": "giraffe-weevil",
+    "name": "Mọt Cổ Dài Giraffe",
+    "scientificName": "Trachelophorus giraffa",
+    "taxonomy": {
+      "class": "Insecta",
+      "order": "Coleoptera",
+      "family": "Attelabidae"
+    },
+    "realWeight": "~0.15 g",
+    "size": "15 - 25 mm",
+    "characteristics": "Thân mình màu đen óng với cặp cánh cứng (elytra) màu đỏ rực rỡ nổi bật. Đặc trưng độc đáo nhất là chiếc cổ cực dài, đặc biệt ở con đực cổ có thể dài gấp 3 lần cổ của con cái, có khớp nối linh hoạt như một chiếc bản lề dài.",
+    "habitat": "Các khu rừng cận nhiệt đới ấm áp và ẩm ướt của vùng quốc đảo Madagascar.",
+    "location": "Đặc hữu của đảo Madagascar.",
+    "survival_method": "Sống trên các cành lá của loài cây Dichaetanthera arborea. Con đực sử dụng chiếc cổ dài để chiến đấu, đẩy ngã đối thủ khỏi cành cây trong những trận chiến tranh giành quyền giao phối. Con cái sử dụng chiếc cổ ngắn hơn để cuộn lá cây làm tổ.",
+    "unique_traits": "Chiếc cổ siêu dài tiến hóa dị thường đóng vai trò là vũ khí cơ học hiệu quả. Tập tính cuốn lá cực kỳ khéo léo và phức tạp: con cái cắt lá cây theo các đường hình học chính xác, cuộn nó thành một ống tròn chặt chẽ để đẻ trứng bên trong, bảo vệ ấu trùng khỏi côn trùng săn mồi.",
+    "shortDescription": "Chiếc cổ dài gấp 3 lần thân ở con đực để đấu vật. Kỹ sư cuốn lá làm tổ đặc hữu Madagascar.",
+    "description": "Mọt Cổ Dài Giraffe là loài côn trùng đặc hữu vô cùng độc đáo của Madagascar. Tên của loài bắt nguồn từ chiếc cổ dài ngoạn mục của con đực, một ví dụ kinh điển của chọn lọc tình dục. Chiếc cổ dài này không dùng để ăn ở trên cao mà là một vũ khí hạng nặng để quật ngã các đối thủ đực khác. Điểm ấn tượng khác là quy trình kiến trúc làm tổ của con cái: nó sử dụng hàm cắt một chiếc lá dọc theo gân chính, gấp nó lại một cách có hệ thống để tạo nên chiếc tổ cuộn hoàn mỹ, bảo vệ quả trứng duy nhất khỏi các loài ký sinh trùng.",
+    "strengths": [
+      "Chiếc cổ đòn bẩy cơ học mạnh mẽ giúp đẩy ngã đối thủ dễ dàng",
+      "Lớp cánh cứng (elytra) bảo vệ thân thể chắc chắn khỏi va đập",
+      "Cơ chế xây tổ cuộn lá kỹ thuật cao, bảo vệ trứng và ấu trùng an toàn tuyệt đối",
+      "Đôi chân bám giữ cực chắc vào bề mặt lá cây"
+    ],
+    "weaknesses": [
+      "Chỉ ăn một loài cây duy nhất (Dichaetanthera arborea), cực kỳ nhạy cảm với mất môi trường sống",
+      "Bay chậm chạp và dễ bị phát hiện do màu sắc đỏ đen tương phản mạnh",
+      "Tầm nhìn hạn chế và không có khả năng tự vệ bằng hóa chất hay nọc độc"
+    ],
+    "funFacts": [
+      "Quy trình cuộn lá của con cái mất khoảng vài tiếng đồng hồ và đòi hỏi sự khéo léo đến kinh ngạc: chiếc lá phải được cuộn chặt đến mức không bị bung ra ngay cả khi rơi từ trên cây xuống đất dưới tác động của mưa gió.",
+      "Chiếc cổ dài của con đực có một khớp bản lề đặc biệt ở gốc đầu giúp nó có thể gật đầu hoặc quay đầu một cách linh hoạt, một đặc điểm rất hiếm thấy ở các loài côn trùng cánh cứng.",
+      "Chúng hoàn toàn vô hại với con người và không cắn hay chích, toàn bộ năng lượng đấu tranh chỉ dành cho các cuộc so tài nội bộ."
+    ],
+    "sources": [
+      {
+        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/giraffe-weevil",
+        "label": "National Geographic - Giraffe Weevil profile"
+      },
+      {
+        "url": "https://doi.org/10.1111/j.1469-7998.2011.00844.x",
+        "label": "Journal of Zoology - Sexual selection and morphology of Trachelophorus giraffa"
+      }
+    ],
+    "imageColor": "#FF3F34",
+    "diet_type": "herbivore",
+    "diet_items": ["lá cây Dichaetanthera arborea", "nhựa cây"],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 1,
+    "lifespan_max": 2,
+    "lifespan_unit": "years",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Con cái đẻ trứng vào chiếc lá cuộn, trứng phát triển bên trong lá rơi rụng dưới đất ẩm và ăn chính lớp lá đó để lớn lên.",
+    "locomotion": "hybrid",
+    "speed_max": 2.5,
+    "conservation_status": "LC",
+    "size_min_mm": 15.0,
+    "size_max_mm": 25.0,
+    "weight_avg_g": 0.15,
     "stats": {
-      "strength": 45,
+      "strength": 30,
+      "durability": 45,
+      "speed": 35,
+      "weaponry": 25,
+      "special": 80,
+      "lethality": 10
+    },
+    "ai_p4p_score": 48,
+    "ai_tier": "D"
+  },
+  {
+    "id": "golden-tortoise-beetle",
+    "name": "Bọ Rùa Vàng",
+    "scientificName": "Charidotella sexpunctata",
+    "taxonomy": {
+      "class": "Insecta",
+      "order": "Coleoptera",
+      "family": "Chrysomelidae"
+    },
+    "realWeight": "~0.05 g",
+    "size": "5 - 8 mm",
+    "characteristics": "Thân hình tròn dẹt trông giống một chiếc mai rùa nhỏ. Phần rìa ngoài của cánh cứng và ngực phẳng ra tạo thành lớp màng trong suốt như pha lê. Phần trung tâm có khả năng chuyển màu từ vàng kim lấp lánh sang đỏ sẫm đốm đen.",
+    "habitat": "Các khu vườn, cánh đồng cỏ ẩm ướt và khu vực trồng khoai lang, bìm bìm.",
+    "location": "Bản địa của khu vực Bắc Mỹ.",
+    "survival_method": "Ngụy trang trên mặt dưới của lá cây. Khi bị đe dọa hoặc khi mùa giao phối bắt đầu, chúng thay đổi màu sắc nhanh chóng để đánh lạc hướng kẻ săn mồi hoặc thu hút bạn tình. Ấu trùng của chúng sử dụng lớp che chắn bằng phân để tránh bị kiến và chim tấn công.",
+    "unique_traits": "Cơ chế đổi màu động nhờ biến đổi sinh-lý-học (physiological color change): thay đổi thể tích nước trong lớp biểu bì giúp phản xạ ánh sáng qua cấu trúc nano (structural color). Lớp giáp màng trong suốt bao bọc xung quanh giúp chúng ép chặt vào lá cây tạo áp lực hút chống bị thổi bay.",
+    "shortDescription": "Ngụy trang bằng khả năng chuyển đổi màu sắc vàng kim sang đỏ đốm đen trong vài phút nhờ cấu trúc nano vỏ.",
+    "description": "Bọ Rùa Vàng là một trong những loài côn trùng có vẻ đẹp lộng lẫy và độc đáo nhất Bắc Mỹ. Cơ thể của nó được ví như một viên đá quý di động nhờ khả năng thay đổi màu sắc kỳ diệu. Không giống tắc kè hoa dùng tế bào sắc tố, loài bọ này thay đổi màu bằng cách bơm hoặc rút chất lỏng qua các tầng cấu trúc siêu vi của cánh cứng. Khi chất lỏng đầy, bề mặt trơn nhẵn phản xạ ánh sáng tạo ra màu vàng kim lấp lánh như vàng ròng. Khi gặp nguy hiểm, chất lỏng rút đi lộ ra màu đỏ cam xỉn với các đốm đen như một lời cảnh báo độc hại hoặc giả chết.",
+    "strengths": [
+      "Khả năng thay đổi màu sắc cực nhanh để ngụy trang và xua đuổi kẻ thù",
+      "Lớp vỏ rìa trong suốt tạo sức bám hút chặt vào mặt lá cây",
+      "Cánh cứng dày bảo vệ vùng cơ quan nội tạng quan trọng"
+    ],
+    "weaknesses": [
+      "Kích thước siêu nhỏ, rất dễ làm mồi cho các loài chim, lưỡng cư và nhện lớn",
+      "Bay yếu và phạm vi di chuyển hạn chế quanh loài cây ký sinh",
+      "Ấu trùng phụ thuộc nhiều vào việc mang phân để ngụy trang, nếu mất lớp bảo vệ này sẽ rất dễ chết"
+    ],
+    "funFacts": [
+      "Khi chết, bọ rùa vàng sẽ vĩnh viễn mất đi màu vàng kim óng ánh của mình, chuyển sang màu nâu đỏ xỉn vì cơ thể không còn sự tuần hoàn chất lỏng sống để tạo cấu trúc phản quang.",
+      "Chúng có thể đổi màu chỉ trong vòng 2 đến 3 phút khi bị kích thích, ví dụ như khi bị nhà khoa học cầm lên tay.",
+      "Màu đỏ đốm đen của chúng bắt chước loài bọ rùa độc (Coccinellidae) để cảnh báo chim săn mồi rằng 'tôi không ngon lành đâu'."
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1098/rsif.2007.1322",
+        "label": "Journal of the Royal Society Interface - Structural color changes in Charidotella sexpunctata"
+      },
+      {
+        "url": "https://bugguide.net/node/view/8911",
+        "label": "BugGuide - Golden Tortoise Beetle Information"
+      }
+    ],
+    "imageColor": "#FFD700",
+    "diet_type": "herbivore",
+    "diet_items": ["lá cây bìm bìm", "lá khoai lang", "nhựa cây"],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 3,
+    "lifespan_max": 6,
+    "lifespan_unit": "months",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Đẻ trứng thành những bọc nhỏ dính chặt vào mặt sau lá bìm bìm, ấu trùng lớn lên qua 5 giai đoạn lột xác trước khi hóa nhộng.",
+    "locomotion": "hybrid",
+    "speed_max": 1.8,
+    "conservation_status": "LC",
+    "size_min_mm": 5.0,
+    "size_max_mm": 8.0,
+    "weight_avg_g": 0.05,
+    "stats": {
+      "strength": 10,
       "durability": 35,
-      "speed": 85,
-      "weaponry": 90,
+      "speed": 40,
+      "weaponry": 5,
       "special": 88,
-      "lethality": 75
-    }
-  },
-  {
-    "id": "elephantnose-fish",
-    "name": "Cá Mũi Voi",
-    "scientificName": "Gnathonemus petersii",
-    "taxonomy": {
-      "class": "Actinopterygii",
-      "order": "Osteoglossiformes",
-      "family": "Mormyridae"
+      "lethality": 5
     },
-    "realWeight": "~30 - 100 g",
-    "size": "20 - 35 cm",
-    "characteristics": "Thân dẹt hai bên, màu nâu đen sẫm hoặc xám kim loại với hai sọc sáng dọc gần đuôi. Điểm đặc trưng nhất là phần mở rộng giống như vòi ở hàm dưới (Schnauzenorgan) chứa hàng nghìn tế bào thụ cảm điện trường, có thể uốn dẻo linh hoạt.",
-    "habitat": "Các con sông nước đục chảy chậm, đầm lầy nhiều bùn đất và thực vật thủy sinh rậm rạp.",
-    "location": "Các lưu vực sông ở Tây và Trung Phi, bao gồm sông Niger và sông Congo.",
-    "survival_method": "Sử dụng cơ quan phát điện ở đuôi để tạo ra một điện trường yếu xung quanh cơ thể. Bằng cách cảm nhận các biến dạng trong điện trường này thông qua cơ quan vòi nhạy bén ở hàm dưới, cá có thể vẽ bản đồ môi trường 3D, phát hiện con mồi chôn dưới bùn và tránh chướng ngại vật trong bóng tối.",
-    "unique_traits": "Khả năng định vị điện trường chủ động (active electrolocation) cực kỳ tinh vi. Tỷ lệ não so với trọng lượng cơ thể cực lớn (ngang con người), tiêu thụ tới 60% lượng oxy của cơ thể.",
-    "shortDescription": "Định vị điện trường chủ động tinh vi. Bộ não siêu khủng tiêu thụ 60% oxy.",
-    "description": "Cá Mũi Voi (Gnathonemus petersii) là một loài cá nước ngọt kỳ lạ sinh sống tại các vùng nước tối đục ở châu Phi. Loài này nổi tiếng với chiếc \"vòi\" thực chất là phần mở rộng kéo dài của hàm dưới, được gọi là cơ quan Schnauzenorgan. Chiếc vòi này chứa hàng ngàn tế bào cảm nhận điện cực kỳ nhạy bén giúp nó săn mồi dưới bùn sâu. Cá Mũi Voi tạo ra một điện trường yếu bao quanh cơ thể bằng cơ quan phát điện chuyên biệt ở gốc đuôi. Bất kỳ vật thể nào đi vào vùng điện trường này đều làm thay đổi điện thế, và cá có thể nhận biết chính xác kích thước, hình dạng, và khoảng cách của vật thể đó. Đáng kinh ngạc hơn, Cá Mũi Voi sở hữu bộ não khổng lồ so với kích thước cơ thể của nó, tương đương với tỷ lệ của con người, khiến nó trở thành một trong những loài cá thông minh nhất hành tinh.",
-    "strengths": [
-      "Khả năng định vị điện chủ động 3D cực kỳ chính xác trong bóng tối hoàn hảo",
-      "Bộ não thông minh vượt trội giúp xử lý thông tin phức tạp và ghi nhớ môi trường tốt",
-      "Chiếc vòi linh hoạt dễ dàng tiếp cận các khe nứt và đào sâu xuống bùn để tìm thức ăn",
-      "Khả năng giao tiếp điện phức tạp để cảnh báo nguy hiểm hoặc thu hút bạn đời"
-    ],
-    "weaknesses": [
-      "Thân thể mềm mại, không có lớp giáp bảo vệ hay gai độc phòng vệ",
-      "Nhạy cảm cực cao với ô nhiễm nguồn nước và các nhiễu loạn điện từ nhân tạo",
-      "Chiếc vòi nhạy cảm dễ bị tổn thương nếu va chạm mạnh vào các bề mặt sắc nhọn"
-    ],
-    "funFacts": [
-      "Bộ não của cá mũi voi chiếm khoảng 3% trọng lượng cơ thể, tương tự như con người (2-2.5%), nhưng nó tiêu thụ tới 60% lượng oxy toàn cơ thể (ở người là 20%).",
-      "Do nhạy cảm cực cao với độc tố, chúng được các nhà máy xử lý nước ở Đức và Mỹ sử dụng như một hệ thống cảnh báo sớm sinh học để giám sát chất lượng nước.",
-      "Chúng có thể chơi đùa với các đồ vật nhỏ trong bể nuôi, một hành vi cực kỳ hiếm thấy ở các loài cá khác."
-    ],
-    "sources": [
-      {
-        "url": "https://doi.org/10.1126/science.1072916",
-        "label": "Science - Active electrolocation in Gnathonemus petersii"
-      },
-      {
-        "url": "https://www.nature.com/articles/35059085",
-        "label": "Nature - High metabolic cost of the electric fish brain"
-      }
-    ],
-    "imageColor": "#2E3A59",
-    "diet_type": "carnivore",
-    "diet_items": ["trùn chỉ", "ấu trùng muỗi", "giáp xác nhỏ", "côn trùng nước"],
-    "activity_pattern": "nocturnal",
-    "lifespan_min": 5,
-    "lifespan_max": 10,
-    "lifespan_unit": "years",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Sinh sản vào mùa mưa ở các vùng ngập lụt. Chúng giao tiếp và tìm kiếm bạn đời thông qua các tín hiệu điện trường tần số thấp độc nhất của loài.",
-    "locomotion": "swim",
-    "speed_max": 5.0,
-    "conservation_status": "LC",
-    "size_min_mm": 200.0,
-    "size_max_mm": 350.0,
-    "weight_avg_g": 65.0,
-    "ai_p4p_score": 55,
-    "ai_tier": "D",
-    "stats": {
-      "strength": 35,
-      "durability": 40,
-      "speed": 65,
-      "weaponry": 30,
-      "special": 96,
-      "lethality": 25
-    }
-  },
-  {
-    "id": "whip-spider",
-    "name": "Nhện Đuôi Roi",
-    "scientificName": "Phrynus longipes",
-    "taxonomy": {
-      "class": "Arachnida",
-      "order": "Amblypygi",
-      "family": "Phrynidae"
-    },
-    "realWeight": "~3 g",
-    "size": "Thân: 2-4 cm, Sải chân: 20-25 cm",
-    "characteristics": "Thân hình dẹt phẳng màu xám nâu để chui rúc vào các khe đá. Không có đuôi, không có tuyến nọc độc hay tơ nhện. Cặp chân đầu tiên biến đổi thành hai sợi roi cảm giác dài gấp nhiều lần cơ thể. Cặp xúc chi (pedipalps) phát triển thành hai chiếc kìm lớn có gai nhọn hoắt dùng để chụp mồi.",
-    "habitat": "Các hang động ẩm ướt, kẽ đá sâu, thảm lá hoặc dưới vỏ cây trong các khu rừng nhiệt đới.",
-    "location": "Các vùng nhiệt đới và cận nhiệt đới ở Châu Mỹ, Châu Phi và Châu Á.",
-    "survival_method": "Rình rập trong bóng tối, sử dụng hai chiếc chân roi quét nhẹ nhàng để cảm nhận rung động và phát hiện con mồi mà không đánh động. Khi con mồi lọt vào tầm ngắm, nhện lao tới và phóng cặp pedipalps gai nhọn kẹp chặt và ép nát con mồi với tốc độ cực nhanh.",
-    "unique_traits": "Chân xúc giác (chân roi) cực dài có thể xoay 360 độ độc lập để định vị không gian. Cặp pedipalps tiến hóa thành kìm kẹp có gai nhọn hoắt đóng sập với tốc độ mili-giây. Di chuyển ngang linh hoạt giống như cua.",
-    "shortDescription": "Cặp chân roi cảm giác 360 độ. Pedipalps gai kẹp con mồi chớp nhoáng.",
-    "description": "Nhện Đuôi Roi (Phrynus longipes) là một sinh vật thuộc bộ Amblypygi (được biết đến như bọ cạp roi không đuôi hoặc nhện roi). Mặc dù có vẻ ngoài cực kỳ đáng sợ giống như sự lai tạo giữa nhện và bọ cạp, chúng hoàn toàn không có nọc độc và không thể giăng tơ. Cơ thể của chúng dẹt phẳng thích nghi hoàn hảo với việc trốn tránh trong các khe đá hẹp. Thay vì sử dụng thị lực, Nhện Đuôi Roi dựa hoàn toàn vào cặp chân trước tiến hóa thành roi cảm giác dài. Hai chiếc chân roi này chứa hàng triệu thụ thể hóa học và cơ học, cho phép nhện \"nghe\" và \"ngửi\" môi trường trong bóng tối hoàn chỉnh. Khi phát hiện con mồi, chúng sử dụng đôi càng pedipalps trang bị gai nhọn dài đâm xuyên và kẹp chặt con mồi một cách tàn nhẫn.",
-    "strengths": [
-      "Cặp chân roi cảm giác cực kỳ nhạy bén, phát hiện được cả rung động không khí nhẹ nhất",
-      "Khả năng ép dẹt cơ thể để trốn vào các kẽ hở siêu nhỏ, tránh kẻ thù lớn",
-      "Tốc độ tấn công bằng pedipalps gai cực nhanh và lực kẹp mạnh mẽ",
-      "Nhạy bén trong bóng tối, là kẻ săn mồi hoàn hảo về đêm"
-    ],
-    "weaknesses": [
-      "Không có nọc độc và không có khả năng giăng tơ, hoàn toàn dựa vào lực cơ học",
-      "Lớp vỏ chitin tương đối mỏng để giữ cơ thể linh hoạt, dễ bị tổn thương vật lý",
-      "Chân roi rất mỏng manh, nếu bị đứt sẽ làm giảm nghiêm trọng khả năng định vị"
-    ],
-    "funFacts": [
-      "Loài này đã xuất hiện trên Trái Đất từ hơn 300 triệu năm trước, hầu như không thay đổi hình dáng so với tổ tiên kỷ Carbon.",
-      "Chúng xuất hiện trong bộ phim Harry Potter và Chiếc cốc lửa dưới sự tra tấn bằng lời nguyền Cruciatus của giáo sư giả mắt điên Moody.",
-      "Mặc dù trông hung tợn, Nhện Đuôi Roi rất nhút nhát với con người và sẽ chạy trốn theo chiều ngang cực nhanh sang một bên giống như cua khi gặp ánh sáng."
-    ],
-    "sources": [
-      {
-        "url": "https://doi.org/10.1111/j.1469-7998.2011.00841.x",
-        "label": "Journal of Zoology - Sensory biology of Amblypygi"
-      },
-      {
-        "url": "https://www.wired.com/2015/02/absurd-creature-of-the-week-whip-spider/",
-        "label": "Wired - The Absurd Creature of the Week: Whip Spider"
-      }
-    ],
-    "imageColor": "#485460",
-    "diet_type": "carnivore",
-    "diet_items": ["dế", "gián", "nhện khác", "lưỡng cư nhỏ"],
-    "activity_pattern": "nocturnal",
-    "lifespan_min": 5,
-    "lifespan_max": 10,
-    "lifespan_unit": "years",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Con cái mang trứng đã thụ tinh dưới bụng cho đến khi nở. Nhện non mới nở sẽ bò lên lưng mẹ và được bảo vệ cho đến lần lột xác đầu tiên.",
-    "locomotion": "walk",
-    "speed_max": 1.5,
-    "conservation_status": "LC",
-    "size_min_mm": 20.0,
-    "size_max_mm": 250.0,
-    "weight_avg_g": 3.0,
-    "ai_p4p_score": 68,
-    "ai_tier": "C",
-    "stats": {
-      "strength": 50,
-      "durability": 42,
-      "speed": 78,
-      "weaponry": 82,
-      "special": 85,
-      "lethality": 65
-    }
+    "ai_p4p_score": 45,
+    "ai_tier": "D"
   }
 ]
