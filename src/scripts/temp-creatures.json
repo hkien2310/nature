@@ -1,226 +1,208 @@
 [
   {
-    "id": "moray-eel",
-    "name": "Cá Chình Moray",
-    "scientificName": "Gymnothorax javanicus",
+    "id": "horned-lizard",
+    "name": "Thằn Lằn Sừng Texas",
+    "scientificName": "Phrynosoma cornutum",
     "taxonomy": {
-      "class": "Actinopterygii",
-      "order": "Anguilliformes",
-      "family": "Muraenidae"
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Phrynosomatidae"
     },
-    "realWeight": "~30 kg",
-    "size": "1.5 - 3.0 m",
-    "characteristics": "Thân hình thon dài giống rắn, không có vảy và vây ngực. Lớp da dày tiết chất nhầy đặc trưng giúp len lỏi vào các khe đá sắc nhọn mà không bị thương. Hàm răng sắc nhọn cong ngược vào trong. Đặc biệt sở hữu bộ hàm thứ hai gọi là hàm hầu (pharyngeal jaws) nằm sâu trong cổ họng.",
-    "habitat": "Rạn san hô nhiệt đới, khe đá dưới đáy biển, rạn đá ven bờ.",
-    "location": "Các vùng biển nhiệt đới và cận nhiệt đới trên toàn thế giới, đặc biệt là Ấn Độ Dương - Thái Bình Dương.",
-    "survival_method": "Là loài săn mồi ẩn nấp cơ hội. Chúng ẩn nấp sâu trong các khe đá nhỏ hẹp suốt ban ngày, chỉ thò đầu ra ngoài, và hoạt động săn mồi mạnh mẽ vào ban đêm. Khi phát hiện con mồi, chúng lao ra cắn chặt bằng hàm ngoài răng nhọn, sau đó bộ hàm hầu thứ hai sẽ tự động bắn ra phía trước, ngoạm chặt con mồi và kéo tuột nó vào sâu trong dạ dày.",
-    "unique_traits": "Sở hữu bộ hàm hầu (pharyngeal jaws) di động thứ hai nằm sâu trong cổ họng - cơ chế cơ học săn mồi độc nhất vô nhị ở động vật có xương sống tương tự quái vật Xenomorph trong phim viễn tưởng. Khả năng thắt nút cơ thể (body knotting) để tạo lực đòn bẩy xé toạc những miếng thịt lớn của con mồi hoặc kéo những con mồi lớn ra khỏi hang đá hẹp.",
-    "shortDescription": "Sở hữu bộ hàm hầu thứ hai (Xenomorph). Săn mồi khe đá san hô.",
-    "description": "Cá Chình Moray (Cá Lịch Biển) là một trong những kẻ săn mồi đáng sợ nhất trong các rạn san hô nhiệt đới. Do không thể tạo ra áp lực âm để hút nước hút mồi như các loài cá khác vì cấu trúc đầu hẹp, chúng tiến hóa một bộ hàm phụ độc đáo nằm trong hầu họng. Khi miệng ngoài cắn chặt con mồi, bộ hàm thứ hai này sẽ phóng ra ngoạm lấy thịt con mồi và lôi tuột vào thực quản. Cơ chế này đảm bảo con mồi đã lọt vào tầm ngắm không bao giờ có thể thoát ra ngoài.",
+    "realWeight": "25 - 90 g",
+    "size": "6.9 - 11.4 cm",
+    "characteristics": "Thân hình dẹt bè, phủ đầy gai nhọn cứng ở lưng và hai bên sườn. Có hai sừng lớn nổi bật ở sau đầu trông như vương miện. Da có màu nâu, vàng cát hoặc xám giúp ngụy trang hoàn hảo trên nền đất hoang mạc.",
+    "habitat": "Các vùng đất khô hạn hoang mạc, bán hoang mạc hoang dã, trảng cỏ cát ven bờ ôn đới.",
+    "location": "Phía tây nam Hoa Kỳ (đặc biệt là Texas) và vùng bắc Mexico.",
+    "survival_method": "Ngụy trang trên cát bằng cách xẹp người phẳng xuống đất. Khi bị động vật săn mồi thuộc họ chó tấn công, chúng làm phồng cơ thể lên để dựng sừng và gai nhọn, đồng thời tăng áp lực máu lên các xoang mắt để tự phá vỡ mao mạch, phun ra luồng máu chứa hóa chất độc hại, có mùi hôi nồng từ mắt bắn xa tới 1.5m.",
+    "unique_traits": "Cơ chế tự xuất huyết (auto-hemorrhage) phun máu từ hốc mắt xua đuổi kẻ thù. Da có hệ thống rãnh siêu nhỏ giữa các vảy hoạt động như mạng lưới mao dẫn, tự động gom nước sương đêm hoặc mưa chảy trực tiếp vào khóe miệng mà không cần cúi đầu uống.",
+    "shortDescription": "Phun máu từ mắt xua đuổi kẻ săn mồi. Da hút nước bằng mao dẫn trực tiếp vào miệng.",
+    "description": "Thằn Lằn Sừng Texas là một biểu tượng sinh tồn kỳ lạ của hoang mạc Bắc Mỹ. Loài này sở hữu hệ thống phòng thủ đa tầng cực kỳ tinh vi. Đầu tiên là ngụy trang màu sắc cát bụi kết hợp thân hình dẹt dễ ẩn mình dưới cát hoang dã. Khi bị phát hiện, chúng dựng gai nhọn khắp người và phồng to cơ thể để khó bị nuốt chửng. Tuy nhiên, vũ khí độc nhất vô nhị của nó là khả năng bắn ra một dòng máu có vị đắng nồng từ hai mắt bằng cách làm vỡ mao mạch xoang mắt dưới áp suất lớn. Dòng máu này cực kỳ hiệu quả trong việc xua đuổi các loài thuộc họ Chó như sói đồng cỏ hay cáo. Ngoài ra, khả năng thu gom nước thụ động qua da nhờ cấu trúc mao dẫn độc đáo giúp nó sống sót kiên cường trong môi trường khô hạn cực độ.",
     "strengths": [
-      "Bộ hàm hầu thứ hai cực kỳ mạnh mẽ ngăn cản con mồi chạy thoát",
-      "Khả năng thắt nút cơ thể tạo lực giật xé thịt cực kỳ mạnh mẽ",
-      "Lớp da trơn dày không vảy có chất nhầy bảo vệ khỏi các va chạm đá ngầm và san hô sắc nhọn",
-      "Khứu giác siêu nhạy bén bù lại cho thị lực kém trong đêm tối"
+      "Khả năng phun máu từ mắt xa đến 1.5 mét chứa độc chất xua đuổi kẻ thù hiệu quả",
+      "Hệ thống da mao dẫn thông minh tự động hút và dẫn nước mưa/sương đêm vào miệng",
+      "Lớp gai sắc nhọn và khả năng phình to thân mình chống nuốt chửng",
+      "Ngụy trang xuất sắc trên cát khô ôn đới"
     ],
     "weaknesses": [
-      "Thị giác cực kỳ kém, hầu như chỉ phân biệt được sáng tối và chuyển động cơ bản",
-      "Cấu trúc cơ thể dài không vây ngực khiến tốc độ bơi đường trường chậm và kém cơ động ở vùng nước thoáng",
-      "Hô hấp thụ động yêu cầu phải liên tục há mở miệng để bơm nước qua mang, dễ bị hiểu nhầm là hành vi đe dọa"
+      "Tốc độ di chuyển chậm chạp trên mặt đất phẳng",
+      "Chế độ ăn chuyên biệt cao (phụ thuộc lớn vào kiến gặt đầu to Harvester)",
+      "Dễ bị tổn hại nếu nguồn nước và môi trường cát bị biến đổi"
     ],
     "funFacts": [
-      "Cá chình Moray thường xuyên hợp tác đi săn cùng loài cá mú (grouper). Cá mú sẽ chỉ điểm vị trí con mồi ẩn nấp trong hang, và cá chình sẽ chui vào lùa con mồi ra hoặc ăn trực tiếp",
-      "Bộ hàm hầu của cá chình Moray được các nhà khoa học công nhận là nguồn cảm hứng đời thực hoàn hảo cho cái miệng phụ của quái vật Xenomorph trong loạt phim huyền thoại Alien",
-      "Mặc dù trông hung tợn với thói quen há miệng liên tục, chúng làm vậy chỉ để thở, không phải đang đe dọa"
+      "Mặc dù trông rất hung dữ với bộ sừng gai góc, chúng thực chất là loài bò sát hiền lành và thường bị kiến Harvester cắn trả nếu không cẩn thận",
+      "Cơ chế phun máu mắt tiêu tốn tới 1/3 tổng lượng máu cơ thể nếu sử dụng quá nhiều lần liên tục",
+      "Khả năng hấp thụ nước của da chúng tốt đến mức chỉ cần đứng trên cát ẩm, nước cũng tự hút ngược lên da và dẫn vào miệng"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1038/nature06062",
-        "label": "Nature - Raptor-like jointed pharyngeal jaws in moray eels"
+        "url": "https://doi.org/10.2307/1447000",
+        "label": "Copeia - Ocular Autohemorrhage in Horned Lizards (Phrynosoma)"
       },
       {
-        "url": "https://www.scientificamerican.com/article/how-the-moray-eel-gets-its-second-bite-video/",
-        "label": "Scientific American - How the Moray Eel Gets Its Second Bite"
+        "url": "https://www.nationalgeographic.com/animals/reptiles/facts/texas-horned-lizard",
+        "label": "National Geographic - Texas Horned Lizard Reference"
       }
     ],
-    "imageColor": "#2F4F4F",
-    "stats": {
-      "strength": 70,
-      "durability": 68,
-      "speed": 62,
-      "weaponry": 90,
-      "special": 85,
-      "lethality": 82
-    },
+    "imageColor": "#D1CCC0",
     "diet_type": "carnivore",
-    "diet_items": [
-      "cá nhỏ",
-      "bạch tuộc",
-      "cua",
-      "tôm"
+    "diet_items": ["kiến gặt Harvester", "mối", "bọ cánh cứng nhỏ", "sâu bướm"],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 5,
+    "lifespan_max": 8,
+    "lifespan_unit": "years",
+    "reproduction_type": "oviparous",
+    "reproduction_notes": "Con cái đào hang sâu dưới cát để đẻ từ 10 đến 30 quả trứng vào cuối mùa xuân và bỏ đi. Trứng tự nở sau khoảng 45-60 ngày.",
+    "locomotion": "walk",
+    "speed_max": 8.0,
+    "conservation_status": "LC",
+    "size_min_mm": 69.0,
+    "size_max_mm": 114.0,
+    "weight_avg_g": 50.0,
+    "stats": {
+      "strength": 50,
+      "durability": 70,
+      "speed": 40,
+      "weaponry": 75,
+      "special": 92,
+      "lethality": 60
+    },
+    "ai_p4p_score": 72,
+    "ai_tier": "C"
+  },
+  {
+    "id": "spiny-mouse",
+    "name": "Chuột Gai Châu Phi",
+    "scientificName": "Acomys kempi",
+    "taxonomy": {
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae"
+    },
+    "realWeight": "30 - 50 g",
+    "size": "cơ thể 8 - 11 cm, đuôi 8 - 11 cm",
+    "characteristics": "Sở hữu bộ lông cứng gai nhọn như nhím ở nửa thân sau lưng để tự vệ. Da vô cùng mỏng manh, dễ đứt rách nhưng có tốc độ co cơ và phục hồi vết thương nhanh gấp nhiều lần loài chuột thông thường.",
+    "habitat": "Các vùng đất đá khô cằn, vách đá bán hoang mạc, trảng cỏ khô ven rừng.",
+    "location": "Phổ biến ở vùng Đông Phi bao gồm Kenya, Somali và Ethiopia.",
+    "survival_method": "Khi bị động vật săn mồi chộp lấy, da lưng của chúng dễ dàng rụng rời (lực giật đứt da cực nhỏ) giúp nó thoát khỏi móng vuốt của kẻ thù. Sau đó, cơ thể chúng sẽ kích hoạt các tế bào gốc chuyên biệt để tái tạo hoàn chỉnh vết thương rách da lớn mà không để lại bất kỳ mô sẹo nào.",
+    "unique_traits": "Động vật có vú duy nhất có khả năng tự rụng da thoát thân (skin autotomy) và tái sinh vết thương không sẹo (scar-free regeneration) bao gồm cả nang lông, da tuyến mồ hôi, biểu bì và sụn tai.",
+    "shortDescription": "Tự rụng da thoát thân khi bị bắt. Động vật có vú duy nhất tái sinh da và sụn không để lại sẹo.",
+    "description": "Chuột Gai Châu Phi (Acomys kempi) đại diện cho một bước đột phá sinh học phi thường trong nhóm động vật có vú. Nhờ cấu trúc da có độ bền kéo cực thấp (yếu hơn da chuột thường 20 lần) và chứa nhiều chất nền ngoại bào collagen đặc biệt, chuột gai có thể dễ dàng hy sinh từng mảng da lưng lớn để trốn thoát khi bị kẻ săn mồi tóm lấy. Kỳ diệu hơn, thay vì hình thành sẹo xơ cứng như các động vật có vú khác, vùng da bị mất của chúng nhanh chóng lành lại trong vài ngày và tái sinh hoàn hảo cấu trúc ban đầu: từ các lớp biểu bì, tuyến mồ hôi, nang lông cho đến sụn tai bị tổn thương. Nghiên cứu sinh học phân tử chỉ ra chúng kiểm soát hoạt động của tế bào viêm và đại thực bào khác biệt để tạo điều kiện tái sinh hoàn toàn như kỳ giông.",
+    "strengths": [
+      "Khả năng tự rụng da cực nhạy giúp thoát hiểm ngoạn mục khỏi kẻ thù",
+      "Khả năng tái sinh hoàn hảo da, lông, tuyến mồ hôi và sụn tai không sẹo",
+      "Thích nghi tốt với điều kiện sống khô hạn thiếu nước hoang mạc"
     ],
+    "weaknesses": [
+      "Lớp da quá mỏng và dễ tổn thương cơ học ngoài ý muốn",
+      "Tốc độ chạy không quá nhanh và kích thước cơ thể nhỏ bé",
+      "Không có khả năng tự vệ bằng lực cắn hay vũ khí sát thương mạnh"
+    ],
+    "funFacts": [
+      "Nghiên cứu về cơ chế lành vết thương không sẹo của chuột gai đang được y học ứng dụng mạnh mẽ để phát triển các liệu pháp tái sinh da cho bệnh nhân bỏng nặng ở người",
+      "Lông gai ở đuôi và lưng chúng có chứa chất sừng keratin cứng như gai nhím nhỏ, gây khó chịu cho miệng kẻ săn mồi nếu cố gắng nhai nuốt"
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1038/nature11499",
+        "label": "Nature - Skin autotomy and rapid scar-free regeneration in Acomys"
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4288075/",
+        "label": "PMC - Spiny Mouse (Acomys) as a Mammalian Model of Regeneration"
+      }
+    ],
+    "imageColor": "#E28743",
+    "diet_type": "omnivore",
+    "diet_items": ["hạt cỏ", "quả mọng nhỏ", "côn trùng", "lá non", "ốc sên nhỏ"],
     "activity_pattern": "nocturnal",
-    "lifespan_min": 10,
-    "lifespan_max": 30,
+    "lifespan_min": 3,
+    "lifespan_max": 5,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Thụ tinh ngoài, đẻ trứng vào dòng nước đại dương. Trứng nở thành ấu trùng leptocephalus dẹt trong suốt trôi nổi tự do trong nhiều tháng trước khi biến thái thành cá con.",
-    "locomotion": "swim",
-    "speed_max": 15.0,
-    "conservation_status": "LC",
-    "size_min_mm": 1000.0,
-    "size_max_mm": 3000.0,
-    "weight_avg_g": 15000.0,
-    "ai_p4p_score": 72,
-    "ai_tier": "B"
-  },
-  {
-    "id": "snake-mimic-caterpillar",
-    "name": "Sâu Bướm Giả Rắn",
-    "scientificName": "Hemeroplanes triptolemus",
-    "taxonomy": {
-      "class": "Insecta",
-      "order": "Lepidoptera",
-      "family": "Sphingidae"
-    },
-    "realWeight": "~2 - 5 g",
-    "size": "7 - 10 cm",
-    "characteristics": "Hình dạng bình thường giống một chú sâu bướm màu xanh lục hoặc nâu xám ngụy trang trên lá. Khi bị đe dọa, nó có thể thu đầu vào trong và thổi phồng các đốt thân phía trước phình to ra thành hình đầu rắn chuông hoặc rắn lục.",
-    "habitat": "Rừng mưa nhiệt đới, rừng ẩm thấp ẩm ướt.",
-    "location": "Khu vực Trung và Nam Mỹ, đặc biệt là Mexico, Guatemala, Costa Rica, Brazil.",
-    "survival_method": "Là loài ăn lá cây nhút nhát ban ngày. Khi gặp động vật ăn thịt như chim hay thằn lằn, nó lập tức buông hai chân trước, ngửa đầu ra sau và phình to phần ngực ra, phô diễn các đốm giả mắt màu đen lớn lấp lánh như mắt rắn để dọa đối thủ.",
-    "unique_traits": "Khả năng biến hóa giả mắt và đầu của rắn lục venomous (với chi tiết vảy, ánh mắt sống động và các đốm trắng mô phỏng ánh sáng phản chiếu trong mắt rắn thực sự). Thậm chí nó còn có thể thực hiện hành vi phóng mình giả vờ mổ (strike) giống hệt một con rắn đang tấn công để xua đuổi kẻ thù.",
-    "shortDescription": "Ngụy trang giả đầu rắn cực đỉnh. Mô phỏng hành vi tấn công giả vờ.",
-    "description": "Sâu Bướm Giả Rắn (Hemeroplanes triptolemus) là bậc thầy ngụy trang tuyệt đỉnh nhất trong thế giới côn trùng. Ở trạng thái nghỉ ngơi, loài sâu bướm này vô cùng bình thường và khó phát hiện giữa các tán lá. Tuy nhiên, khi đối diện với mối đe dọa, cơ thể nó lập tức biến đổi cơ học: các đốt ngực phía trước căng phồng áp lực dịch cơ thể, tạo nên một chiếc đầu rắn hổ mang/rắn lục hoàn hảo với hai đốm đen bóng như đôi mắt rắn hung dữ. Loài sâu này thậm chí còn ngửa người ra sau và mổ đớp giả vờ vào không khí, đánh lừa thị giác của các loài chim săn mồi.",
-    "strengths": [
-      "Ngụy trang biến đổi thành đầu rắn cực kỳ chân thực thuyết phục tuyệt đối kẻ săn mồi",
-      "Hành vi mô phỏng động tác mổ đớp (strike) của rắn tạo hiệu ứng hoảng sợ mạnh mẽ cho đối thủ",
-      "Màu sắc ngụy trang tự nhiên lẫn vào cành lá hoàn hảo khi không bị đe dọa"
-    ],
-    "weaknesses": [
-      "Hoàn toàn không có vũ khí sát thương vật lý thật sự (không nọc độc, không răng sắc)",
-      "Cơ thể mềm yếu không có vỏ giáp bảo vệ, cực kỳ dễ bị tổn thương nếu kẻ thù không bị đánh lừa bởi màn ngụy trang",
-      "Phạm vi di chuyển hạn chế trong các cây ký chủ ký sinh (cây thuộc họ Apocynaceae)"
-    ],
-    "funFacts": [
-      "Đốm mắt giả trên cơ thể sâu bướm chân thực đến mức có cả một vệt trắng nhỏ mô phỏng ánh sáng phản chiếu của con ngươi mắt rắn thật",
-      "Màn ngụy trang của chúng chủ yếu dùng để lừa các loài chim nhỏ ăn sâu bướm, nhưng vì vẻ ngoài giống rắn độc, con người cũng thường xuyên bị giật mình bỏ chạy",
-      "Sau khi hóa nhộng và lột xác, loài sâu bướm này biến thành một loài bướm đêm Sphinx khá bình dị với cánh màu xám nâu"
-    ],
-    "sources": [
-      {
-        "url": "https://www.nationalgeographic.com/animals/article/caterpillar-mimics-snake-costa-rica-defense",
-        "label": "National Geographic - Caterpillar Mimics Snake in Costa Rica"
-      },
-      {
-        "url": "https://doi.org/10.1093/ae/tmx024",
-        "label": "American Entomologist - Snake Mimicry in Lepidoptera Larvae"
-      }
-    ],
-    "imageColor": "#6B8E23",
-    "stats": {
-      "strength": 15,
-      "durability": 20,
-      "speed": 40,
-      "weaponry": 5,
-      "special": 95,
-      "lethality": 5
-    },
-    "diet_type": "herbivore",
-    "diet_items": [
-      "lá cây họ Apocynaceae",
-      "lá cây móng bò"
-    ],
-    "activity_pattern": "nocturnal",
-    "lifespan_min": 10,
-    "lifespan_max": 30,
-    "lifespan_unit": "days",
-    "reproduction_type": "oviparous",
-    "reproduction_notes": "Bướm cái đẻ trứng nhỏ riêng lẻ trên bề mặt lá của cây ký chủ. Trứng nở thành sâu sau 3-5 ngày.",
-    "locomotion": "crawl",
-    "speed_max": 0.2,
-    "conservation_status": "LC",
-    "size_min_mm": 70.0,
-    "size_max_mm": 100.0,
-    "weight_avg_g": 3.5,
-    "ai_p4p_score": 45,
-    "ai_tier": "D"
-  },
-  {
-    "id": "driver-ant",
-    "name": "Kiến Quân Đội Châu Phi",
-    "scientificName": "Dorylus helvolus",
-    "taxonomy": {
-      "class": "Insecta",
-      "order": "Hymenoptera",
-      "family": "Formicidae"
-    },
-    "realWeight": "~0.01 - 0.1 g",
-    "size": "3 - 25 mm",
-    "characteristics": "Màu nâu đỏ sẫm hoặc đen. Kiến lính có cái đầu khổng lồ chứa bó cơ hàm cực khỏe và cặp gọng kìm (pincers) sắc nhọn dài cong hình chữ S. Thân hình thon thuôn không cánh. Hoàn toàn mù (không có mắt kép).",
-    "habitat": "Rừng nhiệt đới ẩm, thảo nguyên Savannah ẩm thấp.",
-    "location": "Trung và Đông Phi.",
-    "survival_method": "Không xây dựng tổ cố định như kiến thường mà thiết lập các tổ tạm thời bằng cách tự liên kết cơ thể của hàng triệu con kiến với nhau (bivouac). Chúng di chuyển liên tục thành các đàn khổng lồ hàng triệu con càn quét mặt đất. Đi săn theo chiến thuật 'cột càn quét' (raid column), dùng chất pheromone dẫn đường để di chuyển tập thể và tiêu diệt mọi sinh vật cản đường.",
-    "unique_traits": "Hàm của kiến lính có lực cắn cực mạnh so với kích thước cơ thể, đến mức sau khi cắn ngập vào da thịt, chúng sẽ không nhả ra ngay cả khi bị giật đứt đầu khỏi cơ thể (thường được thổ dân châu Phi dùng làm chỉ khâu vết thương tự nhiên). Sự phối hợp bầy đàn vô địch lên tới 20 triệu cá thể hoạt động thống nhất hoàn hảo không cần thị giác.",
-    "shortDescription": "Siêu bầy đàn 20 triệu con càn quét. Gọng kìm siêu khỏe dùng khâu vết thương.",
-    "description": "Kiến Quân Đội Châu Phi (Dorylus / Driver Ant) là cỗ máy hủy diệt tập thể đáng sợ nhất trong rừng mưa châu Phi. Với quy mô bầy đàn khổng lồ từ 10 đến 20 triệu cá thể do một con kiến chúa duy nhất chỉ huy, chúng không có tổ cố định mà sống cuộc đời du mục càn quét. Khi đàn kiến hành quân, chúng tạo nên những hàng dài hàng trăm mét càn quét mọi ngóc ngách mặt đất. Bất kỳ loài vật nào không thể chạy trốn đủ nhanh – từ sâu bọ, chuột, rắn, cho đến những động vật bị thương hoặc bị nhốt trong chuồng – đều sẽ bị hàng triệu con kiến leo lên cắn xé và tiêu diệt trong chốc lát bằng những cặp gọng kìm siêu khỏe.",
-    "strengths": [
-      "Số lượng đàn siêu khổng lồ 20 triệu con tạo nên sức mạnh càn quét hủy diệt tuyệt đối",
-      "Cặp gọng kìm kiến lính siêu khỏe với lực cắn khủng khiếp giữ chặt không buông",
-      "Khả năng phối hợp đồng đội vượt trội bằng Pheromone, tự liên kết cơ thể tạo cầu hoặc tổ sống bảo vệ kiến chúa",
-      "Ý chí chiến đấu liều lĩnh, không biết sợ hãi hay đau đớn trước đối thủ lớn hơn gấp ngàn lần"
-    ],
-    "weaknesses": [
-      "Hoàn toàn mù, phụ thuộc hoàn toàn vào Pheromone dẫn đường và tiếp xúc xúc giác",
-      "Rất nhạy cảm với nhiệt độ cao trực tiếp từ ánh nắng mặt trời gắt hoặc lửa",
-      "Cơ thể kiến đơn lẻ nhỏ bé và rất dễ bị tiêu diệt bằng cách giẫm đạp hoặc xịt thuốc côn trùng"
-    ],
-    "funFacts": [
-      "Kiến chúa Dorylus là loài côn trùng lớn nhất và đẻ nhiều nhất thế giới, cơ thể dài đến 5 cm khi mang trứng và có thể đẻ tới 1-2 triệu quả trứng mỗi tháng",
-      "Tại nhiều bộ tộc ở Đông Phi, người ta sử dụng kiến lính để khâu các vết rách trên da. Họ ép kiến lính cắn kẹp chặt hai mép vết thương, sau đó bẻ đứt thân kiến, để lại đầu kiến kẹp giữ vết thương lành lặn như chỉ khâu phẫu thuật",
-      "Đàn kiến hành quân với tốc độ khoảng 20 mét mỗi giờ, nhưng sự càn quét của chúng triệt để đến mức tất cả sâu bọ có hại trong nhà dân dọc đường đi đều bị tiêu diệt sạch sẽ, nên người dân bản địa coi chúng là 'người dọn dẹp vệ sinh miễn phí'"
-    ],
-    "sources": [
-      {
-        "url": "https://doi.org/10.1111/j.1365-3113.2005.00302.x",
-        "label": "Systematic Entomology - Evolutionary history of doryline army ants"
-      },
-      {
-        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/army-ants",
-        "label": "National Geographic - Army Ants Reference"
-      }
-    ],
-    "imageColor": "#800000",
-    "stats": {
-      "strength": 35,
-      "durability": 45,
-      "speed": 50,
-      "weaponry": 80,
-      "special": 95,
-      "lethality": 75
-    },
-    "diet_type": "carnivore",
-    "diet_items": [
-      "côn trùng",
-      "giun đất",
-      "chuột nhỏ",
-      "thằn lằn",
-      "chim non",
-      "động vật không xương sống"
-    ],
-    "activity_pattern": "variable",
-    "lifespan_min": 1,
-    "lifespan_max": 12,
-    "lifespan_unit": "months",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Kiến chúa khổng lồ không cánh đẻ hàng triệu trứng. Đàn kiến sẽ chia tách (fission) khi xuất hiện kiến chúa mới và kiến đực có cánh giao phối.",
+    "reproduction_notes": "Thời gian mang thai dài bất thường khoảng 5-6 tuần. Con non sinh ra đã mở mắt, mọc lông hoàn chỉnh và có khả năng chạy nhảy ngay sau vài giờ.",
     "locomotion": "walk",
-    "speed_max": 0.1,
+    "speed_max": 12.0,
     "conservation_status": "LC",
-    "size_min_mm": 3.0,
-    "size_max_mm": 25.0,
-    "weight_avg_g": 0.05,
-    "ai_p4p_score": 78,
-    "ai_tier": "B"
+    "size_min_mm": 80.0,
+    "size_max_mm": 110.0,
+    "weight_avg_g": 40.0,
+    "stats": {
+      "strength": 25,
+      "durability": 85,
+      "speed": 65,
+      "weaponry": 35,
+      "special": 95,
+      "lethality": 20
+    },
+    "ai_p4p_score": 74,
+    "ai_tier": "C"
+  },
+  {
+    "id": "barnacle",
+    "name": "Hà Biển",
+    "scientificName": "Balanus glandula",
+    "taxonomy": {
+      "class": "Hexanauplia",
+      "order": "Balanomorpha",
+      "family": "Balanidae"
+    },
+    "realWeight": "1 - 5 g",
+    "size": "đường kính vỏ 1.5 - 2 cm",
+    "characteristics": "Sống bám cố định. Cơ thể được bao bọc trong một chiếc vỏ đá vôi hình nón núi lửa nhỏ màu trắng hoặc xám nhạt, có nắp mở ở đỉnh để thò chân khớp ra lọc thức ăn dưới nước.",
+    "habitat": "Các vùng đá gập ghềnh ven bờ biển, rạn san hô, móng cầu, vỏ tàu thuyền hoặc thậm chí bám trực tiếp trên da cá voi.",
+    "location": "Phổ biến dọc theo các vùng duyên hải ôn đới và nhiệt đới trên toàn thế giới.",
+    "survival_method": "Chúng tiết ra chất keo xi măng tự nhiên bền chắc bậc nhất thế giới để gắn chặt đế vỏ vào bề mặt vật bám. Khi thủy triều lên, chúng mở nắp vỏ thò các cặp chân ngực hình lông vũ (cirri) để quét qua dòng nước lọc sinh vật phù du. Khi thủy triều xuống hoặc gặp nguy hiểm, chúng rút chân lại đóng nắp kín kẽ để giữ ẩm và trốn tránh kẻ thù.",
+    "unique_traits": "Chất keo xi măng tự nhiên siêu dính dưới nước có độ bền liên kết và chịu lực kéo cực cao lên tới 200 psi. Là loài lưỡng tính có dương vật dài gấp 8 lần chiều dài cơ thể (dài nhất thế giới động vật theo tỷ lệ cơ thể) giúp thụ tinh chéo với hàng xóm từ khoảng cách xa mà không cần di chuyển.",
+    "shortDescription": "Keo xi măng sinh học siêu dính dưới nước. Dương vật dài gấp 8 lần cơ thể để giao phối từ xa.",
+    "description": "Hà Biển (Balanus glandula) là một loài giáp xác kỳ lạ thích nghi hoàn hảo với cuộc sống tĩnh lặng bám đá ven bờ. Chất xi măng mà hà biển tiết ra là một phức hợp protein có cấu trúc sợi nano liên kết chéo vững chắc đến mức không một loại dung môi, axit hay nước biển mặn nào có thể hòa tan được, giúp chúng chịu đựng sóng vỗ ngàn năm. Vì sống cả đời cố định tại một chỗ, hà biển đã tiến hóa một cơ chế sinh sản vô cùng độc đáo: bộ phận sinh dục đực có thể kéo dài ra xa gấp 8 lần chiều dài cơ thể để dò tìm và đưa tinh trùng vào bên trong vỏ của những con hà láng giềng. Sau khi thụ tinh, trứng phát triển thành ấu trùng tự do bơi lội tìm bến đỗ mới.",
+    "strengths": [
+      "Keo dính xi măng sinh học siêu bền bám dính tuyệt đối chịu lực sóng đập mạnh mẽ",
+      "Vỏ đá vôi chắc chắn bảo vệ tối đa cơ thể khỏi mất nước và động vật săn mồi",
+      "Lối sống tiêu tốn cực ít năng lượng nhờ lọc thức ăn thụ động"
+    ],
+    "weaknesses": [
+      "Hoàn toàn không có khả năng di chuyển sau khi đã chọn vị trí bám",
+      "Bị động trước sự thay đổi nhiệt độ đột ngột hoặc các loài ốc sên biển đục vỏ",
+      "Không có vũ khí hay khả năng chủ động săn mồi tấn công"
+    ],
+    "funFacts": [
+      "Keo xi măng của hà biển bám chắc đến mức tàu thủy phải định kỳ cạo vỏ vì sự tích tụ của chúng làm giảm tốc độ tàu và tăng mức tiêu thụ nhiên liệu lên tới 40%",
+      "Vì dương vật quá dài, vào mùa sinh sản khi sóng biển đánh quá dữ dội làm rối loạn đường truyền tinh, hà biển có thể tự thụ tinh cho chính mình để duy trì nòi giống"
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1098/rsbl.2012.0545",
+        "label": "Biology Letters - Natural underwater adhesives of barnacles"
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3539343/",
+        "label": "PMC - Phenotypic plasticity in barnacle penis size and shape"
+      }
+    ],
+    "imageColor": "#BDC3C7",
+    "diet_type": "omnivore",
+    "diet_items": ["sinh vật phù du", "tảo silic", "mùn bã hữu cơ", "ấu trùng nhỏ"],
+    "activity_pattern": "variable",
+    "lifespan_min": 2,
+    "lifespan_max": 6,
+    "lifespan_unit": "years",
+    "reproduction_type": "hermaphrodite",
+    "reproduction_notes": "Là loài lưỡng tính thụ tinh chéo. Con đực phóng tinh trùng qua dương vật siêu dài vào khoang áo của con bên cạnh. Trứng nở thành ấu trùng nauplius bơi tự do trước khi lột xác thành ấu trùng cypris tìm nơi định cư.",
+    "locomotion": "hybrid",
+    "speed_max": 0.0,
+    "conservation_status": "LC",
+    "size_min_mm": 15.0,
+    "size_max_mm": 20.0,
+    "weight_avg_g": 3.0,
+    "stats": {
+      "strength": 20,
+      "durability": 95,
+      "speed": 5,
+      "weaponry": 10,
+      "special": 92,
+      "lethality": 10
+    },
+    "ai_p4p_score": 68,
+    "ai_tier": "D"
   }
 ]
