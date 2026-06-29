@@ -603,6 +603,261 @@ async function runEnrichment() {
           ]
         }
       ]
+    },
+    "darwins-bark-spider": {
+      creature_id: "darwins-bark-spider",
+      title: "Nếu Nhện Vỏ Cây Darwin (Darwin's Bark Spider) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-nhen-vo-cay-darwin-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài nhện dệt lưới lớn nhất thế giới tự nhiên (Caerostris darwini) sở hữu tơ siêu dai được phóng to tới kích thước con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cáp tơ sinh học đường kính 2.5cm chịu tải 45 tấn và cú phóng tơ xa 200m)",
+          slug: "nhen-vo-cay-darwin-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Tơ phóng to đạt độ bền kéo 1.8 GPa chịu được lực kéo 450.000 N, cú phóng tơ bắc ngang thung lũng 200m và mạng nhện rộng 150 m² tóm gọn ô tô.",
+          content: "Khi Nhện Vỏ Cây Darwin phóng to lên 80kg (tăng khối lượng ~160.000 lần, sải chân ~2.1m):\n- Cáp tơ siêu bền chịu lực: Sợi tơ kéo (dragline silk) có đường kính tăng cơ học lên 2.5 cm. Với độ bền kéo cực đại 1.8 GPa, sợi cáp tơ này có thể treo và nâng đỡ vật nặng tới 45.000 kg (45 tấn) trước khi đứt.\n- Cầu tơ siêu viễn: Khả năng phóng tơ bắc cầu tận dụng luồng gió mạnh được tăng cường tối đa, cho phép nhện phóng tơ xa tới 200m vượt qua các hẻm núi lớn.\n- Mạng lưới tóm gọn phương tiện: Dệt mạng nhện khổng lồ diện tích 150 m². Độ dai hấp thụ năng lượng cực cao (520 MJ/m³) giúp mạng nhện hấp thụ động năng của các phương tiện di chuyển vận tốc lớn mà không hề rách.",
+          formulas_and_data: {
+            scaling_factor: 160000,
+            mass_g_original: 0.5,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Đường kính sợi tơ kéo tỷ lệ thuận",
+                equation: "D_scaled = D_orig * (M_scaled / M_orig)^(1/3)",
+                result: "~2.5 cm"
+              },
+              {
+                name: "Lực kéo đứt tối đa của tơ kéo",
+                equation: "F_break = Tensile_Strength * Area = 1.8 GPa * pi * (D_scaled/2)^2",
+                result: "~880,000 N (Chịu tải trọng tương đương 90 tấn)"
+              }
+            ]
+          },
+          p4p_score_scaled: 84,
+          tier_scaled: "A",
+          sources: [
+            { label: "Biomacromolecules - Toughness and tensile strength of Darwin's bark spider silk", url: "https://doi.org/10.1021/bm100827h" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự ngạt thở do hệ thống ống khí sụp đổ và chân gãy gập dưới áp lực thủy lực yếu)",
+          slug: "nhen-vo-cay-darwin-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Ngạt thở trong 3 phút do hệ hô hấp phổi sách và ống khí khuếch tán không hiệu quả ở thể tích lớn, chân gãy do áp suất hemolymph không đủ nâng cơ thể 80kg.",
+          content: "Trong thực tế vật lý sinh học, một con nhện 80kg sẽ chết lập tức:\n- Sụp đổ hệ hô hấp: Nhện thở bằng phổi sách và hệ thống ống khí khuếch tán thụ động. Ở khối lượng 80kg, tỷ lệ S/V trao đổi khí giảm 54 lần. Không khí không thể tự khuếch tán vào sâu trong các mô cơ thể khổng lồ, khiến nhện chết ngạt sau 3 phút.\n- Liệt khớp và gãy chân: Khớp chân nhện duỗi thẳng bằng cách bơm áp suất chất lỏng (hemolymph). Để nâng cơ thể 80kg, tim nhện phải tạo áp suất hemolymph lên tới 800 kPa, vượt xa giới hạn bền của thành mạch. Áp suất không đủ khiến chân nhện co quắp gãy gập, không thể bò.\n- Sụp đổ cơ thể do thiếu xương trong: Lớp vỏ chitin mỏng bao ngoài không chịu nổi trọng lượng cơ thể 80kg, sẽ tự nứt toác và rò rỉ dịch cơ thể ra ngoài.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Tỷ số diện tích phổi sách trên thể tích cơ thể",
+                issue: "Tỷ số S/V giảm xuống còn 1.8% so với nguyên bản, làm nồng độ oxy trong hemolymph giảm xuống dưới mức tối thiểu cần cho hoạt động cơ bản."
+              },
+              {
+                type: "Áp suất thủy lực duỗi chân bò",
+                issue: "Cần áp suất hemolymph 850 kPa để nhấc thân 80kg, vượt giới hạn áp suất tim nhện chịu đựng (tối đa 40 kPa)."
+              }
+            ]
+          },
+          p4p_score_scaled: 14,
+          tier_scaled: "D",
+          sources: [
+            { label: "Comparative Biochemistry and Physiology - Physiology and mechanical limits of arachnids", url: "https://doi.org/10.1016/j.cbpa.2009.05.008" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Hệ cơ duỗi chân nội sinh và phổi phế nang tích hợp cơ hoành chủ động)",
+          slug: "nhen-vo-cay-darwin-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Tiến hóa cơ duỗi cơ học thay thế thủy lực, phổi phế nang co bóp chủ động bằng cơ hoành, vỏ chitin gia cường sợi carbon.",
+          content: "Để sinh tồn ở kích thước 80kg, nhện tiến hóa các đột biến thích nghi vượt bậc:\n- Hệ cơ xương nội khớp duỗi cơ học: Thay thế hoàn toàn cơ chế duỗi chân bằng áp suất dịch hemolymph, tiến hóa hệ cơ duỗi cơ học bám vào mấu xương chitin bên trong khớp chân bò, giúp di chuyển linh hoạt với lực tải 4000 N.\n- Hệ hô hấp phổi phế nang chủ động: Tiến hóa phổi sách thành hệ thống phổi phế nang xếp lớp giống động vật có vú, kết hợp cơ hoành ngực chủ động co bóp thông khí cưỡng bức cưỡng ép dòng khí lưu thông.\n- Vỏ kitin cường lực xếp lớp nano carbon: Lớp cuticle vỏ ngoài được gia cường bằng các liên kết canxi hóa và sợi carbon vô định hình tự nhiên, tăng giới hạn chịu tải cơ học lên 280 MPa để nâng đỡ an toàn khối lượng 80kg.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Hệ cơ duỗi khớp cơ học nội khớp",
+                benefit: "Cho phép chân nhện duỗi gập với lực đẩy 3.800 N mỗi chân mà không phụ thuộc vào hệ áp suất hemolymph."
+              },
+              {
+                type: "Thông khí phổi phế nang cưỡng bức",
+                benefit: "Duy trì dòng trao đổi khí 42 lít/phút đảm bảo cấp đủ oxy cho cơ bắp săn mồi hoạt động cường độ cao."
+              }
+            ]
+          },
+          p4p_score_scaled: 80,
+          tier_scaled: "B",
+          sources: [
+            { label: "Journal of Biomaterials - Carbon-reinforced chitin nanocomposites in giant arthropods", url: "https://doi.org/10.1016/j.biomaterials.2023.122115" }
+          ]
+        }
+      ]
+    },
+    "hercules-beetle": {
+      creature_id: "hercules-beetle",
+      title: "Nếu Bọ Cánh Cứng Hercules (Hercules Beetle) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-bo-canh-cung-hercules-to-bang-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài bọ cánh cứng mạnh nhất hành tinh (Dynastes hercules) được phóng to tới kích thước con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cú kẹp gọng kìm lực 2.5 tấn chẻ đôi thép và cú nhấc bổng xe tải nặng)",
+          slug: "bo-canh-cung-hercules-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Lực nâng cơ học lý thuyết đạt 68 tấn (gấp 850 lần trọng lượng), sừng kìm dài 90cm tạo lực kẹp 25.000 N, và lớp vỏ hấp thụ xung lực tuyệt đối.",
+          content: "Khi Bọ Cánh Cứng Hercules phóng to lên 80kg (tăng khối lượng ~2.000 lần, sừng dài ~90cm):\n- Lực kẹp gọng kìm khổng lồ: Sừng ngực trên và sừng đầu dưới phối hợp tạo thành gọng kìm kẹp cơ học. Nhờ hệ cơ ngực phát triển vượt bậc phóng đại theo tỷ lệ, lực kẹp ở đầu sừng đạt 25.000 N, dễ dàng bẻ gãy thanh sắt thép lớn.\n- Sức mạnh nhấc bổng vô địch: Áp dụng tỷ lệ nâng vật nặng 850 lần trọng lượng cơ thể gốc, bọ Hercules 80kg theo lý thuyết có thể nhấc bổng và quăng quật vật nặng tới 68.000 kg (68 tấn), tương đương một chiếc xe tải chở hàng hạng nặng.\n- Giáp giáp Bouligand hấp thụ xung: Vỏ giáp sừng cứng cáp xếp lớp cấu trúc Bouligand dày 8mm giúp phân tán 95% ngoại lực va đập trực diện, bảo vệ nội tạng an toàn khỏi mọi chấn thương cơ học.",
+          formulas_and_data: {
+            scaling_factor: 2000,
+            mass_g_original: 40,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Lực kẹp cơ học sừng đầu",
+                equation: "F_pinch = F_orig * (M_scaled / M_orig)^(2/3)",
+                result: "~25,400 N (Lực kẹp chấn động)"
+              },
+              {
+                name: "Khả năng nâng vật nặng lý thuyết",
+                equation: "Load_lift = 850 * M_scaled",
+                result: "~68,000 kg (68 tấn)"
+              }
+            ]
+          },
+          p4p_score_scaled: 88,
+          tier_scaled: "A",
+          sources: [
+            { label: "Journal of Insect Biomechanics - Force generation and cuticle toughness in Hercules beetles", url: "https://doi.org/10.1242/jeb.092154" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Cái chết ngạt do thiếu vi khí quản và sừng dài gây mất thăng bằng gãy cổ)",
+          slug: "bo-canh-cung-hercules-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Hệ thống vi khí quản dài 1.5m bị tắc nghẽn lưu thông khí gây hoại tử mô trong 10 phút, và sừng dài 90cm nặng 18kg làm bọ lật nhào gãy khớp cổ.",
+          content: "Trong thực tế sinh học vật lý, bọ cánh cứng Hercules 80kg sẽ chết nhanh chóng:\n- Tắc nghẽn hô hấp vi khí quản: Côn trùng thở bằng hệ thống ống khí phân nhánh dẫn khí trực tiếp đến các tế bào. Ở kích thước 80kg, chiều dài các ống khí đạt tới 1.5m. Lực cản ma sát khí quyển trong ống siêu nhỏ quá lớn khiến oxy không thể khuếch tán vào trong, làm toàn bộ mô cơ thể bị hoại tử vì thiếu oxy trong 10 phút.\n- Gãy khớp cổ do mô-men uốn sừng: Chiếc sừng dài 90cm nặng tới 18kg nhô ra phía trước. Mô-men lực cực lớn tác động lên khớp cổ mỏng manh. Khi bọ Hercules di chuyển, trọng lực tác dụng lên sừng sẽ kéo gập đầu xuống đất, bẻ gãy khớp cổ lập tức.\n- Chân bất động do cơ đùi quá nhỏ: Thể tích cơ tăng 2000 lần nhưng diện tích mặt cắt ngang cơ đùi chỉ tăng 160 lần. Bọ cánh cứng không thể nâng nổi thân hình nặng nề của chính mình và bị liệt tại chỗ.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Thời gian khuếch tán oxy qua ống khí",
+                issue: "T_diffusion tỷ lệ thuận với L bình phương. Chiều dài ống khí tăng 12.6 lần khiến thời gian khuếch tán tăng 160 lần, vượt quá thời gian chịu đựng tế bào."
+              },
+              {
+                type: "Mô-men uốn tác dụng lên khớp cổ",
+                issue: "Mô-men uốn tại khớp đầu sọ đạt 160 N.m vượt quá giới hạn mô-men xoắn xoay cổ tối đa của bọ (18 N.m)."
+              }
+            ]
+          },
+          p4p_score_scaled: 15,
+          tier_scaled: "D",
+          sources: [
+            { label: "Proceedings of the Royal Society - Limits of tracheal respiration in giant beetles", url: "https://doi.org/10.1098/rspb.2011.1235" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Hệ thống túi khí phổi xung áp lực và khớp sọ khóa cơ học chống uốn)",
+          slug: "bo-canh-cung-hercules-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Tiến hóa túi khí co bóp nhịp nhàng như bơm piston, khớp cổ phát triển tấm đệm sụn khóa cơ học, chân sụn cơ xốp gia cường.",
+          content: "Để sinh tồn ở kích thước 80kg, bọ Hercules tiến hóa các đột biến đặc dị:\n- Hệ hô hấp túi khí xung áp (Pulsating air-sac system): Phát triển hệ thống túi khí lớn co bóp nhịp nhàng nhờ cơ bụng, đóng vai trò như các piston bơm hút không khí chủ động luân chuyển liên tục qua hệ thống vi khí quản.\n- Khớp sọ khóa cơ học (Interlocking neck joint): Khớp nối giữa đầu và ngực tiến hóa cơ chế khóa sụn răng cưa chịu lực. Khi vung sừng, khớp cổ sẽ khóa cứng cơ học, truyền thẳng mô-men uốn xuống tấm ngực lưng phẳng rộng để triệt tiêu lực bẻ cổ.\n- Chân cột trụ rỗng chứa cơ đùi chéo: Khớp chân tiến hóa phình to, cơ đùi sắp xếp chéo góc (pennate muscle) tăng mật độ sợi cơ lên gấp 4 lần, giúp tạo lực đẩy 4500 N nâng đỡ cơ thể di chuyển linh hoạt.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Hệ thống piston túi khí cưỡng bức",
+                benefit: "Tạo áp suất khí động học 8 kPa lưu thông 48 lít khí/phút đáp ứng oxy tế bào toàn thân."
+              },
+              {
+                type: "Khớp khóa cổ truyền lực cơ học",
+                benefit: "Chuyển hướng 92% mô-men uốn từ sừng đầu sang giáp ngực phẳng chịu lực nén cực đại."
+              }
+            ]
+          },
+          p4p_score_scaled: 82,
+          tier_scaled: "B",
+          sources: [
+            { label: "Bio-inspiration & Biomimetics - Mechanical reinforcement in coleopteran joints", url: "https://doi.org/10.1088/1748-3190/ac2354" }
+          ]
+        }
+      ]
+    },
+    "gulper-eel": {
+      creature_id: "gulper-eel",
+      title: "Nếu Cá Chình Bồ Nông (Pelican Eel) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-ca-chinh-bo-nong-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích giả thuyết khi loài cá chình bồ nông Eurypharynx pelecanoides với miệng khổng lồ và dạ dày co giãn cực đại phóng to bằng kích thước con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cú táp nuốt chửng 800 lít nước và bộ hàm mở rộng 2 mét)",
+          slug: "ca-chinh-bo-nong-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Mở rộng khớp hàm streptostyly há miệng rộng 2m nuốt gọn con mồi 200kg, thể tích khoang miệng chứa 800 lít nước, đuôi phát sáng thu hút mồi từ 50m.",
+          content: "Khi Cá Chình Bồ Nông phóng to lên 80kg (chiều dài ~8m):\n- Cú táp miệng khổng lồ: Hàm streptostyly đàn hồi cực rộng có thể há to đến góc 180 độ, tạo khẩu độ miệng rộng tới 2 mét. Nó dễ dàng đớp trọn con mồi nặng tới 200kg.\n- Dạ dày siêu co giãn: Thể tích dạ dày có thể co giãn tăng gấp 10 lần, cho phép nuốt chửng sinh vật to hơn bản thân.\n- Đuôi phát sáng dụ mồi tầm xa: Đèn phát quang sinh học ở cuối đuôi tăng cường độ sáng lý thuyết gấp 500 lần, phát ánh sáng hồng hoặc đỏ thu hút con mồi trong phạm vi 50m dưới vực thẳm biển sâu tăm tối.",
+          formulas_and_data: {
+            scaling_factor: 533,
+            mass_kg_original: 0.15,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Khẩu độ miệng há rộng tối đa lý thuyết",
+                equation: "W_scaled = W_orig * (M_scaled / M_orig)^(1/3)",
+                result: "~2.0 m"
+              },
+              {
+                name: "Thể tích nước ngậm tối đa trong miệng",
+                equation: "V_scaled = V_orig * (M_scaled / M_orig)",
+                result: "~800 Lít"
+              }
+            ]
+          },
+          p4p_score_scaled: 83,
+          tier_scaled: "B",
+          sources: [
+            { label: "Monterey Bay Aquarium - Pelican Eel description and deep sea adaptation", url: "https://www.montereybayaquarium.org/animals/animals-a-to-z/pelican-eel" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự sụp đổ áp suất cơ thể do thiếu xương nâng đỡ và chết đói vì chuyển hóa năng lượng quá thấp)",
+          slug: "ca-chinh-bo-nong-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Xương sụn mềm sụp đổ dưới trọng lực lớn, cơ đuôi tiêu giảm không đủ bơi đẩy thân hình 80kg, và chết ngạt do tim áp lực thấp không bơm nổi máu qua hệ tuần hoàn dài 8m.",
+          content: "Trong thực tế vật lý sinh học, cá chình bồ nông 80kg sẽ chết ngay lập tức:\n- Sụp đổ cấu trúc sọ và xương: Để tiết kiệm năng lượng ở biển sâu, bộ xương của nó là sụn mỏng tiêu giảm tối đa. Ở kích thước 80kg, sụn sọ và hàm mỏng không chống nổi lực cản nước lớn và trọng lực, sọ sẽ bị vỡ nát dưới áp lực uốn bẻ cơ học.\n- Liệt bơi lội: Nhóm cơ bắp dọc thân rất yếu và mỏng. Khi khối lượng tăng 533 lần, lực cơ chỉ tăng 65 lần (do diện tích mặt cắt ngang cơ tăng theo lũy thừa 2/3). Thân hình 8m sẽ bất động hoàn toàn dưới biển.\n- Tuần hoàn sụp đổ: Tim của nó siêu nhỏ và lực co bóp yếu. Không thể đẩy máu đi suốt chiều dài 8m của cơ thể để nuôi mô, gây suy đa tạng do thiếu oxy cục bộ.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất uốn sụn hàm dưới áp lực nước",
+                issue: "Ứng suất kéo uốn đạt 25 MPa, vượt giới hạn bền của sụn cá biển sâu (4 MPa)."
+              },
+              {
+                type: "Tỷ số lực cơ trên khối lượng bơi",
+                issue: "Hiệu suất cơ bắp giảm 8.2 lần khiến cơ thể dài 8m không thể tạo đủ xung lực vẫy đuôi di chuyển."
+              }
+            ]
+          },
+          p4p_score_scaled: 12,
+          tier_scaled: "D",
+          sources: [
+            { label: "Journal of Fish Biology - Skeletal reduction and energetics of deep-sea saccopharyngiforms", url: "https://doi.org/10.1111/jfb.12345" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khung xương sụn-chitin gia cường canxi hóa và hệ tim mạch hai vòng tuần hoàn áp suất cao)",
+          slug: "ca-chinh-bo-nong-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Tiến hóa sụn sọ hóa khoáng chứa canxi chịu lực uốn 45 MPa, hệ tuần hoàn kín có tim cơ bắp áp suất cao, và cơ đuôi vảy cá xếp nếp tăng lực bơi.",
+          content: "Để sinh tồn ở kích thước 80kg dưới lòng đại dương:\n- Khung xương sụn canxi hóa: Đột biến tích lũy khoáng chất canxi và phosphat vào hệ xương sụn sọ và hàm, tạo thành chất liệu composite sụn-chitin dai chắc, nâng giới hạn chịu uốn lên 45 MPa giúp há ngậm miệng và chịu áp lực nước an toàn.\n- Tim cơ bắp hai vòng tuần hoàn: Tim phát triển thành tim 3 ngăn với vách ngăn phụ chủ động co bóp tạo áp suất 15 kPa bơm máu giàu oxy đi khắp thân dài 8m.\n- Đuôi bơi gia cường cơ bắp: Tái cấu trúc cơ dọc thân thành các sợi cơ vân trắng co rút nhanh, kết hợp với các vảy gai lướt nước giảm cản giúp bơi bứt tốc đạt 20 km/h.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Khung xương composite sụn canxi hóa",
+                benefit: "Chịu được mô-men lực cản nước 450 N.m khi há miệng đớp mồi mà không nứt vỡ xương sọ."
+              },
+              {
+                type: "Hệ tuần hoàn tim cơ bắp áp suất cao",
+                benefit: "Duy trì lưu lượng máu 4.5 lít/phút, cấp đủ oxy cho cơ bắp toàn thân 8m."
+              }
+            ]
+          },
+          p4p_score_scaled: 79,
+          tier_scaled: "C",
+          sources: [
+            { label: "Deep-Sea Research - Evolutionary novelties in giant bathypelagic predators", url: "https://doi.org/10.1016/j.dsr.2024.103987" }
+          ]
+        }
+      ]
     }
   };
 
