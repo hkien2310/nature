@@ -1,215 +1,206 @@
 [
   {
-    "id": "leaf-sheep",
-    "name": "Sên Biển Cừu Lá",
-    "scientificName": "Costasiella kuroshimae",
+    "id": "darwins-bark-spider",
+    "name": "Nhện Vỏ Cây Darwin",
+    "scientificName": "Caerostris darwini",
     "taxonomy": {
-      "class": "Gastropoda",
-      "order": "Sacoglossa",
-      "family": "Costasiellidae"
+      "class": "Arachnida",
+      "order": "Araneae",
+      "family": "Araneidae"
     },
-    "realWeight": "~0.01 g",
-    "size": "5 - 10 mm",
-    "characteristics": "Thân hình nhỏ dài khoảng 5-10mm, đầu màu trắng với hai xúc tu cảm giác giống đôi tai cừu và cặp mắt nhỏ màu đen sát nhau. Trên lưng phủ đầy các xúc tua (cerata) giống như lá cây chứa lục lạp màu xanh lục tươi với các đốm đỏ hoặc tím nhạt ở đầu xúc tua.",
-    "habitat": "Rạn san hô nông, thảm cỏ biển và vùng nước ấm ven bờ.",
-    "location": "Vùng biển quanh Nhật Bản (Kuroshima), Philippines và Indonesia.",
-    "survival_method": "Sống cộng sinh và ăn tảo xanh thuộc chi Avrainvillea. Khi ăn tảo, lục lạp không bị tiêu hóa mà được lưu trữ trong các mô cerata phân nhánh rộng khắp lưng. Trong điều kiện thiếu thức ăn, chúng nằm phơi mình dưới ánh mặt trời nông để tiến hành quang hợp tạo đường carbohydrate cung cấp năng lượng sinh tồn.",
-    "unique_traits": "Khả năng Kleptoplasty (trộm lục lạp) biến nó thành động vật quang hợp. Hệ thống cerata xếp tầng tăng diện tích tiếp xúc ánh sáng tối đa.",
-    "shortDescription": "Sinh vật lai thực vật có khả năng quang hợp. Nhỏ bé nhưng sở hữu cơ chế lấy lục lạp vô song.",
-    "description": "Sên Biển Cừu Lá là một trong những sinh vật kỳ lạ nhất đại dương với vẻ ngoài giống hệt một chú cừu nhỏ đang phát sáng. Điểm đặc biệt nhất của loài này là khả năng thực hiện Kleptoplasty - chúng ăn tảo xanh và giữ lại các lục lạp (chloroplasts) nguyên vẹn tích hợp vào tế bào cơ thể mình. Nhờ đó, chúng có thể quang hợp trực tiếp dưới ánh mặt trời để tạo ra năng lượng tự nuôi sống bản thân mà không cần ăn trong nhiều tháng. Đây là hiện tượng hiếm hoi khi một loài động vật hoạt động như một loài thực vật.",
+    "realWeight": "~0.5 g",
+    "size": "Con cái: 15 - 22 mm (thân), con đực: 5 - 6 mm",
+    "characteristics": "Màu sắc ngụy trang xám nâu xù xì giống như vỏ cây mục để ẩn nấp kẻ thù. Con cái có kích thước vượt trội hơn hẳn con đực (khoảng 3-4 lần). Lớp biểu bì sần sùi với các nốt lồi lõm mô phỏng vân gỗ hoàn hảo.",
+    "habitat": "Vùng ven sông, hồ nước và suối trong các khu rừng mưa nhiệt đới ẩm ướt.",
+    "location": "Đảo Madagascar.",
+    "survival_method": "Chăng những lưới nhện khổng lồ ngay trên mặt các dòng sông, hồ nước lớn để bẫy các côn trùng bay sát mặt nước như mối, muỗi, chuồn chuồn. Ngụy trang bất động trên vỏ cây vào ban ngày để trốn tránh chim săn mồi và kích hoạt hoạt động mạnh mẽ vào ban đêm.",
+    "unique_traits": "Sản sinh ra tơ nhện dẻo dai nhất thế giới được biết đến, với độ bền kéo cực đại (tensile strength) lên tới 1.6 GPa, dai hơn thép gấp nhiều lần và dai gấp đôi bất kỳ loại tơ nhện nào khác. Có thể phóng sợi tơ dài tới 25 mét để tạo cầu nối bắc ngang qua hai bờ sông lớn, dệt nên mạng lưới nhện khổng lồ có diện tích lên đến 2.8 mét vuông.",
+    "shortDescription": "Tơ nhện dai nhất thế giới, dệt lưới khổng lồ 2.8m² vượt sông 25m.",
+    "description": "Nhện vỏ cây Darwin là loài nhện sở hữu vũ khí dệt tơ đỉnh cao nhất của tự nhiên. Được phát hiện tại Madagascar năm 2009, loài nhện này có khả năng giăng lưới bắt mồi bắc ngang qua sông, suối – một địa bàn săn mồi mà không loài nhện nào khác khai thác được. Lưới của chúng được làm từ tơ sinh học siêu dẻo dai có thể hấp thụ năng lượng va đập gấp 3 lần sợi Kevlar (vật liệu làm áo chống đạn) trước khi đứt. Sức mạnh này giúp lưới của chúng không bị rách bởi gió mạnh hay những con mồi lớn, biến nó thành cái bẫy hoàn hảo.",
     "strengths": [
-      "Quang hợp tự dưỡng độc lập khi thiếu nguồn thức ăn trong tối đa 9 tháng",
-      "Ngụy trang hoàn hảo như một cụm tảo biển nhỏ trôi nổi để tránh kẻ thù",
-      "Khả năng tái sinh mạnh mẽ các cerata bị tổn thương hoặc bị đứt"
+      "Tơ nhện có độ dẻo dai vô địch thế giới, hấp thụ lực kéo cực lớn mà không đứt",
+      "Khả năng giăng mạng nhện vượt sông độc nhất vô nhị tạo địa bàn săn mồi độc quyền",
+      "Ngụy trang biến hình xuất sắc lẫn vào vỏ cây giúp ẩn mình tuyệt đối",
+      "Tốc độ phóng tơ cực nhanh và định vị gió để căng tơ điêu luyện"
     ],
     "weaknesses": [
-      "Kích thước quá nhỏ bé, dễ dàng bị cuốn trôi bởi dòng hải lưu mạnh",
-      "Phụ thuộc hoàn toàn vào loài tảo Avrainvillea để lấy lục lạp ban đầu",
-      "Không có vũ khí phòng thủ vật lý hay hóa học mạnh, dễ bị cá nhỏ ăn thịt"
+      "Sức mạnh cận chiến vật lý rất yếu, phụ thuộc hoàn toàn vào bẫy lưới",
+      "Kích thước nhỏ bé dễ bị các động vật lớn hơn dẫm đạp hoặc săn đuổi nếu rời khỏi lưới",
+      "Sự chênh lệch kích thước quá lớn khiến con đực dễ bị con cái ăn thịt trong mùa sinh sản"
     ],
     "funFacts": [
-      "Nó thường được gọi là 'Cừu Lá' vì có khuôn mặt ngộ nghĩnh giống chú cừu hoạt hình với hai chiếc 'tai' dài thực chất là cơ quan thụ cảm hóa học rhinophore",
-      "Quá trình quang hợp của nó tạo ra lượng oxy và đường tự nuôi cơ thể suốt mùa đông mà không cần bất kỳ thức ăn nào",
-      "Mặc dù là động vật nhưng khi quang hợp tích cực, nó giải phóng oxy bong bóng nhỏ li ti xung quanh lưng"
+      "Mạng nhện của chúng dai đến mức có thể bẫy được cả những con chim nhỏ hay dơi bay qua sông, dù mục tiêu chính của chúng là côn trùng",
+      "Nhện vỏ cây Darwin xây dựng những sợi tơ bắc cầu dài nhất trong thế giới động vật bằng cách phóng tơ ra không trung và để gió mang tơ sang bờ sông bên kia",
+      "Dù tạo ra công trình khổng lồ, bản thân con nhện cái chỉ nặng chưa đầy 1 gram và dài bằng đốt ngón tay"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1093/mollus/eyv018",
-        "label": "Journal of Molluscan Studies - Kleptoplasty in Sacoglossa"
+        "url": "https://doi.org/10.1371/journal.pone.0012686",
+        "label": "PLOS ONE - Bioprospecting Find of Giant Riverine Spider Webs"
       },
       {
-        "url": "https://www.nationalgeographic.com/animals/article/leaf-sheep-sea-slug-photosynthesis",
-        "label": "National Geographic - The Leaf Sheep Sea Slug"
+        "url": "https://doi.org/10.1038/ncomms1104",
+        "label": "Nature Communications - Extreme toughness of Darwin's bark spider silk"
       }
     ],
-    "imageColor": "#2ECC71",
+    "imageColor": "#8D6E63",
     "stats": {
-      "strength": 5,
-      "durability": 10,
-      "speed": 5,
-      "weaponry": 5,
-      "special": 95,
-      "lethality": 5
-    },
-    "diet_type": "herbivore",
-    "diet_items": ["tảo Avrainvillea", "tảo biển xanh"],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 6,
-    "lifespan_max": 12,
-    "lifespan_unit": "months",
-    "reproduction_type": "hermaphrodite",
-    "reproduction_notes": "Giao phối chéo lưỡng tính để trao đổi tinh trùng, sau đó cả hai cá thể đều đẻ các dải trứng hình xoắn ốc bám vào tảo.",
-    "locomotion": "crawl",
-    "speed_max": 0.05,
-    "conservation_status": "LC",
-    "size_min_mm": 5,
-    "size_max_mm": 10,
-    "weight_avg_g": 0.01,
-    "enrichment_count": 0,
-    "grading_count": 0,
-    "ai_p4p_score": 10,
-    "ai_tier": "D"
-  },
-  {
-    "id": "poison-dart-frog",
-    "name": "Ếch Phi Tiêu Độc Vàng",
-    "scientificName": "Phyllobates terribilis",
-    "taxonomy": {
-      "class": "Amphibia",
-      "order": "Anura",
-      "family": "Dendrobatidae"
-    },
-    "realWeight": "~3 g",
-    "size": "47 - 55 mm",
-    "characteristics": "Kích thước nhỏ nhắn khoảng 5cm, cơ thể thon gọn, da trơn láng có màu vàng chanh, vàng kim loại hoặc cam rực rỡ (màu cảnh báo xua đuổi kẻ thù - aposematism). Chân có các đĩa bám phát triển giúp leo trèo tốt.",
-    "habitat": "Rừng mưa nhiệt đới ẩm ướt tầm thấp ven biển với lượng mưa cực cao.",
-    "location": "Khu vực bờ biển Thái Bình Dương của Colombia.",
-    "survival_method": "Hoạt động tích cực vào ban ngày. Săn mồi chủ yếu trên mặt đất ẩm bằng cách sử dụng chiếc lưỡi dài dính bắt kiến, mối và côn trùng nhỏ. Chúng tự vệ hoàn toàn bằng cách tiết độc qua các tuyến da khi bị stress hoặc đe dọa.",
-    "unique_traits": "Sở hữu Batrachotoxin - chất độc thần kinh steroid alkaloid cực mạnh. Khả năng tích tụ độc tố từ chế độ ăn uống tự nhiên mà cơ thể không bị tự ngộ độc nhờ các kênh natri đột biến kháng độc.",
-    "shortDescription": "Sinh vật có nọc độc chết chóc nhất hành tinh. Một lượng độc nhỏ bằng hạt muối đủ hạ gục 10-20 người trưởng thành.",
-    "description": "Ếch Phi Tiêu Độc Vàng là loài động vật có độc tính cao nhất trên Trái Đất. Không giống như các sinh vật có nọc độc sử dụng răng nanh hay ngòi chích để tiêm độc, loài ếch này tích lũy chất độc cực mạnh Batrachotoxin qua da từ nguồn thức ăn là kiến độc và bọ cánh cứng trong tự nhiên. Chất độc này ngăn chặn các xung thần kinh truyền đến cơ bắp, gây co cơ vĩnh viễn và suy tim tức thì. Trong lịch sử, thổ dân Colombia đã sử dụng chất độc cạo từ lưng loài ếch này để tẩm vào các mũi phiêu thổi săn bắn.",
-    "strengths": [
-      "Độc tố Batrachotoxin cực mạnh bôi trơn toàn thân, không có kẻ thù tự nhiên nào dám đụng độ",
-      "Màu sắc sặc sỡ cảnh báo cực kỳ hiệu quả khiến hầu hết thú săn mồi chủ động né tránh",
-      "Khả năng kháng độc tuyệt đối của chính mình nhờ cấu trúc tế bào thần kinh biến dị"
-    ],
-    "weaknesses": [
-      "Mất dần độc tố khi nuôi nhốt hoặc không được ăn các loài côn trùng bản địa đặc thù chứa tiền chất độc",
-      "Phụ thuộc cao vào môi trường rừng mưa ẩm ướt nguyên sinh, rất nhạy cảm với ô nhiễm nguồn nước",
-      "Kích thước nhỏ bé, không có khả năng chiến đấu vật lý hoặc tự vệ bằng sức mạnh cơ bắp"
-    ],
-    "funFacts": [
-      "Một con ếch vàng trưởng thành chứa khoảng 1.900 microgam độc tố, chỉ cần 2 microgam là đủ để giết chết một người lớn nhanh chóng",
-      "Các mũi tên tẩm độc từ loài ếch này có thể duy trì độc tính chết người trong vòng 1-2 năm",
-      "Khác với các loài ếch khác nhút nhát, loài này rất tự tin đi lại công khai giữa ban ngày do ý thức được mình không thể bị ăn thịt"
-    ],
-    "sources": [
-      {
-        "url": "https://doi.org/10.1073/pnas.1702814114",
-        "label": "PNAS - Sodium channel mutations in poison dart frogs"
-      },
-      {
-        "url": "https://www.nationalgeographic.com/animals/amphibians/facts/golden-poison-frog",
-        "label": "National Geographic - Golden Poison Frog Reference"
-      }
-    ],
-    "imageColor": "#F1C40F",
-    "stats": {
-      "strength": 10,
-      "durability": 20,
-      "speed": 50,
-      "weaponry": 10,
-      "special": 100,
-      "lethality": 100
+      "strength": 20,
+      "durability": 55,
+      "speed": 60,
+      "weaponry": 95,
+      "special": 97,
+      "lethality": 70
     },
     "diet_type": "carnivore",
-    "diet_items": ["kiến độc", "bọ cánh cứng nhỏ", "mối", "ruồi"],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 5,
-    "lifespan_max": 10,
+    "diet_items": ["mối", "chuồn chuồn", "muỗi", "bướm đêm", "côn trùng nhỏ"],
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 1,
+    "lifespan_max": 2,
     "lifespan_unit": "years",
     "reproduction_type": "oviparous",
-    "reproduction_notes": "Đẻ trứng trên mặt đất ẩm. Sau khi trứng nở, con đực cõng nòng nọc trên lưng mang đến các vũng nước nhỏ trên lá cây bromeliad để nuôi dưỡng.",
-    "locomotion": "hybrid",
-    "speed_max": 5.0,
-    "conservation_status": "EN",
-    "size_min_mm": 47.0,
-    "size_max_mm": 55.0,
-    "weight_avg_g": 3.0,
-    "enrichment_count": 0,
-    "grading_count": 0,
-    "ai_p4p_score": 85,
-    "ai_tier": "A"
+    "reproduction_notes": "Con cái đẻ bọc trứng chứa hàng trăm trứng treo trên mạng nhện hoặc vỏ cây. Con cái thường ăn thịt con đực sau khi giao phối.",
+    "locomotion": "crawl",
+    "speed_max": 1.5,
+    "conservation_status": "LC",
+    "size_min_mm": 5.0,
+    "size_max_mm": 22.0,
+    "weight_avg_g": 0.3
   },
   {
-    "id": "trilobite-beetle",
-    "name": "Bọ Ba Thùy Cánh Cứng",
-    "scientificName": "Platerodrilus",
+    "id": "praying-mantis",
+    "name": "Bọ Ngựa Châu Âu",
+    "scientificName": "Mantis religiosa",
     "taxonomy": {
       "class": "Insecta",
-      "order": "Coleoptera",
-      "family": "Lycidae"
+      "order": "Mantodea",
+      "family": "Mantidae"
     },
-    "realWeight": "~5 g",
-    "size": "40 - 80 mm",
-    "characteristics": "Con cái dài 40-80mm, thân dẹt dẹt với các tấm giáp kitin chồng lên nhau màu đen hoặc nâu sẫm, viền màu cam hoặc đỏ tươi nổi bật. Đầu nhỏ có thể thụt vào trong lớp giáp ngực. Con đực rất nhỏ (5-9mm), có cánh và trông giống bọ cánh cứng bình thường.",
-    "habitat": "Tầng thảm mục, thân gỗ mục nát trong các khu rừng nhiệt đới ẩm thấp ẩm ướt.",
-    "location": "Đông Nam Á, đặc biệt là ở Việt Nam, Thái Lan, Malaysia, Indonesia.",
-    "survival_method": "Con cái bò chậm rãi trên nền rừng để ăn gỗ mục, nấm hoặc vi sinh vật. Khi bị đe dọa, nó cuộn tròn lại hoặc thụt đầu vào dưới lớp giáp dày để bảo vệ phần mềm, đồng thời tiết ra chất dịch có mùi khó chịu xua đuổi kẻ thù.",
-    "unique_traits": "Hình dáng neoteny của con cái giống hóa thạch sống kỷ Permi. Tấm giáp kitin siêu cứng cáp có thể chịu lực dẫm đạp lớn.",
-    "shortDescription": "Sinh vật tiến hóa neoteny giữ nguyên hình dạng giống như hóa thạch kỷ Permi cổ xưa.",
-    "description": "Bọ Ba Thùy Cánh Cứng là một loài côn trùng kỳ lạ thuộc họ bọ cánh cứng Lycidae. Điểm kỳ lạ nhất của loài này là sự khác biệt giới tính cực đoan (dị hình giới tính) do hiện tượng chậm phát triển (neoteny). Con cái duy trì hình dáng ấu trùng khổng lồ suốt đời với bộ giáp kitin dày dặn xếp lớp trông giống hệt loài bọ ba thùy (trilobite) đã tuyệt chủng từ 250 triệu năm trước. Trong khi đó, con đực phát triển đầy đủ thành bọ cánh cứng có cánh thông thường nhưng kích thước siêu nhỏ chỉ bằng 1/10 con cái (chỉ khoảng 5-8 mm).",
+    "realWeight": "~2 - 3 g",
+    "size": "5 - 7.5 cm",
+    "characteristics": "Màu xanh lá cây hoặc màu nâu nhạt giúp ngụy trang hoàn hảo trong các thảm cỏ. Đầu hình tam giác linh hoạt, có thể xoay 180 độ. Cặp chân trước biến đổi thành đôi kiếm sắc nhọn có gai nhọn (raptorial legs) để giữ chặt con mồi.",
+    "habitat": "Các đồng cỏ ôn đới, vườn cây, cây bụi và các thảm thực vật rậm rạp nhiều ánh nắng.",
+    "location": "Nguyên sản ở Châu Âu, Châu Á và Châu Phi; hiện nay đã du nhập rộng rãi vào Bắc Mỹ.",
+    "survival_method": "Là động vật ăn thịt phục kích đỉnh cao. Bất động chờ đợi con mồi đi qua rồi tung đòn kẹp sấm sét bằng cặp chân trước gai góc. Sử dụng thị lực lập thể 3D đặc sắc phát hiện khoảng cách con mồi chính xác.",
+    "unique_traits": "Khả năng xoay đầu linh hoạt 180 độ - điều độc nhất trong thế giới côn trùng. Tốc độ ra đòn tấn công bắt mồi nhanh như chớp chỉ trong vòng 50 miligiây (0.05 giây), nhanh hơn cả một cái nháy mắt của con người. Có thị lực đặc biệt nhờ hai mắt kép lớn phân bổ rộng, tạo ra góc nhìn lập thể 3D chiều sâu hoàn hảo.",
+    "shortDescription": "Võ sĩ phục kích tự nhiên. Phản xạ ra đòn kẹp kiếm sấm sét 50ms.",
+    "description": "Bọ Ngựa Châu Âu là võ sĩ săn mồi tàn bạo của thế giới côn trùng. Chúng nổi tiếng với tư thế 'cầu nguyện' đặc trưng, thực chất là tư thế thủ thế chuẩn bị phóng đôi chân trước đầy gai nhọn để ghim chặt con mồi. Nhờ khả năng ngụy trang giống hệt chiếc lá hoặc cành cỏ cùng phản xạ vận động siêu tốc, bọ ngựa là nỗi ác mộng của cào cào, ong, ruồi, thậm chí cả những loài động vật có xương sống nhỏ như ếch và chim nhỏ.",
     "strengths": [
-      "Bộ giáp kitin siêu dày xếp lớp bảo vệ hoàn hảo trước hàm của các loài săn mồi nhỏ",
-      "Tuyến tiết dịch mùi hôi và vị cực kỳ đắng xua đuổi chim và thằn lằn hiệu quả",
-      "Màu sắc cam-đen cảnh báo độ độc/đắng cao tự nhiên (aposematic coloration)"
+      "Tốc độ ra đòn bắt mồi cực nhanh dưới 50ms khiến con mồi không kịp phản ứng",
+      "Cặp chân trước trang bị gai nhọn ngược tạo lực kẹp khóa giữ con mồi chắc chắn",
+      "Tầm nhìn 3D lập thể tuyệt vời cùng khả năng quay đầu 180 độ quan sát toàn diện",
+      "Ngụy trang màu sắc lẫn vào lá cây đồng cỏ hoàn hảo để phục kích"
     ],
     "weaknesses": [
-      "Tốc độ di chuyển bò cực kỳ chậm chạp, không có cánh hay khả năng nhảy để trốn chạy nhanh",
-      "Sự chênh lệch kích thước quá lớn khiến việc tìm kiếm bạn đời và giao phối gặp nhiều khó khăn",
-      "Phụ thuộc chặt chẽ vào độ ẩm của rừng nguyên sinh nhiệt đới, dễ chết khi môi trường khô hạn"
+      "Cơ thể chitin mỏng manh dễ bị tổn thương vật lý nặng trước các loài chim, bò sát lớn",
+      "Chỉ mạnh ở cự ly gần và phục kích, không có khả năng đuổi theo con mồi chạy nhanh",
+      "Tập tính ăn thịt đồng loại khiến chúng luôn phải đề phòng chính đồng bào của mình"
     ],
     "funFacts": [
-      "Do con đực quá nhỏ bé và hiếm gặp, các nhà khoa học đã mất gần một thế kỷ kể từ khi phát hiện con cái mới tìm thấy một con đực đang giao phối để xác định loài",
-      "Khi muốn thu hút bạn đời, con cái nâng phần đuôi lên phát ra tín hiệu hóa học pheromone đặc trưng thu hút các con đực nhỏ bay xung quanh",
-      "Thiết kế lớp giáp của nó là niềm cảm hứng cho nhiều thiết kế áo giáp viễn tưởng thời trung cổ và hiện đại"
+      "Bọ ngựa là loài côn trùng duy nhất có khả năng quay đầu nhìn qua vai của chính mình mà không cần xoay cơ thể",
+      "Tỉ lệ con cái ăn thịt con đực trong hoặc sau khi giao phối trong tự nhiên chỉ khoảng 13-28%, thấp hơn nhiều so với quan niệm phổ biến, nhưng giúp con cái có lượng protein lớn để nuôi trứng",
+      "Hệ thống thị giác của bọ ngựa hoạt động bằng cách so sánh chuyển động của vật thể, giúp chúng phát hiện con mồi động cực nhạy nhưng lại bỏ qua vật thể đứng im"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1111/j.1096-3642.1925.tb01511.x",
-        "label": "Journal of Zoology - On the neotenic genus Platerodrilus"
+        "url": "https://doi.org/10.1016/j.cub.2018.01.008",
+        "label": "Current Biology - 3D Stereo Vision in Praying Mantises Study"
       },
       {
-        "url": "https://www.nationalgeographic.com/animals/article/trilobite-beetle-mating-singapore-malaysia",
-        "label": "National Geographic - The Strange World of Trilobite Beetles"
+        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/praying-mantis",
+        "label": "National Geographic - Praying Mantis Reference"
       }
     ],
-    "imageColor": "#D35400",
+    "imageColor": "#4CAF50",
     "stats": {
-      "strength": 25,
-      "durability": 85,
-      "speed": 10,
-      "weaponry": 15,
-      "special": 70,
-      "lethality": 15
+      "strength": 40,
+      "durability": 35,
+      "speed": 85,
+      "weaponry": 75,
+      "special": 80,
+      "lethality": 75
     },
-    "diet_type": "detritivore",
-    "diet_items": ["nấm", "chất hữu cơ phân hủy từ gỗ mục", "dịch cây"],
-    "activity_pattern": "nocturnal",
-    "lifespan_min": 1,
-    "lifespan_max": 3,
-    "lifespan_unit": "years",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Giao phối hữu tính cực đoan khi con đực nhỏ bé bám vào cơ thể khổng lồ của con cái. Sau khi thụ tinh, con cái đẻ trứng vào khe vỏ cây mục.",
-    "locomotion": "crawl",
-    "speed_max": 0.1,
+    "diet_type": "carnivore",
+    "diet_items": ["cào cào", "ruồi", "ong", "bướm", "thằn lằn nhỏ", "ếch nhỏ"],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "lifespan_unit": "months",
+    "reproduction_type": "oviparous",
+    "reproduction_notes": "Con cái đẻ bọt trứng xốp (ootheca) bám vào cành cây, bọt này sau đó khô cứng lại thành lớp vỏ bảo vệ trứng qua mùa đông lạnh giá.",
+    "locomotion": "hybrid",
+    "speed_max": 5.0,
     "conservation_status": "LC",
-    "size_min_mm": 40.0,
-    "size_max_mm": 80.0,
-    "weight_avg_g": 5.0,
-    "enrichment_count": 0,
-    "grading_count": 0,
-    "ai_p4p_score": 30,
-    "ai_tier": "C"
+    "size_min_mm": 50.0,
+    "size_max_mm": 75.0,
+    "weight_avg_g": 2.5
+  },
+  {
+    "id": "horseshoe-crab",
+    "name": "Sam Biển Đại Tây Dương",
+    "scientificName": "Limulus polyphemus",
+    "taxonomy": {
+      "class": "Merostomata",
+      "order": "Xiphosura",
+      "family": "Limulidae"
+    },
+    "realWeight": "~1.5 - 4.5 kg",
+    "size": "35 - 60 cm",
+    "characteristics": "Hình dạng giống chiếc mũ sắt tròn dẹt màu nâu sẫm, phần bụng có gai tự vệ và chiếc đuôi dài nhọn (telson). Có lớp vỏ giáp chitin dày cứng bao bọc toàn bộ cơ thể để chống đỡ lực đập.",
+    "habitat": "Vùng nước nông ven biển, cửa sông bãi cát bùn ấm áp của đại dương.",
+    "location": "Dọc theo bờ biển Đại Tây Dương của Bắc Mỹ từ Maine đến Vịnh Mexico.",
+    "survival_method": "Dùng chân bò chậm rãi dưới đáy cát, ủi bùn để săn các loại giun biển, động vật thân mềm nhỏ. Sử dụng chiếc đuôi nhọn để lật ngược cơ thể lại nếu bị sóng đánh lật úp.",
+    "unique_traits": "Sở hữu dòng máu màu xanh dương độc đáo do có hàm lượng đồng trong phân tử hemocyanin vận chuyển oxy. Máu chứa tế bào amebocyte cực nhạy với độc tố của vi khuẩn Gram âm, lập tức đông vón lại bao vây vi khuẩn chỉ trong vài giây để bảo vệ cơ thể khỏi nhiễm trùng. Là hóa thạch sống tồn tại hơn 450 triệu năm qua 5 đợt tuyệt chủng lớn mà không hề thay đổi hình dạng cấu trúc sinh học. Có tới 10 con mắt phân bổ khắp thân thể để dò hướng ánh sáng và định vị chu kỳ trăng.",
+    "shortDescription": "Hóa thạch sống 450 triệu năm. Máu xanh dương kháng khuẩn siêu tốc.",
+    "description": "Sam Biển Đại Tây Dương không phải là cua thực sự mà thuộc nhóm có họ hàng gần với nhện và bọ cạp hơn. Chúng được gọi là kỳ quan sinh học nhờ sự bền bỉ đáng kinh ngạc trước thời gian và dòng máu xanh quý giá vô ngần đối với y học hiện đại. Khi gặp vi khuẩn có hại, máu của chúng sẽ đông cục lại thành gel bao bọc lấy mầm bệnh, ngăn chặn sự lây lan. Do đó, máu sam được sử dụng để bào chế LAL, kiểm nghiệm độ vô trùng của mọi loại vắc-xin và thiết bị y tế trên thế giới.",
+    "strengths": [
+      "Lớp vỏ giáp chitin cực kỳ dày và chắc bảo vệ khỏi va đập vật lý dữ dội",
+      "Hệ thống miễn dịch bằng máu xanh phản ứng đông máu tức thì tiêu diệt vi khuẩn gây hại",
+      "Khả năng nhịn ăn uống và chịu đựng điều kiện nồng độ muối, oxy thay đổi cực hạn",
+      "Chiếc đuôi telson đóng vai trò đòn bẩy điều hướng cơ thể linh hoạt khi bị lật úp"
+    ],
+    "weaknesses": [
+      "Tốc độ di chuyển rất chậm chạp dưới nước và vụng về trên cạn",
+      "Không có vũ khí tấn công sát thương cao (càng hay nọc độc), phụ thuộc hoàn toàn vào phòng ngự vỏ giáp",
+      "Dễ bị mắc kẹt trên bãi cát nếu bị sóng đánh lật úp mà không có điểm tựa để đuôi telson tựa vào"
+    ],
+    "funFacts": [
+      "Dù có đuôi dài trông giống như một chiếc gai gai góc hung dữ, đuôi của sam biển hoàn toàn không có độc và không dùng để tấn công, mà chỉ để làm bánh lái và lật người lại",
+      "Mỗi năm, hàng trăm ngàn con sam được con người đánh bắt, trích lấy 30% lượng máu xanh phục vụ y tế rồi thả về biển khơi. Tỉ lệ sống sót sau khi hiến máu của chúng lên tới hơn 85%",
+      "Sam biển có 10 con mắt, bao gồm cả hai mắt kép lớn ở hai bên vỏ và nhiều cơ quan cảm quang dọc đuôi và dưới bụng giúp định vị ánh sáng mặt trăng để canh ngày sinh sản"
+    ],
+    "sources": [
+      {
+        "url": "https://www.frontiersin.org/articles/10.3389/fmars.2020.573571/full",
+        "label": "Frontiers in Marine Science - Horseshoe Crab Conservation and Biomedical Value"
+      },
+      {
+        "url": "https://www.nwf.org/Educational-Resources/Wildlife-Guide/Invertebrates/Horseshoe-Crab",
+        "label": "National Wildlife Federation - Horseshoe Crab Profile"
+      }
+    ],
+    "imageColor": "#5D4037",
+    "stats": {
+      "strength": 45,
+      "durability": 95,
+      "speed": 25,
+      "weaponry": 30,
+      "special": 90,
+      "lethality": 20
+    },
+    "diet_type": "omnivore",
+    "diet_items": ["giun biển", "nghêu nhỏ", "sò", "tảo biển", "xác động vật chết"],
+    "activity_pattern": "variable",
+    "lifespan_min": 20,
+    "lifespan_max": 40,
+    "lifespan_unit": "years",
+    "reproduction_type": "oviparous",
+    "reproduction_notes": "Con đực bám chặt vào lưng con cái. Con cái đào tổ dưới cát ven biển khi thủy triều dâng cao lúc trăng tròn và trăng non để đẻ hàng chục ngàn trứng, sau đó con đực tưới tinh trùng lên.",
+    "locomotion": "hybrid",
+    "speed_max": 1.0,
+    "conservation_status": "VU",
+    "size_min_mm": 350.0,
+    "size_max_mm": 600.0,
+    "weight_avg_g": 3000.0
   }
 ]
