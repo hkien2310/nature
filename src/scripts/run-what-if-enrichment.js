@@ -94,87 +94,87 @@ async function runEnrichment() {
 
   // 2. Define the scientific what-if profiles
   const whatIfScenarios = {
-    "blue-footed-booby": {
-      creature_id: "blue-footed-booby",
-      title: "Nếu Chim Điên Chân Xanh (Blue-footed Booby) phóng to bằng con người (80kg) thì sao?",
-      slug: "neu-chim-dien-chan-xanh-phong-to-bang-con-nguoi-80kg",
-      description: "Phân tích kịch bản giả thuyết khi loài chim điên chân xanh Sula nebouxi với đôi chân xanh rực rỡ và cơ chế lao đâm nước tốc độ cao phóng to lên 80kg.",
+    "horseshoe-crab": {
+      creature_id: "horseshoe-crab",
+      title: "Nếu Sam Biển Đại Tây Dương (Horseshoe Crab) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-sam-bien-dai-tay-duong-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài sam biển Limulus polyphemus với lớp vỏ giáp kiên cố và dòng máu xanh miễn dịch siêu cấp phóng to lên 80kg.",
       answers: [
         {
-          title: "Góc nhìn cơ học lý thuyết (Cú lao đâm nước chấn động và động năng phóng đại)",
-          slug: "chim-dien-chan-xanh-80kg-co-hoc-ly-thuyet",
+          title: "Góc nhìn cơ học lý thuyết (Lớp giáp thép Chitin kiên cố và lá chắn kháng khuẩn 5 lít)",
+          slug: "sam-bien-dai-tay-duong-80kg-co-hoc-ly-thuyet",
           perspective_type: "classic_scaling",
-          summary: "Cú cắm đầu lao xuống nước với vận tốc 126 km/h, động năng va chạm đạt 49 kJ giải phóng lực cản chấn động cực đại.",
-          content: "Khi Chim Điên Chân Xanh phóng to lên 80kg (chiều dài ~3m, sải cánh ~5.6m):\n- Vận tốc lao đâm nước cực đại: Trọng lượng tăng giúp nó có gia tốc rơi tự do lớn hơn trong không khí, tốc độ cắm đầu lao đạt tới 35 m/s (126 km/h).\n- Động năng va chạm khủng khiếp: Động năng va chạm khi cắm mặt xuống nước đạt mức 49 kJ. Lực xuyên phá này giúp nó đâm sâu xuống nước tới 15m, dễ dàng tiếp cận và săn các loài cá lớn dưới độ sâu lớn.\n- Đôi chân xanh phản quang: Diện tích chân màng tăng gấp 14 lần, sắc tố carotenoid xanh lam phát sáng mạnh phản chiếu ánh sáng mặt trời tạo thành thiết bị dụ mồi và giao tiếp dưới nước cực hiệu quả.",
+          summary: "Vỏ giáp dày 4.8mm chịu lực nén 15.100 N, 5 lít máu xanh cô lập 99.9% vi khuẩn trong 3 giây và 10 mắt quét quang phổ.",
+          content: "Khi Sam Biển Đại Tây Dương phóng to lên 80kg (chiều dài ~1.6m):\n- Lá chắn giáp Chitin tối thượng: Độ dày vỏ mai tăng cơ học lên 4.8mm. Cấu trúc vòm cong phân phối lực tuyệt hảo giúp vỏ chịu được lực nén ép trực tiếp lên tới 15.100 N không nứt vỡ.\n- Hệ thống tuần hoàn máu xanh cực mạnh: Sở hữu khoảng 5 lít máu màu xanh dương giàu hemocyanin vận chuyển oxy hiệu quả cao. Dòng máu chứa tế bào amebocyte đậm đặc sẽ đông vón ngay lập tức khi phát hiện nội độc tố vi khuẩn Gram âm, cô lập hoàn toàn vết thương hở trong vòng 3 giây.\n- Mắt quét quang học đa hướng: 10 con mắt phân bổ khắp cơ thể thu phóng tín hiệu ánh sáng cực tốt, thu được cả tia cực tím để định vị hoàn hảo trong môi trường bùn tối đáy biển.",
           formulas_and_data: {
-            scaling_factor: 53.33,
-            mass_kg_original: 1.5,
+            scaling_factor: 32,
+            mass_kg_original: 2.5,
             mass_kg_scaled: 80,
             formulas: [
               {
-                name: "Động năng va chạm lúc chạm mặt nước",
-                equation: "E_k = 0.5 * m * v^2",
-                result: "~49,000 J (49 kJ) ở tốc độ 35 m/s"
+                name: "Độ dày vỏ mai giáp chịu lực",
+                equation: "T_scaled = T_orig * (M_scaled / M_orig)^(1/3)",
+                result: "~4.8 mm"
               },
               {
-                name: "Gia tốc va chạm danh định",
-                equation: "a = v^2 / (2 * d) (dừng dưới nước sâu 2m)",
-                result: "~306.25 m/s² (~31.2g)"
+                name: "Lực nén nứt vỡ mai giáp lý thuyết",
+                equation: "F_crack_scaled = F_crack_orig * (M_scaled / M_orig)^(2/3)",
+                result: "~15,100 N (Chịu áp lực nén cực lớn)"
+              }
+            ]
+          },
+          p4p_score_scaled: 86,
+          tier_scaled: "B",
+          sources: [
+            { label: "Frontiers in Marine Science - Horseshoe Crab Conservation and Biomedical Value", url: "https://www.nwf.org/Educational-Resources/Wildlife-Guide/Invertebrates/Horseshoe-Crab" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Cái chết ngạt trên cạn và sự tê liệt do trọng lượng giáp đè nặng)",
+          slug: "sam-bien-dai-tay-duong-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Các lá mang sách xẹp dính dấp gây ngạt thở cấp trong 5 phút, và 6 cặp chân gãy gập không thể bò do trọng lượng giáp 48kg.",
+          content: "Trong thế giới thực tế sinh học vật lý, sam biển 80kg sẽ nhanh chóng tử vong:\n- Suy hô hấp mang sách: Mang sách của sam biển gồm các lá mỏng xếp chồng. Khi phóng to lên 80kg trên cạn, trọng lực và sức căng bề mặt làm các lá mang dính chặt vào nhau, làm giảm 98% diện tích tiếp xúc khí quyển, khiến sam ngạt thở hoàn toàn sau 5 phút.\n- Bất động do quá nặng: Bộ vỏ giáp khổng lồ nặng tới 48kg. Tuy nhiên, 6 cặp chân nhỏ bé chỉ tăng diện tích cắt ngang cơ 10 lần trong khi khối lượng cần nâng tăng 32 lần. Áp suất cơ học nén gãy khớp chân và sam biển bị liệt vĩnh viễn trên cát.\n- Tuần hoàn hở sụp đổ: Tim dạng ống dài không đủ áp lực đẩy hemocyanin qua các xoang cơ thể lớn của sinh vật 80kg.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất uốn khớp chân bò",
+                issue: "Ứng suất cơ học lên chân đạt 45 MPa, vượt giới hạn bền kéo 12 MPa của chitin khớp chân."
+              },
+              {
+                type: "Suy giảm diện tích hô hấp mang sách",
+                issue: "Tỉ lệ S/V trao đổi khí giảm 3.2 lần kết hợp hiện tượng xẹp dính mang làm lưu lượng oxy giảm xuống dưới 2% mức cần thiết."
+              }
+            ]
+          },
+          p4p_score_scaled: 14,
+          tier_scaled: "D",
+          sources: [
+            { label: "Biology and Conservation of Horseshoe Crabs", url: "https://doi.org/10.1007/978-0-387-89959-6" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khớp chân bionic gia cường silica và mang sách áp suất operculum chủ động)",
+          slug: "sam-bien-dai-tay-duong-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Chân bò hóa khoáng silica chịu lực 2.500 N, operculum co bóp cưỡng bức khí nén mang sách, và amebocyte tiết kháng sinh không đông máu.",
+          content: "Để sinh tồn ở kích thước 80kg, sam biển tiến hóa các đột biến thích nghi đột phá:\n- Chân bò bionic gia cường khoáng chất: Lớp cutin ở khớp chân được khoáng hóa bằng silica và carbon vô định hình, tăng độ bền uốn kéo lên 350 MPa, giúp chân nâng đỡ hoàn toàn cơ thể 80kg.\n- Mang sách co bóp chủ động: Tiến hóa các vách sụn đàn hồi ngăn mang sách xẹp dính, kết hợp operculum co bóp chủ động như cơ hoành để thông khí cưỡng bức liên tục.\n- Amebocyte tiết Peptide kháng khuẩn (AMPs): Thay vì đông vón máu cục bộ gây tắc mạch, các tế bào amebocyte tiết kháng sinh mạnh mẽ tiêu diệt vi khuẩn Gram âm tức thì, bảo vệ an toàn hệ tuần hoàn hở lớn.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Khớp chân khoáng hóa silica",
+                benefit: "Chịu lực tải trọng động tĩnh lên tới 2.500 N mỗi chân mà không bị gãy gập."
+              },
+              {
+                type: "Thông khí mang sách cưỡng bức",
+                benefit: "Duy trì dòng lưu thông nước/khí 35 lít/phút đáp ứng đủ oxy cho cơ thể hoạt động."
               }
             ]
           },
           p4p_score_scaled: 82,
           tier_scaled: "B",
           sources: [
-            { label: "Plunge-diving mechanics and aerodynamics in boobies", url: "https://doi.org/10.1371/journal.pone.0073248" }
-          ]
-        },
-        {
-          title: "Giới hạn sinh học thực tế (Chấn thương sọ não va đập và bất lực cất cánh thủy phi cơ)",
-          slug: "chim-dien-chan-xanh-80kg-sinh-hoc-thuc-te",
-          perspective_type: "biological_reality",
-          summary: "Gãy cổ lập tức do xung lực va chạm nước 24.500 N, và không thể cất cánh do wing loading vượt quá ngưỡng giới hạn khí động học.",
-          content: "Trong thế giới thực tế sinh học vật lý, chim điên chân xanh 80kg sẽ chết ngay lập tức:\n- Sụp đổ đốt sống cổ: Khi va chạm với nước ở tốc độ 35 m/s, lực dừng va đập lên tới 24.500 N. Do xương cổ chỉ tăng diện tích mặt cắt ngang 14 lần (trong khi khối lượng tăng 53.3 lần), áp suất cơ học đè nặng lên đốt sống cổ vượt quá giới hạn nứt vỡ của xương, khiến chim gãy cổ và dập não ngay lập tức.\n- Bất lực bay lượn (Wing Loading limit): Tải trọng cánh tăng vọt từ 6 kg/m² lên 22.8 kg/m². Chim cần một vận tốc cất cánh chạy đà trên mặt nước tối thiểu 90 km/h để tạo đủ lực nâng, điều bất khả thi với sải cánh cồng kềnh, khiến chim bị mắc kẹt vĩnh viễn trên mặt nước và chết đuối hoặc bị kẻ săn mồi ăn thịt.",
-          formulas_and_data: {
-            limitations: [
-              {
-                type: "Ứng suất cơ học lên đốt sống cổ",
-                issue: "Lực va đập 24,500 N tạo ra áp suất nén 18 MPa trên các đốt sống cổ mỏng, vượt xa giới hạn chịu nén 6 MPa của xương chim."
-              },
-              {
-                type: "Vượt ngưỡng tải trọng cánh khí động học",
-                issue: "Tải trọng cánh tăng gấp 3.8 lần, nâng tốc độ stall speed (tốc độ cất cánh tối thiểu) lên 25 m/s (90 km/h), vượt quá khả năng đập cánh cơ học."
-              }
-            ]
-          },
-          p4p_score_scaled: 18,
-          tier_scaled: "D",
-          sources: [
-            { label: "Biomechanical constraints on plunge-diving seabirds", url: "https://doi.org/10.1098/rsif.2016.0371" }
-          ]
-        },
-        {
-          title: "Đột biến thích nghi (Hệ xương rỗng gia cường composite và túi khí giảm xóc phản lực)",
-          slug: "chim-dien-chan-xanh-80kg-dot-bien-thich-nghi",
-          perspective_type: "evolutionary_mutation",
-          summary: "Hệ thống xương cổ xốp rỗng đàn hồi hấp thụ 95% lực va lập, túi khí dưới da sọ phát triển thành bộ đệm khí nén phản lực nâng.",
-          content: "Để sống sót và săn mồi ở kích thước 80kg, chim điên chân xanh tiến hóa các đột biến ấn tượng:\n- Xương cổ cấu trúc bionic xốp đàn hồi (Elastic Trabecular Neck): Cột sống cổ tiến hóa cấu trúc xốp với các vách ngăn composite giàu collagen, hoạt động như các lò xo giảm chấn phân phối xung lực va chạm 24.500 N mà không gây tổn hại cột sống.\n- Đệm khí nén nổ dưới da (Pneumatic Shock-absorbing Shield): Các túi khí dưới da đầu và ngực phát triển dày đặc, co bóp nén khí chủ động khi cắm đầu xuống nước tạo ra một lớp đệm bọt khí bao quanh cơ thể, giảm lực cản ma sát và lực đập nước xuống dưới 3.000 N.\n- Cất cánh phản lực túi khí (Air-sac Jet Takeoff): Chim phóng luồng khí nén lưu trữ trong các túi khí ngực qua khóe miệng và lỗ thở đặc biệt ở chân để tạo lực đẩy phụ trợ phóng mình khỏi mặt nước nhanh chóng.",
-          formulas_and_data: {
-            mutations: [
-              {
-                type: "Cấu trúc xương cổ trabecular composite",
-                benefit: "Hấp thụ xung lực va chạm lên tới 25,000 N nhờ biến dạng đàn hồi an toàn."
-              },
-              {
-                type: "Lớp đệm bọt khí nén giảm chấn",
-                benefit: "Hạ áp suất va chạm nước từ 18 MPa xuống còn 1.2 MPa, bảo vệ an toàn các mô cơ quan."
-              }
-            ]
-          },
-          p4p_score_scaled: 80,
-          tier_scaled: "B",
-          sources: [
-            { label: "Woodpecker-inspired shock absorption in plunge-diving vertebrates", url: "https://doi.org/10.1016/j.jmbbm.2018.06.015" }
+            { label: "Biomimetic structural materials inspired by marine invertebrates", url: "https://doi.org/10.1016/j.mattod.2019.04.015" }
           ]
         }
       ]
