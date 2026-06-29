@@ -1,211 +1,215 @@
 [
   {
-    "id": "saharan-silver-ant",
-    "name": "Kiến Bạc Sahara",
-    "scientificName": "Cataglyphis bombycina",
+    "id": "leaf-sheep",
+    "name": "Sên Biển Cừu Lá",
+    "scientificName": "Costasiella kuroshimae",
     "taxonomy": {
-      "class": "Insecta",
-      "order": "Hymenoptera",
-      "family": "Formicidae"
+      "class": "Gastropoda",
+      "order": "Sacoglossa",
+      "family": "Costasiellidae"
     },
-    "realWeight": "~0.02 g",
-    "size": "8 - 12 mm",
-    "characteristics": "Thân hình nhỏ bé với bộ chân dài đặc trưng giúp nâng cơ thể lên khỏi mặt cát nóng. Điểm nổi bật nhất là lớp lông dày đặc, màu bạc óng ánh phủ toàn thân, hoạt động như những cấu trúc lăng trụ tam giác siêu vi để phản xạ ánh sáng và tản nhiệt.",
-    "habitat": "Những cồn cát nóng bỏng và sa mạc khắc nghiệt của sa mạc Sahara.",
-    "location": "Bắc Phi, đặc biệt là vùng sa mạc Sahara.",
-    "survival_method": "Chỉ săn mồi trong khung giờ cực hạn giữa trưa (khoảng 10-15 phút khi nhiệt độ cát lên tới 70°C), lúc mà mọi loài bò sát săn mồi đều phải trốn tránh cái nắng. Chúng chạy liên tục để tìm xác các loại côn trùng đã chết vì nóng.",
-    "unique_traits": "Cơ thể được bảo vệ bởi lớp lông bạc phản xạ tia hồng ngoại và bức xạ nhiệt. Có khả năng chạy với vận tốc cực đại 0.855 m/s, tương đương 200 lần chiều dài cơ thể mỗi giây (tương đương với một người chạy 1500 km/h). Sử dụng protein sốc nhiệt (HSP) để bảo vệ các tế bào khỏi bị đông vón trước khi rời tổ.",
-    "shortDescription": "Sinh vật chạy nhanh nhất thế giới theo tỷ lệ cơ thể. Chịu nhiệt độ cát cực hạn 70°C nhờ giáp lông bạc lăng kính.",
-    "description": "Kiến Bạc Sahara là một trong những kỳ quan tiến hóa vĩ đại nhất của sự thích nghi với môi trường sống khắc nghiệt. Khi toàn bộ sa mạc Sahara chìm trong cái nóng chết người vào giữa trưa, loài kiến này lại bắt đầu cuộc đi săn đầy táo bạo của mình. Để sinh tồn, chúng sở hữu cấu trúc lông độc nhất vô nhị: mỗi sợi lông có tiết diện tam giác đều, phản xạ hoàn hảo toàn bộ quang phổ ánh sáng mặt trời và giải phóng nhiệt lượng dư thừa ra môi trường. Ngoài ra, tốc độ di chuyển siêu việt của chúng giúp giảm thiểu thời gian tiếp xúc của đôi chân với cát nóng.",
+    "realWeight": "~0.01 g",
+    "size": "5 - 10 mm",
+    "characteristics": "Thân hình nhỏ dài khoảng 5-10mm, đầu màu trắng với hai xúc tu cảm giác giống đôi tai cừu và cặp mắt nhỏ màu đen sát nhau. Trên lưng phủ đầy các xúc tua (cerata) giống như lá cây chứa lục lạp màu xanh lục tươi với các đốm đỏ hoặc tím nhạt ở đầu xúc tua.",
+    "habitat": "Rạn san hô nông, thảm cỏ biển và vùng nước ấm ven bờ.",
+    "location": "Vùng biển quanh Nhật Bản (Kuroshima), Philippines và Indonesia.",
+    "survival_method": "Sống cộng sinh và ăn tảo xanh thuộc chi Avrainvillea. Khi ăn tảo, lục lạp không bị tiêu hóa mà được lưu trữ trong các mô cerata phân nhánh rộng khắp lưng. Trong điều kiện thiếu thức ăn, chúng nằm phơi mình dưới ánh mặt trời nông để tiến hành quang hợp tạo đường carbohydrate cung cấp năng lượng sinh tồn.",
+    "unique_traits": "Khả năng Kleptoplasty (trộm lục lạp) biến nó thành động vật quang hợp. Hệ thống cerata xếp tầng tăng diện tích tiếp xúc ánh sáng tối đa.",
+    "shortDescription": "Sinh vật lai thực vật có khả năng quang hợp. Nhỏ bé nhưng sở hữu cơ chế lấy lục lạp vô song.",
+    "description": "Sên Biển Cừu Lá là một trong những sinh vật kỳ lạ nhất đại dương với vẻ ngoài giống hệt một chú cừu nhỏ đang phát sáng. Điểm đặc biệt nhất của loài này là khả năng thực hiện Kleptoplasty - chúng ăn tảo xanh và giữ lại các lục lạp (chloroplasts) nguyên vẹn tích hợp vào tế bào cơ thể mình. Nhờ đó, chúng có thể quang hợp trực tiếp dưới ánh mặt trời để tạo ra năng lượng tự nuôi sống bản thân mà không cần ăn trong nhiều tháng. Đây là hiện tượng hiếm hoi khi một loài động vật hoạt động như một loài thực vật.",
     "strengths": [
-      "Lớp lông bạc phản xạ nhiệt siêu việt giúp chịu được nhiệt độ lên tới 70°C",
-      "Tốc độ di chuyển nhanh vượt trội so với kích thước cơ thể (0.855 m/s)",
-      "Cơ chế tự bảo vệ tế bào bằng protein sốc nhiệt (HSP) cực mạnh",
-      "Đôi chân dài giúp nâng cao cơ thể khỏi lớp khí nóng sát mặt cát"
+      "Quang hợp tự dưỡng độc lập khi thiếu nguồn thức ăn trong tối đa 9 tháng",
+      "Ngụy trang hoàn hảo như một cụm tảo biển nhỏ trôi nổi để tránh kẻ thù",
+      "Khả năng tái sinh mạnh mẽ các cerata bị tổn thương hoặc bị đứt"
     ],
     "weaknesses": [
-      "Giới hạn thời gian hoạt động cực ngắn (dưới 10 phút ngoài tổ), nếu quá giờ sẽ chết vì kiệt sức hoặc bị thiêu đốt",
-      "Kích thước quá nhỏ bé, dễ bị tổn thương nếu đụng độ vật lý với các loài săn mồi lớn hơn",
-      "Thị lực hạn chế, chủ yếu định hướng bằng mùi và mặt trời"
+      "Kích thước quá nhỏ bé, dễ dàng bị cuốn trôi bởi dòng hải lưu mạnh",
+      "Phụ thuộc hoàn toàn vào loài tảo Avrainvillea để lấy lục lạp ban đầu",
+      "Không có vũ khí phòng thủ vật lý hay hóa học mạnh, dễ bị cá nhỏ ăn thịt"
     ],
     "funFacts": [
-      "Nếu một người có tốc độ chạy theo tỷ lệ cơ thể giống như Kiến Bạc Sahara, người đó có thể chạy với vận tốc khoảng 1.500 km/h, vượt qua cả tốc độ âm thanh.",
-      "Để tránh bỏng chân trên cát nóng 70°C, loài kiến này thực sự sử dụng kỹ thuật phi nước kiệu, nhấc đồng thời cả 6 chân khỏi mặt đất ở tốc độ cao, trông giống như đang bay lướt trên cát.",
-      "Chúng định vị đường về tổ bằng cách đếm số bước đi và sử dụng góc phân cực của ánh sáng mặt trời để không bị lạc giữa sa mạc không có vật định hướng."
+      "Nó thường được gọi là 'Cừu Lá' vì có khuôn mặt ngộ nghĩnh giống chú cừu hoạt hình với hai chiếc 'tai' dài thực chất là cơ quan thụ cảm hóa học rhinophore",
+      "Quá trình quang hợp của nó tạo ra lượng oxy và đường tự nuôi cơ thể suốt mùa đông mà không cần bất kỳ thức ăn nào",
+      "Mặc dù là động vật nhưng khi quang hợp tích cực, nó giải phóng oxy bong bóng nhỏ li ti xung quanh lưng"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1126/science.aax4437",
-        "label": "Science - Thermoregulation and Saharan Silver Ant Physiology"
+        "url": "https://doi.org/10.1093/mollus/eyv018",
+        "label": "Journal of Molluscan Studies - Kleptoplasty in Sacoglossa"
       },
       {
-        "url": "https://doi.org/10.1242/jeb.198630",
-        "label": "Journal of Experimental Biology - Locomotion and speed of Cataglyphis bombycina"
+        "url": "https://www.nationalgeographic.com/animals/article/leaf-sheep-sea-slug-photosynthesis",
+        "label": "National Geographic - The Leaf Sheep Sea Slug"
       }
     ],
-    "imageColor": "#D1D8E0",
-    "diet_type": "carnivore",
-    "diet_items": ["xác côn trùng", "ấu trùng", "nhện chết khô"],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 1,
-    "lifespan_max": 3,
-    "lifespan_unit": "months",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Kiến chúa đẻ trứng trong các căn phòng sâu dưới lòng đất (sâu tới 2m để tránh nóng), được kiến thợ chăm sóc nghiêm ngặt.",
-    "locomotion": "walk",
-    "speed_max": 3.08,
-    "conservation_status": "LC",
-    "size_min_mm": 8.0,
-    "size_max_mm": 12.0,
-    "weight_avg_g": 0.02,
+    "imageColor": "#2ECC71",
     "stats": {
-      "strength": 15,
-      "durability": 85,
-      "speed": 98,
-      "weaponry": 10,
-      "special": 95,
-      "lethality": 15
-    },
-    "ai_p4p_score": 72,
-    "ai_tier": "B"
-  },
-  {
-    "id": "giraffe-weevil",
-    "name": "Mọt Cổ Dài Giraffe",
-    "scientificName": "Trachelophorus giraffa",
-    "taxonomy": {
-      "class": "Insecta",
-      "order": "Coleoptera",
-      "family": "Attelabidae"
-    },
-    "realWeight": "~0.15 g",
-    "size": "15 - 25 mm",
-    "characteristics": "Thân mình màu đen óng với cặp cánh cứng (elytra) màu đỏ rực rỡ nổi bật. Đặc trưng độc đáo nhất là chiếc cổ cực dài, đặc biệt ở con đực cổ có thể dài gấp 3 lần cổ của con cái, có khớp nối linh hoạt như một chiếc bản lề dài.",
-    "habitat": "Các khu rừng cận nhiệt đới ấm áp và ẩm ướt của vùng quốc đảo Madagascar.",
-    "location": "Đặc hữu của đảo Madagascar.",
-    "survival_method": "Sống trên các cành lá của loài cây Dichaetanthera arborea. Con đực sử dụng chiếc cổ dài để chiến đấu, đẩy ngã đối thủ khỏi cành cây trong những trận chiến tranh giành quyền giao phối. Con cái sử dụng chiếc cổ ngắn hơn để cuộn lá cây làm tổ.",
-    "unique_traits": "Chiếc cổ siêu dài tiến hóa dị thường đóng vai trò là vũ khí cơ học hiệu quả. Tập tính cuốn lá cực kỳ khéo léo và phức tạp: con cái cắt lá cây theo các đường hình học chính xác, cuộn nó thành một ống tròn chặt chẽ để đẻ trứng bên trong, bảo vệ ấu trùng khỏi côn trùng săn mồi.",
-    "shortDescription": "Chiếc cổ dài gấp 3 lần thân ở con đực để đấu vật. Kỹ sư cuốn lá làm tổ đặc hữu Madagascar.",
-    "description": "Mọt Cổ Dài Giraffe là loài côn trùng đặc hữu vô cùng độc đáo của Madagascar. Tên của loài bắt nguồn từ chiếc cổ dài ngoạn mục của con đực, một ví dụ kinh điển của chọn lọc tình dục. Chiếc cổ dài này không dùng để ăn ở trên cao mà là một vũ khí hạng nặng để quật ngã các đối thủ đực khác. Điểm ấn tượng khác là quy trình kiến trúc làm tổ của con cái: nó sử dụng hàm cắt một chiếc lá dọc theo gân chính, gấp nó lại một cách có hệ thống để tạo nên chiếc tổ cuộn hoàn mỹ, bảo vệ quả trứng duy nhất khỏi các loài ký sinh trùng.",
-    "strengths": [
-      "Chiếc cổ đòn bẩy cơ học mạnh mẽ giúp đẩy ngã đối thủ dễ dàng",
-      "Lớp cánh cứng (elytra) bảo vệ thân thể chắc chắn khỏi va đập",
-      "Cơ chế xây tổ cuộn lá kỹ thuật cao, bảo vệ trứng và ấu trùng an toàn tuyệt đối",
-      "Đôi chân bám giữ cực chắc vào bề mặt lá cây"
-    ],
-    "weaknesses": [
-      "Chỉ ăn một loài cây duy nhất (Dichaetanthera arborea), cực kỳ nhạy cảm với mất môi trường sống",
-      "Bay chậm chạp và dễ bị phát hiện do màu sắc đỏ đen tương phản mạnh",
-      "Tầm nhìn hạn chế và không có khả năng tự vệ bằng hóa chất hay nọc độc"
-    ],
-    "funFacts": [
-      "Quy trình cuộn lá của con cái mất khoảng vài tiếng đồng hồ và đòi hỏi sự khéo léo đến kinh ngạc: chiếc lá phải được cuộn chặt đến mức không bị bung ra ngay cả khi rơi từ trên cây xuống đất dưới tác động của mưa gió.",
-      "Chiếc cổ dài của con đực có một khớp bản lề đặc biệt ở gốc đầu giúp nó có thể gật đầu hoặc quay đầu một cách linh hoạt, một đặc điểm rất hiếm thấy ở các loài côn trùng cánh cứng.",
-      "Chúng hoàn toàn vô hại với con người và không cắn hay chích, toàn bộ năng lượng đấu tranh chỉ dành cho các cuộc so tài nội bộ."
-    ],
-    "sources": [
-      {
-        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/giraffe-weevil",
-        "label": "National Geographic - Giraffe Weevil profile"
-      },
-      {
-        "url": "https://doi.org/10.1111/j.1469-7998.2011.00844.x",
-        "label": "Journal of Zoology - Sexual selection and morphology of Trachelophorus giraffa"
-      }
-    ],
-    "imageColor": "#FF3F34",
-    "diet_type": "herbivore",
-    "diet_items": ["lá cây Dichaetanthera arborea", "nhựa cây"],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 1,
-    "lifespan_max": 2,
-    "lifespan_unit": "years",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Con cái đẻ trứng vào chiếc lá cuộn, trứng phát triển bên trong lá rơi rụng dưới đất ẩm và ăn chính lớp lá đó để lớn lên.",
-    "locomotion": "hybrid",
-    "speed_max": 2.5,
-    "conservation_status": "LC",
-    "size_min_mm": 15.0,
-    "size_max_mm": 25.0,
-    "weight_avg_g": 0.15,
-    "stats": {
-      "strength": 30,
-      "durability": 45,
-      "speed": 35,
-      "weaponry": 25,
-      "special": 80,
-      "lethality": 10
-    },
-    "ai_p4p_score": 48,
-    "ai_tier": "D"
-  },
-  {
-    "id": "golden-tortoise-beetle",
-    "name": "Bọ Rùa Vàng",
-    "scientificName": "Charidotella sexpunctata",
-    "taxonomy": {
-      "class": "Insecta",
-      "order": "Coleoptera",
-      "family": "Chrysomelidae"
-    },
-    "realWeight": "~0.05 g",
-    "size": "5 - 8 mm",
-    "characteristics": "Thân hình tròn dẹt trông giống một chiếc mai rùa nhỏ. Phần rìa ngoài của cánh cứng và ngực phẳng ra tạo thành lớp màng trong suốt như pha lê. Phần trung tâm có khả năng chuyển màu từ vàng kim lấp lánh sang đỏ sẫm đốm đen.",
-    "habitat": "Các khu vườn, cánh đồng cỏ ẩm ướt và khu vực trồng khoai lang, bìm bìm.",
-    "location": "Bản địa của khu vực Bắc Mỹ.",
-    "survival_method": "Ngụy trang trên mặt dưới của lá cây. Khi bị đe dọa hoặc khi mùa giao phối bắt đầu, chúng thay đổi màu sắc nhanh chóng để đánh lạc hướng kẻ săn mồi hoặc thu hút bạn tình. Ấu trùng của chúng sử dụng lớp che chắn bằng phân để tránh bị kiến và chim tấn công.",
-    "unique_traits": "Cơ chế đổi màu động nhờ biến đổi sinh-lý-học (physiological color change): thay đổi thể tích nước trong lớp biểu bì giúp phản xạ ánh sáng qua cấu trúc nano (structural color). Lớp giáp màng trong suốt bao bọc xung quanh giúp chúng ép chặt vào lá cây tạo áp lực hút chống bị thổi bay.",
-    "shortDescription": "Ngụy trang bằng khả năng chuyển đổi màu sắc vàng kim sang đỏ đốm đen trong vài phút nhờ cấu trúc nano vỏ.",
-    "description": "Bọ Rùa Vàng là một trong những loài côn trùng có vẻ đẹp lộng lẫy và độc đáo nhất Bắc Mỹ. Cơ thể của nó được ví như một viên đá quý di động nhờ khả năng thay đổi màu sắc kỳ diệu. Không giống tắc kè hoa dùng tế bào sắc tố, loài bọ này thay đổi màu bằng cách bơm hoặc rút chất lỏng qua các tầng cấu trúc siêu vi của cánh cứng. Khi chất lỏng đầy, bề mặt trơn nhẵn phản xạ ánh sáng tạo ra màu vàng kim lấp lánh như vàng ròng. Khi gặp nguy hiểm, chất lỏng rút đi lộ ra màu đỏ cam xỉn với các đốm đen như một lời cảnh báo độc hại hoặc giả chết.",
-    "strengths": [
-      "Khả năng thay đổi màu sắc cực nhanh để ngụy trang và xua đuổi kẻ thù",
-      "Lớp vỏ rìa trong suốt tạo sức bám hút chặt vào mặt lá cây",
-      "Cánh cứng dày bảo vệ vùng cơ quan nội tạng quan trọng"
-    ],
-    "weaknesses": [
-      "Kích thước siêu nhỏ, rất dễ làm mồi cho các loài chim, lưỡng cư và nhện lớn",
-      "Bay yếu và phạm vi di chuyển hạn chế quanh loài cây ký sinh",
-      "Ấu trùng phụ thuộc nhiều vào việc mang phân để ngụy trang, nếu mất lớp bảo vệ này sẽ rất dễ chết"
-    ],
-    "funFacts": [
-      "Khi chết, bọ rùa vàng sẽ vĩnh viễn mất đi màu vàng kim óng ánh của mình, chuyển sang màu nâu đỏ xỉn vì cơ thể không còn sự tuần hoàn chất lỏng sống để tạo cấu trúc phản quang.",
-      "Chúng có thể đổi màu chỉ trong vòng 2 đến 3 phút khi bị kích thích, ví dụ như khi bị nhà khoa học cầm lên tay.",
-      "Màu đỏ đốm đen của chúng bắt chước loài bọ rùa độc (Coccinellidae) để cảnh báo chim săn mồi rằng 'tôi không ngon lành đâu'."
-    ],
-    "sources": [
-      {
-        "url": "https://doi.org/10.1098/rsif.2007.1322",
-        "label": "Journal of the Royal Society Interface - Structural color changes in Charidotella sexpunctata"
-      },
-      {
-        "url": "https://bugguide.net/node/view/8911",
-        "label": "BugGuide - Golden Tortoise Beetle Information"
-      }
-    ],
-    "imageColor": "#FFD700",
-    "diet_type": "herbivore",
-    "diet_items": ["lá cây bìm bìm", "lá khoai lang", "nhựa cây"],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 3,
-    "lifespan_max": 6,
-    "lifespan_unit": "months",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Đẻ trứng thành những bọc nhỏ dính chặt vào mặt sau lá bìm bìm, ấu trùng lớn lên qua 5 giai đoạn lột xác trước khi hóa nhộng.",
-    "locomotion": "hybrid",
-    "speed_max": 1.8,
-    "conservation_status": "LC",
-    "size_min_mm": 5.0,
-    "size_max_mm": 8.0,
-    "weight_avg_g": 0.05,
-    "stats": {
-      "strength": 10,
-      "durability": 35,
-      "speed": 40,
+      "strength": 5,
+      "durability": 10,
+      "speed": 5,
       "weaponry": 5,
-      "special": 88,
+      "special": 95,
       "lethality": 5
     },
-    "ai_p4p_score": 45,
+    "diet_type": "herbivore",
+    "diet_items": ["tảo Avrainvillea", "tảo biển xanh"],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 6,
+    "lifespan_max": 12,
+    "lifespan_unit": "months",
+    "reproduction_type": "hermaphrodite",
+    "reproduction_notes": "Giao phối chéo lưỡng tính để trao đổi tinh trùng, sau đó cả hai cá thể đều đẻ các dải trứng hình xoắn ốc bám vào tảo.",
+    "locomotion": "crawl",
+    "speed_max": 0.05,
+    "conservation_status": "LC",
+    "size_min_mm": 5,
+    "size_max_mm": 10,
+    "weight_avg_g": 0.01,
+    "enrichment_count": 0,
+    "grading_count": 0,
+    "ai_p4p_score": 10,
     "ai_tier": "D"
+  },
+  {
+    "id": "poison-dart-frog",
+    "name": "Ếch Phi Tiêu Độc Vàng",
+    "scientificName": "Phyllobates terribilis",
+    "taxonomy": {
+      "class": "Amphibia",
+      "order": "Anura",
+      "family": "Dendrobatidae"
+    },
+    "realWeight": "~3 g",
+    "size": "47 - 55 mm",
+    "characteristics": "Kích thước nhỏ nhắn khoảng 5cm, cơ thể thon gọn, da trơn láng có màu vàng chanh, vàng kim loại hoặc cam rực rỡ (màu cảnh báo xua đuổi kẻ thù - aposematism). Chân có các đĩa bám phát triển giúp leo trèo tốt.",
+    "habitat": "Rừng mưa nhiệt đới ẩm ướt tầm thấp ven biển với lượng mưa cực cao.",
+    "location": "Khu vực bờ biển Thái Bình Dương của Colombia.",
+    "survival_method": "Hoạt động tích cực vào ban ngày. Săn mồi chủ yếu trên mặt đất ẩm bằng cách sử dụng chiếc lưỡi dài dính bắt kiến, mối và côn trùng nhỏ. Chúng tự vệ hoàn toàn bằng cách tiết độc qua các tuyến da khi bị stress hoặc đe dọa.",
+    "unique_traits": "Sở hữu Batrachotoxin - chất độc thần kinh steroid alkaloid cực mạnh. Khả năng tích tụ độc tố từ chế độ ăn uống tự nhiên mà cơ thể không bị tự ngộ độc nhờ các kênh natri đột biến kháng độc.",
+    "shortDescription": "Sinh vật có nọc độc chết chóc nhất hành tinh. Một lượng độc nhỏ bằng hạt muối đủ hạ gục 10-20 người trưởng thành.",
+    "description": "Ếch Phi Tiêu Độc Vàng là loài động vật có độc tính cao nhất trên Trái Đất. Không giống như các sinh vật có nọc độc sử dụng răng nanh hay ngòi chích để tiêm độc, loài ếch này tích lũy chất độc cực mạnh Batrachotoxin qua da từ nguồn thức ăn là kiến độc và bọ cánh cứng trong tự nhiên. Chất độc này ngăn chặn các xung thần kinh truyền đến cơ bắp, gây co cơ vĩnh viễn và suy tim tức thì. Trong lịch sử, thổ dân Colombia đã sử dụng chất độc cạo từ lưng loài ếch này để tẩm vào các mũi phiêu thổi săn bắn.",
+    "strengths": [
+      "Độc tố Batrachotoxin cực mạnh bôi trơn toàn thân, không có kẻ thù tự nhiên nào dám đụng độ",
+      "Màu sắc sặc sỡ cảnh báo cực kỳ hiệu quả khiến hầu hết thú săn mồi chủ động né tránh",
+      "Khả năng kháng độc tuyệt đối của chính mình nhờ cấu trúc tế bào thần kinh biến dị"
+    ],
+    "weaknesses": [
+      "Mất dần độc tố khi nuôi nhốt hoặc không được ăn các loài côn trùng bản địa đặc thù chứa tiền chất độc",
+      "Phụ thuộc cao vào môi trường rừng mưa ẩm ướt nguyên sinh, rất nhạy cảm với ô nhiễm nguồn nước",
+      "Kích thước nhỏ bé, không có khả năng chiến đấu vật lý hoặc tự vệ bằng sức mạnh cơ bắp"
+    ],
+    "funFacts": [
+      "Một con ếch vàng trưởng thành chứa khoảng 1.900 microgam độc tố, chỉ cần 2 microgam là đủ để giết chết một người lớn nhanh chóng",
+      "Các mũi tên tẩm độc từ loài ếch này có thể duy trì độc tính chết người trong vòng 1-2 năm",
+      "Khác với các loài ếch khác nhút nhát, loài này rất tự tin đi lại công khai giữa ban ngày do ý thức được mình không thể bị ăn thịt"
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1073/pnas.1702814114",
+        "label": "PNAS - Sodium channel mutations in poison dart frogs"
+      },
+      {
+        "url": "https://www.nationalgeographic.com/animals/amphibians/facts/golden-poison-frog",
+        "label": "National Geographic - Golden Poison Frog Reference"
+      }
+    ],
+    "imageColor": "#F1C40F",
+    "stats": {
+      "strength": 10,
+      "durability": 20,
+      "speed": 50,
+      "weaponry": 10,
+      "special": 100,
+      "lethality": 100
+    },
+    "diet_type": "carnivore",
+    "diet_items": ["kiến độc", "bọ cánh cứng nhỏ", "mối", "ruồi"],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 5,
+    "lifespan_max": 10,
+    "lifespan_unit": "years",
+    "reproduction_type": "oviparous",
+    "reproduction_notes": "Đẻ trứng trên mặt đất ẩm. Sau khi trứng nở, con đực cõng nòng nọc trên lưng mang đến các vũng nước nhỏ trên lá cây bromeliad để nuôi dưỡng.",
+    "locomotion": "hybrid",
+    "speed_max": 5.0,
+    "conservation_status": "EN",
+    "size_min_mm": 47.0,
+    "size_max_mm": 55.0,
+    "weight_avg_g": 3.0,
+    "enrichment_count": 0,
+    "grading_count": 0,
+    "ai_p4p_score": 85,
+    "ai_tier": "A"
+  },
+  {
+    "id": "trilobite-beetle",
+    "name": "Bọ Ba Thùy Cánh Cứng",
+    "scientificName": "Platerodrilus",
+    "taxonomy": {
+      "class": "Insecta",
+      "order": "Coleoptera",
+      "family": "Lycidae"
+    },
+    "realWeight": "~5 g",
+    "size": "40 - 80 mm",
+    "characteristics": "Con cái dài 40-80mm, thân dẹt dẹt với các tấm giáp kitin chồng lên nhau màu đen hoặc nâu sẫm, viền màu cam hoặc đỏ tươi nổi bật. Đầu nhỏ có thể thụt vào trong lớp giáp ngực. Con đực rất nhỏ (5-9mm), có cánh và trông giống bọ cánh cứng bình thường.",
+    "habitat": "Tầng thảm mục, thân gỗ mục nát trong các khu rừng nhiệt đới ẩm thấp ẩm ướt.",
+    "location": "Đông Nam Á, đặc biệt là ở Việt Nam, Thái Lan, Malaysia, Indonesia.",
+    "survival_method": "Con cái bò chậm rãi trên nền rừng để ăn gỗ mục, nấm hoặc vi sinh vật. Khi bị đe dọa, nó cuộn tròn lại hoặc thụt đầu vào dưới lớp giáp dày để bảo vệ phần mềm, đồng thời tiết ra chất dịch có mùi khó chịu xua đuổi kẻ thù.",
+    "unique_traits": "Hình dáng neoteny của con cái giống hóa thạch sống kỷ Permi. Tấm giáp kitin siêu cứng cáp có thể chịu lực dẫm đạp lớn.",
+    "shortDescription": "Sinh vật tiến hóa neoteny giữ nguyên hình dạng giống như hóa thạch kỷ Permi cổ xưa.",
+    "description": "Bọ Ba Thùy Cánh Cứng là một loài côn trùng kỳ lạ thuộc họ bọ cánh cứng Lycidae. Điểm kỳ lạ nhất của loài này là sự khác biệt giới tính cực đoan (dị hình giới tính) do hiện tượng chậm phát triển (neoteny). Con cái duy trì hình dáng ấu trùng khổng lồ suốt đời với bộ giáp kitin dày dặn xếp lớp trông giống hệt loài bọ ba thùy (trilobite) đã tuyệt chủng từ 250 triệu năm trước. Trong khi đó, con đực phát triển đầy đủ thành bọ cánh cứng có cánh thông thường nhưng kích thước siêu nhỏ chỉ bằng 1/10 con cái (chỉ khoảng 5-8 mm).",
+    "strengths": [
+      "Bộ giáp kitin siêu dày xếp lớp bảo vệ hoàn hảo trước hàm của các loài săn mồi nhỏ",
+      "Tuyến tiết dịch mùi hôi và vị cực kỳ đắng xua đuổi chim và thằn lằn hiệu quả",
+      "Màu sắc cam-đen cảnh báo độ độc/đắng cao tự nhiên (aposematic coloration)"
+    ],
+    "weaknesses": [
+      "Tốc độ di chuyển bò cực kỳ chậm chạp, không có cánh hay khả năng nhảy để trốn chạy nhanh",
+      "Sự chênh lệch kích thước quá lớn khiến việc tìm kiếm bạn đời và giao phối gặp nhiều khó khăn",
+      "Phụ thuộc chặt chẽ vào độ ẩm của rừng nguyên sinh nhiệt đới, dễ chết khi môi trường khô hạn"
+    ],
+    "funFacts": [
+      "Do con đực quá nhỏ bé và hiếm gặp, các nhà khoa học đã mất gần một thế kỷ kể từ khi phát hiện con cái mới tìm thấy một con đực đang giao phối để xác định loài",
+      "Khi muốn thu hút bạn đời, con cái nâng phần đuôi lên phát ra tín hiệu hóa học pheromone đặc trưng thu hút các con đực nhỏ bay xung quanh",
+      "Thiết kế lớp giáp của nó là niềm cảm hứng cho nhiều thiết kế áo giáp viễn tưởng thời trung cổ và hiện đại"
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1111/j.1096-3642.1925.tb01511.x",
+        "label": "Journal of Zoology - On the neotenic genus Platerodrilus"
+      },
+      {
+        "url": "https://www.nationalgeographic.com/animals/article/trilobite-beetle-mating-singapore-malaysia",
+        "label": "National Geographic - The Strange World of Trilobite Beetles"
+      }
+    ],
+    "imageColor": "#D35400",
+    "stats": {
+      "strength": 25,
+      "durability": 85,
+      "speed": 10,
+      "weaponry": 15,
+      "special": 70,
+      "lethality": 15
+    },
+    "diet_type": "detritivore",
+    "diet_items": ["nấm", "chất hữu cơ phân hủy từ gỗ mục", "dịch cây"],
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 1,
+    "lifespan_max": 3,
+    "lifespan_unit": "years",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Giao phối hữu tính cực đoan khi con đực nhỏ bé bám vào cơ thể khổng lồ của con cái. Sau khi thụ tinh, con cái đẻ trứng vào khe vỏ cây mục.",
+    "locomotion": "crawl",
+    "speed_max": 0.1,
+    "conservation_status": "LC",
+    "size_min_mm": 40.0,
+    "size_max_mm": 80.0,
+    "weight_avg_g": 5.0,
+    "enrichment_count": 0,
+    "grading_count": 0,
+    "ai_p4p_score": 30,
+    "ai_tier": "C"
   }
 ]
