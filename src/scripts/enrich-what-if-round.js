@@ -93,8 +93,8 @@ async function runEnrichment() {
   targets.forEach(t => console.log(`  - ${t.name} (${t.id}) with P4P: ${t.ai_p4p_score}`));
 
   const whatIfScenarios = {
-    "golden-poison-frog": {
-      creature_id: "golden-poison-frog",
+    "poison-dart-frog": {
+      creature_id: "poison-dart-frog",
       title: "Nếu Ếch Phi Tiêu Độc Vàng (Golden Poison Frog) phóng to bằng con người (80kg) thì sao?",
       slug: "neu-ech-phi-tieu-doc-vang-phong-to-bang-con-nguoi-80kg",
       description: "Phân tích kịch bản giả thuyết khi loài ếch có độc tính cao nhất hành tinh (Phyllobates terribilis) được phóng to tới kích thước con người 80kg.",
