@@ -27,11 +27,11 @@ const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 async function run() {
   const ids = [
-    "narwhal",
-    "ogre-faced-spider",
-    "thorny-devil",
-    "new-zealand-glowworm",
-    "portia-jumping-spider"
+    "pink-fairy-armadillo",
+    "stoplight-loosejaw",
+    "surinam-toad",
+    "big-headed-turtle",
+    "firefly-squid"
   ];
   const { data, error } = await supabase
     .from("creatures")
@@ -42,6 +42,7 @@ async function run() {
     console.error(error);
     return;
   }
-  console.log(JSON.stringify(data, null, 2));
+  fs.writeFileSync(path.join(__dirname, "temp-check-fields.json"), JSON.stringify(data, null, 2));
+  console.log("Saved to temp-check-fields.json");
 }
 run();
