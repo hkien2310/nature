@@ -1,208 +1,224 @@
 [
   {
-    "id": "horned-lizard",
-    "name": "Thằn Lằn Sừng Texas",
-    "scientificName": "Phrynosoma cornutum",
+    "id": "solenodon",
+    "name": "Thú Răng Khía Hispaniola",
+    "scientificName": "Solenodon paradoxus",
     "taxonomy": {
-      "class": "Reptilia",
-      "order": "Squamata",
-      "family": "Phrynosomatidae"
+      "class": "Mammalia",
+      "order": "Eulipotyphla",
+      "family": "Solenodontidae"
     },
-    "realWeight": "25 - 90 g",
-    "size": "6.9 - 11.4 cm",
-    "characteristics": "Thân hình dẹt bè, phủ đầy gai nhọn cứng ở lưng và hai bên sườn. Có hai sừng lớn nổi bật ở sau đầu trông như vương miện. Da có màu nâu, vàng cát hoặc xám giúp ngụy trang hoàn hảo trên nền đất hoang mạc.",
-    "habitat": "Các vùng đất khô hạn hoang mạc, bán hoang mạc hoang dã, trảng cỏ cát ven bờ ôn đới.",
-    "location": "Phía tây nam Hoa Kỳ (đặc biệt là Texas) và vùng bắc Mexico.",
-    "survival_method": "Ngụy trang trên cát bằng cách xẹp người phẳng xuống đất. Khi bị động vật săn mồi thuộc họ chó tấn công, chúng làm phồng cơ thể lên để dựng sừng và gai nhọn, đồng thời tăng áp lực máu lên các xoang mắt để tự phá vỡ mao mạch, phun ra luồng máu chứa hóa chất độc hại, có mùi hôi nồng từ mắt bắn xa tới 1.5m.",
-    "unique_traits": "Cơ chế tự xuất huyết (auto-hemorrhage) phun máu từ hốc mắt xua đuổi kẻ thù. Da có hệ thống rãnh siêu nhỏ giữa các vảy hoạt động như mạng lưới mao dẫn, tự động gom nước sương đêm hoặc mưa chảy trực tiếp vào khóe miệng mà không cần cúi đầu uống.",
-    "shortDescription": "Phun máu từ mắt xua đuổi kẻ săn mồi. Da hút nước bằng mao dẫn trực tiếp vào miệng.",
-    "description": "Thằn Lằn Sừng Texas là một biểu tượng sinh tồn kỳ lạ của hoang mạc Bắc Mỹ. Loài này sở hữu hệ thống phòng thủ đa tầng cực kỳ tinh vi. Đầu tiên là ngụy trang màu sắc cát bụi kết hợp thân hình dẹt dễ ẩn mình dưới cát hoang dã. Khi bị phát hiện, chúng dựng gai nhọn khắp người và phồng to cơ thể để khó bị nuốt chửng. Tuy nhiên, vũ khí độc nhất vô nhị của nó là khả năng bắn ra một dòng máu có vị đắng nồng từ hai mắt bằng cách làm vỡ mao mạch xoang mắt dưới áp suất lớn. Dòng máu này cực kỳ hiệu quả trong việc xua đuổi các loài thuộc họ Chó như sói đồng cỏ hay cáo. Ngoài ra, khả năng thu gom nước thụ động qua da nhờ cấu trúc mao dẫn độc đáo giúp nó sống sót kiên cường trong môi trường khô hạn cực độ.",
+    "realWeight": "600 - 1000 g",
+    "size": "28 - 39 cm",
+    "characteristics": "Thân hình giống loài chuột chù khổng lồ với chiếc mũi dài, thon và rất linh hoạt nhờ có khớp cầu sụn đặc biệt ở gốc mũi. Bộ lông xù màu nâu sẫm hoặc hung đỏ. Hai răng cửa hàm dưới có khía rãnh dẫn độc chất từ tuyến nước bọt hàm dưới.",
+    "habitat": "Rừng rậm ẩm ướt vùng núi cao, các khu vực nhiều thảm lá mục và hang hốc tự nhiên.",
+    "location": "Đảo Hispaniola (Haiti và Cộng hòa Dominica) thuộc vùng biển Caribe.",
+    "survival_method": "Hoạt động và săn mồi đơn độc hoàn toàn vào ban đêm. Chúng dùng chiếc mũi nhạy bén đào bới lớp đất mục để tìm côn trùng, giun và động vật nhỏ, sau đó tiêm nước bọt chứa độc lực mạnh qua răng khía để làm tê liệt con mồi.",
+    "unique_traits": "Một trong số rất ít thú có vú sở hữu nọc độc phóng ra qua răng khía đặc biệt. Sở hữu khớp cầu sụn độc nhất vô nhị ở gốc mũi giúp mũi xoay được 360 độ linh hoạt để dò tìm thức ăn. Khả năng phát ra tiếng click siêu âm thô sơ để định vị vật cản trong đêm tối.",
+    "shortDescription": "Hóa thạch sống thời khủng long. Thú có vú duy nhất sở hữu mũi xoay khớp cầu và răng dẫn độc.",
+    "description": "Thú Răng Khía Hispaniola (Haitian Solenodon) là một loài thú có vú cổ xưa cực kỳ quý hiếm, được xem là 'hóa thạch sống' vì hầu như không thay đổi cấu trúc sinh học suốt 76 triệu năm qua, sống sót qua cả thảm họa diệt vong của khủng long. Đặc điểm ấn tượng nhất của loài này là tuyến nước bọt tiết ra độc tố tương tự nọc độc rắn đuôi chuông. Nọc độc được dẫn trực tiếp qua khía rãnh sâu trên răng cửa thứ hai của hàm dưới. Thêm vào đó, chiếc mũi dài của chúng được nối với hộp sọ bằng một khớp cầu chuyển động linh hoạt như khớp vai người, cho phép chúng luồn lách mũi vào mọi ngóc ngách hẹp để đánh hơi con mồi.",
     "strengths": [
-      "Khả năng phun máu từ mắt xa đến 1.5 mét chứa độc chất xua đuổi kẻ thù hiệu quả",
-      "Hệ thống da mao dẫn thông minh tự động hút và dẫn nước mưa/sương đêm vào miệng",
-      "Lớp gai sắc nhọn và khả năng phình to thân mình chống nuốt chửng",
-      "Ngụy trang xuất sắc trên cát khô ôn đới"
+      "Vết cắn chứa độc lực thần kinh mạnh làm tê liệt nhanh chóng các con mồi nhỏ",
+      "Mũi có khớp sụn xoay cực kỳ linh hoạt để dò tìm mồi trong hang hốc hẹp",
+      "Khả năng định vị bằng tiếng click âm thanh trong bóng tối sâu",
+      "Bộ móng vuốt đào bới cực khỏe"
     ],
     "weaknesses": [
-      "Tốc độ di chuyển chậm chạp trên mặt đất phẳng",
-      "Chế độ ăn chuyên biệt cao (phụ thuộc lớn vào kiến gặt đầu to Harvester)",
-      "Dễ bị tổn hại nếu nguồn nước và môi trường cát bị biến đổi"
+      "Khả năng phòng thủ vật lý rất kém khi gặp động vật ăn thịt lớn như chó, mèo hoang",
+      "Chạy trốn chậm và vụng về, dễ bị vấp ngã khi hoảng loạn",
+      "Thị lực cực kỳ kém, gần như mù màu và chỉ phân biệt được sáng tối nhẹ"
     ],
     "funFacts": [
-      "Mặc dù trông rất hung dữ với bộ sừng gai góc, chúng thực chất là loài bò sát hiền lành và thường bị kiến Harvester cắn trả nếu không cẩn thận",
-      "Cơ chế phun máu mắt tiêu tốn tới 1/3 tổng lượng máu cơ thể nếu sử dụng quá nhiều lần liên tục",
-      "Khả năng hấp thụ nước của da chúng tốt đến mức chỉ cần đứng trên cát ẩm, nước cũng tự hút ngược lên da và dẫn vào miệng"
+      "Mặc dù có nọc độc cực mạnh chống lại con mồi, loài này lại hoàn toàn không có khả năng miễn dịch với nọc độc của chính mình. Nếu hai con solenodon cắn nhau, chúng có thể chết vì nhiễm độc.",
+      "Chúng có thói quen chui đầu vào các hốc nhỏ để trốn kẻ thù, nhưng lại để lộ nguyên phần thân sau to lớn ra ngoài vì nghĩ rằng không nhìn thấy kẻ thù thì kẻ thù cũng không thấy mình."
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.2307/1447000",
-        "label": "Copeia - Ocular Autohemorrhage in Horned Lizards (Phrynosoma)"
+        "url": "https://www.iucnredlist.org/species/20321/115157832",
+        "label": "IUCN Red List - Solenodon paradoxus"
       },
       {
-        "url": "https://www.nationalgeographic.com/animals/reptiles/facts/texas-horned-lizard",
-        "label": "National Geographic - Texas Horned Lizard Reference"
+        "url": "https://doi.org/10.1093/jmammal/gyy019",
+        "label": "Journal of Mammalogy - Evolution and Conservation of Solenodontidae"
       }
     ],
-    "imageColor": "#D1CCC0",
-    "diet_type": "carnivore",
-    "diet_items": ["kiến gặt Harvester", "mối", "bọ cánh cứng nhỏ", "sâu bướm"],
-    "activity_pattern": "diurnal",
+    "imageColor": "#A0522D",
+    "diet_type": "omnivore",
+    "diet_items": [
+      "côn trùng",
+      "giun đất",
+      "nhện",
+      "động vật lưỡng cư nhỏ",
+      "trái cây rụng"
+    ],
+    "activity_pattern": "nocturnal",
     "lifespan_min": 5,
-    "lifespan_max": 8,
+    "lifespan_max": 11,
     "lifespan_unit": "years",
-    "reproduction_type": "oviparous",
-    "reproduction_notes": "Con cái đào hang sâu dưới cát để đẻ từ 10 đến 30 quả trứng vào cuối mùa xuân và bỏ đi. Trứng tự nở sau khoảng 45-60 ngày.",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Con cái sinh từ 1 đến 2 con non trong hang sâu. Con non sẽ bám chặt vào một trong hai núm vú nằm ở vùng hông/mông của mẹ trong suốt vài tuần đầu đời khi mẹ đi kiếm ăn.",
     "locomotion": "walk",
-    "speed_max": 8.0,
-    "conservation_status": "LC",
-    "size_min_mm": 69.0,
-    "size_max_mm": 114.0,
-    "weight_avg_g": 50.0,
+    "speed_max": 15.0,
+    "conservation_status": "EN",
+    "size_min_mm": 280.0,
+    "size_max_mm": 390.0,
+    "weight_avg_g": 800.0,
     "stats": {
-      "strength": 50,
-      "durability": 70,
-      "speed": 40,
-      "weaponry": 75,
-      "special": 92,
+      "strength": 35,
+      "durability": 40,
+      "speed": 50,
+      "weaponry": 65,
+      "special": 75,
       "lethality": 60
     },
     "ai_p4p_score": 72,
-    "ai_tier": "C"
+    "ai_tier": "B"
   },
   {
-    "id": "spiny-mouse",
-    "name": "Chuột Gai Châu Phi",
-    "scientificName": "Acomys kempi",
+    "id": "portia-jumping-spider",
+    "name": "Nhện Nhảy Portia",
+    "scientificName": "Portia fimbriata",
     "taxonomy": {
-      "class": "Mammalia",
-      "order": "Rodentia",
-      "family": "Muridae"
+      "class": "Arachnida",
+      "order": "Araneae",
+      "family": "Salticidae"
     },
-    "realWeight": "30 - 50 g",
-    "size": "cơ thể 8 - 11 cm, đuôi 8 - 11 cm",
-    "characteristics": "Sở hữu bộ lông cứng gai nhọn như nhím ở nửa thân sau lưng để tự vệ. Da vô cùng mỏng manh, dễ đứt rách nhưng có tốc độ co cơ và phục hồi vết thương nhanh gấp nhiều lần loài chuột thông thường.",
-    "habitat": "Các vùng đất đá khô cằn, vách đá bán hoang mạc, trảng cỏ khô ven rừng.",
-    "location": "Phổ biến ở vùng Đông Phi bao gồm Kenya, Somali và Ethiopia.",
-    "survival_method": "Khi bị động vật săn mồi chộp lấy, da lưng của chúng dễ dàng rụng rời (lực giật đứt da cực nhỏ) giúp nó thoát khỏi móng vuốt của kẻ thù. Sau đó, cơ thể chúng sẽ kích hoạt các tế bào gốc chuyên biệt để tái tạo hoàn chỉnh vết thương rách da lớn mà không để lại bất kỳ mô sẹo nào.",
-    "unique_traits": "Động vật có vú duy nhất có khả năng tự rụng da thoát thân (skin autotomy) và tái sinh vết thương không sẹo (scar-free regeneration) bao gồm cả nang lông, da tuyến mồ hôi, biểu bì và sụn tai.",
-    "shortDescription": "Tự rụng da thoát thân khi bị bắt. Động vật có vú duy nhất tái sinh da và sụn không để lại sẹo.",
-    "description": "Chuột Gai Châu Phi (Acomys kempi) đại diện cho một bước đột phá sinh học phi thường trong nhóm động vật có vú. Nhờ cấu trúc da có độ bền kéo cực thấp (yếu hơn da chuột thường 20 lần) và chứa nhiều chất nền ngoại bào collagen đặc biệt, chuột gai có thể dễ dàng hy sinh từng mảng da lưng lớn để trốn thoát khi bị kẻ săn mồi tóm lấy. Kỳ diệu hơn, thay vì hình thành sẹo xơ cứng như các động vật có vú khác, vùng da bị mất của chúng nhanh chóng lành lại trong vài ngày và tái sinh hoàn hảo cấu trúc ban đầu: từ các lớp biểu bì, tuyến mồ hôi, nang lông cho đến sụn tai bị tổn thương. Nghiên cứu sinh học phân tử chỉ ra chúng kiểm soát hoạt động của tế bào viêm và đại thực bào khác biệt để tạo điều kiện tái sinh hoàn toàn như kỳ giông.",
+    "realWeight": "0.1 - 0.2 g",
+    "size": "5 - 10 mm",
+    "characteristics": "Thân hình nhỏ bé được bao phủ bởi các chùm lông xơ xác màu nâu xám trông giống như một mảnh lá khô rụng hoặc mảnh vụn bám trên mạng nhện. Sở hữu đôi mắt chính lớn phía trước cung cấp thị lực có độ phân giải siêu cao.",
+    "habitat": "Các khu rừng nhiệt đới rậm rạp, thảm thực vật thấp và rìa rừng xích đạo.",
+    "location": "Đông Nam Á, Bắc Úc (Queensland) và một số đảo vùng Thái Bình Dương.",
+    "survival_method": "Sử dụng trí tuệ vượt trội để săn các loài nhện khác. Chúng có thể dành nhiều giờ quan sát cấu trúc mạng nhện của đối phương, gảy các sợi tơ theo nhịp điệu khác nhau để dụ nhện chủ, hoặc bò vòng đường xa qua các nhánh cây khác để tiếp cận và vồ mồi từ phía trên cao.",
+    "unique_traits": "Trí thông minh giải quyết vấn đề xuất sắc nhất thế giới côn trùng/nhện, thể hiện qua khả năng lập kế hoạch đường vòng (spatial detouring) và ghi nhớ mục tiêu khuất tầm nhìn. Kỹ năng bắt chước rung động tơ nhện (aggressive mimicry) giả làm con mồi nhỏ bị mắc lưới hoặc bạn đời để đánh lừa nhện chủ bơi ra.",
+    "shortDescription": "Kẻ săn nhện thông minh nhất thế giới. Lập kế hoạch tấn công tinh vi và gảy tơ lừa mồi.",
+    "description": "Nhện Nhảy Portia (Portia fimbriata) là loài nhện nhảy độc nhất vô nhị nổi tiếng với trí thông minh chiến thuật đáng kinh ngạc, thường được ví như các 'nhà toán học' thu nhỏ. Thức ăn ưa thích của Portia chính là các loài nhện khác, kể cả những loài cực độc và có kích thước lớn gấp nhiều lần cơ thể nó. Thay vì săn mồi theo bản năng đơn thuần, Portia áp dụng cơ chế thử và sai (trial and error) để gảy các sợi tơ của mạng nhện mục tiêu, tìm ra tần số rung động dụ dỗ con mồi hiệu quả nhất. Nếu nhện mục tiêu quá nguy hiểm, Portia sẽ lùi lại, lập bản đồ không gian 3D trong đầu và thực hiện một đường đi vòng tốn hàng giờ đồng hồ để leo lên cành cây phía trên mạng nhện rồi thả mình xuống tấn công bất ngờ từ trên không.",
     "strengths": [
-      "Khả năng tự rụng da cực nhạy giúp thoát hiểm ngoạn mục khỏi kẻ thù",
-      "Khả năng tái sinh hoàn hảo da, lông, tuyến mồ hôi và sụn tai không sẹo",
-      "Thích nghi tốt với điều kiện sống khô hạn thiếu nước hoang mạc"
+      "Trí tuệ chiến thuật siêu việt, lập kế hoạch săn mồi linh hoạt thay đổi theo từng đối thủ",
+      "Thị lực lập thể có độ phân giải cực cao tương đương chó mèo nhờ cấu trúc mắt ống",
+      "Kỹ năng ngụy trang hoàn hảo thành mảnh vụn vô hại",
+      "Vết cắn chứa nọc độc chuyên biệt làm tê liệt nhện khác gần như lập tức"
     ],
     "weaknesses": [
-      "Lớp da quá mỏng và dễ tổn thương cơ học ngoài ý muốn",
-      "Tốc độ chạy không quá nhanh và kích thước cơ thể nhỏ bé",
-      "Không có khả năng tự vệ bằng lực cắn hay vũ khí sát thương mạnh"
+      "Tốc độ di chuyển thô bạo tương đối chậm khi không bật nhảy",
+      "Kích thước cơ thể nhỏ bé và mỏng manh trước các loài chim, thằn lằn",
+      "Rất dễ gặp nguy hiểm nếu bị mất thế chủ động trên mạng nhện của loài khác"
     ],
     "funFacts": [
-      "Nghiên cứu về cơ chế lành vết thương không sẹo của chuột gai đang được y học ứng dụng mạnh mẽ để phát triển các liệu pháp tái sinh da cho bệnh nhân bỏng nặng ở người",
-      "Lông gai ở đuôi và lưng chúng có chứa chất sừng keratin cứng như gai nhím nhỏ, gây khó chịu cho miệng kẻ săn mồi nếu cố gắng nhai nuốt"
+      "Portia có thể giải quyết các mê cung phức tạp trong phòng thí nghiệm để tiếp cận con mồi mà không cần nhìn thấy con mồi liên tục, chứng minh chúng có khái niệm về sự tồn tại của vật thể khuất tầm mắt (object permanence).",
+      "Khi đối đầu với nhện nhổ nước bọt (spitting spider) - loài có thể phun keo độc từ xa, Portia sẽ chỉ tấn công từ phía sau hoặc chọn những ngày trời mưa gió để gió làm rung mạng nhện, che giấu bước chân tiếp cận của nó."
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1038/nature11499",
-        "label": "Nature - Skin autotomy and rapid scar-free regeneration in Acomys"
+        "url": "https://doi.org/10.1086/285405",
+        "label": "The American Naturalist - Cognitive ability of Portia fimbriata"
       },
       {
-        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4288075/",
-        "label": "PMC - Spiny Mouse (Acomys) as a Mammalian Model of Regeneration"
+        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/jumping-spiders",
+        "label": "National Geographic - Jumping Spiders Cognitive Reference"
       }
     ],
-    "imageColor": "#E28743",
-    "diet_type": "omnivore",
-    "diet_items": ["hạt cỏ", "quả mọng nhỏ", "côn trùng", "lá non", "ốc sên nhỏ"],
-    "activity_pattern": "nocturnal",
-    "lifespan_min": 3,
-    "lifespan_max": 5,
+    "imageColor": "#8B7D6B",
+    "diet_type": "carnivore",
+    "diet_items": [
+      "nhện chăng lưới",
+      "nhện nhảy khác",
+      "trứng nhện",
+      "ruồi muỗi nhỏ"
+    ],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 1,
+    "lifespan_max": 2,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Thời gian mang thai dài bất thường khoảng 5-6 tuần. Con non sinh ra đã mở mắt, mọc lông hoàn chỉnh và có khả năng chạy nhảy ngay sau vài giờ.",
-    "locomotion": "walk",
-    "speed_max": 12.0,
+    "reproduction_notes": "Con đực thực hiện vũ điệu tán tỉnh phức tạp trước con cái từ khoảng cách an toàn để tránh bị ăn thịt. Sau khi giao phối, con cái đẻ trứng trong một túi kén tơ mỏng gắn dưới lớp lá cây khô.",
+    "locomotion": "hybrid",
+    "speed_max": 0.5,
     "conservation_status": "LC",
-    "size_min_mm": 80.0,
-    "size_max_mm": 110.0,
-    "weight_avg_g": 40.0,
+    "size_min_mm": 5.0,
+    "size_max_mm": 10.0,
+    "weight_avg_g": 0.15,
     "stats": {
       "strength": 25,
-      "durability": 85,
-      "speed": 65,
-      "weaponry": 35,
-      "special": 95,
-      "lethality": 20
+      "durability": 30,
+      "speed": 60,
+      "weaponry": 60,
+      "special": 98,
+      "lethality": 75
     },
-    "ai_p4p_score": 74,
-    "ai_tier": "C"
+    "ai_p4p_score": 83,
+    "ai_tier": "A"
   },
   {
-    "id": "barnacle",
-    "name": "Hà Biển",
-    "scientificName": "Balanus glandula",
+    "id": "new-zealand-glowworm",
+    "name": "Giun Phát Sáng New Zealand",
+    "scientificName": "Arachnocampa luminosa",
     "taxonomy": {
-      "class": "Hexanauplia",
-      "order": "Balanomorpha",
-      "family": "Balanidae"
+      "class": "Insecta",
+      "order": "Diptera",
+      "family": "Keroplatidae"
     },
-    "realWeight": "1 - 5 g",
-    "size": "đường kính vỏ 1.5 - 2 cm",
-    "characteristics": "Sống bám cố định. Cơ thể được bao bọc trong một chiếc vỏ đá vôi hình nón núi lửa nhỏ màu trắng hoặc xám nhạt, có nắp mở ở đỉnh để thò chân khớp ra lọc thức ăn dưới nước.",
-    "habitat": "Các vùng đá gập ghềnh ven bờ biển, rạn san hô, móng cầu, vỏ tàu thuyền hoặc thậm chí bám trực tiếp trên da cá voi.",
-    "location": "Phổ biến dọc theo các vùng duyên hải ôn đới và nhiệt đới trên toàn thế giới.",
-    "survival_method": "Chúng tiết ra chất keo xi măng tự nhiên bền chắc bậc nhất thế giới để gắn chặt đế vỏ vào bề mặt vật bám. Khi thủy triều lên, chúng mở nắp vỏ thò các cặp chân ngực hình lông vũ (cirri) để quét qua dòng nước lọc sinh vật phù du. Khi thủy triều xuống hoặc gặp nguy hiểm, chúng rút chân lại đóng nắp kín kẽ để giữ ẩm và trốn tránh kẻ thù.",
-    "unique_traits": "Chất keo xi măng tự nhiên siêu dính dưới nước có độ bền liên kết và chịu lực kéo cực cao lên tới 200 psi. Là loài lưỡng tính có dương vật dài gấp 8 lần chiều dài cơ thể (dài nhất thế giới động vật theo tỷ lệ cơ thể) giúp thụ tinh chéo với hàng xóm từ khoảng cách xa mà không cần di chuyển.",
-    "shortDescription": "Keo xi măng sinh học siêu dính dưới nước. Dương vật dài gấp 8 lần cơ thể để giao phối từ xa.",
-    "description": "Hà Biển (Balanus glandula) là một loài giáp xác kỳ lạ thích nghi hoàn hảo với cuộc sống tĩnh lặng bám đá ven bờ. Chất xi măng mà hà biển tiết ra là một phức hợp protein có cấu trúc sợi nano liên kết chéo vững chắc đến mức không một loại dung môi, axit hay nước biển mặn nào có thể hòa tan được, giúp chúng chịu đựng sóng vỗ ngàn năm. Vì sống cả đời cố định tại một chỗ, hà biển đã tiến hóa một cơ chế sinh sản vô cùng độc đáo: bộ phận sinh dục đực có thể kéo dài ra xa gấp 8 lần chiều dài cơ thể để dò tìm và đưa tinh trùng vào bên trong vỏ của những con hà láng giềng. Sau khi thụ tinh, trứng phát triển thành ấu trùng tự do bơi lội tìm bến đỗ mới.",
+    "realWeight": "~0.05 g",
+    "size": "3 - 4 cm",
+    "characteristics": "Giai đoạn ấu trùng có thân hình giống giun màu trắng kem, da mềm trong suốt giúp ánh sáng xanh phát ra từ cơ quan đuôi truyền qua dễ dàng. Chúng xây các tổ tổ bằng chất nhầy gắn trên trần hang tối.",
+    "habitat": "Các hang động ẩm ướt, đường hầm bỏ hoang và các khe đá khuất gió trong rừng sâu có độ ẩm cao.",
+    "location": "Đặc hữu của đất nước New Zealand (đặc biệt nổi tiếng tại hệ thống hang động Waitomo).",
+    "survival_method": "Ấu trùng bám cố định trên trần hang, sản sinh ra ánh sáng sinh học màu xanh lam-xanh lá từ đuôi để thu hút các loài côn trùng bay đêm trong bóng tối. Con mồi hướng về ánh sáng sẽ đâm đầu vào các sợi dây tơ nhầy kết hạt axit treo lơ lửng ngay phía dưới và bị dính chặt.",
+    "unique_traits": "Khả năng phát quang sinh học cực kỳ rực rỡ tạo hiệu ứng bầu trời sao giả lập trong hang tối. Kỹ năng giăng lưới bẫy dạng 'rèm tơ nhầy' treo lơ lửng chứa giọt axit cực kỳ dính và độc nhẹ để tiêu hóa nhanh con mồi.",
+    "shortDescription": "Kẻ giăng bẫy ánh sáng xanh. Biến trần hang động tối tăm thành bầu trời sao chết chóc.",
+    "description": "Giun Phát Sáng New Zealand (Arachnocampa luminosa) thực chất là giai đoạn ấu trùng của một loài ruồi nhuế đặc hữu. Để sinh tồn trong môi trường hang động thiếu thức ăn, chúng phát triển một chiến thuật săn bẫy thụ động tinh vi. Ở phần đuôi của ấu trùng có cơ quan phát quang chuyên biệt từ các ống Malpighian biến đổi, giải phóng ánh sáng xanh huyền ảo thông qua phản ứng hóa học luciferin-luciferase. Ngay dưới cơ thể, chúng thả hàng chục sợi dây tơ mỏng như sợi tóc dài tới 30-40 cm, phủ đầy những giọt nhầy dính chứa axit oxalic. Côn trùng bay trong hang bị thu hút bởi ánh sáng sẽ bay tới và bị mắc kẹt, sau đó ấu trùng sẽ kéo sợi tơ lên để nuốt chửng con mồi.",
     "strengths": [
-      "Keo dính xi măng sinh học siêu bền bám dính tuyệt đối chịu lực sóng đập mạnh mẽ",
-      "Vỏ đá vôi chắc chắn bảo vệ tối đa cơ thể khỏi mất nước và động vật săn mồi",
-      "Lối sống tiêu tốn cực ít năng lượng nhờ lọc thức ăn thụ động"
+      "Ánh sáng sinh học thu hút con mồi cực kỳ hiệu quả trong môi trường tối tuyệt đối",
+      "Hệ thống bẫy tơ dính chứa axit có khả năng bắt mồi tự động không tốn sức",
+      "Sống tập trung số lượng lớn tạo thành mạng lưới săn mồi hiệu quả bao phủ diện rộng"
     ],
     "weaknesses": [
-      "Hoàn toàn không có khả năng di chuyển sau khi đã chọn vị trí bám",
-      "Bị động trước sự thay đổi nhiệt độ đột ngột hoặc các loài ốc sên biển đục vỏ",
-      "Không có vũ khí hay khả năng chủ động săn mồi tấn công"
+      "Cơ thể ấu trùng cực kỳ mềm yếu và hoàn toàn không có khả năng tự vệ chủ động trước kẻ thù cận chiến",
+      "Cực kỳ nhạy cảm với ánh sáng bên ngoài và sự sụt giảm độ ẩm (sẽ tắt sáng và chết khô nhanh chóng)",
+      "Giai đoạn trưởng thành (ruồi) không có miệng, không thể ăn uống và chỉ sống được vài ngày để sinh sản"
     ],
     "funFacts": [
-      "Keo xi măng của hà biển bám chắc đến mức tàu thủy phải định kỳ cạo vỏ vì sự tích tụ của chúng làm giảm tốc độ tàu và tăng mức tiêu thụ nhiên liệu lên tới 40%",
-      "Vì dương vật quá dài, vào mùa sinh sản khi sóng biển đánh quá dữ dội làm rối loạn đường truyền tinh, hà biển có thể tự thụ tinh cho chính mình để duy trì nòi giống"
+      "Nếu cảm nhận được tiếng động lớn, bóng tối bị xâm phạm hoặc có mối đe dọa, cả đàn giun phát sáng sẽ đồng loạt tắt đèn để ẩn mình, biến hang động lộng lẫy trở lại bóng tối đen kịt chỉ trong vài giây.",
+      "Chất dính trên các sợi dây tơ của chúng có tính axit rất mạnh, không chỉ giữ chặt và làm tê liệt mà còn bắt đầu phân hủy lớp vỏ ngoài của con mồi ngay khi vừa chạm vào."
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1098/rsbl.2012.0545",
-        "label": "Biology Letters - Natural underwater adhesives of barnacles"
+        "url": "https://www.doc.govt.nz/nature-conservation/native-animals/invertebrates/glowworms/",
+        "label": "New Zealand Department of Conservation - Glowworms"
       },
       {
-        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3539343/",
-        "label": "PMC - Phenotypic plasticity in barnacle penis size and shape"
+        "url": "https://doi.org/10.1016/j.jinsphys.2016.03.003",
+        "label": "Journal of Insect Physiology - Bioluminescence in Arachnocampa luminosa"
       }
     ],
-    "imageColor": "#BDC3C7",
-    "diet_type": "omnivore",
-    "diet_items": ["sinh vật phù du", "tảo silic", "mùn bã hữu cơ", "ấu trùng nhỏ"],
-    "activity_pattern": "variable",
-    "lifespan_min": 2,
-    "lifespan_max": 6,
-    "lifespan_unit": "years",
-    "reproduction_type": "hermaphrodite",
-    "reproduction_notes": "Là loài lưỡng tính thụ tinh chéo. Con đực phóng tinh trùng qua dương vật siêu dài vào khoang áo của con bên cạnh. Trứng nở thành ấu trùng nauplius bơi tự do trước khi lột xác thành ấu trùng cypris tìm nơi định cư.",
-    "locomotion": "hybrid",
-    "speed_max": 0.0,
+    "imageColor": "#00CED1",
+    "diet_type": "carnivore",
+    "diet_items": [
+      "muỗi hang",
+      "bướm đêm nhỏ",
+      "nhện nhỏ",
+      "côn trùng thủy sinh mới nở"
+    ],
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 6,
+    "lifespan_max": 12,
+    "lifespan_unit": "months",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Con trưởng thành nở ra từ kén không có miệng, bay đi giao phối ngay lập tức. Con cái đẻ khoảng 130 quả trứng trực tiếp lên trần hang ẩm ướt rồi chết ngay sau đó.",
+    "locomotion": "crawl",
+    "speed_max": 0.01,
     "conservation_status": "LC",
-    "size_min_mm": 15.0,
-    "size_max_mm": 20.0,
-    "weight_avg_g": 3.0,
+    "size_min_mm": 30.0,
+    "size_max_mm": 40.0,
+    "weight_avg_g": 0.05,
     "stats": {
-      "strength": 20,
-      "durability": 95,
+      "strength": 10,
+      "durability": 15,
       "speed": 5,
-      "weaponry": 10,
-      "special": 92,
-      "lethality": 10
+      "weaponry": 55,
+      "special": 85,
+      "lethality": 45
     },
-    "ai_p4p_score": 68,
+    "ai_p4p_score": 55,
     "ai_tier": "D"
   }
 ]
