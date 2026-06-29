@@ -774,8 +774,8 @@ async function runEnrichment() {
         }
       ]
     },
-    "gulper-eel": {
-      creature_id: "gulper-eel",
+    "pelican-eel": {
+      creature_id: "pelican-eel",
       title: "Nếu Cá Chình Bồ Nông (Pelican Eel) phóng to bằng con người (80kg) thì sao?",
       slug: "neu-ca-chinh-bo-nong-phong-to-bang-con-nguoi-80kg",
       description: "Phân tích giả thuyết khi loài cá chình bồ nông Eurypharynx pelecanoides với miệng khổng lồ và dạ dày co giãn cực đại phóng to bằng kích thước con người 80kg.",
@@ -855,6 +855,176 @@ async function runEnrichment() {
           tier_scaled: "C",
           sources: [
             { label: "Deep-Sea Research - Evolutionary novelties in giant bathypelagic predators", url: "https://doi.org/10.1016/j.dsr.2024.103987" }
+          ]
+        }
+      ]
+    },
+    "new-zealand-glowworm": {
+      creature_id: "new-zealand-glowworm",
+      title: "Nếu Giun Phát Sáng New Zealand (New Zealand Glowworm) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-giun-phat-sang-new-zealand-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi ấu trùng Giun Phát Sáng Arachnocampa luminosa với tơ nhầy axit độc và cơ quan phát sáng cực mạnh được phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Rèm tơ nhầy axit khổng lồ và ngọn hải đăng ánh sáng xanh 2.500 lumen)",
+          slug: "giun-phat-sang-new-zealand-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Tơ nhầy dài 15m bọc axit oxalic dính chặt lực kéo 4.200 N, cơ quan đuôi phát sáng 2.500 lumen thiêu đốt thị giác kẻ thù, và chất độc tiêu hóa cực mạnh.",
+          content: "Khi Giun Phát Sáng New Zealand phóng to lên 80kg (tăng khối lượng ~1.6 triệu lần, dài ~3.5m):\n- Rèm tơ nhầy khổng lồ: Tiết ra hàng trăm sợi tơ nhầy dài tới 15 mét treo lơ lửng từ trần hang. Mỗi sợi tơ chứa các giọt keo axit oxalic đậm đặc phóng đại cơ học, chịu lực kéo căng lên tới 4.200 N trước khi đứt, sẵn sàng bẫy và trói chặt cả con người hay thú lớn.\n- Ngọn đèn pha sinh học cực đại: Cơ quan phát sáng ở đuôi (ống Malpighian biến đổi kết hợp gương phản xạ túi khí) tăng cường lượng luciferin-luciferase vượt bậc, phát ra ánh sáng xanh lam (~487 nm) rực rỡ với quang thông đạt 2.500 lumen, đủ chiếu sáng toàn bộ hang động hoặc gây mù tạm thời cho thị giác động vật xâm phạm từ cự ly gần.\n- Độc tố tiêu hóa tàn bạo: Chất dịch nhầy chứa enzyme protease và axit oxalic có tính ăn mòn mạnh, làm mềm giáp và phân hủy các mô hữu cơ của con mồi trong vài phút.",
+          formulas_and_data: {
+            scaling_factor: 1600000,
+            mass_g_original: 0.05,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Đường kính sợi tơ nhầy chịu lực",
+                equation: "D_scaled = D_orig * (M_scaled / M_orig)^(1/3)",
+                result: "~1.5 mm"
+              },
+              {
+                name: "Lực giữ kéo căng của chất keo bẫy",
+                equation: "F_adhesion_scaled = F_adhesion_orig * (M_scaled / M_orig)^(2/3)",
+                result: "~4,200 N"
+              }
+            ]
+          },
+          p4p_score_scaled: 72,
+          tier_scaled: "C",
+          sources: [
+            { label: "PLOS ONE - Structure and adhesive properties of glowworm silk threads", url: "https://doi.org/10.1371/journal.pone.0162687" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự ngạt thở do da mềm mỏng và sụp đổ cấu trúc tơ nhầy dưới trọng lượng bản thân)",
+          slug: "giun-phat-sang-new-zealand-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Cơ thể không xương bị bẹp dí dưới trọng lực 80kg, tơ nhầy đứt lìa do lực kéo tự trọng vượt quá giới hạn polymer, và chết ngạt do thiếu lớp cutin bảo vệ.",
+          content: "Trong thực tế vật lý sinh học, giun phát sáng 80kg sẽ sụp đổ và chết nhanh chóng:\n- Sụp đổ cơ thể không xương (Hydrostatic skeleton collapse): Giun sống dựa vào áp suất thủy tĩnh của chất lỏng cơ thể. Khi phóng to lên 80kg, trọng lực ép dẹt thân hình mềm nhũn xuống mặt hang, ép chặt các cơ quan nội tạng và mạch máu gây tắc nghẽn tuần hoàn hoàn toàn.\n- Tơ nhầy tự đứt gãy: Sợi tơ nhầy dài 15m với đường kính phóng đại sẽ có khối lượng bản thân quá lớn. Ứng suất kéo do trọng lực của giọt nước và axit bám dọc tơ vượt quá giới hạn kéo của sợi tơ tằm nguyên bản, khiến chúng tự đứt lìa ngay khi tiết ra.\n- Ngạt thở cấp và mất nước cực đoan: Lớp da nhầy ẩm không vảy hay lớp cutin bảo vệ của giun 80kg khiến nước bốc hơi nhanh chóng (~22 lít/giờ), gây khô héo da và ngừng hoàn toàn hô hấp khuếch tán qua da sau 10 phút.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất kéo tự trọng của tơ nhầy",
+                issue: "Ứng suất cơ học đạt 85 MPa, vượt giới hạn bền kéo của tơ nhầy gốc (12 MPa) gây đứt liên tục."
+              },
+              {
+                type: "Tốc độ bay hơi nước qua da trần ẩm",
+                issue: "Tỷ lệ S/V giảm 115 lần khiến sự mất nước đạt 22.4 kg/hour, làm khô ráp da mỏng trong vòng 15 phút."
+              }
+            ]
+          },
+          p4p_score_scaled: 8,
+          tier_scaled: "D",
+          sources: [
+            { label: "Journal of Insect Physiology - Respiration and water balance in soft-bodied insect larvae", url: "https://doi.org/10.1016/j.jinsphys.2018.04.002" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Lớp biểu bì vảy sáp chitin và tơ glycoprotein gia cường liên kết chéo)",
+          slug: "giun-phat-sang-new-zealand-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Biểu bì phủ vảy sáp chitin chống mất nước tích hợp khí quản chủ động, sợi tơ glycoprotein bền dai gấp 20 lần, và đuôi phát quang hội tụ chùm tia laser.",
+          content: "Để sống sót ở kích thước 80kg trong hang sâu:\n- Lớp da chitin sáp bảo vệ: Tiến hóa lớp cutin chitin mỏng bên ngoài phủ sáp lipid siêu mịn, giảm tốc độ mất nước xuống 99% mà không làm mất tính đàn hồi cơ thể, kết hợp hệ lỗ thở chủ động bơm hút khí.\n- Tơ glycoprotein gia cường liên kết chéo: Gen mã hóa tơ tiến hóa các liên kết disulfide chéo dày đặc, biến tơ nhầy thành một dạng vật liệu nano composite dẻo dai như sợi Kevlar, nâng lực chịu kéo lên tới 25.000 N.\n- Phát quang laser hội tụ: Cơ quan đuôi phát sáng tiến hóa thấu kính sừng hội tụ ánh sáng xanh thành chùm tia hội tụ hẹp, tăng cường độ rọi cục bộ giúp định vị và gây lóa mắt con mồi tầm xa cực kỳ hiệu quả.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Tơ glycoprotein liên kết chéo disulfide",
+                benefit: "Chịu lực kéo căng 25.000 N, giữ được con mồi nặng hàng trăm kg bay lượn trong hang."
+              },
+              {
+                type: "Hệ thở khí quản cơ học chủ động",
+                benefit: "Lưu thông khí lượng 15 lít/phút qua các lỗ thở cơ hoành co bóp nhịp nhàng."
+              }
+            ]
+          },
+          p4p_score_scaled: 75,
+          tier_scaled: "C",
+          sources: [
+            { label: "Biomacromolecules - Disulfide-bonded glycoprotein networks in resilient bioadhesives", url: "https://doi.org/10.1021/acs.biomac.1c00293" }
+          ]
+        }
+      ]
+    },
+    "portia-jumping-spider": {
+      creature_id: "portia-jumping-spider",
+      title: "Nếu Nhện Nhảy Portia (Portia Jumping Spider) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-nhen-nhay-portia-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích giả thuyết khi loài nhện nhảy thông minh nhất hành tinh Portia fimbriata được phóng to lên kích thước con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cú nhảy cơ học đẩy và tầm mắt kính viễn vọng kép cực đại)",
+          slug: "nhen-nhay-portia-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Cú nhảy siêu việt xa 60m nhờ cơ đùi thủy lực giải phóng áp suất cực nhanh, đôi mắt thấu kính viễn vọng kép phóng đại tiêu cự 2.5m định vị hồng ngoại xa 1km, và bộ não côn trùng siêu toán học lập lộ trình chiến thuật 3D săn mồi.",
+          content: "Khi Nhện Nhảy Portia phóng to lên 80kg (tăng khối lượng ~1.6 triệu lần, sải chân ~2.0m):\n- Cú nhảy phản lực thủy lực: Nhện nhảy không dùng cơ đùi trực tiếp mà nén áp suất hemolymph trong xoang ngực rồi giải phóng đột ngột vào các chân sau. Với lực phóng thủy lực lý thuyết đạt tới 35.000 N, con nhện 80kg có thể thực hiện những cú nhảy bật xa tới 60m hoặc nhảy cao 15m từ vị trí đứng yên để vồ mồi từ trên không.\n- Thị lực thấu kính viễn vọng siêu phân giải: Đôi mắt chính khổng lồ phía trước phình to với đường kính thấu kính 8cm. Cấu trúc ống kính dài 30cm bên trong đầu đóng vai trò như hệ thấu kính viễn vọng Telephoto kép với tiêu cự tương đương 2.5m, cho phép nó nhìn rõ từng chi tiết nhỏ cách xa 1km và nhạy bén với dải tia hồng ngoại.\n- Trí tuệ chiến thuật Popperian: Trí khôn của Portia được phóng đại tương ứng với mạng lưới thần kinh lớn hơn, cho phép nó phác thảo bản đồ không gian 3D của khu vực rộng 5 hecta, lập kế hoạch đường vòng phức tạp mất hàng giờ và thử nghiệm các kịch bản hành động trong đầu trước khi tấn công.",
+          formulas_and_data: {
+            scaling_factor: 1600000,
+            mass_g_original: 0.05,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Lực phóng nhảy thủy lực lý thuyết",
+                equation: "F_jump = F_original * (M_scaled / M_original)^(2/3)",
+                result: "~35,000 N"
+              },
+              {
+                name: "Chiều xa cú nhảy tối đa",
+                equation: "D_jump = D_original * (M_scaled / M_original)^(1/3) * G_eff",
+                result: "~60 meters"
+              }
+            ]
+          },
+          p4p_score_scaled: 92,
+          tier_scaled: "S",
+          sources: [
+            { label: "Journal of Experimental Biology - Jumping mechanics and hydraulic pressure scaling in jumping spiders", url: "https://doi.org/10.1242/jeb.048753" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Cái chết ngạt do phổi sách bị bóp nghẹt và sự nứt vỡ vỏ kitin dưới áp suất thủy lực gãy chân)",
+          slug: "nhen-nhay-portia-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Không khí khuếch tán thụ động qua phổi sách giảm 117 lần gây chết ngạt sau 2 phút, và vỏ kitin mỏng rạn nứt rò rỉ hemolymph hoàn toàn dưới áp lực thủy lực 900 kPa cần để duỗi chân.",
+          content: "Trong thế giới vật lý thực tế, nhện nhảy Portia 80kg sẽ sụp đổ ngay lập tức:\n- Suy hô hấp cấp: Phổi sách của nhện hoạt động hoàn toàn bằng cách trao đổi khí khuếch tán thụ động không có chuyển động cơ học chủ động. Khi kích thước tuyến tính tăng 117 lần, tỷ lệ diện tích bề mặt trao đổi trên thể tích (S/V) giảm 117 lần. Tốc độ khuếch tán oxy vào mô trong cơ thể chậm hơn 117 lần so với nhu cầu trao đổi chất, làm nhện chết ngạt hoàn toàn trong vòng 2 phút.\n- Vỡ mạch máu và liệt chân: Khớp chân nhện duỗi thẳng bằng cơ chế thủy lực (bơm máu hemolymph). Để di chuyển khối lượng 80kg, tim nhện phải tạo áp suất hemolymph hơn 900 kPa (chín lần áp suất khí quyển). Áp suất cực đại này sẽ phá vỡ màng khớp mỏng manh và vỏ giáp chitin, rò rỉ dịch máu ra ngoài khiến nhện bại liệt lập tức.\n- Tổn thương võng mạc do rung chuyển: Mắt của Portia theo dõi mục tiêu bằng cách di chuyển ống võng mạc sâu trong đầu. Ở kích thước 80kg, ống võng mạc nặng 150g sẽ lắc lư mạnh do quán tính khi nhảy, làm đứt các sợi cơ điều khiển võng mạc, gây mù lòa và chấn thương sọ não.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Tốc độ khuếch tán khí qua phổi sách",
+                issue: "Lưu lượng oxy khuếch tán chỉ đạt 0.8% nhu cầu tối thiểu của cơ thể 80kg khi đứng yên."
+              },
+              {
+                type: "Áp suất thủy lực xoang ngực",
+                issue: "Yêu cầu 920 kPa để nhấc chân, vượt xa giới hạn bền kéo của màng khớp chitin (120 kPa)."
+              }
+            ]
+          },
+          p4p_score_scaled: 12,
+          tier_scaled: "D",
+          sources: [
+            { label: "American Museum Novitates - Respiratory systems and metabolic limits in giant arachnids", url: "https://doi.org/10.1206/3745.2" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khớp cơ duỗi trực tiếp và phổi phế nang tích hợp cơ hoành khí nén)",
+          slug: "nhen-nhay-portia-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Tiến hóa cơ duỗi trực tiếp nội khớp loại bỏ cơ chế thủy lực, phát triển phổi phế nang co bóp chủ động bằng cơ hoành ngực, và vỏ chitin carbon hóa tự chữa lành.",
+          content: "Để sinh tồn ở kích thước 80kg, Portia tiến hóa những đặc điểm đột biến cách mạng:\n- Hệ cơ xương cơ học trực tiếp: Nhện tiến hóa các dải cơ duỗi cơ học bám vào các lồi xương kitin bên trong khớp chân (giống cơ xương của động vật có xương sống), loại bỏ hoàn toàn cơ chế duỗi chân bằng thủy lực hemolymph, giúp nhện chạy nhảy mạnh mẽ mà không sợ vỡ mạch.\n- Hô hấp phổi phế nang chủ động: Phổi sách phát triển thành hệ thống phổi phế nang xếp nếp chéo, đi kèm với các tấm cơ bụng co bóp chủ động đóng vai trò như cơ hoành để chủ động hút đẩy không khí cưỡng bức, duy trì lưu lượng khí 35 lít/phút.\n- Mắt viễn vọng chống rung chấn: Ống võng mạc được đặt trong một kén sụn đàn hồi Resilin hấp thụ 98% rung động chấn động khi nhảy. Bộ não phát triển cơ chế bù trừ rung ảnh kỹ thuật số (digital image stabilization) giúp nhện nhảy Portia khóa mục tiêu hoàn hảo ngay cả khi đang bay trên không trung.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Cơ duỗi cơ học nội khớp",
+                benefit: "Tạo lực duỗi cơ học trực tiếp 4.200 N mỗi chân sau, hỗ trợ di chuyển ổn định."
+              },
+              {
+                type: "Hệ phổi phế nang co bóp chủ động",
+                benefit: "Cung cấp 100% nhu cầu oxy hemolymph cho các mô cơ sâu khi vận động cường độ cao."
+              }
+            ]
+          },
+          p4p_score_scaled: 82,
+          tier_scaled: "B",
+          sources: [
+            { label: "Nature Reviews Neuroscience - Adaptations and visual processing systems in giant predatory arthropods", url: "https://doi.org/10.1038/nrn.2024.122" }
           ]
         }
       ]

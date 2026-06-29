@@ -26,7 +26,7 @@ if (!supabaseUrl || !supabaseAnonKey) {
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 async function run() {
-  const ids = ["tardigrade", "tasmanian-devil", "texas-horned-lizard", "thorny-devil", "thresher-shark"];
+  const ids = ["barn-owl", "pelican-eel", "vogelkop-bowerbird", "sawfish", "snake-mimic-caterpillar"];
   const { data, error } = await supabase
     .from("creatures")
     .select("*")
@@ -37,7 +37,8 @@ async function run() {
     process.exit(1);
   }
 
-  console.log(JSON.stringify(data, null, 2));
+  fs.writeFileSync(path.join(__dirname, "temp-current-details.json"), JSON.stringify(data, null, 2));
+  console.log("Successfully wrote target details to temp-current-details.json");
 }
 
 run();
