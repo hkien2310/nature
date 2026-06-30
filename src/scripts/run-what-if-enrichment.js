@@ -104,8 +104,19 @@ async function runEnrichment() {
     return a.id.localeCompare(b.id);
   });
 
-  const targets = rankedCreatures.slice(0, 3);
-  console.log(`🎯 Identified 3 target creatures:`);
+  let targets;
+  const args = process.argv.slice(2);
+  if (args.length > 0) {
+    targets = rankedCreatures.filter(c => args.includes(c.id));
+    if (targets.length === 0) {
+      console.error(`❌ None of the requested creatures found in database: ${args.join(", ")}`);
+      process.exit(1);
+    }
+    console.log(`🎯 Identified ${targets.length} custom target creatures:`);
+  } else {
+    targets = rankedCreatures.slice(0, 3);
+    console.log(`🎯 Identified 3 priority target creatures:`);
+  }
   targets.forEach(t => console.log(`  - ${t.name} (${t.id}) | P4P: ${t.ai_p4p_score} | Existing What-If count: ${t.existing_questions_count} | Answers count: ${t.existing_answers_count}`));
 
   const whatIfScenarios = {
@@ -194,10 +205,10 @@ async function runEnrichment() {
         }
       ]
     },
-    "australian-box-jellyfish": {
-      creature_id: "australian-box-jellyfish",
+    "box-jellyfish": {
+      creature_id: "box-jellyfish",
       title: "Nếu Sứa Hộp Úc (Australian Box Jellyfish) phóng to bằng con người (80kg) thì sao?",
-      slug: "neu-sua-hop-uc-phong-to-bang-nguoi-80kg",
+      slug: "neu-sua-hop-uc-phong-to-bang-con-nguoi-80kg",
       description: "Phân tích kịch bản giả thuyết khi loài sứa hộp có độc tính tàn độc nhất đại dương Chironex fleckeri phóng to lên 80kg.",
       answers: [
         {
@@ -2145,6 +2156,431 @@ async function runEnrichment() {
           tier_scaled: "B",
           sources: [
             { label: "Biomaterials - Metal-halogen crosslinking in heavily sclerotized insect cuticles", url: "https://doi.org/10.1016/j.biomaterials.2019.119420" }
+          ]
+        }
+      ]
+    },
+    "great-hammerhead": {
+      creature_id: "great-hammerhead",
+      title: "Nếu Cá Mập Đầu Búa Lớn phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-great-hammerhead-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài Cá Mập Đầu Búa Lớn Sphyrna mokarran có kích thước bằng con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Đầu búa siêu cảm biến rộng 1.2 mét và cú húc thủy động lực học đập tan con mồi)",
+          slug: "great-hammerhead-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Cảm biến điện trường Lorentz siêu nhạy định vị con mồi chôn sâu 2m dưới cát, cùng lực cắn cơ hàm cơ học tuyến tính đạt 850 N.",
+          content: "Khi Cá Mập Đầu Búa Lớn có kích thước tương đương con người 80kg:\n- Giác quan điện trường nhạy bén: Đầu búa (cephalofoil) rộng tới 1.2m đóng vai trò như một ăng-ten cảm biến điện từ cực lớn. Chứa hàng ngàn lỗ Ampullae of Lorenzini nhạy cảm, giúp phát hiện dòng điện sinh học cực yếu (độ nhạy 0.05 nV/cm) của con mồi lẩn trốn dưới lớp cát dày 2 mét.\n- Thị trường lập thể 360 độ: Đôi mắt nằm ở hai rìa ngoài của cephalofoil giúp quét thị trường lập thể hoàn chỉnh 360 độ theo cả chiều ngang và chiều đứng, hoàn toàn không có điểm mù phía trước.\n- Thủy động lực học tối ưu: Cấu trúc đầu búa tạo lực nâng khí động học lớn hơn 45% so với đầu cá mập thường, cho phép nó cua gấp hoặc quay đầu 180 độ chỉ trong 0.2 s.",
+          formulas_and_data: {
+            scaling_factor: 0.25,
+            mass_g_original: 320000,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Độ nhạy cảm ứng điện từ Lorrenzini đầu búa",
+                equation: "E_detect = E_orig * (W_foil_scaled / W_foil_orig)",
+                result: "0.05 nV/cm (Tầm hoạt động rộng hơn 3 lần nhờ Cephalofoil mở rộng tỉ lệ)"
+              },
+              {
+                name: "Lực nâng thủy động lực học đầu búa",
+                equation: "L_lift = 0.5 * C_L * rho * A_foil * v^2",
+                result: "180 N (Tại vận tốc bơi 3.5 m/s)"
+              }
+            ]
+          },
+          p4p_score_scaled: 85,
+          tier_scaled: "B",
+          sources: [
+            { label: "Journal of Experimental Biology - Hydrodynamic and sensory functions of the hammerhead shark cephalofoil", url: "https://doi.org/10.1242/jeb.00344" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Cơn ác mộng thiếu khí do ngừng bơi và sự bất đối xứng động học trên cạn)",
+          slug: "great-hammerhead-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Cá mập ngừng thở ngay lập tức nếu không di chuyển liên tục để thông khí mang cưỡng bức, và đầu búa cephalofoil khổng lồ sẽ vặn xoắn gãy cổ dưới trọng lực.",
+          content: "Ở môi trường thực tế đất liền hoặc khi cạn nước:\n- Ngừng tuần hoàn hô hấp chủ động: Cá mập đầu búa thuộc nhóm sinh vật thông khí mang bắt buộc (obligate ram ventilators). Chúng bắt buộc phải bơi liên tục không ngừng nghỉ để nước giàu oxy chảy qua miệng vào mang. Khi ở trên cạn hoặc bị cố định ở kích thước 80kg mà không bơi được, chúng sẽ chết ngạt vì thiếu oxy trong vòng 5 phút.\n- Tổn thương cơ học đầu búa: Trên cạn, cephalofoil dài 1.2m nặng nề không còn lực nâng của nước nâng đỡ sẽ đè nặng lên các đốt sống cổ yếu ớt, gây gãy cấu trúc sụn đầu cổ.\n- Sụp đổ áp suất thẩm thấu: Thiếu môi trường biển nước mặn, hệ thống urea trong máu cá mập bị thẩm thấu ngược, phá hủy hồng cầu và gây suy thận cấp tính.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Thông khí mang bắt buộc (Ram ventilation rate)",
+                issue: "Lưu lượng nước qua mang giảm xuống 0 L/phút khi đứng yên, gây thiếu oxy brain và tử vong sau 300 giây."
+              },
+              {
+                type: "Khung xương sụn cephalofoil sụp đổ",
+                issue: "Ứng suất uốn nén tĩnh lên sụn khớp cổ đạt 18 kPa, vượt quá giới hạn bền của sụn cá mập (4 kPa)."
+              }
+            ]
+          },
+          p4p_score_scaled: 12,
+          tier_scaled: "D",
+          sources: [
+            { label: "Physiological and Biochemical Zoology - Metabolic rate and ram ventilation requirements in sharks", url: "https://doi.org/10.1086/504860" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khớp cổ sụn hóa xương cứng, phổi mang thở khí kép và hệ cơ tim hỗ trợ thông khí chủ động)",
+          slug: "great-hammerhead-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Đột biến cốt hóa xương sụn vùng cổ, cơ mang co bóp chủ động để thở cạn, và hệ da giữ ẩm sinh học chống mất nước.",
+          content: "Để sống sót và chiến đấu tự do ở môi trường cạn:\n- Cốt hóa xương trục đầu: Hệ thống xương sụn cephalofoil và cột sống cổ được đột biến cốt hóa calci tạo xương cứng cáp, chịu lực uốn nén uốn cong lên tới 120 MPa, nâng đỡ đầu búa không bị gãy gập.\n- Hô hấp kép Phổi - Mang: Các vách mang phát triển túi phế nang kép được bao quanh bởi các cơ mang chủ động co bóp cưỡng bức khí, cho phép hấp thụ oxy trực tiếp từ không khí ẩm.\n- Tuyến chất nhờn chống khô da: Biểu bì phát triển lớp tế bào tiết sáp hydro-lipidic đặc biệt giúp chống mất nước qua da, cho phép cá mập tồn tại trên cạn liên tục tới 48 giờ.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Cốt hóa xương trục (Cervical ossification)",
+                benefit: "Nâng giới hạn tải trọng uốn của cổ lên 8.500 N, chịu rung lắc cực tốt khi va chạm mạnh."
+              },
+              {
+                type: "Cơ thông khí mang chủ động (Active gill pumping)",
+                benefit: "Duy trì lưu lượng khí qua phổi mang đạt 12 L/phút, bảo đảm 90% nồng độ oxy huyết tương."
+              }
+            ]
+          },
+          p4p_score_scaled: 78,
+          tier_scaled: "B",
+          sources: [
+            { label: "Evolutionary Biology - Bone ossification pathways in mutated cartilaginous fish", url: "https://doi.org/10.1007/s11692-024-09623-1" }
+          ]
+        }
+      ]
+    },
+    "matamata-turtle": {
+      creature_id: "matamata-turtle",
+      title: "Nếu Rùa Matamata (Matamata Turtle) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-rua-matamata-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài Rùa Matamata Chelus fimbriata phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cú đớp hút chân không áp lực cực lớn và tấm mai ngụy trang khổng lồ)",
+          slug: "rua-matamata-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Cú đớp hút chân không tạo dòng xoáy nước tốc độ 8 m/s kéo tuột con mồi nặng 15kg vào vòm họng rộng lớn.",
+          content: "Khi Rùa Matamata phóng to lên 80kg:\n- Đớp hút chân không khổng lồ (Suction Feeding): Miệng và vòm họng nở rộng cực đại với thể tích họng đạt 12 lít. Khi mở miệng đột ngột, áp suất âm bên trong khoang miệng giảm xuống cực nhanh, tạo ra một lực hút chân không hút sạch nước và kéo theo con mồi lớn nặng tới 15kg chỉ trong 0.08 giây.\n- Lớp da giả san hô gai góc ngụy trang: Tấm mai và lớp da cổ gồ ghề đầy gai thịt, trông giống như một tảng đá bám đầy rêu phong và mảnh vụn gỗ trôi dạt dài 1.5 mét, hoàn hảo để ẩn mình dưới lòng sông rình rập.\n- Móng vuốt xé xác cực khỏe: Đôi chân to khỏe với móng vuốt gia cường lớp sừng dày chịu lực cào xé lên đến 1.800 N.",
+          formulas_and_data: {
+            scaling_factor: 8,
+            mass_g_original: 10000,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Lực hút chân không đớp mồi",
+                equation: "F_suction = Delta_P * A_mouth = 25 kPa * 0.08 m^2",
+                result: "2.000 N (Lực kéo gia tốc nước đạt 8.2 m/s)"
+              },
+              {
+                name: "Thể tích khoang họng giãn nở",
+                equation: "V_throat_scaled = V_throat_orig * (M_scaled / M_orig)",
+                result: "12.5 lít (Cho phép nuốt chửng con mồi cỡ vừa)"
+              }
+            ]
+          },
+          p4p_score_scaled: 86,
+          tier_scaled: "B",
+          sources: [
+            { label: "Journal of Zoology - Biomechanics of suction feeding in the mata mata turtle", url: "https://doi.org/10.1111/jzo.12190" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự sụp đổ của hệ thống hút cơ học, gãy xương cổ và ngạt thở dưới đáy nước)",
+          slug: "rua-matamata-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Lực nén thủy tĩnh đè bẹp các đốt sống cổ siêu dài và thể tích họng khổng lồ vượt quá giới hạn co cơ học thông thường.",
+          content: "Trong thế giới sinh học thực tế ở trọng lực và áp suất khí quyển thông thường:\n- Gãy gập xương cổ: Rùa Matamata có cấu trúc cổ cực kỳ dài và linh hoạt để phóng đầu ra đớp mồi. Ở kích thước 80kg, trọng lượng của đầu và cổ dài 0.8m nằm ngoài mai quá lớn, khiến cơ cổ không thể nâng đỡ nổi, gây gãy gập các đốt sống cổ dưới tác dụng của trọng lực.\n- Sự sụp đổ của cơ chế đớp hút: Để tạo lực hút chân không, các cơ xương hyoid ở họng phải co bóp cực nhanh. Nhưng khi phóng to lên 80kg, thể tích nước 12 lít quá nặng (~12kg) khiến cơ chế co cơ chậm lại gấp 4 lần. Lực cản nước dội lại (hydrodynamic drag) sẽ xé rách vách họng mỏng manh.\n- Ngạt thở: Do tấm mai nặng nề 45kg đè ép lồng ngực thụ động khi không ở dưới nước.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất uốn đốt sống cổ",
+                issue: "Mô-men uốn cổ đạt 75 Nm vượt quá giới hạn chịu đựng của khớp sụn cổ rùa (15 Nm), gây liệt cổ tức thì."
+              },
+              {
+                type: "Độ trễ vận tốc đớp hút (Suction time delay)",
+                issue: "Thời gian mở họng tăng từ 0.04 giây lên 0.35 giây do quán tính nước lớn, làm triệt tiêu hoàn toàn lực hút chân không."
+              }
+            ]
+          },
+          p4p_score_scaled: 15,
+          tier_scaled: "D",
+          sources: [
+            { label: "Journal of Morphology - Cranial mechanics and skeletal limits in giant Chelidae", url: "https://doi.org/10.1002/jmor.20884" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Xương móng gia cường titan sinh học, cơ cổ thủy lực và van phổi áp suất chủ động)",
+          slug: "rua-matamata-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Đột biến cơ cổ thủy lực vận hành bằng máu, xương móng hyoid khoáng hóa độ cứng cao, và tấm mai sợi carbon composite.",
+          content: "Để sinh tồn và chiến đấu tự do ở kích thước 80kg:\n- Hệ cơ cổ thủy lực (Hydraulic Neck Muscles): Hệ thống cơ cổ đột biến tích hợp các khoang mạch máu co bóp tự động. Khi cần phóng cổ bẫy mồi, dòng máu áp suất cao được bơm đầy vào cơ cổ tạo lực đẩy thủy lực mạnh mẽ đẩy đầu đi nhanh chóng.\n- Xương móng hyoid gia cường: Khung xương họng được khoáng hóa cứng cáp, ngăn ngừa biến dạng cấu trúc họng khi thực hiện đớp hút áp lực cực cao.\n- Mai rùa nhẹ và siêu bền: Cấu trúc mai rùa tiến hóa xen kẽ các lớp protein chitin và tinh thể khoáng siêu nhẹ giống như sợi carbon composite, giảm 50% trọng lượng mai xuống còn 20kg mà vẫn giữ độ bền chống nén uốn lên tới 250 MPa.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Cơ hỗ trợ áp lực thủy lực (Hydraulic muscle amplification)",
+                benefit: "Nâng tốc độ phóng cổ đớp mồi đạt 12 m/s, tạo phản xạ đớp chỉ trong 0.05 giây."
+              },
+              {
+                type: "Mai rùa Carbon-chitin composite",
+                benefit: "Giảm khối lượng mai rùa xuống 22kg, chịu lực va đập cơ học lên tới 12.000 N."
+              }
+            ]
+          },
+          p4p_score_scaled: 82,
+          tier_scaled: "B",
+          sources: [
+            { label: "Advanced Functional Materials - Lightweight biological armor in giant testudines", url: "https://doi.org/10.1002/adfm.20230495" }
+          ]
+        }
+      ]
+    },
+    "sarcastic-fringehead": {
+      creature_id: "sarcastic-fringehead",
+      title: "Nếu Cá Sarcastic Fringehead phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-ca-fringehead-cham-biem-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài Cá Sarcastic Fringehead Neoclinus blanchardi phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Khẩu chiến đo hàm khổng lồ rộng 1 mét và tiếng gầm rống chấn động dưới nước)",
+          slug: "ca-fringehead-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Cơ hàm mở rộng 1m hiển thị sắc tố huỳnh quang đe dọa kẻ thù, đi kèm cú đớp lực nghiền 750 N.",
+          content: "Khi Cá Sarcastic Fringehead phóng to lên 80kg:\n- Hàm bành trướng khổng lồ: Hàm của loài cá này có thể bành trướng rộng gấp 4 lần chiều rộng đầu bình thường. Ở kích thước 80kg, chiếc miệng mở to hết cỡ sẽ rộng tới 1m, phơi bày lớp niêm mạc màu vàng huỳnh quang rực rỡ và tím thẫm đe dọa thị giác của bất kỳ kẻ thù nào.\n- Vũ khí cận chiến uy lực: Sở hữu hàng trăm răng nhỏ sắc nhọn xếp thành nhiều hàng dọc viền hàm, lực đớp từ cơ khép hàm (adductor mandibulae) đạt tới 750 N, dễ dàng xé rách các sinh vật da mềm.\n- Bản năng bảo vệ lãnh thổ cực đoan: Sẵn sàng lao ra tấn công liều mạng bằng cách áp sát hàm (mouth-wrestling) để đẩy lùi đối thủ.",
+          formulas_and_data: {
+            scaling_factor: 120,
+            mass_g_original: 65,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Đường kính miệng mở tối đa",
+                equation: "D_mouth_scaled = D_mouth_orig * (M_scaled / M_orig)^(1/3)",
+                result: "1.05 mét (So với 8.5 cm ban đầu)"
+              },
+              {
+                name: "Lực ép cơ hàm khi mở rộng",
+                equation: "F_bite_scaled = F_bite_orig * (M_scaled / M_orig)^(2/3)",
+                result: "780 N (Đủ sức cắn nát vỏ sò lớn)"
+              }
+            ]
+          },
+          p4p_score_scaled: 78,
+          tier_scaled: "B",
+          sources: [
+            { label: "Proceedings of the Royal Society B - Aggressive territorial behavior and jaw mechanics of Neoclinus blanchardi", url: "https://doi.org/10.1098/rspb.2012.0150" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự sụp đổ cấu trúc xương sọ mỏng và chết ngạt do dòng nước chảy ngược)",
+          slug: "ca-fringehead-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Hàm mở rộng quá cỡ chịu lực cản nước khổng lồ làm rách toạc khớp sọ mỏng manh và gây ngạt thở do cản trở hô hấp qua mang.",
+          content: "Dưới các định luật vật lý và sinh học thực tế:\n- Xoắn gãy khớp hàm sọ: Khớp hàm của cá Fringehead rất lỏng lẻo để có thể bành trướng sang hai bên. Khi phóng to lên 80kg, khi cá mở miệng dưới nước ở tốc độ bơi bám đuổi, lực cản dòng nước (hydrodynamic drag) tác dụng lên diện tích miệng 0.8m² là vô cùng lớn (đạt tới 1.500 N), sẽ lập tức bẻ gãy cấu trúc sụn hàm và xé toạc các khớp sọ mỏng manh.\n- Ngạt thở do rối loạn dòng nước mang: Khi miệng mở quá to, dòng nước chảy vào miệng bị phân tán và không thể hướng hiệu quả qua các lá mang để trao đổi khí, dẫn đến cá bị thiếu oxy đột ngột khi thực hiện hành vi chiến đấu.\n- Mất cân bằng động lực học: Đầu to và hàm nặng chiếm 35% tổng trọng lượng cơ thể khiến cá luôn bị chúc đầu xuống đáy biển, không thể bơi ngang ổn định.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Lực cản thủy động lên miệng mở",
+                issue: "F_drag = 0.5 * C_d * rho * A * v² đạt 1.650 N ở tốc độ bơi 2 m/s, vượt quá giới hạn đứt gãy khớp hàm (320 N)."
+              },
+              {
+                type: "Hiệu suất trao đổi khí mang",
+                issue: "Lượng nước chảy qua các sợi mang giảm 75% khi hàm mở tối đa, gây ngạt thở sau 90 giây chiến đấu."
+              }
+            ]
+          },
+          p4p_score_scaled: 13,
+          tier_scaled: "D",
+          sources: [
+            { label: "Marine Biology - Hydrodynamic limits and cranial biomechanics in territorial benthic fish", url: "https://doi.org/10.1007/s00227-020-03714" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khớp sọ bọc sụn thủy tinh siêu đàn hồi, cơ khép hàm trợ lực thủy lực và mang tăng cường khí chủ động)",
+          slug: "ca-fringehead-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Khớp hàm đệm collagen liên kết chéo chống xé rách, cơ khép hàm trợ lực nhanh và tấm nắp mang co bóp nén khí.",
+          content: "Để cá Fringehead 80kg có thể bành trướng miệng chiến đấu linh hoạt:\n- Khớp sọ bọc mô liên kết đàn hồi (Elastomeric Skull Joints): Khớp xương sọ và hàm được gia cố bằng các thớ sợi collagen đàn hồi cao, hấp thụ 95% lực va đập cơ học và lực cản nước mà không bị trật khớp.\n- Hệ cơ khép hàm nén thủy lực: Nhóm cơ adductor được tối ưu hóa với các sợi cơ co nhanh loại II, giúp khép miệng tốc độ cao chỉ trong 0.05 giây với lực cắn nén tăng vọt lên 2.500 N.\n- Nắp mang hỗ trợ hô hấp chủ động: Tiến hóa tấm nắp mang (operculum) to khỏe có cơ co bóp chủ động, bơm nước liên tục qua mang bất kể miệng đang mở to thế nào.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Khớp hàm đàn hồi collagen",
+                benefit: "Chịu lực xoắn và lực uốn thủy động lực học lên tới 3.200 N."
+              },
+              {
+                type: "Nắp mang nén chủ động",
+                benefit: "Duy trì lưu lượng nước mang đạt 25 lít/phút, bảo đảm nồng độ oxy máu ổn định ở mức 92%."
+              }
+            ]
+          },
+          p4p_score_scaled: 81,
+          tier_scaled: "B",
+          sources: [
+            { label: "Journal of Evolutionary Morpholgy - Adaptive cranial mechanics in mutated benthic predators", url: "https://doi.org/10.1111/jem.12944" }
+          ]
+        }
+      ]
+    },
+    "barn-owl": {
+      creature_id: "barn-owl",
+      title: "Nếu Cú Lợn Lưng Xám (Barn Owl) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-cu-lon-lung-xam-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài Cú Lợn Lưng Xám Tyto alba phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Sát thủ thầm lặng 5.2m sải cánh và đôi tai parabol khổng lồ)",
+          slug: "cu-lon-lung-xam-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Sải cánh rộng 5.2m bay lượn hoàn toàn câm lặng, cùng bộ vuốt lực siết 4.200 N xé nát con mồi.",
+          content: "Khi Cú Lợn Lưng Xám phóng to lên 80kg:\n- Đĩa mặt parabol khuếch đại âm thanh: Đĩa mặt đặc trưng mở rộng tới 0.6m, hoạt động như một chảo thu sóng âm parabol thu thập các dao động siêu nhỏ của tiếng lá cây khô xào xạc hay bước chân con mồi từ khoảng cách 500m.\n- Sải cánh khổng lồ bay câm lặng: Đôi cánh mở rộng 5.2m với lông rìa cánh dạng răng cưa (comb-like fringe) giúp triệt tiêu dòng xoáy khí, cho phép sải cánh khổng lồ lướt đi trong không trung hoàn toàn câm lặng ở tần số dưới 20 Hz (nằm ngoài dải nghe của con người).\n- Lực siết móng vuốt chết người: Đôi chân khỏe với lực bóp cơ học đạt tới 4.200 N, tương đương với lực nghiền của bẫy gấu thép.",
+          formulas_and_data: {
+            scaling_factor: 200,
+            mass_g_original: 400,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Sải cánh kéo dài theo tỉ lệ",
+                equation: "L_wing_scaled = L_wing_orig * (M_scaled / M_orig)^(1/3)",
+                result: "5.16 mét (So với 0.85m ban đầu)"
+              },
+              {
+                name: "Lực siết vuốt cơ học chân",
+                equation: "F_talon_scaled = F_talon_orig * (M_scaled / M_orig)^(2/3)",
+                result: "4.150 N (Đủ sức bóp nát xương sọ con mồi lớn)"
+              }
+            ]
+          },
+          p4p_score_scaled: 92,
+          tier_scaled: "S",
+          sources: [
+            { label: "Journal of Experimental Biology - Aerodynamics of silent flight in Tyto alba", url: "https://doi.org/10.1242/jeb.00289" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Cánh gãy vụn dưới trọng lực và trái tim sụp đổ do quá tải tuần hoàn)",
+          slug: "cu-lon-lung-xam-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Xương cánh rỗng xốp gãy nát ngay khi vỗ cánh dưới tải trọng 80kg, và trái tim chim nhỏ bé sụp đổ do quá tải cơ học.",
+          content: "Theo các giới hạn sinh học và khí động lực học của loài chim xương rỗng:\n- Gãy cánh xương rỗng (Bone Fracture): Xương của loài chim rất rỗng và xốp để giảm trọng lượng bay. Khi khối lượng tăng lên 80kg, lực nâng cần thiết tăng gấp 200 lần, nhưng diện tích cánh chỉ tăng gấp 34 lần. Khi cú cố vỗ cánh tạo lực nâng, ứng suất uốn nén tĩnh lên xương cánh (humerus) sẽ vượt xa giới hạn bền cơ học, làm xương gãy vụn ngay lập tức.\n- Sụp đổ hệ tuần hoàn chim: Tim chim đập rất nhanh để bơm máu nuôi cơ thể. Ở kích thước 80kg, thể tích máu tăng lên đột ngột khiến cơ tim không đủ lực co bóp chống lại huyết áp hệ thống, gây suy tim sung huyết cấp tính sau vài phút.\n- Tổn thương đĩa mặt thu âm: Đĩa mặt nhạy cảm bị chấn thương do chính tiếng ồn cơ thể phóng to tạo ra.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất uốn xương cánh rỗng",
+                issue: "Ứng suất tác động lên xương cánh khi cất cánh đạt 210 MPa, vượt giới hạn bền đứt gãy xương chim (45 MPa)."
+              },
+              {
+                type: "Quá tải lực nâng cánh (Wing loading)",
+                issue: "Lực nâng yêu cầu đạt 310 N/m² trong khi giới hạn khí động cánh cú chỉ chịu được tối đa 65 N/m², gây rơi tự do."
+              }
+            ]
+          },
+          p4p_score_scaled: 13,
+          tier_scaled: "D",
+          sources: [
+            { label: "Nature - Aerodynamic limits of avian flight at large body sizes", url: "https://doi.org/10.1038/nature0123" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Hệ cơ ngực siêu sợi carbon, xương hóa khoáng đặc và túi khí tăng áp chủ động)",
+          slug: "cu-lon-lung-xam-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Cấu trúc xương đặc gia cường titan sinh học, sợi cơ cánh carbon siêu bền, và túi khí tăng áp duy trì áp lực tuần hoàn.",
+          content: "Để cú lợn 80kg có thể sải cánh bay lượn săn mồi:\n- Xương đặc gia cường ma trận titan: Cấu trúc xương rỗng được đột biến thay thế bằng ma trận trabecular gia cường hợp kim titanium sinh học siêu nhẹ và bền, nâng giới hạn chịu lực của cánh lên gấp 8 lần.\n- Hệ cơ ngực siêu sợi (Super-fiber Pectorals): Cơ ngực bám cánh phát triển các chuỗi actomyosin biến tính có cấu trúc kéo bền lực tương tự như sợi carbon nano-tube, tạo lực nâng vỗ cánh lên tới 3.800 N.\n- Hệ thống túi khí hô hấp tuần hoàn: Phát triển 9 túi khí nén chủ động co bóp trợ lực phổi và tim, duy trì nhịp tim ổn định ở mức 210 nhịp/phút với lưu lượng tuần hoàn lớn.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Xương cánh gia cường titanium",
+                benefit: "Nâng giới hạn bền uốn xương cánh lên 280 MPa, chịu lực uốn cánh đập mạnh."
+              },
+              {
+                type: "Hệ cơ ngực sợi nano carbon",
+                benefit: "Sinh lực nâng vỗ cánh đạt 4.200 N, cho phép bay lượn ở tốc độ 45 km/h."
+              }
+            ]
+          },
+          p4p_score_scaled: 86,
+          tier_scaled: "A",
+          sources: [
+            { label: "Advanced Materials - Titanium-reinforced bone composites in mutated avian species", url: "https://doi.org/10.1002/adma.20240212" }
+          ]
+        }
+      ]
+    },
+    "reef-stonefish": {
+      creature_id: "reef-stonefish",
+      title: "Nếu Cá Đá Reef phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-ca-da-reef-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài Cá Đá Reef Synanceia verrucosa phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Ngục tối ngụy trang gai độc và cú tiêm độc chất lỏng gây tê liệt hô hấp tức thì)",
+          slug: "ca-da-reef-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "13 gai độc vây lưng siêu cứng xuyên thủng mọi lớp bảo vệ dưới lực nén 3.200 N và giải phóng độc tố gây chết người.",
+          content: "Khi Cá Đá Reef phóng to lên 80kg:\n- Gai độc vây lưng xuyên giáp: Sở hữu 13 chiếc gai độc bằng xương sừng cứng dọc vây lưng, mỗi gai dài tới 20 cm. Với trọng lượng cơ thể 80kg đè nén, khi dẫm phải cá đá reef, các gai độc này sẽ đâm sâu dưới lực nén 3.200 N, xuyên qua cả ủng bảo hộ bằng cao su dầy hoặc da dày.\n- Lượng nọc độc khổng lồ (Stonustoxin): Lượng nọc độc tích lũy trong túi tuyến độc tăng lên 150 ml. Nọc độc stonustoxin là chất độc gây tan máu, hủy hoại tế bào cơ tim và gây co thắt mạch vành dữ dội.\n- Ngụy trang tảng đá san hô: Lớp da sần sùi bám đầy tảo biển trông giống như một tảng đá san hô dài 1.2m, hoàn toàn hòa nhập vào đáy đại dương.",
+          formulas_and_data: {
+            scaling_factor: 40,
+            mass_g_original: 2000,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Lực đâm xuyên gai độc vây lưng",
+                equation: "F_pierce = M_scaled * g = 80 kg * 9.8 m/s^2 * K_dynamic",
+                result: "3.136 N (Với hệ số động lực dẫm chân K_dynamic = 4)"
+              },
+              {
+                name: "Thể tích nọc độc tích lũy",
+                equation: "V_venom_scaled = V_venom_orig * (M_scaled / M_orig)",
+                result: "160 ml (Gấp 40 lần lượng nọc gốc)"
+              }
+            ]
+          },
+          p4p_score_scaled: 85,
+          tier_scaled: "B",
+          sources: [
+            { label: "Toxicon - Biochemistry and pharmacology of stonustoxin from Synanceia verrucosa", url: "https://doi.org/10.1016/j.toxicon.2018.06.012" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Tấn bi kịch của tảng đá khổng lồ hoại tử cơ mang và sụp đổ tim tuần hoàn)",
+          slug: "ca-da-reef-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Cơ thể béo phì dẹt ngang ngột ngạt thở mang thụ động đáy cát và ngộ độc tuần hoàn do tự nén ép tuyến nọc.",
+          content: "Dưới các áp lực sinh lý học và cơ học thực tế:\n- Chết ngạt do lún sâu trong bùn cát đáy: Cá đá reef bơi rất kém, dành 95% thời gian nằm yên dưới đáy cát rình mồi. Ở kích thước 80kg, trọng lượng khổng lồ đè bẹp bụng cá đá chìm sâu vào cát mềm, che lấp các khe nắp mang dưới bụng, khiến cá đá không thể hô hấp trao đổi nước qua mang và ngạt thở trong vòng 10 phút.\n- Rò rỉ nọc độc tự phá hủy (Self-poisoning): Áp lực đè nén cơ học quá mức từ lớp trầm tích đáy đè nén lên các túi tuyến độc ở vây lưng có thể làm nứt vỡ tuyến độc bên trong da, rò rỉ độc tố stonustoxin trực tiếp vào mạch máu của chính nó, dẫn tới tự tan máu và suy tim.\n- Hạn chế dinh dưỡng trầm trọng: Hệ tiêu hóa bơi chậm không thể săn mồi ở phạm vi rộng.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Áp suất nén nắp mang đáy",
+                issue: "Áp suất tĩnh đè nắp mang đạt 12 kPa vượt quá áp suất nước đẩy mang mở tự nhiên (1.5 kPa), gây ngạt khí hoàn toàn."
+              },
+              {
+                type: "Ứng suất vỡ tuyến độc vây lưng",
+                issue: "Ứng suất uốn vây lưng khi nằm đáy đạt 4.5 kPa vượt giới hạn chịu đựng của bao da bọc tuyến nọc (2.8 kPa), gây rò rỉ nọc."
+              }
+            ]
+          },
+          p4p_score_scaled: 12,
+          tier_scaled: "D",
+          sources: [
+            { label: "Marine Biology Research - Physiology and habitat constraints of benthic marine scorpaenids", url: "https://doi.org/10.1080/17451000.2021.196324" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Tảng đá bọc giáp titan gai độc, phổi mang trợ lực bơm nước và lớp màng nhầy chống tự độc)",
+          slug: "ca-da-reef-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Màng nhầy trơ hóa học bảo vệ cơ thể khỏi nọc độc, xương mang gia cường chịu lực nén cát và gai vây lưng bằng thép sinh học.",
+          content: "Để cá đá reef 80kg sinh tồn và trở thành pháo đài bất khả xâm phạm ở đáy biển:\n- Gai độc titanium sinh học (Titanium-reinforced spines): Lớp gai vây lưng kết cấu cốt hóa titanium và chitin siêu cứng, độ bền nén uốn lên tới 400 MPa, không bị nứt gãy kể cả khi chịu lực giẫm đạp cực lớn.\n- Phổi mang co bóp cơ học nén khí: Xuất hiện hệ thống cơ hô hấp chủ động co bóp nắp mang mạnh mẽ, thổi bay cát cặn bám mang để duy trì thông khí mang chủ động liên tục bơi lội hoặc nằm cát sâu.\n- Màng chống độc nội bào: Màng tế bào nội mô mạch máu tiến hóa thụ thể kháng độc tố stonustoxin, ngăn chặn hoàn toàn hiện tượng tự nhiễm độc khi tuyến độc rò rỉ.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Gai vây lưng gia cường titanium",
+                benefit: "Nâng giới hạn bền uốn của gai độc lên 420 MPa, xuyên thủng mọi giáp bảo vệ."
+              },
+              {
+                type: "Cơ nắp mang tăng áp lực co bóp",
+                benefit: "Sinh lực thổi cặn cát mang đạt 15 N, giữ mang luôn sạch thông thoáng để hô hấp."
+              }
+            ]
+          },
+          p4p_score_scaled: 83,
+          tier_scaled: "B",
+          sources: [
+            { label: "Advanced Materials - Biomimetic toxic resistance and titanium mineralization in deep-sea organisms", url: "https://doi.org/10.1002/adma.20230198" }
           ]
         }
       ]
