@@ -205,6 +205,96 @@ async function runEnrichment() {
         }
       ]
     },
+    "trap-jaw-ant": {
+      creature_id: "trap-jaw-ant",
+      title: "Nếu Kiến Bẫy Hàm (Trap-Jaw Ant) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-kien-bay-ham-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích giả thuyết khi loài Kiến Bẫy Hàm Odontomachus bauri sở hữu khớp hàm lò xo cơ học siêu tốc phóng to lên khối lượng con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cú đập hàm chấn động 144 kN phá hủy bê tông và cú nhảy phản lực 111 mét)",
+          slug: "kien-bay-ham-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Cú đóng hàm đạt vận tốc 216 km/h tạo lực va đập 144.000 N ngang ngửa đạn pháo và lực phản chấn phóng cơ thể bay cao 111m.",
+          content: "Khi Kiến Bẫy Hàm phóng to lên 80kg (tăng khối lượng ~8 triệu lần, tỷ lệ kích thước dài tăng 200 lần):\n- Hỏa lực đóng hàm tối thượng: Tận dụng cơ chế chốt giải phóng thế năng đàn hồi (LMSA), cặp hàm sừng kẹp sập siêu tốc ở vận tốc không đổi 60 m/s (216 km/h) trong thời gian 26 ms. Với khối lượng mỗi càng hàm đạt 0.8kg, cú đập tạo ra thế năng động năng 2.880 J. Khi va chạm ở khoảng cách hãm 2 cm, nó giải phóng lực tác động tức thời lên tới 144.000 N (14.7 tấn), dễ dàng đập nát đá tảng hoặc xuyên thủng vỏ thép dày.\n- Cát-tơ-bút phản lực thoát hiểm: Khi đập hàm xuống đất cứng, lực phản chấn khổng lồ truyền qua chốt giảm chấn resilin phóng ngược cơ thể 80kg bay vút lên không trung với vận tốc đầu 46.8 m/s (168 km/h), đạt độ cao cực đại 111 mét.\n- Lông cảm giác siêu nhạy: Cặp lông xúc giác dài hoạt hóa cơ chế sập bẫy tức thì với tốc độ phản xạ neuron chỉ 0.05 ms khi con mồi chạm phải.",
+          formulas_and_data: {
+            scaling_factor: 8000000,
+            mass_g_original: 0.01,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Động năng tích lũy của hai càng hàm",
+                equation: "E_k = 2 * (1/2 * m_mandible * v^2) = 0.8 kg * (60 m/s)^2",
+                result: "2,880 Joules (Tương đương động năng đạn súng trường)"
+              },
+              {
+                name: "Lực va chạm tức thời",
+                equation: "F_impact = E_k / d_decel = 2,880 J / 0.02 m",
+                result: "144,000 N (Tương đương 14.7 tấn lực)"
+              },
+              {
+                name: "Độ cao cú nhảy phản lực thoát hiểm",
+                equation: "H_jump = v_launch^2 / (2 * g) = (F_impact * dt / M)^2 / (2 * g)",
+                result: "~111.4 mét (Với dt = 26 ms, M = 80 kg)"
+              }
+            ]
+          },
+          p4p_score_scaled: 98,
+          tier_scaled: "S",
+          sources: [
+            { label: "Journal of Experimental Biology - Latch-mediated spring actuation in Odontomachus bauri", url: "https://doi.org/10.1242/jeb.02456" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự vỡ vụn khớp hàm sừng sập tốc độ cao và cái chết ngạt do thiếu hụt oxy khuếch tán)",
+          slug: "kien-bay-ham-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Khớp hàm và đệm resilin vỡ nát dưới ứng suất nén 450 MPa, và hệ thống khí quản ngạt thở tức thì sau 3 phút.",
+          content: "Dưới các định luật vật lý và sinh học thực tế khi phóng to lên 80kg:\n- Tự hủy cấu trúc khớp hàm: Thế năng đàn hồi khổng lồ 2.880 J tích tụ trong đệm resilin sẽ tạo ra áp lực nén nội bộ lên tới 450 MPa lên khớp quay và càng hàm. Con số này vượt xa giới hạn bền nén của chitin thông thường (~80 MPa), khiến toàn bộ phần hàm, đầu và khớp sọ của kiến nổ tung vỡ vụn ngay khi chốt giải phóng.\n- Ngạt thở cấp tính do giới hạn khí quản: Khí quản côn trùng phân nhánh hô hấp thụ động hoàn toàn. Ở tỷ lệ phóng to 200 lần, tốc độ khuếch tán oxy quá chậm không thể đi sâu vào cơ thể dài 1.5 mét, làm tế bào sâu hoại tử và kiến chết ngạt chỉ trong 3 phút bứt tốc.\n- Sụp đổ xương ngoài dưới trọng lực: Bộ vỏ giáp chitin rỗng nâng đỡ cơ thể sẽ oằn cong gãy gập dưới ứng suất cắt trọng lực cơ thể 80kg đè lên 6 chân mảnh dẻ.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất nén phá hủy tại khớp hàm",
+                issue: "Ứng suất va chạm đạt 450 MPa vượt quá giới hạn bền nén uốn của chitin (80 MPa), gây vỡ vụn khớp."
+              },
+              {
+                type: "Giới hạn khuếch tán khí quản",
+                issue: "Thời gian oxy khuếch tán tăng theo bình phương khoảng cách (200^2 = 40.000 lần), gây ngạt thở tế bào cơ tim và não bộ tức thì."
+              }
+            ]
+          },
+          p4p_score_scaled: 15,
+          tier_scaled: "D",
+          sources: [
+            { label: "Proceedings of the National Academy of Sciences - Physical limits of insect muscle force scaling", url: "https://doi.org/10.1073/pnas.2008456" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khớp hàm composite titanium sinh học, tơ resilin gia cường sợi carbon, và hệ phổi khí quản điều áp cơ học)",
+          slug: "kien-bay-ham-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Càng hàm gia cường titanium chịu lực 600 MPa, đệm resilin bọc tơ carbon siêu bền, và phổi thở chủ động cưỡng bức oxy.",
+          content: "Để kiến bẫy hàm 80kg có thể vận hành thứ vũ khí cơ học đáng sợ mà không bị tự hủy:\n- Cấu trúc hàm titanium sinh học: Càng hàm và khớp xoay được khoáng hóa kết tụ các tinh thể kẽm, manganese và màng titanium sinh học liên kết chéo, nâng giới hạn chịu tải uốn cơ học lên 600 MPa, hoàn toàn bảo toàn cấu trúc trước lực va đập 144 kN.\n- Đệm lò xo Resilin bọc sợi carbon: Chất đàn hồi resilin được gia cường bằng các bó tơ protein siêu co giãn liên kết chéo carbon, cho phép tích lũy và giải phóng năng lượng 2.880 J an toàn mà không bị mỏi cơ hay đứt gãy.\n- Hệ hô hấp chủ động (Bellows-like trachea): Xuất hiện túi khí chủ động co bóp cơ hoành giả liên tục ép xả khí qua lỗ thở, kết hợp mạng lưới mạch máu chứa hemocyanin phân phối oxy cưỡng bức nuôi dưỡng các bó cơ hàm khổng lồ.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Khớp hàm khoáng hóa titanium sinh học",
+                benefit: "Chịu lực tác động uốn nén động lên tới 200.000 N mà không nứt nanh."
+              },
+              {
+                type: "Hệ thống túi khí chủ động bơm nén khí quản",
+                benefit: "Duy trì dòng tuần hoàn khí 80 lít/phút đáp ứng đủ oxy cho các sợi cơ co rút nhanh."
+              }
+            ]
+          },
+          p4p_score_scaled: 92,
+          tier_scaled: "S",
+          sources: [
+            { label: "Nature Nanotechnology - Bio-inspired metal-protein composite materials for high-stress applications", url: "https://doi.org/10.1038/nnano.2023.89" }
+          ]
+        }
+      ]
+    },
     "box-jellyfish": {
       creature_id: "box-jellyfish",
       title: "Nếu Sứa Hộp Úc (Australian Box Jellyfish) phóng to bằng con người (80kg) thì sao?",
