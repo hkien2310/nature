@@ -37,7 +37,15 @@ async function run() {
 
   const { data: dbQuestions, error: qErr } = await supabase
     .from("what_if_questions")
-    .select("id, creature_id, title, slug");
+    .select(`
+      id,
+      creature_id,
+      title,
+      slug,
+      what_if_answers (
+        id
+      )
+    `);
 
   if (qErr) {
     console.error("Error fetching questions:", qErr.message);
@@ -54,7 +62,8 @@ async function run() {
         questionsMap[q.creature_id].push({
           id: q.id,
           title: q.title,
-          slug: q.slug
+          slug: q.slug,
+          answers_count: q.what_if_answers ? q.what_if_answers.length : 0
         });
       }
     });
@@ -62,6 +71,7 @@ async function run() {
 
   const rankedCreatures = dbCreatures.map(c => {
     const existing = questionsMap[c.id] || [];
+    const answersCount = existing.reduce((sum, q) => sum + q.answers_count, 0);
     return {
       id: c.id,
       name: c.name,
@@ -70,13 +80,19 @@ async function run() {
       characteristics: c.characteristics || "",
       unique_traits: c.unique_traits || "",
       existing_questions_count: existing.length,
-      existing_questions: existing
+      existing_questions: existing.map(q => ({ id: q.id, title: q.title, slug: q.slug })),
+      existing_answers_count: answersCount
     };
   });
 
   rankedCreatures.sort((a, b) => {
     if (a.existing_questions_count !== b.existing_questions_count) {
       return a.existing_questions_count - b.existing_questions_count;
+    }
+    const aAnswers = a.existing_answers_count || 0;
+    const bAnswers = b.existing_answers_count || 0;
+    if (aAnswers !== bAnswers) {
+      return aAnswers - bAnswers;
     }
     if (a.ai_p4p_score !== b.ai_p4p_score) {
       return b.ai_p4p_score - a.ai_p4p_score;

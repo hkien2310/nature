@@ -9,6 +9,7 @@ export interface WhatIfTarget {
   unique_traits: string;
   existing_questions_count: number;
   existing_questions: Array<{ id: string; title: string; slug: string }>;
+  existing_answers_count?: number;
 }
 
 export async function selectWhatIfEnrichTargets(userId?: string, apiKey?: string): Promise<{ success: boolean; error?: string; targets?: WhatIfTarget[] }> {
@@ -42,17 +43,25 @@ export async function selectWhatIfEnrichTargets(userId?: string, apiKey?: string
       return { success: false, error: "Không thể lấy dữ liệu sinh vật." };
     }
 
-    // 3. Fetch all what-if questions to compute count per creature
+    // 3. Fetch all what-if questions and their answers to compute counts per creature
     const { data: dbQuestions, error: qErr } = await supabase
       .from("what_if_questions")
-      .select("id, creature_id, title, slug");
+      .select(`
+        id,
+        creature_id,
+        title,
+        slug,
+        what_if_answers (
+          id
+        )
+      `);
 
     if (qErr) {
       return { success: false, error: "Không thể lấy dữ liệu câu hỏi What-If: " + qErr.message };
     }
 
     // Group questions by creature_id
-    const questionsMap: Record<string, Array<{ id: string; title: string; slug: string }>> = {};
+    const questionsMap: Record<string, Array<{ id: string; title: string; slug: string; answers_count: number }>> = {};
     dbCreatures.forEach(c => {
       questionsMap[c.id] = [];
     });
@@ -62,7 +71,8 @@ export async function selectWhatIfEnrichTargets(userId?: string, apiKey?: string
           questionsMap[q.creature_id].push({
             id: q.id,
             title: q.title,
-            slug: q.slug
+            slug: q.slug,
+            answers_count: q.what_if_answers ? q.what_if_answers.length : 0
           });
         }
       });
@@ -71,6 +81,7 @@ export async function selectWhatIfEnrichTargets(userId?: string, apiKey?: string
     // 4. Map and rank creatures
     const rankedCreatures: WhatIfTarget[] = dbCreatures.map(c => {
       const existing = questionsMap[c.id] || [];
+      const answersCount = existing.reduce((sum, q) => sum + q.answers_count, 0);
       return {
         id: c.id,
         name: c.name,
@@ -79,17 +90,24 @@ export async function selectWhatIfEnrichTargets(userId?: string, apiKey?: string
         characteristics: c.characteristics || "",
         unique_traits: c.unique_traits || "",
         existing_questions_count: existing.length,
-        existing_questions: existing
+        existing_questions: existing.map(q => ({ id: q.id, title: q.title, slug: q.slug })),
+        existing_answers_count: answersCount
       };
     });
 
     // Sort criteria:
     // 1. Lowest existing_questions_count first (ASC)
-    // 2. Highest ai_p4p_score first (DESC)
-    // 3. Alphabetical order of id ASC (for deterministic sorting)
+    // 2. Lowest existing_answers_count first (ASC)
+    // 3. Highest ai_p4p_score first (DESC)
+    // 4. Alphabetical order of id ASC (for deterministic sorting)
     rankedCreatures.sort((a, b) => {
       if (a.existing_questions_count !== b.existing_questions_count) {
         return a.existing_questions_count - b.existing_questions_count;
+      }
+      const aAnswers = a.existing_answers_count || 0;
+      const bAnswers = b.existing_answers_count || 0;
+      if (aAnswers !== bAnswers) {
+        return aAnswers - bAnswers;
       }
       if (a.ai_p4p_score !== b.ai_p4p_score) {
         return b.ai_p4p_score - a.ai_p4p_score;
