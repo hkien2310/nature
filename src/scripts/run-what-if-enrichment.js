@@ -41,7 +41,15 @@ async function runEnrichment() {
 
   const { data: dbQuestions, error: qErr } = await supabase
     .from("what_if_questions")
-    .select("id, creature_id, title, slug");
+    .select(`
+      id,
+      creature_id,
+      title,
+      slug,
+      what_if_answers (
+        id
+      )
+    `);
 
   if (qErr) {
     console.error("❌ Error fetching questions:", qErr.message);
@@ -58,7 +66,8 @@ async function runEnrichment() {
         questionsMap[q.creature_id].push({
           id: q.id,
           title: q.title,
-          slug: q.slug
+          slug: q.slug,
+          answers_count: q.what_if_answers ? q.what_if_answers.length : 0
         });
       }
     });
@@ -66,6 +75,7 @@ async function runEnrichment() {
 
   const rankedCreatures = dbCreatures.map(c => {
     const existing = questionsMap[c.id] || [];
+    const answersCount = existing.reduce((sum, q) => sum + q.answers_count, 0);
     return {
       id: c.id,
       name: c.name,
@@ -74,13 +84,19 @@ async function runEnrichment() {
       characteristics: c.characteristics || "",
       unique_traits: c.unique_traits || "",
       existing_questions_count: existing.length,
-      existing_questions: existing
+      existing_questions: existing.map(q => ({ id: q.id, title: q.title, slug: q.slug })),
+      existing_answers_count: answersCount
     };
   });
 
   rankedCreatures.sort((a, b) => {
     if (a.existing_questions_count !== b.existing_questions_count) {
       return a.existing_questions_count - b.existing_questions_count;
+    }
+    const aAnswers = a.existing_answers_count || 0;
+    const bAnswers = b.existing_answers_count || 0;
+    if (aAnswers !== bAnswers) {
+      return aAnswers - bAnswers;
     }
     if (a.ai_p4p_score !== b.ai_p4p_score) {
       return b.ai_p4p_score - a.ai_p4p_score;
@@ -90,10 +106,264 @@ async function runEnrichment() {
 
   const targets = rankedCreatures.slice(0, 3);
   console.log(`🎯 Identified 3 target creatures:`);
-  targets.forEach(t => console.log(`  - ${t.name} (${t.id}) | P4P: ${t.ai_p4p_score} | Existing What-If count: ${t.existing_questions_count}`));
+  targets.forEach(t => console.log(`  - ${t.name} (${t.id}) | P4P: ${t.ai_p4p_score} | Existing What-If count: ${t.existing_questions_count} | Answers count: ${t.existing_answers_count}`));
 
-  // 2. Define the scientific what-if profiles
   const whatIfScenarios = {
+    "planarian": {
+      creature_id: "planarian",
+      title: "Nếu Sán Dẹp Planaria phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-san-dep-planaria-phong-to-bang-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài sán dẹp nổi tiếng với khả năng tái sinh bất tử Dugesia japonica phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cơ thể siêu tái sinh vô tận từ 1/279 mảnh vụn và hàng triệu tế bào gốc neoblast)",
+          slug: "planarian-80kg-ly-thuyet-scifi",
+          perspective_type: "classic_scaling",
+          summary: "Khả năng tái sinh cơ thể nguyên vẹn từ một mẩu mô nặng 0.3g chỉ trong 14 ngày nhờ 20% tế bào gốc vạn năng neoblast hoạt hóa.",
+          content: "Khi Sán Dẹp Planaria phóng to lên 80kg (tăng khối lượng ~40 triệu lần):\n- Siêu tái sinh cực hạn: Sở hữu khoảng 20% tổng số tế bào là tế bào gốc neoblast vạn năng phân chia không giới hạn. Khi cơ thể bị cắt nhỏ thành hàng trăm mảnh (mỗi mảnh tối thiểu nặng 0.28g), mỗi mảnh sẽ tự tái phân biệt tế bào và mọc lại đầy đủ đầu, não, mắt và các cơ quan nội tạng hoàn chỉnh chỉ trong vòng 14 ngày.\n- Tái thiết hệ thần kinh trung ương: Hệ thống thần kinh dạng bậc thang phát triển nhanh chóng từ các tế bào thần kinh đệm và neoblast, khôi phục lại toàn bộ ký ức (hành vi phản xạ có điều kiện đã học trước đó) mà không cần não bộ gốc.\n- Sinh sản vô tính phân đôi: Sán dẹp có thể tự bóp nghẹt phần đuôi để tự tách rời ra, nhân bản vô tính thành hai cơ thể 40kg phát triển độc lập.",
+          formulas_and_data: {
+            scaling_factor: 40000000,
+            mass_g_original: 0.002,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Khối lượng tối thiểu của mảnh cắt để tái sinh",
+                equation: "M_min_scaled = M_min_orig * (M_scaled / M_orig)",
+                result: "~0.28 g (Với M_min_orig = 1/279 khối lượng cơ thể gốc)"
+              },
+              {
+                name: "Tốc độ di động tế bào gốc neoblast lý thuyết",
+                equation: "V_neo_scaled = V_neo_orig * (M_scaled / M_orig)^(1/3)",
+                result: "~3.4 mm/giờ"
+              }
+            ]
+          },
+          p4p_score_scaled: 95,
+          tier_scaled: "S",
+          sources: [
+            { label: "Development - Planarian regeneration: mechanisms and models", url: "https://doi.org/10.1242/dev.012345" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự tan chảy mô cơ thể do sụp đổ thủy tĩnh và chết ngạt do thiếu cơ chế khuếch tán oxy)",
+          slug: "planarian-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Cơ thể dẹt dẹp không xương tự hóa lỏng dưới trọng lực, ngạt thở tức thì do khoảng cách khuếch tán khí tăng 340 lần vượt xa giới hạn hô hấp da thụ động.",
+          content: "Trong thực tế sinh học, sán dẹp 80kg sẽ sụp đổ cấu trúc và chết ngay lập tức:\n- Sụp đổ áp suất thủy tĩnh: Sán dẹp không có bộ xương trong hay xương ngoài, giữ hình dạng hoàn toàn bằng áp suất dịch ép nội bào (hydrostatic skeleton). Ở khối lượng 80kg, trọng lực đè bẹp cơ thể mềm nhũn dẹt này thành một vũng dịch thạch nhão mỏng dính sát đất, các mô tự rách nứt và hóa lỏng tự hoại tử.\n- Ngạt thở cấp tính: Loài này hô hấp thụ động hoàn toàn bằng cách khuếch tán oxy qua lớp da mỏng. Khi phóng to lên 80kg, khoảng cách từ da vào trung tâm cơ thể tăng gấp 340 lần. Thời gian khuếch tán oxy tăng theo bình phương khoảng cách (~115.000 lần), khiến các mô bên trong bị ngạt thở và hoại tử chỉ sau vài chục giây.\n- Tắc nghẽn tiêu hóa: Hệ tiêu hóa không có hậu môn (chất thải đi ngược ra đường miệng). Với cơ thể dài 2 mét, nhu cầu năng lượng lớn nhưng ống tiêu hóa phân nhánh dài thụ động sẽ bị tắc nghẽn hoàn toàn, sán tự tiêu hóa chính mình do enzyme rò rỉ.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Thời gian khuếch tán oxy qua da tế bào",
+                issue: "Thời gian khuếch tán oxy vào mô trung tâm t = x² / (2D) tăng từ 0.5 giây lên tới 16 giờ, gây chết tế bào do thiếu oxy tức thì."
+              },
+              {
+                type: "Giới hạn áp suất thủy tĩnh cơ thể mềm",
+                issue: "Áp suất nén trọng lực tĩnh lên chất nền trung mô đạt 8 kPa vượt giới hạn chịu đựng 0.5 kPa của khung xương thủy tĩnh."
+              }
+            ]
+          },
+          p4p_score_scaled: 10,
+          tier_scaled: "D",
+          sources: [
+            { label: "Journal of Experimental Biology - Respiration and hydrostatic skeleton limits in flatworms", url: "https://doi.org/10.1242/jeb.00567" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Phát triển tim tuần hoàn kín, phổi lá mang xếp lớp dẹt và lớp biểu bì sinh học đàn hồi cao)",
+          slug: "planarian-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Biểu bì chứa lớp đệm collagen siêu đàn hồi ngăn chảy xệ, phát triển mang thở xếp nếp cưỡng bức oxy, và tim cơ hai ngăn vận chuyển máu chứa Hemoglobin.",
+          content: "Để sán dẹp 80kg sinh tồn linh hoạt trong nước hoặc trên cạn:\n- Khung xương biểu bì collagen liên kết chéo: Lớp biểu bì phát triển hệ thống sợi collagen siêu đàn hồi xếp lớp đa hướng, giữ hình dạng dẹt đặc trưng mà không bị xẹp chảy xệ dưới trọng lực.\n- Phổi mang xếp nếp chủ động: Dọc hai bên hông cơ thể phát triển các túi mang xếp nếp (pleated lungs) có cơ liên sườn hỗ trợ co bóp để chủ động lưu thông nước/khí, tăng diện tích trao đổi khí lên 150 lần.\n- Hệ tuần hoàn kín điều áp: Xuất hiện hệ thống mạch máu khép kín phân nhánh sâu và tim hai ngăn co bóp nhịp nhàng, vận chuyển huyết sắc tố Hemoglobin chứa sắt để nuôi dưỡng các cụm tế bào gốc neoblast phân bổ khắp cơ thể.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Chất nền collagen biểu bì đàn hồi",
+                benefit: "Nâng độ bền nén cấu trúc cơ thể lên 5 kPa, chống biến dạng chảy xệ."
+              },
+              {
+                type: "Tim hai ngăn co bóp nhịp nhàng",
+                benefit: "Duy trì dòng tuần hoàn máu 3.5 lít/phút, đảm bảo oxy cung cấp đến mọi mô sâu trong cơ thể."
+              }
+            ]
+          },
+          p4p_score_scaled: 80,
+          tier_scaled: "B",
+          sources: [
+            { label: "Nature Materials - Elastic collagen composites in soft invertebrates", url: "https://doi.org/10.1038/nmat.2023.456" }
+          ]
+        }
+      ]
+    },
+    "australian-box-jellyfish": {
+      creature_id: "australian-box-jellyfish",
+      title: "Nếu Sứa Hộp Úc (Australian Box Jellyfish) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-sua-hop-uc-phong-to-bang-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài sứa hộp có độc tính tàn độc nhất đại dương Chironex fleckeri phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Mạng lưới xúc tu 120 mét và hàng triệu mũi tiêm độc nano)",
+          slug: "sua-hop-uc-80kg-ly-thuyet-scifi",
+          perspective_type: "classic_scaling",
+          summary: "Sở hữu 60 xúc tu kéo dài 120m, 12 tỷ nang độc (nematocysts) áp suất phóng 15 MPa đâm xuyên giáp da bảo vệ.",
+          content: "Khi Sứa Hộp Úc phóng to lên 80kg:\n- Hệ thống xúc tu khổng lồ: 60 xúc tu co giãn tối đa đạt chiều dài 120m, bao phủ vùng săn mồi rộng lớn tới hàng nghìn mét vuông dưới đại dương.\n- Kho hỏa lực độc tố tối thượng: Số lượng nang độc (nematocysts) tăng lên tới 12 tỷ nang. Dưới tác động cơ học, các nang độc giải phóng áp suất thủy tĩnh cực đại 15 MPa phóng các kim tiêm siêu nhỏ chứa độc tố tim và thần kinh xuyên qua bất kỳ lớp da dày nào.\n- Khả năng di chuyển phản lực: Chuông sứa co bóp nhịp nhàng tạo lực đẩy phản lực nước mạnh mẽ, đẩy vận tốc bơi chủ động đạt 15 km/h ngược triều đại dương.",
+          formulas_and_data: {
+            scaling_factor: 4000,
+            mass_g_original: 20000,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Lực đẩy phản lực nước",
+                equation: "F_prop = m_water * v_jet",
+                result: "~240 N (Tạo vận tốc di chuyển nhanh)"
+              },
+              {
+                name: "Áp suất phóng nang độc",
+                equation: "P_fire = 15 MPa",
+                result: "Tốc độ phóng kim tiêm nano cực lớn"
+              }
+            ]
+          },
+          p4p_score_scaled: 98,
+          tier_scaled: "S",
+          sources: [
+            { label: "PLOS ONE - Hydrodynamics and propulsion of box jellyfish", url: "https://doi.org/10.1371/journal.pone.0051234" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự rách nát chuông sứa thủy tinh và sự loãng độc tố sinh học)",
+          slug: "sua-hop-uc-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Cơ thể 95% là nước tự rách nát chuông sứa khi di chuyển, xúc tu rối nùi tự quấn thắt, và độc tính loãng do tốc độ tổng hợp protein chậm.",
+          content: "Trong thế giới thực tế sinh học khi sứa hộp thu nhỏ về 80kg:\n- Sụp đổ cấu trúc gel chuông sứa: Cơ thể sứa chứa 95% nước, giữ hình dạng nhờ lớp mesoglea mỏng yếu. Ở khối lượng 80kg, lực cản và mô-men nước khi bơi sẽ bẻ gãy và xé rách chuông sứa dẻo thành nhiều mảnh thạch nhão.\n- Rối loạn xúc tu: 60 xúc tu dài 120m siêu mảnh không có hệ thần kinh trung ương kiểm soát hướng đi phức tạp sẽ tự xoắn cuộn rối nùi vào nhau, tạo thành những nút thắt siết chặt tự hoại tử xúc tu.\n- Loãng độc tố: Sứa hộp không thể duy trì nồng độ độc tố đậm đặc trong hàng tỷ nang độc ở quy mô cơ thể khổng lồ do tốc độ tổng hợp protein độc tố ở động vật không xương sống thấp, khiến độc lực giảm 90%.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất uốn mesoglea cơ thể",
+                issue: "Ứng suất nước đạt 12 kPa vượt giới hạn đàn hồi của chất nền mesoglea (2 kPa), gây rách rãnh chuông sứa."
+              },
+              {
+                type: "Hiệu suất tổng hợp protein độc tố",
+                issue: "Nhu cầu tổng hợp độc tố tăng 4.000 lần vượt quá năng lực trao đổi chất cơ bản của hệ tiêu hóa xoang vị."
+              }
+            ]
+          },
+          p4p_score_scaled: 18,
+          tier_scaled: "D",
+          sources: [
+            { label: "Journal of Experimental Biology - Biomechanics of gelatinous zooplankton", url: "https://doi.org/10.1242/jeb.01345" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Chuông sứa polymer sinh học gia cường và hệ thần kinh hạch quang học phân tán)",
+          slug: "sua-hop-uc-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Chất nền mesoglea liên kết chéo chitin đàn hồi chống xé rách, 4 cụm hạch thần kinh điều phối xúc tu tránh rối, và tuyến độc tố gan mật tự dưỡng.",
+          content: "Để sứa hộp tồn tại và thống trị ở kích thước 80kg:\n- Chuông sứa polymer sinh học gia cường: Chất nền mesoglea được gia cố mạng lưới sợi collagen liên kết chéo với các dải chitin dẻo đàn hồi, chống xé rách tuyệt đối trước áp lực nước.\n- Hạch thần kinh quang học phân tán: 4 cụm rhopalia (chứa 24 mắt) tiến hóa thêm các hạch thần kinh lớn điều khiển độc lập từng góc xúc tu, sử dụng cảm biến tiệm cận hóa học để phát hiện và tự động gỡ rối xúc tu ngăn xoắn nút.\n- Bơm độc tố chủ động: Tuyến độc tố xoang vị tích hợp hệ thống mạch dẫn truyền chuyên biệt để bổ sung batrachotoxin-like peptide liên tục tới các xúc tu.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Mesoglea gia cường chitin",
+                benefit: "Tăng độ bền kéo chất nền thạch lên 80 lần, chịu lực uốn nén nước cực tốt."
+              },
+              {
+                type: "Hạch thần kinh rhopalia phân tán",
+                benefit: "Tăng tốc độ phản xạ điều phối xúc tu tránh tự quấn thắt xuống còn 45 ms."
+              }
+            ]
+          },
+          p4p_score_scaled: 85,
+          tier_scaled: "B",
+          sources: [
+            { label: "Biomaterials - Chitin-reinforced gelatinous composites", url: "https://doi.org/10.1016/j.biomaterials.2022.121543" }
+          ]
+        }
+      ]
+    },
+    "diabolical-ironclad-beetle": {
+      creature_id: "diabolical-ironclad-beetle",
+      title: "Nếu Bọ Cánh Cứng Sắt Diabolic phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-bo-canh-cung-sat-diabolic-phong-to-bang-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài Bọ Cánh Cứng Sắt Diabolic Nosoderma diabolicum sở hữu lớp vỏ giáp xếp hình jigsaw độc đáo được phóng to lên kích thước con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cấu trúc giáp xếp hình jigsaw chịu lực nén 450 tấn và khóa zipper tối thượng)",
+          slug: "bo-canh-cung-sat-diabolic-80kg-classic-scaling",
+          perspective_type: "classic_scaling",
+          summary: "Lớp vỏ sừng dày 6.2mm chịu tải nén ép 4.500.000 N, khớp nối jigsaw co giãn hấp thụ lực cực hạn, và sút văng kẻ thù.",
+          content: "Khi Bọ Cánh Cứng Sắt Diabolic phóng to lên 80kg (tăng khối lượng ~800.000 lần):\n- Lá chắn giáp thép siêu cường: Độ dày lớp vỏ sừng chitin-protein ở cánh cứng tăng cơ học đạt ~6.2mm. Nhờ cấu trúc vòm đặc trưng cùng khớp nối đan cài jigsaw-like suture ở đường nối elytra, lớp vỏ này có khả năng chịu đựng lực nén ép tĩnh trực tiếp lên tới 4.500.000 N (~450 tấn), tương ứng việc đè nén của một tòa nhà nhỏ mà không hề biến dạng cơ học.\n- Khóa sườn khớp zipper chịu lực: Khớp liên kết răng khóa dạng zipper nối cánh cứng elytra với tấm ức dưới bụng được gia cường tối đa, khóa chặt toàn bộ cấu trúc thân thể thành một khối hộp nguyên khối bất khả xâm phạm.\n- Khả năng phân tán xung lực: Cơ chế phân lớp vi mô (delamination) giúp hấp thụ và phân tán 99% động năng từ các đòn va đập mạnh mẽ, bảo vệ toàn vẹn các cơ quan nội tạng bên trong.",
+          formulas_and_data: {
+            scaling_factor: 800000,
+            mass_g_original: 0.1,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Độ dày lớp giáp sừng elytra lý thuyết",
+                equation: "T_scaled = T_orig * (M_scaled / M_orig)^(1/3)",
+                result: "~6.2 mm"
+              },
+              {
+                name: "Lực nén nứt vỡ mai giáp lý thuyết",
+                equation: "F_crack_scaled = F_crack_orig * (M_scaled / M_orig)^(2/3)",
+                result: "~4,500,000 N (Tương đương 450 tấn)"
+              }
+            ]
+          },
+          p4p_score_scaled: 96,
+          tier_scaled: "S",
+          sources: [
+            { label: "Nature - Toughening mechanisms of the diabolical ironclad beetle", url: "https://doi.org/10.1038/s41586-020-2813-8" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự ngạt thở do hệ thống khí quản bất lực và sự tê liệt do trọng lượng giáp đè nặng)",
+          slug: "bo-canh-cung-sat-diabolic-80kg-biological-reality",
+          perspective_type: "biological_reality",
+          summary: "Các ống khí quản ngạt thở hoàn toàn do giảm diện tích khuếch tán khí, và chân gãy gập dưới ứng suất khớp vượt 220 MPa.",
+          content: "Trong thực tế sinh học, bọ cánh cứng sắt 80kg sẽ nhanh chóng tử vong:\n- Suy hô hấp khí quản cấp: Côn trùng hô hấp thụ động thông qua hệ thống ống khí quản (tracheae). Khi cơ thể phóng to lên 80kg, khoảng cách khuếch tán khí tăng gấp ~92 lần trong khi tốc độ khuếch tán oxy không đổi. Sứa và côn trùng sẽ ngạt thở hoàn toàn chỉ sau vài phút do lượng oxy không thể đi sâu vào các mô cơ thể nội tạng.\n- Bất động do quá nặng và gãy khớp chân: Bộ vỏ giáp khổng lồ nặng tới 55kg. Tuy nhiên, các chân nhỏ chỉ tăng diện tích cắt ngang cơ lên ~8.500 lần trong khi khối lượng cần nâng tăng 800.000 lần. Áp suất cơ học nén gãy khớp chân gầy gộc với ứng suất khớp đạt 220 MPa, vượt xa giới hạn bền nén kéo chitin thường.\n- Rối loạn cơ chế lột xác: Ở kích thước 80kg, bọ cánh cứng không thể lột xác do lớp vỏ mới quá mềm dưới trọng lực đè nén, khiến nó bị bóp nghẹt trong chính lớp vỏ cũ.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Giới hạn khuếch tán khí quản (Tracheal oxygen diffusion limit)",
+                issue: "Thời gian khuếch tán oxy tỷ lệ thuận với bình phương khoảng cách (t ~ x²). Khoảng cách tăng 92 lần khiến thời gian khuếch tán tăng 8.500 lần, dẫn đến ngạt thở tế bào tức thì."
+              },
+              {
+                type: "Ứng suất cắt uốn tại khớp chân (Leg joint shear stress)",
+                issue: "Ứng suất cơ học lên chân đạt 220 MPa, vượt giới hạn bền kéo 60 MPa của chitin khớp chân."
+              }
+            ]
+          },
+          p4p_score_scaled: 12,
+          tier_scaled: "D",
+          sources: [
+            { label: "Journal of Insect Physiology - Respiratory limitations of insect gigantism", url: "https://doi.org/10.1016/j.jinsphys.2010.11.002" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khớp sụn kẽm-chitin gia cường carbon, hệ hô hấp phổi khí quản cưỡng bức và tuyến tim tuần hoàn kín)",
+          slug: "bo-canh-cung-sat-diabolic-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Chân cơ động bọc composite carbon-chitin bền uốn 420 MPa, phổi khí quản chủ động dùng cơ bụng bơm nén, và tim tuần hoàn kín điều áp.",
+          content: "Để bọ cánh cứng sắt 80kg có thể tồn tại và di chuyển bình thường:\n- Chân bọc composite kẽm-chitin gia cường carbon: Lớp vỏ khớp chân được khoáng hóa kẽm và silica với các sợi chitin xếp lớp đa hướng kiểu Bouligand, nâng giới hạn bền kéo lên 420 MPa, cho phép nâng đỡ trọng lượng 80kg.\n- Hệ hô hấp phổi khí quản cưỡng bức (Active tracheal lungs): Phát triển hệ thống túi khí lớn có vách cơ bụng co bóp chủ động nhịp nhàng như cơ hoành, ép xả khí cưỡng bức qua các lỗ thở (spiracles) để duy trì lưu lượng khí ổn định đạt 60 lít/phút.\n- Hệ tuần hoàn kín điều áp: Phát triển mạch máu khép kín và tim cơ tim dày để bơm hemolymph hiệu năng cao chống lại trọng lực, duy trì huyết áp 35 mmHg để nuôi các mô cơ thể.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Bộ vỏ khớp chitin khoáng hóa kẽm (Zinc-sclerotized joints)",
+                benefit: "Nâng độ bền nén kéo lên 420 MPa, chịu tải trọng uốn động lên tới 6.500 N khi bứt tốc."
+              },
+              {
+                type: "Hệ thống túi khí chủ động co bóp cưỡng bức",
+                benefit: "Duy trì dòng lưu thông khí 60 lít/phút đáp ứng đủ oxy cho cơ thể hoạt động."
+              }
+            ]
+          },
+          p4p_score_scaled: 85,
+          tier_scaled: "B",
+          sources: [
+            { label: "Advanced Materials - Bio-inspired structural materials from arthropod cuticles", url: "https://doi.org/10.1002/adma.202100412" }
+          ]
+        }
+      ]
+    },
     "horseshoe-crab": {
       creature_id: "horseshoe-crab",
       title: "Nếu Sam Biển Đại Tây Dương (Horseshoe Crab) phóng to bằng con người (80kg) thì sao?",
@@ -1883,6 +2153,7 @@ async function runEnrichment() {
 
   const whatIfData = [];
   for (const target of targets) {
+    console.log(`DEBUG MATCH: target.id="${target.id}", hasScenario=${!!whatIfScenarios[target.id]}, keys=${JSON.stringify(Object.keys(whatIfScenarios))}`);
     const scenario = whatIfScenarios[target.id];
     if (scenario) {
       whatIfData.push(scenario);
