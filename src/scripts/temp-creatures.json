@@ -1,222 +1,218 @@
 [
   {
-    "id": "cookiecutter-shark",
-    "name": "Cá Mập Cookiecutter",
-    "scientificName": "Isistius brasiliensis",
+    "id": "gharial",
+    "name": "Cá Sấu Ấn Độ",
+    "scientificName": "Gavialis gangeticus",
     "taxonomy": {
-      "class": "Elasmobranchii",
-      "order": "Squaliformes",
-      "family": "Dalatiidae"
+      "class": "Reptilia",
+      "order": "Crocodilia",
+      "family": "Gavialidae"
     },
-    "realWeight": "~0.5 - 1.2 kg",
-    "size": "30 - 56 cm",
-    "characteristics": "Thân hình thuôn dài màu nâu xám đặc trưng. Phần bụng phát ra ánh sáng sinh học màu xanh lục mạnh mẽ ngoại trừ một dải đen ở cổ giống như chiếc vòng cổ. Miệng có đôi môi hút thịt rất khỏe và hàm răng dưới cực kỳ to, xếp khít nhau như các lưỡi cưa sắc nhọn.",
-    "habitat": "Vùng biển sâu ôn đới và nhiệt đới trên khắp thế giới, thường sống ở độ sâu từ 1.000 - 3.700 m vào ban ngày và di chuyển lên gần mặt nước vào ban đêm.",
-    "location": "Phân bố rộng rãi ở các vùng biển nhiệt đới và cận nhiệt đới ấm áp của Thái Bình Dương, Đại Tây Dương và Ấn Độ Dương.",
-    "survival_method": "Sử dụng ánh sáng phát quang sinh học dưới bụng để ngụy trang ngược (counterillumination). Dải màu đen không phát sáng giả dạng bóng của một con cá nhỏ để dụ các loài săn mồi lớn hơn tiếp cận. Khi con mồi đến gần, cá mập bám chặt môi hút vào da đối phương, dùng bộ hàm răng dưới sắc nhọn đâm sâu rồi xoay tròn cơ thể 360 độ để khoét ra một khoanh thịt hình tròn hoàn hảo.",
-    "unique_traits": "Khả năng phát quang sinh học ngụy trang và làm mồi nhử ngược độc đáo. Đôi môi hút bám siêu khỏe để ký sinh trên các sinh vật lớn gấp hàng trăm lần cơ thể. Bộ hàm răng dưới khổng lồ tựa như lưỡi cưa tròn cắt thịt hoàn hảo.",
-    "shortDescription": "Phát quang sinh học dụ mồi. Cắn khoét thịt hình tròn hoàn hảo trên cá voi và tàu ngầm.",
-    "description": "Cá mập cookiecutter (Isistius brasiliensis) là một loài cá mập nhỏ nhưng vô cùng đáng sợ sống dưới lòng đại dương sâu thẳm. Thay vì săn các con mồi nhỏ hơn, loài này tiến hóa theo hướng ký sinh đặc biệt chuyên tấn công các sinh vật biển lớn như cá voi, cá mập trắng lớn, cá heo và thậm chí để lại các vết lõm hình tròn trên vỏ cao su của tàu ngầm hạt nhân. Chúng sở hữu đôi môi hút tạo áp lực chân không để bám chặt vào nạn nhân, tiếp theo sử dụng hàm răng dưới cực kỳ sắc bén xoay tròn cơ thể để cắt ra một khoanh thịt dày hình tròn. Cơ chế phát quang sinh học đặc biệt của nó hoạt động như một công cụ ngụy trang và mồi nhử kỳ diệu trong đêm tối đại dương.",
+    "realWeight": "150 - 250 kg",
+    "size": "3 - 6 m",
+    "characteristics": "Có cơ thể thon dài, mõm siêu mảnh và dài chứa khoảng 110 chiếc răng sắc nhọn xếp xen kẽ. Con đực trưởng thành có một khối u thịt phồng lớn ở đầu mõm trông giống như một chiếc bình đất nung trong tiếng Hindi gọi là 'Ghara'. Khối u mõm này giúp tạo ra tiếng kêu cộng hưởng mạnh mẽ dưới nước và thổi bong bóng trong mùa sinh sản.",
+    "habitat": "Các con sông chảy xiết, sâu và có bãi cát sạch để phơi nắng và làm tổ đẻ trứng.",
+    "location": "Hiện chỉ còn tìm thấy ở một số ít hệ thống sông tại Ấn Độ và Nepal (như sông Chambal, Girwa, Rapti, Narayani).",
+    "survival_method": "Chuyên săn cá bằng cách quạt chiếc mõm dài siêu tốc qua làn nước để ghim con mồi bằng hàm răng nhọn hoắt. Nhờ cấu trúc mõm hẹp giúp giảm tối đa lực cản của nước. Chúng dành phần lớn thời gian trong nước vì đôi chân yếu ớt khó có thể nâng đỡ cơ thể di chuyển hiệu quả trên cạn, chỉ bò lên bờ cát để tắm nắng hoặc đẻ trứng.",
+    "unique_traits": "Bộ hàm siêu dài, mảnh với số lượng răng lớn nhất trong số các loài cá sấu. Khối u mõm 'Ghara' độc nhất vô nhị phát ra tiếng kêu cộng hưởng tần số thấp truyền đi xa dưới nước. Thích nghi hoàn toàn với đời sống thủy sinh.",
+    "shortDescription": "Sở hữu chiếc mõm siêu dài chứa 110 răng nhọn hoắt chuyên săn cá tốc độ cao.",
+    "description": "Cá Sấu Ấn Độ (Gharial) là một trong những loài cá sấu độc đáo và cổ xưa nhất còn sót lại trên Trái Đất. Khác với các loài cá sấu khác có hàm rộng khỏe để săn động vật lớn, Gharial đã tiến hóa một chiếc mõm siêu mỏng dài giúp di chuyển cực nhanh trong nước mà không bị cản lực để chuyên săn cá. Chúng là loài cực kỳ nguy cấp, từng phân bố rộng khắp các con sông từ Pakistan đến Myanmar nhưng hiện tại chỉ còn dưới 1% quần thể tự nhiên hoang dã do mất môi trường sống và bị đánh bắt.",
     "strengths": [
-      "Khả năng phát quang sinh học đánh lừa thị giác kẻ đi săn và dụ mồi hiệu quả",
-      "Môi hút chân không bám cực chắc vào da động vật lớn ngay cả khi chúng đang di chuyển nhanh",
-      "Bộ răng dưới sắc lẹm thay thế định kỳ cả cụm răng giúp duy trì độ sắc bén tuyệt đối",
-      "Lối sống biển sâu chịu áp suất cao và di cư dọc thẳng đứng hàng ngày cực kỳ linh hoạt"
+      "Chiếc mõm siêu mỏng giảm lực cản của nước tối đa, quạt bắt cá với tốc độ chớp nhoáng",
+      "Hơn 110 chiếc răng sắc nhọn như kim nhọn khóa chặt mọi con cá trơn trượt",
+      "Kỹ năng bơi lội điêu luyện nhờ chiếc đuôi dẹt cơ bắp mạnh mẽ"
     ],
     "weaknesses": [
-      "Kích thước cơ thể nhỏ bé, dễ bị tổn thương nếu bị các loài săn mồi nhỏ đớp trực tiếp",
-      "Tốc độ bơi lội trung bình, phụ thuộc nhiều vào việc phục kích và đánh lừa hơn là rượt đuổi",
-      "Bộ hàm chuyên dụng để cắt khoanh thịt khó có thể nuốt hoặc xử lý các con mồi xương cứng lớn một cách thông thường"
+      "Chiếc mõm quá mảnh dẻ rất dễ bị gãy nếu va đập mạnh hoặc cố cắn động vật lớn có xương cứng",
+      "Chân rất yếu, khó di chuyển hiệu quả trên cạn, khiến chúng dễ bị tổn thương khi lên bờ",
+      "Phụ thuộc hoàn toàn vào nguồn nước sạch và các bãi cát tự nhiên không bị ô nhiễm để đẻ trứng"
     ],
     "funFacts": [
-      "Chúng có thể để lại các vết cắn hình tròn hoàn hảo trên các lớp phủ cao su bảo vệ vòm sonar của tàu ngầm Hải quân Mỹ",
-      "Cá mập cookiecutter thay thế toàn bộ hàm răng dưới cùng lúc thay vì rụng từng chiếc một như các loài cá mập khác và chúng sẽ nuốt luôn bộ răng cũ để tái hấp thu canxi",
-      "Vết thương do cá mập cookiecutter gây ra tuy trông rất đáng sợ nhưng hiếm khi làm chết các vật chủ lớn, đóng vai trò như ký sinh trùng đại dương"
+      "Khối u mõm 'Ghara' của con đực đóng vai trò như một bộ khuếch đại âm thanh, giúp chúng phát ra tiếng rít và tiếng gầm trầm truyền đi xa hàng km dưới nước để thu hút con cái",
+      "Mặc dù có kích thước khổng lồ lên tới 6 mét, Cá Sấu Ấn Độ hầu như hoàn toàn vô hại với con người vì cấu trúc mõm của chúng không thể tấn công động vật lớn",
+      "Gharial mẹ cực kỳ chu đáo, sau khi trứng nở, chúng sẽ bảo vệ hàng trăm con non bằng cách cõng chúng trên lưng hoặc trên đầu khi bơi dọc theo dòng sông"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1086/282706",
-        "label": "The American Naturalist - Bioluminescence and Countershading in Cookiecutter Shark"
+        "url": "https://www.iucnredlist.org/species/8966/3148543",
+        "label": "IUCN Red List - Gavialis gangeticus Conservation Status"
       },
       {
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/isistius-brasiliensis/",
-        "label": "Florida Museum - Cookiecutter Shark Species Profile"
+        "url": "https://www.nationalgeographic.com/animals/reptiles/facts/gharial",
+        "label": "National Geographic - Gharial Reference"
       }
     ],
-    "imageColor": "#1A365D",
-    "diet_type": "parasitic",
+    "imageColor": "#3F5E4D",
+    "diet_type": "carnivore",
     "diet_items": [
-      "da cá voi",
-      "thịt cá mập lớn",
-      "cá heo",
-      "mực đại dương",
-      "cá kiếm"
+      "cá nhỏ",
+      "cá trê",
+      "ếch nhái",
+      "tôm sông"
     ],
-    "activity_pattern": "nocturnal",
-    "lifespan_min": 15,
-    "lifespan_max": 25,
+    "activity_pattern": "diurnal",
+    "lifespan_min": 30,
+    "lifespan_max": 50,
     "lifespan_unit": "years",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Noãn thai sinh (ovoviviparous), con non tự nở từ trứng bên trong cơ thể mẹ và sinh ra dưới dạng cá con khỏe mạnh hoàn chỉnh. Mỗi lứa từ 6 - 12 con non.",
-    "locomotion": "swim",
-    "speed_max": 20.0,
-    "conservation_status": "LC",
-    "size_min_mm": 300.0,
-    "size_max_mm": 560.0,
-    "weight_avg_g": 800.0,
+    "reproduction_type": "oviparous",
+    "reproduction_notes": "Con cái đào tổ trên các bãi cát cao cạnh bờ sông vào mùa khô để đẻ từ 20 đến 95 quả trứng. Trứng được ấp bằng nhiệt độ tự nhiên của cát trong khoảng 70 ngày trước khi nở.",
+    "locomotion": "hybrid",
+    "speed_max": 24.0,
+    "conservation_status": "CR",
+    "size_min_mm": 3000.0,
+    "size_max_mm": 6000.0,
+    "weight_avg_g": 200000.0,
     "stats": {
-      "strength": 25,
-      "durability": 40,
-      "speed": 70,
-      "weaponry": 88,
-      "special": 92,
+      "strength": 75,
+      "durability": 70,
+      "speed": 50,
+      "weaponry": 80,
+      "special": 65,
       "lethality": 75
     }
   },
   {
-    "id": "texas-horned-lizard",
-    "name": "Thằn Lằn Sừng Texas",
-    "scientificName": "Phrynosoma cornutum",
+    "id": "honeypot-ant",
+    "name": "Kiến Mật",
+    "scientificName": "Myrmecocystus",
     "taxonomy": {
-      "class": "Reptilia",
-      "order": "Squamata",
-      "family": "Phrynosomatidae"
+      "class": "Insecta",
+      "order": "Hymenoptera",
+      "family": "Formicidae"
     },
-    "realWeight": "~25 - 90 g",
-    "size": "7 - 15 cm",
-    "characteristics": "Thân hình tròn dẹt như một chiếc bánh kếp, bao phủ đầy gai nhọn bằng keratin cứng ở lưng và hai bên sườn. Đầu có các gai sừng lớn nhô ra phía sau. Màu sắc xám vàng hoặc nâu ngụy trang hoàn hảo trên nền đất cát hoang mạc hoang dã.",
-    "habitat": "Các vùng bán hoang mạc, sa mạc cát khô cằn, đồng cỏ thấp khô hạn có nhiều kiến gai.",
-    "location": "Vùng Bắc Mỹ, chủ yếu ở bang Texas, Oklahoma và miền bắc Mexico.",
-    "survival_method": "Khi bị đe dọa, chúng cố định ngụy trang bằng cách dẹt cơ thể sát đất cát. Nếu bị săn đuổi, chúng phồng to cơ thể lên gấp đôi để gai sừng dựng đứng gây khó nuốt. Trong trường hợp khẩn cấp nhất khi đối đầu họ chó (như sói đồng cỏ), chúng tăng áp lực máu trong đầu để làm vỡ các mao mạch quanh hốc mắt, bắn ra một dòng máu có vị cực kỳ khó chịu xa tới 1.5 mét vào mắt và miệng kẻ thù.",
-    "unique_traits": "Khả năng bắn máu từ mắt (autohaemorrhage) tự vệ độc nhất vô nhị. Lớp gai nhọn hoắt dầy đặc bảo vệ cơ thể. Khả năng phồng to thân mình tăng kích thước dọa kẻ thù.",
-    "shortDescription": "Phun máu từ hốc mắt xa 1.5m chứa độc tố kiến. Gai sừng bao phủ toàn thân.",
-    "description": "Thằn lằn sừng Texas (Phrynosoma cornutum) là một sinh vật sa mạc kỳ diệu sở hữu những vũ khí phòng vệ dị biệt bậc nhất. Để sinh tồn trước các loài ăn thịt, nó phát triển lớp giáp gai cứng cáp cùng chiến thuật tự vệ có một không hai. Khi bị dồn vào đường cùng bởi các loài chó hoang, nó nén các tĩnh mạch trong sọ làm tăng huyết áp đột ngột ở hốc mắt, khiến mao mạch vỡ ra và bắn ra tia máu áp lực cao. Dòng máu này chứa các hợp chất hóa học cực độc lấy từ thức ăn chính của nó là kiến gai đỏ, tạo ra mùi vị vô cùng khó chịu và cay nồng khiến chó hoang phải lập tức nhả ra và bỏ chạy.",
+    "realWeight": "0.05 - 0.2 g",
+    "size": "6 - 15 mm",
+    "characteristics": "Là loài kiến sa mạc có phân hóa vai trò độc đáo. Nhóm kiến thợ lưu trữ mật ('repletes') có phần bụng phình to khổng lồ, căng tròn óng ánh như một quả nho hoặc giọt mật vàng do lớp màng bụng co giãn tối đa để chứa chất lỏng tích trữ.",
+    "habitat": "Các khu vực sa mạc khô hạn, bán hoang mạc hoang vắng, xây tổ sâu dưới lòng đất mát mẻ.",
+    "location": "Chủ yếu ở các vùng khô hạn của Bắc Mỹ (Tây Nam Hoa Kỳ, Mexico) và vùng nội địa khô cằn của Úc.",
+    "survival_method": "Trong mùa mưa hoặc khi nguồn thức ăn dồi dào, các kiến thợ đi kiếm ăn sẽ thu thập mật hoa, dịch ngọt từ các loài côn trùng hút nhựa (như rệp) mang về tổ. Chúng cho các kiến thợ chuyên lưu trữ ('repletes') ăn liên tục cho đến khi bụng những con này phình to như quả bóng. Các 'bình mật sống' này sau đó treo mình lơ lửng trên trần của các phòng tổ ngầm. Khi mùa khô hạn khan hiếm thức ăn tới, các kiến thợ khác sẽ chạm vào râu của bình mật sống để chúng nôn mật ra nuôi sống cả đàn.",
+    "unique_traits": "Khả năng mở rộng kích thước bụng gấp hàng chục lần để làm kho dự trữ năng lượng sống. Cơ chế sinh học tiêu hóa và phản ngược thức ăn (trophallaxis) nuôi cả tổ. Tập tính treo mình chống trọng lực trên trần hang tối.",
+    "shortDescription": "Cá thể kiến thợ đóng vai trò bình chứa mật sống căng tròn để nuôi cả đàn qua mùa khô hạn.",
+    "description": "Kiến Mật (Honeypot Ant) là minh chứng cho sự thích nghi kỳ diệu của côn trùng trong môi trường sa mạc khắc nghiệt. Thay vì tích trữ thức ăn trong các hốc đất dễ bị mốc hoặc bị loài khác cướp mất, loài kiến này sử dụng chính cơ thể của các thành viên trong đàn làm bình chứa di động siêu an toàn. Những con kiến mật 'repletes' gần như không thể di chuyển khi đầy bụng và dành toàn bộ phần đời còn lại treo ngược trên trần tổ để bảo vệ kho mật ngọt quý giá cho đồng bọn.",
     "strengths": [
-      "Khả năng phun máu mắt áp lực cao xa 1.5m chứa độc tố xua đuổi kẻ thù hiệu quả",
-      "Lớp vảy gai sừng cực sắc nhọn ngăn chặn các đòn tấn công vật lý trực tiếp từ chim và rắn",
-      "Ngụy trang hoàn hảo giống hệt sỏi đá hoang mạc, khó bị phát hiện khi nằm yên",
-      "Khả năng phồng to cơ thể để tránh bị nuốt chửng bởi các loài rắn nhỏ"
+      "Hệ thống dự trữ năng lượng sinh học hiệu quả cao giúp đàn tồn tại qua những đợt hạn hán kéo dài nhất",
+      "Mật dự trữ được bảo quản hoàn hảo bên trong cơ thể sống, không lo hư hỏng hoặc nấm mốc",
+      "Tổ kiến xây sâu dưới lòng đất cách nhiệt và tránh các động vật săn mồi trên bề mặt sa mạc"
     ],
     "weaknesses": [
-      "Tốc độ chạy cự ly ngắn ở mức trung bình, dễ bị bắt kịp nếu không ngụy trang kịp thời",
-      "Chế độ ăn rất kén chọn, 90% khẩu phần ăn là loài kiến đỏ sa mạc lớn, dễ suy yếu nếu thiếu loài kiến này",
-      "Việc phun máu mắt gây mất tới 1/3 tổng lượng máu cơ thể trong một lần tự vệ, đòi hỏi năng lượng hồi phục cực lớn"
+      "Các bình mật sống hoàn toàn mất khả năng tự vệ và di chuyển, rất dễ vỡ nếu rơi xuống đất",
+      "Tổ kiến mật là mục tiêu săn tìm ưa thích của nhiều động vật lớn hơn (như lửng sa mạc) và con người",
+      "Phụ thuộc lớn vào các loài côn trùng ký sinh hút nhựa cây để cung cấp dịch ngọt ban đầu"
     ],
     "funFacts": [
-      "Tên tiếng Anh của chúng là 'Horned Toad' hoặc 'Horny Toad' dù chúng là loài bò sát thực sự chứ không phải lưỡng cư",
-      "Độc tố trong tia máu bắn ra của thằn lằn sừng Texas chỉ ảnh hưởng mạnh tới động vật họ chó (sói, chó hoang), trong khi ít tác dụng đối với các loài chim săn mồi",
-      "Chúng có thể ăn tới hàng trăm con kiến lửa/kiến gai mỗi ngày mà không hề bị nhiễm độc nhờ hệ tiêu hóa đặc biệt trung hòa nọc độc kiến"
+      "Bụng của kiến mật chứa đầy chất lỏng giàu dinh dưỡng chủ yếu là đường fructose, glucose và một lượng nhỏ protein",
+      "Người thổ dân Úc bản địa từ lâu đã coi kiến mật là một món ăn ngon, họ đào tổ kiến lên và bóp nhẹ phần bụng căng tròn của kiến mật trực tiếp vào miệng để thưởng thức vị ngọt",
+      "Nếu một con kiến mật 'bình chứa' chết đi, những con kiến khác sẽ dọn dẹp sạch sẽ lượng mật hoặc ăn hết để không lãng phí tài nguyên của tổ"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.2307/1447063",
-        "label": "Copeia - Ocular autohemorrhage in Phrynosoma"
+        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/ants",
+        "label": "National Geographic - Ant Facts & Adaptation"
       },
       {
-        "url": "https://www.nwf.org/Educational-Resources/Wildlife-Guide/Reptiles/Texas-Horned-Lizard",
-        "label": "National Wildlife Federation - Texas Horned Lizard Guide"
+        "url": "https://doi.org/10.1111/j.1469-7998.1974.tb03166.x",
+        "label": "Journal of Zoology - Study of honeypot ant biology"
       }
     ],
-    "imageColor": "#B38F4F",
-    "diet_type": "carnivore",
+    "imageColor": "#D4A373",
+    "diet_type": "omnivore",
     "diet_items": [
-      "kiến lửa sa mạc",
-      "kiến gặt đỏ",
-      "mối đất",
-      "bọ cánh cũ kỹ nhỏ"
+      "mật hoa",
+      "dịch rệp",
+      "xác côn trùng nhỏ",
+      "nước ngọt từ thực vật"
     ],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 5,
-    "lifespan_max": 8,
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 1,
+    "lifespan_max": 2,
     "lifespan_unit": "years",
-    "reproduction_type": "oviparous",
-    "reproduction_notes": "Đẻ từ 10 - 30 quả trứng vào lòng đất cát ẩm vào mùa hè. Trứng được vùi kín và tự nở nhờ nhiệt độ mặt trời sau 45 - 60 ngày.",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Kiến chúa và kiến đực cánh bay giao phối trên không trong vũ điệu hôn lễ. Sau khi giao phối, kiến đực chết, kiến chúa rụng cánh và chui xuống đất đào tổ mới để đẻ trứng gầy dựng đàn mới.",
     "locomotion": "walk",
-    "speed_max": 8.0,
+    "speed_max": 0.2,
     "conservation_status": "LC",
-    "size_min_mm": 70.0,
-    "size_max_mm": 150.0,
-    "weight_avg_g": 50.0,
+    "size_min_mm": 6.0,
+    "size_max_mm": 15.0,
+    "weight_avg_g": 0.1,
     "stats": {
-      "strength": 20,
-      "durability": 80,
-      "speed": 25,
-      "weaponry": 55,
-      "special": 94,
-      "lethality": 35
+      "strength": 35,
+      "durability": 20,
+      "speed": 15,
+      "weaponry": 10,
+      "special": 92,
+      "lethality": 10
     }
   },
   {
-    "id": "matamata-turtle",
-    "name": "Rùa Matamata",
-    "scientificName": "Chelus fimbriata",
+    "id": "frilled-shark",
+    "name": "Cá Nhám Mang Xếp",
+    "scientificName": "Chlamydoselachus anguineus",
     "taxonomy": {
-      "class": "Reptilia",
-      "order": "Testudines",
-      "family": "Chelidae"
+      "class": "Chondrichthyes",
+      "order": "Hexanchiformes",
+      "family": "Chlamydoselachidae"
     },
-    "realWeight": "~10 - 15 kg",
-    "size": "40 - 50 cm",
-    "characteristics": "Mai rùa gồ ghề xù xì màu nâu sẫm giống hệt như một đống lá khô rụng mục nát. Đầu cực kỳ dẹt hình tam giác với nhiều nếp gấp da, mụn cóc và các tua da nhỏ nhô ra xung quanh. Có một chiếc mũi dài nhỏ nhô lên hoạt động như ống thở.",
-    "habitat": "Vùng nước ngọt tĩnh lặng, các đầm lầy, hồ nước cạn đục, dòng chảy chậm nhiều bùn lá mục ở Nam Mỹ.",
-    "location": "Lưu vực sông Amazon và Orinoco ở Nam Mỹ, bao gồm Brazil, Peru, Venezuela và Colombia.",
-    "survival_method": "Sử dụng lối sống ngụy trang phục kích thụ động. Nằm im lìm dưới đáy nước bùn giống như một tảng đá hay đống lá khô. Khi cá nhỏ hoặc động vật lưỡng cư bơi qua trước mặt, nó mở to miệng và phình to hầu họng khổng lồ trong một tích tắc cực nhanh, tạo ra lực hút chân không cực mạnh hút toàn bộ con mồi và nước vào trong miệng rồi ép nước ra ngoài để nuốt chửng.",
-    "unique_traits": "Ngoại hình giả dạng lá mục ngụy trang đỉnh cao. Cơ chế đớp mồi hút chân không siêu tốc (vacuum suction feeding) độc nhất trong họ rùa. Các tua da nhạy cảm phát hiện dao động nước nhỏ nhất.",
-    "shortDescription": "Ngụy trang giả lá khô mục nát. Đớp mồi bằng lực hút chân không siêu tốc dưới nước.",
-    "description": "Rùa Matamata (Chelus fimbriata) là một trong những loài rùa nước ngọt kỳ lạ nhất thế giới sống tại các đầm lầy Nam Mỹ. Tiến hóa để trở thành một chuyên gia ngụy trang, toàn thân nó mô phỏng hoàn hảo các mảnh thực vật mục nát đáy sông. Điểm độc đáo nhất của Matamata nằm ở cách ăn uống: nó không thể nhai thức ăn do cơ hàm yếu, thay vào đó nó mở rộng khoang miệng tạo ra một luồng hút chân không cực mạnh kéo con mồi vào thẳng thực quản trong vòng chưa đầy 1/50 giây. Chiếc cổ dài linh hoạt có thể gập sang một bên dưới mai kết hợp cùng chiếc mũi giống như ống thở giúp nó rình rập săn mồi mà không cần phải di chuyển nhiều.",
+    "realWeight": "30 - 50 kg",
+    "size": "1.5 - 2 m",
+    "characteristics": "Thân hình thon dài, uyển chuyển trông giống như một con lươn khổng lồ hoặc một loài bò sát cổ đại hơn là cá mập thông thường. Đầu rộng dẹt với cái miệng cực rộng nằm ở đỉnh đầu. Có 6 cặp mang xếp nếp diềm hồng xung quanh cổ như một chiếc cổ áo xếp nếp thời Victoria.",
+    "habitat": "Vùng biển sâu lạnh giá ngoài rìa thềm lục địa, thường ở độ sâu từ 120 đến 1.280 m dưới đáy đại dương.",
+    "location": "Phân bố rải rác nhưng rộng khắp ở các đại dương lớn, bao gồm vùng biển ngoài khơi Nhật Bản, Úc, New Zealand, Đại Tây Dương và Đông Thái Bình Dương.",
+    "survival_method": "Săn mồi bằng cách uốn lượn cơ thể giống như rắn để di chuyển êm ái trong bóng tối sâu thẳm. Khi phát hiện con mồi như mực hay cá, nó có thể co người lại rồi bật thẳng về phía trước phóng ra đớp mồi nhanh như chớp. Bộ hàm chứa 300 chiếc răng hình ba chạc cực kỳ sắc nhọn hướng ngược vào trong hoạt động như những chiếc móc câu, khiến con mồi trơn trượt như mực biển sâu không có cơ hội trốn thoát một khi đã lọt vào miệng.",
+    "unique_traits": "Bộ hàm chứa 300 răng ba chạc sắc nhọn chia làm 25 hàng. Cấu trúc 6 cặp mang xếp nếp diềm xếp đặc trưng. Cơ thể sụn dài lươn hóa độc đáo. Hóa thạch sống giữ nguyên hình dạng từ kỷ Phấn Trắng.",
+    "shortDescription": "Hóa thạch sống biển sâu giống lươn với bộ hàm chứa 300 chiếc răng ba chạc sắc như kim.",
+    "description": "Cá Nhám Mang Xếp (Frilled Shark) là một trong những loài cá mập cổ xưa và kỳ bí nhất hành tinh, thường được gọi là 'hóa thạch sống' vì chúng hầu như không thay đổi hình thái suốt 80 triệu năm qua. Sống tại vùng nước sâu thiếu ánh sáng, chúng tiến hóa lối săn mồi phục kích uốn lượn độc đáo. Mặc dù hiếm khi con người bắt gặp còn sống trong môi trường tự nhiên, loài cá mập này luôn khơi gợi sự tò mò lớn bởi vẻ ngoài quái dị tựa như những con quái vật biển thời tiền sử.",
     "strengths": [
-      "Kỹ năng ngụy trang hòa mình hoàn hảo vào lớp lá mục đáy nước, hoàn toàn vô hình trước con mồi",
-      "Tốc độ đớp mồi bằng lực hút chân không nhanh bậc nhất thế giới động vật (khoảng 15-20 mili-giây)",
-      "Các xúc tu da cảm giác quanh cổ cực nhạy bén, thu nhận sóng rung động nước từ cá bơi qua",
-      "Chiếc mũi thuôn dài hoạt động như ống thở snorkeling thở khí mà không cần nổi toàn thân lộ diện"
+      "Bộ hàm mở rộng cực lớn nuốt chửng con mồi có kích thước bằng một nửa cơ thể",
+      "300 chiếc răng ba chạc sắc nhọn móc ngược tuyệt đối không cho mồi trơn thoát ra ngoài",
+      "Khả năng di chuyển phục kích cực kỳ êm ái không tạo động lớn trong nước sâu"
     ],
     "weaknesses": [
-      "Bộ hàm rất yếu, hoàn toàn không có khả năng nhai xé thịt hay cắn tự vệ vật lý mạnh mẽ",
-      "Di chuyển trên cạn rất chậm chạp và vụng về do cấu trúc chân thích nghi với việc đi bộ dưới đáy bùn",
-      "Mai gồ ghề không thể thu đầu thẳng vào trong mai như các loài rùa thông thường mà chỉ có thể gập cổ sang một bên"
+      "Tốc độ bơi duy trì đường dài khá chậm chạp do cấu trúc vây và cơ thể kiểu lươn",
+      "Mắt thiếu cơ chế màng nháy bảo vệ và thị lực hạn chế trong ánh sáng mạnh",
+      "Tỷ lệ sinh sản cực thấp với thời kỳ mang thai kéo dài lâu nhất trong thế giới động vật"
     ],
     "funFacts": [
-      "Tên gọi 'Matamata' trong ngôn ngữ bản địa Nam Mỹ có nghĩa là 'giết! giết!', chỉ hành động đớp mồi siêu chớp nhoáng của nó",
-      "Rùa Matamata hiếm khi bơi tích cực, chúng chủ yếu di chuyển bằng cách đi bộ chậm rãi dưới đáy các vùng nước nông đầy bùn cát",
-      "Chúng có thể nhịn thở dưới nước rất lâu nhờ chiếc mũi dài nhô lên mặt nước như một ống thông hơi siêu nhỏ khó phát hiện"
+      "Thời gian mang thai của Cá Nhám Mang Xếp cái có thể kéo dài lên tới 3.5 năm (42 tháng), lâu gấp đôi loài voi và là thời gian mang thai dài nhất được biết đến của động vật có xương sống",
+      "Mặc dù là cá mập, chúng bơi uốn sóng cơ thể theo chiều ngang giống như cách lươn hay rắn bơi, chứ không vẫy đuôi qua hai bên như cá mập thông thường",
+      "Răng của cá nhám mang xếp có màu trắng sáng tương phản nổi bật với khoang miệng tối màu, các nhà nghiên cứu suy đoán màu trắng này hoạt động như một loại 'mồi nhử ánh sáng' thu hút mực biển sâu tò mò bơi thẳng vào miệng nó"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1016/j.zool.2005.09.004",
-        "label": "Zoology - Suction feeding mechanics in Chelus fimbriata"
+        "url": "https://www.iucnredlist.org/species/41799/68617785",
+        "label": "IUCN Red List - Chlamydoselachus anguineus Reference"
       },
       {
-        "url": "https://www.sandiegozoowildlifealliance.org/pr/MatamataTurtle",
-        "label": "San Diego Zoo Wildlife Alliance - Matamata Turtle Facts"
+        "url": "https://www.marinebio.org/species/frilled-sharks/chlamydoselachus-anguineus/",
+        "label": "MarineBio - Frilled Shark Biology & Distribution"
       }
     ],
-    "imageColor": "#4A3C31",
+    "imageColor": "#4A5568",
     "diet_type": "carnivore",
     "diet_items": [
-      "cá nước ngọt nhỏ",
-      "nòng nọc",
-      "ếch nhỏ",
-      "côn trùng nước"
+      "mực biển sâu",
+      "cá nhỏ",
+      "cá mập nhỏ khác",
+      "bạch tuộc sâu"
     ],
     "activity_pattern": "nocturnal",
-    "lifespan_min": 15,
+    "lifespan_min": 25,
     "lifespan_max": 30,
     "lifespan_unit": "years",
-    "reproduction_type": "oviparous",
-    "reproduction_notes": "Đẻ từ 12 đến 28 quả trứng có lớp vỏ cứng vào mùa mưa muộn ở các tổ cát ẩm cận bờ sông. Trứng nở sau khoảng 200 ngày tùy thuộc vào nhiệt độ môi trường.",
-    "locomotion": "hybrid",
-    "speed_max": 4.0,
+    "reproduction_type": "viviparous",
+    "reproduction_notes": "Sinh sản noãn thai sinh (ovoviviparous). Con cái mang phôi trứng thụ tinh bên trong cơ thể, con non tự tiêu hết noãn hoàng trước khi sinh ra dưới dạng con non hoàn toàn phát triển dài khoảng 40-60 cm.",
+    "locomotion": "swim",
+    "speed_max": 8.0,
     "conservation_status": "LC",
-    "size_min_mm": 400.0,
-    "size_max_mm": 500.0,
-    "weight_avg_g": 12000.0,
+    "size_min_mm": 1500.0,
+    "size_max_mm": 2000.0,
+    "weight_avg_g": 40000.0,
     "stats": {
-      "strength": 55,
-      "durability": 85,
-      "speed": 20,
-      "weaponry": 60,
-      "special": 88,
-      "lethality": 70
+      "strength": 70,
+      "durability": 65,
+      "speed": 55,
+      "weaponry": 85,
+      "special": 75,
+      "lethality": 80
     }
   }
 ]
