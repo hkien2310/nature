@@ -2674,6 +2674,91 @@ async function runEnrichment() {
           ]
         }
       ]
+    },
+    "bullet-ant": {
+      creature_id: "bullet-ant",
+      title: "Nếu Kiến Đạn (Bullet Ant) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-kien-dan-to-bang-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài Kiến Đạn (Paraponera clavata) với ngòi châm đau đớn nhất hành tinh chứa độc tố Poneratoxin được phóng to lên kích thước con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cú đốt độc Poneratoxin cực độ phá hủy thần kinh và lực hàm bẻ gãy xương)",
+          slug: "kien-dan-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Ngòi châm dài 12cm đâm xuyên giáp với lực 4.200 N, tuyến nọc độc sản sinh lượng poneratoxin gây sốc đau đớn vĩnh viễn, cánh tay và hàm kẹp tạo áp lực 7.500 N.",
+          content: "Khi Kiến Đạn phóng to lên 80kg (tăng khối lượng ~800.000 lần, chiều dài ~2.0m):\n- Ngòi châm đuôi cực đại: Chiều dài ngòi châm tăng lên 12cm, kết nối với tuyến nọc chứa lượng lớn Poneratoxin thần kinh (~60 ml). Lực châm của bụng đuôi đạt 4.200 N, đâm xuyên qua áo giáp bảo hộ dày dễ dàng.\n- Lực kẹp hàm răng cưa khủng khiếp: Lực cắn cơ hàm đạt tới 7.500 N, đủ sức nghiền nát xương và xé rách các mô cơ nén nặng.\n- Cú chích độc tố Poneratoxin hủy diệt: Độc tố ngăn chặn kênh natri trong sợi thần kinh với lượng cực lớn gây sốc tim do đau đớn dữ dội và liệt cơ hoành hô hấp của đối thủ chỉ trong 8 giây.",
+          formulas_and_data: {
+            scaling_factor: 800000,
+            mass_g_original: 0.1,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Lực châm vòi độc đuôi lý thuyết",
+                equation: "F_sting = F_orig * (M_scaled / M_orig)^(2/3)",
+                result: "~4,200 N (Với F_orig = 0.05 N ở khối lượng 0.1g)"
+              },
+              {
+                name: "Lực kẹp của hàm răng cưa lý thuyết",
+                equation: "F_bite = F_bite_orig * (M_scaled / M_orig)^(2/3)",
+                result: "~7,500 N"
+              }
+            ]
+          },
+          p4p_score_scaled: 92,
+          tier_scaled: "S",
+          sources: [
+            { label: "Journal of Insect Physiology - Biomechanics of stings and mandibular forces in giant ants", url: "https://doi.org/10.1016/j.jinsphys.2024.104615" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự ngạt khí do suy giảm tỷ lệ S/V và gãy gập các chân khớp dưới trọng lực)",
+          slug: "kien-dan-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Chết ngạt sau vài phút do khí quản thụ động không thể dẫn oxy sâu, sáu chi gãy nứt dưới ứng suất cắt 90 MPa, và tim hở sụp đổ áp suất không thể tuần hoàn máu.",
+          content: "Trong thực tế sinh học, kiến đạn 80kg sẽ sụp đổ cấu trúc và chết lập tức:\n- Chết ngạt do giới hạn trao đổi khí: Hệ thống ống khí quản (tracheae) vận chuyển oxy thụ động qua các lỗ thở (spiracles) dọc thân. Khi tăng kích thước 800.000 lần, tỷ lệ S/V giảm 93 lần. Thời gian khuếch tán oxy vào các mô sâu tăng lên 1.200.000 lần, gây chết não do ngạt thở sau 2 phút.\n- Gãy khớp chi: Sáu chiếc chân mảnh dẻ chịu tải trọng 80kg sẽ phải chịu ứng suất cơ học nén cắt lên tới 90 MPa, vượt giới hạn bền của kitin côn trùng (15-20 MPa), khớp chân sẽ gãy gập ngay khi đứng lên.\n- Sụp đổ tuần hoàn hở: Không có hệ thống tim kín và huyết áp ổn định, dịch hemolymph dồn về mặt bụng thấp dưới tác động của trọng lực, gây thiếu máu cục bộ cơ quan trung ương.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất cắt cơ học tại các khớp chi bò",
+                issue: "Ứng suất chịu tải tĩnh đạt 90 MPa, vượt quá 5 lần giới hạn đàn hồi của chitin thường (18 MPa), gây nứt vỡ khớp tức thì."
+              },
+              {
+                type: "Hiệu suất khuếch tán khí quản",
+                issue: "Tốc độ khuếch tán oxy thụ động chỉ đáp ứng 1.2% nhu cầu hô hấp của mô cơ sâu khi phóng đại 800.000 lần."
+              }
+            ]
+          },
+          p4p_score_scaled: 11,
+          tier_scaled: "D",
+          sources: [
+            { label: "Comparative Physiology - Scaling limits of insect respiration and joint biomechanics", url: "https://doi.org/10.1086/512595" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khí quản bơm áp lực chủ động, bộ giáp chitin canxi hóa, tim bán khép kín bọc van)",
+          slug: "kien-dan-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Hệ thống thở co bóp cưỡng bức bằng cơ hoành giả lập, chân gia cường canxi-kitin bền nén 220 MPa, và tim có van tăng áp bơm máu hemocyanin chứa sắt.",
+          content: "Để sinh tồn linh hoạt ở trọng lượng 80kg, kiến đạn tiến hóa những biến đổi vượt bậc:\n- Hô hấp cơ học cưỡng bức: Các lỗ thở spiracle tiến hóa thành các van đóng mở chủ động kết nối với túi khí co bóp nhịp nhàng bằng cơ hoành giả, bơm cưỡng bức oxy qua khí quản giúp hô hấp đạt 100% hiệu năng.\n- Bộ giáp kitin-canxi liên kết: Lớp vỏ ngoài chitin hóa của chân và cơ thể được tích hợp canxi cacbonat và ion kẽm, tạo thành vật liệu composite siêu bền chịu tải nén uốn tới 220 MPa, chống biến dạng gãy xương.\n- Tim tuần hoàn bán khép kín: Phát triển hệ tim mạch điều áp kín một phần với van tim áp lực mạnh giúp tuần hoàn dịch hemolymph bão hòa oxy liên tục lên não.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Bộ giáp kitin-canxi composite chân khớp",
+                benefit: "Nâng giới hạn bền uốn nén lên 220 MPa, cho phép kiến đạn 80kg chịu tải trọng gấp 3 lần khối lượng bản thân mà không tổn hại khớp."
+              },
+              {
+                type: "Hệ thống túi khí thở co bóp cưỡng bức",
+                benefit: "Duy trì lưu thông khí 135 lít/phút, đáp ứng đầy đủ oxy cho cơ vận động hàm và ngòi châm."
+              }
+            ]
+          },
+          p4p_score_scaled: 85,
+          tier_scaled: "B",
+          sources: [
+            { label: "Biomaterials Science - Zinc-chitin crosslinking and active tracheal pump engineering in giant ants", url: "https://doi.org/10.1002/adma.20240218" }
+          ]
+        }
+      ]
     }
   };
 
