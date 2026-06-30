@@ -1,224 +1,227 @@
 [
   {
-    "id": "giant-oarfish",
-    "name": "Cá Mái Chèo Khổng Lồ",
-    "scientificName": "Regalecus glesne",
+    "id": "peacock-mantis-shrimp",
+    "name": "Tôm Tít Công",
+    "scientificName": "Odontodactylus scyllarus",
     "taxonomy": {
-      "class": "Actinopterygii",
-      "order": "Lampriformes",
-      "family": "Regalecidae"
+      "class": "Malacostraca",
+      "order": "Stomatopoda",
+      "family": "Odontodactylidae"
     },
-    "realWeight": "150 - 270 kg",
-    "size": "3 - 11 m",
-    "characteristics": "Thân dẹt thuôn dài như dải ruy-băng bạc khổng lồ. Không có răng, vây lưng đỏ rực kéo dài dọc sống lưng làm thành chiếc vương miện lộng lẫy trên đỉnh đầu. Chúng bơi theo tư thế đứng thẳng đứng độc đáo dưới biển sâu.",
-    "habitat": "Vùng nước sâu đại dương (mesopelagic zone), ở độ sâu từ 200m đến 1000m.",
-    "location": "Hầu hết các đại dương ôn đới và nhiệt đới ấm áp trên thế giới.",
-    "survival_method": "Bơi đứng thẳng lưng, ngụy trang bằng ánh phản chiếu của cơ thể bạc lấp lánh để ẩn mình dưới ánh sáng mờ từ trên chiếu xuống. Đi săn các loài sinh vật nhỏ, nhuyễn thể bằng cách hút nước mạnh.",
-    "unique_traits": "Thân hình dải ruy-băng khổng lồ (Giant Ribbon Body): Loài cá xương dài nhất thế giới hiện nay, có thể đạt chiều dài tối đa lên đến 11m (thậm chí có báo cáo ghi nhận 17m). Tư thế bơi đứng thẳng (Vertical Swimming): Khác với hầu hết các loài cá thông thường, chúng bơi thẳng đứng hướng đầu lên trên, dùng vây lưng uốn lượn để điều hướng cơ thể. Truyền thuyết báo động đất (Earthquake Harbinger): Gắn liền với truyền thuyết Ryugu no Tsukai (Sứ giả từ cung điện rồng) trong văn hóa Nhật Bản, loài cá này thường ngoi lên mặt biển cạn trước khi xảy ra chấn động địa chấn lớn.",
-    "shortDescription": "Loài cá xương dài nhất thế giới với cơ thể ruy-băng bạc và vương miện đỏ, nổi tiếng là sứ giả báo động đất.",
-    "description": "Cá Mái Chèo Khổng Lồ (Regalecus glesne) là một trong những loài cá kỳ lạ và bí ẩn nhất đại dương sâu thẳm. Với chiều dài cơ thể phi thường và vây lưng màu đỏ hồng dựng đứng như vương miện, chúng chính là nguồn cảm hứng cho những câu chuyện về quái vật biển khổng lồ thuở xưa. Mặc dù sở hữu kích thước to lớn, loài cá này hoàn toàn hiền lành, không có răng và chỉ ăn các loài giáp xác nhỏ bằng cách lọc nước.",
+    "realWeight": "~200 - 600 g",
+    "size": "10 - 18 cm",
+    "characteristics": "Thân hình phân đốt màu sắc sặc sỡ tựa chim công với sắc thái đỏ, xanh lục, xanh lam và cam rực rỡ. Đôi càng đập (raptorial claws) tiến hóa cao có hình dạng như những cây búa tạ siêu cứng gập dưới ngực. Đôi mắt phức kép cực kỳ phức tạp lồi hẳn ra ngoài, chuyển động độc lập.",
+    "habitat": "Rạn san hô, hốc đá ven biển, thảm cỏ biển và nền cát mịn.",
+    "location": "Khu vực nhiệt đới ấm áp thuộc Ấn Độ Dương - Thái Bình Dương, từ Đông Phi đến Hawaii.",
+    "survival_method": "Trú ẩn trong các hang đào dưới cát hoặc rạn san hô trống để bảo vệ bản thân khỏi các loài săn mồi lớn. Đi săn chủ yếu vào ban ngày, tấn công các con mồi có lớp vỏ cứng như cua, ốc và sò bằng những cú đấm áp lực cực nhanh đập nát lớp vỏ bảo vệ chỉ trong một đòn.",
+    "unique_traits": "Cú đấm tốc độ đạn bắn (Bullet-like Strike): Đôi càng đập giải phóng cơ chế lò xo cơ học tạo ra gia tốc 10,400 g và tốc độ 23 m/s (82.8 km/h), va đập với lực lên tới 1500 Newton đập tan vỏ cua đá. Bong bóng siêu xâm thực (Cavitational Bubble): Cú ra đòn cực nhanh tạo nên vùng áp suất cực thấp xung quanh càng đập, sinh ra các bong bóng hơi siêu nhỏ. Khi bong bóng này vỡ ra, nó tạo ra sóng xung kích thứ hai với nhiệt độ lên tới hàng ngàn độ Kelvin và phát ra ánh sáng yếu (hiện tượng phát quang do âm thanh), đúp sát thương ngay cả khi cú đấm trượt trực tiếp. Siêu nhãn quan 16 kênh thụ cảm (16-receptor Eyesight): Đôi mắt có cấu trúc đỉnh cao nhất vương quốc động vật với 16 loại tế bào cảm nhận ánh sáng (so với 3 ở người), có khả năng nhìn thấy ánh sáng phân cực tròn (circularly polarized light) và tia cực tím (UV).",
+    "shortDescription": "Sở hữu cú đấm gia tốc 10,400g mạnh như đạn bắn và đôi mắt 16 kênh cảm nhận ánh sáng tối tân nhất vương quốc động vật.",
+    "description": "Tôm Tít Công (Odontodactylus scyllarus) là đấu sĩ quyền anh tối thượng dưới đại dương. Chúng là loài giáp xác săn mồi đáng gờm sở hữu đôi càng hình búa hoạt động như một hệ thống đòn bẩy lò xo lưu trữ động năng cực lớn. Lớp vỏ càng của chúng được gia cố bằng cấu trúc tinh thể khoáng hydroxyapatite xếp lớp xoắn ốc (helicoidal), ngăn chặn các vết nứt lan rộng khi va đập lực cực mạnh. Cú đập của loài này mạnh đến mức có thể dễ dàng làm vỡ kính của các bể nuôi cá thông thường.",
     "strengths": [
-      "Chiều dài cơ thể cực lớn giúp chúng dễ dọa nạt các kẻ thù săn mồi nhỏ hơn",
-      "Khả năng ngụy trang cơ thể bạc phản chiếu ánh sáng cực tốt trong bóng tối lờ mờ của biển sâu",
-      "Phương thức bơi đứng thẳng đứng giúp tối ưu tầm nhìn và phản xạ bắt mồi từ phía dưới"
+      "Cú đập búa tạ với lực va chạm tức thời tương đương đạn súng lục .22",
+      "Sóng xung kích từ bong bóng siêu xâm thực tạo sát thương kép cực mạnh",
+      "Cấu trúc tinh thể khoáng helicoidal ở càng đập giúp hấp thụ rung chấn hoàn hảo mà không bị nứt vỡ tự thương",
+      "Hệ thống thị giác tối tân 16 thụ cảm sắc tố cho phép nhìn thấy chi tiết phân cực tròn và UV vượt trội"
     ],
     "weaknesses": [
-      "Không có răng hoặc vũ khí tấn công, hoàn toàn vô hại đối với các loài săn mồi lớn",
-      "Cơ thể dài dẹt dễ bị tổn thương vật lý khi gặp dòng hải lưu mạnh hoặc đá ngầm",
-      "Tốc độ bơi ngang rất hạn chế và vụng về"
+      "Lớp vỏ giáp ở phần bụng và đuôi tương đối mềm, dễ bị tổn thương nếu bị kẻ địch tấn công từ phía sau",
+      "Phụ thuộc nặng nề vào đôi càng đập, nếu càng bị gãy hoặc hỏng thì mất hoàn toàn khả năng săn mồi và tự vệ cho đến chu kỳ lột xác tiếp theo",
+      "Phải lột xác định kỳ, trong thời gian vỏ mới chưa cứng (khoảng vài ngày) cơ thể cực kỳ yếu ớt và phải ẩn náu hoàn toàn dưới hang sâu"
     ],
     "funFacts": [
-      "Cá mái chèo có thể tự rụng phần đuôi của mình (tự phẫu) để giảm bớt chiều dài cơ thể mà không ảnh hưởng tới sức khỏe",
-      "Nhiều trường hợp cá mái chèo dạt vào bờ biển Nhật Bản ngay trước các trận động đất lịch sử như trận động đất Tohoku 2011",
-      "Cơ thể của chúng không có vảy thực sự mà được bao phủ bởi một lớp màng bạc mỏng chứa guanine có độc tính nhẹ"
+      "Cú đấm của tôm tít nhanh đến mức nước xung quanh càng của nó thực sự sôi lên trong một khoảnh khắc siêu ngắn do hiện tượng siêu xâm thực",
+      "Các nhà khoa học đang nghiên cứu cấu trúc helicoidal trong càng tôm tít để thiết kế áo giáp chống đạn và vỏ máy bay siêu bền thế hệ mới",
+      "Tôm tít công là sinh vật duy nhất được ghi nhận có thể nhìn thấy ánh sáng phân cực tròn, một công cụ giao tiếp bảo mật tuyệt đối giữa các cá thể trong loài"
     ],
     "sources": [
       {
-        "url": "https://www.nationalgeographic.com/animals/fish/facts/oarfish",
-        "label": "National Geographic - Oarfish Facts"
+        "url": "https://doi.org/10.1126/science.1218598",
+        "label": "Science - Helicoidal structures in stomatopod clubs for impact tolerance"
       },
       {
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/regalecus-glesne/",
-        "label": "Florida Museum - Regalecus glesne Profile"
+        "url": "https://www.nature.com/articles/ncomms4842",
+        "label": "Nature Communications - Circularly polarized light vision in stomatopods"
       }
     ],
-    "imageColor": "#7289DA",
+    "imageColor": "#00A86B",
     "diet_type": "carnivore",
     "diet_items": [
-      "nhuyễn thể",
-      "giáp xác nhỏ",
-      "mực nhỏ",
-      "sứa"
-    ],
-    "activity_pattern": "variable",
-    "lifespan_min": 10,
-    "lifespan_max": 30,
-    "lifespan_unit": "years",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Thụ tinh ngoài. Vào mùa sinh sản (từ tháng 7 đến tháng 12), con cái phóng hàng ngàn quả trứng lớn màu đỏ tươi nổi lơ lửng gần mặt biển, ấu trùng sau khi nở sẽ sống gần bề mặt đại dương trước khi di chuyển xuống biển sâu.",
-    "locomotion": "swim",
-    "speed_max": 10,
-    "conservation_status": "LC",
-    "size_min_mm": 3000,
-    "size_max_mm": 11000,
-    "weight_avg_g": 200000,
-    "stats": {
-      "strength": 50,
-      "durability": 60,
-      "speed": 45,
-      "weaponry": 20,
-      "special": 88,
-      "lethality": 25
-    },
-    "ai_p4p_score": 48,
-    "ai_tier": "C"
-  },
-  {
-    "id": "armadillo-lizard",
-    "name": "Thằn Lằn Đuôi Gai Armadillo",
-    "scientificName": "Ouroborus cataphractus",
-    "taxonomy": {
-      "class": "Reptilia",
-      "order": "Squamata",
-      "family": "Cordylidae"
-    },
-    "realWeight": "80 - 150 g",
-    "size": "16 - 21 cm",
-    "characteristics": "Cơ thể được bao bọc bởi những hàng vảy gai nhọn hoắt và cứng như giáp sắt, từ đầu đến đuôi. Khi bị đe dọa, nó cuộn tròn như quả bóng và cắn chặt đuôi để bảo vệ phần bụng mềm.",
-    "habitat": "Các vùng hoang mạc khô cằn, sườn núi đá nhiều khe nứt.",
-    "location": "Tỉnh cực Tây Nam của Nam Phi (vùng Succulent Karoo).",
-    "survival_method": "Sống theo đàn nhỏ trong các khe nứt đá để tránh nóng và kẻ thù. Khi gặp mối đe dọa trực tiếp trên mặt đất và không kịp chạy trốn, chúng sẽ ngoạm lấy đuôi, cuộn tròn cơ thể bảo vệ bụng dưới nhạy cảm.",
-    "unique_traits": "Tư thế tự vệ Ouroboros (Ouroboros Defense): Cuộn tròn cắn đuôi tạo thành một vòng gai cứng khép kín bảo vệ bụng mềm, khiến hầu hết các loài chim săn mồi và rắn không thể nuốt trôi hoặc cắn rách. Giáp vảy gai (Spiny Armor): Lớp vảy sừng dày nhọn dọc theo lưng và đuôi có chức năng như những chiếc chông nhọn, gây đau đớn dữ dội cho bất kỳ kẻ săn mồi nào cố gắng ngoạm lấy.",
-    "shortDescription": "Kẻ tự vệ Ouroboros với lớp giáp vảy gai sắc nhọn và thói quen cắn đuôi cuộn tròn độc đáo.",
-    "description": "Thằn Lằn Đuôi Gai Armadillo (Ouroborus cataphractus) là một loài thằn lằn đặc hữu của Nam Phi, nổi tiếng với khả năng phòng thủ vô song. Thay vì chạy trốn hay tấn công trả đũa bằng nọc độc, nó chọn cách biến mình thành một quả bóng gai nhọn cứng ngắc. Tư thế cuộn tròn cắn đuôi của chúng gợi liên tưởng trực tiếp đến hình ảnh rồng nuốt đuôi Ouroboros cổ xưa.",
-    "strengths": [
-      "Lớp giáp gai sừng cực dày bảo vệ cơ thể khỏi các chấn thương vật lý nặng",
-      "Tư thế cuộn tròn cắn đuôi bảo vệ bụng nhạy cảm khỏi mọi đòn tấn công cắn xé",
-      "Khả năng lách sâu và bám chặt vào các khe đá hẹp nhờ các gai chống trượt"
-    ],
-    "weaknesses": [
-      "Tốc độ chạy trốn cự ly dài chậm do cơ thể nặng nề vì vảy giáp",
-      "Không có nọc độc hay lực cắn mạnh để chủ động tấn công đối thủ",
-      "Phải phơi nắng thường xuyên để điều hòa thân nhiệt, lúc này rất dễ bị phát hiện"
-    ],
-    "funFacts": [
-      "Chúng là một trong số ít loài thằn lằn không rụng đuôi để chạy trốn vì đuôi là công cụ bảo vệ sống còn của tư thế cuộn tròn",
-      "Loài này sinh sản bằng cách đẻ con trực tiếp (viviparous) thay vì đẻ trứng, thậm chí con mẹ thỉnh thoảng còn mớm thức ăn cho con non",
-      "Nếu gặp dốc, chúng đôi khi có thể thả mình cuộn tròn để lăn tự do xuống sườn núi nhằm thoát thân nhanh chóng"
-    ],
-    "sources": [
-      {
-        "url": "https://www.iucnredlist.org/species/110162057/115657805",
-        "label": "IUCN Red List - Ouroborus cataphractus"
-      },
-      {
-        "url": "https://www.inaturalist.org/taxa/539328-Ouroborus-cataphractus",
-        "label": "iNaturalist - Armadillo Girdled Lizard Profile"
-      }
-    ],
-    "imageColor": "#DDA15E",
-    "diet_type": "omnivore",
-    "diet_items": [
-      "mối",
-      "kiến",
-      "bọ cánh cứng",
-      "chồi cây non"
+      "cua đá",
+      "ốc biển",
+      "nghêu",
+      "cá nhỏ"
     ],
     "activity_pattern": "diurnal",
-    "lifespan_min": 10,
-    "lifespan_max": 20,
+    "lifespan_min": 3,
+    "lifespan_max": 7,
     "lifespan_unit": "years",
-    "reproduction_type": "viviparous",
-    "reproduction_notes": "Sinh con trực tiếp (đẻ con). Mỗi năm con cái thường chỉ sinh từ 1 đến 2 con non, con non mới sinh đã có lớp vảy sừng mềm và sẽ cứng lại rất nhanh sau vài giờ.",
-    "locomotion": "walk",
-    "speed_max": 8.5,
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Sinh sản hữu tính. Cả con đực và con cái thường sống chung một hang trong thời kỳ sinh sản. Con cái đẻ và ôm một khối lượng lớn trứng (lên tới hàng chục ngàn quả) trước ngực để bảo vệ và làm sạch cho đến khi nở thành ấu trùng trôi nổi.",
+    "locomotion": "hybrid",
+    "speed_max": 18.5,
     "conservation_status": "LC",
-    "size_min_mm": 160,
-    "size_max_mm": 210,
-    "weight_avg_g": 115,
+    "size_min_mm": 100,
+    "size_max_mm": 180,
+    "weight_avg_g": 350,
     "stats": {
-      "strength": 45,
-      "durability": 90,
-      "speed": 40,
-      "weaponry": 60,
-      "special": 85,
-      "lethality": 30
+      "strength": 82,
+      "durability": 78,
+      "speed": 85,
+      "weaponry": 98,
+      "special": 95,
+      "lethality": 92
     },
-    "ai_p4p_score": 65,
-    "ai_tier": "B"
+    "ai_p4p_score": 88,
+    "ai_tier": "A"
   },
   {
-    "id": "purple-frog",
-    "name": "Ếch Tím Ấn Độ",
-    "scientificName": "Nasikabatrachus sahyadrensis",
+    "id": "peregrine-falcon",
+    "name": "Chim Cắt Lớn",
+    "scientificName": "Falco peregrinus",
     "taxonomy": {
-      "class": "Amphibia",
-      "order": "Anura",
-      "family": "Nasikabatrachidae"
+      "class": "Aves",
+      "order": "Falconiformes",
+      "family": "Falconidae"
     },
-    "realWeight": "60 - 130 g",
-    "size": "5 - 9 cm",
-    "characteristics": "Thân hình phình to như một cục thạch dẹt màu tím sẫm. Đầu cực nhỏ với chiếc mõm nhọn màu trắng ngà giống mõm lợn. Bàn chân ngắn có vuốt sừng cứng để đào đất.",
-    "habitat": "Sâu dưới lòng đất (từ 1.3m đến 3.7m) gần các dòng suối rừng nhiệt đới.",
-    "location": "Dãy núi Ghats Tây ở miền Nam Ấn Độ.",
-    "survival_method": "Dành 96% thời gian cả đời sống ngầm dưới đất để ăn mối. Chúng dùng đôi chân sau có móng vuốt xới đất ngược ra sau để đào hang sâu. Chúng có chiếc lưỡi đặc biệt có khấc đút thẳng vào tổ mối để hút mối.",
-    "unique_traits": "Lối sống hóa thạch sống ngầm (Fossorial Lifestyle): Sống ngầm dưới lòng đất suốt 50 tuần mỗi năm, chỉ ngoi lên mặt đất trong đúng 2 tuần mưa lớn đầu mùa để sinh sản. Mõm nhọn mõm lợn (Pointed Snout): Chiếc mõm nhọn màu trắng giúp chúng dễ dàng định hướng trong lòng đất ẩm và định vị tổ mối dưới lòng đất. Chân đào bới sừng hóa (Spade-like Feet): Đôi chi sau ngắn nhưng có cấu trúc đệm sừng giống như những chiếc xẻng nhỏ để đào đất ngược về phía sau cực nhanh.",
-    "shortDescription": "Hóa thạch sống màu tím với mõm nhọn giống lợn, sống sâu dưới lòng đất 50 tuần mỗi năm.",
-    "description": "Ếch Tím Ấn Độ (Nasikabatrachus sahyadrensis) được phát hiện vào năm 2003 và được coi là một \"hóa thạch sống\" quý giá vì loài này tiến hóa biệt lập từ hàng chục triệu năm trước. Ngoại hình kỳ dị giống một khối thạch dẹt màu tím với chiếc mõm lợn là sự thích nghi hoàn hảo cho cuộc sống đào bới và săn mồi dưới lòng đất. Chúng hầu như không bao giờ lộ diện trừ mùa giao phối ngắn ngủi.",
+    "realWeight": "0.7 - 1.5 kg",
+    "size": "34 - 58 cm",
+    "characteristics": "Lưng màu xanh xám thẫm, bụng màu trắng sọc đen ngang, đầu màu đen với các vệt đen dọc má tạo thành dải băng đô đặc trưng. Cánh dài nhọn và đuôi thuôn dẹt tạo thiết kế khí động học hoàn hảo.",
+    "habitat": "Vách núi đá cao, thung lũng sông ngòi, và các tòa nhà cao tầng trong thành phố lớn.",
+    "location": "Phân bố rộng khắp toàn cầu trên mọi châu lục trừ Nam Cực.",
+    "survival_method": "Quan sát con mồi từ độ cao vượt trội trên không trung hoặc vách đá cao. Khi xác định được mục tiêu (chủ yếu là chim bồ câu hoặc chim nước), chúng gập cánh lại sát thân và thực hiện cú lao dốc đứng (stoop) cực nhanh từ độ cao hàng trăm mét, dùng bộ vuốt chân cong nhọn xé rách lớp bảo vệ hoặc bẻ cổ con mồi ngay khi va chạm ở tốc độ cao.",
+    "unique_traits": "Cú lao dốc tốc độ tử thần (Deathly Stoop Dive): Cú lao dốc săn mồi có thể đạt tốc độ tối đa ghi nhận trên 320 km/h (đôi khi vượt 389 km/h), khiến nó trở thành sinh vật chuyển động nhanh nhất hành tinh. Tấm giảm áp hốc mũi (Mnasal Tubercles): Các gai thịt sụn xoắn ốc nằm trong lỗ mũi giúp phân tán dòng khí áp lực cao khi bay ở vận tốc cực lớn, ngăn chặn hiện tượng vỡ phế nang phổi và cho phép chim vẫn thở bình thường trong cú lao dốc đứng. Màng nhầy bảo vệ mắt (Nictitating Membrane): Màng mắt thứ ba trong suốt nhấp nháy liên tục để giữ ẩm và loại bỏ bụi bẩn, hoạt động như kính bảo hộ khí động học bảo vệ võng mạc.",
+    "shortDescription": "Sinh vật nhanh nhất hành tinh với cú lao dốc săn mồi vượt 320 km/h và hốc mũi giảm áp độc đáo.",
+    "description": "Chim Cắt Lớn (Falco peregrinus) là vua tốc độ của bầu trời. Thiết kế cơ thể của chúng là một kiệt tác khí động học tự nhiên với bộ lông ôm sát cơ thể cứng cáp, cánh hình chữ V sắc nhọn cắt gió hoàn hảo và nhịp tim đạt tới 600-900 nhịp/phút khi bay. Để chịu được lực cản gió khổng lồ khi săn mồi, chúng sở hữu cơ ngực cực kỳ khỏe mạnh và hệ hô hấp một chiều hiệu suất cao kết hợp cấu trúc giảm áp ở hốc mũi để ổn định luồng khí vào phổi.",
     "strengths": [
-      "Khả năng đào bới và trú ẩn sâu dưới lòng đất tránh được hầu hết các loài thú săn mồi trên cạn",
-      "Cơ thể thuôn dẹt giảm áp lực đất giúp di chuyển dễ dàng trong lòng đất",
-      "Cấu trúc lưỡi chuyên dụng hút mối nhanh chóng trong hang hẹp"
+      "Tốc độ di chuyển tuyệt đối nhanh nhất trong thế giới động vật (lên tới hơn 389 km/h)",
+      "Hệ thống định vị thị giác siêu nhạy cho phép phát hiện con mồi nhỏ từ khoảng cách hơn 1.5 km",
+      "Lực va chạm từ cú đấm vuốt chân ở tốc độ cao đủ mạnh để làm gãy cổ hoặc tiêu diệt con mồi ngay lập tức trên không",
+      "Khả năng thích nghi môi trường cực tốt, sinh sống được cả ở các khu đô thị hiện đại"
     ],
     "weaknesses": [
-      "Di chuyển trên mặt đất cực kỳ vụng về và chậm chạp, dễ bị tấn công khi ngoi lên",
-      "Thị lực kém do quanh năm sống trong bóng tối ẩm ướt",
-      "Phụ thuộc hoàn toàn vào chu kỳ mưa lớn và môi trường suối rừng nguyên sinh để duy trì nòi giống"
+      "Lực cắn của mỏ tương đối yếu so với các loài đại bàng lớn hoặc chim ưng lớn khác",
+      "Tốc độ bay bằng thẳng ngang chỉ ở mức trung bình (khoảng 60-90 km/h)",
+      "Nếu cú lao dốc bị trượt mục tiêu sát mặt đất, nguy cơ va chạm vật lý tự sát thương vào chướng ngại vật là cực kỳ cao"
     ],
     "funFacts": [
-      "Loài ếch này phát ra tiếng kêu giao phối nghe giống như tiếng gà gáy nhỏ từ các kẽ đá ven suối",
-      "Nòng nọc của loài ếch tím sở hữu các đĩa hút bám cực khỏe ở bụng để bám chắc vào các tảng đá dưới suối chảy xiết mà không bị cuốn trôi",
-      "Chúng là đại diện duy nhất còn sống sót của một nhánh tiến hóa lưỡng cư tách biệt từ thời siêu lục địa Gondwana"
+      "Các kỹ sư hàng không đã nghiên cứu cấu trúc hốc mũi hình nón xoắn ốc của chim cắt lớn để thiết kế cửa hút gió cho động cơ phản lực của các máy bay chiến đấu siêu thanh đầu tiên",
+      "Khi lao dốc đứng, màng mắt thứ ba của chim cắt lớn nhấp nháy liên tục để bôi trơn mắt bằng nước mắt đặc biệt giúp mắt không bị khô và mờ đi vì gió mạnh",
+      "Chúng có thể di cư với khoảng cách khổng lồ lên tới 25,000 km mỗi năm giữa các mùa sinh sản"
     ],
     "sources": [
       {
-        "url": "https://www.nationalgeographic.com/animals/amphibians/facts/purple-frog",
-        "label": "National Geographic - Purple Frog"
+        "url": "https://doi.org/10.1242/jeb.201.21.3229",
+        "label": "Journal of Experimental Biology - Aerodynamics and flight speed of the peregrine falcon"
       },
       {
-        "url": "https://doi.org/10.1038/nature02019",
-        "label": "Nature - A new family of frogs from India"
+        "url": "https://www.audubon.org/field-guide/bird/peregrine-falcon",
+        "label": "Audubon Guide to North American Birds - Peregrine Falcon"
       }
     ],
-    "imageColor": "#5A3E54",
+    "imageColor": "#3F4E4F",
     "diet_type": "carnivore",
     "diet_items": [
-      "mối",
-      "kiến",
-      "ấu trùng côn trùng",
-      "giun nhỏ"
+      "bồ câu",
+      "chim én",
+      "vịt nước",
+      "dơi"
     ],
-    "activity_pattern": "nocturnal",
-    "lifespan_min": 5,
-    "lifespan_max": 15,
+    "activity_pattern": "diurnal",
+    "lifespan_min": 12,
+    "lifespan_max": 20,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Sinh sản hữu tính. Vào những ngày mưa đầu mùa, con đực cõng con cái bò ra bờ suối nhiệt đới. Con cái đẻ trứng vào khe đá dưới nước và con đực thụ tinh. Trứng nở thành nòng nọc có đĩa hút bám đá.",
-    "locomotion": "burrow",
-    "speed_max": 3.2,
-    "conservation_status": "EN",
-    "size_min_mm": 50,
-    "size_max_mm": 90,
-    "weight_avg_g": 95,
+    "reproduction_notes": "Sinh sản hữu tính. Chúng kết đôi một vợ một chồng trọn đời. Mỗi năm con cái đẻ từ 3 đến 4 quả trứng trên các gờ đá cao hoặc hộp làm tổ nhân tạo. Cả chim bố và mẹ thay phiên nhau ấp trứng trong vòng 29-33 ngày.",
+    "locomotion": "fly",
+    "speed_max": 389.0,
+    "conservation_status": "LC",
+    "size_min_mm": 340,
+    "size_max_mm": 580,
+    "weight_avg_g": 1000,
     "stats": {
-      "strength": 50,
-      "durability": 75,
-      "speed": 35,
-      "weaponry": 30,
-      "special": 88,
-      "lethality": 30
+      "strength": 68,
+      "durability": 65,
+      "speed": 100,
+      "weaponry": 88,
+      "special": 92,
+      "lethality": 95
     },
-    "ai_p4p_score": 52,
-    "ai_tier": "C"
+    "ai_p4p_score": 85,
+    "ai_tier": "A"
+  },
+  {
+    "id": "mimic-octopus",
+    "name": "Bạch Tuộc Bắt Chước",
+    "scientificName": "Thaumoctopus mimicus",
+    "taxonomy": {
+      "class": "Cephalopoda",
+      "order": "Octopoda",
+      "family": "Octopodidae"
+    },
+    "realWeight": "200 - 300 g",
+    "size": "Lên tới 60 cm",
+    "characteristics": "Thân hình mềm mại linh hoạt cao, da trơn nhẵn, màu sắc mặc định là sọc xám nâu xen kẽ các vệt trắng đen. Tám cánh tay dài mảnh mai với hàng trăm giác hút cảm giác nhạy bén.",
+    "habitat": "Vùng nước cạn đáy bùn cát, cửa sông và các thảm tảo biển nhiệt đới.",
+    "location": "Khu vực Ấn Độ Dương - Thái Bình Dương ấm áp, đặc biệt là vùng biển cạn xung quanh Indonesia và Malaysia.",
+    "survival_method": "Không sở hữu nọc độc chết người hay lớp vỏ cứng bảo vệ, chúng sử dụng trí thông minh vượt trội và khả năng ngụy trang siêu đẳng để bắt chước hình dạng, màu sắc và cách di chuyển của những động vật biển có độc hoặc nguy hiểm khác để dọa nạt các sinh vật săn mồi.",
+    "unique_traits": "Bắt chước đa loài linh hoạt (Dynamic Multi-species Mimicry): Có khả năng bắt chước màu sắc, hành vi và tư thế chuyển động của ít nhất 15 loài sinh vật biển khác nhau (như cá bơn độc, cá sư tử, rắn biển, sứa và cỏ biển) tùy thuộc vào kẻ thù nó gặp phải là ai. Khả năng biến đổi cấu trúc da tức thời (Textural Camouflage): Điều khiển các tế bào sắc tố (chromatophores) và cơ biểu bì (papillae) để thay đổi màu sắc da và giả lập bề mặt sần sùi của đá hoặc mịn màng của bùn chỉ trong chưa đầy 1 giây.",
+    "shortDescription": "Bậc thầy ngụy trang bắt chước hành vi của hơn 15 loài sinh vật biển có độc để tự vệ và săn mồi.",
+    "description": "Bạch Tuộc Bắt Chước (Thaumoctopus mimicus) được phát hiện vào năm 1998 ven biển Bali, Indonesia. Đây là loài bạch tuộc đầu tiên và duy nhất trong tự nhiên được ghi nhận có khả năng giả dạng chủ động nhiều loài sinh vật khác thay vì chỉ đơn giản hòa mình vào môi trường xung quanh. Chúng có khả năng tính toán thông minh: ví dụ, khi bị cá bống tấn công, chúng sẽ lập tức giả trang thành rắn biển - kẻ săn mồi tự nhiên của cá bống.",
+    "strengths": [
+      "Khả năng bắt chước linh hoạt hình dạng và hành vi của nhiều loài có độc khiến kẻ thù khiếp sợ",
+      "Khả năng biến đổi màu sắc, cấu trúc da và hình dạng cơ thể tức thời dưới 1 giây",
+      "Hệ thần kinh phân tán cực nhạy với 2/3 lượng nơ-ron nằm ở các xúc tu giúp phản xạ độc lập và thông minh",
+      "Cơ thể hoàn toàn không xương cho phép luồn lách qua mọi kẽ hở siêu nhỏ"
+    ],
+    "weaknesses": [
+      "Hoàn toàn không có giáp bảo vệ vật lý, cơ thể cực kỳ mềm mại dễ bị tổn thương nếu bị cắn trúng",
+      "Không sở hữu nọc độc mạnh hoặc lực tấn công vật lý đủ lớn để chiến đấu trực diện với sinh vật lớn",
+      "Thời gian hoạt động ngoài cát cạn làm tăng nguy cơ bị các loài chim săn mồi hoặc thú săn mồi lớn tấn công trước khi kịp giả trang"
+    ],
+    "funFacts": [
+      "Để giả làm cá bơn, bạch tuộc bắt chước ép sát tất cả xúc tu lại thành hình bầu dục dẹt và bơi uốn lượn sát đáy biển hệt như cách cá bơn bơi",
+      "Để giả làm cá sư tử, nó dang rộng toàn bộ xúc tu ra mọi hướng để mô phỏng các vây ngực đầy gai độc của cá sư tử",
+      "Mỗi xúc tu của bạch tuộc bắt chước có thể hoạt động hoàn toàn độc lập như một 'bộ não phụ' giúp nó vừa giả trang vây cá vừa bò chạy trốn"
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1098/rspb.2001.1708",
+        "label": "Proceedings of the Royal Society B - Dynamic mimicry in an Indo-Malayan octopus"
+      },
+      {
+        "url": "https://www.scientificamerican.com/article/introducing-the-mimic-octopus/",
+        "label": "Scientific American - Introducing the Mimic Octopus"
+      }
+    ],
+    "imageColor": "#8C7853",
+    "diet_type": "carnivore",
+    "diet_items": [
+      "cua nhỏ",
+      "tôm nhỏ",
+      "cá nhỏ",
+      "giun biển"
+    ],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 9,
+    "lifespan_max": 12,
+    "lifespan_unit": "months",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Con đực sử dụng một cánh tay chuyên dụng gọi là hectocotylus để chuyển các túi tinh dịch vào con cái. Cả con đực và con cái đều chết ngay sau chu kỳ sinh sản duy nhất trong đời của chúng (tự hoại sau sinh sản).",
+    "locomotion": "crawl",
+    "speed_max": 15.0,
+    "conservation_status": "LC",
+    "size_min_mm": 300,
+    "size_max_mm": 600,
+    "weight_avg_g": 250,
+    "stats": {
+      "strength": 40,
+      "durability": 50,
+      "speed": 75,
+      "weaponry": 35,
+      "special": 100,
+      "lethality": 45
+    },
+    "ai_p4p_score": 72,
+    "ai_tier": "B"
   }
 ]
