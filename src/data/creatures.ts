@@ -606,6 +606,228 @@ export const creatures: Creature[] = [
     size_min_mm: 80.0,
     size_max_mm: 120.0,
     weight_avg_g: 20.0
+  },
+  {
+    id: "blue-dragon",
+    name: "Sên Biển Xanh",
+    scientificName: "Glaucus atlanticus",
+    taxonomy: {
+      class: "Gastropoda",
+      order: "Nudibranchia",
+      family: "Glaucidae"
+    },
+    realWeight: "1 - 4 g",
+    size: "3 - 4 cm",
+    characteristics: "Thân hình dẹt, thuôn dài không vỏ với màu xanh dương đậm ở mặt bụng (hướng lên trên) và màu bạc ở mặt lưng (hướng xuống dưới) tạo hiệu ứng ngụy trang ngược (countershading). Sở hữu 3 cặp phần phụ dạng ngón tay xếp xòe ra gọi là cerata dùng để tăng diện tích tiếp xúc nổi và lưu trữ tế bào châm từ con mồi.",
+    habitat: "Tầng mặt nước đại dương khơi (pelagic zone), trôi nổi tự do nhờ sức căng bề mặt và túi khí dạ dày.",
+    location: "Khắp các vùng đại dương ôn đới và nhiệt đới toàn cầu.",
+    survival_method: "Sử dụng túi khí nhỏ trong dạ dày để giữ tư thế ngửa và nổi sát mặt nước. Trôi dạt thụ động theo dòng chảy hải lưu và hướng gió. Khi bị đe dọa, phóng ra các tế bào châm cực độc đã cô đặc lấy từ con mồi.",
+    unique_traits: "Tích lũy tế bào châm (Kleptocnidae): Ăn sứa lửa Portuguese Man-of-War mà không bị trúng độc nhờ các tế bào biểu mô tiết chất nhầy đặc biệt khóa hoạt tính tế bào gai. Sau đó, nó lọc các nematocysts chưa nổ, chuyển chúng qua hệ tiêu hóa đến các cerata ở rìa thân để tích lũy tạo nọc độc mạnh hơn nguyên bản. Ngụy trang ngược (countershading) bảo vệ hai chiều khỏi chim săn mồi phía trên và cá săn mồi phía dưới.",
+    shortDescription: "Sát thủ biển khơi nhỏ bé cướp đoạt tế bào châm cực độc làm vũ khí cô đặc bảo vệ bản thân.",
+    description: "Sên Biển Xanh (Glaucus atlanticus) là một loài sên biển trần độc đáo, sống trôi nổi ngược trên bề mặt đại dương. Dù mang vẻ đẹp lộng lẫy như một sinh vật thần thoại, chúng lại là loài săn mồi đáng sợ chuyên ăn các loài sứa độc. Khả năng vô hiệu hóa và hấp thụ các tế bào châm (nematocysts) của sứa lửa Portuguese Man-of-War rồi tập trung chúng lại tại đầu các xúc tu cerata biến sên biển xanh thành một trong những sinh vật sở hữu cú chích đau đớn và nguy hiểm nhất đại dương.",
+    stats: {
+      strength: 10,
+      durability: 15,
+      speed: 8,
+      weaponry: 85,
+      special: 92,
+      lethality: 75
+    },
+    p4pScore: 75,
+    tier: "B",
+    strengths: [
+      "Khả năng hấp thụ và cô đặc tế bào gai cực độc của sứa lửa Portuguese Man-of-War để tấn công phòng vệ",
+      "Hệ chất nhầy bảo vệ ống tiêu hóa và tế bào da miễn nhiễm hoàn toàn với các độc tố châm chích",
+      "Ngụy trang ngược (countershading) hoàn hảo che mắt kẻ thù từ cả trên không và dưới nước",
+      "Khả năng sinh sản lưỡng tính giao phối chéo giúp tối đa hóa cơ hội duy trì nòi giống giữa đại dương khơi"
+    ],
+    weaknesses: [
+      "Khả năng tự bơi lội chủ động rất yếu, hoàn toàn phụ thuộc vào dòng hải lưu và hướng gió",
+      "Cơ thể mềm mại không có lớp vỏ ngoài hay xương nâng đỡ, dễ bị tổn thương vật lý trực tiếp",
+      "Dễ chết khô và mất nước nhanh chóng nếu bị sóng biển đánh dạt vào bờ cát sa bồi"
+    ],
+    funFacts: [
+      "Sên biển xanh di chuyển trong tư thế ngửa bụng lên trời; phần bụng màu xanh ngụy trang với màu nước biển, còn phần lưng màu bạc ngụy trang với ánh sáng mặt trời chiếu xuống đại dương",
+      "Bằng cách nuốt không khí vào một túi nhỏ trong dạ dày, chúng có thể duy trì độ nổi cố định trên mặt nước mà không tốn năng lượng",
+      "Chúng đẻ các dải trứng dài bám trực tiếp vào phần vỏ kitin hoặc phần còn sót lại của con mồi bị chúng ăn thịt để trứng trôi nổi an toàn"
+    ],
+    sources: [
+      {
+        url: "https://www.nationalgeographic.com/animals/invertebrates/facts/blue-dragon-glaucus-atlanticus",
+        label: "National Geographic - Blue Dragon Facts"
+      },
+      {
+        url: "http://www.marinespecies.org/aphia.php?p=taxdetails&id=140023",
+        label: "World Register of Marine Species - Glaucus atlanticus"
+      }
+    ],
+    imageColor: "#2980B9",
+    diet_type: "carnivore",
+    diet_items: [
+      "sứa lửa Portuguese man-of-war",
+      "sứa nút xanh (Porpita porpita)",
+      "sên biển tím (Janthina janthina)"
+    ],
+    activity_pattern: "diurnal",
+    lifespan_min: 1,
+    lifespan_max: 12,
+    lifespan_unit: "months",
+    reproduction_type: "hermaphrodite",
+    reproduction_notes: "Là loài lưỡng tính giao phối chéo bắt buộc. Hai cá thể áp bụng vào nhau để thụ tinh cho nhau, sau đó cả hai đều đẻ ra các chuỗi trứng dài bám trên vật nổi.",
+    locomotion: "swim",
+    speed_max: 0.2,
+    conservation_status: "LC",
+    size_min_mm: 20.0,
+    size_max_mm: 40.0,
+    weight_avg_g: 3.0
+  },
+  {
+    id: "thorny-devil",
+    name: "Thằn Lằn Quỷ Gai",
+    scientificName: "Moloch horridus",
+    taxonomy: {
+      class: "Reptilia",
+      order: "Squamata",
+      family: "Agamidae"
+    },
+    realWeight: "30 - 90 g",
+    size: "15 - 20 cm",
+    characteristics: "Toàn thân bao phủ bởi các gai hình nón lớn nhỏ sắc nhọn bằng chất sừng cứng chắc. Mặt lưng có màu nâu vàng sa mạc đốm đen giúp ngụy trang. Trên gáy có một chiếc bướu gai lớn trông giống hệt như một cái đầu thứ hai để đánh lạc hướng kẻ săn mồi.",
+    habitat: "Vùng cát sa mạc khô cằn, các cồn cát sâu và rừng cây bụi cằn cỗi.",
+    location: "Các sa mạc lớn ở miền Tây và Trung nước Úc.",
+    survival_method: "Sử dụng màu sắc cơ thể thay đổi theo nhiệt độ để ngụy trang và giữ nhiệt. Khi bị đe dọa, hạ thấp đầu thật giữa hai chân trước để lộ đầu giả bằng gai cứng ở gáy, đồng thời hít khí căng phồng người lên để tăng kích thước gây khó nuốt.",
+    unique_traits: "Hệ thống hút nước mao dẫn qua da (Hygroscopic skin): Lớp da có các rãnh siêu hiển vi chạy dọc giữa các vảy. Lực mao dẫn tự động hút sương đêm hoặc hơi ẩm từ cát ẩm rồi dẫn ngược lên khóe miệng để thằn lằn uống nước mà không cần cúi đầu. Đầu giả ở gáy làm mồi nhử chịu đòn chí mạng thay cho đầu thật.",
+    shortDescription: "Kẻ sinh tồn sa mạc tối thượng với lớp giáp gai xù xì và khả năng hút nước bằng da độc nhất.",
+    description: "Thằn Lằn Quỷ Gai (Moloch horridus) là một ví dụ kinh điển về sự thích nghi tiến hóa kỳ diệu với môi trường sa mạc khắc nghiệt tại Úc. Lớp giáp gai nhọn hoắt bao bọc toàn bộ cơ thể giúp chúng ngăn ngừa hầu hết các kẻ săn mồi nhỏ. Cơ chế hút nước độc đáo qua hiện tượng mao dẫn của các rãnh vảy trên da cho phép chúng tận dụng triệt để từng giọt sương sa mạc hoặc cát ẩm để uống nước trực tiếp mà không cần nguồn nước bề mặt.",
+    stats: {
+      strength: 20,
+      durability: 78,
+      speed: 12,
+      weaponry: 45,
+      special: 88,
+      lethality: 15
+    },
+    p4pScore: 60,
+    tier: "C",
+    strengths: [
+      "Bộ giáp gai nhọn hoắt bao quanh toàn bộ cơ thể khiến kẻ thù cực kỳ khó đớp hoặc nuốt chửng",
+      "Hệ thống da mao dẫn siêu việt giúp thu hoạch nước trực tiếp từ cát ẩm và sương đêm",
+      "Khả năng ngụy trang đỉnh cao bằng cách thay đổi sắc tố da phù hợp với nhiệt độ cát",
+      "Cơ quan đầu giả bằng gai ở gáy giảm thiểu rủi ro chấn thương sọ não khi bị tấn công"
+    ],
+    weaknesses: [
+      "Tốc độ di chuyển rất chậm chạp, dễ bị tóm nếu không kịp ẩn nấp",
+      "Chế độ ăn cực kỳ chuyên biệt, chỉ ăn kiến đen sa mạc với số lượng lớn",
+      "Hoàn toàn bất lực trước chim săn mồi có móng vuốt khỏe có thể lật ngửa cơ thể lộ vùng bụng mềm"
+    ],
+    funFacts: [
+      "Thằn lằn quỷ gai có thể ăn tới 1000 đến 3000 con kiến chỉ trong một ngày bằng chiếc lưỡi dính đớp liên tục",
+      "Khi di chuyển trên cát, chúng thực hiện một điệu bộ lắc lư giật lùi kỳ lạ để bắt chước một chiếc lá khô đung đưa trước gió nhằm tránh bị phát hiện",
+      "Dù có vẻ ngoài trông vô cùng dữ tợn và gai góc, loài thằn lằn này hoàn toàn hiền lành, không cắn và không có nọc độc"
+    ],
+    sources: [
+      {
+        url: "https://www.nature.com/articles/srep34364",
+        label: "Scientific Reports - Cutaneous water harvesting in the thorny devil"
+      },
+      {
+        url: "https://www.iucnredlist.org/species/83492069/83492074",
+        label: "IUCN Red List - Moloch horridus"
+      }
+    ],
+    imageColor: "#D35400",
+    diet_type: "carnivore",
+    diet_items: [
+      "kiến sa mạc (Iridomyrmex)",
+      "côn trùng nhỏ"
+    ],
+    activity_pattern: "diurnal",
+    lifespan_min: 6,
+    lifespan_max: 20,
+    lifespan_unit: "years",
+    reproduction_type: "sexual",
+    reproduction_notes: "Đẻ trứng (oviparous). Con cái đào hang sâu trong cát vào khoảng giữa tháng 11, đẻ từ 3 đến 10 quả trứng rồi lấp cát ngụy trang cẩn thận. Con non tự nở sau 90 - 120 ngày.",
+    locomotion: "walk",
+    speed_max: 0.5,
+    conservation_status: "LC",
+    size_min_mm: 150.0,
+    size_max_mm: 200.0,
+    weight_avg_g: 60.0
+  },
+  {
+    id: "sand-scorpion",
+    name: "Bọ Cạp Cát",
+    scientificName: "Paruroctonus mesaensis",
+    taxonomy: {
+      class: "Arachnida",
+      order: "Scorpiones",
+      family: "Vaejovidae"
+    },
+    realWeight: "1 - 3 g",
+    size: "6 - 8 cm",
+    characteristics: "Thân màu vàng cát bán trong suốt, hoàn hảo để ẩn nấp trên nền cát sa mạc. Lớp biểu bì chứa chất hữu cơ phát huỳnh quang màu xanh lam lục rực rỡ khi chiếu đèn UV. Cặp càng mảnh nhưng nhanh nhẹn và đuôi gai chứa túi độc uốn cong lên trên.",
+    habitat: "Cồn cát mịn sa mạc, nơi có nền cát sâu thích hợp để đào hang trốn nóng.",
+    location: "Các sa mạc Mojave và Sonoran ở vùng Tây Nam Hoa Kỳ và Tây Bắc Mexico.",
+    survival_method: "Đào hang sâu dưới cát để tránh nhiệt độ cao vào ban ngày, chỉ chui lên săn mồi vào ban đêm. Xác định vị trí con mồi nhờ cảm biến chấn động mặt cát cực nhạy trên kẽ chân.",
+    unique_traits: "Định vị địa chấn cát bằng kẽ chân (Slit sensilla): Đầu các chân có các vết nứt cơ học siêu nhạy phát hiện sóng Rayleigh (sóng địa chấn cát do con mồi đi qua tạo ra). Nhờ phân tích thời gian lệch mili-giây sóng truyền tới từng chân, nó xác định chính xác góc và khoảng cách con mồi trong vòng 50 cm. Lớp cutin phát quang xanh lục lam dưới ánh sáng UV.",
+    shortDescription: "Sát thủ bóng đêm định vị địa chấn cát bằng chân siêu nhạy và tiêm nọc độc thần kinh.",
+    description: "Bọ Cạp Cát (Paruroctonus mesaensis) là một loài đi săn đêm khét tiếng trong lòng sa mạc Bắc Mỹ. Không cần mắt hay tai để định hướng prey, chúng sở hữu cơ quan thụ cảm chấn động slit sensilla ở kẽ chân có khả năng phát hiện những dao động vô cùng nhỏ lan truyền qua cát mịn sa mạc. Điều này cho phép bọ cạp cát xoay người và vồ chính xác con mồi di động ngay trong bóng đêm hoàn toàn.",
+    stats: {
+      strength: 25,
+      durability: 40,
+      speed: 45,
+      weaponry: 82,
+      special: 90,
+      lethality: 80
+    },
+    p4pScore: 78,
+    tier: "A",
+    strengths: [
+      "Hệ thống định vị mục tiêu 3D dựa trên chấn động cát mịn có độ chính xác tuyệt đối",
+      "Nọc độc thần kinh mạnh tê liệt tức thì con mồi chân khớp và động vật nhỏ",
+      "Khả năng đào hang sâu dưới cát giúp trốn tránh kẻ thù lớn và giữ độ ẩm cơ thể",
+      "Chỉ số trao đổi chất siêu thấp cho phép tồn tại nhiều tháng không cần thức ăn"
+    ],
+    weaknesses: [
+      "Thị giác rất kém, phụ thuộc hoàn toàn vào rung động cơ học để phản ứng",
+      "Lớp vỏ mỏng dễ bị mất nước nhanh chóng dưới sức nóng mặt trời trực tiếp ban ngày",
+      "Dễ bị phát hiện từ xa bởi các loài săn mồi trang bị khả năng nhìn hoặc săn tìm bằng tia UV"
+    ],
+    funFacts: [
+      "Bọ cạp cát có thể đo chênh lệch thời gian sóng chấn động cát truyền tới các chân khác nhau ở mức vài phần triệu giây để định vị mục tiêu",
+      "Chất beta-carboline tích tụ ở vỏ ngoài làm bọ cạp cát phát ra ánh sáng huỳnh quang màu neon lung linh khi tiếp xúc với tia cực tím",
+      "Vào mùa đông lạnh giá, chúng có thể hạ thấp mức tiêu thụ năng lượng gần như bằng không để ngủ đông sâu dưới hang cát"
+    ],
+    sources: [
+      {
+        url: "https://doi.org/10.1152/jn.00941.2004",
+        label: "Journal of Neurophysiology - Sand-vibration detection by the sand scorpion"
+      },
+      {
+        url: "https://www.nature.com/articles/30811",
+        label: "Nature - Scorpion behavior and sand wave detection"
+      }
+    ],
+    imageColor: "#F1C40F",
+    diet_type: "carnivore",
+    diet_items: [
+      "mối sa mạc",
+      "bọ cánh cứng sa mạc",
+      "nhện sa mạc",
+      "bọ cạp nhỏ hơn"
+    ],
+    activity_pattern: "nocturnal",
+    lifespan_min: 5,
+    lifespan_max: 8,
+    lifespan_unit: "years",
+    reproduction_type: "sexual",
+    reproduction_notes: "Thực hiện nghi thức nhảy múa giữ càng nhau để tìm mặt đất bằng phẳng thích hợp đặt túi tinh. Con cái mang thai đẻ con trực tiếp (viviparous) sau 10 tháng, mang con trên lưng cho đến lần lột xác đầu tiên.",
+    locomotion: "walk",
+    speed_max: 2.5,
+    conservation_status: "LC",
+    size_min_mm: 60.0,
+    size_max_mm: 80.0,
+    weight_avg_g: 2.0
   }
 ];
 

@@ -1,226 +1,218 @@
 [
   {
-    "id": "velvet-worm",
-    "name": "Giun Nhung",
-    "scientificName": "Onychophora",
+    "id": "blue-dragon",
+    "name": "Sên Biển Xanh",
+    "scientificName": "Glaucus atlanticus",
     "taxonomy": {
-      "class": "Udeonychophora",
-      "order": "Euonychophora",
-      "family": "Peripatidae"
+      "class": "Gastropoda",
+      "order": "Nudibranchia",
+      "family": "Glaucidae"
     },
-    "realWeight": "0.1 - 2.5 g",
-    "size": "10 - 150 mm",
-    "characteristics": "Thân hình thon dài dẻo dai giống sâu nhưng có nhiều đôi chân ngắn hình nón (lobopods) có móng vuốt. Da mềm, nhám mịn như nhung do được bao phủ bởi hàng triệu hạt gai nhỏ chứa thụ cảm thể. Đầu có hai râu xúc giác dài, hai mắt đơn nguyên thủy ở gốc râu và cặp tuyến chất nhầy mở ra ở hai bên miệng.",
-    "habitat": "Nền rừng ẩm ướt dưới các thân cây đổ mục nát, kẽ đá, lớp thảm lá hoặc trong đất của các khu rừng nhiệt đới và ôn đới ẩm.",
-    "location": "Châu Mỹ, Châu Phi, Đông Nam Á và Châu Đại Dương (Úc, New Zealand).",
-    "survival_method": "Là loài săn mồi ẩn dật vào ban đêm. Khi phát hiện mồi (như dế, mối, nhện), giun nhung bắn ra hai tia chất lỏng dính (slime) từ hai nhú tuyến nằm cạnh miệng ở tốc độ cực cao. Chất lỏng này lập tức đông cứng thành một tấm lưới keo dẻo dính trong không khí, vô hiệu hóa con mồi ngay lập tức. Sau đó, nó bò đến dùng cặp hàm sắc nhọn đục một lỗ trên thân mồi, tiêm nước bọt chứa enzyme tiêu hóa vào để hóa lỏng mô bên trong rồi hút dung dịch dinh dưỡng.",
-    "unique_traits": "Cơ chế xịt keo tầm xa (slime cannon) có thể bắn xa tới 30 cm trong phần phần trăm giây. Lớp keo đặc biệt tự động trùng hợp cứng lại khi khô nhưng cực dính khi ướt. Bộ khung xương thủy tĩnh linh hoạt cho phép ép mình qua những khe hở siêu nhỏ.",
-    "shortDescription": "Sát thủ bóng đêm xịt keo tầm xa khóa chặt con mồi. Enzyme tiêu hóa hóa lỏng mô nội tạng.",
-    "description": "Giun Nhung (Onychophora) là một hóa thạch sống tồn tại hơn 500 triệu năm hầu như không biến đổi. Chúng sở hữu vũ khí săn mồi tầm xa độc nhất vô nhị: hai khẩu pháo chất nhầy bên cạnh miệng. Khi kích hoạt, áp lực bên trong cơ thể đẩy hai dòng keo protein lỏng phóng ra xa tới 30 cm với quỹ đạo dích dắc bao phủ lấy con mồi. Chỉ trong vài giây tiếp xúc với không khí, chất nhầy này đông cứng thành mạng lưới polyme vô cùng dẻo dai, giữ chặt nạn nhân bất kể kích thước để giun nhung thư thả bò tới tiêm enzyme tiêu hóa hóa lỏng con mồi từ bên trong.",
+    "realWeight": "1 - 4 g",
+    "size": "3 - 4 cm",
+    "characteristics": "Thân hình dẹt, thuôn dài không vỏ với màu xanh dương đậm ở mặt bụng (hướng lên trên) và màu bạc ở mặt lưng (hướng xuống dưới) tạo hiệu ứng ngụy trang ngược (countershading). Sở hữu 3 cặp phần phụ dạng ngón tay xếp xòe ra gọi là cerata dùng để tăng diện tích tiếp xúc nổi và lưu trữ tế bào châm từ con mồi.",
+    "habitat": "Tầng mặt nước đại dương khơi (pelagic zone), trôi nổi tự do nhờ sức căng bề mặt và túi khí dạ dày.",
+    "location": "Khắp các vùng đại dương ôn đới và nhiệt đới toàn cầu.",
+    "survival_method": "Sử dụng túi khí nhỏ trong dạ dày để giữ tư thế ngửa và nổi sát mặt nước. Trôi dạt thụ động theo dòng chảy hải lưu và hướng gió. Khi bị đe dọa, phóng ra các tế bào châm cực độc đã cô đặc lấy từ con mồi.",
+    "unique_traits": "Tích lũy tế bào châm (Kleptocnidae): Ăn sứa lửa Portuguese Man-of-War mà không bị trúng độc nhờ các tế bào biểu mô tiết chất nhầy đặc biệt khóa hoạt tính tế bào gai. Sau đó, nó lọc các nematocysts chưa nổ, chuyển chúng qua hệ tiêu hóa đến các cerata ở rìa thân để tích lũy tạo nọc độc mạnh hơn nguyên bản. Ngụy trang ngược (countershading) bảo vệ hai chiều khỏi chim săn mồi phía trên và cá săn mồi phía dưới.",
+    "shortDescription": "Sát thủ biển khơi nhỏ bé cướp đoạt tế bào châm cực độc làm vũ khí cô đặc bảo vệ bản thân.",
+    "description": "Sên Biển Xanh (Glaucus atlanticus) là một loài sên biển trần độc đáo, sống trôi nổi ngược trên bề mặt đại dương. Dù mang vẻ đẹp lộng lẫy như một sinh vật thần thoại, chúng lại là loài săn mồi đáng sợ chuyên ăn các loài sứa độc. Khả năng vô hiệu hóa và hấp thụ các tế bào châm (nematocysts) của sứa lửa Portuguese Man-of-War rồi tập trung chúng lại tại đầu các xúc tu cerata biến sên biển xanh thành một trong những sinh vật sở hữu cú chích đau đớn và nguy hiểm nhất đại dương.",
     "strengths": [
-      "Tấn công tầm xa bằng keo dẻo dính khóa cứng các loài chân khớp di động nhanh",
-      "Khung xương thủy tĩnh siêu linh hoạt giúp chui lọt các kẽ hở hẹp hơn đường kính cơ thể",
-      "Enzyme tiêu hóa cực mạnh phân rã nhanh chóng mô cơ thịt cứng thành chất lỏng",
-      "Giác quan xúc giác qua da và râu vô cùng nhạy bén trong bóng đêm"
+      "Khả năng hấp thụ và cô đặc tế bào gai cực độc của sứa lửa Portuguese Man-of-War để tấn công phòng vệ",
+      "Hệ chất nhầy bảo vệ ống tiêu hóa và tế bào da miễn nhiễm hoàn toàn với các độc tố châm chích",
+      "Ngụy trang ngược (countershading) hoàn hảo che mắt kẻ thù từ cả trên không và dưới nước",
+      "Khả năng sinh sản lưỡng tính giao phối chéo giúp tối đa hóa cơ hội duy trì nòi giống giữa đại dương khơi"
     ],
     "weaknesses": [
-      "Cơ thể không có lớp vỏ kitin bảo vệ chống mất nước, dễ bị khô héo nếu độ ẩm thấp",
-      "Tốc độ bò di chuyển bình thường cực kỳ chậm chạp và vụng về",
-      "Lớp da mềm không có khả năng chống đỡ các đòn cắn trực tiếp từ kẻ săn mồi lớn"
+      "Khả năng tự bơi lội chủ động rất yếu, hoàn toàn phụ thuộc vào dòng hải lưu và hướng gió",
+      "Cơ thể mềm mại không có lớp vỏ ngoài hay xương nâng đỡ, dễ bị tổn thương vật lý trực tiếp",
+      "Dễ chết khô và mất nước nhanh chóng nếu bị sóng biển đánh dạt vào bờ cát sa bồi"
     ],
     "funFacts": [
-      "Chất nhầy của giun nhung cực dính với côn trùng nhưng lại không bám dính vào chính lớp da phủ nhung đặc biệt của nó",
-      "Enzyme của giun nhung có thể tiêu hóa lớp vỏ chitin cứng của các loài côn trùng lớn mà chính giun nhung không cần nhai",
-      "Chúng là những loài động vật không xương sống cổ xưa hiếm hoi có hành vi chăm sóc con non chu đáo và đẻ con con đã phát triển hoàn thiện ở một số loài"
+      "Sên biển xanh di chuyển trong tư thế ngửa bụng lên trời; phần bụng màu xanh ngụy trang với màu nước biển, còn phần lưng màu bạc ngụy trang với ánh sáng mặt trời chiếu xuống đại dương",
+      "Bằng cách nuốt không khí vào một túi nhỏ trong dạ dày, chúng có thể duy trì độ nổi cố định trên mặt nước mà không tốn năng lượng",
+      "Chúng đẻ các dải trứng dài bám trực tiếp vào phần vỏ kitin hoặc phần còn sót lại của con mồi bị chúng ăn thịt để trứng trôi nổi an toàn"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1038/ncomms7267",
-        "label": "Nature Communications - Studies on velvet worm slime ejection"
+        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/blue-dragon-glaucus-atlanticus",
+        "label": "National Geographic - Blue Dragon Facts"
       },
       {
-        "url": "https://www.wired.com/2015/03/absurd-creature-of-the-week-velvet-worm/",
-        "label": "Wired - Absurd Creature of the Week: The Velvet Worm"
+        "url": "http://www.marinespecies.org/aphia.php?p=taxdetails&id=140023",
+        "label": "World Register of Marine Species - Glaucus atlanticus"
       }
     ],
-    "imageColor": "#3A2E3B",
+    "imageColor": "#2980B9",
     "diet_type": "carnivore",
     "diet_items": [
-      "dế",
-      "mối",
-      "nhện",
-      "cuốn chiếu"
+      "sứa lửa Portuguese man-of-war",
+      "sứa nút xanh (Porpita porpita)",
+      "sên biển tím (Janthina janthina)"
     ],
-    "activity_pattern": "nocturnal",
-    "lifespan_min": 2,
-    "lifespan_max": 6,
-    "lifespan_unit": "years",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Một số loài đẻ trứng (oviparous), số khác mang thai đẻ con trực tiếp (viviparous) với thời gian thai kỳ kéo dài tới 15 tháng.",
-    "locomotion": "crawl",
-    "speed_max": 0.05,
+    "activity_pattern": "diurnal",
+    "lifespan_min": 1,
+    "lifespan_max": 12,
+    "lifespan_unit": "months",
+    "reproduction_type": "hermaphrodite",
+    "reproduction_notes": "Là loài lưỡng tính giao phối chéo bắt buộc. Hai cá thể áp bụng vào nhau để thụ tinh cho nhau, sau đó cả hai đều đẻ ra các chuỗi trứng dài bám trên vật nổi.",
+    "locomotion": "swim",
+    "speed_max": 0.2,
     "conservation_status": "LC",
-    "size_min_mm": 10.0,
-    "size_max_mm": 150.0,
-    "weight_avg_g": 0.8,
+    "size_min_mm": 20.0,
+    "size_max_mm": 40.0,
+    "weight_avg_g": 3.0,
     "stats": {
-      "strength": 40,
-      "durability": 35,
-      "speed": 30,
-      "weaponry": 88,
-      "special": 85,
+      "strength": 10,
+      "durability": 15,
+      "speed": 8,
+      "weaponry": 85,
+      "special": 92,
       "lethality": 75
-    },
-    "ai_p4p_score": 72,
-    "ai_tier": "B"
+    }
   },
   {
-    "id": "boxer-crab",
-    "name": "Cua Boxer",
-    "scientificName": "Lybia tessellata",
+    "id": "thorny-devil",
+    "name": "Thằn Lằn Quỷ Gai",
+    "scientificName": "Moloch horridus",
     "taxonomy": {
-      "class": "Malacostraca",
-      "order": "Decapoda",
-      "family": "Xanthidae"
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Agamidae"
+    },
+    "realWeight": "30 - 90 g",
+    "size": "15 - 20 cm",
+    "characteristics": "Toàn thân bao phủ bởi các gai hình nón lớn nhỏ sắc nhọn bằng chất sừng cứng chắc. Mặt lưng có màu nâu vàng sa mạc đốm đen giúp ngụy trang. Trên gáy có một chiếc bướu gai lớn trông giống hệt như một cái đầu thứ hai để đánh lạc hướng kẻ săn mồi.",
+    "habitat": "Vùng cát sa mạc khô cằn, các cồn cát sâu và rừng cây bụi cằn cỗi.",
+    "location": "Các sa mạc lớn ở miền Tây và Trung nước Úc.",
+    "survival_method": "Sử dụng màu sắc cơ thể thay đổi theo nhiệt độ để ngụy trang và giữ nhiệt. Khi bị đe dọa, hạ thấp đầu thật giữa hai chân trước để lộ đầu giả bằng gai cứng ở gáy, đồng thời hít khí căng phồng người lên để tăng kích thước gây khó nuốt.",
+    "unique_traits": "Hệ thống hút nước mao dẫn qua da (Hygroscopic skin): Lớp da có các rãnh siêu hiển vi chạy dọc giữa các vảy. Lực mao dẫn tự động hút sương đêm hoặc hơi ẩm từ cát ẩm rồi dẫn ngược lên khóe miệng để thằn lằn uống nước mà không cần cúi đầu. Đầu giả ở gáy làm mồi nhử chịu đòn chí mạng thay cho đầu thật.",
+    "shortDescription": "Kẻ sinh tồn sa mạc tối thượng với lớp giáp gai xù xì và khả năng hút nước bằng da độc nhất.",
+    "description": "Thằn Lằn Quỷ Gai (Moloch horridus) là một ví dụ kinh điển về sự thích nghi tiến hóa kỳ diệu với môi trường sa mạc khắc nghiệt tại Úc. Lớp giáp gai nhọn hoắt bao bọc toàn bộ cơ thể giúp chúng ngăn ngừa hầu hết các kẻ săn mồi nhỏ. Cơ chế hút nước độc đáo qua hiện tượng mao dẫn của các rãnh vảy trên da cho phép chúng tận dụng triệt để từng giọt sương sa mạc hoặc cát ẩm để uống nước trực tiếp mà không cần nguồn nước bề mặt.",
+    "strengths": [
+      "Bộ giáp gai nhọn hoắt bao quanh toàn bộ cơ thể khiến kẻ thù cực kỳ khó đớp hoặc nuốt chửng",
+      "Hệ thống da mao dẫn siêu việt giúp thu hoạch nước trực tiếp từ cát ẩm và sương đêm",
+      "Khả năng ngụy trang đỉnh cao bằng cách thay đổi sắc tố da phù hợp với nhiệt độ cát",
+      "Cơ quan đầu giả bằng gai ở gáy giảm thiểu rủi ro chấn thương sọ não khi bị tấn công"
+    ],
+    "weaknesses": [
+      "Tốc độ di chuyển rất chậm chạp, dễ bị tóm nếu không kịp ẩn nấp",
+      "Chế độ ăn cực kỳ chuyên biệt, chỉ ăn kiến đen sa mạc với số lượng lớn",
+      "Hoàn toàn bất lực trước chim săn mồi có móng vuốt khỏe có thể lật ngửa cơ thể lộ vùng bụng mềm"
+    ],
+    "funFacts": [
+      "Thằn lằn quỷ gai có thể ăn tới 1000 đến 3000 con kiến chỉ trong một ngày bằng chiếc lưỡi dính đớp liên tục",
+      "Khi di chuyển trên cát, chúng thực hiện một điệu bộ lắc lư giật lùi kỳ lạ để bắt chước một chiếc lá khô đung đưa trước gió nhằm tránh bị phát hiện",
+      "Dù có vẻ ngoài trông vô cùng dữ tợn và gai góc, loài thằn lằn này hoàn toàn hiền lành, không cắn và không có nọc độc"
+    ],
+    "sources": [
+      {
+        "url": "https://www.nature.com/articles/srep34364",
+        "label": "Scientific Reports - Cutaneous water harvesting in the thorny devil"
+      },
+      {
+        "url": "https://www.iucnredlist.org/species/83492069/83492074",
+        "label": "IUCN Red List - Moloch horridus"
+      }
+    ],
+    "imageColor": "#D35400",
+    "diet_type": "carnivore",
+    "diet_items": [
+      "kiến sa mạc (Iridomyrmex)",
+      "côn trùng nhỏ"
+    ],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 6,
+    "lifespan_max": 20,
+    "lifespan_unit": "years",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Đẻ trứng (oviparous). Con cái đào hang sâu trong cát vào khoảng giữa tháng 11, đẻ từ 3 đến 10 quả trứng rồi lấp cát ngụy trang cẩn thận. Con non tự nở sau 90 - 120 ngày.",
+    "locomotion": "walk",
+    "speed_max": 0.5,
+    "conservation_status": "LC",
+    "size_min_mm": 150.0,
+    "size_max_mm": 200.0,
+    "weight_avg_g": 60.0,
+    "stats": {
+      "strength": 20,
+      "durability": 78,
+      "speed": 12,
+      "weaponry": 45,
+      "special": 88,
+      "lethality": 15
+    }
+  },
+  {
+    "id": "sand-scorpion",
+    "name": "Bọ Cạp Cát",
+    "scientificName": "Paruroctonus mesaensis",
+    "taxonomy": {
+      "class": "Arachnida",
+      "order": "Scorpiones",
+      "family": "Vaejovidae"
     },
     "realWeight": "1 - 3 g",
-    "size": "15 - 25 mm",
-    "characteristics": "Kích thước nhỏ bé, mai có hoa văn dạng lưới màu hồng, đỏ hoặc cam sẫm nổi bật xen lẫn các đường viền đen. Cặp càng mảnh nhưng đặc biệt có các ngọn răng cưa hướng vào trong để gắp chặt và giữ hải quỳ mà không làm chúng tổn thương.",
-    "habitat": "Vùng nước nông rạn san hô nhiệt đới, ẩn náu dưới các rạn đá, san hô vụn hoặc cát.",
-    "location": "Vùng biển Ấn Độ Dương - Thái Bình Dương ấm áp.",
-    "survival_method": "Sống cộng sinh bắt buộc với loài hải quỳ (thường là Triactis producta). Cua boxer dùng càng gắp chặt hải quỳ ở cả hai bên tay, mang chúng đi khắp nơi như găng tay đấm bốc. Khi bị đe dọa hoặc gặp kẻ thù (như bạch tuộc con hoặc cá nhỏ), nó giơ thẳng hai càng về phía trước, xua hải quỳ chứa xúc tu đầy tế bào châm ngứa (nematocysts) cực độc để tự vệ. Cua cũng dùng hải quỳ giống như chổi quét quét lên bề mặt đá để thu gom các mảnh thức ăn nhỏ bám dính vào xúc tu hải quỳ, sau đó dùng chân hàm gạt thức ăn vào miệng và chia sẻ một phần dinh dưỡng cho hải quỳ.",
-    "unique_traits": "Cộng sinh phòng ngự chủ động (anemone boxing). Nếu cua bị mất một hải quỳ, nó sẽ xé đôi con hải quỳ còn lại thành hai phần; hai phần này sau đó tự tái sinh thành hai cá thể hải quỳ hoàn chỉnh mới.",
-    "shortDescription": "Đấm bốc bằng hải quỳ chứa độc châm ngứa cực mạnh. Khả năng nhân bản hải quỳ vô hạn.",
-    "description": "Cua Boxer (Lybia tessellata), còn được gọi là cua pom-pom, là võ sĩ tí hon của rạn san hô nhiệt đới. Do kích thước cơ thể nhỏ bé và lớp vỏ giáp mỏng, cua đã tiến hóa một chiến thuật tự vệ đỉnh cao: biến sinh vật độc hại khác thành vũ khí của mình. Bằng cách gắp hải quỳ ở cả hai càng, cua boxer sở hữu cặp găng đấm bốc sinh học chứa hàng ngàn gai độc cực mạnh. Khi kẻ thù tấn công, cua thực hiện các cú đấm xua đuổi chớp nhoáng, dùng độc châm của hải quỳ để gây bỏng rát dữ dội cho đối thủ.",
+    "size": "6 - 8 cm",
+    "characteristics": "Thân màu vàng cát bán trong suốt, hoàn hảo để ẩn nấp trên nền cát sa mạc. Lớp biểu bì chứa chất hữu cơ phát huỳnh quang màu xanh lam lục rực rỡ khi chiếu đèn UV. Cặp càng mảnh nhưng nhanh nhẹn và đuôi gai chứa túi độc uốn cong lên trên.",
+    "habitat": "Cồn cát mịn sa mạc, nơi có nền cát sâu thích hợp để đào hang trốn nóng.",
+    "location": "Các sa mạc Mojave và Sonoran ở vùng Tây Nam Hoa Kỳ và Tây Bắc Mexico.",
+    "survival_method": "Đào hang sâu dưới cát để tránh nhiệt độ cao vào ban ngày, chỉ chui lên săn mồi vào ban đêm. Xác định vị trí con mồi nhờ cảm biến chấn động mặt cát cực nhạy trên kẽ chân.",
+    "unique_traits": "Định vị địa chấn cát bằng kẽ chân (Slit sensilla): Đầu các chân có các vết nứt cơ học siêu nhạy phát hiện sóng Rayleigh (sóng địa chấn cát do con mồi đi qua tạo ra). Nhờ phân tích thời gian lệch mili-giây sóng truyền tới từng chân, nó xác định chính xác góc và khoảng cách con mồi trong vòng 50 cm. Lớp cutin phát quang xanh lục lam dưới ánh sáng UV.",
+    "shortDescription": "Sát thủ bóng đêm định vị địa chấn cát bằng chân siêu nhạy và tiêm nọc độc thần kinh.",
+    "description": "Bọ Cạp Cát (Paruroctonus mesaensis) là một loài đi săn đêm khét tiếng trong lòng sa mạc Bắc Mỹ. Không cần mắt hay tai để định hướng prey, chúng sở hữu cơ quan thụ cảm chấn động slit sensilla ở kẽ chân có khả năng phát hiện những dao động vô cùng nhỏ lan truyền qua cát mịn sa mạc. Điều này cho phép bọ cạp cát xoay người và vồ chính xác con mồi di động ngay trong bóng đêm hoàn toàn.",
     "strengths": [
-      "Cặp vũ khí hóa học sinh học (xúc tu hải quỳ châm độc) gây bỏng rát cực mạnh cho đối thủ",
-      "Khả năng nhân bản vũ khí sinh học bằng cách xé đôi hải quỳ để tự tái sinh",
-      "Màu sắc ngụy trang hoa văn rạn san hô giúp ẩn mình rất tốt trong kẽ đá"
+      "Hệ thống định vị mục tiêu 3D dựa trên chấn động cát mịn có độ chính xác tuyệt đối",
+      "Nọc độc thần kinh mạnh tê liệt tức thì con mồi chân khớp và động vật nhỏ",
+      "Khả năng đào hang sâu dưới cát giúp trốn tránh kẻ thù lớn và giữ độ ẩm cơ thể",
+      "Chỉ số trao đổi chất siêu thấp cho phép tồn tại nhiều tháng không cần thức ăn"
     ],
     "weaknesses": [
-      "Kích thước quá nhỏ bé khiến sức mạnh vật lý thô sơ rất yếu ớt",
-      "Vỏ chitin mỏng dễ bị tổn thương nếu không có hải quỳ bảo vệ",
-      "Phụ thuộc hoàn toàn vào sự tồn tại của hải quỳ cộng sinh, không có càng sắc khỏe tự nhiên"
+      "Thị giác rất kém, phụ thuộc hoàn toàn vào rung động cơ học để phản ứng",
+      "Lớp vỏ mỏng dễ bị mất nước nhanh chóng dưới sức nóng mặt trời trực tiếp ban ngày",
+      "Dễ bị phát hiện từ xa bởi các loài săn mồi trang bị khả năng nhìn hoặc săn tìm bằng tia UV"
     ],
     "funFacts": [
-      "Hải quỳ được cua boxer cầm trên càng hầu như không bao giờ phát triển lớn lên hoặc sinh sản tự do, chúng được giữ ở kích thước nhỏ gọn phù hợp với cua",
-      "If cua boxer bị cướp mất cả hai hải quỳ, nó sẽ lập tức tìm cách tranh giành và ăn trộm hải quỳ từ những con cua boxer khác trong khu vực",
-      "Các ngón càng của cua boxer đã biến đổi thành dạng kẹp gai mảnh, không còn khả năng tự kẹp nát thức ăn như cua thường mà chỉ dùng để giữ hải quỳ"
+      "Bọ cạp cát có thể đo chênh lệch thời gian sóng chấn động cát truyền tới các chân khác nhau ở mức vài phần triệu giây để định vị mục tiêu",
+      "Chất beta-carboline tích tụ ở vỏ ngoài làm bọ cạp cát phát ra ánh sáng huỳnh quang màu neon lung linh khi tiếp xúc với tia cực tím",
+      "Vào mùa đông lạnh giá, chúng có thể hạ thấp mức tiêu thụ năng lượng gần như bằng không để ngủ đông sâu dưới hang cát"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.7717/peerj.2929",
-        "label": "PeerJ - Asexual reproduction of sea anemones induced by boxer crabs"
+        "url": "https://doi.org/10.1152/jn.00941.2004",
+        "label": "Journal of Neurophysiology - Sand-vibration detection by the sand scorpion"
       },
       {
-        "url": "https://www.nationalgeographic.com/animals/article/boxer-crab-clones-anemones-boxing-gloves",
-        "label": "National Geographic - How Boxer Crabs Clone Their Boxing Gloves"
+        "url": "https://www.nature.com/articles/30811",
+        "label": "Nature - Scorpion behavior and sand wave detection"
       }
     ],
-    "imageColor": "#D16B54",
-    "diet_type": "omnivore",
-    "diet_items": [
-      "mảnh vụn hữu cơ",
-      "cá nhỏ chết",
-      "tảo biển",
-      "giun nhỏ"
-    ],
-    "activity_pattern": "variable",
-    "lifespan_min": 1,
-    "lifespan_max": 3,
-    "lifespan_unit": "years",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Thụ tinh trong. Con cái mang bọc trứng dưới bụng cho đến khi nở ra ấu trùng bơi tự do trong nước biển.",
-    "locomotion": "walk",
-    "speed_max": 0.8,
-    "conservation_status": "LC",
-    "size_min_mm": 15.0,
-    "size_max_mm": 25.0,
-    "weight_avg_g": 1.5,
-    "stats": {
-      "strength": 30,
-      "durability": 35,
-      "speed": 55,
-      "weaponry": 80,
-      "special": 92,
-      "lethality": 65
-    },
-    "ai_p4p_score": 68,
-    "ai_tier": "B"
-  },
-  {
-    "id": "stargazer-fish",
-    "name": "Cá Chiêm Tinh",
-    "scientificName": "Uranoscopus scaber",
-    "taxonomy": {
-      "class": "Actinopterygii",
-      "order": "Perciformes",
-      "family": "Uranoscopidae"
-    },
-    "realWeight": "500 - 1500 g",
-    "size": "200 - 400 mm",
-    "characteristics": "Thân hình đầm, đầu dẹp và rất to với hộp sọ bọc xương cứng. Miệng lớn chĩa thẳng đứng lên trên với các hàng răng sắc nhọn. Hai mắt nhỏ nằm sát nhau trên đỉnh đầu hướng lên trời. Màu da xám nâu đốm tối giúp hòa lẫn hoàn hảo với cát biển.",
-    "habitat": "Đáy biển nông đầy cát hoặc bùn mịn của các vùng biển ven bờ ôn đới và nhiệt đới.",
-    "location": "Biển Địa Trung Hải, Biển Đỏ, Ấn Độ Dương và Đại Tây Dương.",
-    "survival_method": "Ngụy trang phục kích thụ động. Cá chiêm tinh dùng các vây ngực khỏe đào cát và vùi toàn bộ cơ thể dưới lớp cát đáy, chỉ để lộ hai mắt và chiếc miệng chĩa lên. Nó thò ra một cái lưỡi giả dạng sâu nhỏ (lure) từ đáy miệng để dụ dỗ cá nhỏ bơi tới. Khi mồi nằm trong tầm ngắm, nó mở miệng tạo lực hút chân không khổng lồ đớp gọn con mồi. Để tự vệ trước kẻ thù lớn như cá đuối hay cá mập, cá chiêm tinh phát ra các dòng điện mạnh từ các cơ quan biến đổi phía sau mắt, đồng thời sử dụng hai gai nọc lớn nằm phía sau nắp mang để đâm buốt.",
-    "unique_traits": "Tấn công điện sinh học (bioelectric shock) lên tới 50V từ các cơ quan nhãn khoa. Gai nọc độc kép (venomous spines) ở mang cực nguy hiểm đối với con người. Lực hút chân không đớp mồi siêu tốc (vacuum strike) trong vòng 0.05 giây.",
-    "shortDescription": "Ngụy trang dưới cát phóng điện sinh học 50V phục kích siêu tốc. Gai nọc độc kép cực mạnh.",
-    "description": "Cá Chiêm Tinh (Uranoscopus scaber) được mệnh danh là hung thần ngụy trang của đáy cát biển. Sự đáng sợ của chúng nằm ở sự kết hợp hoàn hảo giữa 3 loại vũ khí: ngụy trang tàng hình, độc tố và điện sinh học. Bằng cách vùi mình dưới cát, loài cá này biến thành một chiếc bẫy chết chóc. Nó có thể phóng ra các xung điện từ 50 volt từ các cơ nhãn khoa để gây choáng váng cho kẻ săn mồi hoặc làm tê liệt con mồi lớn, đồng thời sẵn sàng đâm thẳng gai độc chứa độc tố thần kinh cực mạnh vào bất kỳ kẻ nào vô tình giẫm phải.",
-    "strengths": [
-      "Ngụy trang ẩn mình tuyệt đối dưới cát biển khiến con mồi khó phát hiện",
-      "Xung điện sinh học gây tê liệt tạm thời hệ thần kinh đối phương",
-      "Gai độc kép phía sau mang chứa độc tố thần kinh cực mạnh để tự vệ chủ động",
-      "Cú đớp hút chân không áp lực lớn siêu tốc tiêu diệt con mồi tức thì"
-    ],
-    "weaknesses": [
-      "Khả năng bơi lội đường dài kém cỏi do thân hình nặng nề và vây kém linh hoạt",
-      "Phụ thuộc chặt chẽ vào địa hình cát bùn phẳng đáy nông để phục kích",
-      "Không thể săn mồi chủ động truy đuổi ở tầng nước giữa hoặc mặt nước"
-    ],
-    "funFacts": [
-      "Cá chiêm tinh là loài động vật duy nhất có cả cơ quan phát điện sinh học và gai chứa nọc độc đồng thời trên cơ thể",
-      "Tên khoa học Uranoscopus của nó có nghĩa là người ngắm nhìn bầu trời, xuất phát từ việc đôi mắt của nó luôn hướng ngược lên trên bất kể cơ thể nằm thế nào dưới cát",
-      "Mặc dù thịt cá chiêm tinh có thể ăn được sau khi đã loại bỏ các gai độc cẩn thận, nhưng việc giẫm phải chúng ở bãi biển nông là nỗi ám ảnh kinh hoàng do cú đâm cực đau đớn"
-    ],
-    "sources": [
-      {
-        "url": "https://www.scientificamerican.com/article/the-stargazer-fish-has-a-shocking-technique/",
-        "label": "Scientific American - The Stargazer Fish Bioelectricity"
-      },
-      {
-        "url": "https://doi.org/10.1111/j.1095-8649.1994.tb01201.x",
-        "label": "Journal of Fish Biology - Stargazer Venom and Shock Mechanism"
-      }
-    ],
-    "imageColor": "#7A6C58",
+    "imageColor": "#F1C40F",
     "diet_type": "carnivore",
     "diet_items": [
-      "cá nhỏ",
-      "cua",
-      "tôm",
-      "giáp xác nhỏ"
+      "mối sa mạc",
+      "bọ cánh cứng sa mạc",
+      "nhện sa mạc",
+      "bọ cạp nhỏ hơn"
     ],
-    "activity_pattern": "variable",
-    "lifespan_min": 4,
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 5,
     "lifespan_max": 8,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Đẻ trứng. Mùa sinh sản thường rơi vào cuối mùa xuân và mùa hè. Trứng trôi nổi tự do trong nước biển trước khi nở thành cá bột.",
-    "locomotion": "hybrid",
-    "speed_max": 8.0,
+    "reproduction_notes": "Thực hiện nghi thức nhảy múa giữ càng nhau để tìm mặt đất bằng phẳng thích hợp đặt túi tinh. Con cái mang thai đẻ con trực tiếp (viviparous) sau 10 tháng, mang con trên lưng cho đến lần lột xác đầu tiên.",
+    "locomotion": "walk",
+    "speed_max": 2.5,
     "conservation_status": "LC",
-    "size_min_mm": 200.0,
-    "size_max_mm": 400.0,
-    "weight_avg_g": 800.0,
+    "size_min_mm": 60.0,
+    "size_max_mm": 80.0,
+    "weight_avg_g": 2.0,
     "stats": {
-      "strength": 65,
-      "durability": 70,
+      "strength": 25,
+      "durability": 40,
       "speed": 45,
-      "weaponry": 85,
+      "weaponry": 82,
       "special": 90,
-      "lethality": 85
-    },
-    "ai_p4p_score": 76,
-    "ai_tier": "B"
+      "lethality": 80
+    }
   }
 ]
