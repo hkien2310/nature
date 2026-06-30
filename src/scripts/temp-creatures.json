@@ -1,218 +1,220 @@
 [
   {
-    "id": "blue-dragon",
-    "name": "Sên Biển Xanh",
-    "scientificName": "Glaucus atlanticus",
+    "id": "orchid-mantis",
+    "name": "Bọ Ngựa Phong Lan",
+    "scientificName": "Hymenopus coronatus",
     "taxonomy": {
-      "class": "Gastropoda",
-      "order": "Nudibranchia",
-      "family": "Glaucidae"
+      "class": "Insecta",
+      "order": "Mantodea",
+      "family": "Hymenopodidae"
     },
-    "realWeight": "1 - 4 g",
-    "size": "3 - 4 cm",
-    "characteristics": "Thân hình dẹt, thuôn dài không vỏ với màu xanh dương đậm ở mặt bụng (hướng lên trên) và màu bạc ở mặt lưng (hướng xuống dưới) tạo hiệu ứng ngụy trang ngược (countershading). Sở hữu 3 cặp phần phụ dạng ngón tay xếp xòe ra gọi là cerata dùng để tăng diện tích tiếp xúc nổi và lưu trữ tế bào châm từ con mồi.",
-    "habitat": "Tầng mặt nước đại dương khơi (pelagic zone), trôi nổi tự do nhờ sức căng bề mặt và túi khí dạ dày.",
-    "location": "Khắp các vùng đại dương ôn đới và nhiệt đới toàn cầu.",
-    "survival_method": "Sử dụng túi khí nhỏ trong dạ dày để giữ tư thế ngửa và nổi sát mặt nước. Trôi dạt thụ động theo dòng chảy hải lưu và hướng gió. Khi bị đe dọa, phóng ra các tế bào châm cực độc đã cô đặc lấy từ con mồi.",
-    "unique_traits": "Tích lũy tế bào châm (Kleptocnidae): Ăn sứa lửa Portuguese Man-of-War mà không bị trúng độc nhờ các tế bào biểu mô tiết chất nhầy đặc biệt khóa hoạt tính tế bào gai. Sau đó, nó lọc các nematocysts chưa nổ, chuyển chúng qua hệ tiêu hóa đến các cerata ở rìa thân để tích lũy tạo nọc độc mạnh hơn nguyên bản. Ngụy trang ngược (countershading) bảo vệ hai chiều khỏi chim săn mồi phía trên và cá săn mồi phía dưới.",
-    "shortDescription": "Sát thủ biển khơi nhỏ bé cướp đoạt tế bào châm cực độc làm vũ khí cô đặc bảo vệ bản thân.",
-    "description": "Sên Biển Xanh (Glaucus atlanticus) là một loài sên biển trần độc đáo, sống trôi nổi ngược trên bề mặt đại dương. Dù mang vẻ đẹp lộng lẫy như một sinh vật thần thoại, chúng lại là loài săn mồi đáng sợ chuyên ăn các loài sứa độc. Khả năng vô hiệu hóa và hấp thụ các tế bào châm (nematocysts) của sứa lửa Portuguese Man-of-War rồi tập trung chúng lại tại đầu các xúc tu cerata biến sên biển xanh thành một trong những sinh vật sở hữu cú chích đau đớn và nguy hiểm nhất đại dương.",
+    "realWeight": "0.1 - 2 g",
+    "size": "2.5 - 6 cm",
+    "characteristics": "Thân có cấu trúc và màu sắc mô phỏng hoàn hảo một đóa hoa phong lan với các chi dẹt hình cánh hoa màu hồng-trắng tinh tế. Đầu nhỏ hình tam giác có thể xoay 180 độ với cặp mắt kép nhô cao. Đôi chi trước dạng răng cưa gập mạnh mẽ dùng để găm chặt và xé xác con mồi.",
+    "habitat": "Các khu rừng mưa nhiệt đới ẩm ướt ở Đông Nam Á, thường ẩn náu trên các bụi cây phong lan, đu đủ hoặc các loài cây có hoa.",
+    "location": "Khu vực Đông Nam Á bao gồm Malaysia, Indonesia, Thái Lan, Việt Nam và các đảo lân cận.",
+    "survival_method": "Ngụy trang thị giác đỉnh cao để dụ dỗ con mồi tự bay đến tìm mật (aggressive mimicry). Khi săn mồi, chúng bất động như một phần của đóa hoa, chờ đợi côn trùng bay tới rồi tung ra cú đớp bằng hai chân trước với tốc độ chưa tới 1/10 giây.",
+    "unique_traits": "Ngụy trang dụ mồi chủ động (Aggressive Mimicry): Không chỉ trốn tránh kẻ thù, bọ ngựa phong lan còn bắt chước đóa hoa để thu hút các loài côn trùng thụ phấn như ong và bướm một cách chủ động. Chim săn mồi cũng khó phát hiện ra chúng nhờ khả năng mô phỏng cánh hoa này. Siêu phản xạ đớp mồi (Lightning Reflexes): Chi trước bắt mồi cực kỳ nhanh với tốc độ giật cơ bắp chỉ khoảng 40 mili-giây, nhanh gấp nhiều lần so với tốc độ chớp mắt của con người.",
+    "shortDescription": "Sát thủ ngụy trang tinh tế dưới hình hài cánh hoa phong lan, sở hữu siêu phản xạ đớp mồi cực nhanh.",
+    "description": "Bọ Ngựa Phong Lan (Hymenopus coronatus) là đỉnh cao của sự ngụy trang tiến hóa trong thế giới côn trùng. Thay vì chỉ ngụy trang để lẩn trốn, chúng biến đổi toàn bộ cơ thể thành một chiếc bẫy hoa di động rực rỡ sắc hồng và trắng. Khả năng mô phỏng đóa hoa phong lan sống động đến mức dụ dỗ các loài thụ phấn tự động bay thẳng vào phạm vi tấn công của chúng. Với siêu phản xạ đớp mồi chớp nhoáng, chúng là kẻ săn mồi đáng sợ trong các tán rừng rậm rạp.",
     "strengths": [
-      "Khả năng hấp thụ và cô đặc tế bào gai cực độc của sứa lửa Portuguese Man-of-War để tấn công phòng vệ",
-      "Hệ chất nhầy bảo vệ ống tiêu hóa và tế bào da miễn nhiễm hoàn toàn với các độc tố châm chích",
-      "Ngụy trang ngược (countershading) hoàn hảo che mắt kẻ thù từ cả trên không và dưới nước",
-      "Khả năng sinh sản lưỡng tính giao phối chéo giúp tối đa hóa cơ hội duy trì nòi giống giữa đại dương khơi"
+      "Ngụy trang hoa giả (aggressive mimicry) đánh lừa thị giác tuyệt đối của cả con mồi lẫn kẻ thù",
+      "Phản xạ tấn công bằng chi trước siêu nhanh trong khoảng 40 mili-giây",
+      "Tầm nhìn 3D lập thể tuyệt vời từ cặp mắt kép nhô cao giúp đo khoảng cách chính xác",
+      "Các khớp chi dẹt linh hoạt mô phỏng hoàn hảo kết cấu cánh hoa chuyển động trước gió"
     ],
     "weaknesses": [
-      "Khả năng tự bơi lội chủ động rất yếu, hoàn toàn phụ thuộc vào dòng hải lưu và hướng gió",
-      "Cơ thể mềm mại không có lớp vỏ ngoài hay xương nâng đỡ, dễ bị tổn thương vật lý trực tiếp",
-      "Dễ chết khô và mất nước nhanh chóng nếu bị sóng biển đánh dạt vào bờ cát sa bồi"
+      "Kích thước con đực chỉ bằng 1/2 con cái, dễ bị con cái ăn thịt trong quá trình giao phối",
+      "Phụ thuộc chặt chẽ vào môi trường rừng mưa ẩm và các thảm thực vật có hoa phù hợp",
+      "Khả năng bay lượn hạn chế, không thể di chuyển quãng đường dài nhanh chóng"
     ],
     "funFacts": [
-      "Sên biển xanh di chuyển trong tư thế ngửa bụng lên trời; phần bụng màu xanh ngụy trang với màu nước biển, còn phần lưng màu bạc ngụy trang với ánh sáng mặt trời chiếu xuống đại dương",
-      "Bằng cách nuốt không khí vào một túi nhỏ trong dạ dày, chúng có thể duy trì độ nổi cố định trên mặt nước mà không tốn năng lượng",
-      "Chúng đẻ các dải trứng dài bám trực tiếp vào phần vỏ kitin hoặc phần còn sót lại của con mồi bị chúng ăn thịt để trứng trôi nổi an toàn"
+      "Bọ ngựa phong lan non khi mới nở có màu đỏ và đen trông giống hệt như bọ xít độc để tránh bị chim săn mồi ăn thịt",
+      "Đồng hồ sinh học và màu sắc cơ thể của chúng có thể thay đổi nhẹ từ hồng sang trắng để hòa nhập với loài hoa mà chúng đang trú ngụ",
+      "Khả năng ngụy trang dụ mồi của chúng hiệu quả tới mức côn trùng bay đến đậu trực tiếp vào người chúng nhiều hơn cả đậu vào đóa hoa phong lan thật"
     ],
     "sources": [
       {
-        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/blue-dragon-glaucus-atlanticus",
-        "label": "National Geographic - Blue Dragon Facts"
+        "url": "https://www.natgeokids.com/uk/discover/animals/insects/orchid-mantis/",
+        "label": "National Geographic Kids - Orchid Mantis Facts"
       },
       {
-        "url": "http://www.marinespecies.org/aphia.php?p=taxdetails&id=140023",
-        "label": "World Register of Marine Species - Glaucus atlanticus"
+        "url": "https://doi.org/10.1086/673858",
+        "label": "The American Naturalist - Aggressive Mimicry in the Orchid Mantis"
       }
     ],
-    "imageColor": "#2980B9",
+    "imageColor": "#E8A7A1",
     "diet_type": "carnivore",
     "diet_items": [
-      "sứa lửa Portuguese man-of-war",
-      "sứa nút xanh (Porpita porpita)",
-      "sên biển tím (Janthina janthina)"
+      "ong mật",
+      "bướm",
+      "ruồi",
+      "dế nhỏ"
     ],
     "activity_pattern": "diurnal",
-    "lifespan_min": 1,
-    "lifespan_max": 12,
+    "lifespan_min": 5,
+    "lifespan_max": 9,
     "lifespan_unit": "months",
-    "reproduction_type": "hermaphrodite",
-    "reproduction_notes": "Là loài lưỡng tính giao phối chéo bắt buộc. Hai cá thể áp bụng vào nhau để thụ tinh cho nhau, sau đó cả hai đều đẻ ra các chuỗi trứng dài bám trên vật nổi.",
-    "locomotion": "swim",
-    "speed_max": 0.2,
-    "conservation_status": "LC",
-    "size_min_mm": 20.0,
-    "size_max_mm": 40.0,
-    "weight_avg_g": 3.0,
-    "stats": {
-      "strength": 10,
-      "durability": 15,
-      "speed": 8,
-      "weaponry": 85,
-      "special": 92,
-      "lethality": 75
-    }
-  },
-  {
-    "id": "thorny-devil",
-    "name": "Thằn Lằn Quỷ Gai",
-    "scientificName": "Moloch horridus",
-    "taxonomy": {
-      "class": "Reptilia",
-      "order": "Squamata",
-      "family": "Agamidae"
-    },
-    "realWeight": "30 - 90 g",
-    "size": "15 - 20 cm",
-    "characteristics": "Toàn thân bao phủ bởi các gai hình nón lớn nhỏ sắc nhọn bằng chất sừng cứng chắc. Mặt lưng có màu nâu vàng sa mạc đốm đen giúp ngụy trang. Trên gáy có một chiếc bướu gai lớn trông giống hệt như một cái đầu thứ hai để đánh lạc hướng kẻ săn mồi.",
-    "habitat": "Vùng cát sa mạc khô cằn, các cồn cát sâu và rừng cây bụi cằn cỗi.",
-    "location": "Các sa mạc lớn ở miền Tây và Trung nước Úc.",
-    "survival_method": "Sử dụng màu sắc cơ thể thay đổi theo nhiệt độ để ngụy trang và giữ nhiệt. Khi bị đe dọa, hạ thấp đầu thật giữa hai chân trước để lộ đầu giả bằng gai cứng ở gáy, đồng thời hít khí căng phồng người lên để tăng kích thước gây khó nuốt.",
-    "unique_traits": "Hệ thống hút nước mao dẫn qua da (Hygroscopic skin): Lớp da có các rãnh siêu hiển vi chạy dọc giữa các vảy. Lực mao dẫn tự động hút sương đêm hoặc hơi ẩm từ cát ẩm rồi dẫn ngược lên khóe miệng để thằn lằn uống nước mà không cần cúi đầu. Đầu giả ở gáy làm mồi nhử chịu đòn chí mạng thay cho đầu thật.",
-    "shortDescription": "Kẻ sinh tồn sa mạc tối thượng với lớp giáp gai xù xì và khả năng hút nước bằng da độc nhất.",
-    "description": "Thằn Lằn Quỷ Gai (Moloch horridus) là một ví dụ kinh điển về sự thích nghi tiến hóa kỳ diệu với môi trường sa mạc khắc nghiệt tại Úc. Lớp giáp gai nhọn hoắt bao bọc toàn bộ cơ thể giúp chúng ngăn ngừa hầu hết các kẻ săn mồi nhỏ. Cơ chế hút nước độc đáo qua hiện tượng mao dẫn của các rãnh vảy trên da cho phép chúng tận dụng triệt để từng giọt sương sa mạc hoặc cát ẩm để uống nước trực tiếp mà không cần nguồn nước bề mặt.",
-    "strengths": [
-      "Bộ giáp gai nhọn hoắt bao quanh toàn bộ cơ thể khiến kẻ thù cực kỳ khó đớp hoặc nuốt chửng",
-      "Hệ thống da mao dẫn siêu việt giúp thu hoạch nước trực tiếp từ cát ẩm và sương đêm",
-      "Khả năng ngụy trang đỉnh cao bằng cách thay đổi sắc tố da phù hợp với nhiệt độ cát",
-      "Cơ quan đầu giả bằng gai ở gáy giảm thiểu rủi ro chấn thương sọ não khi bị tấn công"
-    ],
-    "weaknesses": [
-      "Tốc độ di chuyển rất chậm chạp, dễ bị tóm nếu không kịp ẩn nấp",
-      "Chế độ ăn cực kỳ chuyên biệt, chỉ ăn kiến đen sa mạc với số lượng lớn",
-      "Hoàn toàn bất lực trước chim săn mồi có móng vuốt khỏe có thể lật ngửa cơ thể lộ vùng bụng mềm"
-    ],
-    "funFacts": [
-      "Thằn lằn quỷ gai có thể ăn tới 1000 đến 3000 con kiến chỉ trong một ngày bằng chiếc lưỡi dính đớp liên tục",
-      "Khi di chuyển trên cát, chúng thực hiện một điệu bộ lắc lư giật lùi kỳ lạ để bắt chước một chiếc lá khô đung đưa trước gió nhằm tránh bị phát hiện",
-      "Dù có vẻ ngoài trông vô cùng dữ tợn và gai góc, loài thằn lằn này hoàn toàn hiền lành, không cắn và không có nọc độc"
-    ],
-    "sources": [
-      {
-        "url": "https://www.nature.com/articles/srep34364",
-        "label": "Scientific Reports - Cutaneous water harvesting in the thorny devil"
-      },
-      {
-        "url": "https://www.iucnredlist.org/species/83492069/83492074",
-        "label": "IUCN Red List - Moloch horridus"
-      }
-    ],
-    "imageColor": "#D35400",
-    "diet_type": "carnivore",
-    "diet_items": [
-      "kiến sa mạc (Iridomyrmex)",
-      "côn trùng nhỏ"
-    ],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 6,
-    "lifespan_max": 20,
-    "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Đẻ trứng (oviparous). Con cái đào hang sâu trong cát vào khoảng giữa tháng 11, đẻ từ 3 đến 10 quả trứng rồi lấp cát ngụy trang cẩn thận. Con non tự nở sau 90 - 120 ngày.",
-    "locomotion": "walk",
-    "speed_max": 0.5,
+    "reproduction_notes": "Sinh sản hữu tính. Con đực nhỏ bé phải tiếp cận con cái hết sức cẩn thận để tránh bị ăn thịt. Sau khi giao phối, con cái tạo túi trứng bọt biển cứng (ootheca) chứa khoảng 50 - 100 quả trứng dính trên cành cây.",
+    "locomotion": "fly",
+    "speed_max": 1.5,
     "conservation_status": "LC",
-    "size_min_mm": 150.0,
-    "size_max_mm": 200.0,
-    "weight_avg_g": 60.0,
+    "size_min_mm": 25.0,
+    "size_max_mm": 60.0,
+    "weight_avg_g": 1.0,
     "stats": {
       "strength": 20,
-      "durability": 78,
-      "speed": 12,
-      "weaponry": 45,
-      "special": 88,
-      "lethality": 15
+      "durability": 25,
+      "speed": 75,
+      "weaponry": 70,
+      "special": 95,
+      "lethality": 65
     }
   },
   {
-    "id": "sand-scorpion",
-    "name": "Bọ Cạp Cát",
-    "scientificName": "Paruroctonus mesaensis",
+    "id": "blue-ringed-octopus",
+    "name": "Bạch Tuộc Vòng Xanh",
+    "scientificName": "Hapalochlaena maculosa",
     "taxonomy": {
-      "class": "Arachnida",
-      "order": "Scorpiones",
-      "family": "Vaejovidae"
+      "class": "Cephalopoda",
+      "order": "Octopoda",
+      "family": "Octopodidae"
     },
-    "realWeight": "1 - 3 g",
-    "size": "6 - 8 cm",
-    "characteristics": "Thân màu vàng cát bán trong suốt, hoàn hảo để ẩn nấp trên nền cát sa mạc. Lớp biểu bì chứa chất hữu cơ phát huỳnh quang màu xanh lam lục rực rỡ khi chiếu đèn UV. Cặp càng mảnh nhưng nhanh nhẹn và đuôi gai chứa túi độc uốn cong lên trên.",
-    "habitat": "Cồn cát mịn sa mạc, nơi có nền cát sâu thích hợp để đào hang trốn nóng.",
-    "location": "Các sa mạc Mojave và Sonoran ở vùng Tây Nam Hoa Kỳ và Tây Bắc Mexico.",
-    "survival_method": "Đào hang sâu dưới cát để tránh nhiệt độ cao vào ban ngày, chỉ chui lên săn mồi vào ban đêm. Xác định vị trí con mồi nhờ cảm biến chấn động mặt cát cực nhạy trên kẽ chân.",
-    "unique_traits": "Định vị địa chấn cát bằng kẽ chân (Slit sensilla): Đầu các chân có các vết nứt cơ học siêu nhạy phát hiện sóng Rayleigh (sóng địa chấn cát do con mồi đi qua tạo ra). Nhờ phân tích thời gian lệch mili-giây sóng truyền tới từng chân, nó xác định chính xác góc và khoảng cách con mồi trong vòng 50 cm. Lớp cutin phát quang xanh lục lam dưới ánh sáng UV.",
-    "shortDescription": "Sát thủ bóng đêm định vị địa chấn cát bằng chân siêu nhạy và tiêm nọc độc thần kinh.",
-    "description": "Bọ Cạp Cát (Paruroctonus mesaensis) là một loài đi săn đêm khét tiếng trong lòng sa mạc Bắc Mỹ. Không cần mắt hay tai để định hướng prey, chúng sở hữu cơ quan thụ cảm chấn động slit sensilla ở kẽ chân có khả năng phát hiện những dao động vô cùng nhỏ lan truyền qua cát mịn sa mạc. Điều này cho phép bọ cạp cát xoay người và vồ chính xác con mồi di động ngay trong bóng đêm hoàn toàn.",
+    "realWeight": "10 - 100 g",
+    "size": "12 - 20 cm",
+    "characteristics": "Cơ thể mềm mại nhỏ bé với màu vàng sáng ngụy trang. Khi bị kích động hoặc đe dọa, xuất hiện khoảng 50-60 vòng tròn màu xanh lam phát huỳnh quang rực rỡ nổi bật dọc thân và các xúc tu. Sở hữu mỏ vẹt nhỏ nhưng sắc nhọn có thể xuyên thủng lớp vỏ cua.",
+    "habitat": "Các rạn san hô nông, vũng nước triều đá, thảm cỏ biển ven bờ biển ôn đới và nhiệt đới.",
+    "location": "Khu vực Tây Thái Bình Dương và Ấn Độ Dương, phổ biến từ Nhật Bản đến Úc.",
+    "survival_method": "Ẩn nấp kỹ trong các kẽ đá hoặc vỏ ốc trống vào ban ngày, đi săn cua và tôm nhỏ vào ban đêm. Khi bị tấn công, nhấp nháy vòng xanh báo động độc tính. Nếu bị ép buộc, nó cắn và bơm nọc độc thần kinh cực mạnh tê liệt đối thủ tức thì.",
+    "unique_traits": "Nọc độc thần kinh Tetrodotoxin (TTX) cực hạn: Do vi khuẩn cộng sinh trong tuyến nước bọt sản xuất ra. Nọc độc này mạnh gấp 10.000 lần xyanua, chặn đứng các kênh natri trên màng tế bào thần kinh, gây tê liệt cơ bắp và ngừng thở nhanh chóng. Đổi màu phát quang cảnh báo (Aposematic display): Hệ thống tế bào sắc tố chromatophores phản ứng tức thì với hệ thần kinh để hiển thị các vòng tròn xanh lam óng ánh cảnh báo kẻ thù.",
+    "shortDescription": "Kẻ sở hữu nọc độc Tetrodotoxin thần kinh cực mạnh và các vòng xanh lam phát sáng cảnh báo.",
+    "description": "Bạch Tuộc Vòng Xanh (Hapalochlaena maculosa) tuy có kích thước nhỏ bé bằng quả bóng golf, nhưng lại đứng đầu danh sách những sinh vật độc hại nhất đại dương. Chúng mang trên mình vẻ đẹp quyến rũ với các vòng tròn màu xanh lam óng ánh chỉ phát lộ khi cảm thấy nguy hiểm. Chất độc thần kinh Tetrodotoxin chứa trong tuyến nước bọt của chúng không có thuốc giải đặc trị, đủ sức hạ gục nhiều người trưởng thành chỉ trong vài phút.",
     "strengths": [
-      "Hệ thống định vị mục tiêu 3D dựa trên chấn động cát mịn có độ chính xác tuyệt đối",
-      "Nọc độc thần kinh mạnh tê liệt tức thì con mồi chân khớp và động vật nhỏ",
-      "Khả năng đào hang sâu dưới cát giúp trốn tránh kẻ thù lớn và giữ độ ẩm cơ thể",
-      "Chỉ số trao đổi chất siêu thấp cho phép tồn tại nhiều tháng không cần thức ăn"
+      "Nọc độc thần kinh Tetrodotoxin (TTX) cực mạnh gây tê liệt hệ hô hấp tức thì",
+      "Khả năng ngụy trang hòa nhập màu sắc với môi trường đá san hô tuyệt vời",
+      "Hệ thống vòng tròn phát quang cảnh báo (aposematic display) xua đuổi kẻ săn mồi",
+      "Cơ thể không xương linh hoạt lách qua những khe đá hẹp nhất để ẩn náu"
     ],
     "weaknesses": [
-      "Thị giác rất kém, phụ thuộc hoàn toàn vào rung động cơ học để phản ứng",
-      "Lớp vỏ mỏng dễ bị mất nước nhanh chóng dưới sức nóng mặt trời trực tiếp ban ngày",
-      "Dễ bị phát hiện từ xa bởi các loài săn mồi trang bị khả năng nhìn hoặc săn tìm bằng tia UV"
+      "Kích thước cơ thể nhỏ bé và mỏng manh, dễ bị tổn thương bởi các loài săn mồi miễn nhiễm độc tố",
+      "Thị lực hạn chế trong môi trường nước đục, phụ thuộc vào xúc giác xúc tu",
+      "Vòng đời ngắn ngủi, thường chỉ sống được khoảng 1-2 năm"
     ],
     "funFacts": [
-      "Bọ cạp cát có thể đo chênh lệch thời gian sóng chấn động cát truyền tới các chân khác nhau ở mức vài phần triệu giây để định vị mục tiêu",
-      "Chất beta-carboline tích tụ ở vỏ ngoài làm bọ cạp cát phát ra ánh sáng huỳnh quang màu neon lung linh khi tiếp xúc với tia cực tím",
-      "Vào mùa đông lạnh giá, chúng có thể hạ thấp mức tiêu thụ năng lượng gần như bằng không để ngủ đông sâu dưới hang cát"
+      "Nọc độc của bạch tuộc vòng xanh mạnh đến mức một vết cắn nhỏ không gây đau đớn cũng có thể khiến nạn nhân tê liệt hoàn toàn nhưng vẫn hoàn toàn tỉnh táo nhận thức được xung quanh",
+      "Con mẹ chăm sóc trứng bằng cách bế hàng chục quả trứng bằng các xúc tu của mình suốt nhiều tuần mà không thèm ăn uống cho đến khi trứng nở và con mẹ kiệt sức chết",
+      "Tetrodotoxin không phải do bạch tuộc tự sản sinh mà được tổng hợp bởi các loài vi khuẩn cộng sinh đặc biệt sống trong tuyến nước bọt của chúng"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1152/jn.00941.2004",
-        "label": "Journal of Neurophysiology - Sand-vibration detection by the sand scorpion"
+        "url": "https://www.aims.gov.au/docs/project-details/blue-ringed-octopus.html",
+        "label": "Australian Institute of Marine Science - Blue-ringed Octopus"
       },
       {
-        "url": "https://www.nature.com/articles/30811",
-        "label": "Nature - Scorpion behavior and sand wave detection"
+        "url": "https://doi.org/10.1016/j.toxicon.2008.03.018",
+        "label": "Toxicon - Tetrodotoxin in the Blue-ringed Octopus"
       }
     ],
-    "imageColor": "#F1C40F",
+    "imageColor": "#3498DB",
     "diet_type": "carnivore",
     "diet_items": [
-      "mối sa mạc",
-      "bọ cánh cứng sa mạc",
-      "nhện sa mạc",
-      "bọ cạp nhỏ hơn"
+      "cua",
+      "tôm",
+      "cá nhỏ"
     ],
     "activity_pattern": "nocturnal",
-    "lifespan_min": 5,
-    "lifespan_max": 8,
+    "lifespan_min": 1,
+    "lifespan_max": 2,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Thực hiện nghi thức nhảy múa giữ càng nhau để tìm mặt đất bằng phẳng thích hợp đặt túi tinh. Con cái mang thai đẻ con trực tiếp (viviparous) sau 10 tháng, mang con trên lưng cho đến lần lột xác đầu tiên.",
-    "locomotion": "walk",
-    "speed_max": 2.5,
+    "reproduction_notes": "Sinh sản hữu tính. Con đực tiếp cận giao phối bằng cách truyền túi tinh qua xúc tu biến đổi (hectocotylus). Con cái đẻ từ 50 - 100 quả trứng và ôm giữ dưới các xúc tu bảo vệ liên tục cho đến khi trứng nở rồi chết.",
+    "locomotion": "swim",
+    "speed_max": 4.5,
     "conservation_status": "LC",
-    "size_min_mm": 60.0,
-    "size_max_mm": 80.0,
-    "weight_avg_g": 2.0,
+    "size_min_mm": 120.0,
+    "size_max_mm": 200.0,
+    "weight_avg_g": 50.0,
     "stats": {
-      "strength": 25,
-      "durability": 40,
-      "speed": 45,
-      "weaponry": 82,
-      "special": 90,
-      "lethality": 80
+      "strength": 20,
+      "durability": 30,
+      "speed": 60,
+      "weaponry": 95,
+      "special": 92,
+      "lethality": 98
+    }
+  },
+  {
+    "id": "greenland-shark",
+    "name": "Cá Mập Greenland",
+    "scientificName": "Somniosus microcephalus",
+    "taxonomy": {
+      "class": "Chondrichthyes",
+      "order": "Squaliformes",
+      "family": "Somniosidae"
+    },
+    "realWeight": "400 - 1000 kg",
+    "size": "2.4 - 6.4 m",
+    "characteristics": "Cơ thể hình trụ dày màu xám nâu xù xì, mõm ngắn tròn, cặp vây ngực và vây lưng nhỏ nhắn so với kích thước cơ thể khổng lồ. Mắt nhỏ thường bị ký sinh trùng chân kiếm bám vào gây mù lòa một phần. Hàm răng nhỏ sắc nhọn xếp chồng đặc trưng của cá mập.",
+    "habitat": "Vùng nước sâu băng giá từ 200m đến hơn 2.200m ở vùng Bắc Đại Tây Dương và Bắc Băng Dương nhiệt độ gần đóng băng.",
+    "location": "Phổ biến xung quanh Greenland, Iceland, Canada, vùng biển thuộc Nga và thỉnh thoảng ở vùng biển sâu phía nam.",
+    "survival_method": "Di chuyển ở chế độ siêu tiết kiệm năng lượng (slow-motion) dưới đáy đại dương tối tăm. Sử dụng khứu giác nhạy bén để phát hiện mùi thịt phân hủy từ xa và săn mồi chậm rãi khi chúng đang ngủ.",
+    "unique_traits": "Động vật có xương sống thọ nhất Trái Đất (Longest-living Vertebrate): Có thể sống từ 250 đến hơn 500 năm. Chúng phát triển cực kỳ chậm (chỉ khoảng 1cm mỗi năm) và chỉ đạt độ tuổi trưởng thành sinh dục khi được khoảng 150 tuổi. Chống đông tự nhiên (Cryoprotectants): Thịt chứa nồng độ urê và trimethylamine oxit (TMAO) cực cao đóng vai trò như chất chống đông sinh học giúp duy trì cấu trúc tế bào dưới áp suất nước sâu và nhiệt độ âm.",
+    "shortDescription": "Kỷ lục gia tuổi thọ của động vật có xương sống với cơ thể chứa chất chống đông băng giá.",
+    "description": "Cá Mập Greenland (Somniosus microcephalus) là một trong những loài cá mập bí ẩn nhất hành tinh, sinh trưởng tại vùng nước lạnh lẽo âm u của Bắc Cực. Di chuyển với tốc độ cực kỳ chậm chạp nhưng loài cá khổng lồ này lại sở hữu tuổi thọ phi thường vượt qua mọi loài thú và chim trên thế giới. Nhờ tốc độ chuyển hóa năng lượng siêu thấp và chất chống đông TMAO trong mô cơ, chúng có thể chịu đựng được áp lực lạnh buốt khắc nghiệt dưới độ sâu hàng nghìn mét.",
+    "strengths": [
+      "Tuổi thọ kỷ lục vượt trội (lên đến 500 năm) với tế bào chống lão hóa cực mạnh",
+      "Chất hóa học TMAO và Urê bảo vệ cơ thể khỏi bị đóng băng dưới làn nước âm độ",
+      "Khứu giác siêu nhạy bén có thể phát hiện nguồn thức ăn cách xa hàng cây số",
+      "Kích thước khổng lồ và lớp da dày giảm thiểu tối đa nguy cơ bị các động vật khác tấn công"
+    ],
+    "weaknesses": [
+      "Tốc độ bơi tối đa cực kỳ chậm chạp (khoảng 2.6 km/h), không thể săn đuổi nhanh chủ động",
+      "Thị giác suy giảm nghiêm trọng do ký sinh trùng Ommatokoita elongata thường xuyên bám vào mắt",
+      "Thịt tươi chứa độc tính TMAO cao nên không thể ăn trực tiếp mà không qua chế biến đặc biệt"
+    ],
+    "funFacts": [
+      "Tuổi của cá mập Greenland được đo bằng phương pháp carbon phóng xạ ở các protein bên trong thủy tinh thể của mắt, bộ phận được hình thành từ khi chúng còn nhỏ và không thay đổi",
+      "Do di chuyển quá chậm, chúng thường săn hải cẩu bằng cách rình rập tiếp cận lúc hải cẩu đang ngủ dưới nước để tránh bị phát hiện",
+      "Mối quan hệ kỳ lạ giữa cá mập và ký sinh trùng mắt: ký sinh trùng bám vào mắt cá mập phát sáng sinh học nhẹ, được cho là có thể giúp thu hút các con mồi tò mò đến gần mõm cá mập bị mù"
+    ],
+    "sources": [
+      {
+        "url": "https://www.science.org/doi/10.1126/science.aaf1703",
+        "label": "Science - Eye lens radiocarbon reveals exceptional longevity in Greenland shark"
+      },
+      {
+        "url": "https://www.iucnredlist.org/species/60213/12347395",
+        "label": "IUCN Red List - Somniosus microcephalus"
+      }
+    ],
+    "imageColor": "#7F8C8D",
+    "diet_type": "carnivore",
+    "diet_items": [
+      "cá tuyết",
+      "hải cẩu",
+      "xác cá voi",
+      "mực biển sâu"
+    ],
+    "activity_pattern": "variable",
+    "lifespan_min": 250,
+    "lifespan_max": 500,
+    "lifespan_unit": "years",
+    "reproduction_type": "viviparous",
+    "reproduction_notes": "Noãn thai sinh (ovoviviparous). Trứng được thụ tinh và nở ngay trong bụng mẹ, sau đó sinh ra khoảng 10 con non dài khoảng 35 - 40 cm mỗi lứa sau chu kỳ mang thai kéo dài nhiều năm.",
+    "locomotion": "swim",
+    "speed_max": 2.6,
+    "conservation_status": "VU",
+    "size_min_mm": 2400.0,
+    "size_max_mm": 6400.0,
+    "weight_avg_g": 600000.0,
+    "stats": {
+      "strength": 75,
+      "durability": 85,
+      "speed": 15,
+      "weaponry": 68,
+      "special": 85,
+      "lethality": 60
     }
   }
 ]
