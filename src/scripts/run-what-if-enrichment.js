@@ -3020,7 +3020,17 @@ async function runEnrichment() {
   const whatIfData = [];
   for (const target of targets) {
     console.log(`DEBUG MATCH: target.id="${target.id}", hasScenario=${!!whatIfScenarios[target.id]}, keys=${JSON.stringify(Object.keys(whatIfScenarios))}`);
-    const scenario = whatIfScenarios[target.id];
+    let scenario = whatIfScenarios[target.id];
+    if (!scenario && target.id === "peacock-mantis-shrimp" && whatIfScenarios["mantis-shrimp"]) {
+      scenario = JSON.parse(JSON.stringify(whatIfScenarios["mantis-shrimp"]));
+      scenario.creature_id = "peacock-mantis-shrimp";
+      scenario.title = "Nếu Tôm Bọ Ngựa Peacock phóng to bằng con người (80kg) thì sao?";
+      scenario.slug = "neu-tom-bo-ngua-peacock-phong-to-bang-con-nguoi-80kg";
+      scenario.description = "Phân tích kịch bản giả thuyết khi loài Tôm Tít Công Odontodactylus scyllarus sở hữu cú đấm siêu thanh tạo bong bóng cavitation nhiệt độ mặt trời được phóng to lên 80kg.";
+      scenario.answers.forEach(ans => {
+        ans.slug = ans.slug.replace("tom-bo-ngua-80kg", "tom-bo-ngua-peacock-80kg");
+      });
+    }
     if (scenario) {
       whatIfData.push(scenario);
     } else {
