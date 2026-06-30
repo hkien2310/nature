@@ -1,220 +1,224 @@
 [
   {
-    "id": "orchid-mantis",
-    "name": "Bọ Ngựa Phong Lan",
-    "scientificName": "Hymenopus coronatus",
+    "id": "giant-oarfish",
+    "name": "Cá Mái Chèo Khổng Lồ",
+    "scientificName": "Regalecus glesne",
     "taxonomy": {
-      "class": "Insecta",
-      "order": "Mantodea",
-      "family": "Hymenopodidae"
+      "class": "Actinopterygii",
+      "order": "Lampriformes",
+      "family": "Regalecidae"
     },
-    "realWeight": "0.1 - 2 g",
-    "size": "2.5 - 6 cm",
-    "characteristics": "Thân có cấu trúc và màu sắc mô phỏng hoàn hảo một đóa hoa phong lan với các chi dẹt hình cánh hoa màu hồng-trắng tinh tế. Đầu nhỏ hình tam giác có thể xoay 180 độ với cặp mắt kép nhô cao. Đôi chi trước dạng răng cưa gập mạnh mẽ dùng để găm chặt và xé xác con mồi.",
-    "habitat": "Các khu rừng mưa nhiệt đới ẩm ướt ở Đông Nam Á, thường ẩn náu trên các bụi cây phong lan, đu đủ hoặc các loài cây có hoa.",
-    "location": "Khu vực Đông Nam Á bao gồm Malaysia, Indonesia, Thái Lan, Việt Nam và các đảo lân cận.",
-    "survival_method": "Ngụy trang thị giác đỉnh cao để dụ dỗ con mồi tự bay đến tìm mật (aggressive mimicry). Khi săn mồi, chúng bất động như một phần của đóa hoa, chờ đợi côn trùng bay tới rồi tung ra cú đớp bằng hai chân trước với tốc độ chưa tới 1/10 giây.",
-    "unique_traits": "Ngụy trang dụ mồi chủ động (Aggressive Mimicry): Không chỉ trốn tránh kẻ thù, bọ ngựa phong lan còn bắt chước đóa hoa để thu hút các loài côn trùng thụ phấn như ong và bướm một cách chủ động. Chim săn mồi cũng khó phát hiện ra chúng nhờ khả năng mô phỏng cánh hoa này. Siêu phản xạ đớp mồi (Lightning Reflexes): Chi trước bắt mồi cực kỳ nhanh với tốc độ giật cơ bắp chỉ khoảng 40 mili-giây, nhanh gấp nhiều lần so với tốc độ chớp mắt của con người.",
-    "shortDescription": "Sát thủ ngụy trang tinh tế dưới hình hài cánh hoa phong lan, sở hữu siêu phản xạ đớp mồi cực nhanh.",
-    "description": "Bọ Ngựa Phong Lan (Hymenopus coronatus) là đỉnh cao của sự ngụy trang tiến hóa trong thế giới côn trùng. Thay vì chỉ ngụy trang để lẩn trốn, chúng biến đổi toàn bộ cơ thể thành một chiếc bẫy hoa di động rực rỡ sắc hồng và trắng. Khả năng mô phỏng đóa hoa phong lan sống động đến mức dụ dỗ các loài thụ phấn tự động bay thẳng vào phạm vi tấn công của chúng. Với siêu phản xạ đớp mồi chớp nhoáng, chúng là kẻ săn mồi đáng sợ trong các tán rừng rậm rạp.",
+    "realWeight": "150 - 270 kg",
+    "size": "3 - 11 m",
+    "characteristics": "Thân dẹt thuôn dài như dải ruy-băng bạc khổng lồ. Không có răng, vây lưng đỏ rực kéo dài dọc sống lưng làm thành chiếc vương miện lộng lẫy trên đỉnh đầu. Chúng bơi theo tư thế đứng thẳng đứng độc đáo dưới biển sâu.",
+    "habitat": "Vùng nước sâu đại dương (mesopelagic zone), ở độ sâu từ 200m đến 1000m.",
+    "location": "Hầu hết các đại dương ôn đới và nhiệt đới ấm áp trên thế giới.",
+    "survival_method": "Bơi đứng thẳng lưng, ngụy trang bằng ánh phản chiếu của cơ thể bạc lấp lánh để ẩn mình dưới ánh sáng mờ từ trên chiếu xuống. Đi săn các loài sinh vật nhỏ, nhuyễn thể bằng cách hút nước mạnh.",
+    "unique_traits": "Thân hình dải ruy-băng khổng lồ (Giant Ribbon Body): Loài cá xương dài nhất thế giới hiện nay, có thể đạt chiều dài tối đa lên đến 11m (thậm chí có báo cáo ghi nhận 17m). Tư thế bơi đứng thẳng (Vertical Swimming): Khác với hầu hết các loài cá thông thường, chúng bơi thẳng đứng hướng đầu lên trên, dùng vây lưng uốn lượn để điều hướng cơ thể. Truyền thuyết báo động đất (Earthquake Harbinger): Gắn liền với truyền thuyết Ryugu no Tsukai (Sứ giả từ cung điện rồng) trong văn hóa Nhật Bản, loài cá này thường ngoi lên mặt biển cạn trước khi xảy ra chấn động địa chấn lớn.",
+    "shortDescription": "Loài cá xương dài nhất thế giới với cơ thể ruy-băng bạc và vương miện đỏ, nổi tiếng là sứ giả báo động đất.",
+    "description": "Cá Mái Chèo Khổng Lồ (Regalecus glesne) là một trong những loài cá kỳ lạ và bí ẩn nhất đại dương sâu thẳm. Với chiều dài cơ thể phi thường và vây lưng màu đỏ hồng dựng đứng như vương miện, chúng chính là nguồn cảm hứng cho những câu chuyện về quái vật biển khổng lồ thuở xưa. Mặc dù sở hữu kích thước to lớn, loài cá này hoàn toàn hiền lành, không có răng và chỉ ăn các loài giáp xác nhỏ bằng cách lọc nước.",
     "strengths": [
-      "Ngụy trang hoa giả (aggressive mimicry) đánh lừa thị giác tuyệt đối của cả con mồi lẫn kẻ thù",
-      "Phản xạ tấn công bằng chi trước siêu nhanh trong khoảng 40 mili-giây",
-      "Tầm nhìn 3D lập thể tuyệt vời từ cặp mắt kép nhô cao giúp đo khoảng cách chính xác",
-      "Các khớp chi dẹt linh hoạt mô phỏng hoàn hảo kết cấu cánh hoa chuyển động trước gió"
+      "Chiều dài cơ thể cực lớn giúp chúng dễ dọa nạt các kẻ thù săn mồi nhỏ hơn",
+      "Khả năng ngụy trang cơ thể bạc phản chiếu ánh sáng cực tốt trong bóng tối lờ mờ của biển sâu",
+      "Phương thức bơi đứng thẳng đứng giúp tối ưu tầm nhìn và phản xạ bắt mồi từ phía dưới"
     ],
     "weaknesses": [
-      "Kích thước con đực chỉ bằng 1/2 con cái, dễ bị con cái ăn thịt trong quá trình giao phối",
-      "Phụ thuộc chặt chẽ vào môi trường rừng mưa ẩm và các thảm thực vật có hoa phù hợp",
-      "Khả năng bay lượn hạn chế, không thể di chuyển quãng đường dài nhanh chóng"
+      "Không có răng hoặc vũ khí tấn công, hoàn toàn vô hại đối với các loài săn mồi lớn",
+      "Cơ thể dài dẹt dễ bị tổn thương vật lý khi gặp dòng hải lưu mạnh hoặc đá ngầm",
+      "Tốc độ bơi ngang rất hạn chế và vụng về"
     ],
     "funFacts": [
-      "Bọ ngựa phong lan non khi mới nở có màu đỏ và đen trông giống hệt như bọ xít độc để tránh bị chim săn mồi ăn thịt",
-      "Đồng hồ sinh học và màu sắc cơ thể của chúng có thể thay đổi nhẹ từ hồng sang trắng để hòa nhập với loài hoa mà chúng đang trú ngụ",
-      "Khả năng ngụy trang dụ mồi của chúng hiệu quả tới mức côn trùng bay đến đậu trực tiếp vào người chúng nhiều hơn cả đậu vào đóa hoa phong lan thật"
+      "Cá mái chèo có thể tự rụng phần đuôi của mình (tự phẫu) để giảm bớt chiều dài cơ thể mà không ảnh hưởng tới sức khỏe",
+      "Nhiều trường hợp cá mái chèo dạt vào bờ biển Nhật Bản ngay trước các trận động đất lịch sử như trận động đất Tohoku 2011",
+      "Cơ thể của chúng không có vảy thực sự mà được bao phủ bởi một lớp màng bạc mỏng chứa guanine có độc tính nhẹ"
     ],
     "sources": [
       {
-        "url": "https://www.natgeokids.com/uk/discover/animals/insects/orchid-mantis/",
-        "label": "National Geographic Kids - Orchid Mantis Facts"
+        "url": "https://www.nationalgeographic.com/animals/fish/facts/oarfish",
+        "label": "National Geographic - Oarfish Facts"
       },
       {
-        "url": "https://doi.org/10.1086/673858",
-        "label": "The American Naturalist - Aggressive Mimicry in the Orchid Mantis"
+        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/regalecus-glesne/",
+        "label": "Florida Museum - Regalecus glesne Profile"
       }
     ],
-    "imageColor": "#E8A7A1",
+    "imageColor": "#7289DA",
     "diet_type": "carnivore",
     "diet_items": [
-      "ong mật",
-      "bướm",
-      "ruồi",
-      "dế nhỏ"
-    ],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 5,
-    "lifespan_max": 9,
-    "lifespan_unit": "months",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Sinh sản hữu tính. Con đực nhỏ bé phải tiếp cận con cái hết sức cẩn thận để tránh bị ăn thịt. Sau khi giao phối, con cái tạo túi trứng bọt biển cứng (ootheca) chứa khoảng 50 - 100 quả trứng dính trên cành cây.",
-    "locomotion": "fly",
-    "speed_max": 1.5,
-    "conservation_status": "LC",
-    "size_min_mm": 25.0,
-    "size_max_mm": 60.0,
-    "weight_avg_g": 1.0,
-    "stats": {
-      "strength": 20,
-      "durability": 25,
-      "speed": 75,
-      "weaponry": 70,
-      "special": 95,
-      "lethality": 65
-    }
-  },
-  {
-    "id": "blue-ringed-octopus",
-    "name": "Bạch Tuộc Vòng Xanh",
-    "scientificName": "Hapalochlaena maculosa",
-    "taxonomy": {
-      "class": "Cephalopoda",
-      "order": "Octopoda",
-      "family": "Octopodidae"
-    },
-    "realWeight": "10 - 100 g",
-    "size": "12 - 20 cm",
-    "characteristics": "Cơ thể mềm mại nhỏ bé với màu vàng sáng ngụy trang. Khi bị kích động hoặc đe dọa, xuất hiện khoảng 50-60 vòng tròn màu xanh lam phát huỳnh quang rực rỡ nổi bật dọc thân và các xúc tu. Sở hữu mỏ vẹt nhỏ nhưng sắc nhọn có thể xuyên thủng lớp vỏ cua.",
-    "habitat": "Các rạn san hô nông, vũng nước triều đá, thảm cỏ biển ven bờ biển ôn đới và nhiệt đới.",
-    "location": "Khu vực Tây Thái Bình Dương và Ấn Độ Dương, phổ biến từ Nhật Bản đến Úc.",
-    "survival_method": "Ẩn nấp kỹ trong các kẽ đá hoặc vỏ ốc trống vào ban ngày, đi săn cua và tôm nhỏ vào ban đêm. Khi bị tấn công, nhấp nháy vòng xanh báo động độc tính. Nếu bị ép buộc, nó cắn và bơm nọc độc thần kinh cực mạnh tê liệt đối thủ tức thì.",
-    "unique_traits": "Nọc độc thần kinh Tetrodotoxin (TTX) cực hạn: Do vi khuẩn cộng sinh trong tuyến nước bọt sản xuất ra. Nọc độc này mạnh gấp 10.000 lần xyanua, chặn đứng các kênh natri trên màng tế bào thần kinh, gây tê liệt cơ bắp và ngừng thở nhanh chóng. Đổi màu phát quang cảnh báo (Aposematic display): Hệ thống tế bào sắc tố chromatophores phản ứng tức thì với hệ thần kinh để hiển thị các vòng tròn xanh lam óng ánh cảnh báo kẻ thù.",
-    "shortDescription": "Kẻ sở hữu nọc độc Tetrodotoxin thần kinh cực mạnh và các vòng xanh lam phát sáng cảnh báo.",
-    "description": "Bạch Tuộc Vòng Xanh (Hapalochlaena maculosa) tuy có kích thước nhỏ bé bằng quả bóng golf, nhưng lại đứng đầu danh sách những sinh vật độc hại nhất đại dương. Chúng mang trên mình vẻ đẹp quyến rũ với các vòng tròn màu xanh lam óng ánh chỉ phát lộ khi cảm thấy nguy hiểm. Chất độc thần kinh Tetrodotoxin chứa trong tuyến nước bọt của chúng không có thuốc giải đặc trị, đủ sức hạ gục nhiều người trưởng thành chỉ trong vài phút.",
-    "strengths": [
-      "Nọc độc thần kinh Tetrodotoxin (TTX) cực mạnh gây tê liệt hệ hô hấp tức thì",
-      "Khả năng ngụy trang hòa nhập màu sắc với môi trường đá san hô tuyệt vời",
-      "Hệ thống vòng tròn phát quang cảnh báo (aposematic display) xua đuổi kẻ săn mồi",
-      "Cơ thể không xương linh hoạt lách qua những khe đá hẹp nhất để ẩn náu"
-    ],
-    "weaknesses": [
-      "Kích thước cơ thể nhỏ bé và mỏng manh, dễ bị tổn thương bởi các loài săn mồi miễn nhiễm độc tố",
-      "Thị lực hạn chế trong môi trường nước đục, phụ thuộc vào xúc giác xúc tu",
-      "Vòng đời ngắn ngủi, thường chỉ sống được khoảng 1-2 năm"
-    ],
-    "funFacts": [
-      "Nọc độc của bạch tuộc vòng xanh mạnh đến mức một vết cắn nhỏ không gây đau đớn cũng có thể khiến nạn nhân tê liệt hoàn toàn nhưng vẫn hoàn toàn tỉnh táo nhận thức được xung quanh",
-      "Con mẹ chăm sóc trứng bằng cách bế hàng chục quả trứng bằng các xúc tu của mình suốt nhiều tuần mà không thèm ăn uống cho đến khi trứng nở và con mẹ kiệt sức chết",
-      "Tetrodotoxin không phải do bạch tuộc tự sản sinh mà được tổng hợp bởi các loài vi khuẩn cộng sinh đặc biệt sống trong tuyến nước bọt của chúng"
-    ],
-    "sources": [
-      {
-        "url": "https://www.aims.gov.au/docs/project-details/blue-ringed-octopus.html",
-        "label": "Australian Institute of Marine Science - Blue-ringed Octopus"
-      },
-      {
-        "url": "https://doi.org/10.1016/j.toxicon.2008.03.018",
-        "label": "Toxicon - Tetrodotoxin in the Blue-ringed Octopus"
-      }
-    ],
-    "imageColor": "#3498DB",
-    "diet_type": "carnivore",
-    "diet_items": [
-      "cua",
-      "tôm",
-      "cá nhỏ"
-    ],
-    "activity_pattern": "nocturnal",
-    "lifespan_min": 1,
-    "lifespan_max": 2,
-    "lifespan_unit": "years",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Sinh sản hữu tính. Con đực tiếp cận giao phối bằng cách truyền túi tinh qua xúc tu biến đổi (hectocotylus). Con cái đẻ từ 50 - 100 quả trứng và ôm giữ dưới các xúc tu bảo vệ liên tục cho đến khi trứng nở rồi chết.",
-    "locomotion": "swim",
-    "speed_max": 4.5,
-    "conservation_status": "LC",
-    "size_min_mm": 120.0,
-    "size_max_mm": 200.0,
-    "weight_avg_g": 50.0,
-    "stats": {
-      "strength": 20,
-      "durability": 30,
-      "speed": 60,
-      "weaponry": 95,
-      "special": 92,
-      "lethality": 98
-    }
-  },
-  {
-    "id": "greenland-shark",
-    "name": "Cá Mập Greenland",
-    "scientificName": "Somniosus microcephalus",
-    "taxonomy": {
-      "class": "Chondrichthyes",
-      "order": "Squaliformes",
-      "family": "Somniosidae"
-    },
-    "realWeight": "400 - 1000 kg",
-    "size": "2.4 - 6.4 m",
-    "characteristics": "Cơ thể hình trụ dày màu xám nâu xù xì, mõm ngắn tròn, cặp vây ngực và vây lưng nhỏ nhắn so với kích thước cơ thể khổng lồ. Mắt nhỏ thường bị ký sinh trùng chân kiếm bám vào gây mù lòa một phần. Hàm răng nhỏ sắc nhọn xếp chồng đặc trưng của cá mập.",
-    "habitat": "Vùng nước sâu băng giá từ 200m đến hơn 2.200m ở vùng Bắc Đại Tây Dương và Bắc Băng Dương nhiệt độ gần đóng băng.",
-    "location": "Phổ biến xung quanh Greenland, Iceland, Canada, vùng biển thuộc Nga và thỉnh thoảng ở vùng biển sâu phía nam.",
-    "survival_method": "Di chuyển ở chế độ siêu tiết kiệm năng lượng (slow-motion) dưới đáy đại dương tối tăm. Sử dụng khứu giác nhạy bén để phát hiện mùi thịt phân hủy từ xa và săn mồi chậm rãi khi chúng đang ngủ.",
-    "unique_traits": "Động vật có xương sống thọ nhất Trái Đất (Longest-living Vertebrate): Có thể sống từ 250 đến hơn 500 năm. Chúng phát triển cực kỳ chậm (chỉ khoảng 1cm mỗi năm) và chỉ đạt độ tuổi trưởng thành sinh dục khi được khoảng 150 tuổi. Chống đông tự nhiên (Cryoprotectants): Thịt chứa nồng độ urê và trimethylamine oxit (TMAO) cực cao đóng vai trò như chất chống đông sinh học giúp duy trì cấu trúc tế bào dưới áp suất nước sâu và nhiệt độ âm.",
-    "shortDescription": "Kỷ lục gia tuổi thọ của động vật có xương sống với cơ thể chứa chất chống đông băng giá.",
-    "description": "Cá Mập Greenland (Somniosus microcephalus) là một trong những loài cá mập bí ẩn nhất hành tinh, sinh trưởng tại vùng nước lạnh lẽo âm u của Bắc Cực. Di chuyển với tốc độ cực kỳ chậm chạp nhưng loài cá khổng lồ này lại sở hữu tuổi thọ phi thường vượt qua mọi loài thú và chim trên thế giới. Nhờ tốc độ chuyển hóa năng lượng siêu thấp và chất chống đông TMAO trong mô cơ, chúng có thể chịu đựng được áp lực lạnh buốt khắc nghiệt dưới độ sâu hàng nghìn mét.",
-    "strengths": [
-      "Tuổi thọ kỷ lục vượt trội (lên đến 500 năm) với tế bào chống lão hóa cực mạnh",
-      "Chất hóa học TMAO và Urê bảo vệ cơ thể khỏi bị đóng băng dưới làn nước âm độ",
-      "Khứu giác siêu nhạy bén có thể phát hiện nguồn thức ăn cách xa hàng cây số",
-      "Kích thước khổng lồ và lớp da dày giảm thiểu tối đa nguy cơ bị các động vật khác tấn công"
-    ],
-    "weaknesses": [
-      "Tốc độ bơi tối đa cực kỳ chậm chạp (khoảng 2.6 km/h), không thể săn đuổi nhanh chủ động",
-      "Thị giác suy giảm nghiêm trọng do ký sinh trùng Ommatokoita elongata thường xuyên bám vào mắt",
-      "Thịt tươi chứa độc tính TMAO cao nên không thể ăn trực tiếp mà không qua chế biến đặc biệt"
-    ],
-    "funFacts": [
-      "Tuổi của cá mập Greenland được đo bằng phương pháp carbon phóng xạ ở các protein bên trong thủy tinh thể của mắt, bộ phận được hình thành từ khi chúng còn nhỏ và không thay đổi",
-      "Do di chuyển quá chậm, chúng thường săn hải cẩu bằng cách rình rập tiếp cận lúc hải cẩu đang ngủ dưới nước để tránh bị phát hiện",
-      "Mối quan hệ kỳ lạ giữa cá mập và ký sinh trùng mắt: ký sinh trùng bám vào mắt cá mập phát sáng sinh học nhẹ, được cho là có thể giúp thu hút các con mồi tò mò đến gần mõm cá mập bị mù"
-    ],
-    "sources": [
-      {
-        "url": "https://www.science.org/doi/10.1126/science.aaf1703",
-        "label": "Science - Eye lens radiocarbon reveals exceptional longevity in Greenland shark"
-      },
-      {
-        "url": "https://www.iucnredlist.org/species/60213/12347395",
-        "label": "IUCN Red List - Somniosus microcephalus"
-      }
-    ],
-    "imageColor": "#7F8C8D",
-    "diet_type": "carnivore",
-    "diet_items": [
-      "cá tuyết",
-      "hải cẩu",
-      "xác cá voi",
-      "mực biển sâu"
+      "nhuyễn thể",
+      "giáp xác nhỏ",
+      "mực nhỏ",
+      "sứa"
     ],
     "activity_pattern": "variable",
-    "lifespan_min": 250,
-    "lifespan_max": 500,
+    "lifespan_min": 10,
+    "lifespan_max": 30,
+    "lifespan_unit": "years",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Thụ tinh ngoài. Vào mùa sinh sản (từ tháng 7 đến tháng 12), con cái phóng hàng ngàn quả trứng lớn màu đỏ tươi nổi lơ lửng gần mặt biển, ấu trùng sau khi nở sẽ sống gần bề mặt đại dương trước khi di chuyển xuống biển sâu.",
+    "locomotion": "swim",
+    "speed_max": 10,
+    "conservation_status": "LC",
+    "size_min_mm": 3000,
+    "size_max_mm": 11000,
+    "weight_avg_g": 200000,
+    "stats": {
+      "strength": 50,
+      "durability": 60,
+      "speed": 45,
+      "weaponry": 20,
+      "special": 88,
+      "lethality": 25
+    },
+    "ai_p4p_score": 48,
+    "ai_tier": "C"
+  },
+  {
+    "id": "armadillo-lizard",
+    "name": "Thằn Lằn Đuôi Gai Armadillo",
+    "scientificName": "Ouroborus cataphractus",
+    "taxonomy": {
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Cordylidae"
+    },
+    "realWeight": "80 - 150 g",
+    "size": "16 - 21 cm",
+    "characteristics": "Cơ thể được bao bọc bởi những hàng vảy gai nhọn hoắt và cứng như giáp sắt, từ đầu đến đuôi. Khi bị đe dọa, nó cuộn tròn như quả bóng và cắn chặt đuôi để bảo vệ phần bụng mềm.",
+    "habitat": "Các vùng hoang mạc khô cằn, sườn núi đá nhiều khe nứt.",
+    "location": "Tỉnh cực Tây Nam của Nam Phi (vùng Succulent Karoo).",
+    "survival_method": "Sống theo đàn nhỏ trong các khe nứt đá để tránh nóng và kẻ thù. Khi gặp mối đe dọa trực tiếp trên mặt đất và không kịp chạy trốn, chúng sẽ ngoạm lấy đuôi, cuộn tròn cơ thể bảo vệ bụng dưới nhạy cảm.",
+    "unique_traits": "Tư thế tự vệ Ouroboros (Ouroboros Defense): Cuộn tròn cắn đuôi tạo thành một vòng gai cứng khép kín bảo vệ bụng mềm, khiến hầu hết các loài chim săn mồi và rắn không thể nuốt trôi hoặc cắn rách. Giáp vảy gai (Spiny Armor): Lớp vảy sừng dày nhọn dọc theo lưng và đuôi có chức năng như những chiếc chông nhọn, gây đau đớn dữ dội cho bất kỳ kẻ săn mồi nào cố gắng ngoạm lấy.",
+    "shortDescription": "Kẻ tự vệ Ouroboros với lớp giáp vảy gai sắc nhọn và thói quen cắn đuôi cuộn tròn độc đáo.",
+    "description": "Thằn Lằn Đuôi Gai Armadillo (Ouroborus cataphractus) là một loài thằn lằn đặc hữu của Nam Phi, nổi tiếng với khả năng phòng thủ vô song. Thay vì chạy trốn hay tấn công trả đũa bằng nọc độc, nó chọn cách biến mình thành một quả bóng gai nhọn cứng ngắc. Tư thế cuộn tròn cắn đuôi của chúng gợi liên tưởng trực tiếp đến hình ảnh rồng nuốt đuôi Ouroboros cổ xưa.",
+    "strengths": [
+      "Lớp giáp gai sừng cực dày bảo vệ cơ thể khỏi các chấn thương vật lý nặng",
+      "Tư thế cuộn tròn cắn đuôi bảo vệ bụng nhạy cảm khỏi mọi đòn tấn công cắn xé",
+      "Khả năng lách sâu và bám chặt vào các khe đá hẹp nhờ các gai chống trượt"
+    ],
+    "weaknesses": [
+      "Tốc độ chạy trốn cự ly dài chậm do cơ thể nặng nề vì vảy giáp",
+      "Không có nọc độc hay lực cắn mạnh để chủ động tấn công đối thủ",
+      "Phải phơi nắng thường xuyên để điều hòa thân nhiệt, lúc này rất dễ bị phát hiện"
+    ],
+    "funFacts": [
+      "Chúng là một trong số ít loài thằn lằn không rụng đuôi để chạy trốn vì đuôi là công cụ bảo vệ sống còn của tư thế cuộn tròn",
+      "Loài này sinh sản bằng cách đẻ con trực tiếp (viviparous) thay vì đẻ trứng, thậm chí con mẹ thỉnh thoảng còn mớm thức ăn cho con non",
+      "Nếu gặp dốc, chúng đôi khi có thể thả mình cuộn tròn để lăn tự do xuống sườn núi nhằm thoát thân nhanh chóng"
+    ],
+    "sources": [
+      {
+        "url": "https://www.iucnredlist.org/species/110162057/115657805",
+        "label": "IUCN Red List - Ouroborus cataphractus"
+      },
+      {
+        "url": "https://www.inaturalist.org/taxa/539328-Ouroborus-cataphractus",
+        "label": "iNaturalist - Armadillo Girdled Lizard Profile"
+      }
+    ],
+    "imageColor": "#DDA15E",
+    "diet_type": "omnivore",
+    "diet_items": [
+      "mối",
+      "kiến",
+      "bọ cánh cứng",
+      "chồi cây non"
+    ],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 10,
+    "lifespan_max": 20,
     "lifespan_unit": "years",
     "reproduction_type": "viviparous",
-    "reproduction_notes": "Noãn thai sinh (ovoviviparous). Trứng được thụ tinh và nở ngay trong bụng mẹ, sau đó sinh ra khoảng 10 con non dài khoảng 35 - 40 cm mỗi lứa sau chu kỳ mang thai kéo dài nhiều năm.",
-    "locomotion": "swim",
-    "speed_max": 2.6,
-    "conservation_status": "VU",
-    "size_min_mm": 2400.0,
-    "size_max_mm": 6400.0,
-    "weight_avg_g": 600000.0,
+    "reproduction_notes": "Sinh con trực tiếp (đẻ con). Mỗi năm con cái thường chỉ sinh từ 1 đến 2 con non, con non mới sinh đã có lớp vảy sừng mềm và sẽ cứng lại rất nhanh sau vài giờ.",
+    "locomotion": "walk",
+    "speed_max": 8.5,
+    "conservation_status": "LC",
+    "size_min_mm": 160,
+    "size_max_mm": 210,
+    "weight_avg_g": 115,
     "stats": {
-      "strength": 75,
-      "durability": 85,
-      "speed": 15,
-      "weaponry": 68,
+      "strength": 45,
+      "durability": 90,
+      "speed": 40,
+      "weaponry": 60,
       "special": 85,
-      "lethality": 60
-    }
+      "lethality": 30
+    },
+    "ai_p4p_score": 65,
+    "ai_tier": "B"
+  },
+  {
+    "id": "purple-frog",
+    "name": "Ếch Tím Ấn Độ",
+    "scientificName": "Nasikabatrachus sahyadrensis",
+    "taxonomy": {
+      "class": "Amphibia",
+      "order": "Anura",
+      "family": "Nasikabatrachidae"
+    },
+    "realWeight": "60 - 130 g",
+    "size": "5 - 9 cm",
+    "characteristics": "Thân hình phình to như một cục thạch dẹt màu tím sẫm. Đầu cực nhỏ với chiếc mõm nhọn màu trắng ngà giống mõm lợn. Bàn chân ngắn có vuốt sừng cứng để đào đất.",
+    "habitat": "Sâu dưới lòng đất (từ 1.3m đến 3.7m) gần các dòng suối rừng nhiệt đới.",
+    "location": "Dãy núi Ghats Tây ở miền Nam Ấn Độ.",
+    "survival_method": "Dành 96% thời gian cả đời sống ngầm dưới đất để ăn mối. Chúng dùng đôi chân sau có móng vuốt xới đất ngược ra sau để đào hang sâu. Chúng có chiếc lưỡi đặc biệt có khấc đút thẳng vào tổ mối để hút mối.",
+    "unique_traits": "Lối sống hóa thạch sống ngầm (Fossorial Lifestyle): Sống ngầm dưới lòng đất suốt 50 tuần mỗi năm, chỉ ngoi lên mặt đất trong đúng 2 tuần mưa lớn đầu mùa để sinh sản. Mõm nhọn mõm lợn (Pointed Snout): Chiếc mõm nhọn màu trắng giúp chúng dễ dàng định hướng trong lòng đất ẩm và định vị tổ mối dưới lòng đất. Chân đào bới sừng hóa (Spade-like Feet): Đôi chi sau ngắn nhưng có cấu trúc đệm sừng giống như những chiếc xẻng nhỏ để đào đất ngược về phía sau cực nhanh.",
+    "shortDescription": "Hóa thạch sống màu tím với mõm nhọn giống lợn, sống sâu dưới lòng đất 50 tuần mỗi năm.",
+    "description": "Ếch Tím Ấn Độ (Nasikabatrachus sahyadrensis) được phát hiện vào năm 2003 và được coi là một \"hóa thạch sống\" quý giá vì loài này tiến hóa biệt lập từ hàng chục triệu năm trước. Ngoại hình kỳ dị giống một khối thạch dẹt màu tím với chiếc mõm lợn là sự thích nghi hoàn hảo cho cuộc sống đào bới và săn mồi dưới lòng đất. Chúng hầu như không bao giờ lộ diện trừ mùa giao phối ngắn ngủi.",
+    "strengths": [
+      "Khả năng đào bới và trú ẩn sâu dưới lòng đất tránh được hầu hết các loài thú săn mồi trên cạn",
+      "Cơ thể thuôn dẹt giảm áp lực đất giúp di chuyển dễ dàng trong lòng đất",
+      "Cấu trúc lưỡi chuyên dụng hút mối nhanh chóng trong hang hẹp"
+    ],
+    "weaknesses": [
+      "Di chuyển trên mặt đất cực kỳ vụng về và chậm chạp, dễ bị tấn công khi ngoi lên",
+      "Thị lực kém do quanh năm sống trong bóng tối ẩm ướt",
+      "Phụ thuộc hoàn toàn vào chu kỳ mưa lớn và môi trường suối rừng nguyên sinh để duy trì nòi giống"
+    ],
+    "funFacts": [
+      "Loài ếch này phát ra tiếng kêu giao phối nghe giống như tiếng gà gáy nhỏ từ các kẽ đá ven suối",
+      "Nòng nọc của loài ếch tím sở hữu các đĩa hút bám cực khỏe ở bụng để bám chắc vào các tảng đá dưới suối chảy xiết mà không bị cuốn trôi",
+      "Chúng là đại diện duy nhất còn sống sót của một nhánh tiến hóa lưỡng cư tách biệt từ thời siêu lục địa Gondwana"
+    ],
+    "sources": [
+      {
+        "url": "https://www.nationalgeographic.com/animals/amphibians/facts/purple-frog",
+        "label": "National Geographic - Purple Frog"
+      },
+      {
+        "url": "https://doi.org/10.1038/nature02019",
+        "label": "Nature - A new family of frogs from India"
+      }
+    ],
+    "imageColor": "#5A3E54",
+    "diet_type": "carnivore",
+    "diet_items": [
+      "mối",
+      "kiến",
+      "ấu trùng côn trùng",
+      "giun nhỏ"
+    ],
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 5,
+    "lifespan_max": 15,
+    "lifespan_unit": "years",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Sinh sản hữu tính. Vào những ngày mưa đầu mùa, con đực cõng con cái bò ra bờ suối nhiệt đới. Con cái đẻ trứng vào khe đá dưới nước và con đực thụ tinh. Trứng nở thành nòng nọc có đĩa hút bám đá.",
+    "locomotion": "burrow",
+    "speed_max": 3.2,
+    "conservation_status": "EN",
+    "size_min_mm": 50,
+    "size_max_mm": 90,
+    "weight_avg_g": 95,
+    "stats": {
+      "strength": 50,
+      "durability": 75,
+      "speed": 35,
+      "weaponry": 30,
+      "special": 88,
+      "lethality": 30
+    },
+    "ai_p4p_score": 52,
+    "ai_tier": "C"
   }
 ]
