@@ -3613,6 +3613,10 @@ async function runEnrichment() {
       scenario = JSON.parse(JSON.stringify(whatIfScenarios["blue-dragon"]));
       scenario.creature_id = "blue-dragon-sea-slug";
     }
+    if (!scenario && target.id === "greater-horseshoe-bat" && whatIfScenarios["horseshoe-bat"]) {
+      scenario = JSON.parse(JSON.stringify(whatIfScenarios["horseshoe-bat"]));
+      scenario.creature_id = "greater-horseshoe-bat";
+    }
     if (scenario) {
       whatIfData.push(scenario);
     } else {
