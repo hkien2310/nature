@@ -1,204 +1,228 @@
 [
   {
-    "id": "trap-jaw-ant",
-    "name": "Kiến Bẫy Hàm",
-    "scientificName": "Odontomachus bauri",
+    "id": "antlion",
+    "name": "Kiến Sư Tử",
+    "scientificName": "Myrmeleontidae",
     "taxonomy": {
       "class": "Insecta",
-      "order": "Hymenoptera",
-      "family": "Formicidae"
+      "order": "Neuroptera",
+      "family": "Myrmeleontidae"
     },
-    "realWeight": "0.012 g",
-    "size": "8 - 14 mm",
-    "characteristics": "Kiến bẫy hàm là loài kiến có kích thước trung bình với cơ thể màu nâu sẫm bóng loáng. Đặc trưng nổi bật nhất là cặp hàm dưới (mandibles) cực dài, thẳng và có các gai nhọn ở đầu, có thể mở rộng một góc 180 độ. Cặp hàm này được giữ ở trạng thái căng như lò xo nhờ một nhóm cơ khép hàm khổng lồ chiếm phần lớn thể tích đầu.",
-    "habitat": "Môi trường lá mục, thảm thực vật ẩm ướt và dưới lớp vỏ cây trong các khu rừng nhiệt đới.",
-    "location": "Khu vực Trung và Nam Mỹ, đặc biệt phổ biến ở lưu vực sông Amazon.",
-    "survival_method": "Săn mồi bằng cách mở hàm 180 độ và rình rập. Khi các lông cảm giác siêu nhạy ở mép hàm chạm vào con mồi, hệ thần kinh kích hoạt cơ khép giải phóng thế năng co cơ ngay lập tức. Nếu gặp kẻ thù lớn, chúng sẽ gõ hàm xuống mặt đất để tạo lực phản hồi đẩy toàn bộ cơ thể bay xa khỏi nguy hiểm.",
-    "unique_traits": "Cú đớp hàm siêu tốc đạt vận tốc từ 126 đến 230 km/h chỉ trong vòng 130 micro giây, tạo ra gia tốc lớn gấp 100.000 lần gia tốc trọng trường. Lực đớp mạnh gấp 300 lần trọng lượng cơ thể giúp chúng bật nhảy cao tới 8 cm và bay xa 40 cm bằng cơ chế tự phóng.",
-    "shortDescription": "Đớp hàm siêu tốc 230 km/h. Khả năng tự phóng trốn chạy độc nhất vô nhị.",
-    "description": "Kiến bẫy hàm (Odontomachus bauri) là một minh chứng kỳ diệu về kỹ thuật cơ sinh học của tự nhiên. Chúng sở hữu một cơ chế khóa hàm cơ học hoạt động như một chiếc bẫy gấu thu nhỏ. Khi ở trạng thái mở, hàm của chúng tích lũy một lượng lớn thế năng đàn hồi trong các bó cơ đầu. Khi được kích hoạt bởi các sợi lông cảm nhận nhạy bén, các chốt cơ học được giải phóng, khiến hàm đóng lại với tốc độ nhanh nhất trong thế giới động vật. Phản xạ này nhanh đến mức hệ thần kinh trung ương của kiến thậm chí không cần tham gia trực tiếp vào quá trình đóng hàm, mà được kích hoạt bởi một cung phản xạ cơ học trực tiếp.",
+    "realWeight": "0.02 - 0.05 g",
+    "size": "15 - 20 mm",
+    "characteristics": "Ấu trùng có thân hình bầu bĩnh, gai góc, đầu dẹt sở hữu đôi kìm rỗng khổng lồ chứa nọc độc. Con trưởng thành giống chuồn chuồn nhưng râu dài và bay yếu hơn.",
+    "habitat": "Các vùng đất cát mịn khô ráo, dưới mái hiên hoặc gốc cây để tránh mưa.",
+    "location": "Phân bố rộng khắp các vùng ôn đới và nhiệt đới trên thế giới.",
+    "survival_method": "Ấu trùng đào hố cát hình phễu dốc, vùi mình dưới đáy hố chờ đợi. Khi con mồi lọt vào hố, kiến sư tử liên tục hất cát gây sụt lún ngăn cản con mồi bò lên, sau đó dùng kìm kẹp chặt và hút dịch cơ thể con mồi.",
+    "unique_traits": "Khả năng đào bẫy cát hình phễu hoàn hảo. Cơ chế bắn cát cực nhanh hạ gục con mồi đang chạy trốn. Hàm kìm rỗng đóng vai trò như ống tiêm kép bơm độc tố và enzyme phân hủy thịt con mồi chỉ trong vài giây.",
+    "shortDescription": "Đào hố cát phục kích săn mồi bậc thầy. Phóng cát gây sụt lún hạ gục mục tiêu.",
+    "description": "Kiến Sư Tử ở giai đoạn ấu trùng là một trong những loài săn mồi đáng sợ nhất trong thế giới côn trùng nhỏ bé. Chúng thiết kế các hố cát hình phễu với góc nghiêng lý tưởng gần như sụt lún tự do. Bất cứ kiến hay côn trùng nhỏ nào dẫm lên miệng hố sẽ lập tức bị trượt chân. Để ngăn cản con mồi thoát thân, kiến sư tử từ dưới đáy sẽ dùng đầu hất các luồng cát mạnh tạo ra một trận lở đất thu nhỏ. Khi con mồi rơi xuống đáy, đôi kìm khổng lồ sẽ găm chặt và bơm độc tố làm tê liệt và hóa lỏng nội tạng con mồi để hút chất dinh dưỡng.",
     "strengths": [
-      "Cú đớp hàm nhanh nhất trong thế giới động vật, hạ gục con mồi tức thì",
-      "Khả năng bật nhảy thoát hiểm khẩn cấp bằng cách gõ hàm xuống đất để tự phóng",
-      "Vỏ kitin cứng cáp bảo vệ cơ thể khỏi các tác động vật lý mạnh từ cú va chạm",
-      "Khả năng phối hợp săn mồi và bảo vệ tổ theo đàn vô cùng hiệu quả"
+      "Bẫy cát vật lý cực kỳ hiệu quả, khai thác trọng lực và ma sát của cát",
+      "Kìm rỗng siêu cứng găm sâu và giữ chặt con mồi lớn gấp nhiều lần",
+      "Bắn cát định hướng chính xác để tạo lở đất làm mất thăng bằng con mồi",
+      "Độc tố hóa lỏng mô cực nhanh biến nội tạng con mồi thành dịch lỏng dễ tiêu hóa"
     ],
     "weaknesses": [
-      "Tầm nhìn hạn chế, phụ thuộc hoàn toàn vào râu và lông cảm giác để định vị",
-      "Cơ chế đập hàm sinh lực phản hồi lớn có thể gây mất định hướng nếu va đập vào vật cứng",
-      "Kích thước nhỏ bé khiến chúng dễ bị đè bẹp bởi các loài động vật săn mồi lớn hơn nhiều"
+      "Hầu như không thể di chuyển nhanh hoặc tự vệ trên mặt đất phẳng nếu không có bẫy cát",
+      "Bẫy cát dễ bị phá hủy bởi nước mưa, gió lớn hoặc các chấn động mạnh",
+      "Giai đoạn trưởng thành bay rất yếu và tuổi thọ cực ngắn, chỉ tập trung giao phối"
     ],
     "funFacts": [
-      "Lực đớp của kiến bẫy hàm mạnh đến mức nếu nó đớp vào ngón tay người, nó có thể xuyên thủng lớp da ngoài và tạo ra tiếng 'tách' nhỏ nghe rõ bằng tai thường",
-      "Hành vi tự phóng bằng hàm ('jaw-jumping') cho phép kiến thoát khỏi những kẻ săn mồi như thằn lằn hay nhện chỉ trong một cái chớp mắt",
-      "If cặp hàm đớp trúng khoảng không mà không có vật cản, lực quán tính cực mạnh có thể khiến đầu kiến tự xoay tròn hỗn loạn"
+      "Ấu trùng kiến sư tử không có hậu môn. Tất cả chất thải được lưu trữ trong suốt nhiều năm và chỉ được thải ra một lần duy nhất khi chúng lột xác thành con trưởng thành",
+      "Chúng chỉ có thể bò lùi dưới cát, điều này giúp chúng giữ cho đôi kìm khổng lồ luôn hướng về phía trước để sẵn sàng đón nhận con mồi",
+      "Hố bẫy của chúng được tính toán cơ học hoàn hảo, góc nghiêng của cát luôn nằm sát giới hạn sạt lở tự nhiên (góc nghỉ của cát)"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1126/science.1130559",
-        "label": "Science - High-speed videography of trap-jaw ant mandibular strikes"
+        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/antlions",
+        "label": "National Geographic - Antlion Facts"
       },
       {
-        "url": "https://www.pnas.org/doi/10.1073/pnas.0604290103",
-        "label": "PNAS - Multifunctional jaws: Trap-jaw ants as escape artists"
+        "url": "https://doi.org/10.1098/rsbl.2019.0582",
+        "label": "Biology Letters - Mechanics of sand throwing by antlion larvae"
       }
     ],
-    "imageColor": "#D84315",
+    "imageColor": "#D2B48C",
+    "diet_type": "carnivore",
+    "diet_items": [
+      "kiến",
+      "nhện nhỏ",
+      "bọ cánh cứng nhỏ",
+      "mối"
+    ],
+    "activity_pattern": "variable",
+    "lifespan_min": 1,
+    "lifespan_max": 3,
+    "lifespan_unit": "years",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Sau khi lột xác thành con trưởng thành, chúng bay đi tìm bạn đời vào ban đêm. Con cái đẻ trứng trực tiếp vào cát khô ráo để ấu trùng tự nở và tự đào hố.",
+    "locomotion": "burrow",
+    "speed_max": 0.5,
+    "conservation_status": "LC",
+    "size_min_mm": 15.0,
+    "size_max_mm": 20.0,
+    "weight_avg_g": 0.03,
     "stats": {
-      "strength": 45,
+      "strength": 30,
       "durability": 40,
-      "speed": 95,
-      "weaponry": 85,
-      "special": 90,
+      "speed": 25,
+      "weaponry": 75,
+      "special": 88,
       "lethality": 70
     },
-    "diet_type": "carnivore",
-    "diet_items": ["côn trùng nhỏ", "nhện", "mật hoa", "ấu trùng"],
-    "activity_pattern": "variable",
-    "lifespan_min": 6,
-    "lifespan_max": 12,
-    "lifespan_unit": "months",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Sinh sản hữu tính qua kiến chúa độc quyền trong tổ. Trứng thụ tinh nở thành kiến thợ, trứng không thụ tinh nở thành kiến đực.",
-    "locomotion": "hybrid",
-    "speed_max": 0.3,
-    "conservation_status": "LC",
-    "size_min_mm": 8,
-    "size_max_mm": 14,
-    "weight_avg_g": 0.012
+    "ai_p4p_score": 52,
+    "ai_tier": "C"
   },
   {
-    "id": "box-jellyfish",
-    "name": "Sứa Hộp Úc",
-    "scientificName": "Chironex fleckeri",
+    "id": "ghost-crab",
+    "name": "Cua Ma",
+    "scientificName": "Ocypode",
     "taxonomy": {
-      "class": "Cubozoa",
-      "order": "Chirodropida",
-      "family": "Chirodropidae"
+      "class": "Malacostraca",
+      "order": "Decapoda",
+      "family": "Ocypodidae"
     },
-    "realWeight": "2000 g",
-    "size": "Chuông rộng 30 cm, xúc tua dài 3 m",
-    "characteristics": "Cơ thể hình hộp bán trong suốt màu xanh nhạt gần như vô hình dưới nước. Từ bốn góc của chuông sứa mọc ra tối đa 60 xúc tua mảnh dài chứa hàng triệu tế bào chích (nematocysts) chứa độc tố thần kinh cực mạnh.",
-    "habitat": "Vùng biển ven bờ nông ấm của đại dương nhiệt đới khu vực Ấn Độ Dương - Thái Bình Dương.",
-    "location": "Bờ biển miền bắc nước Úc và khắp khu vực Đông Nam Á.",
-    "survival_method": "Khác với sứa thông thường trôi nổi thụ động, sứa hộp có khả năng chủ động bơi định hướng để săn mồi. Chúng săn các loài giáp xác nhỏ và cá bằng cách giăng các xúc tua dài chứa hàng loạt tế bào ngòi chích cực độc, làm tê liệt con mồi ngay lập tức khi chạm phải.",
-    "unique_traits": "Độc tố cực mạnh tấn công trực tiếp vào hệ tim mạch, hệ thần kinh và tế bào da. Hệ thống cảm biến gồm 24 mắt thật sự chia làm 4 cụm rhopalia ở bốn bên, có đầy đủ thủy tinh thể, võng mạc và giác mạc giúp định hướng ánh sáng và tránh vật cản vật lý.",
-    "shortDescription": "Một trong những sinh vật độc nhất hành tinh. Sở hữu 24 mắt thật sự.",
-    "description": "Sứa Hộp Úc (Chironex fleckeri) được coi là loài sinh vật biển có nọc độc nguy hiểm nhất đối với con người. Một lượng nhỏ nọc độc của nó có thể làm tim ngừng đập và phá hủy hệ tuần hoàn chỉ trong vòng từ 2 đến 5 phút. Sự tiến hóa độc đáo giúp sứa hộp có khả năng chủ động bơi với vận tốc lên tới 7.5 km/h và sở hữu cấu trúc thị giác phức tạp vượt trội hoàn toàn so với các loài sứa nguyên thủy khác. Dù không có não bộ tập trung, chúng điều phối chuyển động và xử lý tín hiệu thị giác thông qua một vòng mạng lưới thần kinh xung quanh chuông sứa.",
+    "realWeight": "30 - 65 g",
+    "size": "5 - 8 cm",
+    "characteristics": "Thân hình màu vàng nhạt hoặc trắng xám trùng khớp với màu cát biển. Đôi mắt đen lớn nằm trên đôi cuống mắt dài dựng đứng cho phép nhìn 360 độ. Đôi càng bất đối xứng (một to một nhỏ).",
+    "habitat": "Bãi biển cát nông ở vùng nhiệt đới và cận nhiệt đới, sống trong các hang sâu đào sát mực nước triều.",
+    "location": "Các bờ biển nhiệt đới Thái Bình Dương, Đại Tây Dương và Ấn Độ Dương.",
+    "survival_method": "Đào hang sâu để giữ ẩm cơ thể và trốn tránh kẻ thù ban ngày. Hoạt động chủ yếu về đêm, chạy cực nhanh trên cát bằng bốn cặp chân bò, săn tìm động vật không xương sống nhỏ hoặc ăn xác thối trôi dạt.",
+    "unique_traits": "Tốc độ di chuyển trên cạn nhanh nhất trong thế giới động vật giáp xác (lên tới 20 km/h). Đôi mắt xoay 360 độ nhạy bén phát hiện bóng chuyển động. Khả năng phát ra tiếng kêu cảnh báo bằng cách nghiền răng trong dạ dày (gastric mill stridulation).",
+    "shortDescription": "Tốc độ bứt tốc thần sầu 20 km/h trên cát. Tầm nhìn 360 độ và màu sắc ngụy trang hòa lẫn bãi biển.",
+    "description": "Cua Ma là loài giáp xác chạy nhanh nhất trên cạn, nổi tiếng với sự cơ động đáng kinh ngạc và khả năng biến mất như một bóng ma trên các bãi cát biển. Chúng sở hữu các chân bò thon dài khỏe mạnh cho phép đổi hướng đột ngột ở tốc độ cao mà không bị lật. Đôi cuống mắt cao cung cấp tầm nhìn toàn cảnh để phát hiện chim săn mồi từ xa. Cua ma cũng có một hệ hô hấp độc đáo, chúng không cần ở dưới nước mà chỉ cần làm ướt mang bằng nước biển ẩm tích trữ trong hang hoặc hút từ cát ướt.",
     "strengths": [
-      "Nọc độc thần kinh và tim mạch mạnh nhất đại dương, gây chết người nhanh chóng",
-      "24 mắt thật sự cho phép nhìn rõ hình dáng vật cản và định hướng bơi lội chủ động",
-      "Cơ thể trong suốt gần như vô hình hoàn hảo dưới nước giúp ẩn mình tuyệt đối"
+      "Tốc độ bứt tốc và cơ động cực cao trên cát, đổi hướng 90 độ trong tích tắc",
+      "Khả năng ngụy trang trùng khít màu cát giúp ẩn thân hoàn hảo khi đứng yên",
+      "Hệ thống thị giác 360 độ cảnh báo mối nguy hiểm từ mọi phía",
+      "Khả năng hấp thụ nước trực tiếp từ cát ẩm qua các sợi lông chân"
     ],
     "weaknesses": [
-      "Cơ thể mềm yếu dễ bị tổn thương nghiêm trọng nếu va chạm với các vật sắc nhọn hoặc sóng lớn",
-      "Bị hạn chế bởi các loài động vật săn mồi miễn nhiễm độc tố như rùa biển da và cá mặt trăng",
-      "Không có não bộ trung tâm để xử lý các tình huống phức tạp vượt ngoài bản năng phản xạ"
+      "Lớp vỏ kitin tương đối mỏng và giòn so với các loài cua đá khác",
+      "Rất dễ mất nước và chết khô nếu không thể làm ướt mang trong vòng vài giờ",
+      "Kẻ thù tự nhiên nhiều như chim biển, gấu mèo, rái cá và cá sấu"
     ],
     "funFacts": [
-      "Rùa biển da có thể ăn sứa hộp một cách ngon lành vì lớp da trong miệng và dạ dày của chúng cực dày, hoàn toàn miễn nhiễm với các ngòi chích độc",
-      "24 con mắt của sứa hộp được chia thành hai nhóm: mắt đơn giản để cảm nhận cường độ ánh sáng và mắt phức tạp có thấu kính để tạo ra hình ảnh thực tế",
-      "Quần đùi nilon dài hoặc đồ bơi chống sứa là biện pháp bảo vệ hiệu quả nhất vì ngòi chích của sứa hộp quá ngắn để đâm qua các lớp vải tổng hợp này"
+      "Khi chạy ở tốc độ tối đa, cua ma chỉ sử dụng 2 hoặc 3 cặp chân bò và có xu hướng nhấc hẳn cơ thể lên khỏi mặt cát để giảm ma sát",
+      "Chúng là loài động vật duy nhất được phát hiện sử dụng các cấu trúc giống như răng bên trong dạ dày để phát ra âm thanh gầm gừ đe dọa kẻ thù khi càng của chúng bận chiến đấu",
+      "Tên gọi 'Cua Ma' xuất phát từ hành vi thoắt ẩn thoắt hiện và thói quen kiếm ăn vào ban đêm của chúng"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1038/npre.2010.5181.1",
-        "label": "Nature - Box Jellyfish venom composition and mechanism of action"
+        "url": "https://www.iucnredlist.org",
+        "label": "IUCN Red List of Threatened Species"
       },
       {
-        "url": "https://doi.org/10.1016/j.cub.2005.02.059",
-        "label": "Current Biology - Visual navigation and active swimming of Cubozoans"
+        "url": "https://doi.org/10.1242/jeb.00947",
+        "label": "Journal of Experimental Biology - Ghost crab locomotion and speed studies"
       }
     ],
-    "imageColor": "#00BCD4",
-    "stats": {
-      "strength": 20,
-      "durability": 15,
-      "speed": 55,
-      "weaponry": 100,
-      "special": 95,
-      "lethality": 100
-    },
-    "diet_type": "carnivore",
-    "diet_items": ["tôm nhỏ", "cá nhỏ", "giáp xác"],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 6,
-    "lifespan_max": 12,
-    "lifespan_unit": "months",
+    "imageColor": "#F5F5DC",
+    "diet_type": "omnivore",
+    "diet_items": [
+      "rùa con mới nở",
+      "ốc biển",
+      "giun cát",
+      "xác thối",
+      "tảo biển"
+    ],
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 2,
+    "lifespan_max": 3,
+    "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Sứa trưởng thành sinh sản hữu tính tại các vùng cửa sông bằng cách phóng tinh trùng và trứng. Sau đó ấu trùng bám vào đá phát triển thành polyp rồi phân mảnh để phóng thích sứa con.",
-    "locomotion": "swim",
-    "speed_max": 7.5,
+    "reproduction_notes": "Giao phối diễn ra trong hang hoặc trên bãi biển. Con cái mang trứng dưới bụng cho đến khi trứng chín, sau đó bò ra sát mép nước để giải phóng ấu trùng vào đại dương theo thủy triều.",
+    "locomotion": "walk",
+    "speed_max": 20.0,
     "conservation_status": "LC",
-    "size_min_mm": 300,
-    "size_max_mm": 3000,
-    "weight_avg_g": 2000
-  },
-  {
-    "id": "superb-lyrebird",
-    "name": "Chim Cầm Điểu",
-    "scientificName": "Menura novaehollandiae",
-    "taxonomy": {
-      "class": "Aves",
-      "order": "Passeriformes",
-      "family": "Menuridae"
-    },
-    "realWeight": "950 g",
-    "size": "Dài 80 - 100 cm",
-    "characteristics": "Loài chim lớn sống trên mặt đất với bộ lông màu nâu xám thanh tao. Con trống sở hữu chiếc đuôi cực kỳ tráng lệ giống như hình cây đàn lia (lyre) khi xòe ra, gồm các sợi lông mảnh mịn màu trắng và nâu đan xen.",
-    "habitat": "Các khu rừng mưa ôn đới ẩm ướt và rừng bạch đàn rậm rạp.",
-    "location": "Vùng đông nam nước Úc, từ Victoria đến Queensland.",
-    "survival_method": "Tìm kiếm thức ăn trên mặt đất bằng cách dùng đôi chân cực khỏe để bới lá mục tìm kiếm côn trùng. Khi đối mặt với nguy hiểm, chúng thường chạy trốn luồn lách qua các bụi rậm thay vì bay. Chúng sử dụng giọng hót giả giọng để đánh lừa kẻ thù hoặc thu hút bạn tình.",
-    "unique_traits": "Khả năng giả giọng vô địch thiên hạ. Sở hữu cơ quan phát âm (syrinx) tiến hóa cao nhất cấu trúc từ 3 cặp cơ riêng biệt, cho phép bắt chước hoàn hảo mọi âm thanh nghe thấy từ tiếng kêu của 20 loài chim khác đến tiếng cưa máy, còi báo động, máy ảnh và tiếng người.",
-    "shortDescription": "Bậc thầy giả giọng của tự nhiên. Đuôi đàn lia tráng lệ.",
-    "description": "Chim Cầm Điểu (Menura novaehollandiae) là loài chim có giọng hót phức tạp và khả năng bắt chước âm thanh chính xác nhất hành tinh. Chúng là loài định cư ở rừng mặt đất. Để thu hút bạn tình trong mùa sinh sản, con trống sẽ dựng một đồi đất nhỏ làm sân khấu, xòe chiếc đuôi đàn lia lộng lẫy qua đầu và thực hiện một buổi hòa nhạc dài hàng giờ đồng hồ kết hợp vũ đạo tinh tế. Buổi biểu diễn này chứa các chuỗi âm thanh tái hiện chân thực đến kinh ngạc tất cả tiếng động xung quanh môi trường sống của nó.",
-    "strengths": [
-      "Bắt chước âm thanh đạt độ chính xác gần như 100% để giao tiếp và ngụy trang tiếng kêu",
-      "Đôi chân cực khỏe thích hợp cho việc đào bới đất đá sâu để tìm thức ăn và chạy nhanh",
-      "Đuôi lớn sặc sỡ tạo ra lợi thế trình diễn ấn tượng trong mùa sinh sản"
-    ],
-    "weaknesses": [
-      "Khả năng bay rất kém, chỉ có thể bay lượn quãng ngắn từ cành cây thấp xuống đất",
-      "Dễ bị tổn thương trước các loài săn mồi ngoại lai như cáo và mèo hoang do làm tổ trên mặt đất",
-      "Mùa sinh sản tiêu tốn lượng năng lượng khổng lồ cho các hoạt động biểu diễn liên tục"
-    ],
-    "funFacts": [
-      "Một con chim cầm điểu trong vườn thú từng bắt chước hoàn hảo tiếng búa gõ, tiếng máy khoan và tiếng khóc của trẻ em chân thực đến mức nhân viên vườn thú bị đánh lừa hoàn toàn",
-      "Chúng có thể ghi nhớ và lưu truyền âm thanh qua nhiều thế hệ. Tiếng cưa xích được ghi nhận ở một số vùng rừng Úc dù khu vực đó đã cấm khai thác gỗ từ hàng chục năm trước",
-      "Chiếc đuôi hình đàn lia của con trống phải mất tới 7 năm để phát triển hoàn thiện đạt độ lộng lẫy tối đa"
-    ],
-    "sources": [
-      {
-        "url": "https://doi.org/10.1016/j.anbehav.2013.03.003",
-        "label": "Animal Behaviour - Acoustic mimicry in male superb lyrebirds"
-      },
-      {
-        "url": "https://www.nationalgeographic.com/animals/birds/facts/superb-lyrebird",
-        "label": "National Geographic - Superb Lyrebird Facts"
-      }
-    ],
-    "imageColor": "#8D6E63",
+    "size_min_mm": 50.0,
+    "size_max_mm": 80.0,
+    "weight_avg_g": 45.0,
     "stats": {
       "strength": 35,
       "durability": 45,
-      "speed": 50,
-      "weaponry": 20,
-      "special": 98,
-      "lethality": 5
+      "speed": 85,
+      "weaponry": 45,
+      "special": 78,
+      "lethality": 40
     },
-    "diet_type": "omnivore",
-    "diet_items": ["côn trùng", "giun đất", "ốc sên", "hạt cây", "ếch nhỏ"],
+    "ai_p4p_score": 48,
+    "ai_tier": "C"
+  },
+  {
+    "id": "common-kingfisher",
+    "name": "Chim Bói Cá Thường",
+    "scientificName": "Alcedo atthis",
+    "taxonomy": {
+      "class": "Aves",
+      "order": "Coraciiformes",
+      "family": "Alcedinidae"
+    },
+    "realWeight": "35 - 46 g",
+    "size": "16 - 19 cm",
+    "characteristics": "Thân hình nhỏ gọn, đuôi ngắn, mỏ dài thẳng sắc nhọn như dao. Lông vùng lưng có màu xanh lam óng ánh rực rỡ, ngực và bụng màu cam sáng.",
+    "habitat": "Ven các sông hồ, ao suối nước ngọt, kênh rạch sạch sẽ và nhiều cá nhỏ.",
+    "location": "Phân bố rộng khắp châu Âu, châu Á và Bắc Phi.",
+    "survival_method": "Đậu yên lặng trên cành cây nhô ra mặt nước để rình mồi. Khi phát hiện cá, chúng lao thẳng đứng xuống nước với tốc độ cao, dùng chiếc mỏ kẹp chặt con mồi, bay ngược lên cành cây và đập mạnh cá vào cành cây để kết liễu trước khi nuốt.",
+    "unique_traits": "Cú lao xuống nước Plunge-diving siêu thanh (40 km/h) không tạo bọt hay tiếng động lớn. Đôi mắt sở hữu hai hố thị giác (foveae) giúp tự động bù trừ khúc xạ ánh sáng khi chuyển từ không khí sang nước. Chiếc mỏ hình nêm đặc biệt giảm lực cản không khí và nước tối đa.",
+    "shortDescription": "Cú plunge-dive săn mồi 40 km/h không tạo sóng động. Mắt bù khúc xạ ánh sáng nước siêu việt.",
+    "description": "Chim Bói Cá Thường là hiện thân của sự chính xác vật lý học trong tự nhiên. Với cấu trúc cơ thể tối ưu hóa cho việc chuyển đổi môi trường từ không khí sang nước, chúng có thể săn cá nhỏ ở độ sâu tới 1 mét. Chiếc mỏ của bói cá có hình nêm nhọn dần, cho phép chia tách nước mượt mà mà không tạo ra sóng xung kích làm cá giật mình hay cản tốc độ bay. Đôi mắt của chúng được bảo vệ bởi một màng nhầy trong suốt (nictitating membrane) đóng vai trò như kính bơi khi ở dưới nước.",
+    "strengths": [
+      "Cú lao bổ nhào tốc độ cực cao với lực xuyên phá nước tuyệt vời",
+      "Thị giác kép chuyển đổi tiêu cự chính xác tuyệt đối giữa hai môi trường khúc xạ",
+      "Mỏ siêu cứng dài nhọn như lưỡi giáo, giữ mồi trơn trượt cực kỳ chắc",
+      "Bộ lông phủ dầu chống thấm nước giúp cơ thể không bị nặng khi bay lên"
+    ],
+    "weaknesses": [
+      "Lực chiến đấu cận chiến yếu, cơ xương mỏng manh dễ tổn thương nếu va vào đá dưới nước",
+      "Phụ thuộc hoàn toàn vào nguồn nước trong sạch để nhìn thấy mồi, không thể săn mồi ở nước đục",
+      "Thời tiết mùa đông băng giá đóng băng bề mặt sông hồ có thể khiến chúng bị chết đói"
+    ],
+    "funFacts": [
+      "Thiết kế mũi của tàu cao tốc Shinkansen dòng 500 nổi tiếng của Nhật Bản được mô phỏng trực tiếp từ hình dáng chiếc mỏ của chim bói cá để giảm tiếng ồn và sức cản không khí khi tàu chui qua hầm",
+      "Sau khi nuốt cá, chim bói cá sẽ nôn ra các viên thức ăn không tiêu hóa được bao gồm xương cá và vảy cá",
+      "Chúng là loài có tính lãnh thổ cực kỳ cao, một con bói cá sẽ bảo vệ nghiêm ngặt đoạn sông dài khoảng 1-2 km và sẵn sàng tấn công bất kỳ con bói cá nào khác xâm phạm"
+    ],
+    "sources": [
+      {
+        "url": "https://www.iucnredlist.org/species/22683027/89575922",
+        "label": "IUCN Red List - Common Kingfisher (Alcedo atthis)"
+      },
+      {
+        "url": "https://doi.org/10.1242/jeb.02345",
+        "label": "Journal of Experimental Biology - Aerodynamics and hydrodynamics of kingfisher plunge-dive"
+      }
+    ],
+    "imageColor": "#008080",
+    "diet_type": "carnivore",
+    "diet_items": [
+      "cá nhỏ",
+      "côn trùng nước",
+      "nòng nọc",
+      "tôm nhỏ"
+    ],
     "activity_pattern": "diurnal",
-    "lifespan_min": 15,
-    "lifespan_max": 30,
+    "lifespan_min": 5,
+    "lifespan_max": 15,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Mùa sinh sản từ tháng 5 đến tháng 8. Con mái tự làm tổ hình vòm bằng cành cây và rêu trên đất hoặc vách đá, đẻ duy nhất 1 trứng và một mình ấp và nuôi con.",
-    "locomotion": "hybrid",
-    "speed_max": 15.0,
+    "reproduction_notes": "Đào hang sâu khoảng 0.5 - 1 mét bên các vách đất bờ sông để làm tổ. Cả chim bố và mẹ thay phiên nhau ấp trứng từ 19-21 ngày và cùng nuôi con.",
+    "locomotion": "fly",
+    "speed_max": 40.0,
     "conservation_status": "LC",
-    "size_min_mm": 800,
-    "size_max_mm": 1000,
-    "weight_avg_g": 950
+    "size_min_mm": 160.0,
+    "size_max_mm": 190.0,
+    "weight_avg_g": 40.0,
+    "stats": {
+      "strength": 25,
+      "durability": 30,
+      "speed": 75,
+      "weaponry": 68,
+      "special": 82,
+      "lethality": 65
+    },
+    "ai_p4p_score": 45,
+    "ai_tier": "C"
   }
 ]
