@@ -3314,6 +3314,176 @@ async function runEnrichment() {
           ]
         }
       ]
+    },
+    "olm": {
+      creature_id: "olm",
+      title: "Nếu Cá Manh Giông (Olm) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-olm-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi Cá Manh Giông (Proteus anguinus) đạt kích thước con người 80kg trong môi trường hang động karst tối tăm.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cảm biến điện trường siêu cấp và nhịn đói thế kỷ)",
+          slug: "olm-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Đạt chiều dài 3.97 mét, cảm nhận điện trường siêu việt từ khoảng cách 150 mét và nhịn ăn suốt 30-40 năm.",
+          content: "Khi phóng to lên 80kg (tăng khối lượng ~4.000 lần, chiều dài đạt 3.97 mét):\n- Hệ thống cảm biến điện thế khuếch đại: Cơ quan đường bên và các bóng Lorenzin đặc hữu trên da đầu tăng số lượng lên gấp hàng trăm lần. Lực thu nhận điện trường tăng theo diện tích bề mặt (lambda^2 ≈ 252), cho phép cảm nhận các xung điện thế nhỏ dưới 0.1 microvolt từ khoảng cách 150 mét.\n- Tiết kiệm năng lượng siêu đẳng: Ở kích thước 80kg, tỷ lệ chuyển hóa cơ bản giảm cực mạnh theo định luật Kleiber (M^-1/4). Olm khổng lồ tiêu thụ năng lượng chậm hơn 8 lần trên mỗi kg so với nguyên bản, cho phép nó nhịn đói từ 30 đến 40 năm trong trạng thái bất động hoàn toàn dưới hang ngầm tối.\n- Khả năng tự tiêu mô hoàn hảo: Khi cạn kiệt thức ăn, cơ thể tự hấp thụ mô liên kết và mỡ tích trữ, duy trì các cơ quan sống trọng yếu mà không gây thoái hóa cơ hay suy giảm chức năng vận động.",
+          formulas_and_data: {
+            scaling_factor: 4000,
+            mass_kg_original: 0.02,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Chiều dài phóng to theo khối lượng",
+                equation: "L_scaled = L_original * (M_scaled / M_original)^(1/3)",
+                result: "~3.97 m"
+              },
+              {
+                name: "Tần số chuyển hóa năng lượng Kleiber",
+                equation: "Metabolic_Rate_Ratio = (M_scaled / M_original)^(-1/4)",
+                result: "~0.125 (tiết kiệm năng lượng gấp 8 lần per kg)"
+              }
+            ]
+          },
+          p4p_score_scaled: 72,
+          tier_scaled: "B",
+          sources: [
+            { label: "Metabolic rate and starvation tolerance in cave-dwelling amphibians", url: "https://doi.org/10.1002/jez.1402800204" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự ngạt thở qua da và sụp đổ khung xương sụn)",
+          slug: "olm-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Diện tích da trao đổi oxy giảm 16 lần dẫn tới ngạt thở cấp tính, hệ thống xương sụn mềm yếu bị trọng lực nghiền nát.",
+          content: "Trong môi trường thực tế, một con Kỳ Nhông/Kỳ Giông Olm nặng 80kg sẽ ngay lập tức đối mặt với tử vong:\n- Khủng hoảng hô hấp qua da: Olm hô hấp chủ yếu qua làn da mỏng và bộ mang ngoài lông vũ nhỏ. Khi phóng to 4.000 lần, tỷ lệ diện tích bề mặt trên thể tích (S/V) giảm tới 15.87 lần. Lượng oxy khuếch tán qua da không thể đáp ứng 10% nhu cầu hô hấp của cơ thể 80kg, gây ngạt thở cấp tính trong vòng vài phút.\n- Sụp đổ cấu trúc cơ học: Hệ xương of Olm chủ yếu là sụn và các xương mảnh, chi cực kỳ nhỏ yếu. Dưới tác dụng của trọng lực ở khối lượng 80kg, khung xương sụn mềm sẽ bị bẻ gãy, cơ thể thon dài 4m bị đè bẹt dưới sức nặng của chính nó, gây dập nát cơ quan nội tạng.\n- Sự sụp đổ của mang ngoài: Đưa lên cạn hoặc trong nước tĩnh, bộ mang ngoài mảnh mai dài màu đỏ sẽ bị xẹp lại do mất lực nổi của nước, làm giảm 95% hiệu suất hấp thụ oxy.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Sụt giảm tỷ lệ diện tích trao đổi khí trên thể tích (S/V)",
+                issue: "Tỷ lệ S/V giảm 93.7%, da không thể hấp thụ đủ oxy để duy trì hoạt động trao đổi chất cơ bản."
+              },
+              {
+                type: "Áp lực trọng lực lên khung xương sụn",
+                issue: "Trọng tải tăng 4.000 lần trong khi tiết diện xương chỉ tăng 252 lần, vượt quá giới hạn bền uốn của xương sụn sọ và chi gấp 16 lần."
+              }
+            ]
+          },
+          p4p_score_scaled: 12,
+          tier_scaled: "D",
+          sources: [
+            { label: "Cutaneous respiration and the limitations of size in caudate amphibians", url: "https://doi.org/10.1086/physzool.55.4.30158462" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Quái long mù hang động với hệ xương gia cốt hóa)",
+          slug: "olm-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Hệ thống xương cốt hóa hoàn toàn giống loài lưỡng cư cổ đại, phổi phát triển với các vách ngăn hô hấp chủ động, da dày chứa sắc tố bảo vệ.",
+          content: "Để sinh tồn và thống trị các hang ngầm dưới lòng đất ở kích thước 80kg:\n- Cốt hóa xương hoàn toàn (Full Ossification): Thay thế toàn bộ hệ thống sụn bằng xương đặc chắc khỏe, các chi phát triển các khớp sụn chịu lực giống như loài lưỡng cư cổ đại *Acanthostega*, nâng đỡ cơ thể dài 4m trườn bò dũng mãnh.\n- Phổi vách ngăn hoạt động chủ động (Active Alveolar Lungs): Phổi thoái hóa tiến hóa trở lại thành phổi có túi phế nang phân nhánh phức tạp, kết hợp cơ hoành thô sơ co bóp hút khí chủ động để thay thế hoàn toàn hô hấp qua da.\n- Radar điện từ chủ động (Active Electrolocation): Tiến hóa tuyến phát điện nhỏ dọc hai bên hông tạo ra trường điện yếu xung quanh cơ thể, kết hợp với các thụ thể điện siêu nhạy ở đầu để lập bản đồ 3D thời gian thực của hang tối bất kể độ đục của nước.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Tái tiến hóa phổi phế nang",
+                benefit: "Tăng diện tích trao đổi khí lên 1.2 m2, duy trì lượng oxy trong máu đạt 92% trong nước hang nghèo oxy."
+              },
+              {
+                type: "Hệ thống xương đùi và bả vai gia cố",
+                benefit: "Chịu được mô-men xoắn uốn 85 N.m, cho phép bò trườn tự do qua các tầng đá hang karst."
+              }
+            ]
+          },
+          p4p_score_scaled: 78,
+          tier_scaled: "A",
+          sources: [
+            { label: "Evolutionary transitions in early tetrapods and structural ossification", url: "https://doi.org/10.1038/nature05790" }
+          ]
+        }
+      ]
+    },
+    "wood-frog": {
+      creature_id: "wood-frog",
+      title: "Nếu Ếch Gỗ Bắc Mỹ phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-ech-go-bac-my-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích giả thuyết khi loài ếch gỗ sở hữu siêu năng lực đóng băng cơ thể sống sót qua mùa đông âm độ đạt kích cỡ của một con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (The Cryo-Leaper)",
+          slug: "ech-go-bac-my-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Cú bật nhảy cao 14 mét vượt mọi chướng ngại vật và cú va chạm đạp vỡ kính cường lực.",
+          content: "Khi Ếch Gỗ Bắc Mỹ đạt khối lượng 80kg (phóng to cơ học tuyến tính hoàn hảo):\n- Tỉ lệ cơ đùi cực đại của loài ếch cho phép nó giải phóng lực bật nhảy khổng lồ. Ở kích thước 80kg, chiều dài đùi sau đạt khoảng 90cm. Nhờ gia tốc cất cánh 40G, lực đẩy đùi đạt tới 32,000 N, đẩy sinh vật lên độ cao 14 mét và xa tới 25 mét chỉ sau một cú bật nhảy bùng nổ.\n- Cơ chế bảo vệ lạnh tự nhiên cho phép nó chịu được những cú sốc lạnh đột ngột, đóng băng toàn bộ cơ thể trong thời gian ngắn mà không gây tổn hại cho mô cơ hay dây thần kinh hoạt động nhạy bén.",
+          formulas_and_data: {
+            scaling_factor: 5333,
+            mass_kg_original: 0.015,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Chiều dài đùi sau phóng to",
+                equation: "L_scaled = L_original * (M_scaled / M_original)^(1/3)",
+                result: "~0.9m"
+              },
+              {
+                name: "Động năng bật nhảy bùng nổ",
+                equation: "E_jump = F_average * d_takeoff",
+                result: "~11,000 Joules"
+              }
+            ]
+          },
+          p4p_score_scaled: 86,
+          tier_scaled: "A",
+          sources: [
+            { label: "Frog jumping biomechanics and power amplification", url: "https://doi.org/10.1242/jeb.00921" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (The Crystal Shatter)",
+          slug: "ech-go-bac-my-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Chết do tinh thể băng lớn xé rách tế bào khi đông cứng quá chậm, và xương đùi gãy vụn khi hạ cánh.",
+          content: "Trong thực tế vật lý sinh học:\n- Khủng hoảng đóng băng chậm (Heat dissipation crisis): Thời gian làm lạnh và truyền nhiệt từ lõi cơ thể ra môi trường tỉ lệ nghịch với diện tích bề mặt trên thể tích (S/V). Với khối lượng 80kg (tăng 5333 lần), tỷ lệ S/V giảm hơn 17 lần. Quá trình đông lạnh lõi cơ thể kéo dài hàng chục giờ thay vì vài chục phút. Sự làm lạnh quá chậm này dẫn tới hiện tượng macro-crystallization (tinh thể băng ngoại bào phát triển quá to), đâm thủng vách tế bào, phá hủy hoàn toàn mạch máu và các cơ quan nội tạng.\n- Giới hạn chịu lực xương: Khi rơi từ độ cao nhảy 14 mét xuống đất, lực tác động va chạm đạt hơn 50,000 N. Xương đùi ếch mỏng không có tủy xương chịu lực nén cao sẽ gãy vụn ngay lập tức khi hạ cánh.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Tốc độ đông đặc và tinh thể băng",
+                issue: "Thời gian đóng băng lõi tăng từ 2 giờ lên 34 giờ, gây phá hủy tế bào do tinh thể băng khổng lồ."
+              },
+              {
+                type: "Sức bền xương amphibians",
+                issue: "Ứng suất nén của xương rỗng vượt quá giới hạn bền uốn 120 MPa khi tiếp đất."
+              }
+            ]
+          },
+          p4p_score_scaled: 15,
+          tier_scaled: "D",
+          sources: [
+            { label: "Cryobiology and thermal properties of freeze-tolerant frogs", url: "https://doi.org/10.1152/ajpregu.1999.276.6.R1460" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (The Cryo-Stasis Knight)",
+          slug: "ech-go-bac-my-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Hệ thống mạch máu xương gia cố, protein chống đông máu điều khiển tinh thể băng, và mô cơ hấp thụ xung lực.",
+          content: "Để sinh tồn ở kích thước 80kg, Ếch Gỗ Bắc Mỹ tiến hóa các đột biến thích nghi sau:\n- Protein kiểm soát băng (Ice-Structuring Proteins - ISPs): Tiết ra lượng lớn ISPs siêu hoạt tính liên kết chặt chẽ vào bề mặt các hạt đá sơ khởi, giữ kích thước tinh thể băng luôn dưới 10 micromet (micro-crystallization) bất kể tốc độ làm lạnh chậm.\n- Xương xốp đặc hóa (Vascularized Trabecular Bones): Cấu trúc xương chi được gia cố bằng các thớ xương xốp ngập khoáng chất canxi phosphat tăng khả năng chịu nén ngang ngửa động vật có vú.\n- Hệ thống đệm nước nội bào (Aquaporin-Hydrogel): Màng tế bào tăng lượng Aquaporin loại mới kết hợp với hydrogel sinh học làm chậm quá trình đông đá tế bào, duy trì khả năng phục hồi thần kinh nhanh chóng.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Protein định hình tinh thể băng",
+                benefit: "Duy trì kích thước tinh thể băng dưới 10 micromet, loại bỏ hoàn toàn tổn thương cơ học tế bào."
+              },
+              {
+                type: "Cấu trúc xương đặc hóa",
+                benefit: "Tăng giới hạn chịu ứng suất nén của xương lên 210 MPa, hấp thụ lực hạ cánh an toàn."
+              }
+            ]
+          },
+          p4p_score_scaled: 78,
+          tier_scaled: "B",
+          sources: [
+            { label: "Aquaporins and ice nucleation in freeze-tolerant vertebrates", url: "https://doi.org/10.1016/j.cryobiol.2015.08.003" }
+          ]
+        }
+      ]
     }
   };
 
