@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 
 interface CreatureGalleryProps {
   images?: string[];
@@ -45,13 +46,23 @@ export default function CreatureGallery({ images, tierColor }: CreatureGalleryPr
             style={{ borderColor: "var(--border)" }}
             onClick={() => setSelectedImage(img)}
           >
-            <CldImage
-              src={img}
-              alt={`Archive Image ${i + 1}`}
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-110"
-              sizes="(max-width: 768px) 50vw, 33vw"
-            />
+            {img.startsWith("/") || img.startsWith("http") ? (
+              <Image
+                src={img}
+                alt={`Archive Image ${i + 1}`}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                sizes="(max-width: 768px) 50vw, 33vw"
+              />
+            ) : (
+              <CldImage
+                src={img}
+                alt={`Archive Image ${i + 1}`}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                sizes="(max-width: 768px) 50vw, 33vw"
+              />
+            )}
             {/* Hover overlay with crosshair */}
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={tierColor} strokeWidth="1.5">
@@ -69,13 +80,23 @@ export default function CreatureGallery({ images, tierColor }: CreatureGalleryPr
           onClick={() => setSelectedImage(null)}
         >
           <div className="relative w-full h-full max-w-6xl max-h-[85vh] flex items-center justify-center border" style={{ borderColor: tierColor }}>
-            <CldImage
-              src={selectedImage}
-              alt="Enlarged Archive Image"
-              fill
-              className="object-contain"
-              sizes="100vw"
-            />
+            {selectedImage.startsWith("/") || selectedImage.startsWith("http") ? (
+              <Image
+                src={selectedImage}
+                alt="Enlarged Archive Image"
+                fill
+                className="object-contain"
+                sizes="100vw"
+              />
+            ) : (
+              <CldImage
+                src={selectedImage}
+                alt="Enlarged Archive Image"
+                fill
+                className="object-contain"
+                sizes="100vw"
+              />
+            )}
             {/* Close button */}
             <button 
               className="absolute top-4 right-4 text-[var(--text-muted)] hover:text-white font-mono text-sm tracking-widest z-50 px-3 py-1 border border-[var(--border)] bg-black/50 transition-colors"
