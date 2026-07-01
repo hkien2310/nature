@@ -11,10 +11,16 @@ export const dynamic = "force-dynamic";
 
 export async function GET(req: NextRequest) {
   try {
+    const apiKey = req.headers.get("x-api-key");
+    const expectedKey = process.env.API_SECRET_KEY || "bioforce_secret_key_2026";
+    if (!apiKey || apiKey !== expectedKey) {
+      return NextResponse.json({ success: false, error: "Unauthorized: Invalid or missing API key." }, { status: 401 });
+    }
+
     // 1. Fetch creatures from database
     const { data, error } = await supabase
       .from("creatures")
-      .select("id, name, scientific_name, characteristics, unique_traits, p4p_score, images");
+      .select("id, name, scientific_name, characteristics, unique_traits, ai_p4p_score, images");
 
     if (error) {
       throw error;
@@ -36,8 +42,8 @@ export async function GET(req: NextRequest) {
       }
 
       // Tie-breaker: Highest p4p_score
-      const aScore = a.p4p_score || 0;
-      const bScore = b.p4p_score || 0;
+      const aScore = a.ai_p4p_score || 0;
+      const bScore = b.ai_p4p_score || 0;
       return bScore - aScore; // Descending
     });
 

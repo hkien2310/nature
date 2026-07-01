@@ -41,6 +41,7 @@ export interface DbCreature {
   grading_count?: number;
   ai_p4p_score?: number;
   ai_tier?: string;
+  images?: string[];
   created_at: string;
 }
 
@@ -227,6 +228,7 @@ export async function getDBCreatures(): Promise<Creature[]> {
         gradingCount: dbc.grading_count || 0,
         aiP4pScore: dbc.ai_p4p_score || 50,
         aiTier: (dbc.ai_tier || "C") as Tier,
+        images: dbc.images || undefined,
       };
     });
   } catch (err) {

@@ -5,7 +5,8 @@ Khi nhận được yêu cầu `"Làm giàu dữ liệu ảnh"`, AI sẽ tự đ
 ### Các Bước Thực Hiện:
 1. **Tìm mục tiêu ưu tiên**: 
    - Gọi API GET tới: `http://localhost:3000/api/admin/cloudinary/targets`
-   - API này sẽ tự động phân tích Database và trả về 1 sinh vật (ưu tiên con có ít ảnh nhất. Nếu số ảnh bằng nhau, ưu tiên con có điểm `p4p_score` cao nhất).
+   - Kèm theo header: `x-api-key: bioforce_secret_key_2026`
+   - API này sẽ tự động phân tích Database và trả về 1 sinh vật (ưu tiên con có ít ảnh nhất. Nếu số ảnh bằng nhau, ưu tiên con có điểm `ai_p4p_score` cao nhất).
    - Đọc thông tin trả về (Tên, Ngoại hình, Đặc điểm) để làm nguyên liệu vẽ ảnh.
 
 2. **Sinh ảnh (Generate Images)**: 
@@ -16,9 +17,10 @@ Khi nhận được yêu cầu `"Làm giàu dữ liệu ảnh"`, AI sẽ tự đ
 
 3. **Upload ảnh lên Cloudinary**:
    - Sau khi tạo xong 5 ảnh, các ảnh sẽ được lưu trữ vật lý trong thư mục `artifacts` (workspace).
-   - Sử dụng lệnh `curl` gửi từng file này lên API Upload của chúng ta. Ví dụ:
+   - Sử dụng lệnh `curl` gửi từng file này lên API Upload của chúng ta. Chú ý truyền Header bảo mật. Ví dụ:
      ```bash
      curl -X POST http://localhost:3000/api/admin/cloudinary/upload \
+       -H "x-api-key: bioforce_secret_key_2026" \
        -F "file=@/đường/dẫn/tuyệt/đối/tới/file_ảnh_01.png" \
        -F "folder=creatures"
      ```

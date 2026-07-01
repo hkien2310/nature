@@ -26,7 +26,7 @@ if (!supabaseUrl || !supabaseAnonKey) {
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 async function run() {
-  const ids = ["ribbon-eel", "rove-beetle", "saltwater-crocodile", "sand-tiger-shark", "sarcastic-fringehead"];
+  const ids = ["glass-frog", "superb-lyrebird", "trap-jaw-ant", "desert-locust", "helmeted-hornbill"];
   const { data, error } = await supabase
     .from("creatures")
     .select("id, name, diet_type, diet_items, activity_pattern, lifespan_min, lifespan_max, lifespan_unit, reproduction_type, reproduction_notes, locomotion, speed_max, conservation_status, size_min_mm, size_max_mm, weight_avg_g")
