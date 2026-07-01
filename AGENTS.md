@@ -302,7 +302,7 @@ Khi nhận được các câu lệnh sau, AI bắt buộc phải đọc hướng
 - Lệnh `"Chấm điểm P4P"`: Tự động hiệu chuẩn P4P và cập nhật xếp hạng cho 5 sinh vật. Đọc [grade-p4p.md](file:///Users/hoangkien/Youtube/svh/docs/automations/grade-p4p.md).
 - Lệnh `"Làm giàu What-If"`: Tự động tạo kịch bản câu hỏi/câu trả lời giả thuyết cho 3 sinh vật. Đọc [what-if.md](file:///Users/hoangkien/Youtube/svh/docs/automations/what-if.md).
 - Lệnh `"Làm giàu Ghép Gen"`: Tự động lai ghép gen sinh vật vào người cho 3 sinh vật. Đọc [human-splice.md](file:///Users/hoangkien/Youtube/svh/docs/automations/human-splice.md).
-
+- Lệnh `"Làm giàu dữ liệu ảnh"`: Tự động sinh và cập nhật 5 ảnh minh họa cho sinh vật thiếu ảnh. Đọc [enrich-images.md](file:///Users/hoangkien/Youtube/svh/docs/automations/enrich-images.md).
 
 
 

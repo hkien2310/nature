@@ -56,6 +56,7 @@ export interface Creature {
   aiTier?: Tier;
   communityP4pScore?: number;
   communityTier?: Tier;
+  images?: string[]; // Array of Cloudinary Public IDs or URLs for the gallery
 }
 
 export const creatures: Creature[] = [
@@ -122,7 +123,8 @@ export const creatures: Creature[] = [
     conservation_status: "LC",
     size_min_mm: 18,
     size_max_mm: 30,
-    weight_avg_g: 0.05
+    weight_avg_g: 0.05,
+    images: ["cld-sample-2", "cld-sample-3", "cld-sample-4"],
   },
   {
     id: "mantis-shrimp",

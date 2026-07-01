@@ -5,8 +5,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import WhatIfSection from "@/components/WhatIfSection";
 import HumanSpliceSection from "@/components/HumanSpliceSection";
-
-
+import CreatureGallery from "@/components/CreatureGallery";
 
 export const dynamic = "force-dynamic";
 
@@ -361,6 +360,9 @@ export default async function CreatureProfilePage({ params }: Props) {
               </div>
             </div>
           </div>
+
+          {/* Gallery */}
+          <CreatureGallery images={creature.images} tierColor={tierColor} />
 
           {/* Strengths & Weaknesses */}
           <div className="grid sm:grid-cols-2 gap-6">
