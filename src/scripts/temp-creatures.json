@@ -1,206 +1,223 @@
 [
   {
-    "id": "pelican-eel",
-    "name": "Cá Chình Bồ Nông",
-    "scientificName": "Eurypharynx pelecanoides",
+    "id": "atlas-moth",
+    "name": "Ngài Tằm Vũ Trụ",
+    "scientificName": "Attacus atlas",
     "taxonomy": {
-      "class": "Actinopterygii",
-      "order": "Saccopharyngiformes",
-      "family": "Eurypharyngidae"
+      "class": "Insecta",
+      "order": "Lepidoptera",
+      "family": "Saturniidae"
     },
-    "realWeight": "~0.1 - 0.5 kg",
-    "size": "60 - 100 cm",
-    "characteristics": "Thân hình thon dài màu đen bóng, mắt rất nhỏ nằm gần mõm. Điểm đặc trưng nhất là cái miệng khổng lồ có khớp nối linh hoạt gấp nhiều lần thể tích cơ thể, có thể phồng to như miệng bồ nông nhờ màng da co giãn ở hàm dưới. Đuôi dài mỏng, kết thúc bằng một cơ quan phát sáng (photophore) màu đỏ hồng rực rỡ.",
-    "habitat": "Vùng biển sâu thẳm (vùng trung hải và hạ hải) từ 500m đến 3000m, nơi hoàn toàn không có ánh sáng mặt trời.",
-    "location": "Các vùng biển nhiệt đới và ôn đới trên toàn cầu.",
-    "survival_method": "Sống trôi nổi thụ động trong lòng đại dương sâu. Chúng sử dụng cơ quan phát sáng hồng ở đuôi như một chiếc mồi nhử để thu hút các loài tôm, cá nhỏ tò mò đến gần. Khi con mồi lọt vào phạm vi, cá chình đột ngột há cái miệng khổng lồ của mình để xúc trọn con mồi và một lượng nước lớn, sau đó đẩy nước qua mang rồi nuốt chửng.",
-    "unique_traits": "Miệng khổng lồ có thể nuốt con mồi lớn hơn cả chính nó nhờ hàm dưới cực kỳ giãn nở và dạ dày có khả năng co giãn lớn. Chiếc đuôi có khả năng phát ra ánh sáng hồng đỏ độc đáo để nhử mồi trong đêm tối đại dương.",
-    "shortDescription": "Cái miệng khổng lồ phồng to như bồ nông. Đuôi phát sáng nhử mồi ở độ sâu 3.000m.",
-    "description": "Cá Chình Bồ Nông là một trong những sinh vật kỳ lạ nhất của biển sâu. Thân hình của chúng mỏng manh và yếu ớt, xương và cơ rất kém phát triển, nhưng chúng bù đắp điều đó bằng cơ chế săn mồi thụ động hiệu quả. Hàm của chúng chiếm tới 1/4 tổng chiều dài cơ thể, có thể mở rộng một cách đáng kinh ngạc để nuốt chửng bất kỳ con mồi nào trôi qua. Cơ quan phát quang sinh học ở đuôi đóng vai trò như ngọn hải đăng mời gọi con mồi trong bóng tối vĩnh cửu. Đây là một sự thích nghi hoàn hảo để sinh tồn trong môi trường khan hiếm thức ăn ở vực sâu.",
+    "realWeight": "~1 - 2.5 g",
+    "size": "Sải cánh 25 - 30 cm",
+    "characteristics": "Là một trong những loài bướm đêm lớn nhất thế giới xét về diện tích cánh (~400 cm²). Toàn thân phủ lông mịn màu đỏ gạch hoặc nâu. Điểm nổi bật nhất là phần đầu cánh có họa tiết uốn cong và có mắt giả trông giống hệt như đầu của một con rắn hổ mang đang bạnh cổ để đe dọa kẻ thù. Cánh trước và cánh sau đều có những khoảng trống hình tam giác trong suốt không có vảy cánh.",
+    "habitat": "Rừng nhiệt đới và cận nhiệt đới vùng đất thấp, cũng xuất hiện quanh các vườn cây ăn quả.",
+    "location": "Đông Nam Á, bao gồm Việt Nam, Ấn Độ, Trung Quốc và Indonesia.",
+    "survival_method": "Sống trốn tránh kẻ thù bằng cách ngụy trang hoàn hảo dưới tán lá rừng nhờ màu sắc giống như lá khô. Khi bị phát hiện, chúng mở rộng cánh và đung đưa nhẹ, mô phỏng hành vi của hai chiếc đầu rắn đang đe dọa. Ở giai đoạn ngài trưởng thành, chúng không thể ăn và chỉ tập trung tìm kiếm bạn đời trong vòng 1-2 tuần.",
+    "unique_traits": "Hai đầu cánh mô phỏng hoàn hảo đầu rắn độc để xua đuổi chim săn mồi. Hoàn toàn không có miệng hoặc hệ tiêu hóa chức năng ở dạng trưởng thành, chỉ sinh tồn dựa trên lượng mỡ dự trữ từ thời kỳ sâu bướm ăn lá.",
+    "shortDescription": "Sải cánh khổng lồ 30cm với hai đầu cánh giả đầu rắn độc. Hoàn toàn không có miệng.",
+    "description": "Ngài Tằm Vũ Trụ (Attacus atlas) là một kiệt tác tiến hóa tuyệt vời của thế giới côn trùng. Trái ngược hoàn toàn với kích thước đồ sộ và sải cánh khổng lồ, cuộc đời ở dạng ngài trưởng thành của chúng vô cùng ngắn ngủi và bi tráng. Không có bất kỳ cơ quan miệng nào để ăn uống, chúng dồn mọi năng lượng chỉ để bay đi tìm kiếm bạn đời bằng pheromone siêu nhạy bén. Đôi cánh có diện tích lớn nhất trong thế giới bướm không chỉ giúp chúng bay lượn mà còn là chiếc lá chắn phòng thủ chủ động với hình vẽ hai cái đầu rắn độc giống đến kinh ngạc ở phần đỉnh cánh, giúp xua đuổi hầu hết các loài chim ăn thịt tò mò.",
     "strengths": [
-      "Cái miệng siêu co giãn nuốt chửng con mồi lớn gấp nhiều lần đầu",
-      "Cơ quan phát quang ở đuôi dụ dỗ con mồi hiệu quả trong bóng tối hoàn toàn",
-      "Dạ dày co giãn cực đại giúp tiêu hóa những bữa ăn lớn bất ngờ",
-      "Tiêu tốn cực ít năng lượng nhờ lối sống trôi nổi thụ động"
+      "Diện tích sải cánh cực lớn tạo uy thế và lực nâng bay khỏe",
+      "Cánh giả đầu rắn độc ngụy trang và hù dọa động vật săn mồi cực tốt",
+      "Khứu giác anten của con đực cực nhạy, có thể phát hiện pheromone con cái cách xa vài km",
+      "Giai đoạn sâu ăn lá tích lũy năng lượng dự trữ khổng lồ"
     ],
     "weaknesses": [
-      "Cơ bắp và bộ xương thoái hóa trầm trọng khiến lực bơi và khả năng di chuyển rất yếu",
-      "Thị giác cực kém do mắt thoái hóa nhỏ bé",
-      "Rất dễ bị tổn thương vật lý do cơ thể mềm yếu không có vảy bảo vệ"
+      "Không có miệng hay hệ tiêu hóa nên không thể ăn, dẫn đến cái chết sinh học tất yếu sau 7-14 ngày",
+      "Bay khá chậm và vụng về do cơ thể nặng và cánh quá to cản gió",
+      "Rất dễ làm mồi cho dơi hoặc các loài săn mồi lớn hơn ban đêm"
     ],
     "funFacts": [
-      "Mặc dù có cái miệng khổng lồ, dạ dày của chúng khá nhỏ nên thức ăn chủ yếu là các sinh vật nhỏ như tôm giáp xác biển sâu, tuy nhiên khi cần thiết nó vẫn nuốt được cá lớn",
-      "Khi há miệng nuốt nước, đầu của nó phồng to ra giống như một quả bóng nước khổng lồ trước khi lọc nước ra ngoài",
-      "Các nhà khoa học phát hiện ra rằng chúng thường bơi ngửa hoặc bơi dọc để tận dụng đuôi phát sáng phía trước miệng nhằm dẫn dụ mồi trực tiếp vào miệng"
+      "Kén của Ngài Tằm Vũ Trụ lớn và dai đến mức ở một số vùng của Đài Loan, người ta thu hoạch chúng để làm những chiếc ví đựng tiền xu nhỏ",
+      "Cái tên 'Atlas' được đặt theo tên của vị thần khổng lồ nâng bầu trời trong thần thoại Hy Lạp do sải cánh khổng lồ của nó, hoặc do hoa văn trên cánh trông giống như một tấm bản đồ địa lý",
+      "Ở Việt Nam, loài ngài này nằm trong Sách Đỏ Việt Nam và được pháp luật bảo vệ nghiêm ngặt"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1111/j.1095-8649.2011.03102.x",
-        "label": "Journal of Fish Biology - Morphology and feeding ecology of Eurypharynx pelecanoides"
+        "url": "https://doi.org/10.1111/j.1469-7998.2007.00344.x",
+        "label": "Journal of Zoology - Flight morphology and energetics of giant Saturniid moths"
       },
       {
-        "url": "https://www.montereybayaquarium.org/animals/animals-a-to-z/gulper-eel",
-        "label": "Monterey Bay Aquarium - Gulper Eel Reference"
+        "url": "https://www.nhm.ac.uk/discover/atlas-moth-one-of-largest-insects-in-the-world.html",
+        "label": "Natural History Museum - Atlas Moth Discoveries"
       }
     ],
-    "imageColor": "#1A1D24",
+    "imageColor": "#A0522D",
     "stats": {
-      "strength": 25,
-      "durability": 30,
-      "speed": 35,
-      "weaponry": 75,
-      "special": 88,
-      "lethality": 65
-    },
-    "diet_type": "carnivore",
-    "diet_items": ["giáp xác biển sâu", "cá nhỏ", "mực biển sâu"],
-    "activity_pattern": "variable",
-    "lifespan_min": 5,
-    "lifespan_max": 10,
-    "lifespan_unit": "years",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Chúng đẻ trứng và thụ tinh ngoài. Sau khi trưởng thành sinh sản một lần duy nhất trong đời (semelparous), chúng sẽ kiệt sức rồi chết.",
-    "locomotion": "swim",
-    "speed_max": 2.0,
-    "conservation_status": "LC",
-    "size_min_mm": 600.0,
-    "size_max_mm": 1000.0,
-    "weight_avg_g": 300.0
-  },
-  {
-    "id": "sunda-pangolin",
-    "name": "Tê Tê Sunda",
-    "scientificName": "Manis javanica",
-    "taxonomy": {
-      "class": "Mammalia",
-      "order": "Pholidota",
-      "family": "Manidae"
-    },
-    "realWeight": "~5 - 12 kg",
-    "size": "85 - 120 cm",
-    "characteristics": "Toàn thân được bao phủ bởi các lớp vảy sừng kitin màu nâu xếp chồng lên nhau như mái ngói, ngoại trừ vùng bụng và mặt dưới. Đầu nhỏ thuôn nhọn, không có răng, lưỡi cực dài. Chân trước có móng vuốt lớn, cong và sắc nhọn để đào bới.",
-    "habitat": "Rừng rậm nhiệt đới, rừng thứ sinh, đồi cây bụi và các vườn cây ăn quả.",
-    "location": "Đông Nam Á bao gồm Việt Nam, Lào, Campuchia, Thái Lan, Malaysia và Indonesia.",
-    "survival_method": "Hoạt động đơn độc về đêm, leo trèo giỏi trên cây và đào hang dưới đất. Khi bị đe dọa, chúng cuộn tròn cơ thể thành một quả bóng vảy cứng không thể xuyên thủng để bảo vệ phần bụng mềm. Chúng dùng móng vuốt chân trước bới tổ kiến, tổ mối và thọc lưỡi dài đầy chất keo dính vào để ăn.",
-    "unique_traits": "Loài thú duy nhất trên thế giới có vảy keratin cứng bao phủ chiếm 20% trọng lượng cơ thể. Lưỡi dài tới 25 cm, gắn liền sâu tận xương chậu thay vì xương hàm. Có khả năng tiết ra chất dịch có mùi cực kỳ hôi thối từ tuyến hậu môn để xua đuổi kẻ thù.",
-    "shortDescription": "Bộ giáp vảy sừng keratin impenetrable. Lưỡi săn mồi dài gắn sâu tận xương chậu.",
-    "description": "Tê Tê Sunda là đại diện độc đáo của bộ Pholidota. Bộ vảy của chúng được làm từ keratin cứng (chất cấu tạo nên móng tay và tóc người) nhưng cực kỳ sắc bén ở phần rìa, đóng vai trò như một lá chắn cơ học vững chắc bảo vệ chúng trước móng vuốt của hổ hay báo. Miệng của tê tê hoàn toàn không có răng, bù lại dạ dày của chúng có cấu trúc cơ bắp chắc khỏe chứa các sỏi nhỏ ăn kèm để nghiền nát côn trùng. Đây là loài động vật bị săn trộm và buôn bán trái phép nhiều nhất thế giới do những quan niệm sai lầm về y học cổ truyền.",
-    "strengths": [
-      "Bộ giáp vảy vạn năng chống chịu được các cú cắn và cào của thú săn mồi lớn",
-      "Móng vuốt trước cực khỏe để phá hủy kết cấu tổ mối đất kiên cố",
-      "Lưỡi siêu dài phủ chất dịch dính bắt hàng vạn kiến và mối trong tích tắc",
-      "Khả năng leo trèo và đu bám bằng đuôi rất điệu nghệ"
-    ],
-    "weaknesses": [
-      "Hoàn toàn không có khả năng tấn công chủ động (chỉ có thể phòng ngự thụ động)",
-      "Tốc độ di chuyển dưới đất khá chậm và vụng về",
-      "Thị lực và thính lực rất kém, phụ thuộc chủ yếu vào khứu giác"
-    ],
-    "funFacts": [
-      "Tê tê có thể đóng chặt tai và lỗ mũi lại bằng các van cơ đặc biệt để ngăn kiến và mối bò vào trong khi đang ăn",
-      "Tê tê con thường bám chặt trên đuôi mẹ để di chuyển cùng mẹ đi kiếm ăn vào ban đêm",
-      "Một con tê tê trưởng thành có thể tiêu thụ tới 70 triệu con côn trùng mỗi năm, đóng vai trò kiểm soát dịch hại tự nhiên cực kỳ quan trọng"
-    ],
-    "sources": [
-      {
-        "url": "https://doi.org/10.1016/B978-0-12-815507-3.00003-8",
-        "label": "Pangolins - Science, Society and Conservation: Sunda Pangolin"
-      },
-      {
-        "url": "https://www.iucnredlist.org/species/12763/123583998",
-        "label": "IUCN Red List - Manis javanica Conservation Status"
-      }
-    ],
-    "imageColor": "#8C7D70",
-    "stats": {
-      "strength": 45,
-      "durability": 90,
-      "speed": 40,
-      "weaponry": 35,
-      "special": 82,
+      "strength": 20,
+      "durability": 25,
+      "speed": 30,
+      "weaponry": 15,
+      "special": 95,
       "lethality": 10
     },
-    "diet_type": "carnivore",
-    "diet_items": ["kiến", "mối", "ấu trùng côn trùng"],
+    "diet_type": "herbivore",
+    "diet_items": [
+      "lá khế",
+      "lá ổi",
+      "lá cam",
+      "lá bưởi",
+      "lá quế"
+    ],
     "activity_pattern": "nocturnal",
-    "lifespan_min": 12,
-    "lifespan_max": 20,
-    "lifespan_unit": "years",
+    "lifespan_min": 7,
+    "lifespan_max": 14,
+    "lifespan_unit": "days",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Thời gian mang thai khoảng 130 - 150 ngày. Mỗi lứa chỉ đẻ một con duy nhất. Con non sinh ra có vảy mềm và sẽ cứng dần sau vài ngày.",
-    "locomotion": "hybrid",
-    "speed_max": 5.0,
-    "conservation_status": "CR",
-    "size_min_mm": 850.0,
-    "size_max_mm": 1200.0,
-    "weight_avg_g": 8500.0
+    "reproduction_notes": "Con cái tiết ra pheromone cực mạnh qua các tuyến đặc biệt ở cuối bụng để dẫn dụ con đực. Sau khi giao phối, con cái đẻ khoảng 150-300 quả trứng dưới mặt lá rồi chết.",
+    "locomotion": "fly",
+    "speed_max": 8.0,
+    "conservation_status": "EN",
+    "size_min_mm": 250.0,
+    "size_max_mm": 300.0,
+    "weight_avg_g": 1.8
   },
   {
-    "id": "comb-jelly",
-    "name": "Sứa Lược Cầu Vồng",
-    "scientificName": "Mnemiopsis leidyi",
+    "id": "amazon-river-dolphin",
+    "name": "Cá Heo Hồng Amazon",
+    "scientificName": "Inia geoffrensis",
     "taxonomy": {
-      "class": "Tentaculata",
-      "order": "Lobata",
-      "family": "Bolinopsidae"
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Iniidae"
     },
-    "realWeight": "~1 - 20 g",
-    "size": "7 - 12 cm",
-    "characteristics": "Cơ thể hình quả lê trong suốt chứa tới 97% là nước. Dọc thân có 8 hàng phiến lược (ctenes) cấu tạo từ hàng nghìn sợi lông rung (cilia) xếp liền nhau. Khi di chuyển, các phiến rung động khúc xạ ánh sáng tạo nên hiệu ứng dải màu cầu vồng lung linh chạy khắp cơ thể.",
-    "habitat": "Vùng nước biển khơi mở và các cửa sông ven bờ.",
-    "location": "Vùng biển Đại Tây Dương ven bờ Bắc và Nam Mỹ, hiện đã xâm lấn mạnh sang Địa Trung Hải và Biển Đen.",
-    "survival_method": "Trôi nổi tự do trong nước biển, sử dụng hai thùy cơ thể lớn để lướt đi nhẹ nhàng. Khi săn mồi, chúng xòe các thùy này tạo ra dòng nước nhẹ dẫn dụ động vật phù du vào miệng. Cơ thể chúng được bao phủ bởi các tế bào dính (colloblasts) để bắt con mồi thay vì dùng tế bào chích độc.",
-    "unique_traits": "Hiệu ứng khúc xạ ánh sáng cầu vồng rực rỡ từ các hàng lông rung di chuyển. Sở hữu hệ thống tiêu hóa đặc biệt với hậu môn tạm thời (transient anus) chỉ hình thành khi cần đào thải chất thải và biến mất hoàn toàn ngay sau đó. Có khả năng dung hợp hệ thần kinh và da thịt với cá thể cùng loài khác khi bị thương để tạo thành một sinh vật thống nhất.",
-    "shortDescription": "Lông rung khúc xạ cầu vồng lộng lẫy. Cơ chế hậu môn tạm thời và tự dung hợp cơ thể.",
-    "description": "Sứa Lược Cầu Vồng không phải là sứa thực sự (không thuộc ngành Sứa gai Cnidaria) mà thuộc ngành Sứa lược (Ctenophora). Chúng là loài săn mồi phù du vô cùng phàm ăn. Khả năng phát quang sinh học màu xanh lam tự tạo của chúng phối hợp với hiệu ứng khúc xạ cầu vồng cầu kỳ tạo nên một trong những màn trình diễn ánh sáng kỳ ảo nhất biển khơi. Đáng kinh ngạc hơn cả, các nghiên cứu sinh học gần đây chỉ ra chúng có khả năng dung hợp cơ thể với cá thể khác siêu tốc khi bị tổn thương, kết hợp mạch máu và hệ thần kinh mà không hề xảy ra hiện tượng đào thải miễn dịch.",
+    "realWeight": "~100 - 185 kg",
+    "size": "1.8 - 2.5 m",
+    "characteristics": "Cơ thể thuôn dài mập mạp với màu sắc đặc trưng thay đổi từ xám xanh khi còn trẻ sang hồng tươi rực rỡ khi trưởng thành. Chúng có chiếc mõm dài mỏng chứa khoảng 24-34 cặp răng ở mỗi bên hàm. Mắt rất nhỏ nhưng có thị lực khá tốt. Trán phồng to (melon) mềm chứa nhiều mỡ có thể thay đổi hình dạng. Không có vây lưng nhô cao mà thay vào đó là một cái gờ lưng thấp.",
+    "habitat": "Lưu vực các con sông nước ngọt lớn, kênh rạch, hồ nước và đặc biệt thích các khu rừng ngập nước trong mùa lũ.",
+    "location": "Lưu vực sông Amazon và Orinoco ở vùng Nam Mỹ (Brazil, Peru, Colombia, Venezuela, Ecuador, Bolivia).",
+    "survival_method": "Săn mồi đơn độc hoặc theo nhóm nhỏ. Chúng sử dụng hệ thống định vị bằng sóng siêu thanh (echolocation) cực kỳ tinh vi để phát hiện con mồi ẩn nấp trong các lớp bùn đất đáy sông hoặc giữa các gốc cây ngập nước. Chúng uốn lượn cơ thể luồn lách qua các cành cây ngập nước để bắt cá.",
+    "unique_traits": "Da chuyển màu hồng tươi rực rỡ do các mạch máu dưới da và sẹo từ các cuộc tranh giành lãnh thổ. Đốt sống cổ không bị dung hợp (khớp cổ linh hoạt) cho phép quay đầu 90 độ sang hai bên để luồn lách trong rừng cây ngập nước.",
+    "shortDescription": "Làn da hồng rực rỡ và khớp cổ linh hoạt quay đầu 90 độ giúp luồn lách săn mồi trong rừng ngập nước.",
+    "description": "Cá Heo Hồng Amazon (Boto) là loài cá heo nước ngọt lớn nhất thế giới và là biểu tượng huyền thoại của rừng già Amazon. Chúng có khả năng thích nghi phi thường để sinh tồn trong môi trường sông ngòi nhiều chướng ngại vật. Khác với cá heo biển có cổ cứng đơ để tối ưu khí động học bơi nhanh, Boto sở hữu đốt sống cổ linh hoạt, cho phép chúng xoay đầu tự do để định vị con mồi giữa các rễ cây chằng chịt. Làn da hồng của chúng là một đặc trưng độc đáo, kết quả của quá trình mài mòn da và lưu lượng máu tuần hoàn mạnh ở các mô sát bề mặt cơ thể.",
     "strengths": [
-      "Khả năng dung hợp cơ thể phục hồi tổn thương siêu tốc mà không bị đào thải",
-      "Các phiến lược lông rung giúp di chuyển êm ái không tạo tiếng động hay sóng nước",
-      "Tế bào dính Colloblasts giữ chặt mồi cực kỳ hiệu quả",
-      "Sinh sản cực nhanh với khả năng tự thụ tinh"
+      "Hệ thống định vị bằng sóng siêu thanh (sonar) cực kỳ nhạy bén trong nước đục",
+      "Khớp cổ linh hoạt quay 90 độ tối ưu khả năng cơ động ở chướng ngại vật",
+      "Bộ răng dị hình (răng trước để tóm mồi, răng sau để nghiền) xử lý được cả rùa và cua",
+      "Lực đẩy đuôi mạnh mẽ luồn lách cự ly hẹp"
     ],
     "weaknesses": [
-      "Cơ thể gelatin lỏng bỏng dễ bị rách và xé toạc bởi dòng nước xiết hoặc va chạm mạnh",
-      "Không có nọc độc tự vệ, dễ làm mồi cho sứa thực sự hoặc cá rùa biển",
-      "Lực bơi yếu, hoàn toàn phụ thuộc vào dòng hải lưu"
+      "Tốc độ bơi tối đa thấp hơn nhiều so với cá heo biển",
+      "Cơ thể mập mạp và vây ngực lớn dễ bị mắc cạn khi nước lũ rút nhanh",
+      "Thị lực bị hạn chế bởi làn nước đục ngầu chứa nhiều phù sa sông"
     ],
     "funFacts": [
-      "Khác với mọi sinh vật có xương sống và không xương sống khác có hậu môn vĩnh viễn, hậu môn của sứa lược chỉ mở ra khi tế bào da ở đuôi tách ra để chất thải thoát đi, sau đó vết rách tự vá lành lập tức",
-      "Đây là loài xâm lấn đáng sợ, sự xuất hiện của chúng ở Biển Đen vào những năm 1980 đã tàn phá các quần thể cá cơm địa phương do chúng cạnh tranh ăn hết động vật phù du",
-      "If you cut a comb jelly in half, each half can regenerate back into a complete individual within just a few days"
+      "Trong truyền thuyết bản địa Amazon, cá heo hồng là một sinh vật thần thoại có khả năng biến hình thành một chàng trai trẻ đẹp trai đội mũ (để che lỗ thở trên đầu) đi quyến rũ các cô gái trẻ vào ban đêm",
+      "Màu hồng của chúng đậm hơn ở con đực, vì chúng thường đánh nhau nhiều và tạo ra nhiều vết sẹo tích tụ, đồng thời kích thích tuần hoàn máu khi phấn khích",
+      "Chúng có thể sử dụng vây ngực độc lập để bơi lùi - một kỹ năng hiếm thấy ở các loài cá heo đại dương"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1126/science.1242688",
-        "label": "Science - The genome of the ctenophore Mnemiopsis leidyi"
+        "url": "https://doi.org/10.1111/j.1748-7692.2002.tb01084.x",
+        "label": "Marine Mammal Science - Home range and behavior of Boto in the Amazon river"
       },
       {
-        "url": "https://doi.org/10.1016/j.cub.2019.01.050",
-        "label": "Current Biology - The Transient Anus of Mnemiopsis leidyi"
+        "url": "https://www.worldwildlife.org/species/amazon-river-dolphin",
+        "label": "WWF - Amazon River Dolphin Species Profile"
       }
     ],
-    "imageColor": "#388E3C",
+    "imageColor": "#FFC0CB",
     "stats": {
-      "strength": 15,
-      "durability": 35,
-      "speed": 45,
-      "weaponry": 40,
-      "special": 92,
-      "lethality": 25
+      "strength": 55,
+      "durability": 60,
+      "speed": 50,
+      "weaponry": 45,
+      "special": 85,
+      "lethality": 40
     },
     "diet_type": "carnivore",
-    "diet_items": ["động vật phù du", "giáp xác nhỏ", "trứng cá", "ấu trùng nhuyễn thể"],
-    "activity_pattern": "variable",
-    "lifespan_min": 2,
-    "lifespan_max": 6,
-    "lifespan_unit": "months",
-    "reproduction_type": "hermaphrodite",
-    "reproduction_notes": "Là động vật lưỡng tính đồng thời, có thể tự thụ tinh. Chúng giải phóng trứng và tinh trùng vào cột nước biển mỗi ngày, sinh sản hàng ngàn quả trứng trong điều kiện thuận lợi.",
+    "diet_items": [
+      "cá sông",
+      "cua nước ngọt",
+      "rùa nhỏ",
+      "cá piranha"
+    ],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 15,
+    "lifespan_max": 30,
+    "lifespan_unit": "years",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Thời gian mang thai kéo dài từ 10 - 11 tháng. Cá heo mẹ chỉ sinh một con duy nhất vào đầu mùa nước nổi và chăm sóc con non liên tục trong vòng 1-2 năm.",
     "locomotion": "swim",
-    "speed_max": 0.5,
-    "conservation_status": "LC",
-    "size_min_mm": 70.0,
-    "size_max_mm": 120.0,
-    "weight_avg_g": 10.0
+    "speed_max": 22.0,
+    "conservation_status": "EN",
+    "size_min_mm": 1800.0,
+    "size_max_mm": 2500.0,
+    "weight_avg_g": 142000.0
+  },
+  {
+    "id": "helmeted-hornbill",
+    "name": "Hồng Hoàng Mũ Cát",
+    "scientificName": "Rhinoplax vigil",
+    "taxonomy": {
+      "class": "Aves",
+      "order": "Bucerotiformes",
+      "family": "Bucerotidae"
+    },
+    "realWeight": "~2.5 - 3.1 kg",
+    "size": "1.1 - 1.2 m",
+    "characteristics": "Là loài hồng hoàng khổng lồ với bộ lông màu đen xám, bụng trắng, chiếc đuôi dài có hai sợi lông trung tâm nổi bật dài tới 1m. Điểm đặc trưng nhất là phần mũ sừng (casque) trên đỉnh mỏ lớn, phẳng ở phía trước. Không giống các loài hồng hoàng khác có mũ sừng rỗng xốp, mũ sừng của chúng là một khối keratin đặc, cứng như ngà voi, kéo dài từ trán đến giữa mỏ.",
+    "habitat": "Rừng nguyên sinh nhiệt đới thường xanh đất thấp, nơi có nhiều cây gỗ lớn cổ thụ để làm tổ.",
+    "location": "Đông Nam Á (Brunei, Indonesia, Malaysia, Myanmar và miền nam Thái Lan).",
+    "survival_method": "Sống chủ yếu trên tầng tán cao của rừng già. Chúng bay lượn tìm kiếm các cây vả cổ thụ đang chín quả. Khi cần tranh giành lãnh thổ hoặc bảo vệ bạn đời, các con đực thực hiện những cú lao trực diện từ trên cao và húc mũ sừng đặc vào nhau tạo ra tiếng va chạm khô khốc vang dội khắp rừng.",
+    "unique_traits": "Sở hữu chiếc mũ sừng (casque) bằng keratin đặc hoàn toàn, chiếm tới 10% trọng lượng cơ thể, cứng và nặng dùng làm vũ khí húc đầu. Tiếng kêu độc đáo bắt đầu bằng những tiếng 'cộc... cộc' chậm rãi rồi dồn dập và kết thúc bằng một chuỗi tiếng cười man dại chói tai.",
+    "shortDescription": "Chiếc mũ sừng keratin đặc như ngà voi chiếm 10% cơ thể. Vũ khí không chiến húc đầu sấm sét.",
+    "description": "Hồng Hoàng Mũ Cát (Rhinoplax vigil) là một trong những loài chim ấn tượng và đang bị đe dọa nghiêm trọng nhất hành tinh. Chúng sở hữu chiếc mũ sừng độc nhất vô nhị trong giới tự nhiên: một khối ngà sừng đặc làm từ chất keratin dày đặc chịu lực cực tốt. Khối sừng này là công cụ chiến đấu sinh tử của các con đực trong những màn không chiến húc đầu tốc độ cao đầy kịch tính để khẳng định vị thế. Đáng buồn thay, chính chiếc mũ sừng quý giá này (được gọi là ngà hồng hoàng, đắt hơn ngà voi gấp nhiều lần trên thị trường đen) đã khiến loài chim này trở thành mục tiêu săn lùng ráo riết của những kẻ buôn lậu.",
+    "strengths": [
+      "Mũ sừng đặc chịu lực cực tốt làm vũ khí húc đầu hủy diệt",
+      "Chiếc mỏ dài sắc bén hỗ trợ gắp quả và tự vệ cự ly gần",
+      "Đôi cánh lớn tạo lực bay và cơ động tốt trên tán rừng cao",
+      "Tiếng kêu vang dội truyền tín hiệu xa tới 2km"
+    ],
+    "weaknesses": [
+      "Khối lượng đầu lớn làm giảm độ linh hoạt khi quay đầu nhanh",
+      "Chế độ ăn phụ thuộc nặng nề vào các loài quả vả chín quanh năm",
+      "Chu kỳ sinh sản cực kỳ chậm và dễ bị tổn thương khi chim mẹ tự giam mình trong tổ đất"
+    ],
+    "funFacts": [
+      "Khác với ngà voi thật làm từ ngà răng cứng giòn, ngà hồng hoàng làm từ sừng keratin nên dẻo dai hơn, dễ chạm khắc các tác phẩm nghệ thuật tinh xảo hơn",
+      "Trong mùa sinh sản, chim cái sẽ tự giam mình trong hốc cây và dùng đất sét trộn phân bịt kín lối vào, chỉ để lại một khe hở nhỏ để chim đực mớm thức ăn. Nếu chim đực bị bắn chết, chim mẹ và con non chắc chắn sẽ chết đói bên trong",
+      "Tiếng kêu của chúng thường được người bản địa ví như tiếng cười của linh hồn rừng già do nhịp điệu tăng tốc li kì rùng rợn"
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1111/j.1474-919X.2012.01254.x",
+        "label": "Ibis - Ecology and conservation of the Helmeted Hornbill Rhinoplax vigil"
+      },
+      {
+        "url": "https://www.iucnredlist.org/species/22682464/184693766",
+        "label": "IUCN Red List - Rhinoplax vigil Conservation Status"
+      }
+    ],
+    "imageColor": "#D2B48C",
+    "stats": {
+      "strength": 40,
+      "durability": 70,
+      "speed": 45,
+      "weaponry": 65,
+      "special": 72,
+      "lethality": 35
+    },
+    "diet_type": "omnivore",
+    "diet_items": [
+      "quả vả",
+      "trái cây rừng",
+      "côn trùng nhỏ",
+      "thằn lằn nhỏ",
+      "sóc nhỏ"
+    ],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 20,
+    "lifespan_max": 35,
+    "lifespan_unit": "years",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Chúng là loài một vợ một chồng suốt đời. Chim mẹ đẻ 1-2 quả trứng trong hốc cây cao bịt kín bằng bùn. Quá trình ấp trứng và nuôi con kéo dài khoảng 5 tháng dưới sự mớm mồi của chim bố.",
+    "locomotion": "fly",
+    "speed_max": 35.0,
+    "conservation_status": "CR",
+    "size_min_mm": 1100.0,
+    "size_max_mm": 1200.0,
+    "weight_avg_g": 2800.0
   }
 ]
