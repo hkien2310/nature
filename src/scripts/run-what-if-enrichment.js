@@ -3341,6 +3341,10 @@ async function runEnrichment() {
         ans.slug = ans.slug.replace("sua-hop-uc-80kg", "australian-box-jellyfish-80kg");
       });
     }
+    if (!scenario && target.id === "blue-dragon-sea-slug" && whatIfScenarios["blue-dragon"]) {
+      scenario = JSON.parse(JSON.stringify(whatIfScenarios["blue-dragon"]));
+      scenario.creature_id = "blue-dragon-sea-slug";
+    }
     if (scenario) {
       whatIfData.push(scenario);
     } else {
