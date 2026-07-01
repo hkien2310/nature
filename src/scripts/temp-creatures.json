@@ -1,226 +1,206 @@
 [
   {
-    "id": "blue-dragon-sea-slug",
-    "name": "Sên Biển Rồng Xanh",
-    "scientificName": "Glaucus atlanticus",
+    "id": "peacock-mantis-shrimp",
+    "name": "Tôm Tít Peacock",
+    "scientificName": "Odontodactylus scyllarus",
     "taxonomy": {
-      "class": "Gastropoda",
-      "order": "Nudibranchia",
-      "family": "Glaucidae"
+      "class": "Malacostraca",
+      "order": "Stomatopoda",
+      "family": "Odontodactylidae"
     },
-    "realWeight": "~3 - 10 g",
-    "size": "3 - 4 cm",
-    "characteristics": "Thân dẹt thuôn dài với 6 chi phân nhánh xòe ra như đôi cánh của rồng (gọi là cerata) màu xanh lam đậm phối trắng bạc ở mặt bụng (hướng lên trên khi bơi) và màu bạc nhạt ở mặt lưng (hướng xuống dưới), tạo nên cơ chế ngụy trang đối bóng hoàn hảo trên bề mặt nước biển. Di chuyển trôi nổi ngược đầu nhờ bóng khí trong dạ dày.",
-    "habitat": "Trôi nổi trên bề mặt đại dương (vùng pelagic) ở các vùng biển nhiệt đới và cận nhiệt đới.",
-    "location": "Khắp các đại dương ôn đới và nhiệt đới trên thế giới, bao gồm cả vịnh Mexico, Ấn Độ Dương, Thái Bình Dương.",
-    "survival_method": "Sử dụng sức căng bề mặt để nổi và trôi dạt thụ động theo dòng hải lưu và gió. Đi săn các sinh vật trôi nổi có nọc độc cực mạnh như sứa lửa Bồ Đào Nha (Portuguese Man-of-War). Nhờ chất nhầy đặc biệt bảo vệ, chúng miễn nhiễm hoàn toàn với các tế bào chích có độc. Sau khi tiêu hóa sứa lửa, chúng thu thập các nematocysts (tế bào chích có độc) chưa bị kích hoạt và vận chuyển chúng qua các túi chuyên biệt đến đầu các ngón cerata để làm vũ khí tự vệ cực độc chống lại kẻ săn mồi.",
-    "unique_traits": "Khả năng cướp nọc độc (Nematocyst Sequestration): Tích lũy và cô đặc các tế bào chích của sứa lửa, tạo ra một đòn chích cực kỳ nguy hiểm, có độc lực mạnh hơn cả chính con sứa lửa mà nó ăn. Ngụy trang đối bóng ngược (Countershading camouflage): Do trôi nổi ngửa bụng lên trời, phần bụng màu xanh biển đậm giúp nó hòa mình vào màu nước biển tránh chim săn mồi từ trên cao, phần lưng màu bạc hướng xuống dưới giúp nó hòa lẫn với ánh sáng mặt trời phản chiếu qua mặt nước tránh kẻ săn mồi dưới biển sâu.",
-    "shortDescription": "Sát thủ tí hon cướp nọc độc sứa lửa Bồ Đào Nha, ngụy trang đối bóng ngược độc đáo.",
-    "description": "Sên Biển Rồng Xanh (Glaucus atlanticus) là một loài sên biển không vỏ đặc biệt, sống trôi nổi tự do trên bề mặt đại dương. Chúng có một túi khí trong dạ dày cho phép chúng nổi lên, nhưng do túi khí này nằm ở phía bụng, chúng phải bơi ở tư thế ngửa bụng. Đây là sinh vật đại diện cho cơ chế tiến hóa cướp vũ khí sinh học từ con mồi: chúng không tự sản sinh độc tố mà thu hoạch vũ khí từ chính những loài sứa độc nhất đại dương, chuyển hóa thành hệ thống tự vệ tối thượng của bản thân.",
+    "realWeight": "~100 - 200 g",
+    "size": "10 - 18 cm",
+    "characteristics": "Thân hình sặc sỡ đa sắc màu tựa như đuôi công, nổi bật với màu xanh lá cây rực rỡ xen kẽ đốm đỏ, xanh dương và cam. Sở hữu hai chiếc càng (nắm đấm) tiến hóa dạng chùy (smashers) cực khỏe ở phía trước ngực và cặp mắt kép nhô cao hoạt động độc lập.",
+    "habitat": "Các rạn san hô nông, hang đá và nền cát ở vùng biển nhiệt đới ấm áp.",
+    "location": "Vùng biển Ấn Độ Dương - Thái Bình Dương, từ đảo Guam đến Đông Phi.",
+    "survival_method": "Săn mồi đơn độc và bảo vệ lãnh thổ cực kỳ hung hãn. Chúng sử dụng lực đấm búa tạ từ hai càng chùy để đập vỡ vỏ của các loài giáp xác như cua, ốc và sò. Ngoài ra chúng còn ẩn nấp trong các hang đá tự đào để tránh động vật ăn mồi lớn.",
+    "unique_traits": "Cú đấm siêu tốc đạt gia tốc 10.400 g và vận tốc 23 m/s (tương đương viên đạn .22). Lực tác động cực đại lên tới 1.500 Newton, đủ sức đập vỡ kính bể cá. Cú đấm nhanh đến mức tạo ra bong bóng chân không (cavitation bubble) phát nhiệt và phát quang khi vỡ ra, bồi thêm một cú sốc nhiệt và lực thứ hai vào mục tiêu. Mắt có 16 loại thụ thể thụ cảm ánh sáng (so với 3 ở người) giúp nhìn thấy ánh sáng phân cực tròn và tia cực tím.",
+    "shortDescription": "Nắm đấm búa tạ gia tốc đạn bắn. Hệ thống thị giác tiên tiến nhất hành tinh.",
+    "description": "Tôm Tít Peacock là sinh vật sở hữu vũ khí cơ học đáng sợ nhất dưới đại dương. Hai càng chùy của chúng hoạt động nhờ một hệ thống chốt lò xo cơ học tích trữ năng lượng ở xương ngoài ngực. Khi chốt mở, năng lượng giải phóng tức thì tạo ra cú đấm có vận tốc nhanh hơn cả chớp mắt. Lớp vỏ kitin trên càng chùy có cấu trúc nano xếp lớp xoắn ốc (Bouligand structure) chống nứt vỡ cực tốt, giúp chúng thực hiện hàng ngàn cú đập cực mạnh mà không tự làm hỏng vũ khí của mình. Mắt của chúng còn là một kỳ quan quang học cho phép nhìn thấy thế giới ở những dải quang phổ mà không loài nào khác làm được.",
     "strengths": [
-      "Hệ thống nọc độc chích cô đặc cực mạnh lấy từ sứa lửa Bồ Đào Nha",
-      "Cơ chế ngụy trang đối bóng ngược hoàn hảo trước cả kẻ thù trên không lẫn dưới nước",
-      "Miễn nhiễm hoàn toàn với các độc tố từ các loài sứa chích thuộc ngành sứa lông châm",
-      "Sự linh hoạt cao khi bơi tự do trên mặt nước nhờ sức căng bề mặt"
+      "Cú đấm chùy áp lực cực mạnh, phá hủy hoàn toàn giáp phòng ngự của con mồi",
+      "Hiện tượng bong bóng chân không tạo thêm sát thương sóng kích kích thứ hai",
+      "Cấu trúc xương ngoài nano Bouligand siêu bền chịu lực va đập liên tục",
+      "Thị giác siêu việt nhận diện phân cực tròn và phát hiện kẻ thù ẩn nấp cực nhanh"
     ],
     "weaknesses": [
-      "Thân mềm hoàn toàn không có vỏ bảo vệ vật lý, dễ chịu sát thương cơ học",
-      "Di chuyển trôi dạt thụ động theo gió và dòng biển, không thể chủ động bơi thoát khỏi các dòng xoáy hoặc bão lớn",
-      "Bắt buộc phải sống ở bề mặt nước biển, nếu bị chìm xuống sâu hoặc trôi dạt vào bờ cát sẽ nhanh chóng tử vong do mất nước và vỡ túi khí"
+      "Kích thước cơ thể nhỏ bé khiến chúng dễ bị các loài cá săn mồi cỡ lớn nuốt chửng",
+      "Phạm vi chiến đấu cực ngắn, phụ thuộc hoàn toàn vào cận chiến sát sườn",
+      "Sau khi lột xác, lớp vỏ mới còn mềm khiến chúng hoàn toàn mất khả năng chiến đấu và phải ẩn nấp"
     ],
     "funFacts": [
-      "Khi người chạm vào sên biển rồng xanh, họ có thể bị đốt cực kỳ đau đớn và nguy kịch hơn cả khi chạm trực tiếp vào sứa lửa Bồ Đào Nha do độc tố đã được cô đặc cao độ",
-      "Chúng là loài lưỡng tính nhưng không thể tự thụ tinh, hai con sên sẽ giao phối chéo bằng cách phóng ra bộ phận sinh dục dài đặc biệt dưới bụng",
-      "Khi đói và thiếu nguồn sứa lửa, chúng sẵn sàng ăn thịt lẫn nhau để duy trì sự sống"
+      "Nếu phóng to tôm tít lên bằng kích thước con người, cú đấm của nó có thể đấm vỡ một tấm thép dày và đẩy vật thể vào quỹ đạo Trái Đất",
+      "Cấu trúc vỏ chùy của tôm tít đang được nghiên cứu ứng dụng để chế tạo áo giáp chống đạn và khung sườn máy bay siêu nhẹ",
+      "Cặp mắt của chúng có thể chuyển động xoay tròn 360 độ độc lập và nhìn thấy các tế bào ung thư nhờ phát hiện ánh sáng phân cực phản xạ"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.2307/2406080",
-        "label": "The Veliger - Feeding Biology of Glaucus atlanticus"
+        "url": "https://doi.org/10.1126/science.1218598",
+        "label": "Science - Structure and Mechanics of the Mantis Shrimp Dactyl Club"
       },
       {
-        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/blue-dragon-glaucus-atlanticus",
-        "label": "National Geographic - Blue Dragon Reference"
+        "url": "https://www.nature.com/articles/nature02425",
+        "label": "Nature - Circular polarization vision in a mantis shrimp"
       }
     ],
-    "imageColor": "#1B9CFC",
-    "diet_type": "carnivore",
-    "diet_items": [
-      "sứa lửa Bồ Đào Nha",
-      "sứa buồm",
-      "ốc sên tím",
-      "đồng loại"
-    ],
-    "activity_pattern": "variable",
-    "lifespan_min": 1,
-    "lifespan_max": 12,
-    "lifespan_unit": "months",
-    "reproduction_type": "hermaphrodite",
-    "reproduction_notes": "Là sinh vật lưỡng tính đồng thời. Sau khi giao phối chéo, cả hai cá thể đều đẻ các dải trứng dài màu trắng gồm hàng chục quả, bọc trong chất nhầy và thả trôi tự do trên mặt biển hoặc dán vào xác con mồi đã ăn.",
-    "locomotion": "swim",
-    "speed_max": 1.2,
-    "conservation_status": "LC",
-    "size_min_mm": 20,
-    "size_max_mm": 40,
-    "weight_avg_g": 5,
+    "imageColor": "#20BF6B",
     "stats": {
-      "strength": 25,
-      "durability": 30,
-      "speed": 40,
-      "weaponry": 90,
-      "special": 92,
-      "lethality": 85
-    },
-    "ai_p4p_score": 70,
-    "ai_tier": "B"
-  },
-  {
-    "id": "human-flea",
-    "name": "Bọ Chét Người",
-    "scientificName": "Pulex irritans",
-    "taxonomy": {
-      "class": "Insecta",
-      "order": "Siphonaptera",
-      "family": "Pulicidae"
-    },
-    "realWeight": "~0.001 - 0.003 g",
-    "size": "1.5 - 4 mm",
-    "characteristics": "Thân dẹt phẳng hai bên giúp dễ dàng len lỏi qua các sợi lông, tóc. Vỏ ngoài làm bằng kitin cực kỳ cứng cáp và trơn nhẵn, chịu được sức ép lớn. Không có cánh nhưng có đôi chân sau phát triển vượt trội chứa đệm protein resilin đàn hồi cực cao.",
-    "habitat": "Ký sinh trên cơ thể động vật có vú, đặc biệt là con người, lợn, và thú cưng trong môi trường sống gia đình.",
-    "location": "Phân bố toàn cầu tại những khu vực có dân cư sinh sống.",
-    "survival_method": "Ký sinh và hút máu vật chủ để duy trì sự sống. Sử dụng phần miệng chuyên hóa kiểu chích hút để xuyên qua lớp da dày và tiêm nước bọt chứa chất chống đông máu. Lẩn trốn nhanh chóng bằng cách thực hiện các cú nhảy cực xa và cao vượt trội khi phát hiện rung động hoặc mối đe dọa lớn từ vật chủ.",
-    "unique_traits": "Cú nhảy siêu gia tốc cơ học (Resilin-powered Jump): Sử dụng đệm protein resilin tích trữ năng lượng đàn hồi trong vách ngực và giải phóng tức thì qua chân sau, tạo ra gia tốc lên tới 140G (tương đương 1370 m/s², gấp hàng chục lần gia tốc phóng của tàu vũ trụ) và vận tốc phóng đạt 1.9 m/s, giúp nó nhảy xa tới 33 cm và cao 20 cm (gấp 150-200 lần chiều dài cơ thể). Bộ giáp Kitin chịu nén cực hạn (Compression-resistant Chitin Exoskeleton): Khung xương ngoài kitin chịu được áp lực nén bằng tay thông thường mà không hề bị tổn thương cơ học.",
-    "shortDescription": "Nhà vô địch nhảy cao với đệm cao su sinh học resilin, gia tốc nhảy đạt 140G.",
-    "description": "Bọ Chét Người (Pulex irritans) là một trong những loài côn trùng ký sinh có khả năng vận động phi thường nhất. Với cơ chế cơ học đàn hồi resilin thay thế cho tốc độ co bóp giới hạn của cơ bắp, chúng có thể giải phóng năng lượng tích lũy chỉ trong chưa đầy 1 mili giây. Lực nén ép sinh học này cho phép chúng thoát khỏi các đòn đập của vật chủ một cách dễ dàng và di chuyển linh hoạt từ vật chủ này sang vật chủ khác.",
-    "strengths": [
-      "Gia tốc nhảy đột biến 140G vượt qua mọi giới hạn cơ bắp thông thường",
-      "Lớp vỏ kitin dẹt siêu cứng chịu lực ép nén vật lý cực cao",
-      "Khả năng phát hiện khí carbon dioxide và nhiệt độ cơ thể vật chủ nhạy bén",
-      "Chất chống đông máu trong nước bọt giúp hút máu liên tục không bị đông tụ"
-    ],
-    "weaknesses": [
-      "Hoàn toàn mù hoặc thị lực cực kém, chỉ phân biệt được sáng tối và chuyển động cơ bản",
-      "Phụ thuộc hoàn toàn vào máu của vật chủ ấm áp để sinh tồn và sinh sản sinh dục",
-      "Kém chịu đựng trong môi trường độ ẩm thấp hoặc nhiệt độ cao đột ngột"
-    ],
-    "funFacts": [
-      "Nếu một người có khả năng nhảy của bọ chét tương đương kích thước cơ thể, người đó có thể nhảy qua một tòa nhà chọc trời cao 250 mét chỉ với một cú bật chân",
-      "Chất resilin của bọ chét là chất đàn hồi tốt nhất trên Trái Đất, có hiệu suất đàn hồi lên tới 97%, hầu như không tiêu hao năng lượng dưới dạng nhiệt",
-      "Trong lịch sử, bọ chét là vật trung gian truyền bệnh dịch hạch kinh hoàng nhất loài người thông qua vi khuẩn Yersinia pestis"
-    ],
-    "sources": [
-      {
-        "url": "https://doi.org/10.1242/jeb.050864",
-        "label": "Journal of Experimental Biology - Flea jumping mechanisms and resilin performance"
-      },
-      {
-        "url": "https://www.cdc.gov/fleas/index.html",
-        "label": "CDC - Fleas Biology and Medical Relevance"
-      }
-    ],
-    "imageColor": "#8B5A2B",
-    "diet_type": "parasitic",
-    "diet_items": [
-      "máu người",
-      "máu lợn",
-      "máu chó",
-      "máu mèo"
-    ],
-    "activity_pattern": "nocturnal",
-    "lifespan_min": 2,
-    "lifespan_max": 12,
-    "lifespan_unit": "months",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Sinh sản hữu tính. Sau khi hút đủ máu, con cái đẻ từ 20 đến 50 quả trứng mỗi ngày trực tiếp lên vật chủ hoặc khu vực ổ lót của chúng. Trứng rụng xuống môi trường xung quanh và nở thành ấu trùng dạng giòi ăn các mảnh vụn hữu cơ.",
-    "locomotion": "walk",
-    "speed_max": 6.8,
-    "conservation_status": "LC",
-    "size_min_mm": 1.5,
-    "size_max_mm": 4.0,
-    "weight_avg_g": 0.002,
-    "stats": {
-      "strength": 15,
-      "durability": 60,
-      "speed": 85,
-      "weaponry": 45,
+      "strength": 68,
+      "durability": 75,
+      "speed": 82,
+      "weaponry": 98,
       "special": 95,
-      "lethality": 65
+      "lethality": 88
     },
-    "ai_p4p_score": 74,
-    "ai_tier": "B"
-  },
-  {
-    "id": "blobfish",
-    "name": "Cá Giọt Nước",
-    "scientificName": "Psychrolutes marcidus",
-    "taxonomy": {
-      "class": "Actinopterygii",
-      "order": "Scorpaeniformes",
-      "family": "Psychrolutidae"
-    },
-    "realWeight": "~2 - 9 kg",
-    "size": "30 - 38 cm",
-    "characteristics": "Trong môi trường nước sâu, cơ thể có hình dạng cá bống dẹt bình thường đầy đặn. Tuy nhiên, khi đưa lên mặt nước, do áp suất giảm đột ngột, cơ thể của nó biến dạng thành một khối gelatin màu hồng chảy sệ, lỏng lẻo giống chiếc mũi người khổng lồ. Không có xương cứng mà chỉ có xương sụn mềm và rất ít cơ bắp.",
-    "habitat": "Vùng đáy biển sâu từ 600 đến 1,200 mét chịu áp suất thủy tĩnh cao gấp 60-120 lần mặt nước biển.",
-    "location": "Vùng biển sâu ngoài khơi bờ biển lục địa Úc, Tasmania và New Zealand.",
-    "survival_method": "Nằm im thụ động sát đáy biển và chờ đợi các sinh vật phù du, động vật giáp xác nhỏ hoặc vụn hữu cơ rơi từ tầng nước trên xuống trôi qua miệng. Tiết kiệm tối đa năng lượng sinh học bằng cách không chủ động bơi lội nhiều hay săn đuổi mồi.",
-    "unique_traits": "Thân Gelatin tự nổi (Gelatinous low-density body): Thịt của cá là một khối gel đặc biệt có mật độ khối lượng riêng nhẹ hơn nước một chút, hoạt động như phao nổi tự nhiên giúp nó lơ lửng ngay sát đáy biển sâu mà không cần bóng hơi (swim bladder) - cơ quan vốn sẽ bị bóp nát bấy bởi áp suất dưới đáy đại dương sâu. Xương sụn mềm dẻo chống áp suất cực hạn (Flexible Cartilaginous Structure): Cấu trúc xương cực kỳ linh hoạt và giòn để không bị gãy dưới áp suất đè nén khổng lồ lên tới hàng triệu Pascal.",
-    "shortDescription": "Thích nghi áp suất biển sâu bằng thân hình gelatin tự nổi vô hại nhưng hiệu quả.",
-    "description": "Cá Giọt Nước (Psychrolutes marcidus) nổi tiếng thế giới vì vẻ ngoài xấu xí và biến dạng kỳ dị khi bị đánh bắt lên bờ. Tuy nhiên, đây là sự hiểu lầm lớn: dưới độ sâu hàng ngàn mét, cơ thể gelatinous của nó hoạt động hoàn hảo dưới áp suất đè nén cao. Nó là biểu trưng cho sự tiến hóa tối giản hóa năng lượng sinh học, cho phép loài này tồn tại dễ dàng tại những vùng sa mạc biển sâu khắc nghiệt nhất.",
-    "strengths": [
-      "Tiết kiệm năng lượng tối ưu, lơ lửng không cần vây bơi hay bóng hơi nhờ mật độ cơ thể đặc biệt",
-      "Kháng áp suất thủy tĩnh cực hạn dưới đáy đại dương (lên tới 120 atm)",
-      "Cơ thể dẻo dai khó chịu tổn thương do va đập vật lý dưới biển sâu"
-    ],
-    "weaknesses": [
-      "Hầu như không có cơ bắp, tốc độ di chuyển chủ động cực kỳ chậm chạp",
-      "Hoàn toàn không thể tự vệ hoặc tấn công chủ động trước các loài săn mồi lớn có vây khỏe",
-      "Cơ thể bị biến dạng cấu trúc sinh học nghiêm trọng và chết ngay lập tức nếu rời khỏi môi trường áp suất cao"
-    ],
-    "funFacts": [
-      "Năm 2013, Hiệp hội Bảo tồn Động vật Xấu xí (Ugly Animal Preservation Society) đã bình chọn Cá Giọt Nước là Động vật xấu nhất thế giới",
-      "Do cơ thể lỏng lẻo dẻo dai, dạ dày của chúng có thể phình to rất lớn để chứa bất kỳ miếng thức ăn nào trôi nổi rơi trúng miệng chúng",
-      "Chúng đẻ hàng ngàn quả trứng xuống đáy biển và nằm canh gác trứng sát đất mà không rời đi trong nhiều tháng liền"
-    ],
-    "sources": [
-      {
-        "url": "https://www.nature.com/articles/news990923-2",
-        "label": "Nature - Deep sea ecology and fish adaptations"
-      },
-      {
-        "url": "https://www.smithsonianmag.com/smart-news/in-defense-of-the-blobfish-why-the-worlds-ugliest-animal-isnt-actually-that-ugly-316824/",
-        "label": "Smithsonian Magazine - In Defense of the Blobfish"
-      }
-    ],
-    "imageColor": "#FDA7DF",
-    "diet_type": "detritivore",
-    "diet_items": [
-      "cua nhỏ",
-      "nhím biển",
-      "sò biển",
-      "tuyết đại dương"
-    ],
-    "activity_pattern": "variable",
-    "lifespan_min": 10,
-    "lifespan_max": 30,
+    "diet_type": "carnivore",
+    "diet_items": ["cua", "ốc biển", "sò", "cá nhỏ"],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 4,
+    "lifespan_max": 6,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Sinh sản hữu tính. Trứng được đẻ trực tiếp thành các khối lớn trên nền cát sâu. Cả cá bố và mẹ đều có hành vi nằm đè lên trứng hoặc bên cạnh tổ để bảo vệ khỏi các loài giáp xác ăn trứng cho tới khi nở.",
-    "locomotion": "swim",
-    "speed_max": 0.5,
+    "reproduction_notes": "Giao phối đơn giao, con cái mang bọc trứng dưới bụng bảo vệ chặt chẽ hoặc đặt trong hang cho đến khi trứng nở thành ấu trùng.",
+    "locomotion": "hybrid",
+    "speed_max": 10.0,
     "conservation_status": "LC",
-    "size_min_mm": 300,
-    "size_max_mm": 380,
-    "weight_avg_g": 5000,
-    "stats": {
-      "strength": 10,
-      "durability": 40,
-      "speed": 5,
-      "weaponry": 5,
-      "special": 75,
-      "lethality": 10
+    "size_min_mm": 100.0,
+    "size_max_mm": 180.0,
+    "weight_avg_g": 150.0
+  },
+  {
+    "id": "superb-lyrebird",
+    "name": "Chim Lia Lớn",
+    "scientificName": "Menura novaehollandiae",
+    "taxonomy": {
+      "class": "Aves",
+      "order": "Passeriformes",
+      "family": "Menuridae"
     },
-    "ai_p4p_score": 35,
-    "ai_tier": "D"
+    "realWeight": "~0.8 - 1.1 kg",
+    "size": "74 - 100 cm",
+    "characteristics": "Thân hình lớn cỡ gà rừng màu nâu xám, chân cực khỏe để bới đất. Chim trống sở hữu bộ lông đuôi dài lộng lẫy uốn cong như cây đàn lia cổ đại với những sợi lông mịn tơ mảnh độc đáo.",
+    "habitat": "Rừng mưa nhiệt đới ẩm ướt, rừng ôn đới và các bụi rậm vùng núi.",
+    "location": "Khu vực đông nam nước Úc, từ Victoria đến phía nam Queensland.",
+    "survival_method": "Sinh tồn chủ yếu trên mặt đất bằng cách dùng móng vuốt khỏe cào bới lá mục tìm kiếm côn trùng, giun đất. Khi có nguy hiểm, chúng chạy trốn rất nhanh vào bụi rậm hoặc nhảy lên cành cây thấp thay vì bay cao. Chim trống xây các gò đất nhỏ để đứng biểu diễn và hót thu hút bạn tình.",
+    "unique_traits": "Sở hữu cơ quan phát âm (syrinx) tiến hóa phức tạp nhất trong số các loài chim biết hót, cho phép nhại lại gần như bất kỳ âm thanh nào chúng nghe thấy với độ chính xác tuyệt đối. Đuôi của chim trống có thể xòe ngược lên phía trước bao trùm toàn bộ cơ thể trong vũ điệu tán tỉnh độc nhất vô nhị.",
+    "shortDescription": "Bậc thầy giả giọng vĩ đại nhất tự nhiên. Bộ lông đuôi đàn lia lộng lẫy.",
+    "description": "Chim Lia Lớn là một kỳ quan tiến hóa của nước Úc. Khả năng bắt chước âm thanh của chúng vượt xa vẹt hay bất kỳ loài chim nào khác. Trong tự nhiên, chúng nhại lại tiếng hót của hàng chục loài chim khác nhau để tạo ra bản hợp xướng đánh lừa đối thủ và thu hút con cái. Tuy nhiên, điều làm nên thương hiệu của loài này là việc mô phỏng hoàn hảo các âm thanh nhân tạo từ máy móc của con người. Cặp cơ âm thanh phức tạp cho phép chúng phát ra hai tần số âm thanh khác nhau cùng lúc, mô phỏng hoàn hảo từ tiếng máy cưa, máy ảnh cơ, tiếng chó sủa cho đến còi báo động cứu hỏa.",
+    "strengths": [
+      "Khả năng ngụy trang âm thanh đỉnh cao, đánh lừa các loài săn mồi bằng cách giả giọng loài khác",
+      "Đôi chân cực khỏe giúp chạy trốn nhanh qua địa hình rừng rậm rạp",
+      "Hệ cơ quan phát âm syrinx linh hoạt độc nhất vị nhị kiểm soát âm vực tinh vi",
+      "Lông đuôi lớn đóng vai trò như lá chắn đánh lạc hướng khi bị tấn công từ phía sau"
+    ],
+    "weaknesses": [
+      "Khả năng bay lượn rất kém, cơ ngực yếu không thể duy trì đường bay dài",
+      "Bộ lông đuôi sặc sỡ và tập tính biểu diễn tại chỗ cố định dễ thu hút kẻ thù",
+      "Rất nhạy cảm với sự thay đổi môi trường và mất sinh cảnh rừng rậm"
+    ],
+    "funFacts": [
+      "Trong một video nổi tiếng của David Attenborough, một con chim lia đực đã giả tiếng máy ảnh cơ kèm tiếng lên phim, tiếng còi báo động xe hơi và tiếng cưa xích một cách hoàn hảo đến khó tin",
+      "Chim lia cũng dùng tiếng nhại cơ khí để đe dọa các loài chim khác tránh xa khu vực kiếm ăn của mình",
+      "Bộ lông đuôi hình đàn lia của chim đực mất tới 7 năm để phát triển hoàn thiện đạt độ lộng lẫy tối đa"
+    ],
+    "sources": [
+      {
+        "url": "https://www.jstor.org/stable/4088927",
+        "label": "Emu - Vocal Mimicry of the Superb Lyrebird"
+      },
+      {
+        "url": "https://www.bbc.co.uk/programmes/p003816c",
+        "label": "BBC Nature - David Attenborough Lyrebird"
+      }
+    ],
+    "imageColor": "#D5A97F",
+    "stats": {
+      "strength": 32,
+      "durability": 45,
+      "speed": 65,
+      "weaponry": 20,
+      "special": 97,
+      "lethality": 15
+    },
+    "diet_type": "omnivore",
+    "diet_items": ["giun đất", "nhện", "côn trùng", "hạt cây nhỏ"],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 15,
+    "lifespan_max": 20,
+    "lifespan_unit": "years",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Mùa sinh sản từ tháng 5 đến tháng 8. Con đực biểu diễn nghệ thuật âm thanh và vũ đạo trên gò đất. Con cái tự làm tổ hình vòm trên mặt đất hoặc gốc cây và đẻ duy nhất 1 trứng.",
+    "locomotion": "hybrid",
+    "speed_max": 12.0,
+    "conservation_status": "LC",
+    "size_min_mm": 740.0,
+    "size_max_mm": 1000.0,
+    "weight_avg_g": 950.0
+  },
+  {
+    "id": "platypus",
+    "name": "Thú Mỏ Vịt",
+    "scientificName": "Ornithorhynchus anatinus",
+    "taxonomy": {
+      "class": "Mammalia",
+      "order": "Monotremata",
+      "family": "Ornithorhynchidae"
+    },
+    "realWeight": "~0.7 - 2.4 kg",
+    "size": "40 - 50 cm",
+    "characteristics": "Sự kết hợp kỳ dị giữa chiếc mỏ giống vịt rộng phẳng dẹt nhưng mềm mại, thân mình phủ lông rậm chống nước như rái cá, đuôi dẹt phẳng như hải ly và chân vịt có màng bơi.",
+    "habitat": "Hệ thống sông, ngòi, hồ nước ngọt vùng trung và đông nước Úc.",
+    "location": "Vùng đông nước Úc bao gồm cả đảo Tasmania.",
+    "survival_method": "Săn mồi dưới nước bằng cách lặn xuống đáy sông. Khi lặn, chúng nhắm mắt, tai và mũi lại, định vị con mồi hoàn toàn bằng cách sử dụng hàng ngàn tế bào cảm nhận điện trường trên chiếc mỏ. Con đực sở hữu cựa độc ở chân sau để tự vệ và tranh giành lãnh thổ.",
+    "unique_traits": "Khả năng cảm nhận điện trường (electroreception) nhạy bén dưới nước để phát hiện dòng điện sinh học siêu yếu từ cơ của con mồi. Là loài thú đẻ trứng hiếm hoi (thú đơn huyệt). Con đực có cựa chứa nọc độc cực mạnh ở chân sau, có thể làm tê liệt chó săn và gây đau đớn dữ dội kéo dài cho con người.",
+    "shortDescription": "Thú đẻ trứng có cựa độc. Định vị điện trường bằng mỏ vịt cảm biến.",
+    "description": "Thú Mỏ Vịt là một trong những loài động vật kỳ lạ nhất hành tinh, khiến các nhà khoa học châu Âu thế kỷ 18 từng nghĩ đây là trò đùa ghép xác giả. Loài thú đơn huyệt cổ xưa này kết hợp các đặc tính của chim, bò sát và động vật có vú. Chúng đẻ trứng thay vì sinh con, tiết sữa qua các tuyến trên da bụng để con non liếm chứ không có núm vú. Chiếc mỏ độc đáo chứa mạng lưới thụ thể cơ học và điện học nhạy bén, quét liên tục dưới bùn để tìm kiếm con mồi. Nọc độc của chúng chứa các protein giống defensin, gây ra cơn đau dữ dội vượt qua cả tác dụng của morphine.",
+    "strengths": [
+      "Hệ thống định vị điện trường mỏ vịt tìm mồi chính xác không cần dùng mắt",
+      "Cựa độc chân sau gây đau đớn dữ dội làm mất khả năng chiến đấu của đối thủ",
+      "Bộ lông dày giữ nhiệt hai lớp và chống nước hoàn hảo trong dòng nước lạnh",
+      "Kỹ năng bơi lội điêu luyện nhờ chân màng vịt linh hoạt"
+    ],
+    "weaknesses": [
+      "Tốc độ di chuyển trên cạn rất chậm chạp do cấu trúc xương chân hướng ra hai bên",
+      "Không có răng ở tuổi trưởng thành, phải dùng các tấm sừng dẹt để nghiền thức ăn cùng sỏi cát",
+      "Nọc độc chỉ có ở con đực và chỉ phát huy tác dụng ở cự ly cận chiến cận chân"
+    ],
+    "funFacts": [
+      "Dưới ánh sáng tia cực tím (UV), bộ lông của thú mỏ vịt sẽ phát ra ánh sáng màu xanh lục huỳnh quang sinh học vô cùng kỳ ảo",
+      "Khi lần đầu tiên gửi một mẫu xác thú mỏ vịt về Anh, nhà sinh vật học George Shaw đã dùng kéo cắt lớp lông mỏ để tìm xem có vết khâu giả nào không vì không tin loài này có thật",
+      "Họ không có dạ dày thật sự; thực quản của thú mỏ vịt nối thẳng vào ruột mà không có túi chứa axit tiêu hóa"
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1038/nature06936",
+        "label": "Nature - Genome analysis of the platypus reveals unique signatures of evolution"
+      },
+      {
+        "url": "https://www.nationalgeographic.com/animals/mammals/facts/platypus",
+        "label": "National Geographic - Platypus Reference"
+      }
+    ],
+    "imageColor": "#2C3E50",
+    "stats": {
+      "strength": 38,
+      "durability": 50,
+      "speed": 62,
+      "weaponry": 60,
+      "special": 85,
+      "lethality": 55
+    },
+    "diet_type": "carnivore",
+    "diet_items": ["ấu trùng côn trùng", "tôm nhỏ", "giun nước", "ốc nhỏ"],
+    "activity_pattern": "variable",
+    "lifespan_min": 10,
+    "lifespan_max": 17,
+    "lifespan_unit": "years",
+    "reproduction_type": "oviparous",
+    "reproduction_notes": "Con cái đào hang sâu trên bờ sông làm tổ đẻ từ 1 đến 3 trứng. Sau khoảng 10 ngày ấp, trứng nở thành con non bò lên bụng mẹ liếm sữa tiết ra trực tiếp từ tuyến sữa chảy dọc lông bụng mẹ.",
+    "locomotion": "hybrid",
+    "speed_max": 4.0,
+    "conservation_status": "NT",
+    "size_min_mm": 400.0,
+    "size_max_mm": 500.0,
+    "weight_avg_g": 1500.0
   }
 ]
