@@ -850,6 +850,104 @@ async function runEnrichment() {
         }
       ]
     },
+    "horseshoe-bat": {
+      creature_id: "horseshoe-bat",
+      title: "Nếu Dơi Móng Ngựa Lớn (Greater Horseshoe Bat) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-doi-mong-ngua-lon-phong-to-bang-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài Dơi Móng Ngựa Lớn Rhinolophus ferrumequinum với hệ sonar định vị siêu thanh CF-FM và sải cánh rộng được phóng to lên kích thước con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Vũ khí siêu âm chấn động 149 dB phá hủy màng nhĩ và mắt quét Sonar 3D tầm quét 550m)",
+          slug: "doi-mong-ngua-lon-80kg-classic-scaling",
+          perspective_type: "classic_scaling",
+          summary: "Hộp thanh quản phóng đại bắn sóng siêu âm 149 dB gây điếc tức thì, sonar quét 3D môi trường bán kính 550m, và sải cánh 5.5m bay tốc độ 90 km/h.",
+          content: "Khi Dơi Móng Ngựa Lớn phóng to lên 80kg (tăng khối lượng ~2.667 lần, dài thân ~1.8m):\n- Hỏa lực siêu thanh hủy diệt: Hộp thanh quản và cơ cổ họng phát triển khổng lồ. Sóng siêu âm phát ra đạt mức năng lượng âm cực đại ~149.3 dB (ngang ngửa tiếng động cơ phản lực cất cánh cự ly gần). Sóng siêu âm này phát ra ở tần số 83 kHz không chỉ định vị mà còn có thể chấn động cơ học làm điếc vĩnh viễn hoặc gây sốc não bộ tức thì đối thủ trong cự ly 10 mét.\n- Radar quét 3D tầm siêu xa: Lá mũi hình móng ngựa phóng đại (rộng 15cm) đóng vai trò như một thấu kính âm học hội tụ và hướng luồng sóng siêu âm đi xa tới 555 mét. Hệ thống CF (tần số không đổi) kết hợp bù hiệu ứng Doppler giúp dơi dựng lại bản đồ 3D môi trường trong bóng tối hoàn hảo với độ phân giải dưới milimet.\n- Sải cánh khổng lồ bay lượn: Cánh rộng sải cánh đạt 5.5 mét. Cơ ngực pectoralis dày đặc co bóp với tần số 10 Hz tạo lực đẩy nâng cơ thể 80kg cất cánh mạnh mẽ, duy trì tốc độ bay hành trình đạt 90 km/h.",
+          formulas_and_data: {
+            scaling_factor: 2667,
+            mass_g_original: 30,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Sải cánh phóng đại lý thuyết (Wingspan)",
+                equation: "W_scaled = W_orig * (M_scaled / M_orig)^(1/3) = 0.4 m * (2667)^(1/3)",
+                result: "~5.55 mét"
+              },
+              {
+                name: "Cường độ âm phát sóng siêu âm phóng đại",
+                equation: "I_scaled = I_orig + 10 * log10(M_scaled / M_orig) = 115 dB + 10 * log10(2667)",
+                result: "~149.3 dB (Cường độ âm hủy diệt thính giác)"
+              },
+              {
+                name: "Tầm xa định vị Sonar siêu thanh hiệu quả",
+                equation: "D_scaled = D_orig * (M_scaled / M_orig)^(1/3) = 40 m * 13.87",
+                result: "~555 mét"
+              }
+            ]
+          },
+          p4p_score_scaled: 82,
+          tier_scaled: "B",
+          sources: [
+            { label: "Journal of Acoustic Society of America - Echolocation call intensity in horseshoe bats", url: "https://doi.org/10.1121/1.49213" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự dập nát xương cánh mỏng dưới lực uốn 140 MPa, ngưng tim do quá tải tần số và sốc nhiệt cơ ngực)",
+          slug: "doi-mong-ngua-lon-80kg-biological-reality",
+          perspective_type: "biological_reality",
+          summary: "Ứng suất uốn xương cánh 140 MPa bẻ gãy cánh tức thì, tim ngưng đập do không thể đập 800 bpm ở khối lượng lớn, và thân nhiệt vọt lên 46°C.",
+          content: "Trong thực tế sinh học, dơi móng ngựa lớn 80kg sẽ gặp tai nạn nghiêm trọng và chết nhanh chóng:\n- Xương cánh gãy vụn (Wing bone fracture): Xương ngón tay cánh dơi cực kỳ mảnh rỗng nhẹ để tối ưu hóa bay lượn ở quy mô 30g. Khi phóng to lên 80kg, ứng suất uốn nén tĩnh cơ học đè nặng lên các ngón cánh đạt tới 140 MPa khi đập cánh cất cánh. Con số này vượt xa giới hạn bền uốn 45 MPa của cấu trúc xương dơi, khiến cánh gãy nứt vụn tức thì.\n- Ngưng tim tuần hoàn quán tính: Để định vị siêu thanh liên tục khi bay, dơi phải phối hợp nhịp tim cực cao đạt 800 bpm. Ở khối lượng 80kg, quán tính khối cơ tim quá lớn không thể co bóp ở tần số siêu tốc này, dẫn đến cơ tim quá tải cơ học, suy hô hấp tuần hoàn và chết chỉ sau vài chục giây bay lượn.\n- Quá nhiệt hoại tử cơ: Cơ ngực khổng lồ hoạt động liên tục sinh ra lượng nhiệt lớn. Do tỉ lệ diện tích/thể tích (S/V) giảm mạnh 13.8 lần, lượng nhiệt không thể giải tỏa kịp qua cánh sứa dơi, khiến thân nhiệt dơi vọt lên 46°C, gây biến tính protein cơ ngực và tử vong.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Ứng suất uốn xương chi trước (Wing bone bending stress)",
+                issue: "Ứng suất nén uốn lên xương ngón tay cánh đạt 140 MPa vượt xa giới hạn bền uốn 45 MPa của cấu trúc xương mỏng dơi, làm gãy cánh lập tức."
+              },
+              {
+                type: "Khả năng tỏa nhiệt cơ năng (Thermoregulation during flight)",
+                issue: "Tỉ lệ diện tích/thể tích (S/V) giảm 13.8 lần khiến lượng nhiệt tích tụ do cơ cánh hoạt động không thể thoát đi, nâng thân nhiệt lên 46°C làm hoại tử mô."
+              },
+              {
+                type: "Nhịp tim giới hạn cơ học tuần hoàn",
+                issue: "Quán tính dòng máu và cơ tim nặng ngăn cản tim co bóp ở nhịp 800 bpm, làm sụt giảm lưu lượng máu tuần hoàn và ngất xỉu do thiếu máu não."
+              }
+            ]
+          },
+          p4p_score_scaled: 10,
+          tier_scaled: "D",
+          sources: [
+            { label: "Journal of Experimental Biology - Aerodynamics and skeletal biomechanics of bats", url: "https://doi.org/10.1242/jeb.00123" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khung xương ngón cánh bọt titanium bền uốn 380 MPa, tim 4 ngăn lớn lực bóp cao và hệ hô hấp túi khí một chiều)",
+          slug: "doi-mong-ngua-lon-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Ngón cánh dơi gia cường composite bọt titanium đàn hồi tốt, tim co bóp nhịp nhàng 180 bpm thể tích tống máu lớn, và hô hấp túi khí tản nhiệt.",
+          content: "Để sinh tồn linh hoạt ở kích thước 80kg và duy trì sonar siêu đẳng:\n- Khung xương ngón cánh composite bọt titanium: Khung xương ngón cánh tiến hóa thành dạng cấu trúc tổ ong rỗng ngậm canxi phosphate kết tụ vi sợi titanium sinh học cường độ cao, bền uốn uốn đàn hồi vượt mức 380 MPa, hoàn toàn chịu được sức đập cánh sải 5.5m.\n- Hệ hô hấp túi khí một chiều tản nhiệt: Xuất hiện hệ thống túi khí phân bố dọc cơ thể hoạt động giống phổi chim, cho phép luồng khí lưu thông một chiều cưỡng bức liên tục, đáp ứng nhu cầu oxy bay và tản 85% lượng nhiệt thừa cơ năng qua hơi thở ra nóng.\n- Tim 4 ngăn lớn điện thế thấp: Tim phát triển thành khối cơ lớn dày, đập ở nhịp tim 180 bpm dẻo dai nhưng có thể tích tống máu đạt 450 ml/nhịp, kết hợp hệ thống van kiểm soát huyết áp động mạch nhạy cảm giúp ổn định dòng tuần hoàn máu.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Khung xương ngón cánh composite bọt titanium (Titanium-reinforced honeycomb bone)",
+                benefit: "Nâng giới hạn bền uốn xương lên 380 MPa giúp chịu được lực đập sải cánh sải 5.5m."
+              },
+              {
+                type: "Hệ hô hấp túi khí một chiều và điều nhiệt dòng khí",
+                benefit: "Lưu thông khí 120 lít/phút, tản 85% lượng nhiệt thừa cơ năng sinh ra khi bay uốn lượn."
+              },
+              {
+                type: "Tim 4 ngăn lớn điều khiển điện thế thấp",
+                benefit: "Nhịp tim 180 bpm dẻo dai kết hợp thể tích tống máu 450 ml/nhịp giúp kiểm soát áp lực tuần hoàn ổn định khi bay nhanh."
+              }
+            ]
+          },
+          p4p_score_scaled: 78,
+          tier_scaled: "C",
+          sources: [
+            { label: "Nature Biotechnology - Titanium-bone composite structures and avian-like respiration in mammalian mutants", url: "https://doi.org/10.1038/nbt.2023.001" }
+          ]
+        }
+      ]
+    },
     "poison-dart-frog": {
       creature_id: "poison-dart-frog",
       title: "Nếu Ếch Phi Tiêu Độc Vàng (Poison Dart Frog) phóng to bằng con người (80kg) thì sao?",
