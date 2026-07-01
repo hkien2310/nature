@@ -1,54 +1,132 @@
 [
   {
+    "id": "coconut-crab",
+    "name": "Cua Dừa",
+    "scientificName": "Birgus latro",
+    "taxonomy": {
+      "class": "Malacostraca",
+      "order": "Decapoda",
+      "family": "Coenobitidae"
+    },
+    "realWeight": "1.5 - 4.1 kg",
+    "size": "Lên tới 1 m (sải chân)",
+    "characteristics": "Động vật chân khớp trên cạn lớn nhất thế giới. Có lớp vỏ kitin siêu dày hóa vôi cực kỳ cứng cáp và đôi càng khổng lồ có khả năng tạo lực kẹp tương đương hàm răng của sư tử. Hệ thống hô hấp bằng phổi cải tiến từ mang (cơ quan hô hấp nhánh - branchiostegal lungs) cho phép sống hoàn toàn trên cạn.",
+    "habitat": "Các hòn đảo nhiệt đới trên Ấn Độ Dương và Thái Bình Dương, thường ẩn náu trong các hang đất sâu hoặc rễ cây dừa.",
+    "location": "Phân bố khắp vùng nhiệt đới Ấn Độ Dương - Thái Bình Dương.",
+    "survival_method": "Sống đơn độc, săn mồi chủ yếu về đêm để tránh mất nước. Leo cây dừa điêu luyện, dùng đôi càng cực khỏe đập vỡ quả dừa để ăn phần cơm dừa dồi dào chất béo, hoặc săn tìm xác động vật, trái cây rừng và các loài giáp xác nhỏ hơn.",
+    "unique_traits": "Lực kẹp của càng đạt tới 3300 Newton (khoảng 330 kg lực), mạnh nhất trong mọi loài giáp xác. Có thể ngửi thấy mùi thực phẩm từ khoảng cách xa hàng km nhờ cơ quan cảm giác khứu giác phát triển rất giống côn trùng.",
+    "shortDescription": "Lực kẹp 3300N ngang ngửa sư tử. Động vật giáp xác trên cạn lớn nhất.",
+    "description": "Cua Dừa là một kỳ quan tiến hóa của phân ngành Giáp xác. Bắt đầu vòng đời dưới đại dương như bao loài cua khác, nhưng khi trưởng thành, chúng hoàn toàn mất khả năng thở dưới nước và chuyển lên sống 100% trên cạn. Vỏ ngoài của chúng được gia cố bằng canxi cacbonat tạo thành một tấm giáp chống đỡ ngoại lực hoàn hảo. Sức mạnh chính của Cua Dừa nằm ở đôi càng bất cân xứng, có khả năng nâng những vật nặng tới 28 kg và nghiền nát những vật cứng như vỏ dừa khô một cách dễ dàng.",
+    "strengths": [
+      "Lực kẹp càng khổng lồ 3300 Newton vô địch trong thế giới động vật không xương sống",
+      "Lớp vỏ kitin hóa vôi cực dày giúp bảo vệ cơ thể khỏi va đập và động vật ăn mồi",
+      "Khả năng leo trèo vách đá và thân cây dừa thẳng đứng cực kỳ điêu luyện",
+      "Khứu giác siêu nhạy bén có thể định vị nguồn thức ăn từ khoảng cách rất xa"
+    ],
+    "weaknesses": [
+      "Cơ thể quá nặng nề khiến tốc độ di chuyển trên mặt đất khá chậm chạp",
+      "Hoàn toàn mất khả năng thở dưới nước, có thể bị chết đuối nếu ngập sâu quá lâu",
+      "Quá trình lột xác định kỳ khiến chúng cực kỳ dễ bị tổn thương trong vài tuần"
+    ],
+    "funFacts": [
+      "Cua Dừa còn được gọi là 'Cướp biển cướp bóc' (Robber Crab) vì chúng thường lẻn vào lều của khách du lịch để ăn trộm xoong, nồi, dao, kéo kim loại mang đi",
+      "Để ăn được một quả dừa, chúng có thể mất vài ngày gặm nhấm và đập vỏ, nhưng chúng luôn kiên nhẫn thực hiện thành công",
+      "Chúng có thể sống thọ tới hơn 60 năm trên cạn nếu không bị săn bắt"
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1371/journal.pone.0166108",
+        "label": "PLOS ONE - Giant Coconut Crabs Exert Strongest Pinch Force of Any Crustacean"
+      },
+      {
+        "url": "https://www.iucnredlist.org/species/2811/126813586",
+        "label": "IUCN Red List - Birgus latro Conservation Status"
+      }
+    ],
+    "imageColor": "#A55EEA",
+    "stats": {
+      "strength": 85,
+      "durability": 90,
+      "speed": 35,
+      "weaponry": 88,
+      "special": 60,
+      "lethality": 70
+    },
+    "diet_type": "omnivore",
+    "diet_items": [
+      "quả dừa",
+      "trái cây",
+      "xác động vật",
+      "cua nhỏ",
+      "chim non"
+    ],
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 40,
+    "lifespan_max": 60,
+    "lifespan_unit": "years",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Giao phối trên cạn, con cái ôm trứng di chuyển ra mép nước biển để thả ấu trùng khi trứng chín.",
+    "locomotion": "walk",
+    "speed_max": 5.0,
+    "conservation_status": "VU",
+    "size_min_mm": 150,
+    "size_max_mm": 400,
+    "weight_avg_g": 2500,
+    "enrichment_count": 0,
+    "grading_count": 0,
+    "ai_p4p_score": 50,
+    "ai_tier": "C"
+  },
+  {
     "id": "blue-ringed-octopus",
-    "name": "Bạch Tuộc Đốm Xanh",
+    "name": "Bạch Tuộc Vòng Xanh",
     "scientificName": "Hapalochlaena maculosa",
     "taxonomy": {
       "class": "Cephalopoda",
       "order": "Octopoda",
       "family": "Octopodidae"
     },
-    "realWeight": "~26 - 80 g",
+    "realWeight": "10 - 100 g",
     "size": "12 - 20 cm",
-    "characteristics": "Thân hình nhỏ gọn, lớp da mềm mại có thể thay đổi màu sắc nhanh chóng. Khi bị kích động hoặc đe dọa, các vòng tròn màu xanh lam sáng rực (iridescent blue rings) xuất hiện nổi bật khắp cơ thể nhờ cơ chế điều khiển sắc tố bào và tế bào phản quang phản xạ ánh sáng.",
-    "habitat": "Các rạn san hô nông, vũng triều, hang đá nhỏ và các rác thải nhân tạo dưới biển.",
-    "location": "Vùng biển nhiệt đới và cận nhiệt đới của Ấn Độ Dương - Thái Bình Dương, đặc biệt phổ biến tại Úc.",
-    "survival_method": "Ngụy trang xuất sắc dưới dạng đá hoặc cát để trốn kẻ thù và rình mồi. Khi săn mồi, chúng cắn và bơm nước bọt chứa độc tố thần kinh mạnh làm tê liệt con mồi trước khi ăn.",
-    "unique_traits": "Mang độc tố tetrodotoxin (TTX) cực mạnh trong tuyến nước bọt, được sản sinh bởi vi khuẩn cộng sinh. Độc tố này khóa kênh natri trên màng tế bào thần kinh, gây tê liệt cơ hô hấp và dẫn đến tử vong nhanh chóng.",
-    "shortDescription": "Kích thước nhỏ như quả bóng golf nhưng mang nọc độc Tetrodotoxin cực mạnh có thể giết chết 26 người lớn.",
-    "description": "Bạch Tuộc Đốm Xanh (Hapalochlaena maculosa) là một trong những sinh vật biển nguy hiểm nhất thế giới. Dù chỉ có kích thước tương đương một quả bóng golf, loài nhuyễn thể này sở hữu nọc độc Tetrodotoxin - loại chất độc thần kinh mạnh gấp 1.200 lần xyanua. Chất độc do vi khuẩn cộng sinh trong tuyến nước bọt của chúng sản sinh, gây tê liệt hệ cơ vận động và cơ hô hấp của nạn nhân chỉ trong vài phút mà không có thuốc giải độc. Điểm đặc trưng nhất của chúng là các đốm vòng xanh lam óng ánh xuất hiện rực rỡ để cảnh báo kẻ săn mồi khi chúng cảm thấy bị đe dọa.",
+    "characteristics": "Cơ thể nhỏ nhắn mềm mại, da có các đốm màu nâu vàng nhạt nhòa. Khi bị kích động hoặc đe dọa, các vòng tròn màu xanh lam phát quang rực rỡ đột ngột xuất hiện trên khắp cơ thể. Tuy nhỏ nhưng sở hữu tuyến nước bọt chứa lượng cực lớn độc tố thần kinh Tetrodotoxin siêu mạnh.",
+    "habitat": "Các rạn san hô nông, hồ triều đáy cát hoặc dưới các vỏ sò rỗng ven biển Ấn Độ Dương - Thái Bình Dương.",
+    "location": "Vùng ven biển Thái Bình Dương và Ấn Độ Dương, từ Nhật Bản xuống đến Úc.",
+    "survival_method": "Ẩn mình ngụy trang tuyệt hảo trong các rạn san hô ban ngày. Ban đêm săn mồi bằng cách áp sát và cắn con mồi (cua, tôm, cá nhỏ), giải phóng nọc độc gây tê liệt hô hấp lập tức rồi ăn phần thịt mềm bên trong.",
+    "unique_traits": "Độc tố Tetrodotoxin cực mạnh do vi khuẩn cộng sinh trong tuyến nước bọt tiết ra, mạnh gấp 1200 lần xianua. Một con bạch tuộc nhỏ 30g chứa đủ nọc độc để lấy mạng 26 người trưởng thành trong vài phút mà không có thuốc giải đặc trị.",
+    "shortDescription": "Chứa độc tố thần kinh Tetrodotoxin. Sát thủ mini không có thuốc giải.",
+    "description": "Bạch Tuộc Vòng Xanh là một trong những loài sinh vật biển nguy hiểm nhất thế giới. Chúng có kích thước chỉ bằng quả bóng golf nhưng mang vũ khí hóa học tối thượng. Vết cắn của chúng cực kỳ nhỏ và hầu như không gây đau đớn, khiến nạn nhân thường không nhận ra mình bị cắn cho đến khi các triệu chứng tê liệt cơ, mù mắt và suy hô hấp xuất hiện. Nọc độc ngăn chặn các kênh natri trên màng tế bào thần kinh, làm ngừng truyền tín hiệu điện cơ nhưng không ảnh hưởng đến não bộ, khiến nạn nhân hoàn toàn tỉnh táo trong khi toàn bộ cơ thể bị tê liệt hoàn toàn.",
     "strengths": [
-      "Tetrodotoxin là độc tố thần kinh cực mạnh, làm tê liệt con mồi và kẻ thù lập tức",
-      "Khả năng ngụy trang đỉnh cao bằng cách thay đổi cấu trúc da và màu sắc giống môi trường xung quanh",
-      "Cơ thể mềm dẻo không xương cho phép len lỏi qua các khe đá cực kỳ nhỏ hẹp",
-      "Khả năng quan sát góc rộng với đôi mắt phát triển tinh vi"
+      "Độc tố thần kinh Tetrodotoxin cực kỳ đậm đặc, gây tê liệt hô hấp nhanh chóng",
+      "Khả năng ngụy trang đổi màu sắc và vân da tiệp vào môi trường đá san hô hoàn hảo",
+      "Cơ thể không xương linh hoạt lách qua được các khe đá siêu hẹp để trốn thoát",
+      "Trí thông minh cao đặc trưng của lớp chân đầu giúp phán đoán và tránh nguy hiểm nhanh nhạy"
     ],
     "weaknesses": [
-      "Cơ thể mềm yếu không có lớp vỏ bảo vệ cơ học",
-      "Tuổi thọ rất ngắn và tử vong ngay sau khi hoàn thành chu kỳ sinh sản",
-      "Tốc độ bơi đường dài kém, dễ bị dòng nước cuốn trôi"
+      "Kích thước cơ thể nhỏ bé, dễ bị các loài cá lớn nuốt chửng nếu lộ vị trí",
+      "Độ bền cơ học của cơ thể rất thấp do cấu trúc hoàn toàn mềm không có xương hay giáp bảo vệ",
+      "Tuổi thọ rất ngắn, chỉ sống được khoảng 1-2 năm và chết ngay sau khi sinh sản"
     ],
     "funFacts": [
-      "Vết cắn của loài bạch tuộc này nhẹ đến mức nạn nhân thường không cảm thấy đau đớn và chỉ nhận ra khi bắt đầu có triệu chứng tê liệt",
-      "Một con bạch tuộc đốm xanh mang đủ độc tố để lấy mạng 26 người trưởng thành trong vòng vài phút",
-      "Chúng không tự sản sinh độc tố mà do các vi khuẩn cộng sinh sống trong tuyến nước bọt của chúng tổng hợp nên"
+      "Các vòng tròn màu xanh lam phát quang không dùng hạt sắc tố, mà do các cấu trúc tinh thể nano trên da phản chiếu ánh sáng khi các cơ xung quanh co lại",
+      "Tetrodotoxin không phải do bạch tuộc tự sản xuất mà do một loài vi khuẩn cộng sinh sống trong tuyến nước bọt của nó chế tạo ra",
+      "Nạn nhân bị cắn chỉ có thể sống sót nếu được hô hấp nhân tạo liên tục trong nhiều giờ cho đến khi cơ thể tự đào thải hết độc tố"
     ],
     "sources": [
       {
-        "url": "https://www.aims.gov.au/species-at-aims/blue-ringed-octopus",
-        "label": "Australian Institute of Marine Science - Blue-ringed Octopus"
+        "url": "https://doi.org/10.1007/s00227-010-1596-5",
+        "label": "Marine Biology - Venom ecology and evolution of Blue-ringed Octopus"
       },
       {
-        "url": "https://doi.org/10.1016/j.toxicon.2012.04.341",
-        "label": "Toxicon - Tetrodotoxin in Blue-Ringed Octopuses"
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3250005/",
+        "label": "Toxicon - Tetrodotoxin distribution in Hapalochlaena"
       }
     ],
-    "imageColor": "#0984e3",
+    "imageColor": "#0FB9B1",
     "stats": {
-      "strength": 25,
+      "strength": 20,
       "durability": 30,
-      "speed": 60,
-      "weaponry": 99,
+      "speed": 65,
+      "weaponry": 98,
       "special": 95,
       "lethality": 99
     },
@@ -59,160 +137,97 @@
       "cá nhỏ"
     ],
     "activity_pattern": "nocturnal",
-    "lifespan_min": 1,
-    "lifespan_max": 2,
-    "lifespan_unit": "years",
+    "lifespan_min": 12,
+    "lifespan_max": 24,
+    "lifespan_unit": "months",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Con cái đẻ từ 50 đến 100 quả trứng và mang chúng dưới các cánh tay xúc tu để bảo vệ suốt nhiều tháng mà không ăn uống gì, sau đó chết đi ngay khi trứng nở.",
+    "reproduction_notes": "Con cái đẻ khoảng 50-100 trứng, mang trứng bảo vệ dưới các xúc tu suốt 1-2 tháng mà không ăn uống gì, sau đó chết khi trứng nở.",
     "locomotion": "swim",
     "speed_max": 15.0,
     "conservation_status": "LC",
-    "size_min_mm": 120.0,
-    "size_max_mm": 200.0,
-    "weight_avg_g": 50.0
+    "size_min_mm": 50,
+    "size_max_mm": 100,
+    "weight_avg_g": 50,
+    "enrichment_count": 0,
+    "grading_count": 0,
+    "ai_p4p_score": 50,
+    "ai_tier": "C"
   },
   {
-    "id": "gear-planthopper",
-    "name": "Côn Trùng Bánh Răng",
-    "scientificName": "Issus coleoptratus",
+    "id": "planarian",
+    "name": "Sán Dẹp Planaria",
+    "scientificName": "Schmidtea mediterranea",
     "taxonomy": {
-      "class": "Insecta",
-      "order": "Hemiptera",
-      "family": "Issidae"
+      "class": "Rhabditophora",
+      "order": "Tricladida",
+      "family": "Dugesiidae"
     },
-    "realWeight": "~0.01 - 0.05 g",
-    "size": "0.3 - 0.7 cm",
-    "characteristics": "Thân hình nhỏ màu nâu xám ngụy trang giống vỏ cây. Điểm đặc sắc nhất xuất hiện ở giai đoạn nhộng (nymph): hai đùi chân sau có một bộ khớp khớp nối dạng bánh răng cưa xếp ăn khớp hoàn hảo với nhau để đồng bộ lực nhảy.",
-    "habitat": "Các lùm cây bụi, cành cây khô, rừng sồi ôn đới.",
-    "location": "Khắp châu Âu và một phần nhỏ ven Địa Trung Hải.",
-    "survival_method": "Bám vào các cành cây để hút nhựa. Khi gặp nguy hiểm, chúng bật nhảy siêu tốc nhờ cơ chế nén năng lượng đàn hồi của cơ ngực và đồng bộ chuyển động thông qua khớp bánh răng.",
-    "unique_traits": "Sở hữu bộ bánh răng cơ học sinh học duy nhất được phát hiện trong thế giới tự nhiên. Các răng cưa có dạng xoắn, ăn khớp với nhau để đảm bảo sai số thời gian giữa hai chân khi nhảy nhỏ hơn 30 micro giây, triệt tiêu mô-men xoắn gây lệch hướng.",
-    "shortDescription": "Loài sinh vật duy nhất có hệ thống bánh răng cơ học tự nhiên giúp đồng bộ chân sau để bật nhảy.",
-    "description": "Côn Trùng Bánh Răng (Issus coleoptratus) là một loài côn trùng nhỏ thuộc bộ Nửa cánh. Ở giai đoạn nhộng, chúng sở hữu một cấu trúc cơ học ngoạn mục: các gờ bánh răng (trochanteral gears) trên hai khớp đùi của chân sau. Cấu trúc này hoạt động giống hệt hộp số cơ khí, đảm bảo cả hai chân sau bung lực đồng thời tuyệt đối khi nhảy. Nếu không có cơ chế này, chênh lệch thời gian giữa hai chân sẽ khiến con vật bị xoay tròn mất kiểm soát. Khi trưởng thành lột xác, bộ bánh răng này biến mất để thay thế bằng cơ chế ma sát bám dính thông thường.",
+    "realWeight": "< 1 g",
+    "size": "3 - 15 mm",
+    "characteristics": "Cơ thể dẹt, đối xứng hai bên, có hai đốm mắt đặc trưng ở đầu nhạy cảm với ánh sáng. Cấu tạo cơ thể rất đơn giản, không có hệ tuần hoàn và hô hấp chuyên biệt, trao đổi khí trực tiếp qua da. Chứa tỷ lệ tế bào gốc vạn năng (neoblasts) cực kỳ lớn chiếm tới 30% tổng số tế bào cơ thể.",
+    "habitat": "Các dòng suối ngọt mát, ao hồ nước trong sạch và dưới bề mặt các phiến đá ẩm ướt.",
+    "location": "Phân bố rộng khắp thế giới, đặc biệt là vùng ôn đới và nhiệt đới.",
+    "survival_method": "Bò trên bề mặt bằng cách sử dụng các lông mao hiển vi ở bụng cùng chất nhầy tự tiết ra. Săn mồi bằng cách dùng vòi tiêu hóa (pharynx) nhô ra giữa bụng để hút chất dịch từ các loài động vật không xương sống nhỏ khác.",
+    "unique_traits": "Khả năng siêu tái tạo vô hạn: Một mảnh cắt nhỏ chỉ bằng 1/279 cơ thể vẫn tự tái sinh thành một con sán hoàn chỉnh trong vòng hai tuần. Đặc biệt, nếu cắt đầu của nó, cái đầu mới mọc lại vẫn lưu trữ được toàn bộ ký ức và thói quen cũ của con sán.",
+    "shortDescription": "Siêu tái tạo vô hạn từ 1/279 cơ thể. Giữ nguyên ký ức sau khi tái sinh.",
+    "description": "Sán Dẹp Planaria là mô hình nghiên cứu sinh học bất tử lý tưởng của khoa học hiện đại. Bí mật của sự bất tử này nằm ở hệ thống neoblasts - nhóm tế bào gốc vạn năng có khả năng phân chia vô hạn và biến đổi thành bất kỳ loại tế bào nào bị thiếu hụt. Khi sán bị tổn thương hay phân mảnh, các neoblasts lập tức di chuyển đến vết thương tạo thành cấu trúc tái sinh (blastema), khôi phục lại các cơ quan hoàn chỉnh từ hệ thần kinh, mắt cho đến hệ tiêu hóa mà không để lại sẹo hay lão hóa.",
     "strengths": [
-      "Cơ chế cơ học bánh răng độc nhất vô nhị giúp đồng bộ hóa chuyển động chân sau hoàn hảo",
-      "Gia tốc bật nhảy cực hạn lên tới 400g trong 2 mili giây",
-      "Khả năng ngụy trang hòa lẫn tuyệt vời vào vỏ cây khô"
+      "Khả năng siêu tái tạo tuyệt đối từ mảnh cơ thể siêu nhỏ chỉ bằng 1/279 kích thước gốc",
+      "Bất tử về mặt sinh học nhờ hệ thống tế bào gốc neoblast hoạt động không bao giờ suy kiệt",
+      "Khả năng lưu trữ thông tin thần kinh trong toàn cơ thể, giữ được ký ức sau khi mọc lại não mới",
+      "Có thể tự nhân bản vô tính nhanh chóng bằng cách tự phân đôi cơ thể"
     ],
     "weaknesses": [
-      "Cơ thể giai đoạn nhộng nhỏ bé, không có giáp bảo vệ và chịu lực kém",
-      "Bộ bánh răng cơ học biến mất khi lột xác trưởng thành, làm giảm độ đồng bộ cơ học tuyệt đối",
-      "Phụ thuộc hoàn toàn vào nhựa cây để duy trì năng lượng"
+      "Cực kỳ mong manh trước mọi lực cơ học vật lý như đè bẹp, nghiền nát",
+      "Rất nhạy cảm với chất lượng nước và ô nhiễm hóa chất, dễ bị phân rã tự hoại",
+      "Không có bất kỳ vũ khí tấn công hay phòng thủ trực tiếp nào đối với kẻ thù lớn"
     ],
     "funFacts": [
-      "Cấu trúc bánh răng của loài này có các răng cưa được bo tròn ở gốc để phân tán lực ứng suất, tương tự như cách các kỹ sư thiết kế bánh răng công nghiệp hiện đại",
-      "Gia tốc 400g của chúng lớn gấp hàng chục lần lực gia tốc mà các phi hành gia vũ trụ có thể chịu đựng được",
-      "Mỗi chiếc bánh răng có khoảng 10 đến 12 răng cưa ăn khớp hoàn chỉnh với nhau ở phần gốc chân sau"
+      "Nếu bạn cắt sán dọc phần đầu thành hai nửa, nó sẽ mọc lại thành một con sán có hai đầu hoàn chỉnh hoạt động độc lập",
+      "Các nhà khoa học đã huấn luyện sán đi qua một mê cung để tìm thức ăn, sau đó chặt đầu chúng. Khi chiếc đầu mới mọc ra, con sán vẫn nhớ cách đi mê cung nhanh hơn các con sán chưa được huấn luyện",
+      "Khi đối mặt với nạn đói, chúng có thể tự tiêu hóa các cơ quan nội tạng của chính mình để thu nhỏ kích thước chỉ còn bằng 1/100 lúc đầu, và phục hồi hoàn toàn khi có thức ăn trở lại"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1126/science.1240284",
-        "label": "Science - Interacting Gears Synchronize Propulsive Jumps in Bugs"
+        "url": "https://doi.org/10.1126/science.1145951",
+        "label": "Science - Stem Cells and Regeneration in Planarians"
       },
       {
-        "url": "https://www.nature.com/articles/nature.2013.13735",
-        "label": "Nature - Insects use gears to jump"
+        "url": "https://doi.org/10.1242/dev.158725",
+        "label": "Development - Schmidtea mediterranea as a model system"
       }
     ],
-    "imageColor": "#b2bec3",
+    "imageColor": "#26DE81",
     "stats": {
-      "strength": 40,
-      "durability": 25,
-      "speed": 85,
-      "weaponry": 10,
-      "special": 98,
-      "lethality": 5
+      "strength": 5,
+      "durability": 99,
+      "speed": 10,
+      "weaponry": 5,
+      "special": 99,
+      "lethality": 10
     },
-    "diet_type": "herbivore",
+    "diet_type": "detritivore",
     "diet_items": [
-      "nhựa cây sồi",
-      "dịch cây bụi"
+      "trùng chỉ",
+      "xác giáp xác nhỏ",
+      "hữu cơ phân hủy",
+      "vi khuẩn"
     ],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 6,
-    "lifespan_max": 12,
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 12,
+    "lifespan_max": 120,
     "lifespan_unit": "months",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Con cái đẻ trứng vào các kẽ nứt của vỏ cây sồi hoặc cây bụi vào cuối mùa hè, trứng sẽ ngủ đông và nở ra thế hệ nhộng có bánh răng vào mùa xuân năm sau.",
-    "locomotion": "hybrid",
-    "speed_max": 14.0,
+    "reproduction_type": "hermaphrodite",
+    "reproduction_notes": "Lưỡng tính sinh sản hữu tính bằng cách trao đổi tinh trùng và đẻ kén trứng, hoặc sinh sản vô tính bằng cách tự thắt đứt đuôi để tái tạo con mới.",
+    "locomotion": "crawl",
+    "speed_max": 0.05,
     "conservation_status": "LC",
-    "size_min_mm": 3.0,
-    "size_max_mm": 7.0,
-    "weight_avg_g": 0.03
-  },
-  {
-    "id": "orca",
-    "name": "Cá Voi Sát Thủ",
-    "scientificName": "Orcinus orca",
-    "taxonomy": {
-      "class": "Mammalia",
-      "order": "Artiodactyla",
-      "family": "Delphinidae"
-    },
-    "realWeight": "~3 - 6 tấn",
-    "size": "6 - 8 m",
-    "characteristics": "Thân hình thuôn dài khỏe mạnh với hai màu đen trắng tương phản rõ rệt. Sở hữu vây lưng cực lớn (ở con đực có thể cao tới 1.8m), hàm răng chắc khỏe hình nón và lớp mỡ dày dưới da giúp giữ nhiệt tốt ở vùng biển lạnh.",
-    "habitat": "Tất cả các đại dương trên thế giới, từ các vùng biển băng giá Bắc Cực và Nam Cực cho đến các vùng biển nhiệt đới ấm áp.",
-    "location": "Phân bố toàn cầu, tập trung đông nhất ở các vùng nước lạnh vĩ độ cao.",
-    "survival_method": "Săn mồi theo nhóm (pods) với các chiến thuật cực kỳ tinh vi được truyền bá qua các thế hệ. Sử dụng hệ thống định vị tiếng vang phát triển cao để định vị mục tiêu trong bóng tối đại dương.",
-    "unique_traits": "Trí thông minh xã hội vượt trội, khả năng phối hợp săn mồi phức tạp (ví dụ: tạo sóng nhân tạo để hất hải cẩu khỏi tảng băng trôi, xoay ngửa cá mập để gây bất động trương lực). Có ngôn ngữ giao tiếp vùng miền độc lập.",
-    "shortDescription": "Kẻ săn mồi đỉnh cao thông minh nhất đại dương với chiến thuật săn mồi bầy đàn cực kỳ tàn bạo.",
-    "description": "Cá Voi Sát Thủ (Orcinus orca) là loài động vật có vú thuộc họ Cá heo đại dương và là loài săn mồi đỉnh cao (apex predator) thực thụ. Chúng đứng đầu chuỗi thức ăn đại dương và không có bất kỳ kẻ thù tự nhiên nào. Sức mạnh lớn nhất của loài Orca nằm ở trí tuệ vượt trội và cấu trúc xã hội mẫu hệ chặt chẽ. Mỗi đàn Orca phát triển các chiến thuật săn mồi đặc thù riêng và truyền dạy lại cho con non. Chúng có thể hạ gục những con cá voi xanh khổng lồ, săn cá mập trắng lớn để ăn gan, hoặc phối hợp nhịp nhàng tạo sóng đánh đổ hải cẩu khỏi các tảng băng trôi.",
-    "strengths": [
-      "Trí thông minh vượt trội và khả năng phối hợp chiến thuật bầy đàn đỉnh cao",
-      "Lực cắn cực mạnh kết hợp với cơ thể nặng hàng tấn làm vũ khí húc đâm sát thương lớn",
-      "Hệ thống định vị bằng tiếng vang siêu nhạy bén giúp nhận diện môi trường và con mồi từ xa",
-      "Khả năng thích nghi nhiệt độ môi trường nước xuất sắc nhờ lớp mỡ dày cách nhiệt"
-    ],
-    "weaknesses": [
-      "Kích thước cơ thể khổng lồ yêu cầu lượng calo tiêu thụ hàng ngày rất lớn",
-      "Tốc độ sinh sản rất chậm với chu kỳ mang thai kéo dài từ 15 đến 18 tháng",
-      "Độ nhạy cảm cao với ô nhiễm tiếng ồn đại dương gây ảnh hưởng đến định vị tiếng vang"
-    ],
-    "funFacts": [
-      "Dù có tên gọi là Cá voi sát thủ, về mặt phân loại học chúng là thành viên lớn nhất của họ Cá heo đại dương (Delphinidae)",
-      "Mỗi đàn Orca có ngôn ngữ âm thanh (tiếng click và huýt) hoàn toàn khác nhau, hoạt động như một loại phương ngữ vùng miền riêng biệt",
-      "Orca là một trong số rất ít loài động vật có hiện tượng mãn kinh, con cái sau khi ngừng sinh sản sẽ đóng vai trò dẫn dắt và bảo vệ đàn"
-    ],
-    "sources": [
-      {
-        "url": "https://www.iucnredlist.org/species/15421/50386554",
-        "label": "IUCN Red List - Orcinus orca"
-      },
-      {
-        "url": "https://doi.org/10.1111/j.1748-7692.1998.tb00693.x",
-        "label": "Marine Mammal Science - Pod structure and foraging behavior of Killer Whales"
-      }
-    ],
-    "imageColor": "#2d3436",
-    "stats": {
-      "strength": 98,
-      "durability": 92,
-      "speed": 85,
-      "weaponry": 90,
-      "special": 95,
-      "lethality": 98
-    },
-    "diet_type": "carnivore",
-    "diet_items": [
-      "cá hồi",
-      "hải cẩu",
-      "cá heo",
-      "cá mập",
-      "cá voi xanh con"
-    ],
-    "activity_pattern": "variable",
-    "lifespan_min": 30,
-    "lifespan_max": 90,
-    "lifespan_unit": "years",
-    "reproduction_type": "viviparous",
-    "reproduction_notes": "Sinh con và nuôi con bằng sữa mẹ. Thời gian mang thai kéo dài tới 15-18 tháng, con non được chăm sóc chặt chẽ bởi cả gia đình mẫu hệ.",
-    "locomotion": "swim",
-    "speed_max": 56.0,
-    "conservation_status": "LC",
-    "size_min_mm": 6000.0,
-    "size_max_mm": 8000.0,
-    "weight_avg_g": 4500000.0
+    "size_min_mm": 3,
+    "size_max_mm": 15,
+    "weight_avg_g": 0.05,
+    "enrichment_count": 0,
+    "grading_count": 0,
+    "ai_p4p_score": 50,
+    "ai_tier": "C"
   }
 ]

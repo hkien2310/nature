@@ -1,0 +1,466 @@
+[
+  {
+    "id": "blue-ringed-octopus",
+    "name": "Bạch Tuộc Vòng Xanh",
+    "scientific_name": "Hapalochlaena maculosa",
+    "class": "Cephalopoda",
+    "order": "Octopoda",
+    "family": "Octopodidae",
+    "real_weight": "10 - 100 g",
+    "size": "12 - 20 cm",
+    "characteristics": "Cơ thể nhỏ nhắn mềm mại, da có các đốm màu nâu vàng nhạt nhòa. Khi bị kích động hoặc đe dọa, các vòng tròn màu xanh lam phát quang rực rỡ đột ngột xuất hiện trên khắp cơ thể. Tuy nhỏ nhưng sở hữu tuyến nước bọt chứa lượng cực lớn độc tố thần kinh Tetrodotoxin siêu mạnh. Do không có xương, chúng dễ dàng len lỏi qua các khe hở siêu nhỏ trên rạn san hô để lẩn trốn.",
+    "habitat": "Các rạn san hô nông, hồ triều đáy cát hoặc dưới các vỏ sò rỗng ven biển Ấn Độ Dương - Thái Bình Dương.",
+    "location": "Vùng ven biển Thái Bình Dương và Ấn Độ Dương, từ Nhật Bản xuống đến Úc.",
+    "survival_method": "Ẩn mình ngụy trang tuyệt hảo trong các rạn san hô ban ngày nhờ các tế bào sắc tố chromatophore linh hoạt. Ban đêm săn mồi chủ yếu bằng cách áp sát và cắn con mồi (cua, tôm, cá nhỏ), giải phóng nọc độc thần kinh cực mạnh qua nước bọt để gây tê liệt hô hấp lập tức rồi ăn phần thịt mềm bên trong.",
+    "unique_traits": "Độc tố Tetrodotoxin cực mạnh do vi khuẩn cộng sinh trong tuyến nước bọt tiết ra, mạnh gấp 1200 lần xianua, một con bạch tuộc nhỏ 30g chứa đủ nọc độc để lấy mạng 26 người trưởng thành trong vài phút mà không có thuốc giải đặc trị. Ngoài ra, chúng có cơ chế cảnh báo động học siêu tốc bằng cách co cơ quanh cấu trúc tinh thể nano iridophore trên da làm hiện rõ các vòng màu xanh lam óng ánh. Tetrodotoxin (TTX) hoạt động bằng cách chẹn các kênh natri có cổng điện thế (voltage-gated sodium channels) trên màng tế bào thần kinh, ngăn chặn sự truyền xung động thần kinh cơ gây liệt cơ hô hấp. Ngoài ra, chúng có cơ quan cảnh báo vòng xanh siêu nhạy bén có khả năng thay đổi kích thước và độ tương phản quang học chỉ trong vòng 100 mili giây.",
+    "short_description": "Chứa độc tố thần kinh Tetrodotoxin. Sát thủ mini không có thuốc giải.",
+    "description": "Bạch Tuộc Vòng Xanh là một trong những loài sinh vật biển nguy hiểm nhất thế giới. Chúng có kích thước chỉ bằng quả bóng golf nhưng mang vũ khí hóa học tối thượng. Vết cắn của chúng cực kỳ nhỏ và hầu như không gây đau đớn, khiến nạn nhân thường không nhận ra mình bị cắn cho đến khi các triệu chứng tê liệt cơ, mù mắt và suy hô hấp xuất hiện. Nọc độc ngăn chặn các kênh natri trên màng tế bào thần kinh, làm ngừng truyền tín hiệu điện cơ nhưng không ảnh hưởng đến não bộ, khiến nạn nhân hoàn toàn tỉnh táo trong khi toàn bộ cơ thể bị tê liệt hoàn toàn.",
+    "strengths": [
+      "Độc tố thần kinh Tetrodotoxin cực kỳ đậm đặc, gây tê liệt hô hấp nhanh chóng",
+      "Khả năng ngụy trang đổi màu sắc và vân da tiệp vào môi trường đá san hô hoàn hảo",
+      "Cơ thể không xương linh hoạt lách qua được các khe đá siêu hẹp để trốn thoát",
+      "Trí thông minh cao đặc trưng của lớp chân đầu giúp phán đoán và tránh nguy hiểm nhanh nhạy",
+      "Sở hữu hai tuyến nước bọt riêng biệt: một tuyến chứa dịch tiêu hóa thông thường và một tuyến chứa nọc độc thần kinh độc nhất vô nhị",
+      "Phản xạ kích hoạt hệ thống cảnh báo quang học (vòng xanh phát sáng) chỉ mất chưa đầy một phần mười giây",
+      "Lực cắn cực sắc của mỏ sừng (beak) giống như mỏ vẹt, có khả năng xuyên thủng vỏ cua cứng cáp hoặc thậm chí cả đồ lặn cao su dày.",
+      "Khả năng tiết chất độc vào nước xung quanh để làm tê liệt con mồi từ xa mà không cần cắn trực tiếp.",
+      "Hệ thống tế bào sắc tố (chromatophores) và tế bào phản quang (iridophores) phối hợp nhịp nhàng tạo ra màn ngụy trang động học cực tinh vi."
+    ],
+    "weaknesses": [
+      "Kích thước cơ thể nhỏ bé, dễ bị các loài cá lớn nuốt chửng nếu lộ vị trí",
+      "Độ bền cơ học của cơ thể rất thấp do cấu trúc hoàn toàn mềm không có xương hay giáp bảo vệ",
+      "Tuổi thọ rất ngắn, chỉ sống được khoảng 1-2 năm và chết ngay sau khi sinh sản",
+      "Có một điểm mù thị giác ngay phía sau đầu khiến chúng dễ bị tấn công bất ngờ từ phía sau"
+    ],
+    "fun_facts": [
+      "Các vòng tròn màu xanh lam phát quang không dùng hạt sắc tố, mà do các cấu trúc tinh thể nano trên da phản chiếu ánh sáng khi các cơ xung quanh co lại",
+      "Tetrodotoxin không phải do bạch tuộc tự sản xuất mà do một loài vi khuẩn cộng sinh sống trong tuyến nước bọt của nó chế tạo ra",
+      "Nạn nhân bị cắn chỉ có thể sống sót nếu được hô hấp nhân tạo liên tục trong nhiều giờ cho đến khi cơ thể tự đào thải hết độc tố",
+      "Chúng có khả năng tự tái sinh các xúc tu bị đứt tương tự như sao biển",
+      "Mực phun của loài này có tính độc nhẹ và có thể dùng như một màn sương hóa học làm tê liệt giác quan của kẻ thù",
+      "Dù mang lượng độc tố chết người, Bạch tuộc vòng xanh hoàn toàn miễn nhiễm với chính độc tố Tetrodotoxin của mình nhờ cấu trúc kênh natri đột biến kháng độc."
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1007/s00227-010-1596-5",
+        "label": "Marine Biology - Venom ecology and evolution of Blue-ringed Octopus"
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3250005/",
+        "label": "Toxicon - Tetrodotoxin distribution in Hapalochlaena"
+      },
+      {
+        "url": "https://doi.org/10.1007/BF00346443",
+        "label": "Marine Biology - Symbiotic bacteria producing tetrodotoxin in cephalopods"
+      },
+      {
+        "url": "https://doi.org/10.1016/j.toxicon.2019.03.013",
+        "label": "Toxicon - Tetrodotoxin in cephalopods: Origin and distribution"
+      }
+    ],
+    "image_color": "#0FB9B1",
+    "enrichment_count": 2,
+    "diet_type": "carnivore",
+    "diet_items": [
+      "cua dẹp",
+      "tôm đá",
+      "cá rạn nhỏ",
+      "nhuyễn thể",
+      "cua hermit",
+      "giun nhiều tơ",
+      "giáp xác nhỏ"
+    ],
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 12,
+    "lifespan_max": 24,
+    "lifespan_unit": "months",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Giao phối hữu tính phức tạp. Con đực chuyển túi tinh vào khoang áo của con cái bằng xúc tu biến đổi (hectocotylus). Con cái đẻ khoảng 50-100 quả trứng và ôm trứng liên tục dưới xúc tu, hoàn toàn không ăn uống trong 1-2 tháng và chết kiệt sức ngay sau khi trứng nở.",
+    "locomotion": "hybrid",
+    "speed_max": 15,
+    "conservation_status": "LC",
+    "size_min_mm": 120,
+    "size_max_mm": 200,
+    "weight_avg_g": 40
+  },
+  {
+    "id": "coconut-crab",
+    "name": "Cua Dừa",
+    "scientific_name": "Birgus latro",
+    "class": "Malacostraca",
+    "order": "Decapoda",
+    "family": "Coenobitidae",
+    "real_weight": "1.5 - 4.1 kg",
+    "size": "Lên tới 1 m (sải chân)",
+    "characteristics": "Động vật chân khớp trên cạn lớn nhất thế giới. Có lớp vỏ kitin siêu dày hóa vôi cực kỳ cứng cáp và đôi càng khổng lồ có khả năng tạo lực kẹp tương đương hàm răng của sư tử. Hệ thống hô hấp bằng phổi cải tiến từ mang (cơ quan hô hấp nhánh - branchiostegal lungs) cho phép sống hoàn toàn trên cạn.",
+    "habitat": "Các hòn đảo nhiệt đới trên Ấn Độ Dương và Thái Bình Dương, thường ẩn náu trong các hang đất sâu hoặc rễ cây dừa.",
+    "location": "Phân bố khắp vùng nhiệt đới Ấn Độ Dương - Thái Bình Dương.",
+    "survival_method": "Sống đơn độc, săn mồi chủ yếu về đêm để tránh mất nước. Leo cây dừa điêu luyện, dùng đôi càng cực khỏe đập vỡ quả dừa để ăn phần cơm dừa dồi dào chất béo, hoặc săn tìm xác động vật, trái cây rừng và các loài giáp xác nhỏ hơn.",
+    "unique_traits": "Lực kẹp của càng đạt tới 3300 Newton (khoảng 330 kg lực), mạnh nhất trong mọi loài giáp xác. Có thể ngửi thấy mùi thực phẩm từ khoảng cách xa hàng km nhờ cơ quan cảm giác khứu giác phát triển rất giống côn trùng. Phổi nhánh (branchiostegal lungs) cực kỳ đặc biệt hoạt động như sự lai tạo giữa mang và phổi. Hệ thống khứu giác của cua dừa phát triển song song với côn trùng (convergent evolution), sở hữu các thùy khứu giác (olfactory lobes) lớn và ăng-ten cực kỳ nhạy bén để phát hiện mùi hữu cơ từ khoảng cách xa. Phổi nhánh (branchiostegal lung) của chúng có diện tích bề mặt trao đổi khí khổng lồ được lót bằng các mạch máu siêu nhỏ.",
+    "short_description": "Lực kẹp 3300N ngang ngửa sư tử. Động vật giáp xác trên cạn lớn nhất.",
+    "description": "Cua Dừa là một kỳ quan tiến hóa của phân ngành Giáp xác. Bắt đầu vòng đời dưới đại dương như bao loài cua khác, nhưng khi trưởng thành, chúng hoàn toàn mất khả năng thở dưới nước và chuyển lên sống 100% trên cạn. Vỏ ngoài của chúng được gia cố bằng canxi cacbonat tạo thành một tấm giáp chống đỡ ngoại lực hoàn hảo. Sức mạnh chính của Cua Dừa nằm ở đôi càng bất cân xứng, có khả năng nâng những vật nặng tới 28 kg và nghiền nát những vật cứng như vỏ dừa khô một cách dễ dàng.",
+    "strengths": [
+      "Lực kẹp càng khổng lồ 3300 Newton vô địch trong thế giới động vật không xương sống",
+      "Lớp vỏ kitin hóa vôi cực dày giúp bảo vệ cơ thể khỏi va đập và động vật ăn mồi",
+      "Khả năng leo trèo vách đá và thân cây dừa thẳng đứng cực kỳ điêu luyện",
+      "Khứu giác siêu nhạy bén có thể định vị nguồn thức ăn từ khoảng cách rất xa",
+      "Độ bền cơ học của bộ càng bất đối xứng cho phép nâng vật nặng lên tới 28kg",
+      "Khả năng trữ nước trong khoang phổi giúp chúng tồn tại ở những vùng khô hạn cục bộ",
+      "Càng phụ lớn hoạt động như những mỏ neo bám chắc chắn, cho phép leo cây thẳng đứng cao tới 6 mét mà không ngã.",
+      "Trí nhớ không gian xuất sắc giúp định vị chính xác vị trí hang trú ẩn và nguồn thức ăn trên đảo.",
+      "Khả năng tái sinh vảy và càng sau các chu kỳ lột xác, sửa chữa hầu hết các tổn thương cơ học trước đó."
+    ],
+    "weaknesses": [
+      "Cơ thể quá nặng nề khiến tốc độ di chuyển trên mặt đất khá chậm chạp",
+      "Hoàn toàn mất khả năng thở dưới nước, có thể bị chết đuối nếu ngập sâu quá lâu",
+      "Quá trình lột xác định kỳ khiến chúng cực kỳ dễ bị tổn thương trong vài tuần",
+      "Bị giới hạn môi trường sống bởi độ ẩm, nếu phổi nhánh bị khô hoàn toàn chúng sẽ ngạt thở"
+    ],
+    "fun_facts": [
+      "Cua Dừa còn được gọi là 'Cướp biển cướp bóc' (Robber Crab) vì chúng thường lẻn vào lều của khách du lịch để ăn trộm xoong, nồi, dao, kéo kim loại mang đi",
+      "Để ăn được một quả dừa, chúng có thể mất vài ngày gặm nhấm và đập vỏ, nhưng chúng luôn kiên nhẫn thực hiện thành công",
+      "Chúng có thể sống thọ tới hơn 60 năm trên cạn nếu không bị săn bắt",
+      "Ấu trùng cua dừa mới nở sống dưới biển phải mượn vỏ ốc để bảo vệ phần bụng mềm trước khi phát triển vỏ cứng hoàn toàn trên cạn",
+      "Cua dừa non phải sống dưới đại dương và mượn vỏ ốc trong khoảng 1-2 năm đầu đời. Khi trưởng thành và vỏ canxi hóa hoàn toàn, chúng từ bỏ vỏ ốc và không bao giờ quay lại biển nữa vì sẽ bị chết đuối."
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1371/journal.pone.0166108",
+        "label": "PLOS ONE - Giant Coconut Crabs Exert Strongest Pinch Force of Any Crustacean"
+      },
+      {
+        "url": "https://www.iucnredlist.org/species/2811/126813586",
+        "label": "IUCN Red List - Birgus latro Conservation Status"
+      },
+      {
+        "url": "https://doi.org/10.1111/j.1469-7998.2005.00018.x",
+        "label": "Journal of Zoology - Olfactory system and antennae structure in Birgus latro"
+      },
+      {
+        "url": "https://doi.org/10.1186/1741-7007-8-54",
+        "label": "BMC Biology - Evolutionary transition to land: The branchiostegal lung of Birgus latro"
+      }
+    ],
+    "image_color": "#A55EEA",
+    "enrichment_count": 2,
+    "diet_type": "omnivore",
+    "diet_items": [
+      "quả dừa",
+      "trái cây rừng",
+      "xác động vật",
+      "ốc mượn hồn",
+      "chim biển non",
+      "chuột",
+      "hạt giống",
+      "côn trùng lớn"
+    ],
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 40,
+    "lifespan_max": 100,
+    "lifespan_unit": "years",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Giao phối trên đất liền từ tháng 5 đến tháng 9. Sau đó con cái mang trứng đã thụ tinh dưới bụng và giải phóng chúng vào đại dương trong những đêm trăng khi triều cường để nở thành ấu trùng zoea bơi tự do.",
+    "locomotion": "walk",
+    "speed_max": 4.5,
+    "conservation_status": "VU",
+    "size_min_mm": 400,
+    "size_max_mm": 1000,
+    "weight_avg_g": 3000
+  },
+  {
+    "id": "planarian",
+    "name": "Sán Dẹp Planaria",
+    "scientific_name": "Schmidtea mediterranea",
+    "class": "Rhabditophora",
+    "order": "Tricladida",
+    "family": "Dugesiidae",
+    "real_weight": "< 1 g",
+    "size": "3 - 15 mm",
+    "characteristics": "Cơ thể dẹt, đối xứng hai bên, có hai đốm mắt đặc trưng ở đầu nhạy cảm với ánh sáng. Cấu tạo cơ thể rất đơn giản, không có hệ tuần hoàn và hô hấp chuyên biệt, trao đổi khí trực tiếp qua da. Chứa tỷ lệ tế bào gốc vạn năng (neoblasts) cực kỳ lớn chiếm tới 30% tổng số tế bào cơ thể.",
+    "habitat": "Các dòng suối ngọt mát, ao hồ nước trong sạch và dưới bề mặt các phiến đá ẩm ướt.",
+    "location": "Phân bố rộng khắp thế giới, đặc biệt là vùng ôn đới và nhiệt đới.",
+    "survival_method": "Bò trên bề mặt bằng cách sử dụng các lông mao hiển vi ở bụng cùng chất nhầy tự tiết ra. Săn mồi bằng cách dùng vòi tiêu hóa (pharynx) nhô ra giữa bụng để hút chất dịch từ các loài động vật không xương sống nhỏ khác.",
+    "unique_traits": "Khả năng siêu tái tạo vô hạn: Một mảnh cắt nhỏ chỉ bằng 1/279 cơ thể vẫn tự tái sinh thành một con sán hoàn chỉnh trong vòng hai tuần. Đặc biệt, nếu cắt đầu của nó, cái đầu mới mọc lại vẫn lưu trữ được toàn bộ ký ức và thói quen cũ của con sán nhờ hệ thần kinh phân tán. Nghiên cứu nổi tiếng năm 2013 của Tal Shomrat và Michael Levin chứng minh sán dẹp Planaria sau khi bị chặt đầu và mọc lại đầu mới hoàn chỉnh vẫn giữ nguyên được các ký ức đã học trước đó, gợi ý rằng thông tin trí nhớ được lưu trữ phân tán ở các mô cơ thể ngoài não bộ.",
+    "short_description": "Siêu tái tạo vô hạn từ 1/279 cơ thể. Giữ nguyên ký ức sau khi tái sinh.",
+    "description": "Sán Dẹp Planaria là mô hình nghiên cứu sinh học bất tử lý tưởng của khoa học hiện đại. Bí mật của sự bất tử này nằm ở hệ thống neoblasts - nhóm tế bào gốc vạn năng có khả năng phân chia vô hạn và biến đổi thành bất kỳ loại tế bào nào bị thiếu hụt. Khi sán bị tổn thương hay phân mảnh, các neoblasts lập tức di chuyển đến vết thương tạo thành cấu trúc tái sinh (blastema), khôi phục lại các cơ quan hoàn chỉnh từ hệ thần kinh, mắt cho đến hệ tiêu hóa mà không để lại sẹo hay lão hóa.",
+    "strengths": [
+      "Khả năng siêu tái tạo tuyệt đối từ mảnh cơ thể siêu nhỏ chỉ bằng 1/279 kích thước gốc",
+      "Bất tử về mặt sinh học nhờ hệ thống tế bào gốc neoblast hoạt động không bao giờ suy kiệt",
+      "Khả năng lưu trữ thông tin thần kinh trong toàn cơ thể, giữ được ký ức sau khi mọc lại não mới",
+      "Có thể tự nhân bản vô tính nhanh chóng bằng cách tự phân đôi cơ thể",
+      "Khả năng nhịn đói cực hạn bằng cách tự tiêu giảm (degrowth) kích thước cơ thể mà không suy thoái chức năng",
+      "Hệ thống neoblasts (tế bào gốc vạn năng) có khả năng phân chia không giới hạn mà không bị rút ngắn telomere, tránh hoàn toàn sự lão hóa tế bào.",
+      "Kháng bức xạ cực cao, có thể chịu được liều lượng phóng xạ làm chết hầu hết các sinh vật khác nhờ cơ chế sửa chữa DNA siêu tốc.",
+      "Khả năng tự tiêu hóa và tái cấu trúc mô (autophagy) để thu nhỏ kích thước cơ thể khi đói mà không làm mất đi các chức năng sinh học cốt lõi."
+    ],
+    "weaknesses": [
+      "Cực kỳ mong manh trước mọi lực cơ học vật lý như đè bẹp, nghiền nát",
+      "Rất nhạy cảm với chất lượng nước và ô nhiễm hóa chất, dễ bị phân rã tự hoại",
+      "Không có bất kỳ vũ khí tấn công hay phòng thủ trực tiếp nào đối với kẻ thù lớn",
+      "Phụ thuộc vào bóng tối để tránh mất nước, hoạt động bị hạn chế nghiêm trọng trong điều kiện ánh sáng mạnh"
+    ],
+    "fun_facts": [
+      "Nếu bạn cắt sán dọc phần đầu thành hai nửa, nó sẽ mọc lại thành một con sán có hai đầu hoàn chỉnh hoạt động độc lập",
+      "Các nhà khoa học đã huấn luyện sán đi qua một mê cung để tìm thức ăn, sau đó chặt đầu chúng. Khi chiếc đầu mới mọc ra, con sán vẫn nhớ cách đi mê cung nhanh hơn các con sán chưa được huấn luyện",
+      "Khi đối mặt với nạn đói, chúng có thể tự tiêu hóa các cơ quan nội tạng của chính mình để thu nhỏ kích thước chỉ còn bằng 1/100 lúc đầu, và phục hồi hoàn toàn khi có thức ăn trở lại",
+      "Chúng có thể bị cắt thành hàng trăm mảnh nhỏ và tạo ra cả một bầy sán nhân bản y hệt nhau",
+      "Nếu một con sán Planaria bị bỏ đói trong nhiều tháng, nó sẽ tự ăn chính cơ thể mình để thu nhỏ lại chỉ bằng 1/100 thể tích ban đầu, trở thành một phiên bản 'tí hon' hoàn chỉnh về mặt giải phẫu."
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1126/science.1145951",
+        "label": "Science - Stem Cells and Regeneration in Planarians"
+      },
+      {
+        "url": "https://doi.org/10.1242/dev.158725",
+        "label": "Development - Schmidtea mediterranea as a model system"
+      },
+      {
+        "url": "https://doi.org/10.1086/675510",
+        "label": "Journal of Neurogenetics - Memory retention after brain regeneration in planarians"
+      },
+      {
+        "url": "https://doi.org/10.1242/jeb.087809",
+        "label": "Journal of Experimental Biology - An automated training paradigm reveals memory persistence in decapitated planarians"
+      }
+    ],
+    "image_color": "#26DE81",
+    "enrichment_count": 2,
+    "diet_type": "detritivore",
+    "diet_items": [
+      "trùng chỉ",
+      "ốc nước ngọt nhỏ",
+      "ấu trùng côn trùng",
+      "hữu cơ phân hủy",
+      "xác động vật thủy sinh",
+      "giun dẹp nhỏ",
+      "giáp xác râu ngành"
+    ],
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 120,
+    "lifespan_max": 1200,
+    "lifespan_unit": "months",
+    "reproduction_type": "hermaphrodite",
+    "reproduction_notes": "Lưỡng tính đồng thời. Giao phối chéo hữu tính để đẻ kén trứng chứa phôi, hoặc sinh sản vô tính bằng cách tự thắt đứt đuôi (fission) rồi tái sinh thành hai cơ thể độc lập.",
+    "locomotion": "crawl",
+    "speed_max": 0.06,
+    "conservation_status": "LC",
+    "size_min_mm": 3,
+    "size_max_mm": 15,
+    "weight_avg_g": 0.02
+  },
+  {
+    "id": "amazon-river-dolphin",
+    "name": "Cá Heo Hồng Amazon",
+    "scientific_name": "Inia geoffrensis",
+    "class": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Iniidae",
+    "real_weight": "~100 - 185 kg",
+    "size": "1.8 - 2.5 m",
+    "characteristics": "Cơ thể thuôn dài mập mạp với màu sắc đặc trưng thay đổi từ xám xanh khi còn trẻ sang hồng tươi rực rỡ khi trưởng thành. Chúng có chiếc mõm dài mỏng chứa khoảng 24-34 cặp răng ở mỗi bên hàm. Mắt rất nhỏ nhưng có thị lực khá tốt. Trán phồng to (melon) mềm chứa nhiều mỡ có thể thay đổi hình dạng chủ động để tập trung chùm sóng âm. Đốt sống cổ của chúng không bị hợp nhất (unfused cervical vertebrae), cho phép chúng quay đầu 90 độ linh hoạt để luồn lách qua các thân cây ngập nước trong rừng Amazon. Mõm dài mảnh chứa răng dị hình (heterodont dentition) gồm răng hình nón phía trước để bắt mồi và răng dẹt phía sau để nghiền nát cua rùa. Hệ cơ ngực và các vây chèo siêu rộng cho phép di chuyển linh hoạt giật lùi và xoay tròn tại chỗ. Ngoài ra, chúng có các sợi lông xúc giác (vibrissae) trên mõm để cảm nhận chuyển động cơ học trong nước đục sâu.",
+    "habitat": "Lưu vực các con sông nước ngọt lớn, kênh rạch, hồ nước và đặc biệt thích các khu rừng ngập nước trong mùa lũ.",
+    "location": "Lưu vực sông Amazon và Orinoco ở vùng Nam Mỹ (Brazil, Peru, Colombia, Venezuela, Ecuador, Bolivia).",
+    "survival_method": "Săn mồi đơn độc hoặc theo nhóm nhỏ. Chúng sử dụng hệ thống định vị bằng sóng siêu thanh (echolocation) cực kỳ tinh vi để phát hiện con mồi ẩn nấp trong các lớp bùn đất đáy sông hoặc giữa các gốc cây ngập nước. Chúng uốn lượn cơ thể luồn lách qua các cành cây ngập nước để bắt cá. Trong mùa nước nổi, chúng bơi vào các khu rừng ngập nước (igapós) để săn mồi giữa các hàng cây, sử dụng các vây ngực lớn chuyển động độc lập như mái chèo để xoay trở cực kỳ cơ động trong không gian hẹp. Chúng cũng tận dụng lực đẩy từ dòng nước xiết để lùa cá vào vùng nước nông hoặc sát bờ sông để dễ dàng săn bắt. Lớp mỡ dày bao bọc cơ thể giúp chúng điều nhiệt tốt trong nước mát và chống chọi lại các cú cắn từ loài cá ăn thịt khác.",
+    "unique_traits": "Da chuyển màu hồng tươi rực rỡ do các mạch máu sát bề mặt da tăng sinh và sẹo từ các cuộc tranh giành lãnh thổ. Đốt sống cổ không bị dung hợp (khớp cổ linh hoạt) cho phép quay đầu 90 độ sang hai bên để luồn lách trong rừng cây ngập nước. Hệ thống định vị bằng tiếng vang (echolocation) phát ra các xung âm thanh thông qua cơ quan melon có thể thay đổi hình dạng ở trán, cho phép chúng quét các góc hẹp và phát hiện con mồi ẩn sâu dưới bùn cát. Bộ răng dị hình kết hợp giữa răng xé và răng nghiền cho phép chúng có chế độ ăn đa dạng nhất trong số các loài cá heo. Khả năng điều biến hình dạng melon linh hoạt để hội tụ chùm tia siêu âm hẹp, tăng độ phân giải hình ảnh sonar lên mức tối đa trong nước đục ngầm. Thích nghi hoàn hảo với hệ sinh thái rừng ngập lũ (varzea). Cột sống cổ linh hoạt cho phép xoay đầu góc 90 độ tự do. Sonar định vị tiếng vang của chúng phát triển tần số điều tần cực nhạy để quét môi trường nước chật hẹp chứa nhiều rễ cây chằng chịt.",
+    "short_description": "Làn da hồng rực rỡ và khớp cổ linh hoạt quay đầu 90 độ giúp luồn lách săn mồi trong rừng ngập nước.",
+    "description": "Cá Heo Hồng Amazon (Boto) là loài cá heo nước ngọt lớn nhất thế giới và là biểu tượng huyền thoại của rừng già Amazon. Chúng có khả năng thích nghi phi thường để sinh tồn trong môi trường sông ngòi nhiều chướng ngại vật. Khác với cá heo biển có cổ cứng đơ để tối ưu khí động học bơi nhanh, Boto sở hữu đốt sống cổ linh hoạt, cho phép chúng xoay đầu tự do để định vị con mồi giữa các rễ cây chằng chịt. Làn da hồng của chúng là một đặc trưng độc đáo, kết quả của quá trình mài mòn da và lưu lượng máu tuần hoàn mạnh ở các mô sát bề mặt cơ thể.",
+    "strengths": [
+      "Hệ thống định vị bằng sóng siêu thanh (sonar) cực kỳ nhạy bén trong nước đục",
+      "Khớp cổ linh hoạt quay 90 độ tối ưu khả năng cơ động ở chướng ngại vật rừng ngập nước",
+      "Bộ răng dị hình (răng trước để tóm mồi, răng sau để nghiền) xử lý được cả rùa và cua vỏ cứng",
+      "Lực đẩy đuôi mạnh mẽ luồn lách cự ly hẹp",
+      "Khả năng xoay đầu linh hoạt nhờ đốt sống cổ tách rời giúp định hướng tự do trong không gian rừng ngập nước chật hẹp.",
+      "Hệ thống định vị tiếng vang có tần số cực cao giúp phát hiện các loài cá da trơn trốn dưới lớp bùn sông đục ngầu.",
+      "Vây ngực rộng chuyển động độc lập cho phép bơi lùi và xoay góc hẹp tuyệt đối.",
+      "Lớp da dày đàn hồi tốt chịu được trầy xước từ cành cây gai góc trong rừng ngập mặn.",
+      "Lông xúc giác nhạy cảm trên mỏ (vibrissae) cảm nhận trực tiếp dòng chảy cơ học nhỏ từ tôm cá.",
+      "Khả năng mang thai thích ứng mùa lũ giúp con non sinh ra đúng mùa cá sinh sôi nhiều nhất.",
+      "Khả năng uốn dẻo cột sống nhờ đốt sống cổ không bị dung hợp, cho phép chúng thực hiện các cú quay đầu ngặt nghèo mà cá heo biển không bao giờ làm được.",
+      "Mũi mõm dài được trang bị các sợi lông xúc giác (vibrissae) nhạy cảm giúp phát hiện rung động nhỏ nhất của con mồi ẩn dưới bùn.",
+      "Khả năng bơi lùi cực tốt nhờ vây ngực lớn chuyển động linh hoạt như hai mái chèo độc lập."
+    ],
+    "weaknesses": [
+      "Tốc độ bơi tối đa thấp hơn nhiều so với cá heo biển",
+      "Cơ thể mập mạp và vây ngực lớn dễ bị mắc cạn khi nước lũ rút nhanh",
+      "Thị lực bị hạn chế bởi làn nước đục ngầu chứa nhiều phù sa sông",
+      "Thị lực suy giảm nghiêm trọng do mắt nhỏ, hoàn toàn phụ thuộc vào thính giác siêu âm để tránh các lưới đánh cá.",
+      "Tốc độ bơi đường thẳng kém hơn so với cá heo biển do cơ thể mập mạp và thiếu vây lưng nhọn giúp giảm lực cản.",
+      "Độ nhạy cảm thính giác cao khiến chúng dễ bị tổn thương bởi ô nhiễm tiếng ồn từ động cơ thuyền bè và hoạt động khai thác khoáng sản.",
+      "Hệ thống tim mạch chịu áp lực lớn khi hoạt động liên tục trong vùng nước ô nhiễm hóa chất khai khoáng."
+    ],
+    "fun_facts": [
+      "Trong truyền thuyết bản địa Amazon, cá heo hồng là một sinh vật thần thoại có khả năng biến hình thành một chàng trai trẻ đẹp trai đội mũ (để che lỗ thở trên đầu) đi quyến rũ các cô gái trẻ vào ban đêm",
+      "Màu hồng của chúng đậm hơn ở con đực, vì chúng thường đánh nhau nhiều và tạo ra nhiều vết sẹo tích tụ, đồng thời kích thích tuần hoàn máu khi phấn khích",
+      "Chúng có thể sử dụng vây ngực độc lập để bơi lùi - một kỹ năng hiếm thấy ở các loài cá heo đại dương",
+      "Màu hồng của chúng thực chất là kết quả của sự tích tụ các mô sẹo từ các cuộc chiến giành lãnh thổ hoặc bạn tình, làm lộ các mạch máu màu đỏ dưới da.",
+      "According to Amazonian folklore, pink river dolphins are shape-shifters (Boto) that transform into handsome men in white clothes to seduce village girls.",
+      "Chúng có dung tích phổi cực lớn và có thể trao đổi đến 90% lượng khí trong phổi mỗi lần thở, so với chỉ 15% ở con người.",
+      "Cá heo hồng Amazon sở hữu não bộ có dung tích lớn hơn con người khoảng 40%, thể hiện mức độ thông minh và phức tạp cao trong cấu trúc xã hội.",
+      "Theo truyền thuyết bản địa Amazon, cá heo hồng là những sinh vật biến hình (Boto), có thể hóa thân thành những chàng trai trẻ mặc đồ trắng để quyến rũ các cô gái trong làng.",
+      "Lông xúc giác trên mõm cá heo hồng là một đặc điểm tiến hóa kế thừa từ tổ tiên trên cạn, giúp chúng 'sờ' và cảm nhận con mồi khi tầm nhìn sonar bị cản trở bởi bùn cát hoặc rễ cây dày đặc."
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1111/j.1748-7692.2002.tb01084.x",
+        "label": "Marine Mammal Science - Home range and behavior of Boto in the Amazon river"
+      },
+      {
+        "url": "https://www.worldwildlife.org/species/amazon-river-dolphin",
+        "label": "WWF - Amazon River Dolphin Species Profile"
+      },
+      {
+        "url": "https://doi.org/10.1111/j.1748-7692.1989.tb00236.x",
+        "label": "Marine Mammal Science - Anatomical adaptations and echolocation of Inia geoffrensis"
+      },
+      {
+        "url": "https://doi.org/10.2307/1382435",
+        "label": "Journal of Mammalogy - Feeding ecology and social behavior of the Amazon River Dolphin"
+      },
+      {
+        "url": "https://doi.org/10.1111/mms.12753",
+        "label": "Marine Mammal Science - Intraspecific aggression and scars in Inia geoffrensis"
+      },
+      {
+        "url": "https://doi.org/10.3390/ani11092607",
+        "label": "Animals - Behavioral biology and conservation of Inia geoffrensis"
+      },
+      {
+        "url": "https://doi.org/10.1093/jmammal/gyy088",
+        "label": "Journal of Mammalogy - River dolphin conservation and habitat use in the Amazon basin"
+      }
+    ],
+    "image_color": "#FFC0CB",
+    "enrichment_count": 5,
+    "diet_type": "carnivore",
+    "diet_items": [
+      "cá piranha",
+      "cá da trơn",
+      "rùa sông nhỏ",
+      "cua sông",
+      "cá croaker",
+      "cá linh",
+      "cá cichlid"
+    ],
+    "activity_pattern": "variable",
+    "lifespan_min": 15,
+    "lifespan_max": 30,
+    "lifespan_unit": "years",
+    "reproduction_type": "viviparous",
+    "reproduction_notes": "Thời gian mang thai kéo dài khoảng 11 tháng. Cá heo mẹ sinh ra một con non duy nhất dưới nước và nuôi con bằng sữa mẹ giàu dinh dưỡng trong hơn một năm. Con non thường đi theo mẹ từ 2 đến 3 năm để học kỹ năng săn mồi.",
+    "locomotion": "swim",
+    "speed_max": 22.5,
+    "conservation_status": "EN",
+    "size_min_mm": 2000,
+    "size_max_mm": 2500,
+    "weight_avg_g": 125000
+  },
+  {
+    "id": "atlas-moth",
+    "name": "Ngài Tằm Vũ Trụ",
+    "scientific_name": "Attacus atlas",
+    "class": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Saturniidae",
+    "real_weight": "~1 - 2.5 g",
+    "size": "Sải cánh 25 - 30 cm",
+    "characteristics": "Là một trong những loài bướm đêm lớn nhất thế giới tính theo diện tích bề mặt cánh và sải cánh. Cánh có hoa văn phức tạp màu nâu đỏ, cam, đen và trắng, với các ô cửa sổ tam giác trong suốt (hyaline spots) độc đáo. Điểm ấn tượng nhất là phần chóp cánh trước uốn cong trông giống hệt như đầu của một con rắn hổ mang đang bạnh cổ. Con đực có đôi ăng-ten dạng lông chim kép khổng lồ cực nhạy để dò tìm pheromone của con cái. Con trưởng thành hoàn toàn không có miệng hoặc ống hút hoạt động, hệ tiêu hóa bị tiêu biến hoàn toàn nên toàn bộ năng lượng sống phụ thuộc vào lượng chất béo tích lũy từ thời kỳ sâu bướm. Phủ trên đôi cánh là hàng vạn vảy chitin hiển vi giúp tạo hiệu ứng tán xạ ánh sáng và giữ ấm. Đôi cánh của chúng có cấu trúc vảy xếp lớp giúp chống thấm nước hiệu quả, với các vân màu cam nâu rực rỡ và các ô cửa sổ tam giác trong suốt (hyaline spots) không chứa vảy ở trung tâm mỗi cánh.",
+    "habitat": "Rừng nhiệt đới và cận nhiệt đới vùng đất thấp, cũng xuất hiện quanh các vườn cây ăn quả.",
+    "location": "Đông Nam Á, bao gồm Việt Nam, Ấn Độ, Trung Quốc và Indonesia.",
+    "survival_method": "Hoạt động chủ yếu vào ban đêm để tránh các loài chim ăn thịt. Loài ngài này sử dụng chiến thuật ngụy trang và hăm dọa để tự vệ. Khi bị đe dọa, chúng rơi xuống đất hoặc đập cánh chậm rãi để phô diễn phần đầu rắn trên chóp cánh nhằm xua đuổi kẻ thù. Con đực sử dụng khứu giác siêu việt để tìm kiếm bạn đời nhanh chóng trong vòng đời ngắn ngủi của mình. Giai đoạn sâu ăn lá liên tục tích lũy năng lượng khổng lồ thông qua chế độ ăn tạp các loài lá cây chủ chứa nhiều tannin để tổng hợp độc tố nhẹ tự vệ. Ngoài ra, lông nhung trên ngực giúp hấp thụ sóng âm sonar của dơi để trốn tránh radar săn mồi. Khi bị đe dọa trực diện, chúng rơi tự do xuống thảm lá khô bên dưới và rung cánh liên tục tạo ra âm thanh xào xạc bắt chước loài rắn độc đang sẵn sàng tấn công.",
+    "unique_traits": "Cơ chế ngụy trang 'đầu rắn' giả lập hoàn hảo cả về màu sắc lẫn hoa văn 3D ở chóp cánh trước, khi đập cánh mô phỏng chuyển động lắc đầu của rắn. Các cửa sổ tam giác trong suốt trên cánh giúp phá vỡ đường nét cơ thể khi đậu trên tán lá. Đôi anten lông chim của con đực chứa hàng vạn thụ thể hóa học nhạy bén phát hiện được một phân tử pheromone duy nhất trong không khí. Sự biến mất hoàn toàn của cơ quan miệng ở dạng trưởng thành buộc chúng phải tối ưu hóa năng lượng bay bằng các luồng khí động học thụ động. Kén tơ có độ bền cao khó bị xé rách bởi các loài chim ăn thịt. Phần chóp cánh trước kéo dài có hình dạng, hoa văn và màu sắc giống hệt đầu của một con rắn hổ mang đang bọc đầu, hoàn thiện với một chấm đen lớn giả mắt rắn. Sải cánh khổng lồ đạt tới diện tích bề mặt lớn nhất lớp côn trùng (lên tới 400 cm2). Cấu trúc vảy cánh hiển vi chống bám nước mưa tuyệt vời và tạo hiệu ứng phản xạ màu sắc bắt mắt. Hoa văn giả đầu rắn hổ mang ở đỉnh cánh có chiều sâu quang học 3D rất rõ nét.",
+    "short_description": "Sải cánh khổng lồ 30cm với hai đầu cánh giả đầu rắn độc. Hoàn toàn không có miệng.",
+    "description": "Ngài Tằm Vũ Trụ (Attacus atlas) là một kiệt tác tiến hóa tuyệt vời của thế giới côn trùng. Trái ngược hoàn toàn với kích thước đồ sộ và sải cánh khổng lồ, cuộc đời ở dạng ngài trưởng thành của chúng vô cùng ngắn ngủi và bi tráng. Không có bất kỳ cơ quan miệng nào để ăn uống, chúng dồn mọi năng lượng chỉ để bay đi tìm kiếm bạn đời bằng pheromone siêu nhạy bén. Đôi cánh có diện tích lớn nhất trong thế giới bướm không chỉ giúp chúng bay lượn mà còn là chiếc lá chắn phòng thủ chủ động với hình vẽ hai cái đầu rắn độc giống đến kinh ngạc ở phần đỉnh cánh, giúp xua đuổi hầu hết các loài chim ăn thịt tò mò.",
+    "strengths": [
+      "Diện tích sải cánh cực lớn tạo uy thế và lực nâng bay khỏe",
+      "Cánh giả đầu rắn độc ngụy trang và hù dọa động vật săn mồi cực tốt",
+      "Khứu giác anten của con đực cực nhạy, có thể phát hiện pheromone con cái cách xa vài km",
+      "Giai đoạn sâu ăn lá tích lũy năng lượng dự trữ khổng lồ",
+      "Hệ thống thụ thể hóa học siêu nhạy trên ăng-ten dạng kép (bipectinate antennae) của con đực giúp phát hiện pheromone của con cái từ khoảng cách hơn 5 km.",
+      "Khả năng ngụy trang thị giác đỉnh cao nhờ cấu trúc chóp cánh đầu rắn đánh lừa hầu hết các loài chim ăn côn trùng.",
+      "Sâu bướm có tuyến phun dịch axit formic độc hại khi bị kẻ thù tấn công.",
+      "Kén tơ cực kỳ dày và dai bảo vệ nhộng khỏi thời tiết khắc nghiệt và côn trùng ký sinh.",
+      "Khả năng sinh sản nhanh với lượng trứng đẻ lớn lên tới 200 quả để bù đắp tỉ lệ sống sót thấp.",
+      "Đôi cánh lớn có lớp vảy hiển vi chống thấm nước mưa cực hiệu quả.",
+      "Kén tơ (tơ Fagara) dai và chắc chắn bảo vệ kén vượt qua mùa đông an sau.",
+      "Lông tơ đặc biệt trên cơ thể giúp hấp thụ và triệt tiêu sóng siêu âm định vị của loài dơi săn mồi, hoạt động như một lớp ngụy trang radar tàng hình.",
+      "Sâu bướm có khả năng phun ra axit formic độc hại xa tới vài cm để tự vệ trước chim và kiến.",
+      "Cấu trúc kén tơ fagara siêu bền có khả năng chịu nước và chống rách tuyệt đối, bảo vệ nhộng trong thời gian dài."
+    ],
+    "weaknesses": [
+      "Không có miệng hay hệ tiêu hóa nên không thể ăn, dẫn đến cái chết sinh học tất yếu sau 7-14 ngày",
+      "Bay khá chậm và vụng về do cơ thể nặng và cánh quá to cản gió",
+      "Rất dễ làm mồi cho dơi hoặc các loài săn mồi lớn hơn ban đêm",
+      "Không có cơ quan tiêu hóa và miệng, giới hạn tuổi thọ trưởng thành chỉ trong vòng chưa đầy một tuần.",
+      "Kích thước cánh khổng lồ khiến tốc độ bay rất chậm và vụng về, dễ bị dơi hoặc chim lớn bắt giữ.",
+      "Rất nhạy cảm với ô nhiễm ánh sáng nhân tạo ban đêm, khiến chúng bị mất phương hướng và kiệt sức.",
+      "Giai đoạn nhộng bất động kéo dài dễ bị ký sinh trùng hoặc kiến phá hoại.",
+      "Hoàn toàn không có cơ chế tự vệ chủ động như ngòi độc hay răng cắn, chỉ phụ thuộc ngụy trang."
+    ],
+    "fun_facts": [
+      "Kén của Ngài Tằm Vũ Trụ lớn và dai đến mức ở một số vùng của Đài Loan, người ta thu hoạch chúng để làm những chiếc ví đựng tiền xu nhỏ",
+      "Cái tên 'Atlas' được đặt theo tên của vị thần khổng lồ nâng bầu trời trong thần thoại Hy Lạp do sải cánh khổng lồ của nó, hoặc do hoa văn trên cánh trông giống như một tấm bản đồ địa lý",
+      "Ở Việt Nam, loài ngài này nằm trong Sách Đỏ Việt Nam và được pháp luật bảo vệ nghiêm ngặt",
+      "Ở Đài Loan, kén của ngài tằm vũ trụ có kích thước lớn và cấu trúc tơ thô dai đến mức người dân địa phương thường dùng chúng làm ví đựng tiền xu hoặc túi nhỏ.",
+      "Vì không có miệng, toàn bộ mục đích sống duy nhất của ngài tằm vũ trụ trưởng thành chỉ là tìm bạn đời và sinh sản trước khi cạn kiệt năng lượng dự trữ.",
+      "Tỷ lệ sống sót từ trứng đến ngài trưởng thành ngoài tự nhiên chỉ dưới 1% do sự săn lùng của kiến, chim và ong ký sinh.",
+      "Chất tơ của kén ngài tằm vũ trụ được gọi là tơ fagara, có độ bền kéo vượt trội và màu nâu nhạt tự nhiên rất bền.",
+      "Ở một số nước châu Á, tơ từ kén ngài tằm vũ trụ được kéo thành sợi thô gọi là tơ fagara, có chất lượng dẻo dai tuyệt vời.",
+      "Sâu bướm của loài này có thể ăn lượng lá cây gấp hàng ngàn lần trọng lượng cơ thể của chúng trong vài tuần để tích lũy năng lượng dự trữ cho toàn bộ đời sống của ngài trưởng thành."
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1111/j.1469-7998.2007.00344.x",
+        "label": "Journal of Zoology - Flight morphology and energetics of giant Saturniid moths"
+      },
+      {
+        "url": "https://www.nhm.ac.uk/discover/atlas-moth-one-of-largest-insects-in-the-world.html",
+        "label": "Natural History Museum - Atlas Moth Discoveries"
+      },
+      {
+        "url": "https://doi.org/10.1016/j.aspen.2016.03.011",
+        "label": "Journal of Asia-Pacific Entomology - Life history and biology of Attacus atlas"
+      },
+      {
+        "url": "https://doi.org/10.1007/s10841-010-9345-4",
+        "label": "Journal of Insect Conservation - Conservation genetics of giant silk moths"
+      },
+      {
+        "url": "https://doi.org/10.1007/s10841-020-00287-2",
+        "label": "Journal of Insect Conservation - Habitat preference and threats to Attacus atlas"
+      },
+      {
+        "url": "https://doi.org/10.1007/s00114-019-1645-z",
+        "label": "The Science of Nature - Antennal structure and pheromone sensitivity in Attacus atlas"
+      },
+      {
+        "url": "https://doi.org/10.1111/j.1365-3032.1989.tb01099.x",
+        "label": "Physiological Entomology - Pheromone communication and flight behavior in Attacus atlas"
+      }
+    ],
+    "image_color": "#A0522D",
+    "enrichment_count": 5,
+    "diet_type": "herbivore",
+    "diet_items": [
+      "lá khế",
+      "lá ổi",
+      "lá mãng cầu",
+      "lá quế",
+      "lá sấu",
+      "lá bưởi",
+      "lá vạn tuế"
+    ],
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 5,
+    "lifespan_max": 7,
+    "lifespan_unit": "days",
+    "reproduction_type": "oviparous",
+    "reproduction_notes": "Con cái tiết ra pheromone mạnh mẽ để thu hút con đực từ khoảng cách vài km. Sau khi giao phối, con cái đẻ khoảng 150-200 quả trứng hình tròn màu xanh lục trên mặt dưới của lá cây chủ rồi nhanh chóng kiệt sức và chết.",
+    "locomotion": "fly",
+    "speed_max": 15,
+    "conservation_status": "LC",
+    "size_min_mm": 250,
+    "size_max_mm": 300,
+    "weight_avg_g": 2.5
+  }
+]
