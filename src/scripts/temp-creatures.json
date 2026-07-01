@@ -1,206 +1,206 @@
 [
   {
-    "id": "peacock-mantis-shrimp",
-    "name": "Tôm Tít Peacock",
-    "scientificName": "Odontodactylus scyllarus",
+    "id": "pelican-eel",
+    "name": "Cá Chình Bồ Nông",
+    "scientificName": "Eurypharynx pelecanoides",
     "taxonomy": {
-      "class": "Malacostraca",
-      "order": "Stomatopoda",
-      "family": "Odontodactylidae"
+      "class": "Actinopterygii",
+      "order": "Saccopharyngiformes",
+      "family": "Eurypharyngidae"
     },
-    "realWeight": "~100 - 200 g",
-    "size": "10 - 18 cm",
-    "characteristics": "Thân hình sặc sỡ đa sắc màu tựa như đuôi công, nổi bật với màu xanh lá cây rực rỡ xen kẽ đốm đỏ, xanh dương và cam. Sở hữu hai chiếc càng (nắm đấm) tiến hóa dạng chùy (smashers) cực khỏe ở phía trước ngực và cặp mắt kép nhô cao hoạt động độc lập.",
-    "habitat": "Các rạn san hô nông, hang đá và nền cát ở vùng biển nhiệt đới ấm áp.",
-    "location": "Vùng biển Ấn Độ Dương - Thái Bình Dương, từ đảo Guam đến Đông Phi.",
-    "survival_method": "Săn mồi đơn độc và bảo vệ lãnh thổ cực kỳ hung hãn. Chúng sử dụng lực đấm búa tạ từ hai càng chùy để đập vỡ vỏ của các loài giáp xác như cua, ốc và sò. Ngoài ra chúng còn ẩn nấp trong các hang đá tự đào để tránh động vật ăn mồi lớn.",
-    "unique_traits": "Cú đấm siêu tốc đạt gia tốc 10.400 g và vận tốc 23 m/s (tương đương viên đạn .22). Lực tác động cực đại lên tới 1.500 Newton, đủ sức đập vỡ kính bể cá. Cú đấm nhanh đến mức tạo ra bong bóng chân không (cavitation bubble) phát nhiệt và phát quang khi vỡ ra, bồi thêm một cú sốc nhiệt và lực thứ hai vào mục tiêu. Mắt có 16 loại thụ thể thụ cảm ánh sáng (so với 3 ở người) giúp nhìn thấy ánh sáng phân cực tròn và tia cực tím.",
-    "shortDescription": "Nắm đấm búa tạ gia tốc đạn bắn. Hệ thống thị giác tiên tiến nhất hành tinh.",
-    "description": "Tôm Tít Peacock là sinh vật sở hữu vũ khí cơ học đáng sợ nhất dưới đại dương. Hai càng chùy của chúng hoạt động nhờ một hệ thống chốt lò xo cơ học tích trữ năng lượng ở xương ngoài ngực. Khi chốt mở, năng lượng giải phóng tức thì tạo ra cú đấm có vận tốc nhanh hơn cả chớp mắt. Lớp vỏ kitin trên càng chùy có cấu trúc nano xếp lớp xoắn ốc (Bouligand structure) chống nứt vỡ cực tốt, giúp chúng thực hiện hàng ngàn cú đập cực mạnh mà không tự làm hỏng vũ khí của mình. Mắt của chúng còn là một kỳ quan quang học cho phép nhìn thấy thế giới ở những dải quang phổ mà không loài nào khác làm được.",
+    "realWeight": "~0.1 - 0.5 kg",
+    "size": "60 - 100 cm",
+    "characteristics": "Thân hình thon dài màu đen bóng, mắt rất nhỏ nằm gần mõm. Điểm đặc trưng nhất là cái miệng khổng lồ có khớp nối linh hoạt gấp nhiều lần thể tích cơ thể, có thể phồng to như miệng bồ nông nhờ màng da co giãn ở hàm dưới. Đuôi dài mỏng, kết thúc bằng một cơ quan phát sáng (photophore) màu đỏ hồng rực rỡ.",
+    "habitat": "Vùng biển sâu thẳm (vùng trung hải và hạ hải) từ 500m đến 3000m, nơi hoàn toàn không có ánh sáng mặt trời.",
+    "location": "Các vùng biển nhiệt đới và ôn đới trên toàn cầu.",
+    "survival_method": "Sống trôi nổi thụ động trong lòng đại dương sâu. Chúng sử dụng cơ quan phát sáng hồng ở đuôi như một chiếc mồi nhử để thu hút các loài tôm, cá nhỏ tò mò đến gần. Khi con mồi lọt vào phạm vi, cá chình đột ngột há cái miệng khổng lồ của mình để xúc trọn con mồi và một lượng nước lớn, sau đó đẩy nước qua mang rồi nuốt chửng.",
+    "unique_traits": "Miệng khổng lồ có thể nuốt con mồi lớn hơn cả chính nó nhờ hàm dưới cực kỳ giãn nở và dạ dày có khả năng co giãn lớn. Chiếc đuôi có khả năng phát ra ánh sáng hồng đỏ độc đáo để nhử mồi trong đêm tối đại dương.",
+    "shortDescription": "Cái miệng khổng lồ phồng to như bồ nông. Đuôi phát sáng nhử mồi ở độ sâu 3.000m.",
+    "description": "Cá Chình Bồ Nông là một trong những sinh vật kỳ lạ nhất của biển sâu. Thân hình của chúng mỏng manh và yếu ớt, xương và cơ rất kém phát triển, nhưng chúng bù đắp điều đó bằng cơ chế săn mồi thụ động hiệu quả. Hàm của chúng chiếm tới 1/4 tổng chiều dài cơ thể, có thể mở rộng một cách đáng kinh ngạc để nuốt chửng bất kỳ con mồi nào trôi qua. Cơ quan phát quang sinh học ở đuôi đóng vai trò như ngọn hải đăng mời gọi con mồi trong bóng tối vĩnh cửu. Đây là một sự thích nghi hoàn hảo để sinh tồn trong môi trường khan hiếm thức ăn ở vực sâu.",
     "strengths": [
-      "Cú đấm chùy áp lực cực mạnh, phá hủy hoàn toàn giáp phòng ngự của con mồi",
-      "Hiện tượng bong bóng chân không tạo thêm sát thương sóng kích kích thứ hai",
-      "Cấu trúc xương ngoài nano Bouligand siêu bền chịu lực va đập liên tục",
-      "Thị giác siêu việt nhận diện phân cực tròn và phát hiện kẻ thù ẩn nấp cực nhanh"
+      "Cái miệng siêu co giãn nuốt chửng con mồi lớn gấp nhiều lần đầu",
+      "Cơ quan phát quang ở đuôi dụ dỗ con mồi hiệu quả trong bóng tối hoàn toàn",
+      "Dạ dày co giãn cực đại giúp tiêu hóa những bữa ăn lớn bất ngờ",
+      "Tiêu tốn cực ít năng lượng nhờ lối sống trôi nổi thụ động"
     ],
     "weaknesses": [
-      "Kích thước cơ thể nhỏ bé khiến chúng dễ bị các loài cá săn mồi cỡ lớn nuốt chửng",
-      "Phạm vi chiến đấu cực ngắn, phụ thuộc hoàn toàn vào cận chiến sát sườn",
-      "Sau khi lột xác, lớp vỏ mới còn mềm khiến chúng hoàn toàn mất khả năng chiến đấu và phải ẩn nấp"
+      "Cơ bắp và bộ xương thoái hóa trầm trọng khiến lực bơi và khả năng di chuyển rất yếu",
+      "Thị giác cực kém do mắt thoái hóa nhỏ bé",
+      "Rất dễ bị tổn thương vật lý do cơ thể mềm yếu không có vảy bảo vệ"
     ],
     "funFacts": [
-      "Nếu phóng to tôm tít lên bằng kích thước con người, cú đấm của nó có thể đấm vỡ một tấm thép dày và đẩy vật thể vào quỹ đạo Trái Đất",
-      "Cấu trúc vỏ chùy của tôm tít đang được nghiên cứu ứng dụng để chế tạo áo giáp chống đạn và khung sườn máy bay siêu nhẹ",
-      "Cặp mắt của chúng có thể chuyển động xoay tròn 360 độ độc lập và nhìn thấy các tế bào ung thư nhờ phát hiện ánh sáng phân cực phản xạ"
+      "Mặc dù có cái miệng khổng lồ, dạ dày của chúng khá nhỏ nên thức ăn chủ yếu là các sinh vật nhỏ như tôm giáp xác biển sâu, tuy nhiên khi cần thiết nó vẫn nuốt được cá lớn",
+      "Khi há miệng nuốt nước, đầu của nó phồng to ra giống như một quả bóng nước khổng lồ trước khi lọc nước ra ngoài",
+      "Các nhà khoa học phát hiện ra rằng chúng thường bơi ngửa hoặc bơi dọc để tận dụng đuôi phát sáng phía trước miệng nhằm dẫn dụ mồi trực tiếp vào miệng"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1126/science.1218598",
-        "label": "Science - Structure and Mechanics of the Mantis Shrimp Dactyl Club"
+        "url": "https://doi.org/10.1111/j.1095-8649.2011.03102.x",
+        "label": "Journal of Fish Biology - Morphology and feeding ecology of Eurypharynx pelecanoides"
       },
       {
-        "url": "https://www.nature.com/articles/nature02425",
-        "label": "Nature - Circular polarization vision in a mantis shrimp"
+        "url": "https://www.montereybayaquarium.org/animals/animals-a-to-z/gulper-eel",
+        "label": "Monterey Bay Aquarium - Gulper Eel Reference"
       }
     ],
-    "imageColor": "#20BF6B",
+    "imageColor": "#1A1D24",
     "stats": {
-      "strength": 68,
-      "durability": 75,
-      "speed": 82,
-      "weaponry": 98,
-      "special": 95,
-      "lethality": 88
+      "strength": 25,
+      "durability": 30,
+      "speed": 35,
+      "weaponry": 75,
+      "special": 88,
+      "lethality": 65
     },
     "diet_type": "carnivore",
-    "diet_items": ["cua", "ốc biển", "sò", "cá nhỏ"],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 4,
-    "lifespan_max": 6,
+    "diet_items": ["giáp xác biển sâu", "cá nhỏ", "mực biển sâu"],
+    "activity_pattern": "variable",
+    "lifespan_min": 5,
+    "lifespan_max": 10,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Giao phối đơn giao, con cái mang bọc trứng dưới bụng bảo vệ chặt chẽ hoặc đặt trong hang cho đến khi trứng nở thành ấu trùng.",
-    "locomotion": "hybrid",
-    "speed_max": 10.0,
+    "reproduction_notes": "Chúng đẻ trứng và thụ tinh ngoài. Sau khi trưởng thành sinh sản một lần duy nhất trong đời (semelparous), chúng sẽ kiệt sức rồi chết.",
+    "locomotion": "swim",
+    "speed_max": 2.0,
     "conservation_status": "LC",
-    "size_min_mm": 100.0,
-    "size_max_mm": 180.0,
-    "weight_avg_g": 150.0
+    "size_min_mm": 600.0,
+    "size_max_mm": 1000.0,
+    "weight_avg_g": 300.0
   },
   {
-    "id": "superb-lyrebird",
-    "name": "Chim Lia Lớn",
-    "scientificName": "Menura novaehollandiae",
+    "id": "sunda-pangolin",
+    "name": "Tê Tê Sunda",
+    "scientificName": "Manis javanica",
     "taxonomy": {
-      "class": "Aves",
-      "order": "Passeriformes",
-      "family": "Menuridae"
+      "class": "Mammalia",
+      "order": "Pholidota",
+      "family": "Manidae"
     },
-    "realWeight": "~0.8 - 1.1 kg",
-    "size": "74 - 100 cm",
-    "characteristics": "Thân hình lớn cỡ gà rừng màu nâu xám, chân cực khỏe để bới đất. Chim trống sở hữu bộ lông đuôi dài lộng lẫy uốn cong như cây đàn lia cổ đại với những sợi lông mịn tơ mảnh độc đáo.",
-    "habitat": "Rừng mưa nhiệt đới ẩm ướt, rừng ôn đới và các bụi rậm vùng núi.",
-    "location": "Khu vực đông nam nước Úc, từ Victoria đến phía nam Queensland.",
-    "survival_method": "Sinh tồn chủ yếu trên mặt đất bằng cách dùng móng vuốt khỏe cào bới lá mục tìm kiếm côn trùng, giun đất. Khi có nguy hiểm, chúng chạy trốn rất nhanh vào bụi rậm hoặc nhảy lên cành cây thấp thay vì bay cao. Chim trống xây các gò đất nhỏ để đứng biểu diễn và hót thu hút bạn tình.",
-    "unique_traits": "Sở hữu cơ quan phát âm (syrinx) tiến hóa phức tạp nhất trong số các loài chim biết hót, cho phép nhại lại gần như bất kỳ âm thanh nào chúng nghe thấy với độ chính xác tuyệt đối. Đuôi của chim trống có thể xòe ngược lên phía trước bao trùm toàn bộ cơ thể trong vũ điệu tán tỉnh độc nhất vô nhị.",
-    "shortDescription": "Bậc thầy giả giọng vĩ đại nhất tự nhiên. Bộ lông đuôi đàn lia lộng lẫy.",
-    "description": "Chim Lia Lớn là một kỳ quan tiến hóa của nước Úc. Khả năng bắt chước âm thanh của chúng vượt xa vẹt hay bất kỳ loài chim nào khác. Trong tự nhiên, chúng nhại lại tiếng hót của hàng chục loài chim khác nhau để tạo ra bản hợp xướng đánh lừa đối thủ và thu hút con cái. Tuy nhiên, điều làm nên thương hiệu của loài này là việc mô phỏng hoàn hảo các âm thanh nhân tạo từ máy móc của con người. Cặp cơ âm thanh phức tạp cho phép chúng phát ra hai tần số âm thanh khác nhau cùng lúc, mô phỏng hoàn hảo từ tiếng máy cưa, máy ảnh cơ, tiếng chó sủa cho đến còi báo động cứu hỏa.",
+    "realWeight": "~5 - 12 kg",
+    "size": "85 - 120 cm",
+    "characteristics": "Toàn thân được bao phủ bởi các lớp vảy sừng kitin màu nâu xếp chồng lên nhau như mái ngói, ngoại trừ vùng bụng và mặt dưới. Đầu nhỏ thuôn nhọn, không có răng, lưỡi cực dài. Chân trước có móng vuốt lớn, cong và sắc nhọn để đào bới.",
+    "habitat": "Rừng rậm nhiệt đới, rừng thứ sinh, đồi cây bụi và các vườn cây ăn quả.",
+    "location": "Đông Nam Á bao gồm Việt Nam, Lào, Campuchia, Thái Lan, Malaysia và Indonesia.",
+    "survival_method": "Hoạt động đơn độc về đêm, leo trèo giỏi trên cây và đào hang dưới đất. Khi bị đe dọa, chúng cuộn tròn cơ thể thành một quả bóng vảy cứng không thể xuyên thủng để bảo vệ phần bụng mềm. Chúng dùng móng vuốt chân trước bới tổ kiến, tổ mối và thọc lưỡi dài đầy chất keo dính vào để ăn.",
+    "unique_traits": "Loài thú duy nhất trên thế giới có vảy keratin cứng bao phủ chiếm 20% trọng lượng cơ thể. Lưỡi dài tới 25 cm, gắn liền sâu tận xương chậu thay vì xương hàm. Có khả năng tiết ra chất dịch có mùi cực kỳ hôi thối từ tuyến hậu môn để xua đuổi kẻ thù.",
+    "shortDescription": "Bộ giáp vảy sừng keratin impenetrable. Lưỡi săn mồi dài gắn sâu tận xương chậu.",
+    "description": "Tê Tê Sunda là đại diện độc đáo của bộ Pholidota. Bộ vảy của chúng được làm từ keratin cứng (chất cấu tạo nên móng tay và tóc người) nhưng cực kỳ sắc bén ở phần rìa, đóng vai trò như một lá chắn cơ học vững chắc bảo vệ chúng trước móng vuốt của hổ hay báo. Miệng của tê tê hoàn toàn không có răng, bù lại dạ dày của chúng có cấu trúc cơ bắp chắc khỏe chứa các sỏi nhỏ ăn kèm để nghiền nát côn trùng. Đây là loài động vật bị săn trộm và buôn bán trái phép nhiều nhất thế giới do những quan niệm sai lầm về y học cổ truyền.",
     "strengths": [
-      "Khả năng ngụy trang âm thanh đỉnh cao, đánh lừa các loài săn mồi bằng cách giả giọng loài khác",
-      "Đôi chân cực khỏe giúp chạy trốn nhanh qua địa hình rừng rậm rạp",
-      "Hệ cơ quan phát âm syrinx linh hoạt độc nhất vị nhị kiểm soát âm vực tinh vi",
-      "Lông đuôi lớn đóng vai trò như lá chắn đánh lạc hướng khi bị tấn công từ phía sau"
+      "Bộ giáp vảy vạn năng chống chịu được các cú cắn và cào của thú săn mồi lớn",
+      "Móng vuốt trước cực khỏe để phá hủy kết cấu tổ mối đất kiên cố",
+      "Lưỡi siêu dài phủ chất dịch dính bắt hàng vạn kiến và mối trong tích tắc",
+      "Khả năng leo trèo và đu bám bằng đuôi rất điệu nghệ"
     ],
     "weaknesses": [
-      "Khả năng bay lượn rất kém, cơ ngực yếu không thể duy trì đường bay dài",
-      "Bộ lông đuôi sặc sỡ và tập tính biểu diễn tại chỗ cố định dễ thu hút kẻ thù",
-      "Rất nhạy cảm với sự thay đổi môi trường và mất sinh cảnh rừng rậm"
+      "Hoàn toàn không có khả năng tấn công chủ động (chỉ có thể phòng ngự thụ động)",
+      "Tốc độ di chuyển dưới đất khá chậm và vụng về",
+      "Thị lực và thính lực rất kém, phụ thuộc chủ yếu vào khứu giác"
     ],
     "funFacts": [
-      "Trong một video nổi tiếng của David Attenborough, một con chim lia đực đã giả tiếng máy ảnh cơ kèm tiếng lên phim, tiếng còi báo động xe hơi và tiếng cưa xích một cách hoàn hảo đến khó tin",
-      "Chim lia cũng dùng tiếng nhại cơ khí để đe dọa các loài chim khác tránh xa khu vực kiếm ăn của mình",
-      "Bộ lông đuôi hình đàn lia của chim đực mất tới 7 năm để phát triển hoàn thiện đạt độ lộng lẫy tối đa"
+      "Tê tê có thể đóng chặt tai và lỗ mũi lại bằng các van cơ đặc biệt để ngăn kiến và mối bò vào trong khi đang ăn",
+      "Tê tê con thường bám chặt trên đuôi mẹ để di chuyển cùng mẹ đi kiếm ăn vào ban đêm",
+      "Một con tê tê trưởng thành có thể tiêu thụ tới 70 triệu con côn trùng mỗi năm, đóng vai trò kiểm soát dịch hại tự nhiên cực kỳ quan trọng"
     ],
     "sources": [
       {
-        "url": "https://www.jstor.org/stable/4088927",
-        "label": "Emu - Vocal Mimicry of the Superb Lyrebird"
+        "url": "https://doi.org/10.1016/B978-0-12-815507-3.00003-8",
+        "label": "Pangolins - Science, Society and Conservation: Sunda Pangolin"
       },
       {
-        "url": "https://www.bbc.co.uk/programmes/p003816c",
-        "label": "BBC Nature - David Attenborough Lyrebird"
+        "url": "https://www.iucnredlist.org/species/12763/123583998",
+        "label": "IUCN Red List - Manis javanica Conservation Status"
       }
     ],
-    "imageColor": "#D5A97F",
+    "imageColor": "#8C7D70",
     "stats": {
-      "strength": 32,
-      "durability": 45,
-      "speed": 65,
-      "weaponry": 20,
-      "special": 97,
-      "lethality": 15
+      "strength": 45,
+      "durability": 90,
+      "speed": 40,
+      "weaponry": 35,
+      "special": 82,
+      "lethality": 10
     },
-    "diet_type": "omnivore",
-    "diet_items": ["giun đất", "nhện", "côn trùng", "hạt cây nhỏ"],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 15,
+    "diet_type": "carnivore",
+    "diet_items": ["kiến", "mối", "ấu trùng côn trùng"],
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 12,
     "lifespan_max": 20,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Mùa sinh sản từ tháng 5 đến tháng 8. Con đực biểu diễn nghệ thuật âm thanh và vũ đạo trên gò đất. Con cái tự làm tổ hình vòm trên mặt đất hoặc gốc cây và đẻ duy nhất 1 trứng.",
+    "reproduction_notes": "Thời gian mang thai khoảng 130 - 150 ngày. Mỗi lứa chỉ đẻ một con duy nhất. Con non sinh ra có vảy mềm và sẽ cứng dần sau vài ngày.",
     "locomotion": "hybrid",
-    "speed_max": 12.0,
-    "conservation_status": "LC",
-    "size_min_mm": 740.0,
-    "size_max_mm": 1000.0,
-    "weight_avg_g": 950.0
+    "speed_max": 5.0,
+    "conservation_status": "CR",
+    "size_min_mm": 850.0,
+    "size_max_mm": 1200.0,
+    "weight_avg_g": 8500.0
   },
   {
-    "id": "platypus",
-    "name": "Thú Mỏ Vịt",
-    "scientificName": "Ornithorhynchus anatinus",
+    "id": "comb-jelly",
+    "name": "Sứa Lược Cầu Vồng",
+    "scientificName": "Mnemiopsis leidyi",
     "taxonomy": {
-      "class": "Mammalia",
-      "order": "Monotremata",
-      "family": "Ornithorhynchidae"
+      "class": "Tentaculata",
+      "order": "Lobata",
+      "family": "Bolinopsidae"
     },
-    "realWeight": "~0.7 - 2.4 kg",
-    "size": "40 - 50 cm",
-    "characteristics": "Sự kết hợp kỳ dị giữa chiếc mỏ giống vịt rộng phẳng dẹt nhưng mềm mại, thân mình phủ lông rậm chống nước như rái cá, đuôi dẹt phẳng như hải ly và chân vịt có màng bơi.",
-    "habitat": "Hệ thống sông, ngòi, hồ nước ngọt vùng trung và đông nước Úc.",
-    "location": "Vùng đông nước Úc bao gồm cả đảo Tasmania.",
-    "survival_method": "Săn mồi dưới nước bằng cách lặn xuống đáy sông. Khi lặn, chúng nhắm mắt, tai và mũi lại, định vị con mồi hoàn toàn bằng cách sử dụng hàng ngàn tế bào cảm nhận điện trường trên chiếc mỏ. Con đực sở hữu cựa độc ở chân sau để tự vệ và tranh giành lãnh thổ.",
-    "unique_traits": "Khả năng cảm nhận điện trường (electroreception) nhạy bén dưới nước để phát hiện dòng điện sinh học siêu yếu từ cơ của con mồi. Là loài thú đẻ trứng hiếm hoi (thú đơn huyệt). Con đực có cựa chứa nọc độc cực mạnh ở chân sau, có thể làm tê liệt chó săn và gây đau đớn dữ dội kéo dài cho con người.",
-    "shortDescription": "Thú đẻ trứng có cựa độc. Định vị điện trường bằng mỏ vịt cảm biến.",
-    "description": "Thú Mỏ Vịt là một trong những loài động vật kỳ lạ nhất hành tinh, khiến các nhà khoa học châu Âu thế kỷ 18 từng nghĩ đây là trò đùa ghép xác giả. Loài thú đơn huyệt cổ xưa này kết hợp các đặc tính của chim, bò sát và động vật có vú. Chúng đẻ trứng thay vì sinh con, tiết sữa qua các tuyến trên da bụng để con non liếm chứ không có núm vú. Chiếc mỏ độc đáo chứa mạng lưới thụ thể cơ học và điện học nhạy bén, quét liên tục dưới bùn để tìm kiếm con mồi. Nọc độc của chúng chứa các protein giống defensin, gây ra cơn đau dữ dội vượt qua cả tác dụng của morphine.",
+    "realWeight": "~1 - 20 g",
+    "size": "7 - 12 cm",
+    "characteristics": "Cơ thể hình quả lê trong suốt chứa tới 97% là nước. Dọc thân có 8 hàng phiến lược (ctenes) cấu tạo từ hàng nghìn sợi lông rung (cilia) xếp liền nhau. Khi di chuyển, các phiến rung động khúc xạ ánh sáng tạo nên hiệu ứng dải màu cầu vồng lung linh chạy khắp cơ thể.",
+    "habitat": "Vùng nước biển khơi mở và các cửa sông ven bờ.",
+    "location": "Vùng biển Đại Tây Dương ven bờ Bắc và Nam Mỹ, hiện đã xâm lấn mạnh sang Địa Trung Hải và Biển Đen.",
+    "survival_method": "Trôi nổi tự do trong nước biển, sử dụng hai thùy cơ thể lớn để lướt đi nhẹ nhàng. Khi săn mồi, chúng xòe các thùy này tạo ra dòng nước nhẹ dẫn dụ động vật phù du vào miệng. Cơ thể chúng được bao phủ bởi các tế bào dính (colloblasts) để bắt con mồi thay vì dùng tế bào chích độc.",
+    "unique_traits": "Hiệu ứng khúc xạ ánh sáng cầu vồng rực rỡ từ các hàng lông rung di chuyển. Sở hữu hệ thống tiêu hóa đặc biệt với hậu môn tạm thời (transient anus) chỉ hình thành khi cần đào thải chất thải và biến mất hoàn toàn ngay sau đó. Có khả năng dung hợp hệ thần kinh và da thịt với cá thể cùng loài khác khi bị thương để tạo thành một sinh vật thống nhất.",
+    "shortDescription": "Lông rung khúc xạ cầu vồng lộng lẫy. Cơ chế hậu môn tạm thời và tự dung hợp cơ thể.",
+    "description": "Sứa Lược Cầu Vồng không phải là sứa thực sự (không thuộc ngành Sứa gai Cnidaria) mà thuộc ngành Sứa lược (Ctenophora). Chúng là loài săn mồi phù du vô cùng phàm ăn. Khả năng phát quang sinh học màu xanh lam tự tạo của chúng phối hợp với hiệu ứng khúc xạ cầu vồng cầu kỳ tạo nên một trong những màn trình diễn ánh sáng kỳ ảo nhất biển khơi. Đáng kinh ngạc hơn cả, các nghiên cứu sinh học gần đây chỉ ra chúng có khả năng dung hợp cơ thể với cá thể khác siêu tốc khi bị tổn thương, kết hợp mạch máu và hệ thần kinh mà không hề xảy ra hiện tượng đào thải miễn dịch.",
     "strengths": [
-      "Hệ thống định vị điện trường mỏ vịt tìm mồi chính xác không cần dùng mắt",
-      "Cựa độc chân sau gây đau đớn dữ dội làm mất khả năng chiến đấu của đối thủ",
-      "Bộ lông dày giữ nhiệt hai lớp và chống nước hoàn hảo trong dòng nước lạnh",
-      "Kỹ năng bơi lội điêu luyện nhờ chân màng vịt linh hoạt"
+      "Khả năng dung hợp cơ thể phục hồi tổn thương siêu tốc mà không bị đào thải",
+      "Các phiến lược lông rung giúp di chuyển êm ái không tạo tiếng động hay sóng nước",
+      "Tế bào dính Colloblasts giữ chặt mồi cực kỳ hiệu quả",
+      "Sinh sản cực nhanh với khả năng tự thụ tinh"
     ],
     "weaknesses": [
-      "Tốc độ di chuyển trên cạn rất chậm chạp do cấu trúc xương chân hướng ra hai bên",
-      "Không có răng ở tuổi trưởng thành, phải dùng các tấm sừng dẹt để nghiền thức ăn cùng sỏi cát",
-      "Nọc độc chỉ có ở con đực và chỉ phát huy tác dụng ở cự ly cận chiến cận chân"
+      "Cơ thể gelatin lỏng bỏng dễ bị rách và xé toạc bởi dòng nước xiết hoặc va chạm mạnh",
+      "Không có nọc độc tự vệ, dễ làm mồi cho sứa thực sự hoặc cá rùa biển",
+      "Lực bơi yếu, hoàn toàn phụ thuộc vào dòng hải lưu"
     ],
     "funFacts": [
-      "Dưới ánh sáng tia cực tím (UV), bộ lông của thú mỏ vịt sẽ phát ra ánh sáng màu xanh lục huỳnh quang sinh học vô cùng kỳ ảo",
-      "Khi lần đầu tiên gửi một mẫu xác thú mỏ vịt về Anh, nhà sinh vật học George Shaw đã dùng kéo cắt lớp lông mỏ để tìm xem có vết khâu giả nào không vì không tin loài này có thật",
-      "Họ không có dạ dày thật sự; thực quản của thú mỏ vịt nối thẳng vào ruột mà không có túi chứa axit tiêu hóa"
+      "Khác với mọi sinh vật có xương sống và không xương sống khác có hậu môn vĩnh viễn, hậu môn của sứa lược chỉ mở ra khi tế bào da ở đuôi tách ra để chất thải thoát đi, sau đó vết rách tự vá lành lập tức",
+      "Đây là loài xâm lấn đáng sợ, sự xuất hiện của chúng ở Biển Đen vào những năm 1980 đã tàn phá các quần thể cá cơm địa phương do chúng cạnh tranh ăn hết động vật phù du",
+      "If you cut a comb jelly in half, each half can regenerate back into a complete individual within just a few days"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1038/nature06936",
-        "label": "Nature - Genome analysis of the platypus reveals unique signatures of evolution"
+        "url": "https://doi.org/10.1126/science.1242688",
+        "label": "Science - The genome of the ctenophore Mnemiopsis leidyi"
       },
       {
-        "url": "https://www.nationalgeographic.com/animals/mammals/facts/platypus",
-        "label": "National Geographic - Platypus Reference"
+        "url": "https://doi.org/10.1016/j.cub.2019.01.050",
+        "label": "Current Biology - The Transient Anus of Mnemiopsis leidyi"
       }
     ],
-    "imageColor": "#2C3E50",
+    "imageColor": "#388E3C",
     "stats": {
-      "strength": 38,
-      "durability": 50,
-      "speed": 62,
-      "weaponry": 60,
-      "special": 85,
-      "lethality": 55
+      "strength": 15,
+      "durability": 35,
+      "speed": 45,
+      "weaponry": 40,
+      "special": 92,
+      "lethality": 25
     },
     "diet_type": "carnivore",
-    "diet_items": ["ấu trùng côn trùng", "tôm nhỏ", "giun nước", "ốc nhỏ"],
+    "diet_items": ["động vật phù du", "giáp xác nhỏ", "trứng cá", "ấu trùng nhuyễn thể"],
     "activity_pattern": "variable",
-    "lifespan_min": 10,
-    "lifespan_max": 17,
-    "lifespan_unit": "years",
-    "reproduction_type": "oviparous",
-    "reproduction_notes": "Con cái đào hang sâu trên bờ sông làm tổ đẻ từ 1 đến 3 trứng. Sau khoảng 10 ngày ấp, trứng nở thành con non bò lên bụng mẹ liếm sữa tiết ra trực tiếp từ tuyến sữa chảy dọc lông bụng mẹ.",
-    "locomotion": "hybrid",
-    "speed_max": 4.0,
-    "conservation_status": "NT",
-    "size_min_mm": 400.0,
-    "size_max_mm": 500.0,
-    "weight_avg_g": 1500.0
+    "lifespan_min": 2,
+    "lifespan_max": 6,
+    "lifespan_unit": "months",
+    "reproduction_type": "hermaphrodite",
+    "reproduction_notes": "Là động vật lưỡng tính đồng thời, có thể tự thụ tinh. Chúng giải phóng trứng và tinh trùng vào cột nước biển mỗi ngày, sinh sản hàng ngàn quả trứng trong điều kiện thuận lợi.",
+    "locomotion": "swim",
+    "speed_max": 0.5,
+    "conservation_status": "LC",
+    "size_min_mm": 70.0,
+    "size_max_mm": 120.0,
+    "weight_avg_g": 10.0
   }
 ]
