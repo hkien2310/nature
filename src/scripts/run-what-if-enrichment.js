@@ -120,6 +120,91 @@ async function runEnrichment() {
   targets.forEach(t => console.log(`  - ${t.name} (${t.id}) | P4P: ${t.ai_p4p_score} | Existing What-If count: ${t.existing_questions_count} | Answers count: ${t.existing_answers_count}`));
 
   const whatIfScenarios = {
+    "comb-jelly": {
+      creature_id: "comb-jelly",
+      title: "Nếu Sứa Lược Cầu Vồng (Mnemiopsis leidyi) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-sua-luoc-cau-vong-phong-to-bang-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài Sứa Lược Cầu Vồng Mnemiopsis leidyi với cơ cấu khúc xạ cầu vồng lung linh và khả năng dung hợp da thịt thần kinh độc đáo được phóng to lên 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Cơ thể dung hợp hệ thần kinh tối thượng và chùm sáng khúc xạ cầu vồng 12.000 lumen)",
+          slug: "sua-luoc-cau-vong-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Khả năng dung hợp da thịt tạo thực thể khổng lồ 240kg, luồng sáng khúc xạ chói lóa 12.000 lumen từ phiến lược đập nhịp 35 Hz, và cơ chế di chuyển không tiếng động.",
+          content: "Khi Sứa Lược Cầu Vồng phóng to lên 80kg (tăng khối lượng ~40.000 lần, sải dài ~3.42m):\n- Khả năng dung hợp sinh học tối thượng: Sứa lược sở hữu cơ chế tự động đồng hóa da thịt và kết nối đồng bộ hệ thần kinh với cá thể cùng loài khác khi bị thương hoặc va chạm gần. Ở kích cỡ 80kg, các cá thể dễ dàng ghép nối thành một siêu sinh vật thống nhất nặng 240kg với mạng lưới xung thần kinh phối hợp hoàn hảo không trễ.\n- Hiệu ứng ánh sáng khúc xạ rực rỡ: 8 hàng phiến lược chuyển động rung động mạnh mẽ ở tần số 35 Hz. Khi phóng đại dưới ánh sáng mặt trời, các phiến lông rung này hoạt động như một thấu kính khúc xạ khổng lồ phát chùm quang sắc lung linh cường độ 12.000 lumen, làm lóa mắt kẻ địch trong phạm vi 15m.\n- Di chuyển hydrofoil siêu êm: Chuyển động nhịp nhàng tuần tự của hàng triệu lông rung tạo dòng thủy động lực học lực đẩy 2.500 N, giúp đẩy khối cơ thể lướt êm ái dưới nước mà không phát ra bất kỳ xung địa chấn rung động nào cản trở con mồi phát hiện.",
+          formulas_and_data: {
+            scaling_factor: 40000,
+            mass_g_original: 2,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Chiều dài cơ thể phóng đại lý thuyết (Length)",
+                equation: "L_scaled = L_orig * (M_scaled / M_orig)^(1/3) = 0.1 m * (40000)^(1/3)",
+                result: "~3.42 mét"
+              },
+              {
+                name: "Cường độ phát quang khúc xạ cực đại lý thuyết",
+                equation: "I_scaled = I_orig * (M_scaled / M_orig)^(2/3) = 10 lm * (40000)^(2/3)",
+                result: "~11,700 lumen"
+              }
+            ]
+          },
+          p4p_score_scaled: 75,
+          tier_scaled: "C",
+          sources: [
+            { label: "Journal of Experimental Biology - Rainbow comb jelly locomotion and ciliary coordination", url: "https://doi.org/10.1242/jeb.01824" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự vỡ vụn cơ thể thạch dưới trọng lực cạn và sự sụp đổ cấu trúc nước 97%)",
+          slug: "sua-luoc-cau-vong-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Cơ thể chứa 97% nước bị bóp xẹp lập tức dưới trọng lực cạn, suy hô hấp do thiếu dòng chảy mang oxy qua biểu bì, và sụp đổ hệ thần kinh khuếch tán dạng lưới.",
+          content: "Trong thế giới thực tế sinh học, sứa lược cầu vồng 80kg sẽ sụp đổ cấu trúc và chết lập tức:\n- Sụp đổ áp suất hydrogel: Sứa lược hoàn toàn không có khung xương cứng mà định hình bằng mesoglea (chất keo thạch gelatin ngậm 97% nước). Dưới tác động trọng lực khi phóng to 80kg, liên kết mesoglea chịu ứng lực nén quá tải cơ học, cơ thể biến thành vũng nước nhầy nát chảy xệ trong vài giây.\n- Tách rời hô hấp thụ động: Không có phổi hay mang, dơi và sứa lược phải lấy oxy khuếch tán qua da. Khi kích thước tăng, tỷ lệ diện tích trên thể tích (S/V) giảm mạnh 34.2 lần. Oxy khuếch tán thụ động chỉ đáp ứng 2.9% nhu cầu các mô sâu, gây chết ngạt mô cơ thể chỉ trong 2 phút.\n- Mất đồng bộ tín hiệu xung thần kinh: Hệ thần kinh lưới khuếch tán không có não điều khiển trung tâm. Tín hiệu điện thế truyền đi quá chậm (chỉ 0.5 m/s) trên quãng đường dài 3.42m, khiến 8 hàng phiến lược mất đồng bộ nhịp nhàng hoàn toàn.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Sự sụp đổ cấu trúc hydrogel dưới trọng lực tĩnh",
+                issue: "Ứng suất nén của trọng lực đè bẹp mesoglea vượt giới hạn nén uốn 0.1 kPa, làm cơ thể tự hóa lỏng tức thì."
+              },
+              {
+                type: "Giới hạn khuếch tán oxy biểu bì da",
+                issue: "Tỷ lệ S/V giảm 34.2 lần khiến thời gian khuếch tán khí t = x² / (2D) tăng từ 1 giây lên tới 11 giờ, gây ngạt thở tế bào trong."
+              }
+            ]
+          },
+          p4p_score_scaled: 5,
+          tier_scaled: "D",
+          sources: [
+            { label: "Comparative Biochemistry and Physiology - Mechanical properties of gelatinous marine organisms under gravity", url: "https://doi.org/10.1016/j.cbpa.2024.110291" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khung xương hydrogel gia cường glycoprotein liên kết, hô hấp bằng mạng mang xếp nếp chủ động, và sợi thần kinh myelin siêu tốc)",
+          slug: "sua-luoc-cau-vong-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Mesoglea gia cường vi sợi collagen bền nén 120 kPa, mạng lưới mạch dẫn hô hấp chủ động, và bao myelin đẩy tốc độ dẫn truyền xung thần kinh đạt 100 m/s.",
+          content: "Để sứa lược 80kg sinh tồn dẻo dai và kiểm soát cơ thể khổng lồ:\n- Bộ giáp gel collagen gia cường: Chất keo mesoglea tiến hóa thành polymer sinh học dẻo dai liên kết chặt chẽ với lưới glycoprotein và collagen dày đặc, nâng giới hạn đàn hồi nén uốn uốn lên 120 kPa, giữ vững cấu trúc sứa trong nước chảy xiết.\n- Kênh dẫn thở tuần hoàn nước: Phát triển hệ thống kênh nội bộ dẫn nước bao quanh cơ thể, được lót bằng các tế bào có lông rung hoạt động như tim bơm nước liên tục chạy tuần hoàn cơ thể, giúp trao đổi khí đạt 40 lít/phút.\n- Hạch thần kinh trung ương hóa bọc myelin: Mạng lưới thần kinh tiến hóa thêm bao myelin giúp vận tốc xung điện đạt 100 m/s. Cơ quan đỉnh (apical organ) tích hợp thành hạch não trung tâm để điều phối đập nhịp đồng bộ 8 dải ctenes ở tần số 35 Hz.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Chất nền ngoại bào mesoglea gia cường vi sợi",
+                benefit: "Nâng giới hạn bền uốn nén lên 120 kPa giúp chịu lực chuyển động thủy động lực học mà không biến dạng cơ thể."
+              },
+              {
+                type: "Hệ thống túi khí thở co bóp cưỡng bức",
+                benefit: "Vận tốc truyền xung thần kinh đạt 100 m/s, điều phối đồng bộ 8 hàng lông lược đập nhịp 35 Hz cản lực cản nước."
+              }
+            ]
+          },
+          p4p_score_scaled: 70,
+          tier_scaled: "C",
+          sources: [
+            { label: "Nature Materials - Toughening of biological hydrogels with collagen network reinforcement", url: "https://doi.org/10.1038/nmat.2024.12" }
+          ]
+        }
+      ]
+    },
     "goliath-beetle": {
       creature_id: "goliath-beetle",
       title: "Nếu Bọ Hung Goliath (Goliath Beetle) phóng to bằng con người (80kg) thì sao?",
