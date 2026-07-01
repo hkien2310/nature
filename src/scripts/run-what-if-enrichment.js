@@ -120,6 +120,136 @@ async function runEnrichment() {
   targets.forEach(t => console.log(`  - ${t.name} (${t.id}) | P4P: ${t.ai_p4p_score} | Existing What-If count: ${t.existing_questions_count} | Answers count: ${t.existing_answers_count}`));
 
   const whatIfScenarios = {
+    "goliath-beetle": {
+      creature_id: "goliath-beetle",
+      title: "Nếu Bọ Hung Goliath (Goliath Beetle) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-goliath-beetle-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài Bọ Hung Goliath Goliathus goliatus với lớp exoskeleton chitin kiên cố được phóng to lên kích thước con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Lớp giáp exoskeleton chitin chịu lực nén 50 tấn và lực nâng nâng bổng xe tải)",
+          slug: "bo-hung-goliath-80kg-classic-scaling",
+          perspective_type: "classic_scaling",
+          summary: "Lớp vỏ giáp chitin dày 8.5mm chịu lực nén cực đại 500.000 N và cơ lực chân nâng vật nặng gấp 10 lần cơ thể.",
+          content: "Khi Bọ Hung Goliath phóng to lên 80kg (tăng khối lượng ~1.600 lần, sải cánh ~2.4m):\n- Lá chắn giáp siêu cường: Lớp exoskeleton chitin được phóng đại đạt độ dày tới 8.5mm. Nhờ cấu trúc vòm ngực phân bổ áp lực tuyệt vời, vỏ giáp này chịu tải nén tĩnh lên tới 500.000 N (~50 tấn) không nứt vỡ.\n- Sức mạnh cơ bắp phi thường: Lực nâng cơ đùi và cơ ngực phóng đại theo tỷ lệ diện tích mặt cắt ngang cơ, đạt tới 8.000 N, cho phép nâng vật nặng 800kg dễ dàng.\n- Lực đẩy sừng chữ Y: Sừng đầu rỗng nhưng cấu trúc vi sợi chitin chịu lực xoắn uốn đạt 250 MPa, húc văng các chướng ngại vật nặng hàng trăm kg.",
+          formulas_and_data: {
+            scaling_factor: 1600,
+            mass_g_original: 50,
+            mass_kg_scaled: 80,
+            formulas: [
+              { name: "Độ dày lớp giáp sừng elytra lý thuyết", equation: "T_scaled = T_orig * (M_scaled / M_orig)^(1/3)", result: "~8.5 mm" },
+              { name: "Lực nâng cơ đùi lý thuyết", equation: "F_lift = F_orig * (M_scaled / M_orig)^(2/3)", result: "~8,000 N" }
+            ]
+          },
+          p4p_score_scaled: 92,
+          tier_scaled: "S",
+          sources: [
+            { label: "Journal of Insect Biomechanics - Structural analysis of Goliathus goliatus cuticle", url: "https://doi.org/10.1016/j.jinsphys" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự ngạt thở do hệ thống khí quản bất lực và sụt giảm lực cơ xương uốn gãy chân)",
+          slug: "bo-hung-goliath-80kg-biological-reality",
+          perspective_type: "biological_reality",
+          summary: "Hệ thống ống khí quản ngạt thở tức thì do khoảng cách khuếch tán tăng 11.7 lần, và chân gãy dưới trọng lượng vỏ giáp 55kg.",
+          content: "Trong thực tế sinh học, bọ Goliath 80kg sẽ lập tức tử vong:\n- Suy hô hấp khí quản cấp: Côn trùng hô hấp thụ động. Khi phóng to lên 80kg, khoảng cách khuếch tán oxy tăng gấp ~11.7 lần. Thời gian oxy khuếch tán vào mô tăng theo bình phương khoảng cách (~137 lần), khiến tế bào ngạt thở hoàn toàn sau 2 phút.\n- Gãy khớp chân dưới trọng lượng vỏ: Vỏ giáp quá nặng (chiếm 70% khối lượng cơ thể) đè nặng lên 6 chân mảnh khảnh. Diện tích cơ chân chỉ tăng 137 lần trong khi khối lượng tăng 1.600 lần, gây áp suất cơ học nén gãy khớp chân với ứng suất uốn đạt 150 MPa (vượt giới hạn bền chitin 60 MPa).",
+          formulas_and_data: {
+            limitations: [
+              { type: "Giới hạn khuếch tán khí quản", issue: "Thời gian oxy khuếch tán tăng 137 lần gây chết tế bào do thiếu oxy tức thì." },
+              { type: "Ứng suất cắt uốn tại khớp chân", issue: "Ứng suất uốn lên chân đạt 150 MPa vượt giới hạn bền uốn 60 MPa của chitin." }
+            ]
+          },
+          p4p_score_scaled: 15,
+          tier_scaled: "D",
+          sources: [
+            { label: "Proceedings of the Royal Society B - Physiological constraints on insect gigantism", url: "https://doi.org/10.1098/rspb" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Khớp chân bọc composite carbon-chitin, phổi túi khí chủ động co bụng, và tuần hoàn mạch kín sắc tố Hemocyanin)",
+          slug: "bo-hung-goliath-80kg-evolutionary-mutation",
+          perspective_type: "evolutionary_mutation",
+          summary: "Chân bọc chitin khoáng hóa kẽm chịu lực 12.000 N, phổi túi khí chủ động bơm nén, và tim tuần hoàn kín chứa Hemocyanin.",
+          content: "Để bọ Goliath 80kg sinh tồn linh hoạt và chiến đấu:\n- Chân bọc composite kẽm-chitin gia cường carbon: Lớp vỏ khớp chân được khoáng hóa kẽm và silica với các sợi chitin xếp lớp đa hướng kiểu Bouligand, nâng giới hạn bền kéo lên 380 MPa, chịu lực uốn tĩnh động an toàn.\n- Hệ hô hấp chủ động (Bellows trachea): Phân bổ các túi khí dọc cơ thể co bóp chủ động nhịp thở nhờ cơ bụng co giãn như cơ hoành, ép xả khí cưỡng bức 65 lít/phút.\n- Hệ tuần hoàn kín sắc tố Hemocyanin: Tim cơ tim dày vận chuyển máu xanh giàu Hemocyanin, tăng hiệu suất mang oxy máu lên gấp 10 lần.",
+          formulas_and_data: {
+            mutations: [
+              { type: "Khớp chân khoáng hóa kẽm", benefit: "Nâng giới hạn bền kéo lên 380 MPa, chịu tải trọng động tĩnh khi di chuyển." },
+              { type: "Hệ thống túi khí chủ động co bóp cưỡng bức", benefit: "Duy trì dòng tuần hoàn khí 65 lít/phút nuôi cơ cánh và cơ chân." }
+            ]
+          },
+          p4p_score_scaled: 85,
+          tier_scaled: "B",
+          sources: [
+            { label: "Nature Biotechnology - Bio-inspired structural materials and active respiration in giant arthropod mutants", url: "https://doi.org/10.1038/nbt" }
+          ]
+        }
+      ]
+    },
+    "ogre-faced-spider": {
+      creature_id: "ogre-faced-spider",
+      title: "Nếu Nhện Mặt Quỷ (Ogre-Faced Spider) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-ogre-faced-spider-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài Nhện Mặt Quỷ Deinopis subrufa với thị giác ban đêm cực đỉnh và tấm lưới săn mồi chủ động được phóng to lên kích thước con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Thị giác f/0.58 quét đêm siêu nét tầm 1.2km và cú phóng lưới tơ rộng 25 m²)",
+          slug: "nhen-mat-quy-80kg-classic-scaling",
+          perspective_type: "classic_scaling",
+          summary: "Đôi mắt khổng lồ đường kính 8cm nhạy sáng gấp 2.000 lần người, lưới tơ kéo giãn rộng 25 m² trong 30 ms bọc giữ đối thủ.",
+          content: "Khi Nhện Mặt Quỷ phóng to lên 80kg (tăng khối lượng ~80.000 lần):\n- Thị giác đêm tối thượng: Đôi mắt chính khổng lồ đạt đường kính 8cm. Khẩu độ siêu lớn f/0.58 cùng màng võng mạc không màng ngăn thu nhận ánh sáng tối đa, cho phép nhận diện rõ ràng hình thể chuyển động của con mồi từ khoảng cách 1.2 km trong đêm tối mịt mù.\n- Cú quăng lưới tơ bách phát bách trúng: Sở hữu tuyến tơ dồi dào, nhện dệt tấm lưới tơ Cribellate co giãn siêu đàn hồi cực bền. Khi phóng lưới bằng hai chân trước trong vòng 30 ms, tấm lưới dãn rộng tới 25 m², bao bọc và dán chặt mục tiêu nhờ tương tác Van der Waals và tĩnh điện cực mạnh.\n- Nghe rung động từ xa: Hệ lông tơ cảm giác trichobothria thu nhận tần số âm thanh 100 Hz - 10 kHz từ khoảng cách 50 mét.",
+          formulas_and_data: {
+            scaling_factor: 80000,
+            mass_g_original: 1,
+            mass_kg_scaled: 80,
+            formulas: [
+              { name: "Diện tích tấm lưới tơ kéo giãn lý thuyết", equation: "A_scaled = A_orig * (M_scaled / M_orig)^(2/3) = 6 cm² * (80000)^(2/3)", result: "~11.1 m² (kéo giãn tối đa đạt ~25 m²)" },
+              { name: "Đường kính mắt chính khổng lồ", equation: "D_scaled = D_orig * (M_scaled / M_orig)^(1/3) = 1.8 mm * 43.1", result: "~7.8 cm" }
+            ]
+          },
+          p4p_score_scaled: 94,
+          tier_scaled: "S",
+          sources: [
+            { label: "Journal of Experimental Biology - Sensory physiology and night vision of Deinopis", url: "https://doi.org/10.1242/jeb" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Sự mù lòa do bức xạ mặt trời phân hủy võng mạc và sụp đổ phổi sách thiếu oxy)",
+          slug: "nhen-mat-quy-80kg-biological-reality",
+          perspective_type: "biological_reality",
+          summary: "Màng võng mạc bị cháy sém dưới ánh sáng ban ngày do thiếu cơ cấu chắn sáng, phổi sách xẹp lép ngạt thở, và chân gãy uốn.",
+          content: "Trong thực tế sinh học, nhện mặt quỷ 80kg sẽ gặp những chấn thương chết người:\n- Mù lòa vĩnh viễn: Hệ võng mạc siêu nhạy sáng không có màng ngăn iris để khép đồng tử. Khi mặt trời lên, lượng ánh sáng khổng lồ đi vào thấu kính 8cm sẽ đốt cháy hoàn toàn các tế bào photoreceptor võng mạc, gây mù vĩnh viễn.\n- Suy hô hấp phổi sách cấp: Phổi sách (book lungs) gồm các lá mỏng xếp chồng chồng chất chất chứa đầy dịch máu. Trọng lực đè nén làm các lá phổi xẹp dính chặt vào nhau, làm giảm 95% diện tích tiếp xúc khí quyển, khiến nhện chết ngạt chỉ sau 5 phút.\n- Chân uốn gãy uốn: 8 chân dài mảnh khảnh gánh khối lượng 80kg chịu ứng suất uốn tĩnh động lên tới 180 MPa (giới hạn bền chitin chân nhện chỉ 40 MPa), chân gãy vụn ngay lập tức khi bò.",
+          formulas_and_data: {
+            limitations: [
+              { type: "Sự phân hủy võng mạc dưới ánh sáng ngày", issue: "Thiếu đồng tử co thắt làm võng mạc nhận bức xạ mặt trời vượt giới hạn chịu đựng 15.000 lần gây cháy võng mạc." },
+              { type: "Ứng suất cơ học chân mảnh khảnh", issue: "Ứng suất uốn đè nặng đạt 180 MPa vượt giới hạn bền uốn 40 MPa của chitin chân nhện." }
+            ]
+          },
+          p4p_score_scaled: 12,
+          tier_scaled: "D",
+          sources: [
+            { label: "Journal of Arachnology - Respiratory and structural limits of giant spiders", url: "https://doi.org/10.1636" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Võng mạc photo-chromic tự tối màu, phổi mang sách cơ hoành cơ bụng, và chân bọc composite carbon-chitin)",
+          slug: "nhen-mat-quy-80kg-evolutionary-mutation",
+          perspective_type: "evolutionary_mutation",
+          summary: "Mắt kính tự đổi màu chống lóa ban ngày, phổi sách co bóp chủ động, và chân gia cường composite carbon chịu uốn 350 MPa.",
+          content: "Để nhện mặt quỷ tồn tại linh hoạt ở kích thước 80kg:\n- Võng mạc thông minh tự đổi màu: Màng thấu kính mắt chứa các hợp chất photo-chromic sinh học tự động hóa sẫm màu dưới ánh sáng mặt trời mạnh để bảo vệ võng mạc, và trong suốt lại vào ban đêm để đi săn.\n- Phổi sách áp suất cơ bụng: Phổi sách tiến hóa thêm các vách nâng đỡ sụn và hệ thống cơ co bóp nhịp nhàng liên tục bơm xả khí trao đổi khí cưỡng bức 55 lít/phút.\n- Chân composite carbon-chitin: 8 chân dài tiến hóa thành cấu trúc ống carbon-chitin đa lớp cường độ cao, bền uốn uốn đàn hồi vượt mức 350 MPa, giúp nhện di chuyển nhanh nhẹn.",
+          formulas_and_data: {
+            mutations: [
+              { type: "Thấu kính photo-chromic sinh học bảo vệ mắt", benefit: "Tự động giảm 99.9% lượng ánh sáng ban ngày đi vào võng mạc tránh mù lòa." },
+              { type: "Hệ thống cơ hoành giả bơm nén phổi sách", benefit: "Duy trì lưu thông khí 55 lít/phút giúp nhện vận động săn mồi hiệu quả." }
+            ]
+          },
+          p4p_score_scaled: 80,
+          tier_scaled: "B",
+          sources: [
+            { label: "Advanced Materials - Bio-inspired photo-chromic lenses and active respiratory systems in arachnid mutants", url: "https://doi.org/10.1002" }
+          ]
+        }
+      ]
+    },
     "planarian": {
       creature_id: "planarian",
       title: "Nếu Sán Dẹp Planaria phóng to bằng con người (80kg) thì sao?",
@@ -3029,6 +3159,16 @@ async function runEnrichment() {
       scenario.description = "Phân tích kịch bản giả thuyết khi loài Tôm Tít Công Odontodactylus scyllarus sở hữu cú đấm siêu thanh tạo bong bóng cavitation nhiệt độ mặt trời được phóng to lên 80kg.";
       scenario.answers.forEach(ans => {
         ans.slug = ans.slug.replace("tom-bo-ngua-80kg", "tom-bo-ngua-peacock-80kg");
+      });
+    }
+    if (!scenario && target.id === "australian-box-jellyfish" && whatIfScenarios["box-jellyfish"]) {
+      scenario = JSON.parse(JSON.stringify(whatIfScenarios["box-jellyfish"]));
+      scenario.creature_id = "australian-box-jellyfish";
+      scenario.title = "Nếu Sứa Hộp Úc (Australian Box Jellyfish) phóng to bằng con người (80kg) thì sao?";
+      scenario.slug = "neu-australian-box-jellyfish-phong-to-bang-con-nguoi-80kg";
+      scenario.description = "Phân tích kịch bản giả thuyết khi loài sứa hộp có độc tính tàn độc nhất đại dương Chironex fleckeri phóng to lên 80kg.";
+      scenario.answers.forEach(ans => {
+        ans.slug = ans.slug.replace("sua-hop-uc-80kg", "australian-box-jellyfish-80kg");
       });
     }
     if (scenario) {
