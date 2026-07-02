@@ -979,6 +979,108 @@ const predefinedProfiles = {
       ]
     },
     summary: "Tích hợp Bộ Khớp Bánh Răng Đồng Bộ ở đốt đùi giúp giải phóng lực nhảy đồng thời ở cả hai chân với sai lệch cực tiểu, tạo ra gia tốc bứt tốc vượt bậc."
+  },
+  "weaver-ant": {
+    trait_name: "Hệ Thống Đệm Bám Chân Hút Thủy Lực Arolia và Pheromone Phối Hợp Xích Lực Kéo Căng",
+    title: "Người Lai Kiến Dệt Lá - Kẻ Thống Trị Trọng Lực & Lực Kéo Tập Thể",
+    slug: "weaver-ant-human-splice",
+    sci_fi_hype: "Cấy ghép cơ quan đệm bám chân arolia hoạt động bằng áp lực dịch thủy lực cơ học của Kiến Dệt Lá vào bàn chân và lòng bàn tay người lai, cho phép bám dính siêu việt vào mọi bề mặt trơn nhẵn ngược chiều trọng lực. Đồng thời cấy ghép hệ pheromone liên lạc nội tiết: khi chiến đấu phối hợp nhóm, cơ thể tự động giải phóng một lượng formic acid làm tăng khả năng chịu đau và kích hoạt trạng thái liên kết cơ 'xích lực' (body-bridge), cho phép nhiều người lai móc nối với nhau chịu tải trọng hàng chục tấn.",
+    scientific_reality: "Cơ chế cơ học: Giác bám chân arolia sử dụng áp lực hemolymph để tự động bơm phồng màng linh hoạt nằm giữa đôi vuốt cong ở đầu ngón, tạo diện tích tiếp xúc bám dính tăng 200%. Hệ thống cơ xương khớp được gia cố bằng sợi elastin và các tế bào cơ bắp vi mô chịu tải kéo dọc, ngăn ngừa trật khớp khi chịu lực căng lớn. Pheromone kích hoạt tuyến thượng thận giải phóng catecholamine điều hòa hô hấp và tuần hoàn mà không gây sốc phản vệ.",
+    spliced_stats: {
+      strength: 91,
+      durability: 88,
+      speed: 85,
+      weaponry: 80,
+      special: 96,
+      lethality: 85
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 920,
+      max_adhesion_force_n: 12500,
+      contact_angle_degrees: 15,
+      formulas: [
+        {
+          name: "Lực bám dính thủy lực của giác bám chân (Arolia Adhesion Force)",
+          equation: "F_adhesion = A_contact * delta_P_capillary * cos(theta)",
+          result: "12.5 kN"
+        },
+        {
+          name: "Khả năng chịu lực căng của xích người nối (Body-Bridge Tensile Strength)",
+          equation: "T_max = N_members * sigma_muscle * A_cross_section",
+          result: "28.5 kN (cho nhóm 3 người)"
+        }
+      ]
+    },
+    summary: "Sở hữu giác bám chân arolia thủy lực cho phép leo trèo thẳng đứng hoàn hảo và liên kết cơ bắp bộc phát lực căng chịu tải kéo khổng lồ khi hoạt động phối hợp nhóm."
+  },
+  "whip-spider": {
+    trait_name: "Cặp Chân Roi Thụ Cảm Basiconic Sensilla 3D và Phản Xạ Kìm Pedipalps Gia Cường Kẽm",
+    title: "Người Lai Nhện Đuôi Roi - Tử Thần Định Vị Bóng Tối",
+    slug: "whip-spider-human-splice",
+    sci_fi_hype: "Tích hợp đôi chân roi cảm giác dài 2 mét biến đổi từ khớp xương cánh tay, chứa hơn 10.000 lông cảm biến cơ học trichobothria và tế bào hóa học basiconic sensilla. Người lai có thể quét không gian, dựng lại bản đồ 3D nhiệt và khí động học của môi trường xung quanh trong bóng tối tuyệt đối. Cặp pedipalps ở cẳng tay biến thành hai chiếc kìm gai sừng sắc bén gia cường kẽm và mangan, phóng ra ôm sập và cắm sâu vào con mồi với phản xạ thần kinh cực hạn dưới 5 mili-giây.",
+    scientific_reality: "Cơ chế tích hợp: Bộ não trung khu (synganglion) được cấy ghép thùy nấm (mushroom bodies) lớn để tiếp nhận và xử lý tín hiệu chênh lệch áp suất không khí cực nhỏ truyền từ trichobothria. Đầu gai sừng của kìm pedipalps chứa các vi tinh thể kẽm và mangan liên kết chéo chất nền chitin, tăng độ cứng lên 4.5 GPa (tương đương thép không gỉ). Dây thần kinh vận động chi trước có đường kính sợi lớn hơn để truyền xung thần kinh siêu tốc bypass các trạm trung gian.",
+    spliced_stats: {
+      strength: 87,
+      durability: 85,
+      speed: 96,
+      weaponry: 94,
+      special: 97,
+      lethality: 92
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 1850,
+      whip_length_cm: 220,
+      strike_response_time_ms: 4.8,
+      formulas: [
+        {
+          name: "Độ phân giải bản đồ không gian của chân roi (Spatial Sensor Resolution)",
+          equation: "d_min = v_air * dt_synaptic",
+          result: "0.24 mm"
+        },
+        {
+          name: "Lực sập của kìm Pedipalps gia cường kim loại (Pedipalps Strike Force)",
+          equation: "F_strike = m_arm * a_strike",
+          result: "3.85 kN"
+        }
+      ]
+    },
+    summary: "Đôi chân roi cảm biến không gian 3D trong tối kết hợp cặp kìm pedipalps gia cường kẽm sập nhanh dưới 5ms biến người lai thành thợ săn cận chiến đáng sợ."
+  },
+  "atlas-moth": {
+    trait_name: "Đôi Ăng-ten Lông Chim Thụ Cảm Siêu Pheromone và Đôi Cánh Giả Đầu Rắn Hổ Mang Chiều Sâu 3D",
+    title: "Người Lai Ngài Tằm Vũ Trụ - Kẻ Tạo Ảo Giác Rắn Hổ Mang & Thụ Cảm Tần Số",
+    slug: "atlas-moth-human-splice",
+    sci_fi_hype: "Cấy ghép đôi ăng-ten lông chim lớn ở vùng thái dương chứa hàng triệu tế bào thụ cảm hóa học siêu nhạy, cho phép phát hiện một phân tử mùi mục tiêu duy nhất trong bầu khí quyển. Đồng thời tích hợp đôi cánh màng chitin siêu rộng mô phỏng hoa văn 3D đầu rắn hổ mang bành cổ ở chóp cánh. Khi đập cánh rung động, người lai vừa tạo ra lực nâng khí động học lớn để bay lượn thụ động không tiếng động, vừa tạo ảo giác một đôi mắt rắn hổ mang chuyển động khiến kẻ thù hoảng loạn tê liệt ý chí.",
+    scientific_reality: "Cơ chế khí động học và thần kinh: Đôi ăng-ten lông chim chứa basiconic sensilla mật độ cao liên kết với thùy khứu giác vỏ não. Cấu trúc vảy cánh hiển vi xếp lớp giúp triệt tiêu tiếng ồn tần số cao khi bay và chống bám nước mưa nhờ góc kỵ nước 138 độ. Hoa văn đầu rắn có chiều sâu quang học nhờ sự phân bố hạt sắc tố melanin và guanin tạo tương phản ánh sáng. Lồng ngực được tăng sinh cơ bay thụ động dẻo dai sử dụng ít năng lượng oxy hơn.",
+    spliced_stats: {
+      strength: 80,
+      durability: 83,
+      speed: 89,
+      weaponry: 82,
+      special: 99,
+      lethality: 85
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 3100,
+      wingspan_cm: 280,
+      olfactory_sensitivity_limit_moles: "1 * 10^-18 M",
+      formulas: [
+        {
+          name: "Lực nâng khí động học bay lượn thụ động (Aerodynamic Lift Force)",
+          equation: "L = 0.5 * rho_air * v² * S_wing * C_L",
+          result: "820 N"
+        },
+        {
+          name: "Hiệu quả kỵ nước của vảy cánh (Water Contact Angle on Wings)",
+          equation: "theta_c = arccos(f_solid * cos(theta_0) - f_air)",
+          result: "138 degrees"
+        }
+      ]
+    },
+    summary: "Sở hữu đôi ăng-ten khứu giác nhạy bén cấp độ phân tử và cánh màng ngụy trang đầu rắn 3D bay lượn không tiếng động để trinh sát và gây kinh hãi cho mục tiêu."
   }
 };
 
