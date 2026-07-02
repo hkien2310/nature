@@ -1081,6 +1081,108 @@ const predefinedProfiles = {
       ]
     },
     summary: "Sở hữu đôi ăng-ten khứu giác nhạy bén cấp độ phân tử và cánh màng ngụy trang đầu rắn 3D bay lượn không tiếng động để trinh sát và gây kinh hãi cho mục tiêu."
+  },
+  "deathstalker-scorpion": {
+    trait_name: "Độc Tố Thần Kinh Chlorotoxin Liên Kết Thụ Thể Chloride và Gai Đuôi Chitin Móc Ngược Tích Lực Thủy Tĩnh",
+    title: "Người Lai Bọ Cạp Tử Thần - Đao Phủ Định Vị Tế Bào",
+    slug: "deathstalker-scorpion-human-splice",
+    sci_fi_hype: "Cấy ghép tuyến nọc độc chứa chlorotoxin đậm đặc và gai đuôi sừng móc ngược dài 1.5m kéo dài từ đốt sống cụt người lai. Độc tố chlorotoxin có khả năng liên kết chọn lọc cực cao với các kênh dẫn chloride dòng ion tế bào của đối thủ, phong tỏa dẫn truyền thần kinh cơ và gây suy hô hấp tức thời. Gai đuôi sử dụng áp lực thủy tĩnh cơ học cực đại, phóng ra cú đâm móc ngược xuyên giáp sắt dày chỉ trong 0.05 giây với độ chính xác định vị tế bào hoàn hảo.",
+    scientific_reality: "Cơ chế cơ sinh học: Độc tố chlorotoxin gồm 36 axit amin liên kết qua 4 cầu nối disulfide siêu bền vững, không phân hủy bởi men protease ngoại lai. Hệ miễn dịch người lai được bảo vệ nhờ lớp glycoprotein đột biến bọc quanh màng tế bào thần kinh vận động. Lớp cơ đuôi được cấu tạo từ các sợi cơ vân xếp chéo xoắn ốc (helical musculature), tạo lực bóp nén ép dịch cơ thể dồn lên đầu gai đuôi chịu lực ghim đâm cực lớn.",
+    spliced_stats: {
+      strength: 88,
+      durability: 86,
+      speed: 92,
+      weaponry: 96,
+      special: 88,
+      lethality: 99
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 1950,
+      stinger_length_cm: 150,
+      chlorotoxin_dose_mg_kg: 0.25,
+      formulas: [
+        {
+          name: "Lực ghim đâm bộc phát gai đuôi (Stinger Penetration Force)",
+          equation: "F_sting = P_hydrostatic * A_piston",
+          result: "3.65 kN"
+        },
+        {
+          name: "Tỷ lệ chiếm đóng kênh Chloride của Chlorotoxin (Chloride Channel Occupancy Rate)",
+          equation: "theta = C_toxin / (C_toxin + K_d)",
+          result: "99.2% (phong tỏa hoàn toàn dẫn truyền ion)"
+        }
+      ]
+    },
+    summary: "Tích hợp gai đuôi chitin áp lực thủy tĩnh cao và nọc độc chlorotoxin chọn lọc, mang lại đòn châm xuyên giáp gây liệt dẫn truyền chloride tế bào thần kinh đối thủ tức thì."
+  },
+  "giraffe-weevil": {
+    trait_name: "Hệ Khớp Cổ Dạng Bản Lề Kéo Dài Siêu Đàn Hồi và Giáp Sừng Chitin Gia Cường Resilin Kháng Mô-men Xoắn",
+    title: "Người Lai Mọt Cổ Dài - Đồ Tể Lực Đòn Bẩy",
+    slug: "giraffe-weevil-human-splice",
+    sci_fi_hype: "Tái cấu trúc các đốt sống cổ người lai thành hệ khớp cổ dạng bản lề kéo dài linh hoạt (dài gấp 3 lần bình thường) của Mọt Cổ Dài Giraffe, được bọc bởi lớp giáp sừng chitin siêu cứng. Thiết kế này tạo ra một đòn bẩy cơ học khổng lồ, cho phép người lai tung ra những cú mổ bổ dọc gập cổ hoặc quật ngang tạo động năng xung kích bẻ gãy đòn đánh vật lý của đối phương. Bó cơ cổ gia cường chịu lực xoắn và mô-men cực đại, cho phép xoay và thu hồi đầu linh hoạt mà không bị tổn thương dây thần kinh.",
+    scientific_reality: "Cơ chế cơ học: Khớp cổ bản lề (hinge joint) được gia cố bằng chất đệm resilin đàn hồi cao xen kẽ giữa các đốt sống biến đổi, giúp phân tán 95% lực phản chấn xung kích. Cơ ức đòn chũm và cơ thang được tăng sinh mật độ sợi cơ co nhanh loại IIa (fast-twitch), liên kết trực tiếp với lớp giáp ngực. Lớp vỏ chitin cổ được cấu tạo từ các cấu trúc vi sợi đan chéo đa chiều chống chịu ứng suất cắt (shear stress).",
+    spliced_stats: {
+      strength: 92,
+      durability: 90,
+      speed: 84,
+      weaponry: 88,
+      special: 92,
+      lethality: 86
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 2200,
+      neck_length_cm: 45,
+      max_angular_velocity_rad_s: 18,
+      formulas: [
+        {
+          name: "Mô-men lực quật cổ đòn bẩy (Rotational Torque of Neck Strike)",
+          equation: "tau = F_muscle * d_lever * sin(theta)",
+          result: "420 N·m (tương đương động cơ ô tô)"
+        },
+        {
+          name: "Lực va chạm bộc phát đầu mổ (Impact Force at Apex)",
+          equation: "F_impact = I_neck * alpha / dt",
+          result: "3.80 kN"
+        }
+      ]
+    },
+    summary: "Hệ đốt sống cổ bản lề kéo dài và giáp sừng chống chịu mô-men xoắn mang lại cú mổ đòn bẩy xung kích cực đại, hủy diệt phòng ngự vật lý đối thủ."
+  },
+  "trilobite-beetle": {
+    trait_name: "Giáp Tấm Chitin Platerodrilus Lồng Ghép Phân Tán Lực và Tuyến Dịch Tiết Axit Lycid Độc Đắng",
+    title: "Người Lai Bọ Ba Thùy - Pháo Đài Di Động Kỷ Permi",
+    slug: "trilobite-beetle-human-splice",
+    sci_fi_hype: "Cấy ghép lớp giáp tấm chitin platerodrilus lồng ghép xếp lớp linh hoạt của Bọ Ba Thùy lên toàn bộ vùng lưng, vai và ngực người lai. Các tấm giáp có khả năng trượt lồng xếp di động khi vận động, phân tán 98% lực nén và chấn động va chạm vật lý cơ học. Khi bị tấn công trực diện, đầu người lai có thể thụt sâu vào khoang ngực để bảo vệ tuyệt đối cơ quan thị giác và não bộ. Đồng thời, tuyến biểu bì bài tiết axit Lycid đặc đắng gây kích ứng niêm mạc và bỏng rát da đối thủ khi chạm vào.",
+    scientific_reality: "Cơ chế bảo vệ cơ sinh học: Các tấm giáp chitin được cấu tạo từ các lớp sợi song song kết dính bởi protein đàn hồi chống mỏi cơ học. Cơ chế lồng ghép trượt tự do (telescoping plates) phân phối lực va chạm cục bộ ra diện tích bề mặt lớn hơn. Dịch tiết chứa hợp chất glycoside lycid đắng cao bền nhiệt, kích hoạt thụ thể vị giác đau đớn TAS2Rs và giải phóng peptide viêm cục bộ chống thải ghép.",
+    spliced_stats: {
+      strength: 86,
+      durability: 99,
+      speed: 75,
+      weaponry: 80,
+      special: 94,
+      lethality: 82
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 5200,
+      armor_thickness_mm: 8.5,
+      max_compressive_strength_mpa: 310,
+      formulas: [
+        {
+          name: "Hệ số triệt tiêu ứng suất va chạm tấm giáp (Stress Dissipation Ratio)",
+          equation: "S_ratio = 1 - (sigma_transmitted / sigma_impact)",
+          result: "0.985 (triệt tiêu 98.5% lực truyền trực tiếp)"
+        },
+        {
+          name: "Nhiệt lượng sinh ra từ dịch tiết bỏng rát biểu bì (Secreted Bitter Burn Rate)",
+          equation: "H_burn = C_lycid * A_contact * K_burn",
+          result: "18.2 J/cm² (gây phồng rộp tức thì)"
+        }
+      ]
+    },
+    summary: "Sở hữu lớp giáp tấm trượt lồng xếp platerodrilus triệt tiêu lực nén cực hạn, khả năng thụt đầu bảo vệ não bộ và dịch bài tiết axit độc đắng xua đuổi cận chiến hoàn hảo."
   }
 };
 
