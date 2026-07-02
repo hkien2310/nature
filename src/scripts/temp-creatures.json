@@ -1,206 +1,206 @@
 [
   {
-    "id": "superb-lyrebird",
-    "name": "Chim Thiên Cầm",
-    "scientificName": "Menura novaehollandiae",
+    "id": "peacock-spider",
+    "name": "Nhện Công",
+    "scientificName": "Maratus volans",
     "taxonomy": {
-      "class": "Aves",
-      "order": "Passeriformes",
-      "family": "Menuridae"
+      "class": "Arachnida",
+      "order": "Araneae",
+      "family": "Salticidae"
     },
-    "realWeight": "~0.9 - 1.2 kg",
-    "size": "80 - 100 cm",
-    "characteristics": "Chim có kích thước trung bình cỡ gà nhà, bộ lông chủ yếu màu nâu xám với các điểm nhấn màu hạt dẻ ở cánh. Điểm nổi bật nhất là chiếc đuôi của chim đực gồm 16 chiếc lông dài biến đổi kỳ diệu thành hai chiếc lông rìa cong quyến rũ có vân nổi giống như cây đàn lyre cổ đại, xen kẽ các sợi tơ trắng muốt.",
-    "habitat": "Rừng mưa nhiệt đới ôn đới và cận nhiệt đới ẩm ướt ở đông nam Úc, nơi có thảm thực vật rậm rạp.",
-    "location": "Các khu vực rừng rậm thuộc New South Wales, Victoria và Queensland, Úc.",
-    "survival_method": "Thích nghi với lối sống chủ yếu dưới mặt đất rừng. Chim sử dụng đôi chân khỏe mạnh cấu tạo móng vuốt nhọn sắc để bới đất tìm thức ăn. Khi gặp nguy hiểm, chúng thường chạy nhanh luồn lách qua các bụi rậm hoặc nhảy lên các cành cây thấp thay vì bay cao vì cánh ngắn và yếu. Để sinh tồn và bảo vệ lãnh thổ, chúng phát triển hệ thống giao tiếp cực kỳ tinh vi bằng cách bắt chước tiếng kêu báo động của các loài chim khác hoặc tiếng động từ môi trường để đánh lạc hướng kẻ săn mồi.",
-    "unique_traits": "Sở hữu minh chứng vĩ đại nhất của sự bắt chước âm thanh trong thế giới tự nhiên nhờ cấu quản (syrinx) tiến hóa phức tạp nhất trong lớp chim với 3 cặp cơ điều khiển độc lập. Khả năng tái tạo hoàn hảo hơn 80% âm thanh nhân tạo (máy cưa, máy ảnh, còi báo động) lẫn tự nhiên.",
-    "shortDescription": "Nhà giả giọng vĩ đại nhất thế giới tự nhiên. Đuôi hình đàn lyre lộng lẫy.",
-    "description": "Chim Thiên Cầm là biểu tượng sinh học độc đáo của nước Úc, nổi tiếng với khả năng bắt chước bất kỳ âm thanh nào trong vùng nghe được của nó. Chim đực sử dụng chiếc đuôi hình đàn lyre lộng lẫy kết hợp các màn nhảy múa điệu nghệ và chuỗi âm thanh tái tạo sống động vô cùng phức tạp để thu hút con cái trong mùa sinh sản. Không chỉ bắt chước tiếng hót của hơn 20 loài chim rừng khác, chúng còn khiến con người kinh ngạc khi mô phỏng chính xác tiếng cưa máy gầm rú, tiếng màn trập camera tanh tách hay còi báo động cháy rừng.",
+    "realWeight": "~0.01 - 0.02 g",
+    "size": "4 - 5 mm",
+    "characteristics": "Nhện nhảy có kích thước siêu nhỏ. Con đực sở hữu phần bụng (opisthosoma) sặc sỡ với các vạt da bên hông có thể xòe rộng như đuôi công, mang các dải màu xanh lam, đỏ, vàng và đen tương phản rực rỡ. Con cái có màu nâu đất ngụy trang đơn giản.",
+    "habitat": "Các thảm thực vật thấp, đồi cát bụi, thảm lá khô và rừng bạch đàn khô.",
+    "location": "Các bang ven biển phía đông và nam nước Úc.",
+    "survival_method": "Săn mồi chủ động ban ngày bằng cách rình rập và nhảy vồ lên côn trùng nhỏ nhờ đôi chân sau khỏe mạnh. Chúng không chăng lưới bắt mồi mà sử dụng sợi tơ an toàn để neo giữ khi nhảy. Khi gặp kẻ thù hoặc con cái hung dữ, con đực sẽ giơ cao chân sau và xòe vạt bụng màu sắc để thu hút hoặc cảnh báo.",
+    "unique_traits": "Vũ điệu giao phối phức tạp nhất trong thế giới loài nhện: con đực xòe vạt bụng màu sắc rực rỡ, giơ hai chân thứ ba lên cao và rung lắc liên tục theo nhịp điệu cụ thể để thu hút con cái. Sở hữu hệ thống thị giác cực kỳ tiến hóa gồm 8 mắt với 2 mắt chính phía trước có độ phân giải siêu cao và khả năng nhận biết màu sắc tia cực tím (UV).",
+    "shortDescription": "Vũ công sặc sỡ của thế giới vi mô. Khả năng nhảy gấp 40 lần chiều dài cơ thể.",
+    "description": "Nhện Công là một loài nhện nhảy đặc hữu của Úc, nổi tiếng thế giới nhờ những màu sắc rực rỡ và hành vi tán tỉnh độc nhất vô nhị của con đực. Mặc dù có kích thước nhỏ hơn một hạt gạo, chúng sở hữu trí thông minh hành vi đáng kinh ngạc và thị lực sắc bén vượt trội nhiều loài côn trùng lớn. Nếu điệu nhảy của con đực thất bại trong việc thuyết phục con cái, nó rất có thể sẽ trở thành bữa ăn của bạn tình ngay lập tức.",
     "strengths": [
-      "Cấu quản tiến hóa đỉnh cao cho khả năng mô phỏng âm thanh phức tạp không loài nào sánh bằng",
-      "Đôi chân cực kỳ khỏe với các móng vuốt lớn dùng để đào bới và phòng thủ cận chiến",
-      "Trí nhớ thính giác siêu phàm lưu giữ các chuỗi âm thanh phức tạp hàng năm trời",
-      "Kỹ năng ẩn nấp trong bụi rậm xuất sắc nhờ bộ lông màu trung tính dễ hòa lẫn"
+      "Thị lực 8 mắt siêu sắc nét với góc nhìn gần 360 độ và khả năng cảm thụ màu sắc quang phổ rộng",
+      "Khả năng bật nhảy thần tốc gấp 40 lần chiều dài cơ thể để bắt mồi hoặc trốn chạy",
+      "Khả năng ngụy trang xuất sắc của con cái và con non trong thảm lá khô",
+      "Trí thông minh săn mồi nhạy bén, tính toán quỹ đạo nhảy chính xác tuyệt đối"
     ],
     "weaknesses": [
-      "Khả năng bay lượn rất yếu, cánh ngắn chỉ thích hợp để nhảy hoặc lướt gió khoảng ngắn",
-      "Đuôi của con đực rất dài khiến chúng chuyển động cồng kềnh hơn dưới mặt đất khi trốn chạy",
-      "Dễ bị tổn thương bởi các loài thú săn mồi xâm hại như cáo và mèo hoang"
+      "Kích thước cơ thể quá nhỏ bé, dễ làm mồi cho côn trùng lớn hơn, chim và nhện khác",
+      "Không có nọc độc mạnh đối với động vật có xương sống",
+      "Con đực dễ bị lộ vị trí trước kẻ thù khi đang thực hiện vũ điệu giao phối rực rỡ"
     ],
     "funFacts": [
-      "Cá thể chim thiên cầm nổi tiếng tại Vườn thú Adelaide từng bắt chước hoàn hảo tiếng búa khoan của thợ sửa chữa",
-      "Chiếc đuôi lộng lẫy hình đàn lyre chỉ thuộc về chim đực trưởng thành và phải mất tới 7 năm để phát triển hoàn thiện",
-      "Chúng có thể tạo ra âm thanh nổi bằng cách đồng thời sử dụng hai màng rung độc lập ở phế quản bên trái và phải"
+      "Tên khoa học 'volans' ban đầu có nghĩa là 'bay' vì các nhà khoa học trước đây lầm tưởng các vạt da của chúng dùng để lướt gió, nhưng thực chất chỉ để tán tỉnh bạn tình",
+      "Nhịp điệu rung chân của nhện công đực truyền qua mặt đất tạo thành những rung động âm thanh mà con cái cảm nhận bằng các sợi lông siêu nhạy trên chân",
+      "Màu sắc rực rỡ trên bụng nhện công đực được tạo ra bởi cấu trúc nano phản xạ ánh sáng đặc biệt, chứ không chỉ bằng sắc tố thông thường"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1016/j.anbehav.2013.03.023",
-        "label": "Avian vocal mimicry in the superb lyrebird"
+        "url": "https://doi.org/10.1007/s00265-011-1242-x",
+        "label": "Behavioral Ecology and Sociobiology - Courtship dance of Maratus"
       },
       {
-        "url": "https://www.nationalgeographic.com/animals/birds/facts/superb-lyrebird",
-        "label": "National Geographic - Superb Lyrebird Facts"
+        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/peacock-spider",
+        "label": "National Geographic - Peacock Spider Profile"
       }
     ],
-    "imageColor": "#8E7C6C",
-    "stats": {
-      "strength": 25,
-      "durability": 35,
-      "speed": 55,
-      "weaponry": 15,
-      "special": 95,
-      "lethality": 10
-    },
-    "diet_type": "omnivore",
-    "diet_items": ["côn trùng", "giun đất", "nhện", "hạt cây", "ếch nhỏ"],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 15,
-    "lifespan_max": 20,
-    "lifespan_unit": "years",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Chim đực giao phối đa thê và không tham gia nuôi con. Chim cái tự xây tổ hình vòm khổng lồ trên mặt đất hoặc hốc đá, đẻ duy nhất một quả trứng mỗi mùa và ấp trong 50 ngày.",
-    "locomotion": "hybrid",
-    "speed_max": 15,
-    "conservation_status": "LC",
-    "size_min_mm": 800,
-    "size_max_mm": 1000,
-    "weight_avg_g": 1050
-  },
-  {
-    "id": "vampire-squid",
-    "name": "Mực Ma Cà Rồng",
-    "scientificName": "Vampyroteuthis infernalis",
-    "taxonomy": {
-      "class": "Cephalopoda",
-      "order": "Vampyromorphida",
-      "family": "Vampyroteuthidae"
-    },
-    "realWeight": "~0.15 - 0.25 kg",
-    "size": "28 - 30 cm",
-    "characteristics": "Cơ thể mềm mại, màu đỏ sẫm đến đen bóng như nhung, mắt rất lớn có màu xanh ngọc hoặc đỏ tùy góc sáng. Thay vì 10 xúc tu thông thường, nó có 8 cánh tay liên kết với nhau bằng một lớp màng rộng tạo thành chiếc 'áo choàng' lót gai nhỏ (cirri) màu nhạt, kèm theo 2 sợi filament mảnh có thể kéo dài gấp nhiều lần chiều dài thân.",
-    "habitat": "Vùng biển sâu ôn đới và nhiệt đới tối tăm hoàn toàn, ở độ sâu từ 600 - 900 mét, nơi nồng độ oxy cực thấp (dưới 3%).",
-    "location": "Các đại dương sâu thuộc vùng biển ôn đới và nhiệt đới trên toàn thế giới.",
-    "survival_method": "Tồn tại dưới áp suất khổng lồ và lượng oxy nghèo nàn bằng cách hạ thấp tối đa nhịp trao đổi chất (tiết kiệm năng lượng). Chúng không săn đuổi mồi sống mà dùng hai sợi filament nhạy cảm thu thập các vụn hữu cơ trôi nổi gọi là tuyết đại dương. Khi bị đe dọa, chúng cuộn tròn chiếc màng đen gai góc ngược lên bao phủ đầu (Pineapple Posture) để ẩn nấp và bảo vệ cơ quan nhạy cảm.",
-    "unique_traits": "Là loài sinh vật duy nhất thuộc bộ Vampyromorphida còn sót lại, sở hữu các photophores (tế bào phát quang) phức tạp phủ khắp cơ thể có thể điều khiển cường độ sáng và kích cỡ chấm sáng linh hoạt để ngụy trang ngược sáng hoặc gây mù mắt tạm thời cho kẻ săn mồi.",
-    "shortDescription": "Hóa thạch sống của biển sâu. Tồn tại trong vùng chết không có oxy.",
-    "description": "Mực Ma Cà Rồng có tên khoa học mang ý nghĩa 'mực ma từ địa ngục', nhưng thực chất nó là một loài sinh vật hiền lành chuyên dọn dẹp đại dương. Chúng là cầu nối tiến hóa giữa mực ống thông thường và bạch tuộc. Điểm kỳ diệu của loài này là khả năng phát huỳnh quang sinh học rực rỡ và việc phóng ra một làn sương nhầy phát sáng chứa hàng nghìn hạt lân tinh màu xanh lam để che mắt kẻ thù trước khi từ từ rút lui vào bóng đêm tĩnh lặng của vùng biển sâu.",
-    "strengths": [
-      "Khả năng hấp thụ và sử dụng oxy cực kỳ hiệu quả nhờ sắc tố hemocyanin cải tiến đặc chủng",
-      "Hệ thống phát quang sinh học cực kỳ linh hoạt để tạo ảo ảnh lập lòe ngụy trang",
-      "Phản ứng phòng thủ cuộn áo choàng bọc gai bảo vệ cơ thể an toàn khỏi sát thương trực diện",
-      "Lượng năng lượng tiêu hao cực thấp giúp chúng sống sót lâu hơn trong môi trường khan hiếm dinh dưỡng"
-    ],
-    "weaknesses": [
-      "Cơ thể mềm yếu không có xương hoặc lớp vỏ bảo vệ cơ học vững chắc",
-      "Không thể di chuyển hoặc bơi lội với tốc độ cao để thoát thân",
-      "Không có túi mực truyền thống, việc phóng chất nhầy phát sáng tiêu tốn rất nhiều năng lượng và cần thời gian dài để tái tạo"
-    ],
-    "funFacts": [
-      "Nó sở hữu cặp mắt có tỷ lệ kích thước so với cơ thể lớn nhất trong toàn bộ thế giới động vật",
-      "Mực ma cà rồng không hề uống máu hay ăn thịt mồi sống như cái tên đáng sợ của nó, mà chỉ lọc ăn những xác chất hữu cơ trôi nổi",
-      "Chúng có thể kiểm soát các đốm sáng ở đầu xúc tu để tạo cảm giác cơ thể đang di chuyển ra xa khi thực chất vẫn đứng yên"
-    ],
-    "sources": [
-      {
-        "url": "https://doi.org/10.1098/rsbl.2012.0457",
-        "label": "Vampire squid's unique detritivorous feeding strategy"
-      },
-      {
-        "url": "https://www.mbari.org/animal/vampire-squid/",
-        "label": "MBARI - Vampire Squid Profile"
-      }
-    ],
-    "imageColor": "#4A0E17",
+    "imageColor": "#1E3A8A",
     "stats": {
       "strength": 15,
-      "durability": 45,
-      "speed": 25,
-      "weaponry": 30,
-      "special": 90,
+      "durability": 20,
+      "speed": 80,
+      "weaponry": 25,
+      "special": 95,
       "lethality": 15
     },
-    "diet_type": "detritivore",
-    "diet_items": ["tuyết đại dương", "phân plankton", "xác giáp xác nhỏ", "mảnh hữu cơ trôi nổi"],
-    "activity_pattern": "variable",
-    "lifespan_min": 8,
-    "lifespan_max": 10,
-    "lifespan_unit": "years",
+    "diet_type": "carnivore",
+    "diet_items": ["ruồi nhỏ", "rầy mềm", "muỗi", "ấu trùng", "nhện nhỏ khác"],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 12,
+    "lifespan_max": 18,
+    "lifespan_unit": "months",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Sinh sản thông qua thụ tinh gián tiếp bằng cách truyền gói tinh trùng (spermatophores). Mực cái đẻ trứng nhỏ trôi nổi tự do trong nước sâu mà không chăm sóc.",
-    "locomotion": "swim",
-    "speed_max": 2,
+    "reproduction_notes": "Mùa sinh sản diễn ra vào mùa xuân - hè. Con đực thực hiện vũ điệu rực rỡ để tán tỉnh. Con cái sau khi thụ tinh sẽ đẻ trứng vào một bọc tơ bảo vệ dưới thảm lá rụng và canh giữ trứng cho đến khi nở.",
+    "locomotion": "walk",
+    "speed_max": 0.5,
     "conservation_status": "LC",
-    "size_min_mm": 280,
-    "size_max_mm": 300,
-    "weight_avg_g": 200
+    "size_min_mm": 4,
+    "size_max_mm": 5,
+    "weight_avg_g": 0.015
   },
   {
-    "id": "chinese-pangolin",
-    "name": "Tê Tê Vàng",
-    "scientificName": "Manis pentadactyla",
+    "id": "frilled-lizard",
+    "name": "Thằn Lằn Cổ Lông",
+    "scientificName": "Chlamydosaurus kingii",
     "taxonomy": {
-      "class": "Mammalia",
-      "order": "Pholidota",
-      "family": "Manidae"
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Agamidae"
     },
-    "realWeight": "~2 - 7 kg",
-    "size": "40 - 60 cm",
-    "characteristics": "Thân hình thon dài, mõm nhọn, chân ngắn khỏe. Toàn bộ phần lưng, đầu và đuôi được bao phủ bởi những lớp vảy sừng xếp chồng lên nhau như ngói lợp, cấu tạo từ chất sừng keratin cứng cáp màu vàng nâu hoặc xám đất.",
-    "habitat": "Rừng mưa nhiệt đới ẩm, rừng tre, đồi cây bụi và các vùng đất nông nghiệp trung du có đất tơi xốp.",
-    "location": "Nam Trung Quốc, Đài Loan, Nepal, Bhutan, Bắc Ấn Độ, Myanmar, Lào và miền Bắc Việt Nam.",
-    "survival_method": "Hoạt động kiếm ăn chủ yếu về đêm. Chúng đào các hang sâu dưới lòng đất để ngủ ngày và điều hòa nhiệt độ. Khi phát hiện tổ côn trùng, chúng dùng móng vuốt chân trước bới đất hoặc phá tổ, sau đó luồn chiếc lưỡi cực dài dính đầy chất nhầy vào để bắt kiến và mối. Khi bị đe dọa, chúng cuộn tròn thân lại thành một quả bóng sừng bất khả xâm phạm, giấu phần bụng mềm yếu vào bên trong và có thể dựng các vảy sừng sắc bén lên để chống cự.",
-    "unique_traits": "Được bảo vệ bởi bộ giáp vảy keratin chiếm tới 20% tổng trọng lượng cơ thể. Sở hữu chiếc lưỡi dài đặc biệt khoảng 25-40 cm, bám sâu tận xương ức và khung xương chậu, có khả năng tiết ra nước bọt dính dẻo cực mạnh.",
-    "shortDescription": "Hiệp sĩ mang giáp vảy độc nhất vô nhị. Khắc tinh của loài mối.",
-    "description": "Tê Tê Vàng là loài động vật có vảy duy nhất còn tồn tại trong nhóm thú cổ. Do không có răng, chúng phải nuốt sỏi nhỏ vào dạ dày cơ để giúp nghiền nát thức ăn. Dù có lớp giáp vững chắc có thể đẩy lui cả báo đốm hay sư tử, tê tê lại đang đối mặt với nguy cơ tuyệt chủng cực kỳ nghiêm trọng do tình trạng săn bắt bất hợp pháp lấy thịt và vảy làm dược liệu Đông y không có căn cứ khoa học.",
+    "realWeight": "~0.5 - 1.0 kg",
+    "size": "70 - 95 cm",
+    "characteristics": "Thân hình thon dài, đuôi dài bằng 2/3 cơ thể. Màu sắc chủ đạo là nâu nhạt đến xám để ngụy trang trên thân cây. Điểm đặc biệt nhất là tấm màng da xếp nếp rộng lớn bao quanh cổ (frill), chứa các sụn nâng đỡ có khả năng xòe rộng ra như chiếc ô khi bị kích động.",
+    "habitat": "Các khu rừng thưa, thảo nguyên khô hạn và rừng bạch đàn nhiệt đới.",
+    "location": "Miền bắc nước Úc và miền nam đảo New Guinea.",
+    "survival_method": "Sống chủ yếu trên cây (arboreal), chỉ xuống đất để kiếm ăn hoặc chạy trốn. Khi phát hiện kẻ thù, chúng đứng bất động ngụy trang. Nếu bị tiếp cận, chúng đột ngột xòe rộng tấm màng cổ đầy màu sắc sặc sỡ (đỏ, cam, vàng), mở miệng rộng gầm rú và dựng đứng hai chân sau chạy trốn với tốc độ cực nhanh.",
+    "unique_traits": "Sở hữu tấm màng da cổ xếp nếp có đường kính lên tới 30 cm dùng để tự vệ và giao tiếp. Khả năng chạy bằng hai chân sau (bipedal locomotion) độc đáo giúp đạt tốc độ cao vượt trội khi chạy trốn trên mặt đất.",
+    "shortDescription": "Bậc thầy hăm dọa với màng cổ khổng lồ. Khả năng chạy bằng hai chân sau thần tốc.",
+    "description": "Thằn Lằn Cổ Lông là một trong những loài bò sát kỳ dị nhất hành tinh. Chúng sử dụng chiếc màng cổ lộng lẫy để dọa sợ kẻ thù bằng cách tạo ra ảo ảnh cơ thể to lớn gấp nhiều lần thực tế. Đi kèm với chiếc cổ xòe rộng là hành vi há miệng phát ra âm thanh rít ghê rợn. Khi chiến thuật dọa dẫm thất bại, nó lập tức quay đầu chạy bay trên hai chân sau để leo lên thân cây gần nhất trốn thoát.",
     "strengths": [
-      "Bộ giáp vảy keratin siêu cứng cáp có thể chống chịu những vết cắn sắc nhọn của thú dữ lớn",
-      "Khả năng cuộn tròn hoàn hảo bảo vệ tuyệt đối tất cả các cơ quan nội tạng",
-      "Đôi chi trước có móng vuốt siêu khỏe dùng để đào bới đất cứng và bê tông đất sét của ụ mối",
-      "Hệ thống cơ lưỡi đặc biệt cho phép thu hồi lưỡi chớp nhoáng với tần suất cực cao"
+      "Chiến thuật dọa dẫm uy lực bằng chiếc màng cổ khổng lồ đầy màu sắc tương phản",
+      "Khả năng chạy bằng hai chân sau giúp tối ưu hóa sải bước và gia tăng tốc độ di chuyển",
+      "Ngụy trang cực kỳ tốt khi bám dọc thân cây gỗ nhờ bộ da thô ráp có màu sắc xám nâu",
+      "Cặp chân sau to khỏe mang móng vuốt sắc bén hỗ trợ leo trèo xuất sắc"
     ],
     "weaknesses": [
-      "Hoàn toàn không có răng, không thể cắn hay tấn công sát thương trực diện bằng hàm",
-      "Tốc độ di chuyển chậm chạp khi đi trên mặt đất, đi bằng các khớp chi ngoài để bảo vệ móng",
-      "Khả năng sinh sản cực thấp, chỉ đẻ một con mỗi năm, chăm con mất rất nhiều thời gian"
+      "Chiếc màng cổ khi xòe ra làm cản gió, giảm tốc độ chạy nếu chạy ngược gió mạnh",
+      "Khả năng tấn công sát thương vật lý yếu, chủ yếu dựa vào răng nhỏ và dọa nạt",
+      "Thời gian phục hồi năng lượng lâu sau khi chạy nước rút trên quãng đường dài"
     ],
     "funFacts": [
-      "Dạ dày của tê tê vàng có một cấu trúc sừng đặc biệt hoạt động như mề của chim để nghiền nát kiến cùng sỏi nhỏ",
-      "Tê tê con khi di chuyển sẽ cưỡi trực tiếp lên phần gốc đuôi cứng cáp của mẹ",
-      "Chúng có cơ quan cơ ở mũi và tai có khả năng đóng kín khít hoàn toàn để ngăn kiến chui vào cắn phá bên trong khi chúng đang đào tổ kiến"
+      "Loài thằn lằn này từng được chọn in trên đồng xu 2 xu của Úc từ năm 1966 đến năm 1991",
+      "Màng cổ của chúng còn hoạt động như một máy điều hòa nhiệt độ sinh học: xòe rộng để đón nắng sưởi ấm hoặc đón gió để hạ nhiệt cơ thể",
+      "Tổ tiên của loài này được cho là có liên hệ tiến hóa chặt chẽ với loài khủng long đi bằng hai chân cổ đại nhờ cấu trúc xương hông đặc thù"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1016/j.jveb.2016.08.058",
-        "label": "Behavioral ecology of Chinese Pangolin"
+        "url": "https://doi.org/10.1086/285514",
+        "label": "The American Naturalist - Bipedalism and frill function in Chlamydosaurus"
       },
       {
-        "url": "https://www.iucnredlist.org/species/12764/123583998",
-        "label": "IUCN Red List - Manis pentadactyla Assessment"
+        "url": "https://www.nationalgeographic.com/animals/reptiles/facts/frilled-lizard",
+        "label": "National Geographic - Frilled Lizard Profile"
       }
     ],
-    "imageColor": "#D4A373",
+    "imageColor": "#C2A679",
     "stats": {
       "strength": 40,
-      "durability": 85,
-      "speed": 30,
-      "weaponry": 35,
-      "special": 75,
-      "lethality": 20
+      "durability": 45,
+      "speed": 70,
+      "weaponry": 30,
+      "special": 88,
+      "lethality": 25
     },
     "diet_type": "carnivore",
-    "diet_items": ["kiến", "mối", "nhộng côn trùng", "ấu trùng sâu đất"],
-    "activity_pattern": "nocturnal",
+    "diet_items": ["châu chấu", "mối", "bọ cánh cứng", "nhện", "thằn lằn nhỏ", "chim nhỏ"],
+    "activity_pattern": "diurnal",
     "lifespan_min": 10,
     "lifespan_max": 15,
     "lifespan_unit": "years",
+    "reproduction_type": "oviparous",
+    "reproduction_notes": "Mùa sinh sản trùng với mùa mưa (tháng 11 - tháng 2). Con cái đào hố đất nông đón ánh nắng mặt trời, đẻ khoảng 8-23 quả trứng và lấp đất lại, trứng tự nở sau khoảng 2-3 tháng mà không được chăm sóc.",
+    "locomotion": "hybrid",
+    "speed_max": 25,
+    "conservation_status": "LC",
+    "size_min_mm": 700,
+    "size_max_mm": 950,
+    "weight_avg_g": 750
+  },
+  {
+    "id": "dead-leaf-mantis",
+    "name": "Bọ Ngựa Lá Khô",
+    "scientificName": "Deroplatys desiccata",
+    "taxonomy": {
+      "class": "Insecta",
+      "order": "Mantodea",
+      "family": "Mantidae"
+    },
+    "realWeight": "~3 - 5 g",
+    "size": "7.5 - 9 cm",
+    "characteristics": "Kích thước lớn trong họ bọ ngựa. Cơ thể dẹt phẳng và loang lổ các tông màu nâu, xám, đen giống hệt một chiếc lá khô đang mục nát. Phần ngực trước (pronotum) mở rộng sang hai bên tạo thành hình dáng phiến lá héo úa với đầy đủ các đường gân nổi.",
+    "habitat": "Tầng dưới rậm rạp của rừng mưa nhiệt đới ẩm ướt, thảm lá rụng ẩm dưới đất.",
+    "location": "Khu vực Đông Nam Á, bao gồm Malaysia, Indonesia, Brunei và Thái Lan.",
+    "survival_method": "Ẩn mình hoàn toàn trong các thảm lá khô hoặc cành cây mục nát. Khi có động tĩnh, chúng lắc lư nhẹ nhàng mô phỏng chiếc lá bị gió thổi. Nếu bị kẻ thù phát hiện hoặc đe dọa, chúng lập tức xòe cánh để lộ các đốm đen lớn trông giống như mắt của động vật khổng lồ (deimatic display) để xua đuổi kẻ săn mồi.",
+    "unique_traits": "Đỉnh cao của ngụy trang bắt chước hình ảnh (crypsis): cơ thể bắt chước hoàn hảo đến từng chi tiết của một chiếc lá khô mục từ hình dạng gân lá, đốm nấm mốc đến các vết khuyết ở rìa cánh. Sở hữu đôi chân trước kẹp gai siêu lực giúp giữ chặt con mồi lớn.",
+    "shortDescription": "Kiệt tác ngụy trang của rừng mưa nhiệt đới. Đòn tự vệ tạo ảo ảnh dọa nạt đối thủ.",
+    "description": "Bọ Ngựa Lá Khô là ví dụ điển hình cho thuyết tiến hóa về ngụy trang tự nhiên. Toàn bộ cơ thể của nó là một tác phẩm nghệ thuật đánh lừa thị giác của cả con mồi lẫn kẻ thù. Nhờ khả năng tàng hình hoàn hảo, chúng có thể kiên nhẫn đứng đợi hàng giờ cho đến khi con mồi vô tình bước vào phạm vi tấn công của đôi chân kẹp gai sét đánh.",
+    "strengths": [
+      "Ngụy trang bắt chước chiếc lá khô đạt mức độ hoàn hảo tuyệt đối trong tự nhiên",
+      "Phản ứng phòng thủ deimatic display tạo đốm mắt giả gây hoảng sợ tức thì cho kẻ thù",
+      "Cú kẹp chân trước mang gai nhọn cực kỳ chắc chắn, khóa chặt con mồi giãy giụa",
+      "Hàm nhai khỏe có thể xé nát các loại côn trùng có vỏ kitin cứng"
+    ],
+    "weaknesses": [
+      "Phụ thuộc lớn vào môi trường rừng ẩm thảm lá khô, mất sinh cảnh này sẽ cực kỳ dễ lộ diện",
+      "Tốc độ di chuyển đi bộ chậm chạp, vụng về khi rời khỏi cành cây ẩm",
+      "Khả năng bay lượn kém do cánh nặng nề cấu tạo ngụy trang dẹt rộng"
+    ],
+    "funFacts": [
+      "Khi bị chạm vào cơ thể, loài bọ ngựa này thường giả chết bằng cách thả mình rơi tự do xuống đất rừng và nằm im bất động như chiếc lá rụng thực sự",
+      "Con cái có kích thước lớn hơn nhiều và hung dữ hơn con đực, chúng có khả năng ăn thịt bạn tình ngay trong lúc đang giao phối để nạp protein",
+      "Các đường gân giả trên cánh bọ ngựa lá khô đối xứng hoàn hảo, thậm chí có cả các đốm nhạt màu mô phỏng lỗ thủng do sâu ăn lá tạo ra"
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1111/j.1469-7998.2005.00018.x",
+        "label": "Journal of Zoology - Deimatic display and defense in Deroplatys"
+      },
+      {
+        "url": "https://www.keepitsimplepetcare.com/dead-leaf-mantis-care-sheet/",
+        "label": "Dead Leaf Mantis Keep Care Guide"
+      }
+    ],
+    "imageColor": "#8B5A2B",
+    "stats": {
+      "strength": 48,
+      "durability": 40,
+      "speed": 65,
+      "weaponry": 72,
+      "special": 90,
+      "lethality": 70
+    },
+    "diet_type": "carnivore",
+    "diet_items": ["ruồi giấm", "dế", "gián đất", "bướm đêm", "côn trùng cánh vảy"],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 10,
+    "lifespan_max": 12,
+    "lifespan_unit": "months",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Giao phối chủ yếu vào cuối mùa hè hoặc mùa thu. Con cái mang thai khoảng 120-150 ngày, sinh duy nhất một con non và nuôi dưỡng cẩn thận trong hang ẩm.",
-    "locomotion": "burrow",
-    "speed_max": 5,
-    "conservation_status": "CR",
-    "size_min_mm": 400,
-    "size_max_mm": 600,
-    "weight_avg_g": 4500
+    "reproduction_notes": "Sinh sản hữu tính. Con cái đẻ trứng vào kén bọt xốp cứng bám trên cành cây khô ẩm. Trực tiếp nở ra hàng trăm con non (nymphs) sau khoảng 6-8 tuần.",
+    "locomotion": "hybrid",
+    "speed_max": 6,
+    "conservation_status": "LC",
+    "size_min_mm": 75,
+    "size_max_mm": 90,
+    "weight_avg_g": 4
   }
 ]
