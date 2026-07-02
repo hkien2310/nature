@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
+import { revalidateTag } from "next/cache";
 import { supabase } from "@/lib/supabase";
+import { CACHE_TAGS } from "@/lib/cache";
 
 export async function POST(
   request: Request,
@@ -38,6 +40,7 @@ export async function POST(
       return NextResponse.json({ error: error.message }, { status: 500 });
     }
 
+    revalidateTag(CACHE_TAGS.CREATURES, { expire: 0 });
     return NextResponse.json({ success: true });
   } catch (err: any) {
     return NextResponse.json({ error: err.message }, { status: 500 });

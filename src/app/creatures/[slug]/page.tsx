@@ -7,7 +7,7 @@ import WhatIfSection from "@/components/WhatIfSection";
 import HumanSpliceSection from "@/components/HumanSpliceSection";
 import CreatureGallery from "@/components/CreatureGallery";
 
-export const dynamic = "force-dynamic";
+
 
 interface Props {
   params: Promise<{ slug: string }>;

@@ -2,7 +2,7 @@ import { getDBCreatures } from "@/lib/db";
 import CreaturesFilterList from "@/components/CreaturesFilterList";
 import type { Metadata } from "next";
 
-export const dynamic = "force-dynamic";
+
 
 export const metadata: Metadata = {
   title: "Creature Database — BioForce Atlas",

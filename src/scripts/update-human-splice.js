@@ -1,30 +1,22 @@
-const { createClient } = require("@supabase/supabase-js");
 const fs = require("fs");
 const path = require("path");
 
-// Manually parse .env.local
-const envPath = path.join(__dirname, "../.env.local");
-let supabaseUrl = "";
-let supabaseAnonKey = "";
+// Manually parse .env.local to get API_SECRET_KEY
+const envPath = path.join(__dirname, "../../.env.local");
+let apiSecretKey = "";
 
 if (fs.existsSync(envPath)) {
   const envContent = fs.readFileSync(envPath, "utf-8");
-  const urlMatch = envContent.match(/NEXT_PUBLIC_SUPABASE_URL\s*=\s*(.*)/);
-  const keyMatch = envContent.match(/NEXT_PUBLIC_SUPABASE_ANON_KEY\s*=\s*(.*)/);
-  if (urlMatch) {
-    supabaseUrl = urlMatch[1].replace(/['"]/g, "").trim();
-  }
+  const keyMatch = envContent.match(/API_SECRET_KEY\s*=\s*(.*)/);
   if (keyMatch) {
-    supabaseAnonKey = keyMatch[1].replace(/['"]/g, "").trim();
+    apiSecretKey = keyMatch[1].replace(/['"]/g, "").trim();
   }
 }
 
-if (!supabaseUrl || !supabaseAnonKey || supabaseUrl.includes("your_supabase") || supabaseAnonKey.includes("your_supabase")) {
-  console.error("❌ Supabase credentials not configured in .env.local yet.");
+if (!apiSecretKey) {
+  console.error("❌ API_SECRET_KEY not configured in .env.local yet.");
   process.exit(1);
 }
-
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 const jsonFilePath = process.argv[2];
 if (!jsonFilePath) {
@@ -50,42 +42,39 @@ async function run() {
   }
 
   const items = Array.isArray(data) ? data : [data];
-  console.log(`🚀 Processing ${items.length} Human-Splice profiles...`);
+  console.log(`🚀 Sending ${items.length} Human-Splice profiles to Backend API...`);
 
-  for (const item of items) {
-    if (!item.creature_id || !item.title || !item.slug || !item.trait_name || !item.spliced_stats) {
-      console.error(`⚠️ Skipping invalid item: ${JSON.stringify(item)}`);
-      continue;
+  try {
+    const response = await fetch("http://localhost:3000/api/admin/human-splice/upsert", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-api-key": apiSecretKey
+      },
+      body: JSON.stringify(items)
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      console.error("❌ API Request failed:", result.error || response.statusText);
+      if (result.errors) {
+        console.error("Details:", result.errors);
+      }
+      process.exit(1);
     }
 
-    console.log(`\n🔹 Graft: "${item.title}" (${item.creature_id})`);
-
-    // Upsert Human Splice profile
-    const { data: spliceData, error: sErr } = await supabase
-      .from("human_splices")
-      .upsert({
-        creature_id: item.creature_id,
-        title: item.title,
-        trait_name: item.trait_name,
-        slug: item.slug,
-        spliced_stats: item.spliced_stats,
-        formulas_and_data: item.formulas_and_data || {},
-        summary: item.summary || null,
-        sci_fi_hype: item.sci_fi_hype,
-        scientific_reality: item.scientific_reality,
-        updated_at: new Date().toISOString()
-      }, { onConflict: "slug" })
-      .select()
-      .single();
-
-    if (sErr || !spliceData) {
-      console.error(`❌ Failed to upsert Splice Profile "${item.title}":`, sErr?.message);
+    console.log(`✅ Successfully upserted ${result.upserted} Splice profiles via Backend.`);
+    if (result.errors && result.errors.length > 0) {
+      console.warn(`⚠️ Completed with some errors:`, result.errors);
     } else {
-      console.log(`   ✅ Splice profile upserted successfully (ID: ${spliceData.id})`);
+      console.log("\n🎉 Human Splicing database update completed!");
     }
+  } catch (err) {
+    console.error("💥 Failed to connect to Backend API. Make sure 'npm run dev' is running on port 3000.");
+    console.error("Error details:", err.message);
+    process.exit(1);
   }
-
-  console.log("\n🎉 Human Splicing database update completed!");
 }
 
 run().catch((err) => {

@@ -21,7 +21,7 @@ export async function selectGradingGroup(userId?: string, apiKey?: string): Prom
         return { success: false, error: "Access Denied: Bạn không có quyền Admin." };
       }
     } else if (apiKey) {
-      const expectedKey = process.env.API_SECRET_KEY || "bioforce_secret_key_2026";
+      const expectedKey = process.env.API_SECRET_KEY;
       if (apiKey !== expectedKey) {
         return { success: false, error: "Unauthorized: Invalid API key." };
       }

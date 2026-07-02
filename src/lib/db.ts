@@ -1,5 +1,7 @@
 import { supabase } from "./supabase";
 import { creatures as staticCreatures, Creature, CreatureStats, Tier } from "@/data/creatures";
+import { unstable_cache } from "next/cache";
+import { CACHE_TTL, CACHE_TAGS } from "./cache";
 
 export interface DbCreature {
   id: string;
@@ -118,7 +120,8 @@ export interface HumanSplice {
 
 
 
-export async function getDBCreatures(): Promise<Creature[]> {
+// ── Internal: raw Supabase fetch (uncached) ──────────────
+async function _fetchCreatures(): Promise<Creature[]> {
   try {
     console.log("⚡ [Server] Calling Supabase API to fetch creatures...");
     // 1. Fetch creatures
@@ -146,101 +149,133 @@ export async function getDBCreatures(): Promise<Creature[]> {
       });
     }
 
-    return dbCreatures.map((dbc: DbCreature) => {
-      const votes = votesMap[dbc.id] || [];
-      
-      // Calculate average stats, default to static fallback stats if no votes
-      const staticFall = staticCreatures.find((c) => c.id === dbc.id);
-      const defaultStats = staticFall?.stats || {
-        strength: 50, durability: 50, speed: 50, weaponry: 50, special: 50, lethality: 50
-      };
-
-      const stats: CreatureStats = {
-        strength: votes.length > 0 ? Math.round(votes.reduce((acc, curr) => acc + curr.strength, 0) / votes.length) : defaultStats.strength,
-        durability: votes.length > 0 ? Math.round(votes.reduce((acc, curr) => acc + curr.durability, 0) / votes.length) : defaultStats.durability,
-        speed: votes.length > 0 ? Math.round(votes.reduce((acc, curr) => acc + curr.speed, 0) / votes.length) : defaultStats.speed,
-        weaponry: votes.length > 0 ? Math.round(votes.reduce((acc, curr) => acc + curr.weaponry, 0) / votes.length) : defaultStats.weaponry,
-        special: votes.length > 0 ? Math.round(votes.reduce((acc, curr) => acc + curr.special, 0) / votes.length) : defaultStats.special,
-        lethality: votes.length > 0 ? Math.round(votes.reduce((acc, curr) => acc + curr.lethality, 0) / votes.length) : defaultStats.lethality,
-      };
-
-      // Calculate community P4P score: average of stats
-      const communityP4pScore = Math.round(
-        (stats.strength + stats.durability + stats.speed + stats.weaponry + stats.special + stats.lethality) / 6
-      );
-
-      // Determine Community Tier based on Community P4P Score
-      let communityTier: Tier = "C";
-      if (communityP4pScore >= 90) communityTier = "S";
-      else if (communityP4pScore >= 80) communityTier = "A";
-      else if (communityP4pScore >= 70) communityTier = "B";
-      else if (communityP4pScore >= 50) communityTier = "C";
-      else communityTier = "D";
-
-      // Display score is system/AI graded score
-      const p4pScore = dbc.ai_p4p_score !== undefined && dbc.ai_p4p_score !== null ? dbc.ai_p4p_score : 50;
-      const tier = (dbc.ai_tier || "C") as Tier;
-
-      return {
-        id: dbc.id,
-        name: dbc.name,
-        scientificName: dbc.scientific_name,
-        taxonomy: {
-          class: dbc.class,
-          order: dbc.order,
-          family: dbc.family,
-        },
-        realWeight: dbc.real_weight,
-        size: dbc.size,
-        characteristics: dbc.characteristics || "",
-        habitat: dbc.habitat,
-        location: dbc.location || "",
-        survival_method: dbc.survival_method || "",
-        unique_traits: dbc.unique_traits || "",
-        shortDescription: dbc.short_description,
-        description: dbc.description,
-        stats,
-        p4pScore,
-        tier,
-        communityP4pScore,
-        communityTier,
-        strengths: dbc.strengths || [],
-        weaknesses: dbc.weaknesses || [],
-        funFacts: dbc.fun_facts || [],
-        sources: dbc.sources || [],
-        imageColor: dbc.image_color,
-        enrichmentCount: dbc.enrichment_count || 0,
-        diet_type: dbc.diet_type,
-        diet_items: dbc.diet_items || [],
-        activity_pattern: dbc.activity_pattern,
-        lifespan_min: dbc.lifespan_min,
-        lifespan_max: dbc.lifespan_max,
-        lifespan_unit: dbc.lifespan_unit,
-        reproduction_type: dbc.reproduction_type,
-        reproduction_notes: dbc.reproduction_notes,
-        locomotion: dbc.locomotion,
-        speed_max: dbc.speed_max,
-        conservation_status: dbc.conservation_status,
-        size_min_mm: dbc.size_min_mm,
-        size_max_mm: dbc.size_max_mm,
-        weight_avg_g: dbc.weight_avg_g,
-        hasDocumentary: dbc.has_documentary || false,
-        gradingCount: dbc.grading_count || 0,
-        aiP4pScore: dbc.ai_p4p_score || 50,
-        aiTier: (dbc.ai_tier || "C") as Tier,
-        images: dbc.images || undefined,
-      };
-    });
+    return dbCreatures.map((dbc: DbCreature) => mapDbCreatureToCreature(dbc, votesMap[dbc.id] || []));
   } catch (err) {
     console.error("Error fetching database creatures, falling back to static:", err);
     return staticCreatures;
   }
 }
 
-export async function getDBCreatureById(id: string): Promise<Creature | undefined> {
-  const list = await getDBCreatures();
-  return list.find((c) => c.id === id);
+// ── Helper: map DB row → Creature type ───────────────────
+function mapDbCreatureToCreature(dbc: DbCreature, votes: any[]): Creature {
+  const staticFall = staticCreatures.find((c) => c.id === dbc.id);
+  const defaultStats = staticFall?.stats || {
+    strength: 50, durability: 50, speed: 50, weaponry: 50, special: 50, lethality: 50
+  };
+
+  const stats: CreatureStats = {
+    strength: votes.length > 0 ? Math.round(votes.reduce((acc, curr) => acc + curr.strength, 0) / votes.length) : defaultStats.strength,
+    durability: votes.length > 0 ? Math.round(votes.reduce((acc, curr) => acc + curr.durability, 0) / votes.length) : defaultStats.durability,
+    speed: votes.length > 0 ? Math.round(votes.reduce((acc, curr) => acc + curr.speed, 0) / votes.length) : defaultStats.speed,
+    weaponry: votes.length > 0 ? Math.round(votes.reduce((acc, curr) => acc + curr.weaponry, 0) / votes.length) : defaultStats.weaponry,
+    special: votes.length > 0 ? Math.round(votes.reduce((acc, curr) => acc + curr.special, 0) / votes.length) : defaultStats.special,
+    lethality: votes.length > 0 ? Math.round(votes.reduce((acc, curr) => acc + curr.lethality, 0) / votes.length) : defaultStats.lethality,
+  };
+
+  const communityP4pScore = Math.round(
+    (stats.strength + stats.durability + stats.speed + stats.weaponry + stats.special + stats.lethality) / 6
+  );
+
+  let communityTier: Tier = "C";
+  if (communityP4pScore >= 90) communityTier = "S";
+  else if (communityP4pScore >= 80) communityTier = "A";
+  else if (communityP4pScore >= 70) communityTier = "B";
+  else if (communityP4pScore >= 50) communityTier = "C";
+  else communityTier = "D";
+
+  const p4pScore = dbc.ai_p4p_score !== undefined && dbc.ai_p4p_score !== null ? dbc.ai_p4p_score : 50;
+  const tier = (dbc.ai_tier || "C") as Tier;
+
+  return {
+    id: dbc.id,
+    name: dbc.name,
+    scientificName: dbc.scientific_name,
+    taxonomy: {
+      class: dbc.class,
+      order: dbc.order,
+      family: dbc.family,
+    },
+    realWeight: dbc.real_weight,
+    size: dbc.size,
+    characteristics: dbc.characteristics || "",
+    habitat: dbc.habitat,
+    location: dbc.location || "",
+    survival_method: dbc.survival_method || "",
+    unique_traits: dbc.unique_traits || "",
+    shortDescription: dbc.short_description,
+    description: dbc.description,
+    stats,
+    p4pScore,
+    tier,
+    communityP4pScore,
+    communityTier,
+    strengths: dbc.strengths || [],
+    weaknesses: dbc.weaknesses || [],
+    funFacts: dbc.fun_facts || [],
+    sources: dbc.sources || [],
+    imageColor: dbc.image_color,
+    enrichmentCount: dbc.enrichment_count || 0,
+    diet_type: dbc.diet_type,
+    diet_items: dbc.diet_items || [],
+    activity_pattern: dbc.activity_pattern,
+    lifespan_min: dbc.lifespan_min,
+    lifespan_max: dbc.lifespan_max,
+    lifespan_unit: dbc.lifespan_unit,
+    reproduction_type: dbc.reproduction_type,
+    reproduction_notes: dbc.reproduction_notes,
+    locomotion: dbc.locomotion,
+    speed_max: dbc.speed_max,
+    conservation_status: dbc.conservation_status,
+    size_min_mm: dbc.size_min_mm,
+    size_max_mm: dbc.size_max_mm,
+    weight_avg_g: dbc.weight_avg_g,
+    hasDocumentary: dbc.has_documentary || false,
+    gradingCount: dbc.grading_count || 0,
+    aiP4pScore: dbc.ai_p4p_score || 50,
+    aiTier: (dbc.ai_tier || "C") as Tier,
+    images: dbc.images || undefined,
+  };
 }
+
+// ── Cached: getDBCreatures ───────────────────────────────
+export const getDBCreatures = unstable_cache(
+  _fetchCreatures,
+  ["creatures-list"],
+  { revalidate: CACHE_TTL.CREATURES, tags: [CACHE_TAGS.CREATURES] }
+);
+
+// ── Cached: getDBCreatureById (optimized: direct query) ──
+export const getDBCreatureById = unstable_cache(
+  async (id: string): Promise<Creature | undefined> => {
+    try {
+      console.log(`⚡ [Server] Fetching creature by id: ${id}`);
+      const { data: dbc, error } = await supabase
+        .from("creatures")
+        .select("*")
+        .eq("id", id)
+        .single();
+
+      if (error || !dbc) {
+        // Fallback: try static data
+        const staticFall = staticCreatures.find((c) => c.id === id);
+        return staticFall;
+      }
+
+      // Fetch votes for this creature only
+      const { data: votes } = await supabase
+        .from("votes")
+        .select("*")
+        .eq("creature_id", id);
+
+      return mapDbCreatureToCreature(dbc, votes || []);
+    } catch (err) {
+      console.error(`Error fetching creature ${id}:`, err);
+      return staticCreatures.find((c) => c.id === id);
+    }
+  },
+  ["creature-detail"],
+  { revalidate: CACHE_TTL.CREATURE_DETAIL, tags: [CACHE_TAGS.CREATURES] }
+);
 
 export interface DbBattle {
   id: string;
@@ -269,57 +304,61 @@ export interface Battle extends DbBattle {
   user_voted_for?: string;
 }
 
-export async function getDBBattles(userSession?: { user_id?: string; user_ip?: string }): Promise<Battle[]> {
-  try {
-    const { data: dbBattles, error: bErr } = await supabase
-      .from("battles")
-      .select("*")
-      .order("created_at", { ascending: false });
+// ── Cached: getDBBattles ──────────────────────────────────
+// Note: userSession is user-specific so we cache the raw battle+vote data
+// and compute user-specific fields at call site
+const _fetchBattlesRaw = unstable_cache(
+  async () => {
+    try {
+      console.log("⚡ [Server] Fetching battles...");
+      const { data: dbBattles, error: bErr } = await supabase
+        .from("battles")
+        .select("*")
+        .order("created_at", { ascending: false });
 
-    if (bErr || !dbBattles) {
-      return [];
+      if (bErr || !dbBattles) return { battles: [], votes: [] };
+
+      const { data: dbVotes } = await supabase
+        .from("battle_votes")
+        .select("*");
+
+      return { battles: dbBattles, votes: dbVotes || [] };
+    } catch (err) {
+      console.error("Error fetching battles:", err);
+      return { battles: [], votes: [] };
+    }
+  },
+  ["battles-raw"],
+  { revalidate: CACHE_TTL.BATTLES, tags: [CACHE_TAGS.BATTLES] }
+);
+
+export async function getDBBattles(userSession?: { user_id?: string; user_ip?: string }): Promise<Battle[]> {
+  const { battles: dbBattles, votes: dbVotes } = await _fetchBattlesRaw();
+  if (dbBattles.length === 0) return [];
+
+  const creatures = await getDBCreatures();
+
+  return dbBattles.map((b: DbBattle) => {
+    const creature_a = creatures.find(c => c.id === b.creature_a_id) || creatures[0];
+    const creature_b = creatures.find(c => c.id === b.creature_b_id) || creatures[1];
+
+    const votes_a = dbVotes.filter(v => v.battle_id === b.id && v.vote_for === b.creature_a_id).length;
+    const votes_b = dbVotes.filter(v => v.battle_id === b.id && v.vote_for === b.creature_b_id).length;
+
+    let user_voted_for: string | undefined = undefined;
+    if (userSession) {
+      const userVote = dbVotes.find(v => 
+        v.battle_id === b.id && 
+        ((userSession.user_id && v.user_id === userSession.user_id) || 
+         (!userSession.user_id && userSession.user_ip && v.user_ip === userSession.user_ip))
+      );
+      if (userVote) {
+        user_voted_for = userVote.vote_for;
+      }
     }
 
-    const { data: dbVotes, error: vErr } = await supabase
-      .from("battle_votes")
-      .select("*");
-
-    const creatures = await getDBCreatures();
-
-    return dbBattles.map((b: DbBattle) => {
-      const creature_a = creatures.find(c => c.id === b.creature_a_id) || creatures[0];
-      const creature_b = creatures.find(c => c.id === b.creature_b_id) || creatures[1];
-
-      const votes = dbVotes || [];
-      const votes_a = votes.filter(v => v.battle_id === b.id && v.vote_for === b.creature_a_id).length;
-      const votes_b = votes.filter(v => v.battle_id === b.id && v.vote_for === b.creature_b_id).length;
-
-      // Find user's vote if session details are provided
-      let user_voted_for: string | undefined = undefined;
-      if (userSession) {
-        const userVote = votes.find(v => 
-          v.battle_id === b.id && 
-          ((userSession.user_id && v.user_id === userSession.user_id) || 
-           (!userSession.user_id && userSession.user_ip && v.user_ip === userSession.user_ip))
-        );
-        if (userVote) {
-          user_voted_for = userVote.vote_for;
-        }
-      }
-
-      return {
-        ...b,
-        creature_a,
-        creature_b,
-        votes_a,
-        votes_b,
-        user_voted_for
-      };
-    });
-  } catch (err) {
-    console.error("Error fetching battles:", err);
-    return [];
-  }
+    return { ...b, creature_a, creature_b, votes_a, votes_b, user_voted_for };
+  });
 }
 
 export async function submitBattleVote(battleId: string, voteFor: string, userId?: string, userIp?: string): Promise<{ success: boolean; error?: string }> {
@@ -380,44 +419,42 @@ export interface MatchupVotes {
   user_voted_for?: string;
 }
 
-export async function getMatchupVotes(matchupSlug: string, userSession?: { user_id?: string; user_ip?: string }): Promise<MatchupVotes> {
-  try {
-    const { data: dbVotes, error } = await supabase
-      .from("matchup_votes")
-      .select("*")
-      .eq("matchup_slug", matchupSlug);
-
-    const votes = dbVotes || [];
-    const [creatureA, creatureB] = matchupSlug.split("-vs-");
-
-    const votes_a = votes.filter(v => v.vote_for === creatureA).length;
-    const votes_b = votes.filter(v => v.vote_for === creatureB).length;
-
-    let user_voted_for: string | undefined = undefined;
-    if (userSession) {
-      const userVote = votes.find(v => 
-        (userSession.user_id && v.user_id === userSession.user_id) || 
-        (!userSession.user_id && userSession.user_ip && v.user_ip === userSession.user_ip)
-      );
-      if (userVote) {
-        user_voted_for = userVote.vote_for;
-      }
+// ── Cached: matchup vote counts (user-specific part computed outside cache) ──
+const _fetchMatchupVotesRaw = unstable_cache(
+  async (matchupSlug: string) => {
+    try {
+      const { data: dbVotes } = await supabase
+        .from("matchup_votes")
+        .select("*")
+        .eq("matchup_slug", matchupSlug);
+      return dbVotes || [];
+    } catch {
+      return [];
     }
+  },
+  ["matchup-votes-raw"],
+  { revalidate: CACHE_TTL.MATCHUP_VOTES, tags: [CACHE_TAGS.MATCHUP_VOTES] }
+);
 
-    return {
-      matchup_slug: matchupSlug,
-      votes_a,
-      votes_b,
-      user_voted_for
-    };
-  } catch (err) {
-    console.error("Error fetching matchup votes:", err);
-    return {
-      matchup_slug: matchupSlug,
-      votes_a: 0,
-      votes_b: 0
-    };
+export async function getMatchupVotes(matchupSlug: string, userSession?: { user_id?: string; user_ip?: string }): Promise<MatchupVotes> {
+  const votes = await _fetchMatchupVotesRaw(matchupSlug);
+  const [creatureA, creatureB] = matchupSlug.split("-vs-");
+
+  const votes_a = votes.filter(v => v.vote_for === creatureA).length;
+  const votes_b = votes.filter(v => v.vote_for === creatureB).length;
+
+  let user_voted_for: string | undefined = undefined;
+  if (userSession) {
+    const userVote = votes.find(v => 
+      (userSession.user_id && v.user_id === userSession.user_id) || 
+      (!userSession.user_id && userSession.user_ip && v.user_ip === userSession.user_ip)
+    );
+    if (userVote) {
+      user_voted_for = userVote.vote_for;
+    }
   }
+
+  return { matchup_slug: matchupSlug, votes_a, votes_b, user_voted_for };
 }
 
 export async function submitMatchupVote(matchupSlug: string, voteFor: string, userId?: string, userIp?: string): Promise<{ success: boolean; error?: string }> {
@@ -451,109 +488,129 @@ export async function submitMatchupVote(matchupSlug: string, voteFor: string, us
   }
 }
 
-export async function getWhatIfQuestions(creatureId?: string): Promise<WhatIfQuestion[]> {
-  try {
-    let query = supabase.from("what_if_questions").select("*").order("created_at", { ascending: false });
-    if (creatureId) {
-      query = query.eq("creature_id", creatureId);
-    }
-    const { data, error } = await query;
-    if (error) throw error;
-    return data || [];
-  } catch (err) {
-    console.error("Error fetching what-if questions:", err);
-    return [];
-  }
-}
-
-export async function getWhatIfQuestionWithAnswers(slug: string): Promise<(WhatIfQuestion & { answers: WhatIfAnswer[] }) | null> {
-  try {
-    const { data: question, error: qErr } = await supabase
-      .from("what_if_questions")
-      .select("*")
-      .eq("slug", slug)
-      .single();
-
-    if (qErr || !question) {
-      if (qErr && qErr.code !== "PGRST116") {
-        console.error("Error fetching what-if question:", qErr);
+// ── Cached: getWhatIfQuestions ────────────────────────────
+export const getWhatIfQuestions = unstable_cache(
+  async (creatureId?: string): Promise<WhatIfQuestion[]> => {
+    try {
+      let query = supabase.from("what_if_questions").select("*").order("created_at", { ascending: false });
+      if (creatureId) {
+        query = query.eq("creature_id", creatureId);
       }
+      const { data, error } = await query;
+      if (error) throw error;
+      return data || [];
+    } catch (err) {
+      console.error("Error fetching what-if questions:", err);
+      return [];
+    }
+  },
+  ["what-if-questions"],
+  { revalidate: CACHE_TTL.WHAT_IFS, tags: [CACHE_TAGS.WHAT_IFS] }
+);
+
+// ── Cached: getWhatIfQuestionWithAnswers ──────────────────
+export const getWhatIfQuestionWithAnswers = unstable_cache(
+  async (slug: string): Promise<(WhatIfQuestion & { answers: WhatIfAnswer[] }) | null> => {
+    try {
+      const { data: question, error: qErr } = await supabase
+        .from("what_if_questions")
+        .select("*")
+        .eq("slug", slug)
+        .single();
+
+      if (qErr || !question) {
+        if (qErr && qErr.code !== "PGRST116") {
+          console.error("Error fetching what-if question:", qErr);
+        }
+        return null;
+      }
+
+      const { data: answers, error: aErr } = await supabase
+        .from("what_if_answers")
+        .select("*")
+        .eq("question_id", question.id)
+        .order("created_at", { ascending: true });
+
+      if (aErr) throw aErr;
+
+      return {
+        ...question,
+        answers: answers || []
+      };
+    } catch (err) {
+      console.error("Error fetching what-if question with answers:", err);
       return null;
     }
+  },
+  ["what-if-question-with-answers"],
+  { revalidate: CACHE_TTL.WHAT_IFS, tags: [CACHE_TAGS.WHAT_IFS] }
+);
 
-    const { data: answers, error: aErr } = await supabase
-      .from("what_if_answers")
-      .select("*")
-      .eq("question_id", question.id)
-      .order("created_at", { ascending: true });
+// ── Cached: getCreatureWhatIfs ────────────────────────────
+export const getCreatureWhatIfs = unstable_cache(
+  async (creatureId: string): Promise<Array<WhatIfQuestion & { answers: WhatIfAnswer[] }>> => {
+    try {
+      const { data: questions, error: qErr } = await supabase
+        .from("what_if_questions")
+        .select("*")
+        .eq("creature_id", creatureId)
+        .order("created_at", { ascending: false });
 
-    if (aErr) throw aErr;
+      if (qErr) throw qErr;
+      if (!questions || questions.length === 0) return [];
 
-    return {
-      ...question,
-      answers: answers || []
-    };
-  } catch (err) {
-    console.error("Error fetching what-if question with answers:", err);
-    return null;
-  }
-}
+      const questionIds = questions.map(q => q.id);
+      const { data: answers, error: aErr } = await supabase
+        .from("what_if_answers")
+        .select("*")
+        .in("question_id", questionIds)
+        .order("created_at", { ascending: true });
 
-export async function getCreatureWhatIfs(creatureId: string): Promise<Array<WhatIfQuestion & { answers: WhatIfAnswer[] }>> {
-  try {
-    const { data: questions, error: qErr } = await supabase
-      .from("what_if_questions")
-      .select("*")
-      .eq("creature_id", creatureId)
-      .order("created_at", { ascending: false });
+      if (aErr) throw aErr;
 
-    if (qErr) throw qErr;
-    if (!questions || questions.length === 0) return [];
+      const answersMap: Record<string, WhatIfAnswer[]> = {};
+      if (answers) {
+        answers.forEach(a => {
+          if (!answersMap[a.question_id]) {
+            answersMap[a.question_id] = [];
+          }
+          answersMap[a.question_id].push(a);
+        });
+      }
 
-    const questionIds = questions.map(q => q.id);
-    const { data: answers, error: aErr } = await supabase
-      .from("what_if_answers")
-      .select("*")
-      .in("question_id", questionIds)
-      .order("created_at", { ascending: true });
-
-    if (aErr) throw aErr;
-
-    const answersMap: Record<string, WhatIfAnswer[]> = {};
-    if (answers) {
-      answers.forEach(a => {
-        if (!answersMap[a.question_id]) {
-          answersMap[a.question_id] = [];
-        }
-        answersMap[a.question_id].push(a);
-      });
+      return questions.map(q => ({
+        ...q,
+        answers: answersMap[q.id] || []
+      }));
+    } catch (err) {
+      console.error("Error fetching creature what-ifs:", err);
+      return [];
     }
+  },
+  ["creature-what-ifs"],
+  { revalidate: CACHE_TTL.WHAT_IFS, tags: [CACHE_TAGS.WHAT_IFS] }
+);
 
-    return questions.map(q => ({
-      ...q,
-      answers: answersMap[q.id] || []
-    }));
-  } catch (err) {
-    console.error("Error fetching creature what-ifs:", err);
-    return [];
-  }
-}
+// ── Cached: getCreatureHumanSplices ───────────────────────
+export const getCreatureHumanSplices = unstable_cache(
+  async (creatureId: string): Promise<HumanSplice[]> => {
+    try {
+      const { data, error } = await supabase
+        .from("human_splices")
+        .select("*")
+        .eq("creature_id", creatureId)
+        .order("created_at", { ascending: true });
 
-export async function getCreatureHumanSplices(creatureId: string): Promise<HumanSplice[]> {
-  try {
-    const { data, error } = await supabase
-      .from("human_splices")
-      .select("*")
-      .eq("creature_id", creatureId)
-      .order("created_at", { ascending: true });
-
-    if (error) throw error;
-    return data || [];
-  } catch (err) {
-    console.error("Error fetching creature human splices:", err);
-    return [];
-  }
-}
+      if (error) throw error;
+      return data || [];
+    } catch (err) {
+      console.error("Error fetching creature human splices:", err);
+      return [];
+    }
+  },
+  ["creature-human-splices"],
+  { revalidate: CACHE_TTL.HUMAN_SPLICES, tags: [CACHE_TAGS.HUMAN_SPLICES] }
+);
 
 
 

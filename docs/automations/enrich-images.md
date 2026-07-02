@@ -2,6 +2,9 @@
 
 Khi nhận được yêu cầu `"Làm giàu dữ liệu ảnh"`, AI sẽ tự động tìm 1 sinh vật thiếu ảnh, sinh ra 5 tấm ảnh tả thực bằng công cụ AI, tải lên Cloudinary và cập nhật Database.
 
+### Script Được Phép Sử Dụng:
+- `src/scripts/update-images.js` — Cập nhật public_id ảnh vào database.
+
 ### Các Bước Thực Hiện:
 1. **Tìm mục tiêu ưu tiên**: 
    - Gọi API GET tới: `https://nature-puce-two.vercel.app/api/admin/cloudinary/targets`
@@ -34,5 +37,17 @@ Khi nhận được yêu cầu `"Làm giàu dữ liệu ảnh"`, AI sẽ tự đ
      node src/scripts/update-images.js [ID_sinh_vật] "[public_id_1],[public_id_2],[public_id_3],[public_id_4],[public_id_5]"
      ```
 
-5. **Báo cáo**: 
+5. **Dọn dẹp file ảnh**:
+   - Sau khi upload và cập nhật database thành công, **bắt buộc xóa toàn bộ 5 file ảnh** đã tạo trong thư mục `artifacts`.
+   - Chạy lệnh xóa từng file hoặc dùng wildcard:
+     ```bash
+     rm /đường/dẫn/tuyệt/đối/tới/[tên-sinh-vật]_0*.png
+     ```
+
+6. **Báo cáo**: 
    - Thông báo cho người dùng biết sinh vật nào đã được thêm ảnh, và paste lại 5 mã `public_id` (hoặc URL ảnh) để người dùng kiểm tra trên giao diện Web.
+
+### ⛔ QUY TẮC TUYỆT ĐỐI
+- **KHÔNG ĐƯỢC** tạo file script mới trong `src/scripts/`. Chỉ sử dụng đúng script đã liệt kê ở trên.
+- **KHÔNG ĐƯỢC** tạo file round (ví dụ: `enrich-round-X.js`). Nếu vi phạm = BUG.
+- File JSON tạm thời (`temp-*.json`) phải bị xóa sau khi push xong.

@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import MatchupVoteSection from "@/components/MatchupVoteSection";
 
-export const dynamic = "force-dynamic";
+
 
 interface Props {
   params: Promise<{ slug: string }>;

@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
+import { revalidateTag } from "next/cache";
 import { submitMatchupVote } from "@/lib/db";
+import { CACHE_TAGS } from "@/lib/cache";
 
 export async function POST(request: Request) {
   try {
@@ -14,6 +16,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: result.error }, { status: 400 });
     }
     
+    revalidateTag(CACHE_TAGS.MATCHUP_VOTES, { expire: 0 });
     return NextResponse.json({ success: true });
   } catch (err: any) {
     return NextResponse.json({ error: err.message }, { status: 500 });

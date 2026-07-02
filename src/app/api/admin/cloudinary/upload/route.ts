@@ -22,7 +22,7 @@ const isCloudinaryConfigured = !!(
 export async function POST(req: NextRequest) {
   try {
     const apiKey = req.headers.get("x-api-key");
-    const expectedKey = process.env.API_SECRET_KEY || "bioforce_secret_key_2026";
+    const expectedKey = process.env.API_SECRET_KEY;
     if (!apiKey || apiKey !== expectedKey) {
       return NextResponse.json({ success: false, error: "Unauthorized: Invalid or missing API key." }, { status: 401 });
     }
