@@ -1,229 +1,220 @@
 [
   {
-    "id": "immortal-jellyfish",
-    "name": "Sứa Bất Tử",
-    "scientificName": "Turritopsis dohrnii",
+    "id": "mexican-blind-cavefish",
+    "name": "Cá Mù Hang Động Mexican",
+    "scientificName": "Astyanax mexicanus",
     "taxonomy": {
-      "class": "Hydrozoa",
-      "order": "Anthoathecata",
-      "family": "Oceanidae"
+      "class": "Actinopterygii",
+      "order": "Characiformes",
+      "family": "Characidae"
     },
-    "realWeight": "0.01 - 0.02 g",
-    "size": "4.5 mm",
-    "characteristics": "Thân hình chuông nhỏ màu trắng trong suốt, đường kính khoảng 4.5 mm. Sở hữu hệ thống xúc tu mảnh quanh viền chuông (lên tới 90 xúc tu ở cá thể trưởng thành) và một dạ dày màu đỏ tươi nổi bật ở trung tâm.",
-    "habitat": "Các vùng biển ấm cận nhiệt đới và ôn đới.",
-    "location": "Phát hiện ban đầu ở Địa Trung Hải, nay đã lan rộng ra khắp các đại dương thông qua nước dằn tàu của các tàu hàng.",
-    "survival_method": "Khi gặp điều kiện bất lợi như đói nghèo, tổn thương vật lý, hoặc tuổi già, chúng không chết đi mà chủ động kích hoạt quá trình đảo ngược vòng đời: co rụt cơ thể, rụng xúc tu, chìm xuống đáy biển và chuyển hóa trở lại thành các polyp (dạng thủy tức non bám đáy) để bắt đầu chu kỳ sống mới.",
-    "unique_traits": "Khả năng chuyển biệt hóa tế bào (transdifferentiation) cho phép các tế bào đã trưởng thành chuyên biệt biến đổi ngược lại thành các loại tế bào khác, đảo ngược hoàn toàn quá trình lão hóa và đạt được sự bất tử về mặt sinh học.",
-    "shortDescription": "Đảo ngược vòng đời vô hạn nhờ chuyển hóa tế bào. Đạt sinh học bất tử độc nhất.",
-    "description": "Sứa Bất Tử (Turritopsis dohrnii) là loài sinh vật duy nhất được biết đến trên Trái Đất có khả năng đảo ngược hoàn toàn vòng đời của mình sau khi đã đạt tới độ tuổi trưởng thành sinh dục. Thay vì chết đi như các loài sứa khác, T. dohrnii thực hiện một quá trình kỳ diệu gọi là chuyển biệt hóa tế bào. Chúng tái chế các mô hiện có thành trạng thái thô ban đầu, hình thành một cụm polyp bám đáy đại dương. Từ cụm polyp này, hàng trăm con sứa con mới giống hệt về mặt di truyền sẽ được sinh ra. Chu kỳ này có thể lặp lại vô hạn, giúp chúng thoát khỏi cái chết do tuổi già hay bệnh tật một cách hoàn hảo.",
+    "realWeight": "~5 - 10 g",
+    "size": "8 - 12 cm",
+    "characteristics": "Cơ thể màu hồng nhạt hoặc trắng sữa hoàn toàn do thiếu sắc tố melanin. Mắt thoái hóa hoàn toàn và bị bao phủ bởi một lớp da dày. Thân hình dẹt bên tương tự loài cá tetra thông thường.",
+    "habitat": "Các hồ nước ngầm, hang động đá vôi tối tăm hoàn toàn.",
+    "location": "Các hệ thống hang động ở miền đông và miền trung Mexico.",
+    "survival_method": "Sống trong môi trường tối đen như mực, chúng sử dụng các thụ thể cơ học (neuromasts) trên đường bên để cảm nhận những rung động nhỏ nhất của nước và chênh lệch áp suất, từ đó lập bản đồ 3D môi trường để di chuyển và săn các loài giáp xác nhỏ.",
+    "unique_traits": "Mất thị lực và sắc tố cơ thể thông qua tiến hóa thoái giảm (regressive evolution), đồng thời phát triển bù đắp giác quan cơ học và hóa học cực kỳ nhạy bén.",
+    "shortDescription": "Mất thị giác hoàn toàn, định vị không gian 3D bằng cơ quan cảm thụ áp suất nước đường bên.",
+    "description": "Cá Mù Hang Động Mexican (Astyanax mexicanus) là một ví dụ kinh điển về sự thích nghi tiến hóa trong môi trường cực đoan. Sống trong các hang động tối tăm hàng triệu năm, việc duy trì đôi mắt trở thành một sự lãng phí năng lượng vô ích. Do đó, chúng đã thoái hóa mắt hoàn toàn. Thay vào đó, hệ thống đường bên của chúng phát triển vượt trội với hàng nghìn cơ quan cảm giác nhạy bén, cho phép chúng phát hiện chướng ngại vật và con mồi mà không cần một tia sáng nào.",
     "strengths": [
-      "Bất tử về mặt sinh học nhờ khả năng chuyển biệt hóa tế bào vô hạn lần",
-      "Khả năng tái sinh cơ thể từ các mảnh mô bị tổn thương nghiêm trọng",
-      "Kích thước siêu nhỏ giúp dễ dàng ẩn nấp và khó bị phát hiện bởi kẻ săn mồi",
-      "Sự phân bố rộng khắp toàn cầu thông qua khả năng sống sót trong nước dằn tàu"
+      "Khả năng định vị không gian hoàn hảo trong bóng tối tuyệt đối",
+      "Tiết kiệm tối đa năng lượng sinh học nhờ không phải duy trì cơ quan thị giác phức tạp",
+      "Hệ thống khứu giác và vị giác nhạy bén gấp nhiều lần cá thông thường"
     ],
     "weaknesses": [
-      "Cực kỳ yếu ớt trước các đòn tấn công vật lý trực tiếp của các loài cá hoặc giáp xác lớn",
-      "Dễ bị ăn thịt ở giai đoạn polyp bám đáy do không thể di chuyển trốn chạy",
-      "Khả năng bơi lội kém, di chuyển thụ động phụ thuộc phần lớn vào dòng hải lưu"
+      "Hoàn toàn bất lợi nếu đưa ra môi trường có ánh sáng mạnh trước kẻ săn mồi có thị lực",
+      "Kích thước nhỏ bé, không có vũ khí phòng thủ vật lý",
+      "Phụ thuộc vào nguồn thức ăn hạn chế trôi vào hang động"
     ],
     "funFacts": [
-      "Quá trình đảo ngược vòng đời từ sứa trưởng thành thành polyp chỉ mất khoảng 36 giờ",
-      "Dù bất tử về sinh học, chúng vẫn có thể chết nếu bị kẻ săn mồi ăn thịt toàn bộ cơ thể hoặc bị dịch bệnh tàn phá",
-      "Bằng cách nhân bản vô tính trong giai đoạn polyp, một con sứa bất tử đơn lẻ có thể tạo ra cả một thuộc địa hàng ngàn con sứa giống hệt nó"
+      "Dù mù hoàn toàn, loài cá này vẫn giữ lại gen đồng hồ sinh học nhưng chu kỳ sinh học của chúng bị kéo dài ra hơn 24 giờ",
+      "Khi nuôi trong môi trường có ánh sáng, chúng vẫn không thể phát triển lại mắt vì các gen cấu trúc mắt đã bị khóa vĩnh viễn",
+      "Chúng tích lũy mỡ thừa hiệu quả hơn cá ngoài sáng để sống sót qua các thời kỳ khan hiếm thức ăn dài ngày"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1073/pnas.2209383119",
-        "label": "PNAS - Comparative genomics of mortal and immortal jellyfish"
+        "url": "https://doi.org/10.1126/science.1160565",
+        "label": "Science - The genetic basis of eye degeneration in cavefish"
       },
       {
-        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6400612/",
-        "label": "NIH - Transdifferentiation in Turritopsis dohrnii"
+        "url": "https://www.nature.com/articles/s41586-018-0056-2",
+        "label": "Nature - Genomic analysis of adaptation in Astyanax mexicanus"
       }
     ],
-    "imageColor": "#E056FD",
+    "imageColor": "#f5cd79",
+    "stats": {
+      "strength": 15,
+      "durability": 35,
+      "speed": 45,
+      "weaponry": 5,
+      "special": 88,
+      "lethality": 8
+    },
     "diet_type": "carnivore",
     "diet_items": [
-      "sinh vật phù du",
-      "trứng cá",
-      "động vật giáp xác nhỏ",
-      "artemia"
+      "crustaceans",
+      "insects",
+      "worms",
+      "detritus"
     ],
     "activity_pattern": "variable",
-    "lifespan_min": 0,
-    "lifespan_max": 999,
+    "lifespan_min": 5,
+    "lifespan_max": 10,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Sinh sản hữu tính ở giai đoạn sứa trưởng thành bằng cách phóng tinh trùng và trứng vào nước. Phôi phát triển thành ấu trùng planula, sau đó bám đáy thành polyp. Polyp cũng có thể nảy chồi vô tính để sinh ra nhiều sứa mới.",
+    "reproduction_notes": "Sinh sản hữu tính. Trứng được thụ tinh ngoài và rải ngẫu nhiên trên nền đá hang động. Ấu trùng nở ra ban đầu có chấm mắt nhỏ nhưng nhanh chóng thoái hóa trong quá trình phát triển.",
     "locomotion": "swim",
-    "speed_max": 0.2,
+    "speed_max": 3.5,
     "conservation_status": "LC",
-    "size_min_mm": 1.0,
-    "size_max_mm": 4.5,
-    "weight_avg_g": 0.015,
-    "stats": {
-      "strength": 5,
-      "durability": 95,
-      "speed": 10,
-      "weaponry": 15,
-      "special": 99,
-      "lethality": 10
-    },
-    "ai_p4p_score": 72,
-    "ai_tier": "A"
+    "size_min_mm": 80.0,
+    "size_max_mm": 120.0,
+    "weight_avg_g": 7.5,
+    "ai_p4p_score": 55,
+    "ai_tier": "D"
   },
   {
-    "id": "blue-dragon-sea-slug",
-    "name": "Sên Biển Rồng Xanh",
-    "scientificName": "Glaucus atlanticus",
+    "id": "hummingbird-hawk-moth",
+    "name": "Ngài Ruồi Gió",
+    "scientificName": "Macroglossum stellatarum",
     "taxonomy": {
-      "class": "Gastropoda",
-      "order": "Nudibranchia",
-      "family": "Glaucidae"
+      "class": "Insecta",
+      "order": "Lepidoptera",
+      "family": "Sphingidae"
     },
-    "realWeight": "3 - 5 g",
-    "size": "3 - 4 cm",
-    "characteristics": "Thân hình dẹt màu xanh lam đậm phối trắng bạc, sở hữu 3 cặp thùy cánh bên xòe rộng (cerata) trông giống như các ngón tay rồng đầy oai phong. Cơ thể chứa túi khí nhỏ giúp nổi lơ lửng trên mặt nước.",
-    "habitat": "Vùng biển khơi ấm áp thuộc tầng mặt của đại dương.",
-    "location": "Phổ biến ở vùng biển ôn đới và nhiệt đới thuộc Nam Phi, bờ biển phía đông Úc và các vùng biển châu Á.",
-    "survival_method": "Nổi ngửa lưng hướng lên trên mặt nước và trôi dạt theo dòng nước. Lưng của nó màu xanh lam hòa lẫn vào nước biển chống lại chim săn mồi trên trời; bụng màu bạc ngửa xuống dưới hòa lẫn vào ánh sáng mặt trời chống lại cá săn mồi dưới biển. Săn lùng sứa độc bằng cách bơi áp sát và ăn thịt.",
-    "unique_traits": "Khả năng miễn nhiễm hoàn toàn với nọc độc cực mạnh của sứa lửa Bồ Đào Nha. Hấp thụ và lưu trữ các tế bào châm ngòi (nematocysts) chưa phóng của con mồi vào các đầu xúc tu cánh của mình để làm vũ khí tự vệ siêu độc.",
-    "shortDescription": "Hấp thụ nọc độc sứa lửa làm vũ khí tự thân. Ngụy trang phản xạ ánh sáng mặt nước.",
-    "description": "Sên Biển Rồng Xanh (Glaucus atlanticus) là loài nhuyễn thể biển khơi độc đáo sở hữu vẻ đẹp mê hoặc cùng cơ chế sinh học cực kỳ nguy hiểm. Trôi dạt tự do nhờ một bong bóng khí trong dạ dày, chúng săn tìm những loài sứa độc lớn hơn gấp nhiều lần. Khi ăn sứa lửa Bồ Đào Nha, rồng xanh không hề bị ảnh hưởng bởi chất độc mà ngược lại, chúng chọn lọc những tế bào ngòi độc mạnh nhất, vận chuyển qua các nhánh ruột đến lưu trữ tại đầu các thùy cánh (cerata). Nhờ vậy, vết chích của rồng xanh thậm chí còn đau đớn và nguy hiểm hơn cả sinh vật mà nó đã ăn.",
+    "realWeight": "~0.3 - 0.5 g",
+    "size": "4 - 4.5 cm",
+    "characteristics": "Thân hình mập mạp có lông tơ mịn màu nâu xám, đuôi xòe phẳng giống như đuôi chim. Sở hữu một vòi hút dài (proboscis) cuộn tròn dưới đầu. Đôi cánh đập cực nhanh phát ra tiếng vo vo như chim ruồi.",
+    "habitat": "Rừng thưa, đồng cỏ, vườn hoa, và công viên đô thị.",
+    "location": "Phổ biến khắp vùng ôn đới châu Âu, châu Á và Bắc Phi.",
+    "survival_method": "Bay đứng cố định trước bông hoa để hút mật bằng chiếc vòi dài mà không cần đậu xuống hoa, di chuyển cực kỳ linh hoạt để tránh kẻ thù như chim và nhện.",
+    "unique_traits": "Tiến hóa đồng quy (convergent evolution) bắt chước hoàn hảo hình dáng, hành vi và cách bay của chim ruồi. Đôi mắt kép có khả năng nhìn thấy màu sắc trong điều kiện ánh sáng yếu cực tốt.",
+    "shortDescription": "Bậc thầy bắt chước chim ruồi từ ngoại hình đến cơ chế bay lơ lửng đập cánh 85Hz.",
+    "description": "Ngài Ruồi Gió (Macroglossum stellatarum) là một trong những loài côn trùng kỳ lạ nhất. Dù là một loài bướm đêm, nó lại hoạt động chủ yếu vào ban ngày và hoàng hôn. Nó có khả năng đập cánh lên tới 85 lần mỗi giây, cho phép nó bay lơ lửng tại chỗ, bay lùi hoặc bay ngang một cách chính xác tuyệt đối như chim ruồi để hút mật hoa. Ngoại hình và âm thanh vo vo của nó giống chim ruồi đến mức ngay cả những người quan sát có kinh nghiệm cũng dễ bị nhầm lẫn.",
     "strengths": [
-      "Nọc độc cực kỳ nguy hiểm được tích lũy từ sứa lửa Bồ Đào Nha",
-      "Khả năng ngụy trang ngược (countershading) hoàn hảo giữa trời và biển",
-      "Miễn nhiễm tuyệt đối với các loại độc tố thần kinh của sứa độc",
-      "Kích thước nhỏ gọn kết hợp cấu trúc nổi tự nhiên tiết kiệm tối đa năng lượng"
+      "Khả năng bay lơ lửng cố định và đổi hướng cực kỳ linh hoạt giữa không trung",
+      "Tốc độ đập cánh siêu nhanh giúp thoát thân khỏi các cú đớp của kẻ săn mồi",
+      "Thị giác màu sắc nhạy bén giúp nhận diện hoa mật chính xác từ khoảng cách xa"
     ],
     "weaknesses": [
-      "Khả năng tự di chuyển rất hạn chế, phụ thuộc gần như hoàn toàn vào gió và hải lưu",
-      "Dễ bị gió thổi dạt vào bờ cát dẫn đến mất nước và tử vong",
-      "Lớp da trần không vảy nhạy cảm với sự thay đổi nhiệt độ và nồng độ muối của nước"
+      "Tiêu thụ năng lượng cực lớn do cơ chế bay đập cánh liên tục, đòi hỏi phải nạp mật hoa liên tục",
+      "Dễ bị tổn thương nếu cánh bị ướt do mưa lớn hoặc sương dày",
+      "Không có vũ khí tự vệ chủ động như ngòi đốt hay nọc độc"
     ],
     "funFacts": [
-      "Chúng di chuyển ngửa bụng lên trời, nghĩa là phần lưng màu xanh đậm thực chất là mặt bụng của chúng nhìn từ góc độ giải phẫu",
-      "Khi đói hoặc mật độ cá thể quá cao, rồng xanh sẵn sàng chuyển sang ăn thịt lẫn nhau để sinh tồn",
-      "Bong bóng khí trong dạ dày của chúng giữ cơ thể luôn ở một độ sâu lý tưởng sát bề mặt nước để vừa thở vừa săn mồi"
+      "Chiếc vòi hút của ngài ruồi gió khi duỗi thẳng có thể dài bằng hoặc hơn chiều dài toàn bộ cơ thể của nó",
+      "Loài này có khả năng ghi nhớ các cụm hoa màu sắc yêu thích và quay lại chúng vào cùng một thời điểm mỗi ngày",
+      "Chúng là loài côn trùng di cư mạnh mẽ, có thể bay hàng trăm km vượt qua dãy Alps hoặc Địa Trung Hải"
     ],
     "sources": [
       {
-        "url": "https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=76258",
-        "label": "ITIS - Glaucus atlanticus taxonomic classification"
+        "url": "https://doi.org/10.1098/rspb.1996.0232",
+        "label": "Proceedings of the Royal Society B - Color vision in the hummingbird hawkmoth"
       },
       {
-        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/blue-dragon-glaucus-atlanticus",
-        "label": "National Geographic - Blue Dragon Reference"
+        "url": "https://www.nhm.ac.uk/discover/news/2020/july/hummingbird-hawk-moths-are-invading-uk-gardens.html",
+        "label": "Natural History Museum - Hummingbird Hawk-Moths Guide"
       }
     ],
-    "imageColor": "#00D2D3",
-    "diet_type": "carnivore",
+    "imageColor": "#f39c12",
+    "stats": {
+      "strength": 10,
+      "durability": 20,
+      "speed": 75,
+      "weaponry": 5,
+      "special": 85,
+      "lethality": 2
+    },
+    "diet_type": "herbivore",
     "diet_items": [
-      "sứa lửa bồ đào nha",
-      "sứa buồm vây",
-      "ốc sên tím vĩnh cửu",
-      "rồng xanh nhỏ hơn"
+      "nectar"
     ],
     "activity_pattern": "diurnal",
-    "lifespan_min": 1,
-    "lifespan_max": 12,
+    "lifespan_min": 3,
+    "lifespan_max": 5,
     "lifespan_unit": "months",
-    "reproduction_type": "hermaphrodite",
-    "reproduction_notes": "Là sinh vật lưỡng tính đồng thời, cả hai cá thể đều sản sinh trứng và tinh trùng. Sau khi giao phối, cả hai đều đẻ ra những dải trứng dài màu trắng, thả nổi tự do trên biển hoặc bám trên bộ xương của con mồi.",
-    "locomotion": "swim",
-    "speed_max": 0.5,
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Sinh sản hữu tính. Sau khi thụ tinh, con cái đẻ trứng màu xanh lá đơn lẻ lên các nụ hoa của cây thuộc chi Galium (cây liên kiều). Trứng nở ra sâu bướm có sừng nhọn ở đuôi.",
+    "locomotion": "fly",
+    "speed_max": 18.0,
     "conservation_status": "LC",
-    "size_min_mm": 30.0,
-    "size_max_mm": 40.0,
-    "weight_avg_g": 4.0,
+    "size_min_mm": 40.0,
+    "size_max_mm": 45.0,
+    "weight_avg_g": 0.4,
+    "ai_p4p_score": 52,
+    "ai_tier": "D"
+  },
+  {
+    "id": "glass-squid",
+    "name": "Mực Thủy Tinh",
+    "scientificName": "Cranchia scabra",
+    "taxonomy": {
+      "class": "Cephalopoda",
+      "order": "Oegopsida",
+      "family": "Cranchiidae"
+    },
+    "realWeight": "~15 - 30 g",
+    "size": "10 - 15 cm",
+    "characteristics": "Thân hình quả lê hoặc hình cầu, gần như trong suốt hoàn toàn ngoại trừ đôi mắt lớn và tuyến tiêu hóa hình điếu xì-gà. Lớp da phủ đầy các nốt sần nhỏ bằng sụn.",
+    "habitat": "Tầng trung của đại dương (mesopelagic) từ độ sâu 500 đến 2000 mét.",
+    "location": "Các vùng biển nhiệt đới và cận nhiệt đới trên khắp thế giới.",
+    "survival_method": "Sử dụng sự trong suốt hoàn hảo để ẩn mình trước kẻ săn mồi. Khi bị đe dọa, chúng co đầu và xúc tu vào trong khoang màng áo, hút nước đầy cơ thể để phồng to thành một quả bóng gai, đồng thời phun mực đen trực tiếp vào bên trong cơ thể trong suốt của mình để che giấu tuyến tiêu hóa.",
+    "unique_traits": "Độ trong suốt cơ thể tuyệt đối. Khả năng tích lũy dung dịch amoni clorua trong một khoang chứa lớn dưới màng áo giúp chúng đạt được sức nổi trung tính để lơ lửng trong nước mà không tốn năng lượng bơi.",
+    "shortDescription": "Thân hình trong suốt như thủy tinh, tự phồng to thành bóng gai và phun mực vào lòng cơ thể để ngụy trang.",
+    "description": "Mực Thủy Tinh (Cranchia scabra) là một loài động vật thân mềm biển sâu thích nghi hoàn mỹ với cuộc sống ở vùng ranh giới ánh sáng. Điểm đặc sắc nhất là cơ thể trong suốt của nó giúp nó gần như vô hình trước ánh sáng khuếch tán từ trên xuống. Để bù đắp cho tuyến tiêu hóa không thể trong suốt, nó có hình điếu xì-gà và luôn được giữ ở tư thế thẳng đứng nhằm giảm thiểu bóng đổ dưới ánh nhìn của kẻ săn mồi từ phía dưới.",
+    "strengths": [
+      "Độ trong suốt hoàn hảo mang lại khả năng tàng hình tự nhiên trong nước sâu",
+      "Khả năng nổi trung tính tự nhiên không tốn năng lượng duy trì độ cao",
+      "Chiến thuật phòng ngự độc đáo phồng to cơ thể thành quả bóng gai sụn"
+    ],
+    "weaknesses": [
+      "Cơ thể mềm yếu dễ bị tổn thương bởi các cú đớp vật lý",
+      "Tốc độ di chuyển chậm so với các loài mực khơi khác",
+      "Hoàn toàn phụ thuộc vào bóng tối hoặc ánh sáng yếu để duy trì hiệu quả ngụy trang"
+    ],
+    "funFacts": [
+      "Khi bị đe dọa cực độ, chúng biến thành một quả bóng gai trong suốt chứa đầy nước, các xúc tu biến mất bên trong cơ thể",
+      "Dưới mắt của mực có các cơ quan phát quang (photophores) dùng để triệt tiêu bóng của đôi mắt bằng cách phát ra ánh sáng khớp với ánh sáng từ trên xuống",
+      "Chất lỏng giúp chúng nổi có chứa amoniac, một chất cực khai và độc đối với con người nhưng là phao cứu sinh của mực"
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1093/mollus/eyy060",
+        "label": "Journal of Molluscan Studies - Morphology of Cranchiidae"
+      },
+      {
+        "url": "https://www.montereybayaquarium.org/animals/animals-a-to-z/glass-squid",
+        "label": "Monterey Bay Aquarium - Glass Squid facts"
+      }
+    ],
+    "imageColor": "#eccc68",
     "stats": {
       "strength": 20,
       "durability": 30,
-      "speed": 15,
-      "weaponry": 90,
-      "special": 88,
-      "lethality": 85
+      "speed": 35,
+      "weaponry": 15,
+      "special": 92,
+      "lethality": 10
     },
-    "ai_p4p_score": 64,
-    "ai_tier": "B"
-  },
-  {
-    "id": "superb-lyrebird",
-    "name": "Chim Đàn Lia Lớn",
-    "scientificName": "Menura novaehollandiae",
-    "taxonomy": {
-      "class": "Aves",
-      "order": "Passeriformes",
-      "family": "Menuridae"
-    },
-    "realWeight": "~0.8 - 1.1 kg",
-    "size": "80 - 100 cm",
-    "characteristics": "Kích thước bằng con gà rừng lớn, bộ lông màu nâu xám chủ đạo. Điểm đặc trưng nhất là phần đuôi của con đực trưởng thành dài tới 60cm gồm 16 sợi lông biến đổi kỳ công, xòe rộng ra trông giống như một chiếc đàn lia cổ đại.",
-    "habitat": "Các khu rừng mưa ẩm ướt, rừng ôn đới ấm ẩm nhiều tầng tán của nước Úc.",
-    "location": "Vùng đông nam nước Úc, từ Victoria qua New South Wales đến đông nam Queensland.",
-    "survival_method": "Sống dưới mặt đất rừng, kiếm ăn bằng cách dùng đôi chân khỏe bới lá cây mục tìm giun và côn trùng. Khi gặp nguy hiểm, chúng thường chạy trốn luồn lách qua các bụi rậm thay vì bay.",
-    "unique_traits": "Khả năng bắt chước âm thanh đỉnh cao nhất thế giới loài vật nhờ cơ quan phát âm (syrinx) tiến hóa phức tạp nhất. Chúng có thể nhại lại tiếng của hơn 20 loài chim khác, cũng như tiếng cưa xích, tiếng còi xe, tiếng khóc trẻ em, tiếng máy ảnh.",
-    "shortDescription": "Bậc thầy giả giọng siêu đẳng nhất tự nhiên. Đuôi hình đàn lia và điệu nhảy tán tỉnh lộng lẫy.",
-    "description": "Chim Đàn Lia Lớn (Menura novaehollandiae) là loài chim đặc hữu của nước Úc, nổi tiếng với khả năng bắt chước mọi loại âm thanh với độ chính xác đến kinh ngạc. Con đực sở hữu một chiếc đuôi tuyệt đẹp dạng đàn lia cổ đại mà nó dùng để trưng bày trong điệu nhảy tán tỉnh trên các mô đất tự đào. Để thu hút con cái, chim đực sẽ hót liên tục hàng giờ liền, pha trộn bài hát của các loài chim rừng khác cùng các âm thanh nhân tạo mà nó nghe thấy trong môi trường. Hệ cơ thanh quản đặc biệt tinh tế của chúng cho phép tạo ra hai tần số âm thanh khác nhau cùng một lúc.",
-    "strengths": [
-      "Khả năng nhại âm thanh đánh lừa kẻ săn mồi hoặc thu hút bạn đời tuyệt đối",
-      "Đôi chân cực khỏe chuyên đào bới lá rụng dày tìm kiếm thức ăn sâu dưới đất",
-      "Bộ lông màu xám nâu mang lại khả năng ngụy trang ẩn mình tuyệt vời trên nền đất rừng",
-      "Trí nhớ âm thanh dài hạn vượt trội, ghi nhớ được các âm thanh phức tạp"
-    ],
-    "weaknesses": [
-      "Khả năng bay rất kém do đôi cánh ngắn và nặng, chỉ có thể bay lượn từ cành cao xuống đất",
-      "Chiếc đuôi quá dài của con đực gây vướng ví dụ trong mùa sinh sản khi chạy trốn",
-      "Cực kỳ nhạy cảm trước sự suy thoái môi trường sống do cháy rừng và đô thị hóa"
-    ],
-    "funFacts": [
-      "Chim đàn lia có thể bắt chước tiếng nổ súng, tiếng chó sủa và thậm chí cả giọng nói của con người một cách hoàn hảo đến mức mắt thường không thể phân biệt",
-      "Không chỉ bắt chước âm thanh, con đực còn biên đạo một điệu nhảy khớp chính xác với từng loại âm thanh mà nó đang phát ra",
-      "Chúng là một trong những loài chim biết hót lớn nhất thế giới, kích thước cơ thể tương đương một con gà lôi"
-    ],
-    "sources": [
-      {
-        "url": "https://www.environment.nsw.gov.au/topics/animals-and-plants/native-animals/native-animal-facts/superb-lyrebird",
-        "label": "NSW Department of Planning and Environment - Superb Lyrebird Facts"
-      },
-      {
-        "url": "https://doi.org/10.1016/j.cub.2021.02.015",
-        "label": "Current Biology - Vocal mimicry by male superb lyrebirds"
-      }
-    ],
-    "imageColor": "#8B7D6B",
-    "diet_type": "omnivore",
+    "diet_type": "carnivore",
     "diet_items": [
-      "giun đất",
-      "kiến",
-      "bọ cánh cứng",
-      "nhện",
-      "hạt cây",
-      "trái cây rụng"
+      "small fish",
+      "deep-sea shrimp",
+      "other small squid"
     ],
-    "activity_pattern": "diurnal",
-    "lifespan_min": 15,
-    "lifespan_max": 30,
+    "activity_pattern": "nocturnal",
+    "lifespan_min": 1,
+    "lifespan_max": 2,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Con đực giao phối đa thê, biểu diễn điệu nhảy và giọng hót trên các ụ đất để lôi cuốn nhiều con cái. Con cái tự xây tổ hình vòm trên mặt đất hoặc hốc cây thấp, tự ấp một quả trứng duy nhất trong 50 ngày.",
-    "locomotion": "hybrid",
-    "speed_max": 12.0,
+    "reproduction_notes": "Sinh sản hữu tính. Con đực chuyển gói tinh trùng cho con cái bằng một xúc tu biến đổi (hectocotylus). Con cái đẻ các chuỗi trứng thạch nổi lơ lửng trong nước ấm.",
+    "locomotion": "swim",
+    "speed_max": 4.5,
     "conservation_status": "LC",
-    "size_min_mm": 800.0,
-    "size_max_mm": 1000.0,
-    "weight_avg_g": 950.0,
-    "stats": {
-      "strength": 45,
-      "durability": 40,
-      "speed": 55,
-      "weaponry": 20,
-      "special": 95,
-      "lethality": 15
-    },
-    "ai_p4p_score": 54,
+    "size_min_mm": 100.0,
+    "size_max_mm": 150.0,
+    "weight_avg_g": 20.0,
+    "ai_p4p_score": 61,
     "ai_tier": "C"
   }
 ]
