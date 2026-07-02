@@ -1183,6 +1183,107 @@ const predefinedProfiles = {
       ]
     },
     summary: "Sở hữu lớp giáp tấm trượt lồng xếp platerodrilus triệt tiêu lực nén cực hạn, khả năng thụt đầu bảo vệ não bộ và dịch bài tiết axit độc đắng xua đuổi cận chiến hoàn hảo."
+  },
+  "camel-spider": {
+    trait_name: "Cặp Kìm Hàm Chelicerae Lực Đòn Bẩy Kép và Hệ Thống Malleoli Cảm Biến Hóa Cơ",
+    title: "Người Lai Nhện Lạc Đà - Kẻ Hủy Diệt Hàm Giáp",
+    slug: "camel-spider-human-splice",
+    sci_fi_hype: "Tái cấu trúc cẳng tay và bàn tay của người lai tích hợp cơ chế kìm sừng cơ học của Nhện Lạc Đà. Các ngón tay có thể khép chặt vào nhau tạo thành cặp kìm kéo hoạt dịch phối hợp, vận hành theo cơ chế đòn bẩy kép siêu khỏe để nghiền nát giáp sắt và xương của đối thủ mà không cần nọc độc. Đồng thời, cấy ghép các cơ quan malleoli hình chiếc lược đặc trưng vào lòng bàn chân, mang lại khả năng dò tìm chấn động địa chấn siêu việt và ngửi mùi con mồi dưới sâu.",
+    scientific_reality: "Phân tích sinh học thích nghi: Lớp sừng chelicerae cơ học yêu cầu lớp biểu bì của ngón tay hóa sừng chitin cứng liên kết chéo với resilin đàn hồi cao để triệt tiêu chấn động khi kẹp nén tĩnh. Hệ cơ gấp của cánh tay được tăng cường bó cơ vân xếp tầng song song để nhân lực kẹp lên gấp 4 lần lực tay thường. Các malleoli thụ cảm được nối trực tiếp vào dây thần kinh hướng tâm qua các khớp synapse dẫn điện sinh học nhạy bén.",
+    spliced_stats: {
+      strength: 92,
+      durability: 85,
+      speed: 95,
+      weaponry: 94,
+      special: 88,
+      lethality: 91
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 1850,
+      bite_force_n: 4800,
+      run_speed_kmh: 32,
+      formulas: [
+        {
+          name: "Lực kẹp nén kìm sừng Chelicerae (Chelicerae Compressive Force)",
+          equation: "F_clamp = F_muscle * (L_input / L_output) * mechanical_advantage",
+          result: "4.80 kN"
+        },
+        {
+          name: "Độ nhạy địa chấn của Malleoli (Malleoli Seismic Sensitivity)",
+          equation: "S_seismic = A_amplitude / f_frequency",
+          result: "0.18 nm"
+        }
+      ]
+    },
+    summary: "Sở hữu cặp kìm sừng chelicerae lực đòn bẩy kép siêu khỏe nghiền nát giáp dày cận chiến và hệ thống malleoli định vị địa chấn nhạy bén."
+  },
+  "dung-beetle": {
+    trait_name: "Lớp Vỏ Kitin Cực Hạn Chịu Tải và Hệ Cơ Đùi Siêu Mô-Men Xoắn",
+    title: "Người Lai Bọ Hung Sừng - Người Khổng Lồ Đẩy Tĩnh",
+    slug: "dung-beetle-human-splice",
+    sci_fi_hype: "Ghép gen của Bọ Hung Sừng vào hệ thống cơ xương người lai. Cánh tay, vai và chân được bao phủ bởi các vảy giáp kitin-protein xếp lớp đa hướng, có khả năng phân tán lực ép tĩnh khổng lồ lên tới hàng chục tấn. Hệ cơ đùi và cơ hông được tái cấu trúc thành các bó cơ sọc dày đặc có mô-men xoắn siêu việt, cho phép người lai đẩy, nhấc hoặc kéo các vật thể nặng gấp hàng trăm lần trọng lượng cơ thể.",
+    scientific_reality: "Phân tích sinh học thích nghi: Khung xương ngoài kitin-resilin phân tầng laminate ngăn chặn hiện tượng gãy xương dưới áp lực nén cao. Các bó cơ xương được bổ sung sợi cơ resilin dẻo dai giúp tăng lực bộc phát tĩnh mà không tích tụ axit lactic gây mỏi cơ. Hệ tuần hoàn được tăng cường mao mạch biểu mô nách để giải phóng nhiệt lượng tỏa ra khi vận động nặng.",
+    spliced_stats: {
+      strength: 98,
+      durability: 96,
+      speed: 72,
+      weaponry: 84,
+      special: 90,
+      lethality: 86
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 4200,
+      max_push_force_n: 850000,
+      formulas: [
+        {
+          name: "Mô-men xoắn cực đại của khớp hông (Max Hip Torque)",
+          equation: "tau = F_muscle * r_insertion * sin(theta)",
+          result: "12.5 kN.m"
+        },
+        {
+          name: "Khả năng phân tán tải trọng nén tĩnh (Static Load Dissipation)",
+          equation: "sigma_axial = F_load / A_cross_section",
+          result: "115 MPa"
+        }
+      ]
+    },
+    summary: "Thừa hưởng giáp kitin chịu tải nén tĩnh khổng lồ và bó cơ đùi mô-men xoắn cực hạn nâng vật nặng vượt bậc."
+  },
+  "exploding-ant": {
+    trait_name: "Tuyến Keo Độc Ăn Mòn Autothysis và Cơ Chế Tự Hủy Bán Phần",
+    title: "Người Lai Kiến Nổ - Pháo Keo Ăn Mòn Tự Vệ",
+    slug: "exploding-ant-human-splice",
+    sci_fi_hype: "Cấy ghép các tuyến hàm phình đại khổng lồ của Kiến Nổ chứa đầy dịch keo chứa alkylphenols ăn mòn và bám dính cực mạnh dọc khắp ngực và cánh tay người lai. Khi bị dồn vào đường cùng hoặc kích hoạt chủ động phản xạ autothysis, các cơ ngực co bóp cực mạnh làm vỡ các nang chứa keo độc ở cổ tay hoặc ngực, phun trào luồng keo dính sôi sục ăn mòn giáp và hủy hoại mô của kẻ thù trong phạm vi 3 mét.",
+    scientific_reality: "Phân tích sinh học thích nghi: Để người lai không bị tự hủy diệt bởi chất độc alkylphenols và keo dính, biểu bì da vùng ngực và cánh tay được bao phủ bởi lớp màng sừng lipid phân tầng dày đặc kháng axit và hóa chất. Cơ chế tự hủy bán phần (partial autothysis) giới hạn vùng giải phóng độc lực chỉ ở cánh tay và túi dịch phụ ở ngực, được ngăn cách với các cơ quan nội tạng quan trọng bằng vách ngăn mô xơ resilient dày.",
+    spliced_stats: {
+      strength: 84,
+      durability: 88,
+      speed: 82,
+      weaponry: 96,
+      special: 86,
+      lethality: 98
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 2800,
+      glue_ejection_pressure_mpa: 4.5,
+      venom_corrosive_rate_mm_s: 0.15,
+      formulas: [
+        {
+          name: "Áp lực phun trào keo tự hủy (Autothysis Ejection Pressure)",
+          equation: "P = F_abdominal_contraction / A_gland_surface",
+          result: "4.5 MPa"
+        },
+        {
+          name: "Mật độ bám dính của keo độc (Glue Adhesion Density)",
+          equation: "sigma_adhesion = E_bond / V_glue",
+          result: "850 N/cm²"
+        }
+      ]
+    },
+    summary: "Trang bị tuyến keo độc tự sát chứa alkylphenols ăn mòn cực đoan và phản xạ bộc phát autothysis tiêu diệt diện rộng."
   }
 };
 
