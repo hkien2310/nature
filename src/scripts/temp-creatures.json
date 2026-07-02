@@ -1,228 +1,229 @@
 [
   {
-    "id": "antlion",
-    "name": "Kiến Sư Tử",
-    "scientificName": "Myrmeleontidae",
+    "id": "immortal-jellyfish",
+    "name": "Sứa Bất Tử",
+    "scientificName": "Turritopsis dohrnii",
     "taxonomy": {
-      "class": "Insecta",
-      "order": "Neuroptera",
-      "family": "Myrmeleontidae"
+      "class": "Hydrozoa",
+      "order": "Anthoathecata",
+      "family": "Oceanidae"
     },
-    "realWeight": "0.02 - 0.05 g",
-    "size": "15 - 20 mm",
-    "characteristics": "Ấu trùng có thân hình bầu bĩnh, gai góc, đầu dẹt sở hữu đôi kìm rỗng khổng lồ chứa nọc độc. Con trưởng thành giống chuồn chuồn nhưng râu dài và bay yếu hơn.",
-    "habitat": "Các vùng đất cát mịn khô ráo, dưới mái hiên hoặc gốc cây để tránh mưa.",
-    "location": "Phân bố rộng khắp các vùng ôn đới và nhiệt đới trên thế giới.",
-    "survival_method": "Ấu trùng đào hố cát hình phễu dốc, vùi mình dưới đáy hố chờ đợi. Khi con mồi lọt vào hố, kiến sư tử liên tục hất cát gây sụt lún ngăn cản con mồi bò lên, sau đó dùng kìm kẹp chặt và hút dịch cơ thể con mồi.",
-    "unique_traits": "Khả năng đào bẫy cát hình phễu hoàn hảo. Cơ chế bắn cát cực nhanh hạ gục con mồi đang chạy trốn. Hàm kìm rỗng đóng vai trò như ống tiêm kép bơm độc tố và enzyme phân hủy thịt con mồi chỉ trong vài giây.",
-    "shortDescription": "Đào hố cát phục kích săn mồi bậc thầy. Phóng cát gây sụt lún hạ gục mục tiêu.",
-    "description": "Kiến Sư Tử ở giai đoạn ấu trùng là một trong những loài săn mồi đáng sợ nhất trong thế giới côn trùng nhỏ bé. Chúng thiết kế các hố cát hình phễu với góc nghiêng lý tưởng gần như sụt lún tự do. Bất cứ kiến hay côn trùng nhỏ nào dẫm lên miệng hố sẽ lập tức bị trượt chân. Để ngăn cản con mồi thoát thân, kiến sư tử từ dưới đáy sẽ dùng đầu hất các luồng cát mạnh tạo ra một trận lở đất thu nhỏ. Khi con mồi rơi xuống đáy, đôi kìm khổng lồ sẽ găm chặt và bơm độc tố làm tê liệt và hóa lỏng nội tạng con mồi để hút chất dinh dưỡng.",
+    "realWeight": "0.01 - 0.02 g",
+    "size": "4.5 mm",
+    "characteristics": "Thân hình chuông nhỏ màu trắng trong suốt, đường kính khoảng 4.5 mm. Sở hữu hệ thống xúc tu mảnh quanh viền chuông (lên tới 90 xúc tu ở cá thể trưởng thành) và một dạ dày màu đỏ tươi nổi bật ở trung tâm.",
+    "habitat": "Các vùng biển ấm cận nhiệt đới và ôn đới.",
+    "location": "Phát hiện ban đầu ở Địa Trung Hải, nay đã lan rộng ra khắp các đại dương thông qua nước dằn tàu của các tàu hàng.",
+    "survival_method": "Khi gặp điều kiện bất lợi như đói nghèo, tổn thương vật lý, hoặc tuổi già, chúng không chết đi mà chủ động kích hoạt quá trình đảo ngược vòng đời: co rụt cơ thể, rụng xúc tu, chìm xuống đáy biển và chuyển hóa trở lại thành các polyp (dạng thủy tức non bám đáy) để bắt đầu chu kỳ sống mới.",
+    "unique_traits": "Khả năng chuyển biệt hóa tế bào (transdifferentiation) cho phép các tế bào đã trưởng thành chuyên biệt biến đổi ngược lại thành các loại tế bào khác, đảo ngược hoàn toàn quá trình lão hóa và đạt được sự bất tử về mặt sinh học.",
+    "shortDescription": "Đảo ngược vòng đời vô hạn nhờ chuyển hóa tế bào. Đạt sinh học bất tử độc nhất.",
+    "description": "Sứa Bất Tử (Turritopsis dohrnii) là loài sinh vật duy nhất được biết đến trên Trái Đất có khả năng đảo ngược hoàn toàn vòng đời của mình sau khi đã đạt tới độ tuổi trưởng thành sinh dục. Thay vì chết đi như các loài sứa khác, T. dohrnii thực hiện một quá trình kỳ diệu gọi là chuyển biệt hóa tế bào. Chúng tái chế các mô hiện có thành trạng thái thô ban đầu, hình thành một cụm polyp bám đáy đại dương. Từ cụm polyp này, hàng trăm con sứa con mới giống hệt về mặt di truyền sẽ được sinh ra. Chu kỳ này có thể lặp lại vô hạn, giúp chúng thoát khỏi cái chết do tuổi già hay bệnh tật một cách hoàn hảo.",
     "strengths": [
-      "Bẫy cát vật lý cực kỳ hiệu quả, khai thác trọng lực và ma sát của cát",
-      "Kìm rỗng siêu cứng găm sâu và giữ chặt con mồi lớn gấp nhiều lần",
-      "Bắn cát định hướng chính xác để tạo lở đất làm mất thăng bằng con mồi",
-      "Độc tố hóa lỏng mô cực nhanh biến nội tạng con mồi thành dịch lỏng dễ tiêu hóa"
+      "Bất tử về mặt sinh học nhờ khả năng chuyển biệt hóa tế bào vô hạn lần",
+      "Khả năng tái sinh cơ thể từ các mảnh mô bị tổn thương nghiêm trọng",
+      "Kích thước siêu nhỏ giúp dễ dàng ẩn nấp và khó bị phát hiện bởi kẻ săn mồi",
+      "Sự phân bố rộng khắp toàn cầu thông qua khả năng sống sót trong nước dằn tàu"
     ],
     "weaknesses": [
-      "Hầu như không thể di chuyển nhanh hoặc tự vệ trên mặt đất phẳng nếu không có bẫy cát",
-      "Bẫy cát dễ bị phá hủy bởi nước mưa, gió lớn hoặc các chấn động mạnh",
-      "Giai đoạn trưởng thành bay rất yếu và tuổi thọ cực ngắn, chỉ tập trung giao phối"
+      "Cực kỳ yếu ớt trước các đòn tấn công vật lý trực tiếp của các loài cá hoặc giáp xác lớn",
+      "Dễ bị ăn thịt ở giai đoạn polyp bám đáy do không thể di chuyển trốn chạy",
+      "Khả năng bơi lội kém, di chuyển thụ động phụ thuộc phần lớn vào dòng hải lưu"
     ],
     "funFacts": [
-      "Ấu trùng kiến sư tử không có hậu môn. Tất cả chất thải được lưu trữ trong suốt nhiều năm và chỉ được thải ra một lần duy nhất khi chúng lột xác thành con trưởng thành",
-      "Chúng chỉ có thể bò lùi dưới cát, điều này giúp chúng giữ cho đôi kìm khổng lồ luôn hướng về phía trước để sẵn sàng đón nhận con mồi",
-      "Hố bẫy của chúng được tính toán cơ học hoàn hảo, góc nghiêng của cát luôn nằm sát giới hạn sạt lở tự nhiên (góc nghỉ của cát)"
+      "Quá trình đảo ngược vòng đời từ sứa trưởng thành thành polyp chỉ mất khoảng 36 giờ",
+      "Dù bất tử về sinh học, chúng vẫn có thể chết nếu bị kẻ săn mồi ăn thịt toàn bộ cơ thể hoặc bị dịch bệnh tàn phá",
+      "Bằng cách nhân bản vô tính trong giai đoạn polyp, một con sứa bất tử đơn lẻ có thể tạo ra cả một thuộc địa hàng ngàn con sứa giống hệt nó"
     ],
     "sources": [
       {
-        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/antlions",
-        "label": "National Geographic - Antlion Facts"
+        "url": "https://doi.org/10.1073/pnas.2209383119",
+        "label": "PNAS - Comparative genomics of mortal and immortal jellyfish"
       },
       {
-        "url": "https://doi.org/10.1098/rsbl.2019.0582",
-        "label": "Biology Letters - Mechanics of sand throwing by antlion larvae"
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6400612/",
+        "label": "NIH - Transdifferentiation in Turritopsis dohrnii"
       }
     ],
-    "imageColor": "#D2B48C",
+    "imageColor": "#E056FD",
     "diet_type": "carnivore",
     "diet_items": [
-      "kiến",
-      "nhện nhỏ",
-      "bọ cánh cứng nhỏ",
-      "mối"
+      "sinh vật phù du",
+      "trứng cá",
+      "động vật giáp xác nhỏ",
+      "artemia"
     ],
     "activity_pattern": "variable",
-    "lifespan_min": 1,
-    "lifespan_max": 3,
+    "lifespan_min": 0,
+    "lifespan_max": 999,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Sau khi lột xác thành con trưởng thành, chúng bay đi tìm bạn đời vào ban đêm. Con cái đẻ trứng trực tiếp vào cát khô ráo để ấu trùng tự nở và tự đào hố.",
-    "locomotion": "burrow",
-    "speed_max": 0.5,
+    "reproduction_notes": "Sinh sản hữu tính ở giai đoạn sứa trưởng thành bằng cách phóng tinh trùng và trứng vào nước. Phôi phát triển thành ấu trùng planula, sau đó bám đáy thành polyp. Polyp cũng có thể nảy chồi vô tính để sinh ra nhiều sứa mới.",
+    "locomotion": "swim",
+    "speed_max": 0.2,
     "conservation_status": "LC",
-    "size_min_mm": 15.0,
-    "size_max_mm": 20.0,
-    "weight_avg_g": 0.03,
+    "size_min_mm": 1.0,
+    "size_max_mm": 4.5,
+    "weight_avg_g": 0.015,
     "stats": {
-      "strength": 30,
-      "durability": 40,
-      "speed": 25,
-      "weaponry": 75,
-      "special": 88,
-      "lethality": 70
+      "strength": 5,
+      "durability": 95,
+      "speed": 10,
+      "weaponry": 15,
+      "special": 99,
+      "lethality": 10
     },
-    "ai_p4p_score": 52,
-    "ai_tier": "C"
+    "ai_p4p_score": 72,
+    "ai_tier": "A"
   },
   {
-    "id": "ghost-crab",
-    "name": "Cua Ma",
-    "scientificName": "Ocypode",
+    "id": "blue-dragon-sea-slug",
+    "name": "Sên Biển Rồng Xanh",
+    "scientificName": "Glaucus atlanticus",
     "taxonomy": {
-      "class": "Malacostraca",
-      "order": "Decapoda",
-      "family": "Ocypodidae"
+      "class": "Gastropoda",
+      "order": "Nudibranchia",
+      "family": "Glaucidae"
     },
-    "realWeight": "30 - 65 g",
-    "size": "5 - 8 cm",
-    "characteristics": "Thân hình màu vàng nhạt hoặc trắng xám trùng khớp với màu cát biển. Đôi mắt đen lớn nằm trên đôi cuống mắt dài dựng đứng cho phép nhìn 360 độ. Đôi càng bất đối xứng (một to một nhỏ).",
-    "habitat": "Bãi biển cát nông ở vùng nhiệt đới và cận nhiệt đới, sống trong các hang sâu đào sát mực nước triều.",
-    "location": "Các bờ biển nhiệt đới Thái Bình Dương, Đại Tây Dương và Ấn Độ Dương.",
-    "survival_method": "Đào hang sâu để giữ ẩm cơ thể và trốn tránh kẻ thù ban ngày. Hoạt động chủ yếu về đêm, chạy cực nhanh trên cát bằng bốn cặp chân bò, săn tìm động vật không xương sống nhỏ hoặc ăn xác thối trôi dạt.",
-    "unique_traits": "Tốc độ di chuyển trên cạn nhanh nhất trong thế giới động vật giáp xác (lên tới 20 km/h). Đôi mắt xoay 360 độ nhạy bén phát hiện bóng chuyển động. Khả năng phát ra tiếng kêu cảnh báo bằng cách nghiền răng trong dạ dày (gastric mill stridulation).",
-    "shortDescription": "Tốc độ bứt tốc thần sầu 20 km/h trên cát. Tầm nhìn 360 độ và màu sắc ngụy trang hòa lẫn bãi biển.",
-    "description": "Cua Ma là loài giáp xác chạy nhanh nhất trên cạn, nổi tiếng với sự cơ động đáng kinh ngạc và khả năng biến mất như một bóng ma trên các bãi cát biển. Chúng sở hữu các chân bò thon dài khỏe mạnh cho phép đổi hướng đột ngột ở tốc độ cao mà không bị lật. Đôi cuống mắt cao cung cấp tầm nhìn toàn cảnh để phát hiện chim săn mồi từ xa. Cua ma cũng có một hệ hô hấp độc đáo, chúng không cần ở dưới nước mà chỉ cần làm ướt mang bằng nước biển ẩm tích trữ trong hang hoặc hút từ cát ướt.",
+    "realWeight": "3 - 5 g",
+    "size": "3 - 4 cm",
+    "characteristics": "Thân hình dẹt màu xanh lam đậm phối trắng bạc, sở hữu 3 cặp thùy cánh bên xòe rộng (cerata) trông giống như các ngón tay rồng đầy oai phong. Cơ thể chứa túi khí nhỏ giúp nổi lơ lửng trên mặt nước.",
+    "habitat": "Vùng biển khơi ấm áp thuộc tầng mặt của đại dương.",
+    "location": "Phổ biến ở vùng biển ôn đới và nhiệt đới thuộc Nam Phi, bờ biển phía đông Úc và các vùng biển châu Á.",
+    "survival_method": "Nổi ngửa lưng hướng lên trên mặt nước và trôi dạt theo dòng nước. Lưng của nó màu xanh lam hòa lẫn vào nước biển chống lại chim săn mồi trên trời; bụng màu bạc ngửa xuống dưới hòa lẫn vào ánh sáng mặt trời chống lại cá săn mồi dưới biển. Săn lùng sứa độc bằng cách bơi áp sát và ăn thịt.",
+    "unique_traits": "Khả năng miễn nhiễm hoàn toàn với nọc độc cực mạnh của sứa lửa Bồ Đào Nha. Hấp thụ và lưu trữ các tế bào châm ngòi (nematocysts) chưa phóng của con mồi vào các đầu xúc tu cánh của mình để làm vũ khí tự vệ siêu độc.",
+    "shortDescription": "Hấp thụ nọc độc sứa lửa làm vũ khí tự thân. Ngụy trang phản xạ ánh sáng mặt nước.",
+    "description": "Sên Biển Rồng Xanh (Glaucus atlanticus) là loài nhuyễn thể biển khơi độc đáo sở hữu vẻ đẹp mê hoặc cùng cơ chế sinh học cực kỳ nguy hiểm. Trôi dạt tự do nhờ một bong bóng khí trong dạ dày, chúng săn tìm những loài sứa độc lớn hơn gấp nhiều lần. Khi ăn sứa lửa Bồ Đào Nha, rồng xanh không hề bị ảnh hưởng bởi chất độc mà ngược lại, chúng chọn lọc những tế bào ngòi độc mạnh nhất, vận chuyển qua các nhánh ruột đến lưu trữ tại đầu các thùy cánh (cerata). Nhờ vậy, vết chích của rồng xanh thậm chí còn đau đớn và nguy hiểm hơn cả sinh vật mà nó đã ăn.",
     "strengths": [
-      "Tốc độ bứt tốc và cơ động cực cao trên cát, đổi hướng 90 độ trong tích tắc",
-      "Khả năng ngụy trang trùng khít màu cát giúp ẩn thân hoàn hảo khi đứng yên",
-      "Hệ thống thị giác 360 độ cảnh báo mối nguy hiểm từ mọi phía",
-      "Khả năng hấp thụ nước trực tiếp từ cát ẩm qua các sợi lông chân"
+      "Nọc độc cực kỳ nguy hiểm được tích lũy từ sứa lửa Bồ Đào Nha",
+      "Khả năng ngụy trang ngược (countershading) hoàn hảo giữa trời và biển",
+      "Miễn nhiễm tuyệt đối với các loại độc tố thần kinh của sứa độc",
+      "Kích thước nhỏ gọn kết hợp cấu trúc nổi tự nhiên tiết kiệm tối đa năng lượng"
     ],
     "weaknesses": [
-      "Lớp vỏ kitin tương đối mỏng và giòn so với các loài cua đá khác",
-      "Rất dễ mất nước và chết khô nếu không thể làm ướt mang trong vòng vài giờ",
-      "Kẻ thù tự nhiên nhiều như chim biển, gấu mèo, rái cá và cá sấu"
+      "Khả năng tự di chuyển rất hạn chế, phụ thuộc gần như hoàn toàn vào gió và hải lưu",
+      "Dễ bị gió thổi dạt vào bờ cát dẫn đến mất nước và tử vong",
+      "Lớp da trần không vảy nhạy cảm với sự thay đổi nhiệt độ và nồng độ muối của nước"
     ],
     "funFacts": [
-      "Khi chạy ở tốc độ tối đa, cua ma chỉ sử dụng 2 hoặc 3 cặp chân bò và có xu hướng nhấc hẳn cơ thể lên khỏi mặt cát để giảm ma sát",
-      "Chúng là loài động vật duy nhất được phát hiện sử dụng các cấu trúc giống như răng bên trong dạ dày để phát ra âm thanh gầm gừ đe dọa kẻ thù khi càng của chúng bận chiến đấu",
-      "Tên gọi 'Cua Ma' xuất phát từ hành vi thoắt ẩn thoắt hiện và thói quen kiếm ăn vào ban đêm của chúng"
+      "Chúng di chuyển ngửa bụng lên trời, nghĩa là phần lưng màu xanh đậm thực chất là mặt bụng của chúng nhìn từ góc độ giải phẫu",
+      "Khi đói hoặc mật độ cá thể quá cao, rồng xanh sẵn sàng chuyển sang ăn thịt lẫn nhau để sinh tồn",
+      "Bong bóng khí trong dạ dày của chúng giữ cơ thể luôn ở một độ sâu lý tưởng sát bề mặt nước để vừa thở vừa săn mồi"
     ],
     "sources": [
       {
-        "url": "https://www.iucnredlist.org",
-        "label": "IUCN Red List of Threatened Species"
+        "url": "https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=76258",
+        "label": "ITIS - Glaucus atlanticus taxonomic classification"
       },
       {
-        "url": "https://doi.org/10.1242/jeb.00947",
-        "label": "Journal of Experimental Biology - Ghost crab locomotion and speed studies"
+        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/blue-dragon-glaucus-atlanticus",
+        "label": "National Geographic - Blue Dragon Reference"
       }
     ],
-    "imageColor": "#F5F5DC",
-    "diet_type": "omnivore",
-    "diet_items": [
-      "rùa con mới nở",
-      "ốc biển",
-      "giun cát",
-      "xác thối",
-      "tảo biển"
-    ],
-    "activity_pattern": "nocturnal",
-    "lifespan_min": 2,
-    "lifespan_max": 3,
-    "lifespan_unit": "years",
-    "reproduction_type": "sexual",
-    "reproduction_notes": "Giao phối diễn ra trong hang hoặc trên bãi biển. Con cái mang trứng dưới bụng cho đến khi trứng chín, sau đó bò ra sát mép nước để giải phóng ấu trùng vào đại dương theo thủy triều.",
-    "locomotion": "walk",
-    "speed_max": 20.0,
-    "conservation_status": "LC",
-    "size_min_mm": 50.0,
-    "size_max_mm": 80.0,
-    "weight_avg_g": 45.0,
-    "stats": {
-      "strength": 35,
-      "durability": 45,
-      "speed": 85,
-      "weaponry": 45,
-      "special": 78,
-      "lethality": 40
-    },
-    "ai_p4p_score": 48,
-    "ai_tier": "C"
-  },
-  {
-    "id": "common-kingfisher",
-    "name": "Chim Bói Cá Thường",
-    "scientificName": "Alcedo atthis",
-    "taxonomy": {
-      "class": "Aves",
-      "order": "Coraciiformes",
-      "family": "Alcedinidae"
-    },
-    "realWeight": "35 - 46 g",
-    "size": "16 - 19 cm",
-    "characteristics": "Thân hình nhỏ gọn, đuôi ngắn, mỏ dài thẳng sắc nhọn như dao. Lông vùng lưng có màu xanh lam óng ánh rực rỡ, ngực và bụng màu cam sáng.",
-    "habitat": "Ven các sông hồ, ao suối nước ngọt, kênh rạch sạch sẽ và nhiều cá nhỏ.",
-    "location": "Phân bố rộng khắp châu Âu, châu Á và Bắc Phi.",
-    "survival_method": "Đậu yên lặng trên cành cây nhô ra mặt nước để rình mồi. Khi phát hiện cá, chúng lao thẳng đứng xuống nước với tốc độ cao, dùng chiếc mỏ kẹp chặt con mồi, bay ngược lên cành cây và đập mạnh cá vào cành cây để kết liễu trước khi nuốt.",
-    "unique_traits": "Cú lao xuống nước Plunge-diving siêu thanh (40 km/h) không tạo bọt hay tiếng động lớn. Đôi mắt sở hữu hai hố thị giác (foveae) giúp tự động bù trừ khúc xạ ánh sáng khi chuyển từ không khí sang nước. Chiếc mỏ hình nêm đặc biệt giảm lực cản không khí và nước tối đa.",
-    "shortDescription": "Cú plunge-dive săn mồi 40 km/h không tạo sóng động. Mắt bù khúc xạ ánh sáng nước siêu việt.",
-    "description": "Chim Bói Cá Thường là hiện thân của sự chính xác vật lý học trong tự nhiên. Với cấu trúc cơ thể tối ưu hóa cho việc chuyển đổi môi trường từ không khí sang nước, chúng có thể săn cá nhỏ ở độ sâu tới 1 mét. Chiếc mỏ của bói cá có hình nêm nhọn dần, cho phép chia tách nước mượt mà mà không tạo ra sóng xung kích làm cá giật mình hay cản tốc độ bay. Đôi mắt của chúng được bảo vệ bởi một màng nhầy trong suốt (nictitating membrane) đóng vai trò như kính bơi khi ở dưới nước.",
-    "strengths": [
-      "Cú lao bổ nhào tốc độ cực cao với lực xuyên phá nước tuyệt vời",
-      "Thị giác kép chuyển đổi tiêu cự chính xác tuyệt đối giữa hai môi trường khúc xạ",
-      "Mỏ siêu cứng dài nhọn như lưỡi giáo, giữ mồi trơn trượt cực kỳ chắc",
-      "Bộ lông phủ dầu chống thấm nước giúp cơ thể không bị nặng khi bay lên"
-    ],
-    "weaknesses": [
-      "Lực chiến đấu cận chiến yếu, cơ xương mỏng manh dễ tổn thương nếu va vào đá dưới nước",
-      "Phụ thuộc hoàn toàn vào nguồn nước trong sạch để nhìn thấy mồi, không thể săn mồi ở nước đục",
-      "Thời tiết mùa đông băng giá đóng băng bề mặt sông hồ có thể khiến chúng bị chết đói"
-    ],
-    "funFacts": [
-      "Thiết kế mũi của tàu cao tốc Shinkansen dòng 500 nổi tiếng của Nhật Bản được mô phỏng trực tiếp từ hình dáng chiếc mỏ của chim bói cá để giảm tiếng ồn và sức cản không khí khi tàu chui qua hầm",
-      "Sau khi nuốt cá, chim bói cá sẽ nôn ra các viên thức ăn không tiêu hóa được bao gồm xương cá và vảy cá",
-      "Chúng là loài có tính lãnh thổ cực kỳ cao, một con bói cá sẽ bảo vệ nghiêm ngặt đoạn sông dài khoảng 1-2 km và sẵn sàng tấn công bất kỳ con bói cá nào khác xâm phạm"
-    ],
-    "sources": [
-      {
-        "url": "https://www.iucnredlist.org/species/22683027/89575922",
-        "label": "IUCN Red List - Common Kingfisher (Alcedo atthis)"
-      },
-      {
-        "url": "https://doi.org/10.1242/jeb.02345",
-        "label": "Journal of Experimental Biology - Aerodynamics and hydrodynamics of kingfisher plunge-dive"
-      }
-    ],
-    "imageColor": "#008080",
+    "imageColor": "#00D2D3",
     "diet_type": "carnivore",
     "diet_items": [
-      "cá nhỏ",
-      "côn trùng nước",
-      "nòng nọc",
-      "tôm nhỏ"
+      "sứa lửa bồ đào nha",
+      "sứa buồm vây",
+      "ốc sên tím vĩnh cửu",
+      "rồng xanh nhỏ hơn"
     ],
     "activity_pattern": "diurnal",
-    "lifespan_min": 5,
-    "lifespan_max": 15,
+    "lifespan_min": 1,
+    "lifespan_max": 12,
+    "lifespan_unit": "months",
+    "reproduction_type": "hermaphrodite",
+    "reproduction_notes": "Là sinh vật lưỡng tính đồng thời, cả hai cá thể đều sản sinh trứng và tinh trùng. Sau khi giao phối, cả hai đều đẻ ra những dải trứng dài màu trắng, thả nổi tự do trên biển hoặc bám trên bộ xương của con mồi.",
+    "locomotion": "swim",
+    "speed_max": 0.5,
+    "conservation_status": "LC",
+    "size_min_mm": 30.0,
+    "size_max_mm": 40.0,
+    "weight_avg_g": 4.0,
+    "stats": {
+      "strength": 20,
+      "durability": 30,
+      "speed": 15,
+      "weaponry": 90,
+      "special": 88,
+      "lethality": 85
+    },
+    "ai_p4p_score": 64,
+    "ai_tier": "B"
+  },
+  {
+    "id": "superb-lyrebird",
+    "name": "Chim Đàn Lia Lớn",
+    "scientificName": "Menura novaehollandiae",
+    "taxonomy": {
+      "class": "Aves",
+      "order": "Passeriformes",
+      "family": "Menuridae"
+    },
+    "realWeight": "~0.8 - 1.1 kg",
+    "size": "80 - 100 cm",
+    "characteristics": "Kích thước bằng con gà rừng lớn, bộ lông màu nâu xám chủ đạo. Điểm đặc trưng nhất là phần đuôi của con đực trưởng thành dài tới 60cm gồm 16 sợi lông biến đổi kỳ công, xòe rộng ra trông giống như một chiếc đàn lia cổ đại.",
+    "habitat": "Các khu rừng mưa ẩm ướt, rừng ôn đới ấm ẩm nhiều tầng tán của nước Úc.",
+    "location": "Vùng đông nam nước Úc, từ Victoria qua New South Wales đến đông nam Queensland.",
+    "survival_method": "Sống dưới mặt đất rừng, kiếm ăn bằng cách dùng đôi chân khỏe bới lá cây mục tìm giun và côn trùng. Khi gặp nguy hiểm, chúng thường chạy trốn luồn lách qua các bụi rậm thay vì bay.",
+    "unique_traits": "Khả năng bắt chước âm thanh đỉnh cao nhất thế giới loài vật nhờ cơ quan phát âm (syrinx) tiến hóa phức tạp nhất. Chúng có thể nhại lại tiếng của hơn 20 loài chim khác, cũng như tiếng cưa xích, tiếng còi xe, tiếng khóc trẻ em, tiếng máy ảnh.",
+    "shortDescription": "Bậc thầy giả giọng siêu đẳng nhất tự nhiên. Đuôi hình đàn lia và điệu nhảy tán tỉnh lộng lẫy.",
+    "description": "Chim Đàn Lia Lớn (Menura novaehollandiae) là loài chim đặc hữu của nước Úc, nổi tiếng với khả năng bắt chước mọi loại âm thanh với độ chính xác đến kinh ngạc. Con đực sở hữu một chiếc đuôi tuyệt đẹp dạng đàn lia cổ đại mà nó dùng để trưng bày trong điệu nhảy tán tỉnh trên các mô đất tự đào. Để thu hút con cái, chim đực sẽ hót liên tục hàng giờ liền, pha trộn bài hát của các loài chim rừng khác cùng các âm thanh nhân tạo mà nó nghe thấy trong môi trường. Hệ cơ thanh quản đặc biệt tinh tế của chúng cho phép tạo ra hai tần số âm thanh khác nhau cùng một lúc.",
+    "strengths": [
+      "Khả năng nhại âm thanh đánh lừa kẻ săn mồi hoặc thu hút bạn đời tuyệt đối",
+      "Đôi chân cực khỏe chuyên đào bới lá rụng dày tìm kiếm thức ăn sâu dưới đất",
+      "Bộ lông màu xám nâu mang lại khả năng ngụy trang ẩn mình tuyệt vời trên nền đất rừng",
+      "Trí nhớ âm thanh dài hạn vượt trội, ghi nhớ được các âm thanh phức tạp"
+    ],
+    "weaknesses": [
+      "Khả năng bay rất kém do đôi cánh ngắn và nặng, chỉ có thể bay lượn từ cành cao xuống đất",
+      "Chiếc đuôi quá dài của con đực gây vướng ví dụ trong mùa sinh sản khi chạy trốn",
+      "Cực kỳ nhạy cảm trước sự suy thoái môi trường sống do cháy rừng và đô thị hóa"
+    ],
+    "funFacts": [
+      "Chim đàn lia có thể bắt chước tiếng nổ súng, tiếng chó sủa và thậm chí cả giọng nói của con người một cách hoàn hảo đến mức mắt thường không thể phân biệt",
+      "Không chỉ bắt chước âm thanh, con đực còn biên đạo một điệu nhảy khớp chính xác với từng loại âm thanh mà nó đang phát ra",
+      "Chúng là một trong những loài chim biết hót lớn nhất thế giới, kích thước cơ thể tương đương một con gà lôi"
+    ],
+    "sources": [
+      {
+        "url": "https://www.environment.nsw.gov.au/topics/animals-and-plants/native-animals/native-animal-facts/superb-lyrebird",
+        "label": "NSW Department of Planning and Environment - Superb Lyrebird Facts"
+      },
+      {
+        "url": "https://doi.org/10.1016/j.cub.2021.02.015",
+        "label": "Current Biology - Vocal mimicry by male superb lyrebirds"
+      }
+    ],
+    "imageColor": "#8B7D6B",
+    "diet_type": "omnivore",
+    "diet_items": [
+      "giun đất",
+      "kiến",
+      "bọ cánh cứng",
+      "nhện",
+      "hạt cây",
+      "trái cây rụng"
+    ],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 15,
+    "lifespan_max": 30,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Đào hang sâu khoảng 0.5 - 1 mét bên các vách đất bờ sông để làm tổ. Cả chim bố và mẹ thay phiên nhau ấp trứng từ 19-21 ngày và cùng nuôi con.",
-    "locomotion": "fly",
-    "speed_max": 40.0,
+    "reproduction_notes": "Con đực giao phối đa thê, biểu diễn điệu nhảy và giọng hót trên các ụ đất để lôi cuốn nhiều con cái. Con cái tự xây tổ hình vòm trên mặt đất hoặc hốc cây thấp, tự ấp một quả trứng duy nhất trong 50 ngày.",
+    "locomotion": "hybrid",
+    "speed_max": 12.0,
     "conservation_status": "LC",
-    "size_min_mm": 160.0,
-    "size_max_mm": 190.0,
-    "weight_avg_g": 40.0,
+    "size_min_mm": 800.0,
+    "size_max_mm": 1000.0,
+    "weight_avg_g": 950.0,
     "stats": {
-      "strength": 25,
-      "durability": 30,
-      "speed": 75,
-      "weaponry": 68,
-      "special": 82,
-      "lethality": 65
+      "strength": 45,
+      "durability": 40,
+      "speed": 55,
+      "weaponry": 20,
+      "special": 95,
+      "lethality": 15
     },
-    "ai_p4p_score": 45,
+    "ai_p4p_score": 54,
     "ai_tier": "C"
   }
 ]
