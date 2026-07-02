@@ -120,6 +120,104 @@ async function runEnrichment() {
   targets.forEach(t => console.log(`  - ${t.name} (${t.id}) | P4P: ${t.ai_p4p_score} | Existing What-If count: ${t.existing_questions_count} | Answers count: ${t.existing_answers_count}`));
 
   const whatIfScenarios = {
+    "ghost-crab": {
+      creature_id: "ghost-crab",
+      title: "Nếu Cua Ma (Ghost Crab) phóng to bằng con người (80kg) thì sao?",
+      slug: "neu-cua-ma-phong-to-bang-con-nguoi-80kg",
+      description: "Phân tích kịch bản giả thuyết khi loài Cua Ma Ocypode với khả năng chạy siêu tốc bằng 4 chân và cặp mắt xoay 360 độ được phóng to lên kích thước con người 80kg.",
+      answers: [
+        {
+          title: "Góc nhìn cơ học lý thuyết (Vận tốc bứt tốc 70 km/h lướt trên cát và tiếng nghiền răng dạ dày chấn động 120 dB)",
+          slug: "cua-ma-80kg-co-hoc-ly-thuyet",
+          perspective_type: "classic_scaling",
+          summary: "Bứt tốc bằng 4 chân đạt tốc độ 70 km/h, càng to kẹp nát vỏ kim loại lực 3.500 N, và âm thanh răng dạ dày 120 dB đe dọa đối thủ.",
+          content: "Khi Cua Ma phóng to lên 80kg (tăng khối lượng ~2.000 lần, sải chân đạt ~1.8m):\n- Vận tốc chạy thần tốc trên cát: Áp dụng cơ chế chuyển đổi dáng chạy linh hoạt (gait transition), cua ma khổng lồ nhấc bổng cơ thể và chỉ sử dụng 4 chân giữa để đẩy lực. Lực đẩy cơ học lý thuyết đạt 1.800 N giúp nó bứt tốc lướt trên cát với vận tốc lên tới 70 km/h mà không bị lún.\n- Cặp càng kẹp nghiền thủy lực: Chiếc càng lớn bất đối xứng phát triển cơ khép càng siêu khỏe, tạo lực kẹp cực đại 3.500 N, dễ dàng bẻ cong các thanh sắt hoặc nghiền nát vỏ kim loại mỏng của mục tiêu.\n- Tiếng gầm rú từ dạ dày (Gastric mill stridulation): Cơ chế nghiền răng chitin trong dạ dày để phát âm thanh cảnh báo được phóng đại cơ học. Tần số dao động cộng hưởng tạo ra tiếng rít chấn động đạt cường độ âm 120 dB, truyền rung động mạnh qua lòng đất cát xa hàng trăm mét để xua đuổi kẻ thù.",
+          formulas_and_data: {
+            scaling_factor: 2000,
+            mass_g_original: 40,
+            mass_kg_scaled: 80,
+            formulas: [
+              {
+                name: "Sải chân phóng đại cơ học",
+                equation: "L_scaled = L_orig * (M_scaled / M_orig)^(1/3) = 0.14 m * (2000)^(1/3)",
+                result: "~1.76 mét"
+              },
+              {
+                name: "Lực kẹp cực đại của càng lớn lý thuyết",
+                equation: "F_pinch_scaled = F_pinch_orig * (M_scaled / M_orig)^(2/3) = 22 N * (2000)^(2/3)",
+                result: "~3,500 N"
+              },
+              {
+                name: "Cường độ âm thanh răng dạ dày phóng đại",
+                equation: "I_scaled = I_orig + 10 * log10(M_scaled / M_orig) = 87 dB + 10 * log10(2000)",
+                result: "~120 dB"
+              }
+            ]
+          },
+          p4p_score_scaled: 85,
+          tier_scaled: "B",
+          sources: [
+            { label: "Journal of Experimental Biology - Locomotion energetics and gait in ghost crabs", url: "https://doi.org/10.1242/jeb.00512" }
+          ]
+        },
+        {
+          title: "Giới hạn sinh học thực tế (Khô mang chết ngạt trong 5 phút, chân gãy vụn dưới ứng suất uốn 180 MPa và lún cát bất động)",
+          slug: "cua-ma-80kg-sinh-hoc-thuc-te",
+          perspective_type: "biological_reality",
+          summary: "Khoang mang mất nước gây ngạt thở sau 5 phút, ứng suất chân 180 MPa bẻ gãy bộ giáp giáp xác, và cơ thể 80kg chìm lún vào cát mịn.",
+          content: "Trong thực tế sinh học, cua ma 80kg sẽ chết nhanh chóng do các giới hạn vật lý:\n- Chết ngạt do khô mang trên cạn: Cua ma thở bằng mang trong khoang mang ẩm. Khi phóng to lên 80kg, tỷ lệ diện tích bề mặt mang so với thể tích cơ thể (S/V) sụt giảm 12.6 lần. Quá trình bốc hơi nước diễn ra quá nhanh khiến mang khô ráo hoàn toàn trong 5 phút, làm mất khả năng khuếch tán oxy và khiến cua chết ngạt.\n- Sụp đổ và gãy vụn chân khớp: Chân cua ma rất mảnh rỗng để tối ưu tốc độ. Ở khối lượng 80kg, ứng suất uốn nén tĩnh đè lên khớp chân khi đứng yên đạt tới 180 MPa, vượt giới hạn bền của lớp vỏ chitin giáp xác (60 MPa), khiến toàn bộ 8 chân gãy gập và vỡ vụn tức thì.\n- Mắc kẹt lún sâu trong cát mịn: Do diện tích tiếp xúc của các đầu chân nhọn rất nhỏ so với trọng lượng 80kg, áp suất đè xuống mặt cát tăng gấp 12.6 lần. Cua ma sẽ bị lún sâu xuống cát ẩm và hoàn toàn bất động, trở thành mồi ngon cho các loài săn mồi khác.",
+          formulas_and_data: {
+            limitations: [
+              {
+                type: "Tỉ lệ diện tích mang ẩm / thể tích cơ thể (S/V ratio)",
+                issue: "Sụt giảm 12.6 lần làm tăng tốc độ khô mang và giảm hiệu suất hấp thụ oxy khí trời, gây ngạt thở cấp tính."
+              },
+              {
+                type: "Ứng suất cơ học phá hủy chân giáp xác (Leg joint bending stress)",
+                issue: "Ứng suất uốn 180 MPa vượt xa giới hạn bền uốn chitin (60 MPa), làm gãy gập chân khi cua ma cố gắng đứng dậy."
+              },
+              {
+                type: "Áp lực nén lên mặt cát (Ground pressure on sand)",
+                issue: "Áp lực tăng 12.6 lần vượt giới hạn chịu tải của cát mịn khô (khoảng 15 kPa), khiến cua lún sâu xuống bùn cát."
+              }
+            ]
+          },
+          p4p_score_scaled: 10,
+          tier_scaled: "D",
+          sources: [
+            { label: "Nature - Respiration and mechanical constraints in giant terrestrial arthropods", url: "https://doi.org/10.1038/nature01456" }
+          ]
+        },
+        {
+          title: "Đột biến thích nghi (Vỏ chitin composite kẽm-carbon bền uốn 420 MPa, mang phổi cơ học thở khí trực tiếp và chân đệm thủy lực)",
+          slug: "cua-ma-80kg-dot-bien-thich-nghi",
+          perspective_type: "evolutionary_mutation",
+          summary: "Giáp vỏ gia cường sợi carbon bền uốn 420 MPa, mang cải tiến giống phổi cua dừa chủ động hô hấp, và chân xòe đệm màng nhầy bám cát.",
+          content: "Để cua ma 80kg sống sót và duy trì danh hiệu ông hoàng tốc độ sa mạc:\n- Lớp vỏ giáp composite chitin-carbon: Lớp biểu bì được khoáng hóa kẽm cùng các ống vi sợi carbon đan chéo xếp lớp Bouligand dẻo dai. Nâng giới hạn bền uốn của bộ xương ngoài lên 420 MPa, giúp chịu đựng lực uốn nén khi bứt tốc và nhảy xa.\n- Phổi sách hô hấp khí chủ động (Branchiostegal lungs): Khoang mang tiến hóa thành các túi phổi sách gấp nếp sâu có mạch máu chằng chịt, tích hợp các cơ co thắt chủ động bơm xả khí để hấp thụ trực tiếp oxy khí trời mà không cần giữ màng mang ẩm ướt liên tục.\n- Bàn chân xòe rộng bọc đệm sụn đàn hồi: Đầu các chân phát triển màng xòe rộng giống hình chiếc lá để tăng diện tích tiếp xúc cát gấp 4 lần, kết hợp đệm sụn đàn hồi hấp thụ 90% xung lực phản hồi từ nền cát mịn, chống lún cát hoàn hảo.",
+          formulas_and_data: {
+            mutations: [
+              {
+                type: "Vỏ giáp composite chitin-carbon gia cường",
+                benefit: "Nâng giới hạn bền uốn lên 420 MPa, cho phép cua ma chịu tải động lực học khi chạy 70 km/h."
+              },
+              {
+                type: "Hệ thống túi khí co bóp chủ động (Active branchiostegal lungs)",
+                benefit: "Duy trì nồng độ oxy huyết ổn định mà không phụ thuộc vào độ ẩm của mang, đáp ứng lưu thông khí 55 lít/phút."
+              },
+              {
+                type: "Bàn chân đệm giảm chấn xòe rộng chống lún",
+                benefit: "Giảm áp lực tiếp xúc cát xuống dưới 12 kPa, giúp di chuyển mượt mà trên nền cát sa mạc mịn."
+              }
+            ]
+          },
+          p4p_score_scaled: 82,
+          tier_scaled: "B",
+          sources: [
+            { label: "Science - Biomimetic materials and respiratory adaptions in giant land crabs", url: "https://doi.org/10.1126/science.05942" }
+          ]
+        }
+      ]
+    },
     "big-belly-seahorse": {
       creature_id: "big-belly-seahorse",
       title: "Nếu Cá Ngựa Bụng Lớn (Big-belly Seahorse) phóng to bằng con người (80kg) thì sao?",
