@@ -29,6 +29,312 @@ const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 // 2. Predefined high-quality profiles for the top target candidates
 const predefinedProfiles = {
+  "sydney-funnel-web-spider": {
+    trait_name: "Độc Tố Thần Kinh Delta-Atracotoxin Chậm Bất Hoạt Kênh Natri NaV1.6 và Nanh Chelicerae Song Song Lực Ghim Đâm",
+    title: "Người Lai Nhện Lưới Phễu Sydney - Kẻ Hủy Diệt Xung Thần Kinh",
+    slug: "sydney-funnel-web-spider-human-splice",
+    sci_fi_hype: "Tích hợp nanh độc chelicerae song song chĩa dọc của Nhện Lưới Phễu Sydney dưới dạng cặp nanh sừng chitin ẩn ở ngón tay người lai, đi kèm tuyến nọc delta-atracotoxin tinh chế. Khi đâm sâu vào mục tiêu, chất độc lập tức liên kết chọn lọc và phong tỏa chậm quá trình đóng kênh natri nhạy cảm điện thế NaV1.6. Xung thần kinh liên tục phóng đi không ngừng nghỉ, gây co giật cơ tột cùng, huyết áp tăng vọt và suy hô hấp cấp cho đối phương chỉ trong vòng 10 giây.",
+    scientific_reality: "Cơ chế sinh học: Độc tố Delta-atracotoxin là peptide gồm 42 axit béo liên kết disulfide bền vững, tác động chọn lọc cao vào linh trưởng. Tế bào thần kinh của người lai được bảo vệ nhờ lớp lipid kép bổ sung glycoprotein mang thụ thể biến đổi kháng độc tố. Cặp nanh chitin ngón tay được gia cố mật độ khoáng calcium carbonate, kéo dài dọc ngón trỏ và ngón giữa, chịu lực ghim bổ thẳng đứng được dẫn truyền xung cơ khép hàm (adductor muscles) tái tạo ở bả vai.",
+    spliced_stats: {
+      strength: 88,
+      durability: 85,
+      speed: 90,
+      weaponry: 96,
+      special: 86,
+      lethality: 98
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 850,
+      stinger_length_cm: 6.5,
+      delta_atracotoxin_concentration_mg_ml: 1.8,
+      formulas: [
+        {
+          name: "Áp lực ghim đâm của nanh độc Chelicerae (Nanh Song Song)",
+          equation: "P_stinger = F_arm / A_tip",
+          result: "3.2 kN"
+        },
+        {
+          name: "Hệ số bất hoạt kênh Natri do Delta-Atracotoxin (Sodium Channel Inactivation Delay)",
+          equation: "tau_delay = tau_0 * (1 + C_venom / K_d)",
+          result: "12.5 times slower (gây kích thích thần kinh liên tục)"
+        }
+      ]
+    },
+    summary: "Lai ghép gen Nhện Lưới Phễu Sydney tích hợp nanh độc chelicerae song song lực ghim đâm mạnh mẽ và nọc độc delta-atracotoxin trì hoãn đóng kênh natri, làm tê liệt hệ thần kinh vận động đối thủ."
+  },
+  "trapdoor-spider": {
+    trait_name: "Hệ Thống Răng Đào Đất Rastellum Chitin Hóa và Phản Xạ Bất Ngờ Tốc Độ Cực Hạn dưới 0.03 Giây",
+    title: "Người Lai Nhện Cửa Sập - Bóng Ma Phục Kích",
+    slug: "trapdoor-spider-human-splice",
+    sci_fi_hype: "Cấy ghép hàng gai sừng (rastellum) đào bới siêu cứng dọc xương cẳng tay và các ngón tay, đồng thời đồng hóa phản xạ săn mồi chớp nhoáng dưới 0.03 giây của Nhện Cửa Sập. Người lai có thể ẩn mình tuyệt đối dưới lòng đất ẩm hoặc ngụy trang cửa sập bằng tơ và rêu, định vị mục tiêu chính xác qua hệ thống tơ cảm ứng rung động Rayleigh địa chấn, sau đó bật phát lực cơ học cực đại tóm gọn và kéo kẻ địch xuống hố chỉ trong một chớp mắt.",
+    scientific_reality: "Cơ chế cơ sinh học: Phản xạ siêu tốc dưới 30 mili-giây đòi hỏi synapse myelin hóa cực dày kết nối dây thần kinh cảm thụ chày trực tiếp với thùy trán và các bó cơ đùi chi dưới, bỏ qua hầu hết các trạm trung chuyển trung ương thông thường. Gai rastellum sừng hóa chứa chitin liên kết chéo collagen đặc biệt, chịu được mài mòn áp lực cao khi đào đất cứng. Áp suất dịch cơ thể (hemolymph pressure) được dồn nén tức thì lên chi dưới nhờ van cơ tim đóng ngắt cholinergic.",
+    spliced_stats: {
+      strength: 86,
+      durability: 90,
+      speed: 95,
+      weaponry: 88,
+      special: 92,
+      lethality: 93
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 2800,
+      ambush_time_ms: 28,
+      seismic_sensor_range_m: 15,
+      formulas: [
+        {
+          name: "Gia tốc bứt phá phục kích (Ambush Acceleration)",
+          equation: "a = v_takeoff / t_ambush",
+          result: "480 m/s² (tầm 49 G)"
+        },
+        {
+          name: "Độ căng bề mặt cửa sập tơ đất (Door Edge Tensile Strength)",
+          equation: "sigma = F_hold / (pi * d_door * t_door)",
+          result: "4.2 MPa"
+        }
+      ]
+    },
+    summary: "Lai ghép gen Nhện Cửa Sập cung cấp gai sừng rastellum đào hang kiên cố và phản xạ bộc phát kéo mồi < 0.03 giây, mang đến khả năng ngụy trang phục kích cận chiến vô song."
+  },
+  "velvet-ant": {
+    trait_name: "Khung Xương Ngoài Chitin Sclerotin Mái Vòm Chịu Lực Ép Cực Hạn và Ngòi Châm Trượt Siêu Linh Hoạt",
+    title: "Người Lai Kiến Nhung Đỏ - Chiến Binh Thép Bất Hoại",
+    slug: "velvet-ant-human-splice",
+    sci_fi_hype: "Cường hóa lớp da hạ bì thành bộ giáp xương ngoài chitin-sclerotin mái vòm cầu chịu lực của Kiến Nhung Đỏ, có khả năng kháng cự tải trọng tĩnh và động gấp hàng nghìn lần trọng lượng cơ thể (chịu lực nghiền nát từ gót chân người khổng lồ hoặc đạn bắn). Đồng thời tích hợp chiếc ngòi châm chitin siêu dài (bằng 50% chiều dài cơ thể lai) ẩn sau xương cụt, vô cùng linh hoạt, phun axit dasymutillic và peptit kích thích đau đớn cấp độ 4 (Schmidt Pain Index) tột cùng gây sốc nhiệt ngay lập tức.",
+    scientific_reality: "Cơ chế gia cường sinh học: Lớp giáp sừng bao gồm các lớp chitin đan chéo đa hướng kết dính bằng protein resilin dẻo chống mỏi cơ học, liên kết chéo sclerotin hóa cao độ. Cấu trúc mái vòm phân tán ứng suất cơ học dọc theo khung xương chậu và cột sống. Tuyến độc chứa peptide pH trung tính Dasymutillic acid bền nhiệt, không biến tính ở 50°C, kích hoạt trực tiếp receptor cảm giác đau TRPV1 mà không phá hủy tế bào diện rộng để tối ưu khả năng xua đuổi tự vệ.",
+    spliced_stats: {
+      strength: 90,
+      durability: 99,
+      speed: 80,
+      weaponry: 92,
+      special: 90,
+      lethality: 88
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 4800,
+      stinger_length_cm: 45,
+      max_compressive_load_n: 290000,
+      formulas: [
+        {
+          name: "Lực ép tĩnh giới hạn của giáp sườn mái vòm (Dome Exoskeleton Compression Limit)",
+          equation: "F_comp = C_shape * E_sclerotin * (t_shell² / R_dome)",
+          result: "290 kN"
+        },
+        {
+          name: "Chỉ số đau đớn Schmidt thần kinh (Neurogenic Pain Index Rate)",
+          equation: "I_pain = C_peptide * (r_agonist / K_trpv1)",
+          result: "4.0 (cấp độ đau đớn dữ dội nhất)"
+        }
+      ]
+    },
+    summary: "Sở hữu bộ giáp chitin-sclerotin mái vòm triệt tiêu 98% lực nén và ngòi châm dài linh hoạt chứa peptide gây đau tột cùng, biến người lai thành một cỗ xe tăng phòng ngự bất hoại tự nhiên."
+  },
+  "jewel-wasp": {
+    trait_name: "Hệ Thống Ngòi Châm Cảm Biến Xúc Giác và Độc Tố Phong Bế Neuron Octopamine",
+    title: "Người Lai Tò Vò Ngọc Lục Bảo - Kẻ Thao Túng Tâm Thần",
+    slug: "jewel-wasp-human-splice",
+    sci_fi_hype: "Tích hợp ngòi châm sinh học chứa cảm biến xúc giác cơ học hình vòm (campaniform sensilla) vào đầu ngón tay người lai, kết hợp tuyến nọc độc chuyên biệt có khả năng phong tỏa neuron octopaminergic của đối thủ. Người lai có thể châm chính xác vào các hạch thần kinh vận động trung khu của mục tiêu, triệt tiêu 100% ý chí phản kháng và khả năng tự chủ, biến đối phương thành một 'con rối sống' di chuyển theo mệnh lệnh trực tiếp mà không cần dùng vũ lực cưỡng chế.",
+    scientific_reality: "Cơ chế phẫu thuật thần kinh sinh học: Ngòi châm ngón tay chứa mạng lưới sợi thần kinh xúc giác liên kết chéo với màng myelin dẫn truyền xung nhanh. Nọc độc chứa hỗn hợp peptide làm giảm dòng ion canxi nhạy cảm điện thế tại hạch trung khu và ngăn chặn thụ thể octopamine. Để tránh ngộ độc chéo, hệ thần kinh của người lai được bọc lớp màng lipoprotein kháng độc tố octopaminergic đặc chế.",
+    spliced_stats: {
+      strength: 82,
+      durability: 80,
+      speed: 90,
+      weaponry: 92,
+      special: 98,
+      lethality: 95
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 450,
+      octopamine_block_ratio: 0.99,
+      stinger_sensory_precision_microns: 5,
+      formulas: [
+        {
+          name: "Tốc độ phong tỏa dẫn truyền thần kinh (Neurotransmission Block Rate)",
+          equation: "t_block = C_venom * (K_diss / r_receptor)",
+          result: "3.2 seconds"
+        },
+        {
+          name: "Lực châm xuyên định vị chính xác (Stinger Insertion Force)",
+          equation: "F_insert = P_axial / Area_tip",
+          result: "1.25 kN"
+        }
+      ]
+    },
+    summary: "Lai ghép gen Tò Vò Ngọc Lục Bảo cung cấp ngòi châm xúc giác siêu chính xác và nọc độc phong tỏa neuron octopamine, cho phép kiểm soát hoàn toàn hệ vận động của đối thủ."
+  },
+  "namib-desert-beetle": {
+    trait_name: "Lớp Giáp Biểu Bì Cassie-Baxter Ưa-Kỵ Nước Phân Tầng và Phản Xạ Bức Xạ UV",
+    title: "Người Lai Bọ Sa Mạc Namib - Pháo Đài Tự Thu Sương Khí",
+    slug: "namib-desert-beetle-human-splice",
+    sci_fi_hype: "Cấy ghép lớp giáp elytra kitin phân tầng Cassie-Baxter của Bọ Sa Mạc Namib lên toàn bộ cơ thể người lai. Bề mặt giáp có cấu trúc sần chứa các hạt nano ưa nước phân bố xen kẽ với các rãnh kỵ nước tráng sáp hydrocarbon no mạch dài (pentacosane, heptacosane). Người lai có khả năng tự ngưng tụ hơi ẩm và sương mù trong không khí thành nước tinh khiết chảy trực tiếp vào hệ tuần hoàn lọc, đồng thời lớp sáp biểu bì phản xạ 99% bức xạ nhiệt mặt trời và tia UV có hại, cho phép sinh tồn vô hạn ở những vùng hoang mạc khắc nghiệt nhất.",
+    scientific_reality: "Phân tích sinh học thích nghi: Cấu trúc Cassie-Baxter giảm lực cản lăn của giọt nước ngưng tụ về 0, nước tự trượt vào các kênh biểu bì dẫn tới màng lọc thẩm thấu ngược nhân tạo ở vùng ngực. Lớp sáp cutin gồm các este axit béo chuỗi dài ngăn chặn hoàn toàn hiện tượng mất nước qua biểu bì. Xương đùi và cẳng chân được kéo dài, tăng sinh mật độ mao mạch để giải nhiệt thụ động đối lưu không khí.",
+    spliced_stats: {
+      strength: 80,
+      durability: 95,
+      speed: 82,
+      weaponry: 78,
+      special: 96,
+      lethality: 70
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 3800,
+      water_collection_rate_l_hr: 0.85,
+      uv_reflection_ratio: 0.99,
+      formulas: [
+        {
+          name: "Hiệu suất thu sương bề mặt Cassie-Baxter (Fog Water Collection Efficiency)",
+          equation: "eta = m_collected / (rho_fog * v_wind * A * t)",
+          result: "0.88"
+        },
+        {
+          name: "Hệ số truyền nhiệt qua biểu bì cách nhiệt (Thermal Transmittance)",
+          equation: "U = k_chitin / d_elytra",
+          result: "0.15 W/(m²·K)"
+        }
+      ]
+    },
+    summary: "Sử dụng lớp giáp Cassie-Baxter phân cực ẩm và chống bức xạ nhiệt giúp người lai tự cung cấp nước từ sương khí thụ động và kháng cự tuyệt đối thời tiết sa mạc."
+  },
+  "portia-jumping-spider": {
+    trait_name: "Hệ Thần Kinh Popperian Lập Bản Đồ 3D và Cặp Mắt Ống Thấu Kính Viễn Vọng Kép",
+    title: "Người Lai Nhện Nhảy Portia - Siêu Não Chiến Thuật Khắc Chế",
+    slug: "portia-jumping-spider-human-splice",
+    sci_fi_hype: "Tích hợp hệ thần kinh xử lý thông tin Popperian (thử và sai giả định trong đầu) và đôi mắt kép thấu kính viễn vọng của Nhện Nhảy Portia vào não bộ người lai. Người lai sở hữu khả năng thiết lập bản đồ không gian 3D thời gian thực cực kỳ trực quan, tính toán hàng trăm kịch bản đường vòng phục kích (spatial detouring) phức tạp trong tích tắc và bắt chước rung động tần số vật lý để bẫy kẻ thù. Cặp mắt chính có thấu kính viễn vọng kép phóng đại tiêu cự hẹp, quét phân tích mọi điểm yếu cơ học của mục tiêu từ xa.",
+    scientific_reality: "Cơ chế tích hợp vỏ não: Hạch thần kinh trung ương được tăng cường các synapse polymer sinh học nối liền vỏ não thị giác với thùy trán, cho phép giả lập các phép thử-sai không gian trước khi vận động cơ xương. Cặp mắt chính dùng hệ thấu kính viễn vọng kép di động độc lập được điều khiển bởi cơ trơn siêu nhạy, cho phép hội tụ hình ảnh độ phân giải siêu cao tương đương loài thú săn mồi lớn mà không cần xoay đầu.",
+    spliced_stats: {
+      strength: 80,
+      durability: 82,
+      speed: 92,
+      weaponry: 88,
+      special: 99,
+      lethality: 94
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 220,
+      spatial_resolution_arcsec: 0.05,
+      hydraulic_pressure_chi_psi: 320,
+      formulas: [
+        {
+          name: "Độ phân giải thị giác lập thể mắt viễn vọng (Visual Angular Resolution)",
+          equation: "theta = 1.22 * lambda / D_aperture",
+          result: "0.05 arcseconds"
+        },
+        {
+          name: "Lực bật nhảy bằng thủy lực chi dưới (Hydraulic Jump Force)",
+          equation: "F_jump = P_hydraulic * Area_cylinder",
+          result: "4.50 kN (nhảy xa gấp 8 lần chiều dài cơ thể)"
+        }
+      ]
+    },
+    summary: "Hệ thần kinh Popperian mô phỏng chiến thuật và mắt thấu kính viễn vọng kép mang lại khả năng phân tích chiến trận vô song, thiết lập cạm bẫy và phục kích bộc phát lực nhảy thủy lực cực đại."
+  },
+  "rove-beetle": {
+    trait_name: "Độc Tố Paederin Phong Tỏa Tuyến Cơ và Phức Hợp Tế Bào Cộng Sinh Pseudomonas",
+    title: "Người Lai Kiến Ba Khoang - Sát Thủ Hoại Tử Biểu Bì",
+    slug: "rove-beetle-human-splice",
+    sci_fi_hype: "Tích hợp phức hợp sinh sản độc chất Paederin và hệ cộng sinh Pseudomonas tinh khiết vào tế bào biểu bì người lai. Đòn đánh giải phóng Paederin mạnh gấp 15 lần nọc rắn hổ mang trực tiếp lên da mục tiêu, phá hủy cấu trúc protein, gây hoại tử biểu bì, phồng rộp bọng nước và bỏng rát đau đớn tột cùng mà không cần cắn hay châm đốt chủ động.",
+    scientific_reality: "Cơ chế bài tiết hóa học: Paederin được tổng hợp qua enzyme của vi khuẩn Pseudomonas cộng sinh trú ngụ tại các tuyến mồ hôi biến đổi ở lòng bàn tay người lai. Tế bào biểu mô của người lai tự kháng độc tố nhờ đột biến cấu trúc ribosome ngăn Paederin gắn kết. Lớp màng lipid ngoài da dày giúp bảo vệ chống hấp thụ ngược độc tố.",
+    spliced_stats: {
+      strength: 80,
+      durability: 85,
+      speed: 84,
+      weaponry: 95,
+      special: 92,
+      lethality: 96
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 650,
+      paederin_concentration_mg_ml: 1.2,
+      protein_synthesis_inhibition_ratio: 0.98,
+      formulas: [
+        {
+          name: "Tỷ lệ hoại tử biểu bì do Paederin (Epidermal Necrosis Rate)",
+          equation: "A_necrosis = C_paederin * t_exposure * K_necrosis",
+          result: "15.0 cm² / microgram"
+        },
+        {
+          name: "Thời gian bền nhiệt độc tố (Toxoid Thermal Half-Life)",
+          equation: "t_half = ln(2) / k_decay",
+          result: "24 hours at 100°C"
+        }
+      ]
+    },
+    summary: "Lai ghép gen Kiến Ba Khoang mang lại khả năng tiết độc tố hoại tử Paederin qua biểu bì lòng bàn tay, gây bỏng rát cực độ vô hiệu hóa đối thủ chạm phải."
+  },
+  "saharan-silver-ant": {
+    trait_name: "Lớp Lông Biểu Bì Lăng Trụ Chitin Tản Nhiệt và Protein Sốc Nhiệt HSP70/90 Tốc Độ Cao",
+    title: "Người Lai Kiến Bạc Sahara - Chiến Binh Nhiệt Đới Siêu Tốc",
+    slug: "saharan-silver-ant-human-splice",
+    sci_fi_hype: "Cấy lớp lông chitin cấu trúc lăng trụ tam giác đều phản xạ quang phổ của Kiến Bạc Sahara lên da người lai, kết hợp khả năng kích hoạt protein sốc nhiệt HSP70/90 cực hạn. Người lai có thể bứt tốc chạy đạt tốc độ kinh ngạc gấp 200 lần chiều dài cơ thể mỗi giây (tương đương 40-50 km/h ở người) trong môi trường nắng nóng lên tới 53.6°C mà không bị đông tụ albumin hay suy kiệt nhiệt.",
+    scientific_reality: "Cơ chế tản nhiệt: Cấu trúc lăng trụ tam giác của lông phản xạ 96% tia hồng ngoại và bức xạ nhiệt trực tiếp từ ánh mặt trời, đồng thời giải phóng bức xạ hồng ngoại thụ động từ cơ thể chênh lệch nhiệt độ. Hệ tuần hoàn tăng cường sản sinh HSP70 và HSP90 để sửa chữa protein tế bào bị biến tính tức thời khi nhiệt độ cơ thể tiệm cận giới hạn.",
+    spliced_stats: {
+      strength: 80,
+      durability: 92,
+      speed: 98,
+      weaponry: 75,
+      special: 94,
+      lethality: 75
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 1420,
+      running_speed_m_s: 12.5,
+      max_body_temp_c: 53.6,
+      formulas: [
+        {
+          name: "Công suất tản nhiệt bức xạ hồng ngoại (Infrared Thermal Dissipation)",
+          equation: "P_rad = epsilon * sigma * A * (T_body^4 - T_ambient^4)",
+          result: "420 W"
+        },
+        {
+          name: "Tốc độ chạy bứt tốc cực đại (Sprint Velocity)",
+          equation: "v = stride_frequency * stride_length",
+          result: "12.5 m/s (45 km/h)"
+        }
+      ]
+    },
+    summary: "Tế bào lông lăng trụ phản xạ nhiệt và kích hoạt HSP protein giúp người lai bứt tốc cực đại dưới cái nóng thiêu đốt sa mạc mà không bị quá nhiệt nội môi."
+  },
+  "snake-mimic-caterpillar": {
+    trait_name: "Hệ Thống Bơm Áp Lực Dịch Bạch Huyết Hemolymph Phình Lồng Ngực và Mô Phỏng Vân 3D",
+    title: "Người Lai Sâu Bướm Giả Rắn - Bậc Thầy Đe Dọa Ảo Giác",
+    slug: "snake-mimic-caterpillar-human-splice",
+    sci_fi_hype: "Tích hợp cấu trúc điều khiển áp lực dịch cơ thể hemolymph và vân da bụng ngụy trang của Sâu Bướm Giả Rắn. Người lai có thể chủ động chuyển dịch dòng dịch cơ thể với áp lực cực nhanh dồn lên lồng ngực và cổ trong vòng 2 giây, làm phình to biến dạng vùng ngực thành hình dạng đầu rắn độc khổng lồ có đốm mắt 3D óng ánh phản quang khúc xạ ánh sáng, đi kèm tiếng rít khí quản phì phì dọa sợ và gây ảo giác hoảng loạn cực lớn cho đối thủ.",
+    scientific_reality: "Cơ chế biến hình: Các khoang chứa dịch bạch huyết được bao bọc bởi các sợi cơ vân chéo co bóp dưới sự điều khiển của xung thần kinh cholinergic, đẩy 4.5 lít dịch lên phần ngực phía trước. Vân da bụng chứa các hạt tinh thể guanine khúc xạ ánh sáng tạo độ sâu 3D cho 'đôi mắt giả', đánh lừa thị giác kẻ địch.",
+    spliced_stats: {
+      strength: 80,
+      durability: 85,
+      speed: 82,
+      weaponry: 80,
+      special: 98,
+      lethality: 84
+    },
+    formulas_and_data: {
+      human_mass_kg: 75,
+      grafts_weight_g: 1100,
+      inflation_time_seconds: 1.8,
+      false_strike_velocity_m_s: 18.5,
+      formulas: [
+        {
+          name: "Áp lực dịch bạch huyết dồn phình ngực (Hemolymph Inflation Pressure)",
+          equation: "P = F_muscular / A_diaphragm",
+          result: "180 kPa"
+        },
+        {
+          name: "Tần số âm thanh phì phì đe dọa (Hissing Sound Frequency)",
+          equation: "f = v_sound / (4 * L_spiracle)",
+          result: "4200 Hz"
+        }
+      ]
+    },
+    summary: "Lai ghép gen Sâu Bướm Giả Rắn cung cấp cơ chế phình ngực bằng dịch cơ thể hemolymph tạo hình đầu rắn 3D sinh động kết hợp tiếng rít phì phì dọa sợ đối thủ."
+  },
   "emperor-scorpion": {
     trait_name: "Hệ Thống Giáp Sừng Đen Phát Huỳnh Quang UV và Cường Hóa Lực Kẹp Ngón Tay",
     title: "Người Lai Bọ Cạp Hoàng Đế - Chiến Binh Dạ Quang Cường Lực",
