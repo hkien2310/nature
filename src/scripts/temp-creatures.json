@@ -1,222 +1,206 @@
 [
   {
-    "id": "blue-dragon-sea-slug",
-    "name": "Sên Biển Rồng Xanh",
-    "scientificName": "Glaucus atlanticus",
+    "id": "superb-lyrebird",
+    "name": "Chim Thiên Cầm",
+    "scientificName": "Menura novaehollandiae",
     "taxonomy": {
-      "class": "Gastropoda",
-      "order": "Nudibranchia",
-      "family": "Glaucidae"
+      "class": "Aves",
+      "order": "Passeriformes",
+      "family": "Menuridae"
     },
-    "realWeight": "~3 - 4 g",
-    "size": "3 - 4 cm",
-    "characteristics": "Thân hình dẹt, thon dài với 6 chi phân nhánh xòe rộng chứa các nhánh ngón tay (cerata). Bụng màu xanh lam đậm hoặc nhạt, lưng màu xám bạc. Thiết kế ngụy trang ngược (countershading) hoàn hảo khi trôi nổi trên mặt nước.",
-    "habitat": "Mặt nước đại dương ôn đới và nhiệt đới ấm áp, trôi dạt tự do theo gió và dòng hải lưu.",
-    "location": "Các vùng biển nhiệt đới và cận nhiệt đới trên khắp thế giới (Đại Tây Dương, Thái Bình Dương, Ấn Độ Dương).",
-    "survival_method": "Trôi nổi ngửa bụng lên trời bằng cách nuốt một bong bóng khí vào dạ dày. Màu sắc bụng xanh lam hòa lẫn với màu nước biển để tránh chim ăn thịt từ trên cao, lưng màu xám bạc hòa vào ánh nắng để tránh cá săn mồi từ dưới sâu.",
-    "unique_traits": "Khả năng miễn nhiễm hoàn toàn với chất độc của sứa chiến tranh Bồ Đào Nha (Physalia physalis). Chúng ăn và chủ động hấp thụ, cô đặc các tế bào gai chứa nọc độc (nematocysts) của sứa rồi chuyển đến các ngón tay (cerata) để làm vũ khí tự vệ cực kỳ độc hại.",
-    "shortDescription": "Trôi ngửa ngụy trang ngược, hấp thụ nọc độc sứa chiến tranh Bồ Đào Nha để tự vệ.",
-    "description": "Sên Biển Rồng Xanh (Glaucus atlanticus) là một loài sên biển trần độc đáo thuộc bộ Sên trần. Chúng dành cả đời trôi nổi trên bề mặt đại dương nhờ một bong bóng khí nhỏ trong dạ dày. Mặc dù có kích thước nhỏ bé, chúng là những kẻ đi săn đáng sợ đối với các sinh vật thuộc nhóm pleuston (sinh vật trôi nổi mặt nước) như sứa lửa Bồ Đào Nha. Không chỉ không bị ảnh hưởng bởi độc tố chết người của sứa, rồng xanh còn lưu trữ các nang độc chưa nổ của con mồi trong các mô của mình. Điều này khiến cú chích từ một con rồng xanh nhỏ bé thậm chí còn nguy hiểm và đau đớn hơn cả loài sứa mà nó ăn.",
+    "realWeight": "~0.9 - 1.2 kg",
+    "size": "80 - 100 cm",
+    "characteristics": "Chim có kích thước trung bình cỡ gà nhà, bộ lông chủ yếu màu nâu xám với các điểm nhấn màu hạt dẻ ở cánh. Điểm nổi bật nhất là chiếc đuôi của chim đực gồm 16 chiếc lông dài biến đổi kỳ diệu thành hai chiếc lông rìa cong quyến rũ có vân nổi giống như cây đàn lyre cổ đại, xen kẽ các sợi tơ trắng muốt.",
+    "habitat": "Rừng mưa nhiệt đới ôn đới và cận nhiệt đới ẩm ướt ở đông nam Úc, nơi có thảm thực vật rậm rạp.",
+    "location": "Các khu vực rừng rậm thuộc New South Wales, Victoria và Queensland, Úc.",
+    "survival_method": "Thích nghi với lối sống chủ yếu dưới mặt đất rừng. Chim sử dụng đôi chân khỏe mạnh cấu tạo móng vuốt nhọn sắc để bới đất tìm thức ăn. Khi gặp nguy hiểm, chúng thường chạy nhanh luồn lách qua các bụi rậm hoặc nhảy lên các cành cây thấp thay vì bay cao vì cánh ngắn và yếu. Để sinh tồn và bảo vệ lãnh thổ, chúng phát triển hệ thống giao tiếp cực kỳ tinh vi bằng cách bắt chước tiếng kêu báo động của các loài chim khác hoặc tiếng động từ môi trường để đánh lạc hướng kẻ săn mồi.",
+    "unique_traits": "Sở hữu minh chứng vĩ đại nhất của sự bắt chước âm thanh trong thế giới tự nhiên nhờ cấu quản (syrinx) tiến hóa phức tạp nhất trong lớp chim với 3 cặp cơ điều khiển độc lập. Khả năng tái tạo hoàn hảo hơn 80% âm thanh nhân tạo (máy cưa, máy ảnh, còi báo động) lẫn tự nhiên.",
+    "shortDescription": "Nhà giả giọng vĩ đại nhất thế giới tự nhiên. Đuôi hình đàn lyre lộng lẫy.",
+    "description": "Chim Thiên Cầm là biểu tượng sinh học độc đáo của nước Úc, nổi tiếng với khả năng bắt chước bất kỳ âm thanh nào trong vùng nghe được của nó. Chim đực sử dụng chiếc đuôi hình đàn lyre lộng lẫy kết hợp các màn nhảy múa điệu nghệ và chuỗi âm thanh tái tạo sống động vô cùng phức tạp để thu hút con cái trong mùa sinh sản. Không chỉ bắt chước tiếng hót của hơn 20 loài chim rừng khác, chúng còn khiến con người kinh ngạc khi mô phỏng chính xác tiếng cưa máy gầm rú, tiếng màn trập camera tanh tách hay còi báo động cháy rừng.",
     "strengths": [
-      "Khả năng lưu trữ và cô đặc nọc độc từ con mồi cực kỳ nguy hiểm",
-      "Ngụy trang ngược hoàn hảo giúp tàng hình trước cả kẻ thù trên trời lẫn dưới nước",
-      "Cơ chế di chuyển trôi nổi tự do không tiêu tốn bất kỳ năng lượng nào"
+      "Cấu quản tiến hóa đỉnh cao cho khả năng mô phỏng âm thanh phức tạp không loài nào sánh bằng",
+      "Đôi chân cực kỳ khỏe với các móng vuốt lớn dùng để đào bới và phòng thủ cận chiến",
+      "Trí nhớ thính giác siêu phàm lưu giữ các chuỗi âm thanh phức tạp hàng năm trời",
+      "Kỹ năng ẩn nấp trong bụi rậm xuất sắc nhờ bộ lông màu trung tính dễ hòa lẫn"
     ],
     "weaknesses": [
-      "Hoàn toàn phụ thuộc vào gió và dòng nước để di chuyển, dễ bị sóng đánh dạt vào bờ cát gây chết khô",
-      "Cơ thể mềm không có lớp vỏ hay giáp bảo vệ vật lý",
-      "Khó săn mồi nếu mật độ sinh vật trôi nổi suy giảm"
+      "Khả năng bay lượn rất yếu, cánh ngắn chỉ thích hợp để nhảy hoặc lướt gió khoảng ngắn",
+      "Đuôi của con đực rất dài khiến chúng chuyển động cồng kềnh hơn dưới mặt đất khi trốn chạy",
+      "Dễ bị tổn thương bởi các loài thú săn mồi xâm hại như cáo và mèo hoang"
     ],
     "funFacts": [
-      "Rồng xanh bơi ngửa trong suốt cuộc đời của mình, nghĩa là mặt lưng của nó thực chất hướng xuống đáy biển còn mặt bụng hướng lên trời",
-      "Khi bị trôi dạt lên bãi cát, chất độc tích tụ trong cơ thể chúng vẫn cực kỳ nguy hiểm và có thể gây bỏng da nghiêm trọng nếu chạm vào",
-      "Chúng là loài lưỡng tính, khi giao phối cả hai cá thể sẽ đều sản sinh trứng và tinh trùng cùng lúc"
+      "Cá thể chim thiên cầm nổi tiếng tại Vườn thú Adelaide từng bắt chước hoàn hảo tiếng búa khoan của thợ sửa chữa",
+      "Chiếc đuôi lộng lẫy hình đàn lyre chỉ thuộc về chim đực trưởng thành và phải mất tới 7 năm để phát triển hoàn thiện",
+      "Chúng có thể tạo ra âm thanh nổi bằng cách đồng thời sử dụng hai màng rung độc lập ở phế quản bên trái và phải"
     ],
     "sources": [
       {
-        "url": "https://www.nationalgeographic.com/animals/invertebrates/facts/blue-dragon-glaucus-atlanticus",
-        "label": "National Geographic - Blue Dragon Sea Slug Guide"
+        "url": "https://doi.org/10.1016/j.anbehav.2013.03.023",
+        "label": "Avian vocal mimicry in the superb lyrebird"
       },
       {
-        "url": "https://doi.org/10.1093/mollus/eyy001",
-        "label": "Journal of Molluscan Studies - Biogeography of Glaucus atlanticus"
+        "url": "https://www.nationalgeographic.com/animals/birds/facts/superb-lyrebird",
+        "label": "National Geographic - Superb Lyrebird Facts"
       }
     ],
-    "imageColor": "#0984e3",
+    "imageColor": "#8E7C6C",
     "stats": {
       "strength": 25,
-      "durability": 30,
-      "speed": 20,
-      "weaponry": 90,
+      "durability": 35,
+      "speed": 55,
+      "weaponry": 15,
       "special": 95,
-      "lethality": 88
+      "lethality": 10
     },
-    "diet_type": "carnivore",
-    "diet_items": [
-      "Portuguese man-of-war",
-      "blue button jelly",
-      "violet snail"
-    ],
-    "activity_pattern": "variable",
-    "lifespan_min": 1,
-    "lifespan_max": 12,
-    "lifespan_unit": "months",
-    "reproduction_type": "hermaphrodite",
-    "reproduction_notes": "Lưỡng tính đồng thời. Hai con sên giao phối bằng cách thụ tinh chéo lẫn nhau. Sau đó, chúng đẻ các chuỗi trứng dạng sợi, thường gắn vào các bộ xương còn lại của con mồi hoặc vật trôi nổi.",
-    "locomotion": "swim",
-    "speed_max": 0.5,
-    "conservation_status": "LC",
-    "size_min_mm": 20.0,
-    "size_max_mm": 40.0,
-    "weight_avg_g": 3.5,
-    "ai_p4p_score": 72,
-    "ai_tier": "B"
-  },
-  {
-    "id": "immortal-jellyfish",
-    "name": "Sứa Bất Tử",
-    "scientificName": "Turritopsis dohrnii",
-    "taxonomy": {
-      "class": "Hydrozoa",
-      "order": "Anthoathecata",
-      "family": "Oceaniidae"
-    },
-    "realWeight": "~0.1 - 0.2 g",
-    "size": "4.5 - 5 mm",
-    "characteristics": "Cơ thể dạng chuông trong suốt nhỏ bé. Mặt trong có một dạ dày lớn màu đỏ gạch hoặc đỏ tươi tươi sáng. Các xúc tu xếp xung quanh rìa chuông tăng dần từ 8 xúc tu ở giai đoạn non lên đến 80-90 xúc tu khi trưởng thành.",
-    "habitat": "Các vùng biển nông ấm áp cũng như đại dương nhiệt đới trên toàn cầu.",
-    "location": "Ban đầu từ vùng biển Địa Trung Hải, nay đã lan rộng ra khắp thế giới thông qua các khoang nước dằn của tàu biển.",
-    "survival_method": "Khi gặp điều kiện bất lợi như đói nghèo, thay đổi nhiệt độ đột ngột, tổn thương cơ học hoặc già đi, thay vì chết đi, chúng sẽ chủ động co rút cơ thể, rụng xúc tu và chìm xuống đáy biển để biến đổi ngược lại thành một khối polyp dạng chồi ban đầu.",
-    "unique_traits": "Chu kỳ sống đảo ngược độc nhất vô nhị nhờ quá trình chuyển biệt hóa tế bào (transdifferentiation), cho phép tế bào đã biệt hóa trở lại thành tế bào gốc vạn năng và tái sinh toàn bộ cơ thể từ đầu.",
-    "shortDescription": "Loài duy nhất có khả năng đảo ngược vòng đời từ trưởng thành về dạng ấu trùng, đạt sự bất tử sinh học.",
-    "description": "Sứa Bất Tử (Turritopsis dohrnii) là sinh vật duy nhất trên Trái Đất được biết đến với khả năng bất tử về mặt sinh học. Khi đạt đến tuổi trưởng thành sinh dục và sau khi sinh sản, hoặc khi gặp tổn thương vật lý, nó có thể kích hoạt quá trình tự đảo ngược vòng đời để quay lại trạng thái polyp trẻ trung của mình. Quá trình này được thực hiện qua hiện tượng chuyển biệt hóa tế bào, trong đó các tế bào cơ hoặc tế bào da biến đổi trực tiếp thành các loại tế bào chuyên biệt khác. Về mặt lý thuyết, quá trình này có thể lặp đi lặp lại vô hạn, giúp loài sứa này thoát khỏi cái chết do tuổi già.",
-    "strengths": [
-      "Khả năng tái sinh và hồi sinh vô hạn giúp tránh cái chết tự nhiên do lão hóa",
-      "Khả năng thích nghi và nhân bản cực mạnh trong các môi trường khác nhau",
-      "Kích thước nhỏ giúp dễ dàng lẩn trốn trong nước"
-    ],
-    "weaknesses": [
-      "Dễ dàng bị ăn thịt bởi các loài cá hoặc giáp xác lớn do cơ thể mềm yếu và chậm chạp",
-      "Giai đoạn chuyển đổi polyp dưới đáy biển rất dễ bị tấn công hoặc vùi lấp bởi trầm tích",
-      "Không có khả năng di chuyển tự chủ nhanh chống lại dòng chảy xiết"
-    ],
-    "funFacts": [
-      "Sự hồi xuân của loài sứa này giống như một con bướm biến ngược trở lại thành sâu bướm, hoặc một quả trứng gà nở ra con gà rồi con gà lại biến thành quả trứng",
-      "Trong quá trình biến đổi ngược, toàn bộ hệ thần kinh và cơ quan của sứa bị phá hủy hoàn toàn để tái cấu trúc lại từ đầu",
-      "Nhờ khả năng bất tử sinh học và đi lậu vé qua nước dằn tàu biển, loài sứa này đang thực hiện một cuộc xâm lăng thầm lặng trên phạm vi toàn cầu"
-    ],
-    "sources": [
-      {
-        "url": "https://doi.org/10.1073/pnas.2201825119",
-        "label": "PNAS - Comparative genomics of longevity and reversibility in Turritopsis dohrnii"
-      },
-      {
-        "url": "https://www.nytimes.com/2012/12/02/magazine/can-a-jellyfish-unlock-the-secret-of-immortality.html",
-        "label": "The New York Times - Can a Jellyfish Unlock the Secret of Immortality?"
-      }
-    ],
-    "imageColor": "#ff7675",
-    "stats": {
-      "strength": 5,
-      "durability": 99,
-      "speed": 15,
-      "weaponry": 10,
-      "special": 100,
-      "lethality": 5
-    },
-    "diet_type": "carnivore",
-    "diet_items": [
-      "plankton",
-      "fish eggs",
-      "small mollusks"
-    ],
-    "activity_pattern": "variable",
-    "lifespan_min": 100,
-    "lifespan_max": 1000,
+    "diet_type": "omnivore",
+    "diet_items": ["côn trùng", "giun đất", "nhện", "hạt cây", "ếch nhỏ"],
+    "activity_pattern": "diurnal",
+    "lifespan_min": 15,
+    "lifespan_max": 20,
     "lifespan_unit": "years",
     "reproduction_type": "sexual",
-    "reproduction_notes": "Sinh sản hữu tính ở giai đoạn trưởng thành (medusa) qua thụ tinh ngoài. Trứng thụ tinh phát triển thành ấu trùng planula, chìm xuống đáy tạo thành polyp. Tuy nhiên, giai đoạn trưởng thành cũng có thể sinh sản vô tính bằng cách đảo ngược chu kỳ thành polyp.",
-    "locomotion": "swim",
-    "speed_max": 0.2,
+    "reproduction_notes": "Chim đực giao phối đa thê và không tham gia nuôi con. Chim cái tự xây tổ hình vòm khổng lồ trên mặt đất hoặc hốc đá, đẻ duy nhất một quả trứng mỗi mùa và ấp trong 50 ngày.",
+    "locomotion": "hybrid",
+    "speed_max": 15,
     "conservation_status": "LC",
-    "size_min_mm": 4.0,
-    "size_max_mm": 5.0,
-    "weight_avg_g": 0.15,
-    "ai_p4p_score": 60,
-    "ai_tier": "C"
+    "size_min_mm": 800,
+    "size_max_mm": 1000,
+    "weight_avg_g": 1050
   },
   {
-    "id": "cookiecutter-shark",
-    "name": "Cá Mập Cookiecutter",
-    "scientificName": "Isistius brasiliensis",
+    "id": "vampire-squid",
+    "name": "Mực Ma Cà Rồng",
+    "scientificName": "Vampyroteuthis infernalis",
     "taxonomy": {
-      "class": "Chondrichthyes",
-      "order": "Squaliformes",
-      "family": "Dalatiidae"
+      "class": "Cephalopoda",
+      "order": "Vampyromorphida",
+      "family": "Vampyroteuthidae"
     },
-    "realWeight": "~1.5 - 2 kg",
-    "size": "40 - 50 cm",
-    "characteristics": "Thân hình thon dài hình điếu xì-gà màu nâu sẫm, mõm ngắn tròn và mắt lớn màu xanh lục phát sáng. Hàm răng dưới cực kỳ sắc nhọn, xếp khít nhau như một chiếc cưa tròn xén thịt.",
-    "habitat": "Vùng biển khơi sâu nhiệt đới và ôn đới ấm, thường cư trú ở độ sâu 1.000 - 3.700 mét vào ban ngày và di cư lên bề mặt vào ban đêm.",
-    "location": "Tất cả các đại dương nhiệt đới và cận nhiệt đới ấm trên thế giới.",
-    "survival_method": "Kẻ ký sinh và săn mồi cơ hội. Sử dụng khả năng phát quang sinh học cực mạnh ở mặt bụng để ngụy trang ngược, chừa lại một dải tối quanh cổ trông giống như bóng của một loài cá nhỏ để dụ các loài cá săn mồi lớn hơn đến gần. Khi con mồi lao tới, cá mập cookiecutter bám chặt vào da của nó bằng đôi môi hút chân không, cắm răng trên để cố định và xoay tròn cơ thể để răng dưới xén ra một khoanh thịt hình tròn hoàn hảo.",
-    "unique_traits": "Cú đớp xén thịt hình tròn đường kính tới 5cm độc nhất vô nhị. Sở hữu mật độ cơ quan phát sáng (photophores) lớn nhất ở cá mập, phát ra ánh sáng xanh lục huỳnh quang rực rỡ dưới bụng.",
-    "shortDescription": "Cú đớp xén tròn thịt hoàn hảo, phát quang giả danh cá nhỏ để dụ dỗ và ký sinh cá lớn.",
-    "description": "Cá Mập Cookiecutter (Isistius brasiliensis) là một loài cá mập nhỏ bé nhưng có lối sống vô cùng táo bạo. Thay vì săn bắt các con mồi nhỏ hơn, chúng chuyên tấn công các sinh vật lớn hơn nhiều như cá voi, cá heo, cá mập trắng lớn, và thậm chí cả tàu ngầm hạt nhân. Với đôi môi có khả năng bám dính như giác hút và bộ răng dưới khổng lồ sắc bén xếp khít nhau, cá mập cookiecutter sẽ cắn chặt vào mục tiêu, sau đó xoay tròn cả cơ thể 360 độ để khoét ra một khoanh thịt hình tròn sạch sẽ có dạng như chiếc bánh quy. Vết cắn của loài này không giết chết vật chủ ngay lập tức mà để lại các vết thương sâu hoắm, khiến nó trở thành một kẻ ký sinh đáng sợ bậc nhất đại dương.",
+    "realWeight": "~0.15 - 0.25 kg",
+    "size": "28 - 30 cm",
+    "characteristics": "Cơ thể mềm mại, màu đỏ sẫm đến đen bóng như nhung, mắt rất lớn có màu xanh ngọc hoặc đỏ tùy góc sáng. Thay vì 10 xúc tu thông thường, nó có 8 cánh tay liên kết với nhau bằng một lớp màng rộng tạo thành chiếc 'áo choàng' lót gai nhỏ (cirri) màu nhạt, kèm theo 2 sợi filament mảnh có thể kéo dài gấp nhiều lần chiều dài thân.",
+    "habitat": "Vùng biển sâu ôn đới và nhiệt đới tối tăm hoàn toàn, ở độ sâu từ 600 - 900 mét, nơi nồng độ oxy cực thấp (dưới 3%).",
+    "location": "Các đại dương sâu thuộc vùng biển ôn đới và nhiệt đới trên toàn thế giới.",
+    "survival_method": "Tồn tại dưới áp suất khổng lồ và lượng oxy nghèo nàn bằng cách hạ thấp tối đa nhịp trao đổi chất (tiết kiệm năng lượng). Chúng không săn đuổi mồi sống mà dùng hai sợi filament nhạy cảm thu thập các vụn hữu cơ trôi nổi gọi là tuyết đại dương. Khi bị đe dọa, chúng cuộn tròn chiếc màng đen gai góc ngược lên bao phủ đầu (Pineapple Posture) để ẩn nấp và bảo vệ cơ quan nhạy cảm.",
+    "unique_traits": "Là loài sinh vật duy nhất thuộc bộ Vampyromorphida còn sót lại, sở hữu các photophores (tế bào phát quang) phức tạp phủ khắp cơ thể có thể điều khiển cường độ sáng và kích cỡ chấm sáng linh hoạt để ngụy trang ngược sáng hoặc gây mù mắt tạm thời cho kẻ săn mồi.",
+    "shortDescription": "Hóa thạch sống của biển sâu. Tồn tại trong vùng chết không có oxy.",
+    "description": "Mực Ma Cà Rồng có tên khoa học mang ý nghĩa 'mực ma từ địa ngục', nhưng thực chất nó là một loài sinh vật hiền lành chuyên dọn dẹp đại dương. Chúng là cầu nối tiến hóa giữa mực ống thông thường và bạch tuộc. Điểm kỳ diệu của loài này là khả năng phát huỳnh quang sinh học rực rỡ và việc phóng ra một làn sương nhầy phát sáng chứa hàng nghìn hạt lân tinh màu xanh lam để che mắt kẻ thù trước khi từ từ rút lui vào bóng đêm tĩnh lặng của vùng biển sâu.",
     "strengths": [
-      "Hàm răng dưới siêu sắc bén hoạt động như dao cắt lỗ tròn chuyên nghiệp",
-      "Hệ thống ngụy trang phát quang sinh học tinh vi dụ dỗ con mồi thông minh",
-      "Đôi môi hút chân không bám dính chắc chắn giúp cố định vị trí trên vật chủ di chuyển nhanh"
+      "Khả năng hấp thụ và sử dụng oxy cực kỳ hiệu quả nhờ sắc tố hemocyanin cải tiến đặc chủng",
+      "Hệ thống phát quang sinh học cực kỳ linh hoạt để tạo ảo ảnh lập lòe ngụy trang",
+      "Phản ứng phòng thủ cuộn áo choàng bọc gai bảo vệ cơ thể an toàn khỏi sát thương trực diện",
+      "Lượng năng lượng tiêu hao cực thấp giúp chúng sống sót lâu hơn trong môi trường khan hiếm dinh dưỡng"
     ],
     "weaknesses": [
-      "Kích thước cơ thể tương đối nhỏ và bơi lội chậm chạp",
-      "Không có khả năng chiến đấu trực diện với kẻ thù có kích thước tương đương hoặc lớn hơn nếu bị phát hiện",
-      "Lớp da tương đối mỏng không có lớp vảy cứng bảo vệ"
+      "Cơ thể mềm yếu không có xương hoặc lớp vỏ bảo vệ cơ học vững chắc",
+      "Không thể di chuyển hoặc bơi lội với tốc độ cao để thoát thân",
+      "Không có túi mực truyền thống, việc phóng chất nhầy phát sáng tiêu tốn rất nhiều năng lượng và cần thời gian dài để tái tạo"
     ],
     "funFacts": [
-      "Cú đớp của loài cá mập này mạnh đến mức chúng từng làm hỏng các dây cáp sonar và vỏ cao su bảo vệ của các tàu ngầm quân sự, buộc hải quân phải lắp thêm lớp bảo vệ bằng sợi thủy tinh",
-      "Chúng rụng và nuốt toàn bộ hàm răng dưới của mình cùng một lúc để tái chế canxi giúp răng mới mọc nhanh hơn",
-      "Ánh sáng xanh lục phát ra dưới bụng của chúng có thể duy trì độ sáng liên tục đến 3 tiếng đồng hồ sau khi đưa ra khỏi nước"
+      "Nó sở hữu cặp mắt có tỷ lệ kích thước so với cơ thể lớn nhất trong toàn bộ thế giới động vật",
+      "Mực ma cà rồng không hề uống máu hay ăn thịt mồi sống như cái tên đáng sợ của nó, mà chỉ lọc ăn những xác chất hữu cơ trôi nổi",
+      "Chúng có thể kiểm soát các đốm sáng ở đầu xúc tu để tạo cảm giác cơ thể đang di chuyển ra xa khi thực chất vẫn đứng yên"
     ],
     "sources": [
       {
-        "url": "https://doi.org/10.1098/rsbl.2011.0375",
-        "label": "Biology Letters - Bioluminescent camouflage in the cookiecutter shark"
+        "url": "https://doi.org/10.1098/rsbl.2012.0457",
+        "label": "Vampire squid's unique detritivorous feeding strategy"
       },
       {
-        "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/isistius-brasiliensis/",
-        "label": "Florida Museum of Natural History - Cookiecutter Shark Profile"
+        "url": "https://www.mbari.org/animal/vampire-squid/",
+        "label": "MBARI - Vampire Squid Profile"
       }
     ],
-    "imageColor": "#57606f",
+    "imageColor": "#4A0E17",
     "stats": {
-      "strength": 45,
-      "durability": 40,
-      "speed": 55,
-      "weaponry": 85,
+      "strength": 15,
+      "durability": 45,
+      "speed": 25,
+      "weaponry": 30,
       "special": 90,
-      "lethality": 75
+      "lethality": 15
     },
-    "diet_type": "parasitic",
-    "diet_items": [
-      "whales",
-      "dolphins",
-      "tuna",
-      "sharks"
+    "diet_type": "detritivore",
+    "diet_items": ["tuyết đại dương", "phân plankton", "xác giáp xác nhỏ", "mảnh hữu cơ trôi nổi"],
+    "activity_pattern": "variable",
+    "lifespan_min": 8,
+    "lifespan_max": 10,
+    "lifespan_unit": "years",
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Sinh sản thông qua thụ tinh gián tiếp bằng cách truyền gói tinh trùng (spermatophores). Mực cái đẻ trứng nhỏ trôi nổi tự do trong nước sâu mà không chăm sóc.",
+    "locomotion": "swim",
+    "speed_max": 2,
+    "conservation_status": "LC",
+    "size_min_mm": 280,
+    "size_max_mm": 300,
+    "weight_avg_g": 200
+  },
+  {
+    "id": "chinese-pangolin",
+    "name": "Tê Tê Vàng",
+    "scientificName": "Manis pentadactyla",
+    "taxonomy": {
+      "class": "Mammalia",
+      "order": "Pholidota",
+      "family": "Manidae"
+    },
+    "realWeight": "~2 - 7 kg",
+    "size": "40 - 60 cm",
+    "characteristics": "Thân hình thon dài, mõm nhọn, chân ngắn khỏe. Toàn bộ phần lưng, đầu và đuôi được bao phủ bởi những lớp vảy sừng xếp chồng lên nhau như ngói lợp, cấu tạo từ chất sừng keratin cứng cáp màu vàng nâu hoặc xám đất.",
+    "habitat": "Rừng mưa nhiệt đới ẩm, rừng tre, đồi cây bụi và các vùng đất nông nghiệp trung du có đất tơi xốp.",
+    "location": "Nam Trung Quốc, Đài Loan, Nepal, Bhutan, Bắc Ấn Độ, Myanmar, Lào và miền Bắc Việt Nam.",
+    "survival_method": "Hoạt động kiếm ăn chủ yếu về đêm. Chúng đào các hang sâu dưới lòng đất để ngủ ngày và điều hòa nhiệt độ. Khi phát hiện tổ côn trùng, chúng dùng móng vuốt chân trước bới đất hoặc phá tổ, sau đó luồn chiếc lưỡi cực dài dính đầy chất nhầy vào để bắt kiến và mối. Khi bị đe dọa, chúng cuộn tròn thân lại thành một quả bóng sừng bất khả xâm phạm, giấu phần bụng mềm yếu vào bên trong và có thể dựng các vảy sừng sắc bén lên để chống cự.",
+    "unique_traits": "Được bảo vệ bởi bộ giáp vảy keratin chiếm tới 20% tổng trọng lượng cơ thể. Sở hữu chiếc lưỡi dài đặc biệt khoảng 25-40 cm, bám sâu tận xương ức và khung xương chậu, có khả năng tiết ra nước bọt dính dẻo cực mạnh.",
+    "shortDescription": "Hiệp sĩ mang giáp vảy độc nhất vô nhị. Khắc tinh của loài mối.",
+    "description": "Tê Tê Vàng là loài động vật có vảy duy nhất còn tồn tại trong nhóm thú cổ. Do không có răng, chúng phải nuốt sỏi nhỏ vào dạ dày cơ để giúp nghiền nát thức ăn. Dù có lớp giáp vững chắc có thể đẩy lui cả báo đốm hay sư tử, tê tê lại đang đối mặt với nguy cơ tuyệt chủng cực kỳ nghiêm trọng do tình trạng săn bắt bất hợp pháp lấy thịt và vảy làm dược liệu Đông y không có căn cứ khoa học.",
+    "strengths": [
+      "Bộ giáp vảy keratin siêu cứng cáp có thể chống chịu những vết cắn sắc nhọn của thú dữ lớn",
+      "Khả năng cuộn tròn hoàn hảo bảo vệ tuyệt đối tất cả các cơ quan nội tạng",
+      "Đôi chi trước có móng vuốt siêu khỏe dùng để đào bới đất cứng và bê tông đất sét của ụ mối",
+      "Hệ thống cơ lưỡi đặc biệt cho phép thu hồi lưỡi chớp nhoáng với tần suất cực cao"
     ],
+    "weaknesses": [
+      "Hoàn toàn không có răng, không thể cắn hay tấn công sát thương trực diện bằng hàm",
+      "Tốc độ di chuyển chậm chạp khi đi trên mặt đất, đi bằng các khớp chi ngoài để bảo vệ móng",
+      "Khả năng sinh sản cực thấp, chỉ đẻ một con mỗi năm, chăm con mất rất nhiều thời gian"
+    ],
+    "funFacts": [
+      "Dạ dày của tê tê vàng có một cấu trúc sừng đặc biệt hoạt động như mề của chim để nghiền nát kiến cùng sỏi nhỏ",
+      "Tê tê con khi di chuyển sẽ cưỡi trực tiếp lên phần gốc đuôi cứng cáp của mẹ",
+      "Chúng có cơ quan cơ ở mũi và tai có khả năng đóng kín khít hoàn toàn để ngăn kiến chui vào cắn phá bên trong khi chúng đang đào tổ kiến"
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1016/j.jveb.2016.08.058",
+        "label": "Behavioral ecology of Chinese Pangolin"
+      },
+      {
+        "url": "https://www.iucnredlist.org/species/12764/123583998",
+        "label": "IUCN Red List - Manis pentadactyla Assessment"
+      }
+    ],
+    "imageColor": "#D4A373",
+    "stats": {
+      "strength": 40,
+      "durability": 85,
+      "speed": 30,
+      "weaponry": 35,
+      "special": 75,
+      "lethality": 20
+    },
+    "diet_type": "carnivore",
+    "diet_items": ["kiến", "mối", "nhộng côn trùng", "ấu trùng sâu đất"],
     "activity_pattern": "nocturnal",
     "lifespan_min": 10,
     "lifespan_max": 15,
     "lifespan_unit": "years",
-    "reproduction_type": "viviparous",
-    "reproduction_notes": "Thần thai noãn sinh (ovoviviparous). Con non phát triển trong trứng bên trong cơ thể mẹ, hấp thụ noãn hoàng cho đến khi nở ra và được sinh ra trực tiếp dưới dạng cá mập con hoàn chỉnh. Mỗi lứa đẻ có khoảng 6-12 con.",
-    "locomotion": "swim",
-    "speed_max": 12.0,
-    "conservation_status": "LC",
-    "size_min_mm": 300.0,
-    "size_max_mm": 560.0,
-    "weight_avg_g": 1800.0,
-    "ai_p4p_score": 68,
-    "ai_tier": "C"
+    "reproduction_type": "sexual",
+    "reproduction_notes": "Giao phối chủ yếu vào cuối mùa hè hoặc mùa thu. Con cái mang thai khoảng 120-150 ngày, sinh duy nhất một con non và nuôi dưỡng cẩn thận trong hang ẩm.",
+    "locomotion": "burrow",
+    "speed_max": 5,
+    "conservation_status": "CR",
+    "size_min_mm": 400,
+    "size_max_mm": 600,
+    "weight_avg_g": 4500
   }
 ]
