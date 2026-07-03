@@ -127,7 +127,7 @@ async function _fetchCreatures(): Promise<Creature[]> {
     // 1. Fetch creatures
     const { data: dbCreatures, error: cErr } = await supabase
       .from("creatures")
-      .select("*");
+      .select("id,name,scientific_name,class,order,family,real_weight,size,short_description,description,image_color,enrichment_count,ai_p4p_score,ai_tier,habitat,has_documentary,grading_count,created_at");
 
     if (cErr || !dbCreatures || dbCreatures.length === 0) {
       console.warn("Using static fallback for creatures list:", cErr?.message || "No data");
@@ -149,7 +149,7 @@ async function _fetchCreatures(): Promise<Creature[]> {
       });
     }
 
-    return dbCreatures.map((dbc: DbCreature) => mapDbCreatureToCreature(dbc, votesMap[dbc.id] || []));
+    return (dbCreatures as unknown as DbCreature[]).map((dbc) => mapDbCreatureToCreature(dbc, votesMap[dbc.id] || []));
   } catch (err) {
     console.error("Error fetching database creatures, falling back to static:", err);
     return staticCreatures;
