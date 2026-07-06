@@ -11,10 +11,12 @@ Khi nhận được yêu cầu `"Làm giàu Gauntlet"` cho một sinh vật (ví
 ### Các Bước Thực Hiện:
 1. **Chọn loại Gauntlet & Mốc so sánh (Benchmarks 3 Tầng)**:
    - **Xác định THẾ MẠNH ĐẶC TRƯNG** nhất của sinh vật (ví dụ: lực đấm, lực kéo, sức bật nhảy, tốc độ, độ cứng).
-   - **Quy tắc chọn Benchmark 3 Tầng**: Dựa vào thế mạnh trên, AI tự vận dụng kiến thức thực tế để chọn ra 3 mốc so sánh (benchmarks) nổi tiếng nhất thế giới về đúng phương diện đó. Ba mốc này phải tuân thủ cấu trúc 3 tầng với sức mạnh/kích thước tăng dần (Tầng 1: Vừa phải -> Tầng 2: Khủng khiếp -> Tầng 3: Tối thượng). 
-     - *Ví dụ bật nhảy: Tầng 1 - Kangaroo -> Tầng 2 - Máy phóng máy bay -> Tầng 3 - Tên lửa vũ trụ.*
-     - *Ví dụ đấm: Tầng 1 - Võ sĩ Boxer hạng nặng -> Tầng 2 - Máy búa thủy lực -> Tầng 3 - Đạn pháo xe tăng.*
-   - **KHÔNG DÙNG DATABASE**: Tuyệt đối tự do suy luận! Không được sử dụng bất kỳ database hay ví dụ cố định nào (chẳng hạn không lấy Xe tăng đọ với kỹ năng bật nhảy).
+   - **Quy tắc chọn Benchmark 3 Tầng**: Dựa vào thế mạnh trên, AI tự vận dụng kiến thức thực tế để chọn ra 3 mốc so sánh nổi tiếng nhất thế giới. 
+     - **LOGIC Chọn Đối thủ**: Mốc so sánh phải CỤ THỂ, RÕ RÀNG và SIÊU PHỔ BIẾN (những thứ mà ai cũng biết, vừa nghe tên là hình dung ngay được độ khủng khiếp, ví dụ: Xe tăng, Khủng long T-Rex, Tàu sân bay, Tên lửa vũ trụ, Võ sĩ hạng nặng). KHÔNG dùng các ví dụ mập mờ, khó hiểu hay tên thiết bị máy móc ít người biết.
+     - **FLOW Thăng tiến sức mạnh**: Ba đối thủ phải tạo thành một đường cong thăng tiến sức mạnh/kích thước tăng dần đầy kịch tính (Tầng 1: Đáng nể -> Tầng 2: Khủng khiếp -> Tầng 3: Tối thượng).
+     - *Ví dụ bật nhảy: Tầng 1 - Kangaroo -> Tầng 2 - Trực thăng -> Tầng 3 - Tên lửa vũ trụ Saturn V.*
+     - *Ví dụ đấm/phá: Tầng 1 - Võ sĩ Boxer hạng nặng -> Tầng 2 - Máy xúc khổng lồ -> Tầng 3 - Đạn pháo Xe tăng.*
+   - **KHÔNG DÙNG DATABASE**: Tuyệt đối tự do suy luận và KHÔNG bám vào database! Cứ thứ gì trên đời này nổi tiếng nhất về thế mạnh đó thì lôi ra làm mốc.
 2. **Mô phỏng Scale kích thước (Định luật Square-Cube Law)**:
    - Thay vì ép khối lượng, hãy **ép kích thước (size)** của sinh vật bằng với `size_m` của đối thủ.
    - Tính hệ số $K = \frac{\text{Size đối thủ}}{\text{Size gốc của sinh vật}}$.
