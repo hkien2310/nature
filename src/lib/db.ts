@@ -62,7 +62,7 @@ export interface WhatIfAnswer {
   question_id: string;
   title: string;
   slug: string;
-  perspective_type: "classic_scaling" | "biological_reality" | "evolutionary_mutation" | "custom";
+  perspective_type: "classic_scaling" | "biological_reality" | "evolutionary_mutation" | "custom" | "gauntlet";
   summary: string | null;
   content: string;
   formulas_and_data: {
@@ -613,5 +613,39 @@ export const getCreatureHumanSplices = unstable_cache(
 );
 
 
+export interface DbOpponent {
+  id: string;
+  name: string;
+  type: "animal" | "machine" | "human" | "nature_force";
+  size_m: number;
+  weight_kg: number;
+  pull_force_kg: number | null;
+  punch_force_kg: number | null;
+  speed_kmh: number | null;
+  description: string;
+  image_url: string | null;
+  created_at: string;
+  updated_at: string;
+}
 
+export interface Opponent extends DbOpponent {}
 
+// ── Cached: getOpponents ──────────────────────────────────
+export const getOpponents = unstable_cache(
+  async (): Promise<Opponent[]> => {
+    try {
+      const { data, error } = await supabase
+        .from("opponents")
+        .select("*")
+        .order("weight_kg", { ascending: true });
+
+      if (error) throw error;
+      return data || [];
+    } catch (err) {
+      console.error("Error fetching opponents:", err);
+      return [];
+    }
+  },
+  ["opponents-list"],
+  { revalidate: CACHE_TTL.BATTLES, tags: [CACHE_TAGS.BATTLES] } // using BATTLES tag as proxy or we could add a new one, but let's reuse
+);

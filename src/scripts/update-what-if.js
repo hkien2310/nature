@@ -6,16 +6,22 @@ const path = require("path");
 const envPath = path.join(__dirname, "../.env.local");
 let supabaseUrl = "";
 let supabaseAnonKey = "";
+let apiSecretKey = "";
 
 if (fs.existsSync(envPath)) {
   const envContent = fs.readFileSync(envPath, "utf-8");
   const urlMatch = envContent.match(/NEXT_PUBLIC_SUPABASE_URL\s*=\s*(.*)/);
   const keyMatch = envContent.match(/NEXT_PUBLIC_SUPABASE_ANON_KEY\s*=\s*(.*)/);
+  const secretMatch = envContent.match(/API_SECRET_KEY\s*=\s*(.*)/);
+  
   if (urlMatch) {
     supabaseUrl = urlMatch[1].replace(/['"]/g, "").trim();
   }
   if (keyMatch) {
     supabaseAnonKey = keyMatch[1].replace(/['"]/g, "").trim();
+  }
+  if (secretMatch) {
+    apiSecretKey = secretMatch[1].replace(/['"]/g, "").trim();
   }
 }
 
@@ -119,6 +125,26 @@ async function run() {
       }
     }
     console.log(`   ✅ Successfully upserted ${successCount}/${answers.length} answers.`);
+  }
+
+  // Ping revalidate API to clear Next.js Cache for the UI to update instantly
+  try {
+    console.log("\n🔄 Pinging Next.js Cache Revalidation API...");
+    const res = await fetch("http://localhost:3000/api/admin/revalidate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-api-key": apiSecretKey
+      },
+      body: JSON.stringify({ tag: "what-ifs" })
+    });
+    if (res.ok) {
+      console.log("   ✅ Cache cleared successfully! UI will reflect changes immediately.");
+    } else {
+      console.log("   ⚠️ Cache revalidation failed (Is the Next.js server running?). Res: ", res.status);
+    }
+  } catch (err) {
+    console.log("   ⚠️ Cache revalidation failed (Is the Next.js server running on localhost:3000?).");
   }
 
   console.log("\n🎉 What-If database update completed!");

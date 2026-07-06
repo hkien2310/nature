@@ -87,6 +87,8 @@ export default function WhatIfSection({ creatureId, slug }: WhatIfSectionProps) 
         return "Sinh Học Thực Tế";
       case "evolutionary_mutation":
         return "Đột Biến Thích Nghi";
+      case "gauntlet":
+        return "Scaling Gauntlet ⚔️";
       default:
         return "Góc Nhìn Khác";
     }
@@ -100,6 +102,8 @@ export default function WhatIfSection({ creatureId, slug }: WhatIfSectionProps) 
         return "text-red-400 border-red-500/30 bg-red-950/20";
       case "evolutionary_mutation":
         return "text-emerald-400 border-emerald-500/30 bg-emerald-950/20";
+      case "gauntlet":
+        return "text-purple-400 border-purple-500/30 bg-purple-950/20 shadow-[0_0_10px_rgba(168,85,247,0.2)]";
       default:
         return "text-amber-400 border-amber-500/30 bg-amber-950/20";
     }

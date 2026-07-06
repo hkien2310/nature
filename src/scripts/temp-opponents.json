@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Chó Pitbull (Pit Bull Terrier)",
+    "type": "animal",
+    "size_m": 1.0,
+    "weight_kg": 25,
+    "pull_force_kg": 150,
+    "punch_force_kg": null,
+    "speed_kmh": 45,
+    "description": "Loài chó nổi tiếng với cơ bắp cuồn cuộn và sức mạnh kéo đáng nể. Trong các cuộc thi kéo tạ (weight pulling), Pitbull có thể kéo những vật nặng gấp nhiều lần trọng lượng cơ thể.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Pitbull_dog_breed.jpg"
+  },
+  {
+    "name": "Khỉ đột lưng bạc (Silverback Gorilla)",
+    "type": "animal",
+    "size_m": 1.7,
+    "weight_kg": 200,
+    "pull_force_kg": 800,
+    "punch_force_kg": 1300,
+    "speed_kmh": 40,
+    "description": "Linh trưởng lớn nhất thế giới với sức mạnh thể chất phi thường. Chúng có khả năng nâng và kéo vật nặng từ 800kg đến 2000kg, và tung ra những cú đấm cực kỳ uy lực.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Silverback_Gorilla.jpg/1200px-Silverback_Gorilla.jpg"
+  },
+  {
+    "name": "Xe tăng M1 Abrams",
+    "type": "machine",
+    "size_m": 7.9,
+    "weight_kg": 62000,
+    "pull_force_kg": 45000,
+    "punch_force_kg": null,
+    "speed_kmh": 67,
+    "description": "Xe tăng chiến đấu chủ lực của Hoa Kỳ. Với động cơ tua-bin khí 1500 mã lực, cỗ máy thép 62 tấn này có sức kéo (drawbar pull) khổng lồ, nghiền nát mọi thứ trên đường đi.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/M1A1_Abrams_tank.jpg/1200px-M1A1_Abrams_tank.jpg"
+  }
+]

@@ -24,6 +24,8 @@
 - Chạy `"Làm giàu What-If"` để tạo và cập nhật kịch bản câu hỏi/câu trả lời phóng to cơ thể cho 3 sinh vật có điểm P4P cao nhất và ít câu hỏi What-If nhất. Đọc [what-if.md](file:///Users/hoangkien/Youtube/svh/docs/automations/what-if.md).
 - Chạy `"Làm giàu Ghép Gen"` để tự động cấy ghép gen của 3 sinh vật có điểm P4P cao nhất và chưa được cấy ghép vào cơ thể người. Đọc [human-splice.md](file:///Users/hoangkien/Youtube/svh/docs/automations/human-splice.md).
 - Chạy `"Làm giàu dữ liệu ảnh"` để tự động lấy 1 sinh vật thiếu ảnh, sinh ra 5 tấm ảnh tả thực bằng công cụ AI, tải lên Cloudinary và cập nhật Database. Đọc [enrich-images.md](file:///Users/hoangkien/Youtube/svh/docs/automations/enrich-images.md).
+- Chạy `"Làm giàu đối thủ"` để tự động tìm kiếm và nạp các mốc sức mạnh (benchmarks) của các đối thủ vào hệ thống. Đọc [enrich-opponents.md](file:///Users/hoangkien/Youtube/svh/docs/automations/enrich-opponents.md).
+- Chạy `"Làm giàu Gauntlet"` để tự động ép cân (scale) một sinh vật lên bằng kích thước đối thủ và viết kịch bản leo tháp. Đọc [enrich-gauntlet.md](file:///Users/hoangkien/Youtube/svh/docs/automations/enrich-gauntlet.md).
 
 
 
