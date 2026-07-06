@@ -497,6 +497,12 @@
     "creature_name": "Bọ Ngựa Hoa Quỷ",
     "title": "Leo tháp Phản Xạ & Đòn Đánh (Gauntlet Mode)",
     "slug": "leo-thap-phan-xa-don-danh-bo-ngua-hoa-quy-gauntlet"
+  },
+  {
+    "creature_id": "tiger-pufferfish",
+    "creature_name": "Cá Nóc Hổ",
+    "title": "Leo tháp Lực cắn (Gauntlet Mode)",
+    "slug": "leo-thap-luc-can-gauntlet-mode-ca-noc-ho"
   }
 ]
 
