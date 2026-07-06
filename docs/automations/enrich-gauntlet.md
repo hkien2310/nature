@@ -17,15 +17,26 @@ Khi nhận được yêu cầu `"Làm giàu Gauntlet"` cho một sinh vật (ví
      - *Ví dụ bật nhảy: Tầng 1 - Kangaroo -> Tầng 2 - Trực thăng -> Tầng 3 - Tên lửa vũ trụ Saturn V.*
      - *Ví dụ đấm/phá: Tầng 1 - Võ sĩ Boxer hạng nặng -> Tầng 2 - Máy xúc khổng lồ -> Tầng 3 - Đạn pháo Xe tăng.*
    - **KHÔNG DÙNG DATABASE**: Tuyệt đối tự do suy luận và KHÔNG bám vào database! Cứ thứ gì trên đời này nổi tiếng nhất về thế mạnh đó thì lôi ra làm mốc.
-2. **Triết Lý Scaling — Sức Mạnh Thực Tế, Không Scale Bằng Đối Thủ**:
-   - **KHÔNG ép sinh vật lớn bằng đối thủ** — Đây là sai lầm giết chết yếu tố bất ngờ. Nếu hai bên bằng nhau về kích thước thì không còn gì choáng ngợp nữa.
-   - **Giữ kích thước THỰC hoặc tạo CHÊNH LỆCH CÓ Ý NGHĨA**: Có 2 hướng hợp lệ:
-     - *Hướng A (Giữ nguyên thực)*: Sinh vật giữ kích thước thật 100%. Đối thủ lớn hơn nhiều lần nhưng **sức mạnh tỷ lệ cơ thể của sinh vật** nghiền nát nó hoàn toàn. (Ví dụ: Bọ hung 5g dùng lực kéo 1141x trọng lượng → kéo được 5.7kg, trong khi Chó Pitbull 25kg chỉ kéo được 150kg. Tính P4P thì bọ hung thắng tuyệt đối dù nhỏ hơn 5000 lần.)
-     - *Hướng B (Scale có chủ đích)*: Scale sinh vật lên nhưng vẫn **nhỏ hơn đáng kể** so với đối thủ để tạo sự bất ngờ tối đa. (Ví dụ: Bọ hung scale lên bằng con chó 25kg → nó kéo được 28.5 tấn. Pitbull chỉ kéo 150kg. Chênh lệch 190 lần!)
-   - **Trình bày chênh lệch theo số liệu cụ thể**: Luôn nêu rõ con số ("nhỏ hơn X lần" / "chênh lệch Y lần về sức mạnh") để người đọc cảm nhận được sự điên rồ.
-   - Tính lực vật lý dựa trên Square-Cube Law: $K = \frac{\text{Size mới}}{\text{Size gốc}}$, Khối lượng mới $= m_{gốc} \times K^3$.
-3. **Viết kịch bản chiến đấu**: Trình bày rõ sự chênh lệch kích thước, sức mạnh tỷ lệ cơ thể điên rồ để người đọc không thể tin vào mắt mình.
-5. **Tạo file JSON tạm thời**: Lưu dữ liệu vào file `src/scripts/temp-gauntlet.json` theo đúng cấu trúc của `update-what-if.js`.
+
+2. **Logic Scaling (Vật Lý Thuần Túy — Bắt Buộc)**:
+
+   **Nguyên tắc cốt lõi**: Ở mỗi Tầng, sinh vật được phóng to lên đến một **kích thước trung gian cụ thể** (nhỏ hơn đối thủ để giữ yếu tố bất ngờ), sau đó sức mạnh mới được tính lại theo vật lý và đem đọ với đối thủ ở **kích thước thực** của nó.
+
+   **Công thức (3 bước bắt buộc):**
+   - Bước 1: Chọn `size_mới` cụ thể cho sinh vật ở tầng đó (ví dụ "bằng nắm tay" = 0.08m, "bằng con mèo" = 0.4m, "bằng con người" = 1.7m).
+   - Bước 2: K = size_mới / size_gốc → Khối lượng mới = m_gốc × K³ → Lực mới = sức_mạnh_tỷ_lệ_gốc × m_mới
+   - Bước 3: So sánh Lực mới của sinh vật vs sức mạnh thực tế của đối thủ (đối thủ KHÔNG được scale).
+
+   **Cấu trúc 3 tầng mẫu (kích thước tăng dần, đối thủ cũng mạnh dần):**
+   - *Tầng 1*: Scale lên kích thước nhỏ dễ hình dung (nắm tay, bóng tennis) → Đọ với Đối thủ Tầng 1. Nhấn mạnh: "Nhỏ hơn X lần nhưng mạnh hơn Y lần!"
+   - *Tầng 2*: Scale lên cỡ vừa (con mèo, con chó nhỏ) → Đọ với Đối thủ Tầng 2. Đối thủ to hơn nhưng vẫn bị nghiền nát.
+   - *Tầng 3*: Scale lên cỡ lớn (người lớn, xe hơi) → Đọ với Đối thủ Tầng 3 tối thượng. Kịch tính cực đại.
+
+   **Trái tim của bài viết là 2 con số tương phản**: "Nhỏ hơn đối thủ X lần" vs "Mạnh hơn đối thủ Y lần". Cặp số này phải xuất hiện trong mỗi tầng.
+
+3. **Viết kịch bản hư cấu sống động**: Mỗi tầng là một đoạn văn ngắn có cảm xúc — mô tả cuộc đối đầu, rồi kết bằng câu số liệu rõ ràng. (Ví dụ: "Con bọ bằng nắm tay đã kéo gã khổng lồ 28.5 tấn... trong khi Pitbull chỉ kéo được 150kg.")
+
+4. **Tạo file JSON tạm thời**: Lưu dữ liệu vào file `src/scripts/temp-gauntlet.json` theo đúng cấu trúc của `update-what-if.js`.
    ```json
    {
      "creature_id": "UUID_CỦA_SINH_VẬT",
