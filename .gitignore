@@ -37,3 +37,4 @@ memory/*.md
 *.swo
 .vercel
 .env*
+temp-*.json
