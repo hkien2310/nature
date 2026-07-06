@@ -1,0 +1,489 @@
+=== COMPACT GAUNTLETS ===
+[
+  {
+    "creature_id": "horned-dung-beetle",
+    "creature_name": "Bọ Hung Sừng",
+    "title": "Leo tháp Kéo co (Gauntlet Mode)",
+    "slug": "leo-thap-keo-co-gauntlet-mode-bo-hung-sung"
+  },
+  {
+    "creature_id": "redback-spider",
+    "creature_name": "Nhện Lưng Đỏ Úc",
+    "title": "Leo tháp Bẫy tơ (Gauntlet Mode)",
+    "slug": "leo-thap-bay-to-nhen-lung-do-gauntlet"
+  },
+  {
+    "creature_id": "tarantula-hawk",
+    "creature_name": "Tò Vò Săn Nhện",
+    "title": "Leo tháp Châm Đốt Xuyên Giáp (Gauntlet Mode)",
+    "slug": "leo-thap-cham-dot-tarantula-hawk-gauntlet"
+  },
+  {
+    "creature_id": "emperor-scorpion",
+    "creature_name": "Bọ Cạp Hoàng Đế",
+    "title": "Leo tháp Càng Kẹp Tử Thần (Gauntlet Mode)",
+    "slug": "leo-thap-cang-kep-tu-than-gauntlet-mode"
+  },
+  {
+    "creature_id": "bolas-spider",
+    "creature_name": "Nhện Bolas",
+    "title": "Thử Thách Xích Keo Bolas (Gauntlet Mode)",
+    "slug": "nhen-bolas-leo-thap-gauntlet-mode"
+  },
+  {
+    "creature_id": "darwins-bark-spider",
+    "creature_name": "Nhện Vỏ Cây Darwin",
+    "title": "Thử Thách Chặn Lực Gauntlet Mode",
+    "slug": "leo-thap-gauntlet-nhen-vo-cay-darwin"
+  },
+  {
+    "creature_id": "dracula-ant",
+    "creature_name": "Kiến Dracula",
+    "title": "Leo tháp Hàm kẹp Siêu tốc (Gauntlet Mode)",
+    "slug": "leo-thap-ham-kep-sieu-toc-gauntlet-mode"
+  },
+  {
+    "creature_id": "water-strider",
+    "creature_name": "Bọ Nhện Nước",
+    "title": "Leo tháp Lướt nước & Tải trọng (Gauntlet Mode)",
+    "slug": "leo-thap-luot-nuoc-tai-trong-gauntlet-mode-bo-nhen-nuoc"
+  },
+  {
+    "creature_id": "trap-jaw-ant",
+    "creature_name": "Kiến Bẫy Hàm",
+    "title": "Leo tháp Đập Hàm (Gauntlet Mode)",
+    "slug": "leo-thap-dap-ham-gauntlet-mode"
+  },
+  {
+    "creature_id": "antlion",
+    "creature_name": "Kiến Sư Tử",
+    "title": "Leo tháp Kẹp nghiền & Phục kích (Gauntlet Mode)",
+    "slug": "kien-su-tu-leo-thap-gauntlet-mode"
+  },
+  {
+    "creature_id": "sydney-funnel-web-spider",
+    "creature_name": "Nhện Lưới Phễu Sydney",
+    "title": "Leo tháp Nanh Độc & Cắn Lực (Gauntlet Mode)",
+    "slug": "leo-thap-nanh-doc-can-luc-gauntlet-mode-nhen-luoi-pheu-sydney"
+  },
+  {
+    "creature_id": "pistol-shrimp",
+    "creature_name": "Tôm Súng",
+    "title": "Leo tháp Pháo Sóng Xung Kích (Gauntlet Mode)",
+    "slug": "leo-thap-phao-song-xung-kich-gauntlet-mode-tom-sung"
+  },
+  {
+    "creature_id": "weaver-ant",
+    "creature_name": "Kiến Dệt Lá",
+    "title": "Leo tháp Bám dính (Gauntlet Mode)",
+    "slug": "leo-thap-bam-dinh-gauntlet-mode"
+  },
+  {
+    "creature_id": "titan-beetle",
+    "creature_name": "Bọ Cánh Cứng Titan",
+    "title": "Leo tháp Hàm Kẹp Tử Thần (Gauntlet Mode)",
+    "slug": "leo-thap-ham-kep-tu-than-bo-canh-cung-titan"
+  },
+  {
+    "creature_id": "net-casting-spider",
+    "creature_name": "Nhện Quăng Lưới",
+    "title": "Leo tháp Vây lưới Săn mồi (Gauntlet Mode)",
+    "slug": "leo-thap-vay-luoi-san-moi-gauntlet-mode-nhen-quang-luoi"
+  },
+  {
+    "creature_id": "dung-beetle",
+    "creature_name": "Bọ Hung Sừng",
+    "title": "Leo tháp Sức Kéo (Gauntlet Mode) - Bọ Hung Sừng",
+    "slug": "thu-thach-suc-keo-gauntlet-mode-bo-hung-sung"
+  },
+  {
+    "creature_id": "peacock-mantis-shrimp",
+    "creature_name": "Tôm Tít Búa Tạ",
+    "title": "Leo tháp Đấm Phá (Gauntlet Mode)",
+    "slug": "leo-thap-dam-pha-gauntlet-mode"
+  },
+  {
+    "creature_id": "goliath-beetle",
+    "creature_name": "Bọ Hung Goliath",
+    "title": "Leo tháp Kéo co (Gauntlet Mode)",
+    "slug": "dau-truong-keo-co-sieu-cap-gauntlet-mode"
+  },
+  {
+    "creature_id": "tawny-crazy-ant",
+    "creature_name": "Kiến Điên Tawny",
+    "title": "Leo tháp Xâm Lấn Điện Trường (Gauntlet Mode)",
+    "slug": "leo-thap-crazy-ant-gauntlet-mode"
+  },
+  {
+    "creature_id": "ogre-faced-spider",
+    "creature_name": "Nhện Quăng Lưới (Nhện Mặt Quỷ)",
+    "title": "Leo tháp Quăng lưới (Gauntlet Mode)",
+    "slug": "leo-thap-quang-luoi-nhen-mat-quy-gauntlet-mode"
+  },
+  {
+    "creature_id": "deathstalker-scorpion",
+    "creature_name": "Bọ Cạp Vàng Palestine",
+    "title": "Leo tháp Tử Thần (Gauntlet Mode)",
+    "slug": "leo-thap-tu-than-bo-cap-gauntlet-mode"
+  },
+  {
+    "creature_id": "giraffe-weevil",
+    "creature_name": "Mọt Cổ Dài Giraffe",
+    "title": "Đại Chiến Quật Cổ Đòn Bẩy (Gauntlet Mode)",
+    "slug": "leo-thap-quat-co-don-bay-giraffe-weevil"
+  },
+  {
+    "creature_id": "namib-desert-beetle",
+    "creature_name": "Bọ Sa Mạc Namib",
+    "title": "Leo tháp Ngưng tụ nước & Làm mát (Gauntlet Mode)",
+    "slug": "leo-thap-ngung-tu-nuoc-lam-mat-bo-sa-mac-namib-gauntlet"
+  },
+  {
+    "creature_id": "six-spotted-fishing-spider",
+    "creature_name": "Nhện Ăn Cá Sáu Chấm",
+    "title": "Leo tháp Lướt nước & Săn thủy quái (Gauntlet Mode)",
+    "slug": "leo-thap-luot-nuoc-san-thuy-quai-fishing-spider"
+  },
+  {
+    "creature_id": "panda-ant",
+    "creature_name": "Kiến Gấu Trúc",
+    "title": "Leo tháp Giáp bọc & Ngòi độc (Gauntlet Mode)",
+    "slug": "leo-thap-giap-va-ngoi-doc-kien-gau-truc-gauntlet-answer"
+  },
+  {
+    "creature_id": "pistol-shrimp",
+    "creature_name": "Tôm Súng",
+    "title": "Leo tháp Công phá Bong bóng Cavitation (Gauntlet Mode)",
+    "slug": "leo-thap-cong-pha-bong-bong-cavitation-gauntlet-mode"
+  },
+  {
+    "creature_id": "honey-badger",
+    "creature_name": "Lửng Mật",
+    "title": "Leo tháp Sinh tồn & Kháng độc (Gauntlet Mode)",
+    "slug": "leo-thap-sinh-ton-khang-doc-gauntlet-mode-lung-mat"
+  },
+  {
+    "creature_id": "orchid-mantis",
+    "creature_name": "Bọ Ngựa Phong Lan",
+    "title": "Leo tháp Phản xạ & Chộp gắp (Gauntlet Mode)",
+    "slug": "bo-ngua-phong-lan-gauntlet-reflex-strike"
+  },
+  {
+    "creature_id": "taurus-dung-beetle",
+    "creature_name": "Bọ Hung Taurus",
+    "title": "Leo tháp Kéo co (Gauntlet Mode)",
+    "slug": "taurus-dung-beetle-gauntlet"
+  },
+  {
+    "creature_id": "peacock-mantis-shrimp",
+    "creature_name": "Tôm Tít Búa Tạ",
+    "title": "Leo tháp Đấm búa tạ (Gauntlet Mode)",
+    "slug": "peacock-mantis-shrimp-gauntlet"
+  },
+  {
+    "creature_id": "human-flea",
+    "creature_name": "Bọ Chét Người",
+    "title": "Leo tháp Nhảy cao vượt giới hạn (Gauntlet Mode)",
+    "slug": "human-flea-gauntlet"
+  },
+  {
+    "creature_id": "deaths-head-hawkmoth",
+    "creature_name": "Ngài Đầu Lâu",
+    "title": "Leo tháp Không chiến & Sóng âm (Gauntlet Mode)",
+    "slug": "leo-thap-khong-chien-song-am-gauntlet-mode"
+  },
+  {
+    "creature_id": "leafcutter-ant",
+    "creature_name": "Kiến Cắt Lá",
+    "title": "Leo tháp Nâng Vác (Gauntlet Mode)",
+    "slug": "kien-cat-la-80kg-gauntlet"
+  },
+  {
+    "creature_id": "goliath-beetle",
+    "creature_name": "Bọ Hung Goliath",
+    "title": "Leo tháp Đấu vật Sừng Y (Gauntlet Mode)",
+    "slug": "goliath-beetle-gauntlet"
+  },
+  {
+    "creature_id": "horned-dung-beetle",
+    "creature_name": "Bọ Hung Sừng",
+    "title": "Leo tháp Kéo co (Gauntlet Mode)",
+    "slug": "leo-thap-keo-co-bo-hung-sung"
+  },
+  {
+    "creature_id": "peacock-mantis-shrimp",
+    "creature_name": "Tôm Tít Búa Tạ",
+    "title": "Leo tháp Đấm bốc (Gauntlet Mode)",
+    "slug": "leo-thap-dam-tom-tit-bua-ta"
+  },
+  {
+    "creature_id": "dead-leaf-mantis",
+    "creature_name": "Bọ Ngựa Lá Khô",
+    "title": "Thử Thách Leo Tháp Săn Mồi Siêu Tốc (Gauntlet Mode)",
+    "slug": "leo-thap-san-moi-sieu-toc-gauntlet-mode-answer"
+  },
+  {
+    "creature_id": "pistol-shrimp",
+    "creature_name": "Tôm Súng",
+    "title": "Leo tháp Sóng kích nổ Cavitation (Gauntlet Mode)",
+    "slug": "leo-thap-song-kich-no-cavitation-gauntlet-mode"
+  },
+  {
+    "creature_id": "giant-vinegaroon",
+    "creature_name": "Bọ Cạp Roi Vinegaroon",
+    "title": "Leo tháp Phun Axit & Kẹp Nghiền (Gauntlet Mode)",
+    "slug": "leo-thap-phun-axit-kep-nghien-bo-cap-roi-gauntlet"
+  },
+  {
+    "creature_id": "portia-jumping-spider",
+    "creature_name": "Nhện Nhảy Portia",
+    "title": "Leo tháp Săn mồi (Gauntlet Mode)",
+    "slug": "leo-thap-san-moi-nhen-nhay-portia"
+  },
+  {
+    "creature_id": "tardigrade",
+    "creature_name": "Gấu Nước",
+    "title": "Leo tháp Sinh tồn (Gauntlet Mode)",
+    "slug": "leo-thap-sinh-ton-gauntlet-mode"
+  },
+  {
+    "creature_id": "assassin-caterpillar",
+    "creature_name": "Sâu Róm Sát Thủ",
+    "title": "Leo tháp Sát Thủ Gai Độc (Gauntlet Mode)",
+    "slug": "leo-thap-sat-thu-gai-doc-gauntlet-mode"
+  },
+  {
+    "creature_id": "new-zealand-glowworm",
+    "creature_name": "Giun Phát Sáng New Zealand",
+    "title": "Leo tháp Bẫy tơ nhầy Axit (Gauntlet Mode)",
+    "slug": "leo-thap-bay-to-nhay-axit-gauntlet-mode"
+  },
+  {
+    "creature_id": "spittlebug",
+    "creature_name": "Bọ Phun Bọt",
+    "title": "Leo tháp Nhảy cao vượt giới hạn (Gauntlet Mode)",
+    "slug": "spittlebug-gauntlet-challenge"
+  },
+  {
+    "creature_id": "velvet-ant",
+    "creature_name": "Kiến Nhung đỏ",
+    "title": "Leo tháp Giáp Vỏ Chitin (Gauntlet Mode)",
+    "slug": "leo-thap-giap-vo-chitin-gauntlet-mode-answer"
+  },
+  {
+    "creature_id": "army-ant",
+    "creature_name": "Kiến Quân Đội",
+    "title": "Leo tháp Hàm Kẹp Lưỡi Liềm (Gauntlet Mode)",
+    "slug": "leo-thap-ham-kep-luoi-liem-kien-quan-doi-answer"
+  },
+  {
+    "creature_id": "camel-spider",
+    "creature_name": "Nhện Lạc Đà",
+    "title": "Leo tháp Nghiền Nát Hàm Sừng (Gauntlet Mode)",
+    "slug": "leo-thap-nghien-nat-ham-sung-nhen-lac-da-gauntlet"
+  },
+  {
+    "creature_id": "saharan-silver-ant",
+    "creature_name": "Kiến Bạc Sahara",
+    "title": "Leo tháp Tốc độ & Chịu nhiệt (Gauntlet Mode)",
+    "slug": "leo-thap-toc-do-chiu-nhiet-kien-bac-sahara-gauntlet"
+  },
+  {
+    "creature_id": "desert-locust",
+    "creature_name": "Châu Chấu Sa Mạc",
+    "title": "Leo tháp Bật nhảy (Gauntlet Mode)",
+    "slug": "leo-thap-bat-nhay-gauntlet-mode-chau-chau-sa-mac"
+  },
+  {
+    "creature_id": "diving-bell-spider",
+    "creature_name": "Nhện Chuông Lặn",
+    "title": "Leo tháp Lặn sâu (Gauntlet Mode)",
+    "slug": "leo-thap-lan-sau-gauntlet-mode"
+  },
+  {
+    "creature_id": "giant-asian-hornet",
+    "creature_name": "Ong Bắp Cày Khổng Lồ Châu Á",
+    "title": "Leo tháp Ngòi độc Xuyên giáp (Gauntlet Mode)",
+    "slug": "leo-thap-ngoi-doc-xuyen-giap-gauntlet-mode"
+  },
+  {
+    "creature_id": "six-eyed-sand-spider",
+    "creature_name": "Nhện Cát Sáu Mắt",
+    "title": "Leo tháp Nọc Độc Hoại Tử Cytotoxin (Gauntlet Mode)",
+    "slug": "leo-thap-noc-doc-hoai-tu-cytotoxin-gauntlet-mode-nhen-cat-sau-mat"
+  },
+  {
+    "creature_id": "giant-water-bug",
+    "creature_name": "Bọ Nước Khổng Lồ",
+    "title": "Leo tháp Gauntlet: Bọ Nước Khổng Lồ phóng to",
+    "slug": "leo-thap-gauntlet-bo-nuoc-khong-lo-phong-to"
+  },
+  {
+    "creature_id": "black-widow-spider",
+    "creature_name": "Nhện Góa Phụ Đen",
+    "title": "Leo tháp Hãm Lực Tơ Nhện (Gauntlet Mode)",
+    "slug": "leo-thap-ham-luc-to-nhen-gauntlet-mode"
+  },
+  {
+    "creature_id": "periodical-cicada",
+    "creature_name": "Ve Sầu Chu Kỳ 17 Năm",
+    "title": "Leo tháp Khủng bố Sóng âm (Gauntlet Mode)",
+    "slug": "leo-thap-khung-bo-song-am-ve-sau-17-nam-gauntlet"
+  },
+  {
+    "creature_id": "bombardier-beetle",
+    "creature_name": "Bọ Cánh Cứng Bombardier",
+    "title": "Leo tháp Pháo hóa học (Gauntlet Mode)",
+    "slug": "leo-thap-phao-hoa-hoc-bombardier-gauntlet"
+  },
+  {
+    "creature_id": "exploding-ant",
+    "creature_name": "Kiến Nổ Malaysia",
+    "title": "Leo tháp Tự hủy Hóa học (Gauntlet Mode)",
+    "slug": "leo-thap-tu-huy-hoa-hoc-gauntlet-mode-kien-no"
+  },
+  {
+    "creature_id": "taurus-dung-beetle",
+    "creature_name": "Bọ Hung Taurus",
+    "title": "Leo tháp Kéo co (Gauntlet Mode)",
+    "slug": "leo-thap-keo-co-gauntlet-mode-taurus"
+  },
+  {
+    "creature_id": "brazilian-wandering-spider",
+    "creature_name": "Nhện Lang Thang Brazil",
+    "title": "Leo tháp Độc Tố & Tốc Độ Săn Mồi (Gauntlet Mode)",
+    "slug": "leo-thap-doc-to-toc-do-san-moi-nhen-lang-thang-brazil-gauntlet"
+  },
+  {
+    "creature_id": "jewel-wasp",
+    "creature_name": "Tò Vò Ngọc Lục Bảo",
+    "title": "Leo tháp Khống chế Zombie (Gauntlet Mode)",
+    "slug": "leo-thap-khong-che-zombie-gauntlet-mode-jewel-wasp-answer"
+  },
+  {
+    "creature_id": "goliath-birdeater",
+    "creature_name": "Nhện Ăn Chim Goliath",
+    "title": "Leo tháp Đấu vật & Phóng Lông ngứa (Gauntlet Mode)",
+    "slug": "leo-thap-dau-vat-phong-long-ngua-nhen-goliath"
+  },
+  {
+    "creature_id": "gear-planthopper",
+    "creature_name": "Côn Trùng Bánh Răng",
+    "title": "Leo tháp Bật nhảy đồng bộ Bánh răng (Gauntlet Mode)",
+    "slug": "leo-thap-bat-nhay-dong-bo-banh-rang-gauntlet-mode-con-trung-banh-rang"
+  },
+  {
+    "creature_id": "vinegaroon",
+    "creature_name": "Bọ Cạp Giấm",
+    "title": "Leo tháp Axit & Càng kẹp (Gauntlet Mode)",
+    "slug": "leo-thap-axit-cang-kep-gauntlet-mode"
+  },
+  {
+    "creature_id": "sand-scorpion",
+    "creature_name": "Bọ Cạp Cát",
+    "title": "Leo tháp Định vị Địa chấn & Tiêm kích Thần tốc (Gauntlet Mode)",
+    "slug": "bo-cap-cat-leo-thap-dia-chan-gauntlet-mode"
+  },
+  {
+    "creature_id": "diabolical-ironclad-beetle",
+    "creature_name": "Bọ Cánh Cứng Sừng Sắt",
+    "title": "Leo tháp Giáp Vỏ Chống Ép (Gauntlet Mode)",
+    "slug": "bo-canh-cung-sat-diabolic-80kg-gauntlet"
+  },
+  {
+    "creature_id": "trapdoor-spider",
+    "creature_name": "Nhện Cửa Sập",
+    "title": "Leo tháp Phục Kích & Kéo Sập Hang (Gauntlet Mode)",
+    "slug": "leo-thap-phuc-kich-keo-sap-hang-gauntlet-mode"
+  },
+  {
+    "creature_id": "australian-bulldog-ant",
+    "creature_name": "Kiến Bulldog Úc",
+    "title": "Leo tháp Sức mạnh (Gauntlet Mode)",
+    "slug": "leo-thap-suc-manh-kien-bulldog-uc-gauntlet-mode"
+  },
+  {
+    "creature_id": "rove-beetle",
+    "creature_name": "Kiến Ba Khoang",
+    "title": "Leo tháp Phun Axit & Độc tố Hóa học (Gauntlet Mode)",
+    "slug": "leo-thap-phun-axit-doc-to-hoa-hoc-gauntlet-mode"
+  },
+  {
+    "creature_id": "coconut-crab",
+    "creature_name": "Cua Dừa",
+    "title": "Leo tháp Kẹp & Nghiền nát (Gauntlet Mode)",
+    "slug": "cua-dua-leo-thap-kep-nghien-nat-gauntlet"
+  },
+  {
+    "creature_id": "mantis-shrimp",
+    "creature_name": "Tôm Bọ Ngựa",
+    "title": "Leo tháp Đấm búa phá hủy (Gauntlet Mode)",
+    "slug": "leo-thap-dam-bua-pha-huy-gauntlet-mode"
+  },
+  {
+    "creature_id": "assassin-spider",
+    "creature_name": "Nhện Sát Thủ",
+    "title": "Leo tháp Đâm xuyên & Nâng bổng tầm xa (Gauntlet Mode)",
+    "slug": "leo-thap-dam-xuyen-nang-bong-gauntlet-mode"
+  },
+  {
+    "creature_id": "assassin-bug",
+    "creature_name": "Bọ Sát Thủ",
+    "title": "Leo tháp Đâm xuyên & Hóa lỏng (Gauntlet Mode)",
+    "slug": "leo-thap-dam-xuyen-hoa-long-gauntlet-mode"
+  },
+  {
+    "creature_id": "hairy-frog",
+    "creature_name": "Ếch Lông Wolverine",
+    "title": "Leo tháp Vuốt Xương & Cú Đá Thủy Lực (Gauntlet Mode)",
+    "slug": "leo-thap-vuot-xuong-wolverine-gauntlet-mode"
+  },
+  {
+    "creature_id": "irukandji-jellyfish",
+    "creature_name": "Sứa Hộp Irukandji",
+    "title": "Leo tháp Nọc Độc Thần Kinh (Gauntlet Mode)",
+    "slug": "leo-thap-noc-doc-than-kinh-irukandji-gauntlet"
+  },
+  {
+    "creature_id": "thresher-shark",
+    "creature_name": "Cá Mập Đuôi Roi",
+    "title": "Leo tháp Đuôi Roi Siêu Thanh (Gauntlet Mode)",
+    "slug": "leo-thap-duoi-roi-sieu-thanh-gauntlet-mode"
+  },
+  {
+    "creature_id": "snake-mimic-caterpillar",
+    "creature_name": "Sâu Bướm Giả Rắn",
+    "title": "Leo tháp Phình thân Thủy lực & Mổ đớp Siêu thanh (Gauntlet Mode)",
+    "slug": "leo-thap-phinh-than-thuy-luc-mo-dop-sieu-thanh-gauntlet-mode"
+  },
+  {
+    "creature_id": "argentine-horned-frog",
+    "creature_name": "Ếch Sừng Argentina",
+    "title": "Leo tháp Lực Táp & Nghiền Nát (Gauntlet Mode)",
+    "slug": "leo-thap-luc-tap-nghien-nat-ech-sung-argentina-gauntlet"
+  },
+  {
+    "creature_id": "praying-mantis",
+    "creature_name": "Bọ Ngựa Chùa",
+    "title": "Leo tháp Chém kẹp (Gauntlet Mode)",
+    "slug": "leo-thap-chem-kep-bo-ngua-chua-gauntlet-mode"
+  },
+  {
+    "creature_id": "bootlace-worm",
+    "creature_name": "Sâu Dây Giày",
+    "title": "Leo tháp Trói siết & Độc tố (Gauntlet Mode)",
+    "slug": "leo-thap-troi-siet-doc-to-sau-day-giay-gauntlet-mode"
+  },
+  {
+    "creature_id": "greater-wax-moth",
+    "creature_name": "Ngài Sáp Lớn",
+    "title": "Leo tháp Tránh né Siêu âm & Hấp thụ Radar (Gauntlet Mode)",
+    "slug": "greater-wax-moth-sonar-radar-evasion-gauntlet"
+  },
+  {
+    "creature_id": "tasmanian-devil",
+    "creature_name": "Quỷ Tasmania",
+    "title": "Leo tháp Lực cắn (Gauntlet Mode)",
+    "slug": "leo-thap-luc-can-gauntlet-mode-quy-tasmania"
+  }
+]
