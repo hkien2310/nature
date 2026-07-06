@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { WhatIfQuestion, WhatIfAnswer } from "@/lib/db";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 interface WhatIfSectionProps {
   creatureId: string;
@@ -196,8 +198,26 @@ export default function WhatIfSection({ creatureId, slug }: WhatIfSectionProps) 
                         </p>
                       )}
 
-                      <div className="text-xs text-[var(--text-secondary)] leading-relaxed space-y-3 whitespace-pre-wrap font-sans">
-                        {activeAns.content}
+                      <div className="text-xs text-[var(--text-secondary)] leading-relaxed space-y-3 font-sans overflow-hidden">
+                        <ReactMarkdown
+                          remarkPlugins={[remarkGfm]}
+                          components={{
+                            h3: ({ node, ...props }) => <h3 className="text-sm font-bold text-red-400 mt-4 mb-2 font-mono uppercase tracking-wide" {...props} />,
+                            h4: ({ node, ...props }) => <h4 className="text-xs font-bold text-red-300 mt-3 mb-1 font-mono uppercase" {...props} />,
+                            p: ({ node, ...props }) => <p className="mb-2 leading-relaxed text-justify" {...props} />,
+                            strong: ({ node, ...props }) => <strong className="font-bold text-[var(--text-primary)]" {...props} />,
+                            em: ({ node, ...props }) => <em className="italic text-[var(--text-muted)]" {...props} />,
+                            ul: ({ node, ...props }) => <ul className="list-none space-y-1 mb-2" {...props} />,
+                            ol: ({ node, ...props }) => <ol className="list-decimal pl-4 space-y-1 mb-2 text-[var(--text-muted)]" {...props} />,
+                            li: ({ node, ...props }) => (
+                              <li className="relative pl-3 before:content-['>'] before:absolute before:left-0 before:text-red-500/70 before:font-mono before:text-[10px]" {...props} />
+                            ),
+                            blockquote: ({ node, ...props }) => <blockquote className="border-l-2 border-red-500/50 pl-3 py-1 my-2 bg-red-900/10 italic text-[var(--text-muted)]" {...props} />,
+                            hr: ({ node, ...props }) => <hr className="my-4 border-[var(--border)] border-dashed opacity-50" {...props} />,
+                          }}
+                        >
+                          {activeAns.content}
+                        </ReactMarkdown>
                       </div>
 
                       {/* Formulas and data analysis table */}
