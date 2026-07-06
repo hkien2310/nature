@@ -515,6 +515,12 @@
     "creature_name": "Rắn Lục Gaboon",
     "title": "Leo tháp Phục kích & Nanh độc (Gauntlet Mode)",
     "slug": "leo-thap-phuc-kich-nanh-doc-gauntlet-mode-ran-luc-gaboon"
+  },
+  {
+    "creature_id": "tiger-beetle",
+    "creature_name": "Bọ Cánh Cứng Hổ",
+    "title": "Leo tháp Tốc độ Bứt tốc & Hàm kẹp (Gauntlet Mode)",
+    "slug": "leo-thap-toc-do-but-toc-ham-kep-bo-canh-cung-ho-gauntlet-mode"
   }
 ]
 
