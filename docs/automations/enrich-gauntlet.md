@@ -3,22 +3,26 @@
 Khi nhận được yêu cầu `"Làm giàu Gauntlet"` cho một sinh vật (ví dụ: Bọ hung, Tôm gõ mõ, Bọ chét), AI sẽ xây dựng một thử thách leo tháp (Gauntlet) đối chiếu sức mạnh của sinh vật đó với các mốc sức mạnh (benchmarks) thực tế.
 
 ### Script Được Phép Sử Dụng:
+- `src/scripts/get-opponents.js` — Lấy danh sách đối thủ hiện có trong DB.
 - `src/scripts/get-creatures.js` — Lấy danh sách sinh vật hiện có trong DB (để tra cứu ID).
 - `src/scripts/update-what-if.js` — Bản chất Gauntlet vẫn là một What-If, chúng ta dùng chung script của What-If để lưu trữ.
 
-**LƯU Ý QUAN TRỌNG CHO AI**: TUYỆT ĐỐI KHÔNG tự viết các file script (`.js`) nháp để kết nối vào Database. CHỈ sử dụng các script đã có sẵn ở trên.
+**LƯU Ý QUAN TRỌNG CHO AI**: TUYỆT ĐỐI KHÔNG tự viết các file script (`.js`) nháp để kết nối vào Database. Nếu cần lấy thông tin, CHỈ sử dụng các script đã có sẵn ở trên. Việc tự viết script sẽ gây lỗi sai đường dẫn file `.env.local`!
 
 ### Các Bước Thực Hiện:
-1. **Xác định Thế mạnh & Tự động tìm Benchmark**:
-   - **Xác định THẾ MẠNH ĐẶC TRƯNG** nhất của sinh vật (ví dụ: lực đấm, lực kéo, sức bật nhảy, tốc độ, độ bền).
-   - **Tự động tìm kiếm (Không dùng ví dụ/DB cố định)**: Dựa vào thế mạnh trên, AI tự suy luận và chọn ra 3 mốc so sánh (benchmarks) thực tế nổi tiếng nhất thế giới về đúng phương diện đó (Ví dụ: bật nhảy -> so với tên lửa, máy phóng; đấm -> so với máy búa, đạn pháo). KHÔNG ĐƯỢC lặp lại các đối thủ cũ như Chó Pitbull, Khỉ đột, Xe tăng nếu chúng không liên quan trực tiếp đến thế mạnh đó!
-2. **Mô phỏng Scale kích thước (Định luật Square-Cube Law)**:
-   - Thay vì ép khối lượng, hãy **ép kích thước (size)** của sinh vật bằng với kích thước của mốc so sánh (benchmark) đã chọn.
-   - Tính hệ số $K = \frac{\text{Size benchmark}}{\text{Size gốc của sinh vật}}$.
+1. **Lấy danh sách Đối thủ (Tùy chọn Tham khảo)**: Chạy lệnh `node src/scripts/get-opponents.js` để xem danh sách các đối thủ hiện có trong Database. (Bạn có thể chọn từ đây hoặc TỰ NGHĨ RA đối thủ mới tùy tình huống).
+2. **Chọn loại Gauntlet & Đối thủ**:
+   - **Xác định THẾ MẠNH ĐẶC TRƯNG** nhất của sinh vật (ví dụ: lực đấm, lực kéo, sức bật nhảy, tốc độ, độ cứng).
+   - **Chọn mốc so sánh (Benchmarks)**: Dựa vào thế mạnh, chọn ra 3 mốc so sánh (benchmarks) thực tế nổi tiếng nhất thế giới về đúng phương diện đó (Có thể lấy từ danh sách DB hoặc TỰ DO NGHĨ RA thêm). 
+     - *Ví dụ: Bọ chét bật nhảy -> so với Kangaroo, Tên lửa; Bọ hung kéo khỏe -> so với Bán tải, Tàu hỏa; Tôm tít đấm mạnh -> so với Võ sĩ, Đạn đại bác.*
+   - **KHÔNG KHÓA CỨNG ĐỐI THỦ**: Tuyệt đối KHÔNG chọn bừa bãi các đối thủ trong DB (như Chó Pitbull, Khỉ đột, Xe tăng) nếu chúng KHÔNG CÙNG HỆ QUY CHIẾU sức mạnh với sinh vật đang xét! Mốc so sánh phải có ý nghĩa!
+3. **Mô phỏng Scale kích thước (Định luật Square-Cube Law)**:
+   - Thay vì ép khối lượng, hãy **ép kích thước (size)** của sinh vật bằng với `size_m` của đối thủ.
+   - Tính hệ số $K = \frac{\text{Size đối thủ}}{\text{Size gốc của sinh vật}}$.
    - Tính khối lượng mới của sinh vật bằng công thức lập phương: $\text{Khối lượng mới} = \text{Khối lượng gốc} \times K^3$.
-   - Tính lực vật lý (hoặc các thông số sức mạnh) của sinh vật dựa trên khối lượng mới hoặc tiết diện ($K^2$).
-3. **Viết kịch bản so sánh**: Trình bày rõ quá trình quy đổi kích thước và so sánh trực tiếp sức mạnh cực hạn của sinh vật với mốc benchmark thực tế.
-4. **Tạo file JSON tạm thời**: Lưu dữ liệu vào file `src/scripts/temp-gauntlet.json` theo đúng cấu trúc của `update-what-if.js`.
+   - Tính lực vật lý (hoặc các thông số sức mạnh) của sinh vật dựa trên khối lượng mới hoặc tiết diện ($K^2$), tuân thủ theo rule của từng sinh vật (ví dụ Bọ chét phóng 140x khối lượng cơ thể).
+4. **Viết kịch bản chiến đấu**: Trình bày rõ quá trình quy đổi kích thước, khối lượng mới siêu to khổng lồ và sức mạnh cực hạn để so kèo.
+5. **Tạo file JSON tạm thời**: Lưu dữ liệu vào file `src/scripts/temp-gauntlet.json` theo đúng cấu trúc của `update-what-if.js`.
    ```json
    {
      "creature_id": "UUID_CỦA_SINH_VẬT",
