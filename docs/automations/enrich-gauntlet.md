@@ -12,7 +12,9 @@ Khi nhận được yêu cầu `"Làm giàu Gauntlet"` cho một sinh vật (ví
 ### Các Bước Thực Hiện:
 1. **Lấy danh sách Đối thủ**: Chạy lệnh `node src/scripts/get-opponents.js` để xem danh sách các đối thủ hiện có và thông số của chúng. ĐỪNG tự viết script kết nối DB vì sẽ bị sai đường dẫn file `.env.local`.
 2. **Chọn loại Gauntlet & Đối thủ**:
-   - Chọn ra ít nhất 3 đối thủ (tăng dần độ khó) đại diện cho các mốc **kích thước** khác nhau.
+   - **Xác định THẾ MẠNH ĐẶC TRƯNG** nhất của sinh vật (ví dụ: lực đấm, lực kéo, sức bật nhảy, tốc độ).
+   - **Chọn đối thủ phù hợp**: Chỉ chọn (hoặc tự nghĩ ra thêm) những đối thủ/cỗ máy/sự vật nổi tiếng về phương diện sức mạnh đó để làm hệ quy chiếu so sánh. (Ví dụ: Bọ chét bật nhảy -> so với Kangaroo, Tên lửa vũ trụ; Bọ hung kéo khỏe -> so với Bán tải, Đầu máy xe lửa; Tôm tít đấm mạnh -> so với Võ sĩ quyền Anh, Đạn đại bác). KHÔNG chọn đối thủ bừa bãi không cùng hệ quy chiếu sức mạnh.
+   - Chọn ra ít nhất 3 đối thủ đại diện cho các mốc kích thước/sức mạnh tăng dần.
 3. **Mô phỏng Scale kích thước (Định luật Square-Cube Law)**:
    - Thay vì ép khối lượng, hãy **ép kích thước (size)** của sinh vật bằng với `size_m` của đối thủ.
    - Tính hệ số $K = \frac{\text{Size đối thủ}}{\text{Size gốc của sinh vật}}$.
