@@ -16,7 +16,8 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Missing tag parameter" }, { status: 400 });
     }
 
-    revalidateTag(tag);
+    // @ts-ignore - Next.js type check fix
+    revalidateTag(tag, { expire: 0 });
 
     return NextResponse.json({
       success: true,
