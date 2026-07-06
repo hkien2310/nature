@@ -491,6 +491,12 @@
     "creature_name": "Sứa Bờm Sư Tử",
     "title": "Leo tháp Lưới Độc & Tê Liệt (Gauntlet Mode)",
     "slug": "leo-thap-luoi-doc-va-te-liet-gauntlet-mode-sua-bom-su-tu"
+  },
+  {
+    "creature_id": "devils-flower-mantis",
+    "creature_name": "Bọ Ngựa Hoa Quỷ",
+    "title": "Leo tháp Phản Xạ & Đòn Đánh (Gauntlet Mode)",
+    "slug": "leo-thap-phan-xa-don-danh-bo-ngua-hoa-quy-gauntlet"
   }
 ]
 
