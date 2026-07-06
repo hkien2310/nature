@@ -17,12 +17,14 @@ Khi nhận được yêu cầu `"Làm giàu Gauntlet"` cho một sinh vật (ví
      - *Ví dụ bật nhảy: Tầng 1 - Kangaroo -> Tầng 2 - Trực thăng -> Tầng 3 - Tên lửa vũ trụ Saturn V.*
      - *Ví dụ đấm/phá: Tầng 1 - Võ sĩ Boxer hạng nặng -> Tầng 2 - Máy xúc khổng lồ -> Tầng 3 - Đạn pháo Xe tăng.*
    - **KHÔNG DÙNG DATABASE**: Tuyệt đối tự do suy luận và KHÔNG bám vào database! Cứ thứ gì trên đời này nổi tiếng nhất về thế mạnh đó thì lôi ra làm mốc.
-2. **Mô phỏng Scale kích thước (Định luật Square-Cube Law)**:
-   - Thay vì ép khối lượng, hãy **ép kích thước (size)** của sinh vật bằng với `size_m` của đối thủ.
-   - Tính hệ số $K = \frac{\text{Size đối thủ}}{\text{Size gốc của sinh vật}}$.
-   - Tính khối lượng mới của sinh vật bằng công thức lập phương: $\text{Khối lượng mới} = \text{Khối lượng gốc} \times K^3$.
-   - Tính lực vật lý (hoặc các thông số sức mạnh) của sinh vật dựa trên khối lượng mới hoặc tiết diện ($K^2$), tuân thủ theo rule của từng sinh vật (ví dụ Bọ chét phóng 140x khối lượng cơ thể).
-4. **Viết kịch bản chiến đấu**: Trình bày rõ quá trình quy đổi kích thước, khối lượng mới siêu to khổng lồ và sức mạnh cực hạn để so kèo.
+2. **Triết Lý Scaling — Sức Mạnh Thực Tế, Không Scale Bằng Đối Thủ**:
+   - **KHÔNG ép sinh vật lớn bằng đối thủ** — Đây là sai lầm giết chết yếu tố bất ngờ. Nếu hai bên bằng nhau về kích thước thì không còn gì choáng ngợp nữa.
+   - **Giữ kích thước THỰC hoặc tạo CHÊNH LỆCH CÓ Ý NGHĨA**: Có 2 hướng hợp lệ:
+     - *Hướng A (Giữ nguyên thực)*: Sinh vật giữ kích thước thật 100%. Đối thủ lớn hơn nhiều lần nhưng **sức mạnh tỷ lệ cơ thể của sinh vật** nghiền nát nó hoàn toàn. (Ví dụ: Bọ hung 5g dùng lực kéo 1141x trọng lượng → kéo được 5.7kg, trong khi Chó Pitbull 25kg chỉ kéo được 150kg. Tính P4P thì bọ hung thắng tuyệt đối dù nhỏ hơn 5000 lần.)
+     - *Hướng B (Scale có chủ đích)*: Scale sinh vật lên nhưng vẫn **nhỏ hơn đáng kể** so với đối thủ để tạo sự bất ngờ tối đa. (Ví dụ: Bọ hung scale lên bằng con chó 25kg → nó kéo được 28.5 tấn. Pitbull chỉ kéo 150kg. Chênh lệch 190 lần!)
+   - **Trình bày chênh lệch theo số liệu cụ thể**: Luôn nêu rõ con số ("nhỏ hơn X lần" / "chênh lệch Y lần về sức mạnh") để người đọc cảm nhận được sự điên rồ.
+   - Tính lực vật lý dựa trên Square-Cube Law: $K = \frac{\text{Size mới}}{\text{Size gốc}}$, Khối lượng mới $= m_{gốc} \times K^3$.
+3. **Viết kịch bản chiến đấu**: Trình bày rõ sự chênh lệch kích thước, sức mạnh tỷ lệ cơ thể điên rồ để người đọc không thể tin vào mắt mình.
 5. **Tạo file JSON tạm thời**: Lưu dữ liệu vào file `src/scripts/temp-gauntlet.json` theo đúng cấu trúc của `update-what-if.js`.
    ```json
    {
