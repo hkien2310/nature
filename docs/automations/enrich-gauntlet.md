@@ -3,20 +3,19 @@
 Khi nhận được yêu cầu `"Làm giàu Gauntlet"` cho một sinh vật (ví dụ: Bọ hung, Tôm gõ mõ, Bọ chét), AI sẽ xây dựng một thử thách leo tháp (Gauntlet) đối chiếu sức mạnh của sinh vật đó với các mốc sức mạnh (benchmarks) thực tế.
 
 ### Script Được Phép Sử Dụng:
-- `src/scripts/get-opponents.js` — Lấy danh sách đối thủ hiện có trong DB.
 - `src/scripts/get-creatures.js` — Lấy danh sách sinh vật hiện có trong DB (để tra cứu ID).
 - `src/scripts/update-what-if.js` — Bản chất Gauntlet vẫn là một What-If, chúng ta dùng chung script của What-If để lưu trữ.
 
 **LƯU Ý QUAN TRỌNG CHO AI**: TUYỆT ĐỐI KHÔNG tự viết các file script (`.js`) nháp để kết nối vào Database. Nếu cần lấy thông tin, CHỈ sử dụng các script đã có sẵn ở trên. Việc tự viết script sẽ gây lỗi sai đường dẫn file `.env.local`!
 
 ### Các Bước Thực Hiện:
-1. **Lấy danh sách Đối thủ (Tùy chọn Tham khảo)**: Chạy lệnh `node src/scripts/get-opponents.js` để xem danh sách các đối thủ hiện có trong Database. (Bạn có thể chọn từ đây hoặc TỰ NGHĨ RA đối thủ mới tùy tình huống).
-2. **Chọn loại Gauntlet & Đối thủ**:
+1. **Chọn loại Gauntlet & Mốc so sánh (Benchmarks 3 Tầng)**:
    - **Xác định THẾ MẠNH ĐẶC TRƯNG** nhất của sinh vật (ví dụ: lực đấm, lực kéo, sức bật nhảy, tốc độ, độ cứng).
-   - **Chọn mốc so sánh (Benchmarks)**: Dựa vào thế mạnh, chọn ra 3 mốc so sánh (benchmarks) thực tế nổi tiếng nhất thế giới về đúng phương diện đó (Có thể lấy từ danh sách DB hoặc TỰ DO NGHĨ RA thêm). 
-     - *Ví dụ: Bọ chét bật nhảy -> so với Kangaroo, Tên lửa; Bọ hung kéo khỏe -> so với Bán tải, Tàu hỏa; Tôm tít đấm mạnh -> so với Võ sĩ, Đạn đại bác.*
-   - **KHÔNG KHÓA CỨNG ĐỐI THỦ**: Tuyệt đối KHÔNG chọn bừa bãi các đối thủ trong DB (như Chó Pitbull, Khỉ đột, Xe tăng) nếu chúng KHÔNG CÙNG HỆ QUY CHIẾU sức mạnh với sinh vật đang xét! Mốc so sánh phải có ý nghĩa!
-3. **Mô phỏng Scale kích thước (Định luật Square-Cube Law)**:
+   - **Quy tắc chọn Benchmark 3 Tầng**: Dựa vào thế mạnh trên, AI tự vận dụng kiến thức thực tế để chọn ra 3 mốc so sánh (benchmarks) nổi tiếng nhất thế giới về đúng phương diện đó. Ba mốc này phải tuân thủ cấu trúc 3 tầng với sức mạnh/kích thước tăng dần (Tầng 1: Vừa phải -> Tầng 2: Khủng khiếp -> Tầng 3: Tối thượng). 
+     - *Ví dụ bật nhảy: Tầng 1 - Kangaroo -> Tầng 2 - Máy phóng máy bay -> Tầng 3 - Tên lửa vũ trụ.*
+     - *Ví dụ đấm: Tầng 1 - Võ sĩ Boxer hạng nặng -> Tầng 2 - Máy búa thủy lực -> Tầng 3 - Đạn pháo xe tăng.*
+   - **KHÔNG DÙNG DATABASE**: Tuyệt đối tự do suy luận! Không được sử dụng bất kỳ database hay ví dụ cố định nào (chẳng hạn không lấy Xe tăng đọ với kỹ năng bật nhảy).
+2. **Mô phỏng Scale kích thước (Định luật Square-Cube Law)**:
    - Thay vì ép khối lượng, hãy **ép kích thước (size)** của sinh vật bằng với `size_m` của đối thủ.
    - Tính hệ số $K = \frac{\text{Size đối thủ}}{\text{Size gốc của sinh vật}}$.
    - Tính khối lượng mới của sinh vật bằng công thức lập phương: $\text{Khối lượng mới} = \text{Khối lượng gốc} \times K^3$.
