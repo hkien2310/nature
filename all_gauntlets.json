@@ -509,6 +509,12 @@
     "creature_name": "Cá Sư Tử",
     "title": "Leo tháp Gai độc & Lá chắn phòng thủ (Gauntlet Mode)",
     "slug": "leo-thap-gai-doc-la-chan-phong-thu-gauntlet-mode-ca-su-tu"
+  },
+  {
+    "creature_id": "gaboon-viper",
+    "creature_name": "Rắn Lục Gaboon",
+    "title": "Leo tháp Phục kích & Nanh độc (Gauntlet Mode)",
+    "slug": "leo-thap-phuc-kich-nanh-doc-gauntlet-mode-ran-luc-gaboon"
   }
 ]
 
