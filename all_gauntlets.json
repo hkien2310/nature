@@ -485,5 +485,12 @@
     "creature_name": "Quỷ Tasmania",
     "title": "Leo tháp Lực cắn (Gauntlet Mode)",
     "slug": "leo-thap-luc-can-gauntlet-mode-quy-tasmania"
+  },
+  {
+    "creature_id": "lions-mane-jellyfish",
+    "creature_name": "Sứa Bờm Sư Tử",
+    "title": "Leo tháp Lưới Độc & Tê Liệt (Gauntlet Mode)",
+    "slug": "leo-thap-luoi-doc-va-te-liet-gauntlet-mode-sua-bom-su-tu"
   }
 ]
+
