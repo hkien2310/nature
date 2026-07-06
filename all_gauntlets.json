@@ -503,6 +503,12 @@
     "creature_name": "Cá Nóc Hổ",
     "title": "Leo tháp Lực cắn (Gauntlet Mode)",
     "slug": "leo-thap-luc-can-gauntlet-mode-ca-noc-ho"
+  },
+  {
+    "creature_id": "lionfish",
+    "creature_name": "Cá Sư Tử",
+    "title": "Leo tháp Gai độc & Lá chắn phòng thủ (Gauntlet Mode)",
+    "slug": "leo-thap-gai-doc-la-chan-phong-thu-gauntlet-mode-ca-su-tu"
   }
 ]
 
