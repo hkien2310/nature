@@ -306,8 +306,7 @@ Khi nhận được các câu lệnh sau, AI bắt buộc phải đọc hướng
 - Lệnh `"Làm giàu What-If"`: Tự động tạo kịch bản câu hỏi/câu trả lời giả thuyết cho 3 sinh vật. Đọc [what-if.md](file:///Users/hoangkien/Youtube/svh/docs/automations/what-if.md).
 - Lệnh `"Làm giàu Ghép Gen"`: Tự động lai ghép gen sinh vật vào người cho 3 sinh vật. Đọc [human-splice.md](file:///Users/hoangkien/Youtube/svh/docs/automations/human-splice.md).
 - Lệnh `"Làm giàu dữ liệu ảnh"`: Tự động sinh và cập nhật 5 ảnh minh họa cho sinh vật thiếu ảnh. Đọc [enrich-images.md](file:///Users/hoangkien/Youtube/svh/docs/automations/enrich-images.md).
-- Lệnh `"Làm giàu đối thủ"`: Tự động tìm kiếm và nạp các mốc sức mạnh (benchmarks) của các đối thủ vào hệ thống. Đọc [enrich-opponents.md](file:///Users/hoangkien/Youtube/svh/docs/automations/enrich-opponents.md).
-- Lệnh `"Làm giàu Gauntlet"`: Tự động ép cân (scale) một sinh vật lên bằng kích thước đối thủ và viết kịch bản leo tháp. Đọc [enrich-gauntlet.md](file:///Users/hoangkien/Youtube/svh/docs/automations/enrich-gauntlet.md).
+- Lệnh `"Làm giàu Gauntlet"`: Tự động scale một sinh vật và so sánh sức mạnh với các benchmark thực tế. Đọc [enrich-gauntlet.md](file:///Users/hoangkien/Youtube/svh/docs/automations/enrich-gauntlet.md).
 
 
 
