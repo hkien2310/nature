@@ -875,5 +875,24 @@
     "creature_name": "Sâu Róm Flannel",
     "title": "Leo tháp Gai Độc Chết Chóc (Gauntlet Mode)",
     "slug": "leo-thap-gai-doc-chet-choc-gauntlet-mode-puss-caterpillar"
+  },
+  {
+    "creature_id": "desert-rain-frog",
+    "creature_name": "Ếch Mưa Sa Mạc",
+    "title": "Thử Thách Sóng Âm Rung Chấn (Gauntlet Mode)",
+    "slug": "thu-thach-song-am-rung-chan-desert-rain-frog-gauntlet"
+  },
+  {
+    "creature_id": "golden-tortoise-beetle",
+    "creature_name": "Bọ rùa vàng",
+    "title": "Leo tháp Kháng Lực Bám Dính (Gauntlet Mode)",
+    "slug": "leo-thap-khang-luc-bam-dinh-bo-rua-vang"
+  },
+  {
+    "creature_id": "remora",
+    "creature_name": "Cá Ép",
+    "title": "Leo tháp Kháng Kéo và Bám Dính (Gauntlet Mode)",
+    "slug": "leo-thap-khang-keo-va-bam-dinh-remora-gauntlet-mode"
   }
 ]
+
