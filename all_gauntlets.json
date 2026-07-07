@@ -1,6 +1,12 @@
 === COMPACT GAUNTLETS ===
 [
   {
+    "creature_id": "hammerhead-worm",
+    "creature_name": "Giun Đầu Búa",
+    "title": "Leo tháp Sinh Tồn Bất Tử & Độc Tố (Gauntlet Mode)",
+    "slug": "leo-thap-sinh-ton-bat-tu-doc-to-giun-dau-bua-gauntlet"
+  },
+  {
     "creature_id": "peregrine-falcon",
     "creature_name": "Chim Cắt Lớn",
     "title": "Leo tháp Không chiến siêu tốc (Gauntlet Mode)",
@@ -721,4 +727,3 @@
     "slug": "leo-thap-giat-xe-gauntlet-mode-rong-komodo"
   }
 ]
-
