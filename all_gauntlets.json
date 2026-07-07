@@ -713,5 +713,12 @@
     "creature_name": "Cá Mút Đá Biển",
     "title": "Leo tháp Giác Hút Ký Sinh (Gauntlet Mode)",
     "slug": "leo-thap-giac-hut-ky-sinh-gauntlet-mode-ca-mut-da"
+  },
+  {
+    "creature_id": "komodo-dragon",
+    "creature_name": "Rồng Komodo",
+    "title": "Leo tháp Giật xé răng cưa bọc sắt (Gauntlet Mode)",
+    "slug": "leo-thap-giat-xe-gauntlet-mode-rong-komodo"
   }
 ]
+
