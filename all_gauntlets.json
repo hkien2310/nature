@@ -851,5 +851,11 @@
     "creature_name": "Cá Măng Rổ",
     "title": "Leo tháp Phun Nước (Gauntlet Mode)",
     "slug": "leo-thap-phun-nuoc-gauntlet-mode-ca-mang-ro"
+  },
+  {
+    "creature_id": "basilisk-lizard",
+    "creature_name": "Thằn Lằn Basilisk",
+    "title": "Leo tháp Khinh Công (Gauntlet Mode)",
+    "slug": "leo-thap-khinh-cong-gauntlet-mode-basilisk-lizard"
   }
 ]
