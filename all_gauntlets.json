@@ -911,5 +911,11 @@
     "creature_name": "Báo Săn",
     "title": "Leo tháp Bứt tốc cực hạn (Gauntlet Mode) - Báo Săn",
     "slug": "leo-thap-but-toc-gauntlet-mode-cheetah"
+  },
+  {
+    "creature_id": "spitting-cobra",
+    "creature_name": "Rắn Hổ Mang Phun Nọc",
+    "title": "Leo tháp Phun độc (Gauntlet Mode) - Rắn Hổ Mang Phun Nọc",
+    "slug": "leo-thap-phun-doc-gauntlet-mode-ran-ho-mang"
   }
 ]
