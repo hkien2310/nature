@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getDBCreatureById } from "@/lib/db";
+import { getDBCreatureById, getCreatureWhatIfs, getCreatureHumanSplices } from "@/lib/db";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -15,13 +15,18 @@ export async function GET(request: Request, { params }: Props) {
     }
 
     const { slug } = await params;
-    const creature = await getDBCreatureById(slug);
+
+    const [creature, whatIfs, humanSplices] = await Promise.all([
+      getDBCreatureById(slug),
+      getCreatureWhatIfs(slug),
+      getCreatureHumanSplices(slug),
+    ]);
 
     if (!creature) {
       return NextResponse.json({ error: "Creature not found." }, { status: 404 });
     }
 
-    return NextResponse.json({ success: true, creature });
+    return NextResponse.json({ success: true, creature, whatIfs, humanSplices });
   } catch (err: any) {
     return NextResponse.json({ error: err.message }, { status: 500 });
   }
