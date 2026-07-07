@@ -869,5 +869,11 @@
     "creature_name": "Mực Nang Rực Rỡ",
     "title": "Leo tháp Thôi miên Độc dược (Gauntlet Mode)",
     "slug": "leo-thap-thoi-mien-doc-duoc-gauntlet-mode-flamboyant-cuttlefish"
+  },
+  {
+    "creature_id": "puss-caterpillar",
+    "creature_name": "Sâu Róm Flannel",
+    "title": "Leo tháp Gai Độc Chết Chóc (Gauntlet Mode)",
+    "slug": "leo-thap-gai-doc-chet-choc-gauntlet-mode-puss-caterpillar"
   }
 ]
