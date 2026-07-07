@@ -893,6 +893,12 @@
     "creature_name": "Cá Ép",
     "title": "Leo tháp Kháng Kéo và Bám Dính (Gauntlet Mode)",
     "slug": "leo-thap-khang-keo-va-bam-dinh-remora-gauntlet-mode"
+  },
+  {
+    "creature_id": "argentine-horned-frog",
+    "creature_name": "Ếch Sừng Argentina",
+    "title": "Leo tháp Khóa Hàm (Gauntlet Mode)",
+    "slug": "leo-thap-khoa-ham-gauntlet-mode-argentine-horned-frog"
   }
 ]
 
