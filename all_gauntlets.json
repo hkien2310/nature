@@ -791,5 +791,11 @@
     "creature_name": "Cá Chình Biển Khổng Lồ",
     "title": "Leo tháp Hàm Hầu và Vặn Xé (Gauntlet Mode)",
     "slug": "leo-thap-ham-hau-van-xe-giant-moray-eel"
+  },
+  {
+    "creature_id": "gulper-eel",
+    "creature_name": "Lươn nuốt",
+    "title": "Leo tháp Hút nước & Nuốt chửng (Gauntlet Mode)",
+    "slug": "leo-thap-hut-nuoc-nuot-chung-gulper-eel"
   }
 ]
