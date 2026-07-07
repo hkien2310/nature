@@ -695,5 +695,11 @@
     "creature_name": "Rái Cá Sói Wolverine",
     "title": "Leo tháp Khóa hàm & Nghiền xương (Gauntlet Mode)",
     "slug": "leo-thap-khoa-ham-nghien-xuong-gauntlet-mode-wolverine"
+  },
+  {
+    "creature_id": "boxer-crab",
+    "creature_name": "Cua Boxer",
+    "title": "Leo tháp Đấm Độc Hải Quỳ (Gauntlet Mode)",
+    "slug": "leo-thap-dam-doc-hai-quy-gauntlet-mode-cua-boxer"
   }
 ]
