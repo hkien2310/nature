@@ -845,5 +845,11 @@
     "creature_name": "Cá Piranha Bụng Đỏ",
     "title": "Leo tháp Lực cắn (Gauntlet Mode) - Cá Piranha Bụng Đỏ",
     "slug": "leo-thap-luc-can-gauntlet-mode-ca-piranha-bung-do"
+  },
+  {
+    "creature_id": "banded-archerfish",
+    "creature_name": "Cá Măng Rổ",
+    "title": "Leo tháp Phun Nước (Gauntlet Mode)",
+    "slug": "leo-thap-phun-nuoc-gauntlet-mode-ca-mang-ro"
   }
 ]
