@@ -403,6 +403,12 @@
     "slug": "leo-thap-toc-do-phan-kich-gauntlet-mode-ran-mamba-den"
   },
   {
+    "creature_id": "panther-chameleon",
+    "creature_name": "Tắc Kè Hoa Báo",
+    "title": "Leo tháp Phóng Lưỡi (Gauntlet Mode) - Tắc Kè Hoa Báo",
+    "slug": "leo-thap-phong-luoi-gauntlet-mode-tac-ke-hoa-bao"
+  },
+  {
     "creature_id": "diving-bell-spider",
     "creature_name": "Nhện Chuông Lặn",
     "title": "Leo tháp Lặn sâu (Gauntlet Mode)",
@@ -589,6 +595,12 @@
     "slug": "leo-thap-phinh-than-thuy-luc-mo-dop-sieu-thanh-gauntlet-mode"
   },
   {
+    "creature_id": "saltwater-crocodile",
+    "creature_name": "Cá Sấu Nước Mặn",
+    "title": "Leo tháp Lực Cắn Nghiền Xương (Gauntlet Mode)",
+    "slug": "leo-thap-luc-can-nghien-xuong-gauntlet-mode"
+  },
+  {
     "creature_id": "argentine-horned-frog",
     "creature_name": "Ếch Sừng Argentina",
     "title": "Leo tháp Lực Táp & Nghiền Nát (Gauntlet Mode)",
@@ -613,10 +625,10 @@
     "slug": "greater-wax-moth-sonar-radar-evasion-gauntlet"
   },
   {
-    "creature_id": "tasmanian-devil",
-    "creature_name": "Quỷ Tasmania",
-    "title": "Leo tháp Lực cắn nghiền xương (Gauntlet Mode)",
-    "slug": "leo-thap-luc-can-nghien-xuong-gauntlet-mode"
+    "creature_id": "spiny-bush-viper",
+    "creature_name": "Rắn Lục Vảy Sừng",
+    "title": "Leo tháp Nọc Độc & Vảy Gai Rồng (Gauntlet Mode)",
+    "slug": "leo-thap-noc-doc-vay-gai-rong-ran-luc-vay-sung-gauntlet"
   },
   {
     "creature_id": "black-footed-cat",
@@ -799,9 +811,39 @@
     "slug": "leo-thap-hut-nuoc-nuot-chung-gulper-eel"
   },
   {
+    "creature_id": "european-stag-beetle",
+    "creature_name": "Bọ Kìm Châu Âu",
+    "title": "Leo tháp Đấu vật & Kẹp sừng (Gauntlet Mode)",
+    "slug": "bo-kim-chau-au-gauntlet-wrestling"
+  },
+  {
+    "creature_id": "tuatara",
+    "creature_name": "Thằn Lằn Tuatara",
+    "title": "Tháp Lực Cắn Tuatara (Gauntlet Mode)",
+    "slug": "thap-luc-can-tuatara-gauntlet-mode"
+  },
+  {
     "creature_id": "green-anaconda",
     "creature_name": "Trăn Anaconda Xanh",
     "title": "Leo tháp Quấn Siết Tử Thần (Gauntlet Mode)",
     "slug": "leo-thap-quan-siet-tu-than-gauntlet-mode"
+  },
+  {
+    "creature_id": "lyrebird",
+    "creature_name": "Chim Đàn Lia",
+    "title": "Leo tháp Sóng Âm (Gauntlet Mode)",
+    "slug": "leo-thap-song-am-gauntlet-mode-chim-dan-lia"
+  },
+  {
+    "creature_id": "atlas-beetle",
+    "creature_name": "Bọ Sừng Atlas",
+    "title": "Leo tháp Sừng Kẹp & Nâng Bẩy (Gauntlet Mode)",
+    "slug": "leo-thap-sung-kep-nang-bay-bo-sung-atlas"
+  },
+  {
+    "creature_id": "red-bellied-piranha",
+    "creature_name": "Cá Piranha Bụng Đỏ",
+    "title": "Leo tháp Lực cắn (Gauntlet Mode) - Cá Piranha Bụng Đỏ",
+    "slug": "leo-thap-luc-can-gauntlet-mode-ca-piranha-bung-do"
   }
 ]
