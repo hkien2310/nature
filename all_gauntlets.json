@@ -701,5 +701,11 @@
     "creature_name": "Cua Boxer",
     "title": "Leo tháp Đấm Độc Hải Quỳ (Gauntlet Mode)",
     "slug": "leo-thap-dam-doc-hai-quy-gauntlet-mode-cua-boxer"
+  },
+  {
+    "creature_id": "springtail",
+    "creature_name": "Bọ Đuôi Bật",
+    "title": "Leo tháp Bật nhảy (Gauntlet Mode)",
+    "slug": "leo-thap-bat-nhay-bo-duoi-bat-gauntlet-mode"
   }
 ]
