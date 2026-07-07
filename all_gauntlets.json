@@ -797,5 +797,11 @@
     "creature_name": "Lươn nuốt",
     "title": "Leo tháp Hút nước & Nuốt chửng (Gauntlet Mode)",
     "slug": "leo-thap-hut-nuoc-nuot-chung-gulper-eel"
+  },
+  {
+    "creature_id": "green-anaconda",
+    "creature_name": "Trăn Anaconda Xanh",
+    "title": "Leo tháp Quấn Siết Tử Thần (Gauntlet Mode)",
+    "slug": "leo-thap-quan-siet-tu-than-gauntlet-mode"
   }
 ]
