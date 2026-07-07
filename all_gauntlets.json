@@ -899,6 +899,11 @@
     "creature_name": "Ếch Sừng Argentina",
     "title": "Leo tháp Khóa Hàm (Gauntlet Mode)",
     "slug": "leo-thap-khoa-ham-gauntlet-mode-argentine-horned-frog"
+  },
+  {
+    "creature_id": "giant-isopod",
+    "creature_name": "Bọ Chân Đều Khổng Lồ",
+    "title": "Leo tháp Kháng ép (Gauntlet Mode) - Bọ Chân Đều Khổng Lồ",
+    "slug": "leo-thap-khang-ep-gauntlet-mode-bo-chan-deu"
   }
 ]
-
