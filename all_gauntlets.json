@@ -857,5 +857,11 @@
     "creature_name": "Thằn Lằn Basilisk",
     "title": "Leo tháp Khinh Công (Gauntlet Mode)",
     "slug": "leo-thap-khinh-cong-gauntlet-mode-basilisk-lizard"
+  },
+  {
+    "creature_id": "elysia-marginata",
+    "creature_name": "Sên Biển Tự Rụng Đầu",
+    "title": "Leo tháp Tái sinh Sinh tử (Gauntlet Mode)",
+    "slug": "leo-thap-tai-sinh-sinh-tu-gauntlet-mode-elysia-marginata"
   }
 ]
