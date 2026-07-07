@@ -905,5 +905,11 @@
     "creature_name": "Bọ Chân Đều Khổng Lồ",
     "title": "Leo tháp Kháng ép (Gauntlet Mode) - Bọ Chân Đều Khổng Lồ",
     "slug": "leo-thap-khang-ep-gauntlet-mode-bo-chan-deu"
+  },
+  {
+    "creature_id": "cheetah",
+    "creature_name": "Báo Săn",
+    "title": "Leo tháp Bứt tốc cực hạn (Gauntlet Mode) - Báo Săn",
+    "slug": "leo-thap-but-toc-gauntlet-mode-cheetah"
   }
 ]
