@@ -1,18 +1,6 @@
 === COMPACT GAUNTLETS ===
 [
   {
-    "creature_id": "giant-moray-eel",
-    "creature_name": "Cá Chình Biển Khổng Lồ",
-    "title": "Leo tháp Hàm Hầu và Vặn Xé (Gauntlet Mode)",
-    "slug": "leo-thap-ham-hau-van-xe-giant-moray-eel"
-  },
-  {
-    "creature_id": "hammerhead-worm",
-    "creature_name": "Giun Đầu Búa",
-    "title": "Leo tháp Sinh Tồn Bất Tử & Độc Tố (Gauntlet Mode)",
-    "slug": "leo-thap-sinh-ton-bat-tu-doc-to-giun-dau-bua-gauntlet"
-  },
-  {
     "creature_id": "peregrine-falcon",
     "creature_name": "Chim Cắt Lớn",
     "title": "Leo tháp Không chiến siêu tốc (Gauntlet Mode)",
@@ -67,10 +55,22 @@
     "slug": "leo-thap-gauntlet-nhen-vo-cay-darwin"
   },
   {
+    "creature_id": "greater-horseshoe-bat",
+    "creature_name": "Dơi Móng Ngựa Lớn",
+    "title": "Leo tháp Không chiến Siêu thanh (Gauntlet Mode)",
+    "slug": "leo-thap-khong-chien-sieu-thanh-gauntlet-mode-answer"
+  },
+  {
     "creature_id": "dracula-ant",
     "creature_name": "Kiến Dracula",
     "title": "Leo tháp Hàm kẹp Siêu tốc (Gauntlet Mode)",
     "slug": "leo-thap-ham-kep-sieu-toc-gauntlet-mode"
+  },
+  {
+    "creature_id": "portuguese-man-of-war",
+    "creature_name": "Sứa Lửa Bồ Đào Nha",
+    "title": "Leo tháp Lưới độc Tê liệt (Gauntlet Mode)",
+    "slug": "leo-thap-luoi-doc-te-liet-gauntlet-mode-sua-lua-bo-dao-nha"
   },
   {
     "creature_id": "water-strider",
@@ -193,6 +193,12 @@
     "slug": "leo-thap-sat-thu-tram-chan-gauntlet-mode"
   },
   {
+    "creature_id": "trilobite-beetle",
+    "creature_name": "Bọ Ba Thùy Cánh Cứng",
+    "title": "Leo tháp Kháng ép (Gauntlet Mode) - Bọ Ba Thùy Cánh Cứng",
+    "slug": "leo-thap-khang-ep-gauntlet-mode-bo-ba-thuy-canh-cung"
+  },
+  {
     "creature_id": "panda-ant",
     "creature_name": "Kiến Gấu Trúc",
     "title": "Leo tháp Giáp bọc & Ngòi độc (Gauntlet Mode)",
@@ -215,6 +221,12 @@
     "creature_name": "Cá Cung Thủ Xạ Thủ",
     "title": "Leo tháp Thủy pháo Siêu áp lực (Gauntlet Mode)",
     "slug": "leo-thap-thuy-phao-sieu-ap-luc-gauntlet-mode-ca-cung-thu"
+  },
+  {
+    "creature_id": "scaly-foot-gastropod",
+    "creature_name": "Ốc Sên Chân Vảy",
+    "title": "Leo tháp Giáp sắt và Nhiệt độ (Gauntlet Mode)",
+    "slug": "leo-thap-giap-sat-va-nhiet-do-oc-sen-chan-vay-gauntlet"
   },
   {
     "creature_id": "honey-badger",
@@ -385,6 +397,12 @@
     "slug": "leo-thap-cat-xen-co-hoc-gauntlet-mode-kien-quan-doi"
   },
   {
+    "creature_id": "black-mamba",
+    "creature_name": "Rắn Mamba Đen",
+    "title": "Leo tháp Tốc độ & Phản kích (Gauntlet Mode) - Rắn Mamba Đen",
+    "slug": "leo-thap-toc-do-phan-kich-gauntlet-mode-ran-mamba-den"
+  },
+  {
     "creature_id": "diving-bell-spider",
     "creature_name": "Nhện Chuông Lặn",
     "title": "Leo tháp Lặn sâu (Gauntlet Mode)",
@@ -407,6 +425,12 @@
     "creature_name": "Bọ Nước Khổng Lồ",
     "title": "Leo tháp Gauntlet: Bọ Nước Khổng Lồ phóng to",
     "slug": "leo-thap-gauntlet-bo-nuoc-khong-lo-phong-to"
+  },
+  {
+    "creature_id": "woodpecker",
+    "creature_name": "Chim gõ kiến",
+    "title": "Leo tháp Gõ Búa Thủy Lực (Gauntlet Mode)",
+    "slug": "leo-thap-go-bua-thuy-luc-gauntlet-woodpecker"
   },
   {
     "creature_id": "black-widow-spider",
@@ -463,6 +487,12 @@
     "slug": "leo-thap-dau-vat-phong-long-ngua-nhen-goliath"
   },
   {
+    "creature_id": "wolverine",
+    "creature_name": "Rái Cá Sói Wolverine",
+    "title": "Leo tháp Khóa hàm & Nghiền xương (Gauntlet Mode)",
+    "slug": "leo-thap-khoa-ham-nghien-xuong-gauntlet-mode"
+  },
+  {
     "creature_id": "gear-planthopper",
     "creature_name": "Côn Trùng Bánh Răng",
     "title": "Leo tháp Bật nhảy đồng bộ Bánh răng (Gauntlet Mode)",
@@ -497,6 +527,12 @@
     "creature_name": "Kiến Bulldog Úc",
     "title": "Leo tháp Sức mạnh (Gauntlet Mode)",
     "slug": "leo-thap-suc-manh-kien-bulldog-uc-gauntlet-mode"
+  },
+  {
+    "creature_id": "springtail",
+    "creature_name": "Bọ Đuôi Bật",
+    "title": "Leo tháp Bật nhảy (Gauntlet Mode)",
+    "slug": "leo-thap-bat-nhay-bo-duoi-bat-gauntlet-mode"
   },
   {
     "creature_id": "rove-beetle",
@@ -691,22 +727,16 @@
     "slug": "leo-thap-phan-xa-chop-gap-gauntlet-mode-bo-ngua-gai-hoa-hong"
   },
   {
-    "creature_id": "portuguese-man-of-war",
-    "creature_name": "Sứa Lửa Bồ Đào Nha",
-    "title": "Leo tháp Lưới độc Tê liệt (Gauntlet Mode)",
-    "slug": "leo-thap-luoi-doc-te-liet-gauntlet-mode-sua-lua-bo-dao-nha"
-  },
-  {
     "creature_id": "gila-monster",
     "creature_name": "Quái Vật Gila",
     "title": "Leo tháp Khóa hàm tử thần (Gauntlet Mode)",
-    "slug": "leo-thap-khoa-ham-tu-than-gauntlet-mode-gila-monster"
+    "slug": "leo-thap-khoa-ham-tu-than-gauntlet-mode-gila-monster-answer"
   },
   {
-    "creature_id": "wolverine",
-    "creature_name": "Rái Cá Sói Wolverine",
-    "title": "Leo tháp Khóa hàm & Nghiền xương (Gauntlet Mode)",
-    "slug": "leo-thap-khoa-ham-nghien-xuong-gauntlet-mode-wolverine"
+    "creature_id": "sea-lamprey",
+    "creature_name": "Cá Mút Đá Biển",
+    "title": "Leo tháp Bám hút (Gauntlet Mode)",
+    "slug": "leo-thap-bam-hut-gauntlet-mode-ca-mut-da-bien"
   },
   {
     "creature_id": "boxer-crab",
@@ -715,21 +745,51 @@
     "slug": "leo-thap-dam-doc-hai-quy-gauntlet-mode-cua-boxer"
   },
   {
-    "creature_id": "springtail",
-    "creature_name": "Bọ Đuôi Bật",
-    "title": "Leo tháp Bật nhảy (Gauntlet Mode)",
-    "slug": "leo-thap-bat-nhay-bo-duoi-bat-gauntlet-mode"
-  },
-  {
     "creature_id": "sea-lamprey",
     "creature_name": "Cá Mút Đá Biển",
     "title": "Leo tháp Giác Hút Ký Sinh (Gauntlet Mode)",
     "slug": "leo-thap-giac-hut-ky-sinh-gauntlet-mode-ca-mut-da"
   },
   {
+    "creature_id": "scaly-foot-gastropod",
+    "creature_name": "Ốc Sên Chân Vảy",
+    "title": "Leo tháp Giáp Vỏ Chống Ép (Gauntlet Mode)",
+    "slug": "leo-thap-giap-vo-chong-ep-gauntlet-mode"
+  },
+  {
+    "creature_id": "secretarybird",
+    "creature_name": "Chim Diều Ăn Rắn",
+    "title": "Leo tháp Cú Đá Siêu Tốc (Gauntlet Mode) - Chim Diều Ăn Rắn",
+    "slug": "leo-thap-cu-da-sieu-toc-gauntlet-mode-chim-dieu-an-ran"
+  },
+  {
+    "creature_id": "wombat",
+    "creature_name": "Gấu Túi Mũi Trần",
+    "title": "Leo tháp Khiên Mông Nghiền Sọ (Gauntlet Mode) - Gấu Túi Mũi Trần",
+    "slug": "leo-thap-khien-mong-nghien-so-gauntlet-mode-gau-tui-mui-tran"
+  },
+  {
+    "creature_id": "amazon-giant-leech",
+    "creature_name": "Đỉa Khổng Lồ Amazon",
+    "title": "Leo tháp Hút Máu Bất Tử (Gauntlet Mode) - Đỉa Khổng Lồ Amazon",
+    "slug": "leo-thap-hut-mau-bat-tu-gauntlet-mode-dia-amazon"
+  },
+  {
     "creature_id": "komodo-dragon",
     "creature_name": "Rồng Komodo",
     "title": "Leo tháp Giật xé răng cưa bọc sắt (Gauntlet Mode)",
     "slug": "leo-thap-giat-xe-gauntlet-mode-rong-komodo"
+  },
+  {
+    "creature_id": "hammerhead-worm",
+    "creature_name": "Giun Đầu Búa",
+    "title": "Leo tháp Sinh Tồn Bất Tử & Độc Tố (Gauntlet Mode)",
+    "slug": "leo-thap-sinh-ton-bat-tu-doc-to-giun-dau-bua-gauntlet"
+  },
+  {
+    "creature_id": "giant-moray-eel",
+    "creature_name": "Cá Chình Biển Khổng Lồ",
+    "title": "Leo tháp Hàm Hầu và Vặn Xé (Gauntlet Mode)",
+    "slug": "leo-thap-ham-hau-van-xe-giant-moray-eel"
   }
 ]
