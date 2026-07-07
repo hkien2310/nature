@@ -863,5 +863,11 @@
     "creature_name": "Sên Biển Tự Rụng Đầu",
     "title": "Leo tháp Tái sinh Sinh tử (Gauntlet Mode)",
     "slug": "leo-thap-tai-sinh-sinh-tu-gauntlet-mode-elysia-marginata"
+  },
+  {
+    "creature_id": "flamboyant-cuttlefish",
+    "creature_name": "Mực Nang Rực Rỡ",
+    "title": "Leo tháp Thôi miên Độc dược (Gauntlet Mode)",
+    "slug": "leo-thap-thoi-mien-doc-duoc-gauntlet-mode-flamboyant-cuttlefish"
   }
 ]
