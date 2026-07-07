@@ -1,6 +1,12 @@
 === COMPACT GAUNTLETS ===
 [
   {
+    "creature_id": "giant-moray-eel",
+    "creature_name": "Cá Chình Biển Khổng Lồ",
+    "title": "Leo tháp Hàm Hầu và Vặn Xé (Gauntlet Mode)",
+    "slug": "leo-thap-ham-hau-van-xe-giant-moray-eel"
+  },
+  {
     "creature_id": "hammerhead-worm",
     "creature_name": "Giun Đầu Búa",
     "title": "Leo tháp Sinh Tồn Bất Tử & Độc Tố (Gauntlet Mode)",
