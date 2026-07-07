@@ -11,12 +11,17 @@ Khi nhận được yêu cầu `"Làm giàu Gauntlet"` cho một sinh vật (ví
 ### Các Bước Thực Hiện:
 1. **Chọn loại Gauntlet & Mốc so sánh (Benchmarks 3 Tầng)**:
    - **Xác định THẾ MẠNH ĐẶC TRƯNG** nhất của sinh vật (ví dụ: lực đấm, lực kéo, sức bật nhảy, tốc độ, độ cứng).
-   - **Quy tắc chọn Benchmark 3 Tầng**: Dựa vào thế mạnh trên, AI tự vận dụng kiến thức thực tế để chọn ra 3 mốc so sánh nổi tiếng nhất thế giới. 
-     - **LOGIC Chọn Đối thủ**: Mốc so sánh phải CỤ THỂ, RÕ RÀNG và SIÊU PHỔ BIẾN (những thứ mà ai cũng biết, vừa nghe tên là hình dung ngay được độ khủng khiếp, ví dụ: Xe tăng, Khủng long T-Rex, Tàu sân bay, Tên lửa vũ trụ, Võ sĩ hạng nặng). KHÔNG dùng các ví dụ mập mờ, khó hiểu hay tên thiết bị máy móc ít người biết.
+   - **Quy tắc chọn Benchmark 3 Tầng**: Dựa vào thế mạnh trên, AI tự vận dụng kiến thức thực tế để chọn ra 3 mốc so sánh nổi tiếng nhất thế giới.
+     - **LOGIC Chọn Đối thủ — GẮN LIỀN THỰC TẾ**: Mốc so sánh phải là những thứ người ta **CÓ THỂ THẤY VÀ BIẾT TRONG CUỘC SỐNG**. Ưu tiên theo thứ tự:
+       1. **Sinh vật thật** mà ai cũng quen (chó, gấu, cá mập, voi, đại bàng...)
+       2. **Phương tiện/công cụ đời thường** mà người ta nhìn thấy hàng ngày (xe tải, xe tăng, cần cẩu, tàu hỏa...)
+       3. **Hiện tượng tự nhiên nổi tiếng** mà ai cũng hình dung được (sét đánh, sóng thần, động đất...)
+     - **TUYỆT ĐỐI KHÔNG dùng**: Tên kỹ thuật/khoa học ít người biết, thiết bị quân sự mật, số liệu trừu tượng không gắn với hình ảnh cụ thể.
      - **FLOW Thăng tiến sức mạnh**: Ba đối thủ phải tạo thành một đường cong thăng tiến sức mạnh/kích thước tăng dần đầy kịch tính (Tầng 1: Đáng nể -> Tầng 2: Khủng khiếp -> Tầng 3: Tối thượng).
-     - *Ví dụ bật nhảy: Tầng 1 - Kangaroo -> Tầng 2 - Trực thăng -> Tầng 3 - Tên lửa vũ trụ Saturn V.*
-     - *Ví dụ đấm/phá: Tầng 1 - Võ sĩ Boxer hạng nặng -> Tầng 2 - Máy xúc khổng lồ -> Tầng 3 - Đạn pháo Xe tăng.*
-   - **KHÔNG DÙNG DATABASE**: Tuyệt đối tự do suy luận và KHÔNG bám vào database! Cứ thứ gì trên đời này nổi tiếng nhất về thế mạnh đó thì lôi ra làm mốc.
+     - *Ví dụ bật nhảy: Tầng 1 - Chó săn Greyhound -> Tầng 2 - Kangaroo -> Tầng 3 - Xe đua Formula 1.*
+     - *Ví dụ kéo/sức mạnh: Tầng 1 - Chó kéo xe Husky -> Tầng 2 - Xe tải 18 bánh -> Tầng 3 - Tàu hỏa chở hàng.*
+     - *Ví dụ đấm/phá vỡ: Tầng 1 - Võ sĩ Boxer hạng nặng -> Tầng 2 - Xe ủi công trường -> Tầng 3 - Đạn pháo xe tăng.*
+   - **KHÔNG DÙNG DATABASE**: Tuyệt đối tự do suy luận và KHÔNG bám vào database!
 
 2. **Logic Scaling (Vật Lý Thuần Túy — Bắt Buộc)**:
 
