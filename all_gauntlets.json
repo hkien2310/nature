@@ -917,5 +917,11 @@
     "creature_name": "Rắn Hổ Mang Phun Nọc",
     "title": "Leo tháp Phun độc (Gauntlet Mode) - Rắn Hổ Mang Phun Nọc",
     "slug": "leo-thap-phun-doc-gauntlet-mode-ran-ho-mang"
+  },
+  {
+    "creature_id": "blue-ringed-octopus",
+    "creature_name": "Bạch Tuộc Vòng Xanh",
+    "title": "Leo tháp Nọc Độc (Gauntlet Mode)",
+    "slug": "leo-thap-noc-doc-gauntlet-mode-bach-tuoc-vong-xanh"
   }
 ]
